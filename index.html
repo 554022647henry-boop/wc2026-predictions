@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🏆 FIFA 世界杯 2026 · AI 预测</title>
+<style>
+
+:root{--bg:#080d17;--s1:#111827;--s2:#1a2234;--s3:#232f45;
+  --gold:#f5b731;--gold2:#d4981e;--green:#34d399;--red:#f87171;
+  --text:#f1f5f9;--muted:#64748b;--border:#1e293b;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif}
+
+/* Header */
+header{background:linear-gradient(160deg,#0c1525,#1a2740);border-bottom:1px solid var(--border);padding:48px 20px 36px;text-align:center}
+.hdr-badge{display:inline-block;border:1px solid var(--gold2);color:var(--gold);background:rgba(245,183,49,.08);padding:3px 14px;border-radius:20px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;background:linear-gradient(135deg,var(--gold) 20%,#fff 55%,var(--gold) 90%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.1;margin-bottom:8px}
+.hdr-sub{color:var(--muted);font-size:.9rem;margin-bottom:28px}
+.stats{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--border)}
+.stat{text-align:center}
+.stat b{display:block;font-size:1.8rem;font-weight:800;color:var(--text)}
+.stat.hi b{background:linear-gradient(135deg,var(--gold),#fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat small{font-size:.68rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+
+/* Tabs */
+.tabs{display:flex;gap:0;padding:0 20px;border-bottom:1px solid var(--border);background:var(--s1);position:sticky;top:0;z-index:100}
+.tab-btn{flex:1;max-width:200px;padding:14px 20px;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);font-size:.9rem;font-weight:600;cursor:pointer;transition:.2s}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* Content */
+main{max-width:1680px;margin:0 auto;padding:28px 20px 60px}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.sec-title{font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:20px;padding-bottom:8px;border-bottom:2px solid var(--gold2)}
+
+/* ── Groups Tab ── */
+.groups-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
+.group-wrap{background:var(--s1);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.group-hd{background:linear-gradient(135deg,var(--s2),var(--s3));padding:12px 16px;border-bottom:1px solid var(--border)}
+.group-lbl{font-size:.72rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1px;display:block;margin-bottom:6px}
+.group-chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:10px;padding:2px 8px;font-size:10px;color:var(--muted)}
+.group-matches{padding:8px;display:flex;flex-direction:column;gap:6px}
+
+/* Match card */
+.match-card{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:11px;transition:border-color .2s}
+.match-card:hover{border-color:rgba(245,183,49,.3)}
+.match-card.correct{border-left:3px solid var(--green)}
+.match-card.incorrect{border-left:3px solid var(--red)}
+.match-meta{font-size:9px;color:var(--muted);margin-bottom:7px}
+.teams{display:grid;grid-template-columns:1fr auto 1fr;gap:6px;align-items:center;margin-bottom:8px}
+.team-name{font-size:11px;font-weight:500;line-height:1.3;text-align:center}
+.team-name.right{text-align:center}
+.team-name.winner{color:var(--gold);font-weight:700}
+.vs{font-size:10px;color:var(--muted);font-weight:700;text-align:center}
+.pred-box{background:rgba(0,0,0,.2);border-radius:7px;padding:7px 9px}
+.pred-row{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-bottom:5px}
+.pred-str{font-weight:700;font-size:12px;color:var(--gold);flex:1}
+.badge-conf{padding:1px 7px;border-radius:9px;font-size:9px;font-weight:600}
+.badge-conf.high{background:rgba(52,211,153,.12);color:var(--green)}
+.badge-conf.mid{background:rgba(245,183,49,.12);color:var(--gold)}
+.badge-conf.low{background:rgba(100,116,139,.12);color:var(--muted)}
+.badge-risk{font-size:9px;white-space:nowrap}
+.badge-risk.high{color:var(--red)}
+.badge-risk.mid{color:var(--gold)}
+.reasons{list-style:none;padding:0}
+.reasons li{font-size:10px;color:var(--muted);padding:1px 0 1px 12px;position:relative;line-height:1.4}
+.reasons li::before{content:"•";position:absolute;left:3px;color:var(--gold2)}
+.actual{font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;margin-bottom:5px;display:inline-block}
+.actual.correct{background:rgba(52,211,153,.1);color:var(--green)}
+.actual.incorrect{background:rgba(248,113,113,.1);color:var(--red)}
+.hist{margin-top:5px}
+.hist summary{font-size:9px;color:var(--muted);cursor:pointer}
+.hist ul{list-style:none;padding:4px 0 0 0}
+.hist li{font-size:9px;color:var(--muted);display:flex;justify-content:space-between;padding:1px 0}
+.hl{color:var(--text);margin-right:8px}
+
+/* ── Schedule Tab ── */
+.schedule-list{display:flex;flex-direction:column;gap:20px}
+.date-group{}
+.date-hd{font-size:1rem;font-weight:700;color:var(--gold);padding:10px 0 8px;border-bottom:1px solid var(--border);margin-bottom:10px}
+.date-matches{display:flex;flex-direction:column;gap:8px}
+.sched-card{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:14px 16px;cursor:pointer;transition:border-color .2s}
+.sched-card:hover{border-color:rgba(245,183,49,.3)}
+.sched-card.finished{border-left:3px solid var(--border)}
+.sched-card.finished.correct{border-left:3px solid var(--green)}
+.sched-card.finished.incorrect{border-left:3px solid var(--red)}
+.sched-row{}
+.sched-teams{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;margin-bottom:8px}
+.sched-team{font-size:13px;font-weight:600}
+.sched-team.right{text-align:right}
+.sched-meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.stage-tag{font-size:10px;background:rgba(255,255,255,.06);padding:2px 8px;border-radius:8px;color:var(--muted)}
+.venue-tag{font-size:10px;color:var(--muted)}
+.status-tag{font-size:10px;padding:2px 8px;border-radius:8px;font-weight:600}
+.status-tag.finished{background:rgba(52,211,153,.1);color:var(--green)}
+.status-tag.predicted{background:rgba(245,183,49,.1);color:var(--gold)}
+.status-tag.upcoming{background:rgba(100,116,139,.1);color:var(--muted)}
+.score-block{display:flex;flex-direction:column;align-items:center;min-width:80px}
+.score-block.finished .score{font-size:1.2rem;font-weight:800;color:var(--text)}
+.score-block.predicted .pred-label{font-size:11px;font-weight:700;color:var(--gold);text-align:center}
+.score-block.predicted .pred-meta{font-size:10px;color:var(--muted);display:flex;align-items:center;gap:4px}
+.score-block.upcoming .vs-dash{font-size:1.2rem;color:var(--muted);font-weight:300}
+.conf-dot{width:6px;height:6px;border-radius:50%;display:inline-block}
+.conf-dot.high{background:var(--green)}
+.conf-dot.mid{background:var(--gold)}
+.conf-dot.low{background:var(--muted)}
+.res-icon{font-size:.8rem;font-weight:700;margin-right:4px}
+.res-icon.correct{color:var(--green)}
+.res-icon.wrong{color:var(--red)}
+.reasons-detail{display:none;padding-top:10px;border-top:1px solid var(--border);margin-top:10px}
+.sched-card.expanded .reasons-detail{display:block}
+.reasons-detail ul{list-style:none;padding:0}
+.reasons-detail li{font-size:11px;color:var(--muted);padding:2px 0 2px 14px;position:relative;line-height:1.4}
+.reasons-detail li::before{content:"•";position:absolute;left:4px;color:var(--gold2)}
+
+/* Footer */
+footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border-top:1px solid var(--border)}
+
+@media(max-width:640px){
+  .groups-grid{grid-template-columns:1fr}
+  .stats{gap:20px}
+  .sched-teams{grid-template-columns:1fr 70px 1fr}
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr-inner">
+    <div class="hdr-badge">AI 预测系统 · 实时更新</div>
+    <h1>🏆 FIFA 世界杯 2026</h1>
+    <p class="hdr-sub">美国 · 加拿大 · 墨西哥 &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
+    <div class="stats">
+      <div class="stat"><b>70</b><small>已预测</small></div>
+      <div class="stat"><b>4</b><small>已完赛</small></div>
+      <div class="stat hi"><b>50.0%</b><small>预测准确率</small></div>
+      <div class="stat"><b>0</b><small>高爆冷风险</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('groups',this)">⚽ 按小组</button>
+  <button class="tab-btn" onclick="switchTab('schedule',this)">📅 赛程表</button>
+</div>
+
+<main>
+  <div id="tab-groups" class="tab-content active">
+    <div class="sec-title">小组赛 — 12组 × 6场</div>
+    <div class="groups-grid">
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 A 组</span>
+            <div class="group-chips"><span class="chip">🇲🇽 Mexico</span><span class="chip">🇿🇦 South Africa</span><span class="chip">🇰🇷 South Korea</span><span class="chip">🇨🇿 Czechia</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_A_MD1_1">
+      <div class="match-meta">MD1 · 06-11 · Estadio Azteca</div>
+      <div class="teams">
+        <span class="team-name ">🇲🇽<br><b>Mexico</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇿🇦<br><b>South Africa</b></span>
+      </div>
+      <div class="actual ">✗ 实际: 2-0</div>
+      
+    </div>
+    <div class="match-card " id="WC2026_A_MD1_2">
+      <div class="match-meta">MD1 · 06-11 · Estadio Akron</div>
+      <div class="teams">
+        <span class="team-name ">🇰🇷<br><b>South Korea</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇿<br><b>Czechia</b></span>
+      </div>
+      <div class="actual ">✗ 实际: 2-1</div>
+      
+    </div>
+    <div class="match-card " id="WC2026_A_MD2_1">
+      <div class="match-meta">MD2 · 06-18 · Mercedes-Benz Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇿<br><b>Czechia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇿🇦<br><b>South Africa</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Czechia胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>捷克整体实力更强，沙利克等欧洲豪门球员质量碾压</li><li>南非缺乏大赛经验，16年未踢世界杯心理压力大</li><li>捷克中场苏切克控场稳，南非高位压迫难持续90分钟</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_A_MD2_2">
+      <div class="match-meta">MD2 · 06-18 · Estadio Akron</div>
+      <div class="teams">
+        <span class="team-name winner">🇲🇽<br><b>Mexico</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇰🇷<br><b>South Korea</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Mexico胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>主场之利+球迷加持，绿浪压制对手</li><li>桑切斯/洛萨诺冲击力强于韩国边路</li><li>韩国失去孙兴慜状态下攻击线大打折扣</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_A_MD3_1">
+      <div class="match-meta">MD3 · 06-26 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇨🇿<br><b>Czechia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇲🇽<br><b>Mexico</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Mexico胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>墨西哥主场优势+球迷压制力爆棚</li><li>捷克缺乏世界杯大赛稳定输出能力</li><li>墨西哥生死战历史表现顽强</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_A_MD3_2">
+      <div class="match-meta">MD3 · 06-26 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇿🇦<br><b>South Africa</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇰🇷<br><b>South Korea</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">South Korea胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>손흥민 이강인 유럽파 개인기가 압도적 우위</li><li>남아공 월드컵 경험 전무, 한국은 10회 연속 본선</li><li>골키퍼 윌리엄스 선방쇼 변수, 무승부 가능성 잔존</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 B 组</span>
+            <div class="group-chips"><span class="chip">🇨🇦 Canada</span><span class="chip">🇧🇦 Bosnia and Herzegovina</span><span class="chip">🇶🇦 Qatar</span><span class="chip">🇨🇭 Switzerland</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card incorrect" id="WC2026_B_MD1_1">
+      <div class="match-meta">MD1 · 06-12 · BMO Field</div>
+      <div class="teams">
+        <span class="team-name ">🇧🇦<br><b>Bosnia and Herzegovina</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇨🇦<br><b>Canada</b></span>
+      </div>
+      <div class="actual incorrect">✗ 实际: 1-1</div>
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Canada胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>主场东道主气势如虹，主场优势碾压</li><li>戴维斯速度爆炸，防线无力应对</li><li>波黑老龄化严重，体能撑不住90分钟</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_B_MD1_2">
+      <div class="match-meta">MD1 · 06-13 · Levi's Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇶🇦<br><b>Qatar</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇨🇭<br><b>Switzerland</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Switzerland胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>瑞士全欧洲顶级联赛阵容，实力碾压</li><li>卡塔尔2022惨败，大赛经验严重不足</li><li>沙奇里+扎卡中场控制，瑞士压制全场</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_B_MD2_1">
+      <div class="match-meta">MD2 · 06-18 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇭<br><b>Switzerland</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇧🇦<br><b>Bosnia and Herzegovina</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Switzerland胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>瑞士中场硬核，沙奇里+扎卡组织有序</li><li>波黑锋线依赖老将，体系稳定性差</li><li>瑞士大赛经验碾压，抗压能力强</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_B_MD2_2">
+      <div class="match-meta">MD2 · 06-18 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇦<br><b>Canada</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇶🇦<br><b>Qatar</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Canada胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>戴维斯+大卫双核，欧洲顶级联赛实力碾压</li><li>主场作战+高位逼抢，卡塔尔体能难撑全场</li><li>卡塔尔世界杯大赛基因差，2022主场零分出局</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_B_MD3_1">
+      <div class="match-meta">MD3 · 06-25 · BC Place</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇭<br><b>Switzerland</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇦<br><b>Canada</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Switzerland胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>瑞士世界杯经验碾压，关键时刻不慌</li><li>沙奇里+扎卡中场控制，压制加拿大高位逼抢</li><li>戴维斯一人难撑，大卫缺乏身边支援</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_B_MD3_2">
+      <div class="match-meta">MD3 · 06-25 · NRG Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇧🇦<br><b>Bosnia and Herzegovina</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇶🇦<br><b>Qatar</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Bosnia and Herzegovina胜</span>
+            <span class="badge-conf mid">中置信</span>
+          </div>
+          <ul class="reasons"><li>波黑欧洲联赛球员为主，整体实力碾压卡塔尔国内联赛球员</li><li>卡塔尔阵容老化严重，热身赛6连不胜，进攻过度依赖阿菲夫一人</li><li>波黑首届世界杯2014年打进16强，大赛经验与求胜欲均优于对手</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 C 组</span>
+            <div class="group-chips"><span class="chip">🇧🇷 Brazil</span><span class="chip">🇲🇦 Morocco</span><span class="chip">🇭🇹 Haiti</span><span class="chip">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_C_MD1_1">
+      <div class="match-meta">MD1 · 06-13 · Gillette Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇭🇹<br><b>Haiti</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🏴󠁧󠁢󠁳󠁣󠁴󠁿<br><b>Scotland</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Scotland胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>苏格兰英超球星云集，整体实力碾压级差距</li><li>海地首次世界杯，大赛经验严重不足</li><li>苏格兰背水一战求出线，动力与执行力更强</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_C_MD1_2">
+      <div class="match-meta">MD1 · 06-13 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇧🇷<br><b>Brazil</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇲🇦<br><b>Morocco</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Brazil胜</span>
+            <span class="badge-conf mid">中置信</span>
+          </div>
+          <ul class="reasons"><li>维尼修斯边路爆破能力世界顶级，摩洛哥需双人包夹，易给巴西中路空档。</li><li>巴西中场卡塞米罗+帕奎塔控制力强于摩洛哥状态下滑的阿姆拉巴特，可压制反击出球点。</li><li>摩洛哥边卫马兹拉维缺阵，巴西可重点冲击其替补防线肋部。</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_C_MD2_1">
+      <div class="match-meta">MD2 · 06-19 · Levi's Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇧🇷<br><b>Brazil</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇭🇹<br><b>Haiti</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Brazil胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>维尼修斯+罗德里戈速度与技术碾压</li><li>海地首届世界杯，大赛经验严重不足</li><li>巴西5冠王基因，小组赛必全力出击</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_C_MD2_2">
+      <div class="match-meta">MD2 · 06-19 · Lincoln Financial Field</div>
+      <div class="teams">
+        <span class="team-name ">🏴󠁧󠁢󠁳󠁣󠁴󠁿<br><b>Scotland</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇲🇦<br><b>Morocco</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Morocco胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>摩洛哥2022年杀入四强，大赛经验碾压苏格兰</li><li>哈基米+齐耶赫攻防两端质量远超对手</li><li>苏格兰28年首进世界杯，心理压力巨大</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_C_MD3_1">
+      <div class="match-meta">MD3 · 06-25 · Lumen Field</div>
+      <div class="teams">
+        <span class="team-name ">🏴󠁧󠁢󠁳󠁣󠁴󠁿<br><b>Scotland</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇧🇷<br><b>Brazil</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Brazil胜</span>
+            <span class="badge-conf high">高置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>巴西维尼修斯领衔，个人能力碾压苏格兰全队</li><li>苏格兰历史上从未在正式赛事击败巴西</li><li>即便巴西轮换，替补阵容仍强于苏格兰主力</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_C_MD3_2">
+      <div class="match-meta">MD3 · 06-25 · Mercedes-Benz Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇲🇦<br><b>Morocco</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇭🇹<br><b>Haiti</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Morocco胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>摩洛哥世界排名前15，海地差距悬殊</li><li>哈基米+齐耶赫攻守双核，海地无力应对</li><li>非洲雄狮小组赛必须赢，士气与压力并存</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 D 组</span>
+            <div class="group-chips"><span class="chip">🇺🇸 United States</span><span class="chip">🇵🇾 Paraguay</span><span class="chip">🇦🇺 Australia</span><span class="chip">🇹🇷 Turkiye</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card correct" id="WC2026_D_MD1_1">
+      <div class="match-meta">MD1 · 06-12 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇵🇾<br><b>Paraguay</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇺🇸<br><b>United States</b></span>
+      </div>
+      <div class="actual correct">✓ 实际: 4-1</div>
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">United States胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>主场之利+普利西奇领衔，进攻火力全开</li><li>美国高位压迫打乱巴拉圭节奏，4球碾压</li><li>世界杯首战主队士气爆棚，巴拉圭无力抵挡</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_D_MD1_2">
+      <div class="match-meta">MD1 · 06-13 · BC Place</div>
+      <div class="teams">
+        <span class="team-name ">🇦🇺<br><b>Australia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇹🇷<br><b>Turkiye</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Turkiye胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>居勒+恰尔汗奥卢中场碾压澳洲</li><li>土耳其欧洲杯八强状态正盛</li><li>澳洲进攻创造力严重不足</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_D_MD2_1">
+      <div class="match-meta">MD2 · 06-19 · Gillette Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇹🇷<br><b>Turkiye</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇵🇾<br><b>Paraguay</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Turkiye胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>土耳其阿尔达·居勒+恰尔汗奥卢星光碾压</li><li>巴拉圭南美资格赛苦苦挣扎险些出局</li><li>土耳其EURO2024八强证明大赛抗压能力</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_D_MD2_2">
+      <div class="match-meta">MD2 · 06-19 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇺🇸<br><b>United States</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇦🇺<br><b>Australia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">United States胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>主场东道主气势如虹，普利西奇领衔欧洲豪门班底碾压澳洲</li><li>澳大利亚缺乏欧洲顶级联赛核心，中场控制力明显落差</li><li>小组赛生死战美国主场球迷加持，心理优势压倒一切</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_D_MD3_1">
+      <div class="match-meta">MD3 · 06-26 · Hard Rock Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇹🇷<br><b>Turkiye</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇺🇸<br><b>United States</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">United States胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>主场作战+球迷加持，普利西奇状态火热</li><li>土耳其防线存在漏洞，美国反击犀利</li><li>D组积分压力下美国求胜意志更强</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_D_MD3_2">
+      <div class="match-meta">MD3 · 06-26 · Lincoln Financial Field</div>
+      <div class="teams">
+        <span class="team-name winner">🇵🇾<br><b>Paraguay</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇦🇺<br><b>Australia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Paraguay胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>阿尔米隆中场统治力碾压澳洲</li><li>巴拉圭南美世界杯DNA更硬核</li><li>澳洲进攻创造力不足难破密防</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 E 组</span>
+            <div class="group-chips"><span class="chip">🇩🇪 Germany</span><span class="chip">🇨🇼 Curacao</span><span class="chip">🇨🇮 Ivory Coast</span><span class="chip">🇪🇨 Ecuador</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_E_MD1_1">
+      <div class="match-meta">MD1 · 06-14 · Lincoln Financial Field</div>
+      <div class="teams">
+        <span class="team-name ">🇨🇮<br><b>Ivory Coast</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇪🇨<br><b>Ecuador</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">平局</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>科特迪瓦锋线星光闪耀，阿丁拉速度爆炸，阿勒尔身体对抗强</li><li>厄瓜多尔凯塞多控制中场，战术纪律性强，世界杯首战DNA出色</li><li>双方实力相近，科特迪瓦世界杯小组赛三届均出局，心理压力大</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_E_MD1_2">
+      <div class="match-meta">MD1 · 06-14 · NRG Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇩🇪<br><b>Germany</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇼<br><b>Curacao</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Germany胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>穆西亚拉+维尔茨双核碾压，技术断层</li><li>德国4冠王基因，库拉索无大赛经验</li><li>德国主场式氛围，开门红动力极强</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_E_MD2_1">
+      <div class="match-meta">MD2 · 06-20 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇩🇪<br><b>Germany</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇮<br><b>Ivory Coast</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Germany胜</span>
+            <span class="badge-conf high">高置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>维尔茨+穆西亚拉双核碾压级，科特迪瓦中场根本接不住</li><li>纳格尔斯曼4-2-3-1压迫体系vs科特迪瓦反击打法，德国主动权明显</li><li>德国背负两届小组出局耻辱，必死战心态+整体实力双重碾压</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_E_MD2_2">
+      <div class="match-meta">MD2 · 06-20 · Hard Rock Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇪🇨<br><b>Ecuador</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇼<br><b>Curacao</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Ecuador胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>厄瓜多尔三届世界杯经验，科雷亚领衔攻线成熟</li><li>库拉索首次参赛，大赛经验与整体实力差距明显</li><li>南美球队身体对抗与战术纪律碾压加勒比对手</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_E_MD3_1">
+      <div class="match-meta">MD3 · 06-27 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇨🇼<br><b>Curacao</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇨🇮<br><b>Ivory Coast</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Ivory Coast胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>科特迪瓦星味十足，扎哈领衔撕裂防线</li><li>库拉索首届世界杯，大赛压力难承受</li><li>象牙海岸非洲强队底蕴，实力断层明显</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_E_MD3_2">
+      <div class="match-meta">MD3 · 06-27 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇪🇨<br><b>Ecuador</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇩🇪<br><b>Germany</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Germany胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>德国穆西亚拉维尔茨双核碾压级别</li><li>厄瓜多尔无力破解高位逼抢体系</li><li>德国欧洲杯冠军状态巅峰续航</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 F 组</span>
+            <div class="group-chips"><span class="chip">🇳🇱 Netherlands</span><span class="chip">🇯🇵 Japan</span><span class="chip">🇸🇪 Sweden</span><span class="chip">🇹🇳 Tunisia</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_F_MD1_1">
+      <div class="match-meta">MD1 · 06-14 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇳🇱<br><b>Netherlands</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇯🇵<br><b>Japan</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Netherlands胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>荷兰整体实力更强，加克波+范戴克领衔</li><li>日本擅长冷门但欧洲强队克制其打法</li><li>荷兰世界杯大赛经验更丰富更稳</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_F_MD1_2">
+      <div class="match-meta">MD1 · 06-14 · Estadio BBVA</div>
+      <div class="teams">
+        <span class="team-name winner">🇸🇪<br><b>Sweden</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇹🇳<br><b>Tunisia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Sweden胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>瑞典欧洲劲旅，综合实力碾压突尼斯</li><li>久约雷斯+库鲁塞夫斯基锋线火力凶猛</li><li>突尼斯防线脆弱，缺乏对抗顶级欧洲队经验</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_F_MD2_1">
+      <div class="match-meta">MD2 · 06-20 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇳🇱<br><b>Netherlands</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇪<br><b>Sweden</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Netherlands胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>荷兰整体实力更强，范迪克领衔后防稳固，加克波欧洲杯+世界杯均有大赛进球基因</li><li>瑞典居约克雷斯+伊萨克双前锋组合极具威胁，但荷兰中场控制力更强压制反击</li><li>荷兰近年大赛持续走远（2022世界杯八强、2024欧洲杯四强），大赛经验占优</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_F_MD2_2">
+      <div class="match-meta">MD2 · 06-20 · BC Place</div>
+      <div class="teams">
+        <span class="team-name ">🇹🇳<br><b>Tunisia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇯🇵<br><b>Japan</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Japan胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>三笘薰+久保建英双翼撕裂突尼斯边路防线</li><li>日本高位压迫战术克制突尼斯慢节奏打法</li><li>突尼斯进攻端缺乏世界级核心难破日本铁闸</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_F_MD3_1">
+      <div class="match-meta">MD3 · 06-27 · Levi's Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇯🇵<br><b>Japan</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇪<br><b>Sweden</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Japan胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>三笘薫+久保建英双核撕裂瑞典边路防线</li><li>森保战术压迫体系克制北欧长球流</li><li>日本世界杯淘汰赛基因强于瑞典近年</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_F_MD3_2">
+      <div class="match-meta">MD3 · 06-27 · Estadio Akron</div>
+      <div class="teams">
+        <span class="team-name ">🇹🇳<br><b>Tunisia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇳🇱<br><b>Netherlands</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Netherlands胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>荷兰拥有范戴克、德容、科普梅纳斯等顶级球星，整体实力碾压突尼斯</li><li>突尼斯防守虽顽强，但进攻乏力，难以威胁荷兰高质量后防</li><li>荷兰世界杯基因深厚，三次决赛经验，大赛心理优势明显</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 G 组</span>
+            <div class="group-chips"><span class="chip">🇧🇪 Belgium</span><span class="chip">🇪🇬 Egypt</span><span class="chip">🇮🇷 Iran</span><span class="chip">🇳🇿 New Zealand</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_G_MD1_1">
+      <div class="match-meta">MD1 · 06-15 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇮🇷<br><b>Iran</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇳🇿<br><b>New Zealand</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Iran胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>伊朗FIFA排名约20+，亚洲顶级强队，欧洲联赛球星云集</li><li>新西兰大洋洲鱼腩，世界杯经验极度匮乏</li><li>塔雷米领衔攻线，技术与体能双重碾压对手</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_G_MD1_2">
+      <div class="match-meta">MD1 · 06-15 · Lumen Field</div>
+      <div class="teams">
+        <span class="team-name winner">🇧🇪<br><b>Belgium</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇪🇬<br><b>Egypt</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Belgium胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>比利时De Bruyne+Lukaku+Doku星光碾压，热身5-0大胜突尼斯</li><li>埃及全靠萨拉赫，一旦被盯防整队进攻哑火</li><li>比利时2018世界杯季军，大赛经验远超埃及</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_G_MD2_1">
+      <div class="match-meta">MD2 · 06-21 · NRG Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇧🇪<br><b>Belgium</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇮🇷<br><b>Iran</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Belgium胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>比利时新黄金一代：多库、特罗萨尔、卢卡库冲击力强</li><li>伊朗防守铁桶阵难挡欧洲顶级联赛球员技术碾压</li><li>比利时急需积分出线，主动进攻动力充足</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_G_MD2_2">
+      <div class="match-meta">MD2 · 06-21 · Lumen Field</div>
+      <div class="teams">
+        <span class="team-name ">🇳🇿<br><b>New Zealand</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇪🇬<br><b>Egypt</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Egypt胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>萨拉赫领衔，个人能力碾压对手</li><li>埃及非洲赛区磨练，大赛经验更丰</li><li>新西兰大洋洲鱼塘出身，首届世界杯压力山大</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_G_MD3_1">
+      <div class="match-meta">MD3 · 06-28 · Gillette Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇪🇬<br><b>Egypt</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇮🇷<br><b>Iran</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Egypt胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>萨拉赫+马尔穆什双核，攻击力碾压伊朗</li><li>埃及历史上从未在世界杯赢过伊朗，但本届阵容质量最强</li><li>伊朗防线老化，禁区内抗压弱，萨拉赫定点破门概率高</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_G_MD3_2">
+      <div class="match-meta">MD3 · 06-28 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇳🇿<br><b>New Zealand</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇧🇪<br><b>Belgium</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Belgium胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>比利时黄金一代虽老，De Bruyne+Trossard仍是顶级创造力</li><li>新西兰防线面对欧洲顶级技战术体系几乎无解</li><li>比利时小组出线压力驱动，必然全力以赴</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 H 组</span>
+            <div class="group-chips"><span class="chip">🇪🇸 Spain</span><span class="chip">🇨🇻 Cape Verde</span><span class="chip">🇸🇦 Saudi Arabia</span><span class="chip">🇺🇾 Uruguay</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_H_MD1_1">
+      <div class="match-meta">MD1 · 06-15 · Hard Rock Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇸🇦<br><b>Saudi Arabia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇺🇾<br><b>Uruguay</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Uruguay胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>努涅斯+巴尔韦德欧洲顶级双核碾压沙特中场</li><li>比耶尔萨战术体系纪律严明，沙特难以破解</li><li>乌拉圭世界杯基因深厚，关键时刻从不掉链子</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_H_MD1_2">
+      <div class="match-meta">MD1 · 06-15 · Mercedes-Benz Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇪🇸<br><b>Spain</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇻<br><b>Cape Verde</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Spain胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>西班牙欧洲冠军，亚马尔等星将碾压级差距</li><li>佛得角首届世界杯，缺乏大赛经验难抗压</li><li>西班牙控球压迫战术克制低位防守反击</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_H_MD2_1">
+      <div class="match-meta">MD2 · 06-21 · Mercedes-Benz Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇺🇾<br><b>Uruguay</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇻<br><b>Cape Verde</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Uruguay胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>努涅斯+比达尔锋线火力碾压非洲黑马</li><li>乌拉圭南美资格赛磨砺，大赛经验远超对手</li><li>佛得角首次世界杯，心理与强度适应期明显</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_H_MD2_2">
+      <div class="match-meta">MD2 · 06-21 · Hard Rock Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇪🇸<br><b>Spain</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇦<br><b>Saudi Arabia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Spain胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>西班牙控球压制，亚马尔速度撕裂防线</li><li>沙特身体对抗强但技术差距明显</li><li>欧洲冠军底气足，小组赛不会手软</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_H_MD3_1">
+      <div class="match-meta">MD3 · 06-28 · BC Place</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇻<br><b>Cape Verde</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇦<br><b>Saudi Arabia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Cape Verde胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>欧洲旅欧球员为班底，整体技术碾压沙特</li><li>AFCON淘汰赛历练，逆境抗压能力更强</li><li>沙特大赛必胜压力下易崩，老毛病难改</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_H_MD3_2">
+      <div class="match-meta">MD3 · 06-28 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇺🇾<br><b>Uruguay</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇪🇸<br><b>Spain</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Spain胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>西班牙欧洲杯卫冕冠军，亚马尔+威廉斯已复训，世界杯实力榜排名第一</li><li>乌拉圭努涅斯+巴尔韦德威胁真实，比拉尔多战术可打乱西班牙节奏</li><li>小组赛第三轮若两队均已晋级，西班牙可能轮换主力，胜算有所下降</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 I 组</span>
+            <div class="group-chips"><span class="chip">🇫🇷 France</span><span class="chip">🇸🇳 Senegal</span><span class="chip">🇮🇶 Iraq</span><span class="chip">🇳🇴 Norway</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_I_MD1_1">
+      <div class="match-meta">MD1 · 06-16 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇫🇷<br><b>France</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇳<br><b>Senegal</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">France胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>姆巴佩领衔，攻击线碾压级差距</li><li>法国卫冕亚军，大赛基因顶级</li><li>塞内加尔中场创造力难抗法式压迫</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_I_MD1_2">
+      <div class="match-meta">MD1 · 06-16 · Gillette Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇮🇶<br><b>Iraq</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇳🇴<br><b>Norway</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Norway胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>哈兰德世界杯首秀，一人撑起挪威进攻上限</li><li>伊拉克防线严密但质量差距难以弥补</li><li>挪威国家队大赛发挥历来低于预期，险胜概率高</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_I_MD2_1">
+      <div class="match-meta">MD2 · 06-22 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇳🇴<br><b>Norway</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇸🇳<br><b>Senegal</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Norway胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>哈兰德状态爆棚，预选赛16球，是本届杯最具统治力的中锋</li><li>塞内加尔防线面对高压逼抢体系易出失误，马内年届33体力存疑</li><li>挪威时隔28年重返世界杯，全队饥渴感极强，斗志碾压</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_I_MD2_2">
+      <div class="match-meta">MD2 · 06-22 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇫🇷<br><b>France</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇮🇶<br><b>Iraq</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">France胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>法国豪华阵容碾压级，姆巴佩+格列兹曼致命</li><li>伊拉克亚洲杯表现平庸，防线漏洞明显</li><li>法国大赛经验丰富，小组赛不会失手</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_I_MD3_1">
+      <div class="match-meta">MD3 · 06-29 · NRG Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇳🇴<br><b>Norway</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇫🇷<br><b>France</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">France胜</span>
+            <span class="badge-conf high">高置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>法国姆巴佩领衔，攻击线碾压级优势</li><li>挪威缺乏世界杯大赛经验，防线承压</li><li>法国小组赛积分压力下不会保守</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_I_MD3_2">
+      <div class="match-meta">MD3 · 06-29 · Lumen Field</div>
+      <div class="teams">
+        <span class="team-name winner">🇸🇳<br><b>Senegal</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇮🇶<br><b>Iraq</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Senegal胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>马内领衔，非洲冠军实力碾压伊拉克</li><li>伊拉克40年未踢世界杯，大赛经验严重不足</li><li>小组赛末轮塞内加尔求胜动力强，进攻火力难挡</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 J 组</span>
+            <div class="group-chips"><span class="chip">🇦🇷 Argentina</span><span class="chip">🇩🇿 Algeria</span><span class="chip">🇦🇹 Austria</span><span class="chip">🇯🇴 Jordan</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_J_MD1_1">
+      <div class="match-meta">MD1 · 06-16 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇦🇷<br><b>Argentina</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇩🇿<br><b>Algeria</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Argentina胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>卫冕冠军梅西领衔，全队实力碾压级差距</li><li>阿尔及利亚非洲预选赛状态起伏，防线不稳</li><li>阿根廷世界杯首战必全力以赴，历史大赛从不失手</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_J_MD1_2">
+      <div class="match-meta">MD1 · 06-16 · Levi's Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇦🇹<br><b>Austria</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇯🇴<br><b>Jordan</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Austria胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>奥地利全员德甲/顶级联赛，萨比策领衔中场碾压约旦</li><li>朗尼克高位逼抢体系克制约旦低位防守，下半场必破门</li><li>约旦世界杯首秀零经验，大赛压力下防线终将崩溃</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_J_MD2_1">
+      <div class="match-meta">MD2 · 06-22 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇦🇷<br><b>Argentina</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇦🇹<br><b>Austria</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Argentina胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>梅西+劳塔罗双核压制，奥地利无力应对</li><li>阿根廷卫冕冠军大赛经验碾压，心理优势巨大</li><li>奥地利进攻端创造力不足，难破阿根廷防线</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_J_MD2_2">
+      <div class="match-meta">MD2 · 06-22 · Lincoln Financial Field</div>
+      <div class="teams">
+        <span class="team-name ">🇯🇴<br><b>Jordan</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇩🇿<br><b>Algeria</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Algeria胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>马赫雷兹+阿穆拉双核碾压约旦防线</li><li>约旦世界杯首秀，大赛经验严重不足</li><li>阿尔及利亚热身4-0大胜，状态火热</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_J_MD3_1">
+      <div class="match-meta">MD3 · 06-29 · Hard Rock Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇩🇿<br><b>Algeria</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇦🇹<br><b>Austria</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Algeria胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>阿尔及利亚近5场4胜1负，刚刚击败荷兰，状态火热</li><li>奥地利依赖高位逼抢，但阿尔及利亚防守稳固仅丢2球</li><li>马赫雷兹、本拉赫马等攻击线质量明显高于对手</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_J_MD3_2">
+      <div class="match-meta">MD3 · 06-29 · Mercedes-Benz Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇯🇴<br><b>Jordan</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇦🇷<br><b>Argentina</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Argentina胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>梅西+阿尔瓦雷斯锋线碾压级，约旦门将难挡</li><li>约旦首次世界杯，大赛经验严重不足</li><li>阿根廷卫冕冠军，小组赛不会放水</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 K 组</span>
+            <div class="group-chips"><span class="chip">🇵🇹 Portugal</span><span class="chip">🇨🇩 DR Congo</span><span class="chip">🇺🇿 Uzbekistan</span><span class="chip">🇨🇴 Colombia</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_K_MD1_1">
+      <div class="match-meta">MD1 · 06-17 · NRG Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇵🇹<br><b>Portugal</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇩<br><b>DR Congo</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Portugal胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>C罗+费尔南德斯双核领衔，攻击力碾压级</li><li>葡萄牙欧国联近况火热，小组赛状态巅峰</li><li>刚果金非洲资历浅，世界杯大赛经验严重不足</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_K_MD1_2">
+      <div class="match-meta">MD1 · 06-17 · Estadio Azteca</div>
+      <div class="teams">
+        <span class="team-name ">🇺🇿<br><b>Uzbekistan</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇨🇴<br><b>Colombia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Colombia胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>路易斯·迪亚斯领衔，利物浦翼锋单挑能力世界级</li><li>哥伦比亚2024美洲杯亚军，大赛经验碾压首次参赛的乌兹别克斯坦</li><li>乌兹别克斯坦世界杯首秀，面对南美劲旅防线将承受极大压力</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_K_MD2_1">
+      <div class="match-meta">MD2 · 06-23 · Gillette Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🇵🇹<br><b>Portugal</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇺🇿<br><b>Uzbekistan</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Portugal胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>C罗+费利克斯联袂，攻击线碾压级</li><li>乌兹别克首次世界杯，大赛经验严重不足</li><li>葡萄牙小组出线压力大，必全力以赴</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_K_MD2_2">
+      <div class="match-meta">MD2 · 06-23 · Estadio BBVA</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇴<br><b>Colombia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇨🇩<br><b>DR Congo</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Colombia胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>哈梅斯+路易斯迪亚斯双核碾压级差距</li><li>刚果缺乏顶级联赛攻击火力支撑</li><li>哥伦比亚南美预选赛积分前三状态稳</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_K_MD3_1">
+      <div class="match-meta">MD3 · 06-30 · MetLife Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇨🇴<br><b>Colombia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇵🇹<br><b>Portugal</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Portugal胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>葡萄牙费尔南多-桑托斯新生代阵容深度远超哥伦比亚，B费+拉菲尔-莱昂+贡萨洛-拉莫斯攻击线世界级</li><li>哥伦比亚MD1先战乌兹别克体力消耗更大，葡萄牙小组赛惯于后程发力保存状态</li><li>葡萄牙世界杯大赛基因强，2006/2022两届四强，哥伦比亚上届小组赛即出局压力更大</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_K_MD3_2">
+      <div class="match-meta">MD3 · 06-30 · Estadio BBVA</div>
+      <div class="teams">
+        <span class="team-name winner">🇨🇩<br><b>DR Congo</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇺🇿<br><b>Uzbekistan</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">DR Congo胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>刚果金身体对抗强，中场压制乌兹别克</li><li>乔治·姆本加等球星个人能力更强</li><li>乌兹别克首届世界杯经验严重不足</li></ul>
+          
+        </div>
+    </div></div>
+        </div>
+        <div class="group-wrap">
+          <div class="group-hd">
+            <span class="group-lbl">第 L 组</span>
+            <div class="group-chips"><span class="chip">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</span><span class="chip">🇭🇷 Croatia</span><span class="chip">🇬🇭 Ghana</span><span class="chip">🇵🇦 Panama</span></div>
+          </div>
+          <div class="group-matches">
+    <div class="match-card " id="WC2026_L_MD1_1">
+      <div class="match-meta">MD1 · 06-17 · BMO Field</div>
+      <div class="teams">
+        <span class="team-name winner">🇬🇭<br><b>Ghana</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇵🇦<br><b>Panama</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Ghana胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>库杜斯+阿尤兄弟技术碾压巴拿马</li><li>加纳世界杯经验远超对手(4届vs2届)</li><li>巴拿马进攻乏力仅靠防守反击</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_L_MD1_2">
+      <div class="match-meta">MD1 · 06-17 · AT&T Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🏴󠁧󠁢󠁥󠁮󠁧󠁿<br><b>England</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇭🇷<br><b>Croatia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">England胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>贝林厄姆+萨卡+凯恩三叉戟，攻击线纸面实力碾压克罗地亚</li><li>克罗地亚中场老龄化，莫德里奇40岁体能难撑90分钟高强度</li><li>英格兰欧洲杯连续进决赛，大赛心理已今非昔比</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_L_MD2_1">
+      <div class="match-meta">MD2 · 06-23 · Levi's Stadium</div>
+      <div class="teams">
+        <span class="team-name winner">🏴󠁧󠁢󠁥󠁮󠁧󠁿<br><b>England</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇬🇭<br><b>Ghana</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">England胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>贝林厄姆+萨卡双核碾压级别差距</li><li>英格兰近年大赛从未输给非洲球队</li><li>加纳防线漏洞大，难挡英格兰高位压迫</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_L_MD2_2">
+      <div class="match-meta">MD2 · 06-23 · Arrowhead Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇵🇦<br><b>Panama</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🇭🇷<br><b>Croatia</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Croatia胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>克罗地亚中场统治力强，莫德里奇+科瓦西奇控场，加上格瓦迪奥尔防线铁板一块</li><li>巴拿马世界杯历史0胜，2022年同组就0-1负于克罗地亚，老对手心理劣势明显</li><li>克罗地亚晋级压力可能更大（同组英格兰强），求胜心切，进攻效率将高于小组赛平均</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_L_MD3_1">
+      <div class="match-meta">MD3 · 06-30 · SoFi Stadium</div>
+      <div class="teams">
+        <span class="team-name ">🇵🇦<br><b>Panama</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right winner">🏴󠁧󠁢󠁥󠁮󠁧󠁿<br><b>England</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">England胜</span>
+            <span class="badge-conf high">高置信</span>
+          </div>
+          <ul class="reasons"><li>凯恩+贝林厄姆+萨卡三叉戟，个人能力碾压巴拿马全队</li><li>英格兰2018年世界杯曾6-1大胜巴拿马，历史优势极大</li><li>巴拿马小组赛大概率出局压力下孤注一掷，防线反而更易崩</li></ul>
+          
+        </div>
+    </div>
+    <div class="match-card " id="WC2026_L_MD3_2">
+      <div class="match-meta">MD3 · 06-30 · Lincoln Financial Field</div>
+      <div class="teams">
+        <span class="team-name winner">🇭🇷<br><b>Croatia</b></span>
+        <span class="vs">VS</span>
+        <span class="team-name right ">🇬🇭<br><b>Ghana</b></span>
+      </div>
+      
+      
+        <div class="pred-box">
+          <div class="pred-row">
+            <span class="pred-str">Croatia胜</span>
+            <span class="badge-conf mid">中置信</span><span class="badge-risk mid">△变数</span>
+          </div>
+          <ul class="reasons"><li>克罗地亚中场控制力强，莫德里奇经验无可替代</li><li>加纳防线脆弱，库杜斯单点难撑全局</li><li>克罗地亚淘汰赛基因深厚，关键战从不崩盘</li></ul>
+          
+        </div>
+    </div></div>
+        </div></div>
+  </div>
+
+  <div id="tab-schedule" class="tab-content">
+    <div class="sec-title">全部赛程 · 按日期</div>
+    <div class="schedule-list">
+        <div class="date-group">
+          <div class="date-hd">06月11日 周四</div>
+          <div class="date-matches">
+            <div class="sched-card finished" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇲🇽 Mexico</div>
+                  <div class="score-block finished"><span class="score">2-0</span></div>
+                  <div class="sched-team right">🇿🇦 South Africa</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD1</span>
+                  <span class="venue-tag">Estadio Azteca</span>
+                  <span class="status-tag finished">完赛</span>
+                </div>
+              </div>
+              
+            </div>
+            <div class="sched-card finished" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇰🇷 South Korea</div>
+                  <div class="score-block finished"><span class="score">2-1</span></div>
+                  <div class="sched-team right">🇨🇿 Czechia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD1</span>
+                  <span class="venue-tag">Estadio Akron</span>
+                  <span class="status-tag finished">完赛</span>
+                </div>
+              </div>
+              
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月12日 周五</div>
+          <div class="date-matches">
+            <div class="sched-card finished" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇦 Bosnia and Herzegovina</div>
+                  <div class="score-block finished"><span class="res-icon wrong">✗</span><span class="score">1-1</span></div>
+                  <div class="sched-team right">🇨🇦 Canada</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD1</span>
+                  <span class="venue-tag">BMO Field</span>
+                  <span class="status-tag finished">完赛</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>主场东道主气势如虹，主场优势碾压</li><li>戴维斯速度爆炸，防线无力应对</li><li>波黑老龄化严重，体能撑不住90分钟</li></ul></div>
+            </div>
+            <div class="sched-card finished" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇾 Paraguay</div>
+                  <div class="score-block finished"><span class="res-icon correct">✓</span><span class="score">4-1</span></div>
+                  <div class="sched-team right">🇺🇸 United States</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD1</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag finished">完赛</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>主场之利+普利西奇领衔，进攻火力全开</li><li>美国高位压迫打乱巴拉圭节奏，4球碾压</li><li>世界杯首战主队士气爆棚，巴拉圭无力抵挡</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月13日 周六</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇶🇦 Qatar</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Switzerland胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇭 Switzerland</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD1</span>
+                  <span class="venue-tag">Levi's Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>瑞士全欧洲顶级联赛阵容，实力碾压</li><li>卡塔尔2022惨败，大赛经验严重不足</li><li>沙奇里+扎卡中场控制，瑞士压制全场</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇭🇹 Haiti</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Scotland胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD1</span>
+                  <span class="venue-tag">Gillette Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>苏格兰英超球星云集，整体实力碾压级差距</li><li>海地首次世界杯，大赛经验严重不足</li><li>苏格兰背水一战求出线，动力与执行力更强</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇷 Brazil</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Brazil胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 </div>
+                </div>
+                  <div class="sched-team right">🇲🇦 Morocco</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD1</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>维尼修斯边路爆破能力世界顶级，摩洛哥需双人包夹，易给巴西中路空档。</li><li>巴西中场卡塞米罗+帕奎塔控制力强于摩洛哥状态下滑的阿姆拉巴特，可压制反击出球点。</li><li>摩洛哥边卫马兹拉维缺阵，巴西可重点冲击其替补防线肋部。</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇦🇺 Australia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Turkiye胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇹🇷 Turkiye</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD1</span>
+                  <span class="venue-tag">BC Place</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>居勒+恰尔汗奥卢中场碾压澳洲</li><li>土耳其欧洲杯八强状态正盛</li><li>澳洲进攻创造力严重不足</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月14日 周日</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇮 Ivory Coast</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">平局</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇪🇨 Ecuador</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD1</span>
+                  <span class="venue-tag">Lincoln Financial Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>科特迪瓦锋线星光闪耀，阿丁拉速度爆炸，阿勒尔身体对抗强</li><li>厄瓜多尔凯塞多控制中场，战术纪律性强，世界杯首战DNA出色</li><li>双方实力相近，科特迪瓦世界杯小组赛三届均出局，心理压力大</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇩🇪 Germany</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Germany胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇼 Curacao</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD1</span>
+                  <span class="venue-tag">NRG Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>穆西亚拉+维尔茨双核碾压，技术断层</li><li>德国4冠王基因，库拉索无大赛经验</li><li>德国主场式氛围，开门红动力极强</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇱 Netherlands</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Netherlands胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇯🇵 Japan</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD1</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>荷兰整体实力更强，加克波+范戴克领衔</li><li>日本擅长冷门但欧洲强队克制其打法</li><li>荷兰世界杯大赛经验更丰富更稳</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇸🇪 Sweden</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Sweden胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇹🇳 Tunisia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD1</span>
+                  <span class="venue-tag">Estadio BBVA</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>瑞典欧洲劲旅，综合实力碾压突尼斯</li><li>久约雷斯+库鲁塞夫斯基锋线火力凶猛</li><li>突尼斯防线脆弱，缺乏对抗顶级欧洲队经验</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月15日 周一</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇮🇷 Iran</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Iran胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇳🇿 New Zealand</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD1</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>伊朗FIFA排名约20+，亚洲顶级强队，欧洲联赛球星云集</li><li>新西兰大洋洲鱼腩，世界杯经验极度匮乏</li><li>塔雷米领衔攻线，技术与体能双重碾压对手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇪 Belgium</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Belgium胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇪🇬 Egypt</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD1</span>
+                  <span class="venue-tag">Lumen Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>比利时De Bruyne+Lukaku+Doku星光碾压，热身5-0大胜突尼斯</li><li>埃及全靠萨拉赫，一旦被盯防整队进攻哑火</li><li>比利时2018世界杯季军，大赛经验远超埃及</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇸🇦 Saudi Arabia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Uruguay胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇺🇾 Uruguay</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD1</span>
+                  <span class="venue-tag">Hard Rock Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>努涅斯+巴尔韦德欧洲顶级双核碾压沙特中场</li><li>比耶尔萨战术体系纪律严明，沙特难以破解</li><li>乌拉圭世界杯基因深厚，关键时刻从不掉链子</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇪🇸 Spain</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Spain胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇻 Cape Verde</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD1</span>
+                  <span class="venue-tag">Mercedes-Benz Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>西班牙欧洲冠军，亚马尔等星将碾压级差距</li><li>佛得角首届世界杯，缺乏大赛经验难抗压</li><li>西班牙控球压迫战术克制低位防守反击</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月16日 周二</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇫🇷 France</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">France胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇸🇳 Senegal</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD1</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>姆巴佩领衔，攻击线碾压级差距</li><li>法国卫冕亚军，大赛基因顶级</li><li>塞内加尔中场创造力难抗法式压迫</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇮🇶 Iraq</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Norway胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇳🇴 Norway</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD1</span>
+                  <span class="venue-tag">Gillette Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>哈兰德世界杯首秀，一人撑起挪威进攻上限</li><li>伊拉克防线严密但质量差距难以弥补</li><li>挪威国家队大赛发挥历来低于预期，险胜概率高</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇦🇷 Argentina</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Argentina胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇩🇿 Algeria</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD1</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>卫冕冠军梅西领衔，全队实力碾压级差距</li><li>阿尔及利亚非洲预选赛状态起伏，防线不稳</li><li>阿根廷世界杯首战必全力以赴，历史大赛从不失手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇦🇹 Austria</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Austria胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇯🇴 Jordan</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD1</span>
+                  <span class="venue-tag">Levi's Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>奥地利全员德甲/顶级联赛，萨比策领衔中场碾压约旦</li><li>朗尼克高位逼抢体系克制约旦低位防守，下半场必破门</li><li>约旦世界杯首秀零经验，大赛压力下防线终将崩溃</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月17日 周三</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇹 Portugal</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Portugal胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇩 DR Congo</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD1</span>
+                  <span class="venue-tag">NRG Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>C罗+费尔南德斯双核领衔，攻击力碾压级</li><li>葡萄牙欧国联近况火热，小组赛状态巅峰</li><li>刚果金非洲资历浅，世界杯大赛经验严重不足</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇺🇿 Uzbekistan</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Colombia胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇴 Colombia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD1</span>
+                  <span class="venue-tag">Estadio Azteca</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>路易斯·迪亚斯领衔，利物浦翼锋单挑能力世界级</li><li>哥伦比亚2024美洲杯亚军，大赛经验碾压首次参赛的乌兹别克斯坦</li><li>乌兹别克斯坦世界杯首秀，面对南美劲旅防线将承受极大压力</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇬🇭 Ghana</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Ghana胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇵🇦 Panama</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD1</span>
+                  <span class="venue-tag">BMO Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>库杜斯+阿尤兄弟技术碾压巴拿马</li><li>加纳世界杯经验远超对手(4届vs2届)</li><li>巴拿马进攻乏力仅靠防守反击</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">England胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇭🇷 Croatia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD1</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>贝林厄姆+萨卡+凯恩三叉戟，攻击线纸面实力碾压克罗地亚</li><li>克罗地亚中场老龄化，莫德里奇40岁体能难撑90分钟高强度</li><li>英格兰欧洲杯连续进决赛，大赛心理已今非昔比</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月18日 周四</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇿 Czechia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Czechia胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇿🇦 South Africa</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD2</span>
+                  <span class="venue-tag">Mercedes-Benz Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>捷克整体实力更强，沙利克等欧洲豪门球员质量碾压</li><li>南非缺乏大赛经验，16年未踢世界杯心理压力大</li><li>捷克中场苏切克控场稳，南非高位压迫难持续90分钟</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇲🇽 Mexico</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Mexico胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇰🇷 South Korea</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD2</span>
+                  <span class="venue-tag">Estadio Akron</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>主场之利+球迷加持，绿浪压制对手</li><li>桑切斯/洛萨诺冲击力强于韩国边路</li><li>韩国失去孙兴慜状态下攻击线大打折扣</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇭 Switzerland</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Switzerland胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇧🇦 Bosnia and Herzegovina</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD2</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>瑞士中场硬核，沙奇里+扎卡组织有序</li><li>波黑锋线依赖老将，体系稳定性差</li><li>瑞士大赛经验碾压，抗压能力强</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇦 Canada</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Canada胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇶🇦 Qatar</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD2</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>戴维斯+大卫双核，欧洲顶级联赛实力碾压</li><li>主场作战+高位逼抢，卡塔尔体能难撑全场</li><li>卡塔尔世界杯大赛基因差，2022主场零分出局</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月19日 周五</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇷 Brazil</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Brazil胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇭🇹 Haiti</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD2</span>
+                  <span class="venue-tag">Levi's Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>维尼修斯+罗德里戈速度与技术碾压</li><li>海地首届世界杯，大赛经验严重不足</li><li>巴西5冠王基因，小组赛必全力出击</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Morocco胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇲🇦 Morocco</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD2</span>
+                  <span class="venue-tag">Lincoln Financial Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>摩洛哥2022年杀入四强，大赛经验碾压苏格兰</li><li>哈基米+齐耶赫攻防两端质量远超对手</li><li>苏格兰28年首进世界杯，心理压力巨大</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇹🇷 Turkiye</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Turkiye胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇵🇾 Paraguay</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD2</span>
+                  <span class="venue-tag">Gillette Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>土耳其阿尔达·居勒+恰尔汗奥卢星光碾压</li><li>巴拉圭南美资格赛苦苦挣扎险些出局</li><li>土耳其EURO2024八强证明大赛抗压能力</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇺🇸 United States</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">United States胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇦🇺 Australia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD2</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>主场东道主气势如虹，普利西奇领衔欧洲豪门班底碾压澳洲</li><li>澳大利亚缺乏欧洲顶级联赛核心，中场控制力明显落差</li><li>小组赛生死战美国主场球迷加持，心理优势压倒一切</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月20日 周六</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇩🇪 Germany</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Germany胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 △</div>
+                </div>
+                  <div class="sched-team right">🇨🇮 Ivory Coast</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD2</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>维尔茨+穆西亚拉双核碾压级，科特迪瓦中场根本接不住</li><li>纳格尔斯曼4-2-3-1压迫体系vs科特迪瓦反击打法，德国主动权明显</li><li>德国背负两届小组出局耻辱，必死战心态+整体实力双重碾压</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇪🇨 Ecuador</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Ecuador胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇼 Curacao</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD2</span>
+                  <span class="venue-tag">Hard Rock Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>厄瓜多尔三届世界杯经验，科雷亚领衔攻线成熟</li><li>库拉索首次参赛，大赛经验与整体实力差距明显</li><li>南美球队身体对抗与战术纪律碾压加勒比对手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇱 Netherlands</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Netherlands胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇸🇪 Sweden</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD2</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>荷兰整体实力更强，范迪克领衔后防稳固，加克波欧洲杯+世界杯均有大赛进球基因</li><li>瑞典居约克雷斯+伊萨克双前锋组合极具威胁，但荷兰中场控制力更强压制反击</li><li>荷兰近年大赛持续走远（2022世界杯八强、2024欧洲杯四强），大赛经验占优</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇹🇳 Tunisia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Japan胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇯🇵 Japan</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD2</span>
+                  <span class="venue-tag">BC Place</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>三笘薰+久保建英双翼撕裂突尼斯边路防线</li><li>日本高位压迫战术克制突尼斯慢节奏打法</li><li>突尼斯进攻端缺乏世界级核心难破日本铁闸</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月21日 周日</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇪 Belgium</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Belgium胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇮🇷 Iran</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD2</span>
+                  <span class="venue-tag">NRG Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>比利时新黄金一代：多库、特罗萨尔、卢卡库冲击力强</li><li>伊朗防守铁桶阵难挡欧洲顶级联赛球员技术碾压</li><li>比利时急需积分出线，主动进攻动力充足</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇿 New Zealand</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Egypt胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇪🇬 Egypt</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD2</span>
+                  <span class="venue-tag">Lumen Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>萨拉赫领衔，个人能力碾压对手</li><li>埃及非洲赛区磨练，大赛经验更丰</li><li>新西兰大洋洲鱼塘出身，首届世界杯压力山大</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇺🇾 Uruguay</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Uruguay胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇻 Cape Verde</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD2</span>
+                  <span class="venue-tag">Mercedes-Benz Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>努涅斯+比达尔锋线火力碾压非洲黑马</li><li>乌拉圭南美资格赛磨砺，大赛经验远超对手</li><li>佛得角首次世界杯，心理与强度适应期明显</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇪🇸 Spain</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Spain胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇸🇦 Saudi Arabia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD2</span>
+                  <span class="venue-tag">Hard Rock Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>西班牙控球压制，亚马尔速度撕裂防线</li><li>沙特身体对抗强但技术差距明显</li><li>欧洲冠军底气足，小组赛不会手软</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月22日 周一</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇴 Norway</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Norway胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇸🇳 Senegal</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD2</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>哈兰德状态爆棚，预选赛16球，是本届杯最具统治力的中锋</li><li>塞内加尔防线面对高压逼抢体系易出失误，马内年届33体力存疑</li><li>挪威时隔28年重返世界杯，全队饥渴感极强，斗志碾压</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇫🇷 France</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">France胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇮🇶 Iraq</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD2</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>法国豪华阵容碾压级，姆巴佩+格列兹曼致命</li><li>伊拉克亚洲杯表现平庸，防线漏洞明显</li><li>法国大赛经验丰富，小组赛不会失手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇦🇷 Argentina</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Argentina胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇦🇹 Austria</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD2</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>梅西+劳塔罗双核压制，奥地利无力应对</li><li>阿根廷卫冕冠军大赛经验碾压，心理优势巨大</li><li>奥地利进攻端创造力不足，难破阿根廷防线</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇯🇴 Jordan</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Algeria胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇩🇿 Algeria</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD2</span>
+                  <span class="venue-tag">Lincoln Financial Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>马赫雷兹+阿穆拉双核碾压约旦防线</li><li>约旦世界杯首秀，大赛经验严重不足</li><li>阿尔及利亚热身4-0大胜，状态火热</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月23日 周二</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇹 Portugal</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Portugal胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇺🇿 Uzbekistan</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD2</span>
+                  <span class="venue-tag">Gillette Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>C罗+费利克斯联袂，攻击线碾压级</li><li>乌兹别克首次世界杯，大赛经验严重不足</li><li>葡萄牙小组出线压力大，必全力以赴</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇴 Colombia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Colombia胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇩 DR Congo</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD2</span>
+                  <span class="venue-tag">Estadio BBVA</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>哈梅斯+路易斯迪亚斯双核碾压级差距</li><li>刚果缺乏顶级联赛攻击火力支撑</li><li>哥伦比亚南美预选赛积分前三状态稳</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">England胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇬🇭 Ghana</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD2</span>
+                  <span class="venue-tag">Levi's Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>贝林厄姆+萨卡双核碾压级别差距</li><li>英格兰近年大赛从未输给非洲球队</li><li>加纳防线漏洞大，难挡英格兰高位压迫</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇦 Panama</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Croatia胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇭🇷 Croatia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD2</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>克罗地亚中场统治力强，莫德里奇+科瓦西奇控场，加上格瓦迪奥尔防线铁板一块</li><li>巴拿马世界杯历史0胜，2022年同组就0-1负于克罗地亚，老对手心理劣势明显</li><li>克罗地亚晋级压力可能更大（同组英格兰强），求胜心切，进攻效率将高于小组赛平均</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月25日 周四</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇭 Switzerland</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Switzerland胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇨🇦 Canada</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD3</span>
+                  <span class="venue-tag">BC Place</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>瑞士世界杯经验碾压，关键时刻不慌</li><li>沙奇里+扎卡中场控制，压制加拿大高位逼抢</li><li>戴维斯一人难撑，大卫缺乏身边支援</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇧🇦 Bosnia and Herzegovina</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Bosnia and Herzegovina胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 </div>
+                </div>
+                  <div class="sched-team right">🇶🇦 Qatar</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第B组 MD3</span>
+                  <span class="venue-tag">NRG Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>波黑欧洲联赛球员为主，整体实力碾压卡塔尔国内联赛球员</li><li>卡塔尔阵容老化严重，热身赛6连不胜，进攻过度依赖阿菲夫一人</li><li>波黑首届世界杯2014年打进16强，大赛经验与求胜欲均优于对手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Brazil胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 △</div>
+                </div>
+                  <div class="sched-team right">🇧🇷 Brazil</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD3</span>
+                  <span class="venue-tag">Lumen Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>巴西维尼修斯领衔，个人能力碾压苏格兰全队</li><li>苏格兰历史上从未在正式赛事击败巴西</li><li>即便巴西轮换，替补阵容仍强于苏格兰主力</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇲🇦 Morocco</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Morocco胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇭🇹 Haiti</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第C组 MD3</span>
+                  <span class="venue-tag">Mercedes-Benz Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>摩洛哥世界排名前15，海地差距悬殊</li><li>哈基米+齐耶赫攻守双核，海地无力应对</li><li>非洲雄狮小组赛必须赢，士气与压力并存</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月26日 周五</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇿 Czechia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Mexico胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇲🇽 Mexico</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD3</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>墨西哥主场优势+球迷压制力爆棚</li><li>捷克缺乏世界杯大赛稳定输出能力</li><li>墨西哥生死战历史表现顽强</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇿🇦 South Africa</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">South Korea胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇰🇷 South Korea</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第A组 MD3</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>손흥민 이강인 유럽파 개인기가 압도적 우위</li><li>남아공 월드컵 경험 전무, 한국은 10회 연속 본선</li><li>골키퍼 윌리엄스 선방쇼 변수, 무승부 가능성 잔존</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇹🇷 Turkiye</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">United States胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇺🇸 United States</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD3</span>
+                  <span class="venue-tag">Hard Rock Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>主场作战+球迷加持，普利西奇状态火热</li><li>土耳其防线存在漏洞，美国反击犀利</li><li>D组积分压力下美国求胜意志更强</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇾 Paraguay</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Paraguay胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇦🇺 Australia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第D组 MD3</span>
+                  <span class="venue-tag">Lincoln Financial Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>阿尔米隆中场统治力碾压澳洲</li><li>巴拉圭南美世界杯DNA更硬核</li><li>澳洲进攻创造力不足难破密防</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月27日 周六</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇼 Curacao</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Ivory Coast胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇨🇮 Ivory Coast</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD3</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>科特迪瓦星味十足，扎哈领衔撕裂防线</li><li>库拉索首届世界杯，大赛压力难承受</li><li>象牙海岸非洲强队底蕴，实力断层明显</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇪🇨 Ecuador</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Germany胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇩🇪 Germany</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第E组 MD3</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>德国穆西亚拉维尔茨双核碾压级别</li><li>厄瓜多尔无力破解高位逼抢体系</li><li>德国欧洲杯冠军状态巅峰续航</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇯🇵 Japan</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Japan胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇸🇪 Sweden</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD3</span>
+                  <span class="venue-tag">Levi's Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>三笘薫+久保建英双核撕裂瑞典边路防线</li><li>森保战术压迫体系克制北欧长球流</li><li>日本世界杯淘汰赛基因强于瑞典近年</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇹🇳 Tunisia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Netherlands胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇳🇱 Netherlands</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第F组 MD3</span>
+                  <span class="venue-tag">Estadio Akron</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>荷兰拥有范戴克、德容、科普梅纳斯等顶级球星，整体实力碾压突尼斯</li><li>突尼斯防守虽顽强，但进攻乏力，难以威胁荷兰高质量后防</li><li>荷兰世界杯基因深厚，三次决赛经验，大赛心理优势明显</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月28日 周日</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇪🇬 Egypt</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Egypt胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇮🇷 Iran</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD3</span>
+                  <span class="venue-tag">Gillette Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>萨拉赫+马尔穆什双核，攻击力碾压伊朗</li><li>埃及历史上从未在世界杯赢过伊朗，但本届阵容质量最强</li><li>伊朗防线老化，禁区内抗压弱，萨拉赫定点破门概率高</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇿 New Zealand</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Belgium胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇧🇪 Belgium</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第G组 MD3</span>
+                  <span class="venue-tag">Arrowhead Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>比利时黄金一代虽老，De Bruyne+Trossard仍是顶级创造力</li><li>新西兰防线面对欧洲顶级技战术体系几乎无解</li><li>比利时小组出线压力驱动，必然全力以赴</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇻 Cape Verde</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Cape Verde胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇸🇦 Saudi Arabia</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD3</span>
+                  <span class="venue-tag">BC Place</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>欧洲旅欧球员为班底，整体技术碾压沙特</li><li>AFCON淘汰赛历练，逆境抗压能力更强</li><li>沙特大赛必胜压力下易崩，老毛病难改</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇺🇾 Uruguay</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Spain胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇪🇸 Spain</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第H组 MD3</span>
+                  <span class="venue-tag">AT&T Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>西班牙欧洲杯卫冕冠军，亚马尔+威廉斯已复训，世界杯实力榜排名第一</li><li>乌拉圭努涅斯+巴尔韦德威胁真实，比拉尔多战术可打乱西班牙节奏</li><li>小组赛第三轮若两队均已晋级，西班牙可能轮换主力，胜算有所下降</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月29日 周一</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇳🇴 Norway</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">France胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 △</div>
+                </div>
+                  <div class="sched-team right">🇫🇷 France</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD3</span>
+                  <span class="venue-tag">NRG Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>法国姆巴佩领衔，攻击线碾压级优势</li><li>挪威缺乏世界杯大赛经验，防线承压</li><li>法国小组赛积分压力下不会保守</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇸🇳 Senegal</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Senegal胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇮🇶 Iraq</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第I组 MD3</span>
+                  <span class="venue-tag">Lumen Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>马内领衔，非洲冠军实力碾压伊拉克</li><li>伊拉克40年未踢世界杯，大赛经验严重不足</li><li>小组赛末轮塞内加尔求胜动力强，进攻火力难挡</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇩🇿 Algeria</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Algeria胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇦🇹 Austria</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD3</span>
+                  <span class="venue-tag">Hard Rock Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>阿尔及利亚近5场4胜1负，刚刚击败荷兰，状态火热</li><li>奥地利依赖高位逼抢，但阿尔及利亚防守稳固仅丢2球</li><li>马赫雷兹、本拉赫马等攻击线质量明显高于对手</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇯🇴 Jordan</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Argentina胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🇦🇷 Argentina</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第J组 MD3</span>
+                  <span class="venue-tag">Mercedes-Benz Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>梅西+阿尔瓦雷斯锋线碾压级，约旦门将难挡</li><li>约旦首次世界杯，大赛经验严重不足</li><li>阿根廷卫冕冠军，小组赛不会放水</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">06月30日 周二</div>
+          <div class="date-matches">
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇴 Colombia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Portugal胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇵🇹 Portugal</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD3</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>葡萄牙费尔南多-桑托斯新生代阵容深度远超哥伦比亚，B费+拉菲尔-莱昂+贡萨洛-拉莫斯攻击线世界级</li><li>哥伦比亚MD1先战乌兹别克体力消耗更大，葡萄牙小组赛惯于后程发力保存状态</li><li>葡萄牙世界杯大赛基因强，2006/2022两届四强，哥伦比亚上届小组赛即出局压力更大</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇨🇩 DR Congo</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">DR Congo胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇺🇿 Uzbekistan</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第K组 MD3</span>
+                  <span class="venue-tag">Estadio BBVA</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>刚果金身体对抗强，中场压制乌兹别克</li><li>乔治·姆本加等球星个人能力更强</li><li>乌兹别克首届世界杯经验严重不足</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇵🇦 Panama</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">England胜</div>
+                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                </div>
+                  <div class="sched-team right">🏴󠁧󠁢󠁥󠁮󠁧󠁿 England</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD3</span>
+                  <span class="venue-tag">SoFi Stadium</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>凯恩+贝林厄姆+萨卡三叉戟，个人能力碾压巴拿马全队</li><li>英格兰2018年世界杯曾6-1大胜巴拿马，历史优势极大</li><li>巴拿马小组赛大概率出局压力下孤注一掷，防线反而更易崩</li></ul></div>
+            </div>
+            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">🇭🇷 Croatia</div>
+                  <div class="score-block predicted">
+                  <div class="pred-label">Croatia胜</div>
+                  <div class="pred-meta"><span class="conf-dot mid"></span>中 △</div>
+                </div>
+                  <div class="sched-team right">🇬🇭 Ghana</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">第L组 MD3</span>
+                  <span class="venue-tag">Lincoln Financial Field</span>
+                  <span class="status-tag predicted">已预测</span>
+                </div>
+              </div>
+              <div class="reasons-detail"><ul><li>克罗地亚中场控制力强，莫德里奇经验无可替代</li><li>加纳防线脆弱，库杜斯单点难撑全局</li><li>克罗地亚淘汰赛基因深厚，关键战从不崩盘</li></ul></div>
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">07月04日 周六</div>
+          <div class="date-matches">
+            <div class="sched-card upcoming" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">⚽ TBD</div>
+                  <div class="score-block upcoming"><span class="vs-dash">-</span></div>
+                  <div class="sched-team right">⚽ TBD</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">32强</span>
+                  <span class="venue-tag">TBD</span>
+                  <span class="status-tag upcoming">待赛</span>
+                </div>
+              </div>
+              
+            </div></div>
+        </div>
+        <div class="date-group">
+          <div class="date-hd">07月19日 周日</div>
+          <div class="date-matches">
+            <div class="sched-card upcoming" onclick="this.classList.toggle('expanded')">
+              <div class="sched-row">
+                <div class="sched-teams">
+                  <div class="sched-team">⚽ TBD</div>
+                  <div class="score-block upcoming"><span class="vs-dash">-</span></div>
+                  <div class="sched-team right">⚽ TBD</div>
+                </div>
+                <div class="sched-meta">
+                  <span class="stage-tag">决赛</span>
+                  <span class="venue-tag">MetLife Stadium</span>
+                  <span class="status-tag upcoming">待赛</span>
+                </div>
+              </div>
+              
+            </div></div>
+        </div></div>
+  </div>
+</main>
+
+<footer>
+  数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析 &nbsp;·&nbsp;
+  最后更新：2026-06-13 21:04
+</footer>
+
+<script>
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'))
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
+  document.getElementById('tab-' + name).classList.add('active')
+  btn.classList.add('active')
+}
+</script>
+</body>
+</html>
