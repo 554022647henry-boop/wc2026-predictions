@@ -135,8 +135,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub">美国 · 加拿大 · 墨西哥 &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>70</b><small>已预测</small></div>
-      <div class="stat"><b>4</b><small>已完赛</small></div>
-      <div class="stat hi"><b>50.0%</b><small>预测准确率</small></div>
+      <div class="stat"><b>5</b><small>已完赛</small></div>
+      <div class="stat hi"><b>33.3%</b><small>预测准确率</small></div>
       <div class="stat"><b>0</b><small>高爆冷风险</small></div>
     </div>
   </div>
@@ -274,14 +274,14 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_B_MD1_2">
+    <div class="match-card incorrect" id="WC2026_B_MD1_2">
       <div class="match-meta">MD1 · 06-13 · Levi's Stadium</div>
       <div class="teams">
         <span class="team-name ">🇶🇦<br><b>Qatar</b></span>
         <span class="vs">VS</span>
         <span class="team-name right winner">🇨🇭<br><b>Switzerland</b></span>
       </div>
-      
+      <div class="actual incorrect">✗ 实际: 1-1</div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -1591,20 +1591,17 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <div class="date-group">
           <div class="date-hd">06月13日 周六</div>
           <div class="date-matches">
-            <div class="sched-card predicted" onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇶🇦 Qatar</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label">Switzerland胜</div>
-                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
-                </div>
+                  <div class="score-block finished"><span class="res-icon wrong">✗</span><span class="score">1-1</span></div>
                   <div class="sched-team right">🇨🇭 Switzerland</div>
                 </div>
                 <div class="sched-meta">
                   <span class="stage-tag">第B组 MD1</span>
                   <span class="venue-tag">Levi's Stadium</span>
-                  <span class="status-tag predicted">已预测</span>
+                  <span class="status-tag finished">完赛</span>
                 </div>
               </div>
               <div class="reasons-detail"><ul><li>瑞士全欧洲顶级联赛阵容，实力碾压</li><li>卡塔尔2022惨败，大赛经验严重不足</li><li>沙奇里+扎卡中场控制，瑞士压制全场</li></ul></div>
@@ -2923,7 +2920,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析 &nbsp;·&nbsp;
-  最后更新：2026-06-14 05:04
+  最后更新：2026-06-14 05:34
 </footer>
 
 <script>
