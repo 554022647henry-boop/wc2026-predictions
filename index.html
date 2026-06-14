@@ -178,8 +178,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub"><span class="zh">美国 · 加拿大 · 墨西哥</span><span class="en">USA · Canada · Mexico</span> &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>70</b><small><span class="zh">已预测</span><span class="en">Predicted</span></small></div>
-      <div class="stat"><b>9</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
-      <div class="stat hi"><b>42.9%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
+      <div class="stat"><b>10</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
+      <div class="stat hi"><b>37.5%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
       <div class="stat"><b>0</b><small><span class="zh">高爆冷风险</span><span class="en">Upset Risk</span></small></div>
     </div>
   </div>
@@ -894,7 +894,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
             <div class="group-chips"><span class="chip">🇳🇱 Netherlands</span><span class="chip">🇯🇵 Japan</span><span class="chip">🇸🇪 Sweden</span><span class="chip">🇹🇳 Tunisia</span></div>
           </div>
           <div class="group-matches">
-    <div class="match-card " id="WC2026_F_MD1_1">
+    <div class="match-card incorrect" id="WC2026_F_MD1_1">
       <div class="match-meta">MD1 · 06-15 04:00 北京时间 · AT&T Stadium</div>
       <div class="teams">
         <span class="team-name winner">🇳🇱<br><b>Netherlands</b></span>
@@ -902,7 +902,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇯🇵<br><b>Japan</b></span>
       </div>
       
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">2-2</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">平局</span><span class="en">Draw</span></span>
+          </div>
+        </div>
       
+            <div class="verdict incorrect">
+              <span class="verdict-pred"><span class="zh">预测：Netherlands胜（低置信）</span><span class="en">Pred: Netherlands Win (Low)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：平局 2-2</span><span class="en">Result: Draw 2-2</span></span>
+              <span class="verdict-badge"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -1977,13 +1990,13 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                     </div>
               <div class="reasons-detail"><ul><li><span class="zh">德国队拥有穆西亚拉这样的世界级中场，他的盘带和传球能轻易撕开库拉索的防线，就像切蛋糕一样简单</span><span class="en">德国队拥有穆西亚拉这样的世界级中场，他的盘带和传球能轻易撕开库拉索的防线，就像切蛋糕一样简单</span></li><li><span class="zh">库拉索最近刚输给海地和洪都拉斯，防守漏洞百出，而德国队前场有菲尔克鲁格这样的强力中锋，头球和抢点能力会让对方后卫疲于奔命</span><span class="en">库拉索最近刚输给海地和洪都拉斯，防守漏洞百出，而德国队前场有菲尔克鲁格这样的强力中锋，头球和抢点能力会让对方后卫疲于奔命</span></li><li><span class="zh">德国队过去两场热身赛面对意大利和荷兰都表现出色，整体配合流畅，而库拉索缺乏大赛经验，一开场就可能被德国的高位逼抢打懵</span><span class="en">德国队过去两场热身赛面对意大利和荷兰都表现出色，整体配合流畅，而库拉索缺乏大赛经验，一开场就可能被德国的高位逼抢打懵</span></li></ul></div>
             </div>
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished incorrect" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇳🇱 Netherlands</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Netherlands胜</span><span class="en">Netherlands Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot low"></span><span class="zh">低</span><span class="en">Low</span> </div>
+                  <div class="score-block finished incorrect">
+                  <span class="sched-result-icon">✗</span>
+                  <span class="score">2-2</span>
                 </div>
                   <div class="sched-team right">🇯🇵 Japan</div>
                 </div>
@@ -1991,10 +2004,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">04:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第F组 MD1</span><span class="en">Group F MD1</span></span>
                   <span class="venue-tag">AT&T Stadium</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict incorrect">
+                      <span><span class="zh">预测：Netherlands胜（低）</span><span class="en">Pred: Netherlands Win (Low)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：平局 2-2</span><span class="en">Result: Draw 2-2</span></span>
+                      <span class="sv-badge incorrect"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">荷兰4-3-3控球体系可能压制日本5-4-1低位防守，中场优势是关键。</span><span class="en">荷兰4-3-3控球体系可能压制日本5-4-1低位防守，中场优势是关键。</span></li><li><span class="zh">日本近两届小组赛击败德国、西班牙，心理抗压能力已获实战验证。</span><span class="en">日本近两届小组赛击败德国、西班牙，心理抗压能力已获实战验证。</span></li><li><span class="zh">双方阵容信息缺失，日本更依赖体系纪律性，临场调整可能更快。</span><span class="en">双方阵容信息缺失，日本更依赖体系纪律性，临场调整可能更快。</span></li></ul></div>
             </div>
             <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
@@ -3341,7 +3360,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   <span class="zh">数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析</span><span class="en">Data: FIFA · ESPN API · DeepSeek AI</span> &nbsp;·&nbsp;
-  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-15 05:34
+  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-15 06:04
 </footer>
 
 <script>
