@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_C_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:50:15.493990",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 6.75,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 6.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Morocco胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Morocco胜",
+    "confidence": "高",
+    "reasons": [
+      "摩洛哥拥有阿什拉夫·哈基米和齐耶赫等五大联赛核心，上届世界杯四强经验丰富，而海地首次参赛且球员多来自低级别联赛，对抗节奏完全不在一个档次。",
+      "摩洛哥首战1-1逼平巴西，展现了铜墙铁壁般的防守和犀利反击，而海地首战0-1不敌苏格兰，进攻端毫无威胁，面对摩洛哥防线更难破门。",
+      "赔率显示摩洛哥胜赔仅-330（约77%胜率），模型概率更高达68%，实力差距明显，海地很难制造冷门。"
+    ],
+    "key_risk": "摩洛哥若轻敌或轮换阵容，可能进攻效率下降，但海地缺乏爆冷所需的战术纪律和球星闪光，风险极低。"
+  },
+  "actual_result": null
+}

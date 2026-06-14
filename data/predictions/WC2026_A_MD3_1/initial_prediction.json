@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_A_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:56:02.847044",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -3.63,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.5,
+        "b_score": 6.5,
+        "delta": -3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Mexico胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "高",
+    "reasons": [
+      "墨西哥拥有埃德松·阿尔瓦雷斯坐镇中场，能有效切断捷克由绍切克发起的组织进攻，迫使他们频繁失误",
+      "捷克核心射手希克伤情不明，锋线威胁大打折扣，而墨西哥近期连克强敌（如哥伦比亚），反击犀利且经验丰富",
+      "从战术对位看，墨西哥边锋群速度优势明显，能针对捷克两翼防守薄弱环节制造杀机，这是捷克此前输给瑞士的关键漏洞"
+    ],
+    "key_risk": "捷克若摆出铁桶阵死守，并靠绍切克和曹法尔的定位球偷袭得手，可能逼平墨西哥，但整体实力差距过大，爆冷概率低"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_C_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:14:11.147135",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -3.67,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Morocco胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Morocco胜",
+    "confidence": "高",
+    "reasons": [
+      "摩洛哥右路的阿什拉夫·哈基米将用速度强吃苏格兰三中卫体系的边翼卫，苏格兰的边路防守很难跟上他的冲刺和传中。",
+      "苏格兰核心麦克托米奈需要持续回防，但摩洛哥中场阿姆拉巴特能切断他的传球线路，让苏格兰的反击陷入孤立无援。",
+      "苏格兰首轮爆冷胜海地，但面对真正强队时后防松散——摩洛哥刚逼平巴西，齐耶赫的穿插跑动会撕开苏格兰的低位防线。"
+    ],
+    "key_risk": "苏格兰凭借顽强的定位球战术（如麦金后插上头球）偷得一分，迫使摩洛哥陷入急躁围攻而失误。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:35:22.791929",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 7.67,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 2.0,
+        "delta": 7.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 9.0,
+        "b_score": 3.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 A_WIN P(A)=68%/P(D)=18%/P(B)=14% vs 市场 P(A)=91%/P(D)=9%/P(B)=0%",
+    "judge_reasoning": "France胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "高",
+    "reasons": [
+      "姆巴佩和登贝莱的边路速度将是伊拉克密集防线的噩梦，两人在小组赛阶段往往利用个人能力撕开缺口，伊拉克的双后腰很难跟住他们的变向突破。",
+      "格列兹曼在中路的串联和远射能力，可以惩罚伊拉克收缩防线后留下的禁区弧顶空当，他在国家队大赛中多次扮演关键先生。",
+      "伊拉克作为世界杯新军，面对卫冕亚军的高位逼抢很可能出现后场出球失误，法国队前场三人组的就地反抢能力足以制造快速反击机会。"
+    ],
+    "key_risk": "法国队若因轻敌而进攻节奏过慢，伊拉克可能利用定位球或零星反击（如侯赛因·阿里的头球）制造冷门，但概率极低。"
+  },
+  "actual_result": null
+}

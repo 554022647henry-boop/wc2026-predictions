@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:18:58.318115",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.65,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Germany胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "高",
+    "reasons": [
+      "穆西亚拉和维尔茨的灵巧突破将撕裂科特迪瓦的防线，德国的高位压迫会让对手后场出球困难，首球很可能来自前场逼抢后的快速反击。",
+      "科特迪瓦核心阿莱状态不稳，而德国中卫组合在最近对阵荷兰和意大利的比赛中展现了出色的协防能力，能有效限制其高空球威胁。",
+      "德国队大赛DNA加持，小组赛首战历来强势，加上主场球迷的助威，年轻球员的冲击力将在下半场体能优势下彻底爆发。"
+    ],
+    "key_risk": "科特迪瓦的防守反击战术如果早早取得领先，德国队久攻不下可能心态急躁，被凯西的中场拦截和长传打身后偷袭得手。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_K_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:37:10.027150",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.63,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "DR Congo胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "DR Congo胜",
+    "confidence": "中",
+    "reasons": [
+      "刚果民主共和国的锋线尖刀巴坎布（贝西克塔斯）在反击中速度极快，面对乌兹别克斯坦相对缓慢的防线，他的一次冲刺就可能制造杀机。",
+      "乌兹别克斯坦虽以控球见长，但刚果中场的姆本巴（马赛）和队友们身体对抗强硬，会像当年喀麦隆那样用肌肉绞杀打乱对方的进攻节奏。",
+      "刚果近期刚击败加蓬和安哥拉，展现出了非洲球队特有的韧性和适应力；而乌兹别克斯坦0-3完败韩国暴露了防守漏洞，大赛中这种心理落差可能被放大。"
+    ],
+    "key_risk": "乌兹别克斯坦的核心前锋肖穆罗多夫（卡利亚里）虽整体数据一般，但他技术细腻，若在禁区弧顶找到一脚远射机会，可能爆冷一击制胜。"
+  },
+  "actual_result": null
+}

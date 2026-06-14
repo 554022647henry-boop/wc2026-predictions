@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:25:07.028714",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.18,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 0.1,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Japan胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Japan胜",
+    "confidence": "高",
+    "reasons": [
+      "日本在近期状态上碾压突尼斯，近5场4胜1负，而突尼斯仅1胜2平2负，进攻端疲软。",
+      "战术层面，日本的三后卫体系擅长通过快速边路转移撕开密集防守，伊东纯也的突破和镰田大地的前插将给突尼斯防线制造巨大压力。",
+      "突尼斯面对强队时经常在比赛末段崩盘（如2022世界杯对阵法国），日本队体能和替补深度占优，下半场进球概率更高。"
+    ],
+    "key_risk": "突尼斯可能采取极端龟缩防守+快速反击战术，日本队若久攻不下，平局风险上升。"
+  },
+  "actual_result": null
+}

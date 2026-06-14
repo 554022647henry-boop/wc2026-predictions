@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:08:18.654707",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 4.37,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 3.5,
+        "delta": 3.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Japan胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Japan胜",
+    "confidence": "高",
+    "reasons": [
+      "日本队在中场的控制力完全碾压瑞典，远藤航的拦截和久保建英的组织能让瑞典粗放的中场寸步难行",
+      "三笘薰在左路的突破将是瑞典防线的噩梦，他的变向加速和传中能力能撕裂瑞典高大的防线",
+      "瑞典近期友谊赛0-2输给丹麦，状态低迷，而日本队整体战术纪律和团队化学远胜对手，很难给日本制造麻烦"
+    ],
+    "key_risk": "瑞典拥有伊萨克和哲凯赖什这样的顶级前锋，一旦日本后防出现走神或定位球防守失误，可能被瑞典利用身体优势偷得一球，导致爆冷平局或失利"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:22:44.758897",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -3.27,
+    "p_a_win": 0.19,
+    "p_draw": 0.23,
+    "p_b_win": 0.58,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "France胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "中",
+    "reasons": [
+      "挪威的防线很难抵挡姆巴佩与登贝莱的边路冲击，两人在本届赛事中状态火热，而挪威边后卫在速度上明显吃亏。",
+      "法国中场的楚阿梅尼和格列兹曼能有效切断厄德高与哈兰德的连线，一旦哈兰德回撤接球，挪威禁区内的支点作用就会消失。",
+      "法国近6场正式比赛保持不败，且面对荷兰、阿根廷等强队时展现了老练的阵地战耐心，小组赛首战通常以稳为主，不会给挪威反击空间。"
+    ],
+    "key_risk": "如果法国久攻不下，挪威可以依靠哈兰德在定位球或反击中的个人能力一击致命，毕竟法国防线偶尔有注意力不集中的隐患。"
+  },
+  "actual_result": null
+}

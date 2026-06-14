@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_K_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:06:09.619233",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -5.42,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 7.0,
+        "delta": -5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Colombia胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Colombia胜",
+    "confidence": "高",
+    "reasons": [
+      "哥伦比亚的中场控制力远超乌兹别克斯坦，比如J罗的精准传球和莱尔马的拦截能轻松撕开对手防线，让乌兹别克斯坦难以组织有效反击。",
+      "乌兹别克斯坦首次参加世界杯，大赛经验匮乏，面对哥伦比亚这样在世界杯和南美区预选赛身经百战的球队，容易在高压下失误，尤其是后防线面对路易斯·迪亚斯的突破会非常吃力。",
+      "量化模型显示哥伦比亚在战术对位和关键球员维度全面占优（评分8 vs 2），虽然乌兹别克斯坦近期状态略好，但实力差距过大，比如舒库罗夫和肖穆罗多夫很难在哥伦比亚的严密盯防下创造机会。"
+    ],
+    "key_risk": "乌兹别克斯坦可能凭借顽强的防守和定位球偷袭得分，哥伦比亚若久攻不下心态急躁，或后防核心桑切斯伤缺导致漏洞，平局爆冷风险存在。"
+  },
+  "actual_result": null
+}

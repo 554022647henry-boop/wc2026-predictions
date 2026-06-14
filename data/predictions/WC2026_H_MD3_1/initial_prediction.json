@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:18:15.630235",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.48,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 3.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=55%/P(D)=9%/P(B)=36%",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "Cape Verde的右边锋马达莱达突破犀利，但Saudi Arabia的沙特左后卫阿尔-沙赫拉尼转身虽慢，经验丰富，两人互爆可能形成局部均势，谁也无法彻底撕开防线。",
+      "沙特中场卡努擅长短传控节奏，而Cape Verde后腰塞梅多跑动覆盖大，中圈容易变成缠斗区，双方都难送出致命直塞，比赛可能陷入拉锯。",
+      "两队近期进球效率都不高：Cape Verde近5场只进5球，沙特近5场进4球，且都是面对弱旅或强队时失球多，本场谁都怕先丢球，场面会更谨慎。"
+    ],
+    "key_risk": "Cape Verde如果开场靠边路速度偷到机会，沙特在逆风下可能心态急躁，后防空虚被直接打穿，导致平局倾向打破。"
+  },
+  "actual_result": null
+}

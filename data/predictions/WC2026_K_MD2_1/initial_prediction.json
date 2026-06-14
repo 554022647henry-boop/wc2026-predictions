@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_K_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:46:11.622932",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 6.74,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 3.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "高",
+    "reasons": [
+      "葡萄牙整体实力碾压，B席和B费的中场组合能轻松撕开乌兹别克斯坦防线，C罗即便跑动下降，仍可利用定位球头球破门。",
+      "乌兹别克斯坦近期面对强队全败，包括0-1输韩国，防守漏洞明显；葡萄牙近5场4胜1平，攻击线多点开花，莱奥的边路突破将制造杀机。",
+      "葡萄牙大赛经验丰富，有鲁本·迪亚斯领衔后防，而乌兹别克斯坦核心肖穆罗多夫状态存疑，进攻火力难以持续威胁。"
+    ],
+    "key_risk": "葡萄牙若轻敌或轮换阵容，乌兹别克斯坦可能靠防守反击偷得平局，但概率极低。"
+  },
+  "actual_result": null
+}

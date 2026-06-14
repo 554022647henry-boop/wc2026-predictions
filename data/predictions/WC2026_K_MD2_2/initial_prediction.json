@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_K_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:47:21.985124",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 5.71,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Colombia胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Colombia胜",
+    "confidence": "高",
+    "reasons": [
+      "哥伦比亚拥有J罗这样的世界级中场核心，他的传球视野和定位球能力能轻易撕开刚果民主共和国松散的后防线，创造破门良机。",
+      "刚果民主共和国缺乏大赛经验，近5场仅1胜，面对哥伦比亚的快速攻防转换和若昂·特洛（或类似前锋）的冲击，他们的防守很难顶住前20分钟的高压。",
+      "哥伦比亚在战术对位和关键球员两项评分上均高达8.0，远超对手的2.0，这意味着无论地面渗透还是边路突破，他们都完全占据场面控制权。"
+    ],
+    "key_risk": "最大的爆冷风险在于哥伦比亚可能轻敌或状态慢热，给刚果民主共和国留下利用定位球或长传反击偷袭得手的机会。"
+  },
+  "actual_result": null
+}

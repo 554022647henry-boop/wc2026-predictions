@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_L_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:31:19.446891",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -3.73,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 1.5,
+        "b_score": 8.5,
+        "delta": -7.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 0.0,
+        "b_score": 10.0,
+        "delta": -10.0,
+        "confidence": 10.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "高",
+    "reasons": [
+      "英格兰拥有哈里·凯恩和贝林厄姆这样的世界级球星，凯恩在禁区内的支点和射门能力、贝林厄姆的中场推进将直接撕开巴拿马由美职联球员组成的防线。",
+      "巴拿马队史第二次参加世界杯，大赛经验严重不足，而英格兰球员普遍在欧冠和英超顶级赛事中磨练，战术执行力和抗压能力远胜对手。",
+      "模型显示英格兰在战术对位、关键球员和球队化学上全面占优（评分8-10分 vs 巴拿马0-2分），福登和萨卡的边路突破将频繁制造传中机会，压制巴拿马三后卫体系。"
+    ],
+    "key_risk": "巴拿马可能依靠密集防守和体能消耗战拖入平局，英格兰新帅首战若进攻效率低下，且凯恩状态波动，可能久攻不下。"
+  },
+  "actual_result": null
+}

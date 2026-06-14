@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_J_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:27:09.875149",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -4.67,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Austria胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Austria胜",
+    "confidence": "中",
+    "reasons": [
+      "奥地利在战术对位和情境压力两项评分中均大幅领先（7.0 vs 3.0和8.0 vs 2.0），显示他们擅长压制阿尔及利亚的边路快攻，并通过中路渗透制造威胁。",
+      "阿尔及利亚后防面对强力中锋时存在明显空中球弱点，而奥地利边后卫插上传中是重要武器，这可能在比赛中直接转化为定位球或头球机会。",
+      "近期状态上奥地利更稳定，近5场3胜2平不败，包括击败瑞士和战平挪威；阿尔及利亚则曾输给哥伦比亚，防守稳定性不足。"
+    ],
+    "key_risk": "爆冷风险在于阿尔及利亚若利用其核心球员（类似马赫雷斯）的速度打出高效反击，奥地利回防速度偏慢的弱点可能被暴露，导致意外丢球。"
+  },
+  "actual_result": null
+}

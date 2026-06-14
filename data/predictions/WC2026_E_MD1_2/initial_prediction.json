@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:37:12.093475",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 9.26,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 9.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 10.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 9.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 10.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 10.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 22%：模型 A_WIN P(A)=68%/P(D)=18%/P(B)=14% vs 市场 P(A)=90%/P(D)=10%/P(B)=0%",
+    "judge_reasoning": "Germany胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "高",
+    "reasons": [
+      "德国队拥有世界顶级的中场控制力，像京多安和穆西亚拉这样的球员能轻松撕开库拉索的防线，后者首次参赛且球员多来自荷甲和美职联，实力差距明显。",
+      "库拉索在关键球员和绝对实力维度上均得0分，德国在战术对位上以10:0碾压，这意味着从第一分钟起，德国的高位逼抢和快速传递将让对手难以喘息。",
+      "德国近期友谊赛战平荷兰、击败巴西，展现了强大的大赛DNA和适应能力，而库拉索面对牙买加和巴拿马都未能取胜，缺乏应对顶级强队的经验。"
+    ],
+    "key_risk": "德国队可能因实力悬殊而轮换阵容或心态放松，导致比赛节奏放缓，但库拉索进攻乏力，爆冷可能性极低。"
+  },
+  "actual_result": null
+}

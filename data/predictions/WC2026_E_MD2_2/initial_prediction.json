@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:21:01.503959",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 6.65,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Ecuador胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ecuador胜",
+    "confidence": "高",
+    "reasons": [
+      "厄瓜多尔拥有普拉塔和萨米恩托两匹边路快马，他们的突破速度足以撕开库拉索的密集防线，尤其上半场体能充沛时威胁最大。",
+      "中场有凯塞多和格鲁埃索的双拦截组合，能轻松切断库拉索的长传冲吊线路，让对手的反击难以形成有效配合。",
+      "库拉索近期对阵沙特和洪都拉斯均告负，防守组织混乱，而厄瓜多尔面对秘鲁和意大利都能保持不败，实战状态差距明显。"
+    ],
+    "key_risk": "厄瓜多尔可能因实力悬殊而放松节奏，若久攻不下被库拉索抓住一次定位球或反击，可能爆冷打平或输球。"
+  },
+  "actual_result": null
+}

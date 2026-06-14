@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:32:24.010323",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 6.82,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 2.0,
+        "delta": 7.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 9.0,
+        "b_score": 2.0,
+        "delta": 7.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Spain胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Spain胜",
+    "confidence": "高",
+    "reasons": [
+      "西班牙中场核心佩德里和加维将牢牢控制比赛节奏，沙特很难抢到球权，预计西班牙至少有65%的控球率。",
+      "沙特主力前锋谢赫里因伤缺阵，失去前场支点，反击效率大打折扣，达瓦萨里将孤掌难鸣。",
+      "西班牙近期状态火热，近5场4胜1平，攻防有序；而沙特近5场仅1胜，士气低迷，实力差距明显。"
+    ],
+    "key_risk": "若西班牙久攻不下，沙特通过定位球或快速反击偷得一球，可能制造冷门平局。"
+  },
+  "actual_result": null
+}

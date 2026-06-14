@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:15:38.763716",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -5.62,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 0.5,
+        "b_score": 9.5,
+        "delta": -9.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Belgium胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "高",
+    "reasons": [
+      "比利时拥有德布劳内这样的中场指挥官，他的直塞球能轻松撕开新西兰由英冠和澳超球员组成的防线，创造大量得分机会。",
+      "新西兰时隔16年重返世界杯，大赛经验匮乏，而比利时黄金一代已连续多届大赛征战，面对弱旅时控场能力极强，不会给对手爆冷空间。",
+      "卢卡库的身体对抗和禁区抢点对新西兰后卫是噩梦级别的，加上库尔图瓦把守球门，比利时攻防两端都碾压对手。"
+    ],
+    "key_risk": "新西兰若采取密集防守并依靠克里斯·伍德的头球反击，可能抓住比利时防线偶尔的注意力不集中制造意外，但概率较低。"
+  },
+  "actual_result": null
+}

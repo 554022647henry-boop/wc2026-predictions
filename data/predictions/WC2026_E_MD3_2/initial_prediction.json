@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:06:07.069932",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.06,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Germany胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "高",
+    "reasons": [
+      "德国中前场拥有穆西亚拉和维尔茨这样的天才攻击手，他们能在厄瓜多尔防线前进行快速切换和突破，尤其面对凯塞多身后的空当，德国的小范围配合将制造巨大威胁。",
+      "厄瓜多尔的战术依赖凯塞多和瓦伦西亚的连线，但德国中场基米希和京多安能通过高位逼抢切断这一核心通道，迫使厄瓜多尔频繁后场失误。",
+      "德国近期友谊赛连胜意大利、阿根廷等强敌，全队状态火热；而厄瓜多尔虽稳但进攻效率平平，球队大赛经验不足，中立场地更削弱其南美主场效应。"
+    ],
+    "key_risk": "若德国锋线轮换（如格纳布里首发）磨合不佳，厄瓜多尔可能抓住反击机会，依靠瓦伦西亚的速度和凯塞多的长传调度制造冷门平局。"
+  },
+  "actual_result": null
+}

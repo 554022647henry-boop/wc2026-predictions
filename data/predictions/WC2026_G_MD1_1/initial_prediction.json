@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:48:27.981484",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 5.42,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.5,
+        "b_score": 2.5,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Iran胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Iran胜",
+    "confidence": "高",
+    "reasons": [
+      "伊朗拥有两大欧洲顶级锋线——塔雷米和阿兹蒙，两人在波尔图和勒沃库森/罗马都是铁打主力，面对新西兰后防线，他们的跑位和射术将让对手难以招架。",
+      "克里斯·伍德虽是新西兰的头号威胁，但伊朗的防守体系非常成熟，后防核心能通过贴身逼抢和协防限制他的支点作用，而新西兰其他球员缺乏欧洲联赛经验，难以创造第二个得分点。",
+      "伊朗近期连续击败乌兹别克斯坦和阿联酋，状态稳定，而新西兰仅与厄瓜多尔友谊赛0-1落败，且此前对手多为斐济、瓦努阿图等弱旅，真实竞争力存疑。"
+    ],
+    "key_risk": "最大的爆冷风险在于伊朗可能因轻敌或紧张而慢热，若新西兰利用伍德的高空球或定位球率先破门，导致伊朗久攻不下，新西兰的密集防守可能制造平局冷门。"
+  },
+  "actual_result": null
+}

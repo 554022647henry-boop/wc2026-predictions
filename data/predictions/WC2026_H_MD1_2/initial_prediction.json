@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:45:56.487834",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 7.66,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 2.0,
+        "delta": 7.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Spain胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Spain胜",
+    "confidence": "高",
+    "reasons": [
+      "西班牙的中场罗德里和佩德里能像节拍器一样控制节奏，佛得角球员很难抢到球，球权会一直压在对方半场",
+      "16岁的亚马尔在边路用速度和技术反复冲击，佛得角后卫跟不上他的变向，会制造大量传中和定位球机会",
+      "佛得角门将面对西班牙的短传渗透会紧张，西班牙连续5场零封或小胜，防守纪律性让黑马很难偷袭"
+    ],
+    "key_risk": "西班牙防线压上时，佛得角的瑞安·门德斯利用速度打身后反击，可能在上半场偷一个进球实现爆冷"
+  },
+  "actual_result": null
+}

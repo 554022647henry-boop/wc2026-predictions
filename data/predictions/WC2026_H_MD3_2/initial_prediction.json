@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:20:37.196608",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -4.0,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Spain胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Spain胜",
+    "confidence": "高",
+    "reasons": [
+      "乌拉圭中场创造力偏弱，面对西班牙的罗德里和佩德里双核控场，很难拿到球权组织有效进攻，比赛可能变成半场攻防演练。",
+      "西班牙的边路爆点亚马尔和尼科·威廉姆斯速度极快，而乌拉圭防线核心阿劳霍如果状态未达100%，很难限制两人轮番冲击。",
+      "从近期状态看，西班牙连续逼平意大利和法国，战胜德国，硬仗表现稳定；乌拉圭则刚战平智利，进攻端努涅斯孤立无援，缺乏支援。"
+    ],
+    "key_risk": "西班牙在小组赛阶段向来有慢热传统，若久攻不下被乌拉圭抓住反击机会，费德里科·巴尔韦德的一脚远射可能成为冷门导火索。"
+  },
+  "actual_result": null
+}

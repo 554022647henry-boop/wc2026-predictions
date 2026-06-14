@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_K_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:04:07.644037",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 5.85,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "高",
+    "reasons": [
+      "葡萄牙中前场控制力碾压：B席和B费的传球组织将轻易撕开刚果民主共和国的防线，后者边后卫单防能力弱，莱奥的边路突破会频繁制造威胁。",
+      "刚果民主共和国后场出球是致命短板：受压迫时传球成功率仅61%，葡萄牙的高位逼抢（鲁本·迪亚斯领衔）将迫使对手频频失误，直接转化为反击机会。",
+      "刚果民主共和国的攻击手段单一：只能依赖姆本巴的速度或巴康加的身体争顶，但葡萄牙中卫组合（如迪亚斯）擅长对抗，刚果很难创造稳定得分机会。"
+    ],
+    "key_risk": "葡萄牙若轮换主力或心态松懈，可能久攻不下；若塔/C罗的争顶效率偏低（48%），面对刚果密集防守时可能陷入僵局，但爆冷概率极低。"
+  },
+  "actual_result": null
+}

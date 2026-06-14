@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:33:16.280599",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.18,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 B_WIN P(A)=22%/P(D)=28%/P(B)=50% vs 市场 P(A)=45%/P(D)=9%/P(B)=45%",
+    "judge_reasoning": "Ecuador胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ecuador胜",
+    "confidence": "中",
+    "reasons": [
+      "厄瓜多尔中场有凯塞多这台‘发动机’，他不仅能抢断还能快速出球，将直接打穿科特迪瓦年龄偏大的凯西的防线。",
+      "科特迪瓦近期友谊赛两连败，尤其0-1输给阿根廷时全场被压制，而厄瓜多尔刚逼平意大利、战胜日本，防守硬度远超对手想象。",
+      "厄瓜多尔左后卫埃斯图皮南的助攻能力极强，而科特迪瓦右路防守历来不稳，这将是制造进球的关键缺口。"
+    ],
+    "key_risk": "市场赔率显示平局概率仅9%，但模型估算平局概率高达28%，若科特迪瓦收缩防守、阿莱利用身高优势偷一个，比赛可能陷入僵局，厄瓜多尔久攻不下会急躁。"
+  },
+  "actual_result": null
+}
