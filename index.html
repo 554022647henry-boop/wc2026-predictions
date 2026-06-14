@@ -68,9 +68,24 @@ main{max-width:1680px;margin:0 auto;padding:28px 20px 60px}
 .reasons{list-style:none;padding:0}
 .reasons li{font-size:10px;color:var(--muted);padding:1px 0 1px 12px;position:relative;line-height:1.4}
 .reasons li::before{content:"•";position:absolute;left:3px;color:var(--gold2)}
-.actual{font-size:10px;font-weight:600;padding:3px 7px;border-radius:5px;margin-bottom:5px;display:inline-block}
-.actual.correct{background:rgba(52,211,153,.1);color:var(--green)}
-.actual.incorrect{background:rgba(248,113,113,.1);color:var(--red)}
+.result-bar{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:8px;margin-bottom:6px}
+.result-bar.correct{background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25)}
+.result-bar.incorrect{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.25)}
+.result-icon{font-size:1rem;font-weight:800;flex-shrink:0}
+.result-bar.correct .result-icon{color:var(--green)}
+.result-bar.incorrect .result-icon{color:var(--red)}
+.result-detail{display:flex;flex-direction:column;gap:1px}
+.result-score{font-size:13px;font-weight:800;color:var(--text)}
+.result-outcome{font-size:10px;color:var(--muted)}
+.verdict{display:flex;flex-wrap:wrap;align-items:center;gap:5px;padding:5px 8px;border-radius:6px;margin-bottom:6px;font-size:10px}
+.verdict.correct{background:rgba(52,211,153,.07)}
+.verdict.incorrect{background:rgba(248,113,113,.07)}
+.verdict-pred{color:var(--muted)}
+.verdict-sep{color:var(--muted)}
+.verdict-actual{color:var(--text);font-weight:600}
+.verdict-badge{margin-left:auto;padding:1px 7px;border-radius:8px;font-weight:700;font-size:9px}
+.verdict.correct .verdict-badge{background:rgba(52,211,153,.2);color:var(--green)}
+.verdict.incorrect .verdict-badge{background:rgba(248,113,113,.2);color:var(--red)}
 .hist{margin-top:5px}
 .hist summary{font-size:9px;color:var(--muted);cursor:pointer}
 .hist ul{list-style:none;padding:4px 0 0 0}
@@ -164,7 +179,15 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇿🇦<br><b>South Africa</b></span>
       </div>
-      <div class="actual ">✗ 实际: 2-0</div>
+      
+        <div class="result-bar ">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">2-0</span>
+            <span class="result-outcome">实际：Mexico胜</span>
+          </div>
+        </div>
+      
       
     </div>
     <div class="match-card " id="WC2026_A_MD1_2">
@@ -174,7 +197,15 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇨🇿<br><b>Czechia</b></span>
       </div>
-      <div class="actual ">✗ 实际: 2-1</div>
+      
+        <div class="result-bar ">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">2-1</span>
+            <span class="result-outcome">实际：South Korea胜</span>
+          </div>
+        </div>
+      
       
     </div>
     <div class="match-card " id="WC2026_A_MD2_1">
@@ -184,6 +215,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇿🇦<br><b>South Africa</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -204,6 +236,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Mexico胜</span>
@@ -222,6 +255,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Mexico胜</span>
@@ -238,6 +272,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇰🇷<br><b>South Korea</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -263,7 +298,21 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇨🇦<br><b>Canada</b></span>
       </div>
-      <div class="actual incorrect">✗ 实际: 1-1</div>
+      
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">1-1</span>
+            <span class="result-outcome">实际：平局</span>
+          </div>
+        </div>
+      
+            <div class="verdict incorrect">
+              <span class="verdict-pred">预测：Canada胜（中置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：平局 1-1</span>
+              <span class="verdict-badge">预测有误 ✗</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -281,7 +330,21 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇨🇭<br><b>Switzerland</b></span>
       </div>
-      <div class="actual incorrect">✗ 实际: 1-1</div>
+      
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">1-1</span>
+            <span class="result-outcome">实际：平局</span>
+          </div>
+        </div>
+      
+            <div class="verdict incorrect">
+              <span class="verdict-pred">预测：Switzerland胜（高置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：平局 1-1</span>
+              <span class="verdict-badge">预测有误 ✗</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -299,6 +362,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇧🇦<br><b>Bosnia and Herzegovina</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -319,6 +383,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Canada胜</span>
@@ -337,6 +402,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Switzerland胜</span>
@@ -353,6 +419,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇶🇦<br><b>Qatar</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -378,7 +445,21 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🏴󠁧󠁢󠁳󠁣󠁴󠁿<br><b>Scotland</b></span>
       </div>
-      <div class="actual correct">✓ 实际: 0-1</div>
+      
+        <div class="result-bar correct">
+          <span class="result-icon">✓</span>
+          <div class="result-detail">
+            <span class="result-score">0-1</span>
+            <span class="result-outcome">实际：Scotland胜</span>
+          </div>
+        </div>
+      
+            <div class="verdict correct">
+              <span class="verdict-pred">预测：Scotland胜（高置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：Scotland胜 0-1</span>
+              <span class="verdict-badge">预测正确 ✓</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -396,7 +477,21 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇲🇦<br><b>Morocco</b></span>
       </div>
-      <div class="actual incorrect">✗ 实际: 1-1</div>
+      
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">1-1</span>
+            <span class="result-outcome">实际：平局</span>
+          </div>
+        </div>
+      
+            <div class="verdict incorrect">
+              <span class="verdict-pred">预测：Brazil胜（中置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：平局 1-1</span>
+              <span class="verdict-badge">预测有误 ✗</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -414,6 +509,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇭🇹<br><b>Haiti</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -434,6 +530,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Morocco胜</span>
@@ -452,6 +549,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Brazil胜</span>
@@ -468,6 +566,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇭🇹<br><b>Haiti</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -493,7 +592,21 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇺🇸<br><b>United States</b></span>
       </div>
-      <div class="actual correct">✓ 实际: 4-1</div>
+      
+        <div class="result-bar correct">
+          <span class="result-icon">✓</span>
+          <div class="result-detail">
+            <span class="result-score">4-1</span>
+            <span class="result-outcome">实际：United States胜</span>
+          </div>
+        </div>
+      
+            <div class="verdict correct">
+              <span class="verdict-pred">预测：United States胜（高置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：United States胜 4-1</span>
+              <span class="verdict-badge">预测正确 ✓</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -511,6 +624,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇹🇷<br><b>Turkiye</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -531,6 +645,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Turkiye胜</span>
@@ -547,6 +662,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇦🇺<br><b>Australia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -567,6 +683,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">United States胜</span>
@@ -583,6 +700,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇦🇺<br><b>Australia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -610,6 +728,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">平局</span>
@@ -626,6 +745,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇨🇼<br><b>Curacao</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -646,6 +766,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Germany胜</span>
@@ -662,6 +783,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇨🇼<br><b>Curacao</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -682,6 +804,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Ivory Coast胜</span>
@@ -698,6 +821,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇩🇪<br><b>Germany</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -725,6 +849,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Netherlands胜</span>
@@ -741,6 +866,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇹🇳<br><b>Tunisia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -761,6 +887,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Netherlands胜</span>
@@ -777,6 +904,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇯🇵<br><b>Japan</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -797,6 +925,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Japan胜</span>
@@ -813,6 +942,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇳🇱<br><b>Netherlands</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -840,6 +970,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Iran胜</span>
@@ -856,6 +987,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇪🇬<br><b>Egypt</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -876,6 +1008,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Belgium胜</span>
@@ -892,6 +1025,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇪🇬<br><b>Egypt</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -912,6 +1046,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Egypt胜</span>
@@ -928,6 +1063,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇧🇪<br><b>Belgium</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -955,6 +1091,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Uruguay胜</span>
@@ -971,6 +1108,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇨🇻<br><b>Cape Verde</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -991,6 +1129,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Uruguay胜</span>
@@ -1007,6 +1146,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇸🇦<br><b>Saudi Arabia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1027,6 +1167,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Cape Verde胜</span>
@@ -1043,6 +1184,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇪🇸<br><b>Spain</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1070,6 +1212,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">France胜</span>
@@ -1086,6 +1229,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇳🇴<br><b>Norway</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1106,6 +1250,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Norway胜</span>
@@ -1122,6 +1267,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇮🇶<br><b>Iraq</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1142,6 +1288,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">France胜</span>
@@ -1158,6 +1305,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇮🇶<br><b>Iraq</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1185,6 +1333,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Argentina胜</span>
@@ -1201,6 +1350,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇯🇴<br><b>Jordan</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1221,6 +1371,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Argentina胜</span>
@@ -1237,6 +1388,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇩🇿<br><b>Algeria</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1257,6 +1409,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Algeria胜</span>
@@ -1273,6 +1426,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇦🇷<br><b>Argentina</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1300,6 +1454,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Portugal胜</span>
@@ -1316,6 +1471,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇨🇴<br><b>Colombia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1336,6 +1492,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Portugal胜</span>
@@ -1352,6 +1509,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇨🇩<br><b>DR Congo</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1372,6 +1530,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Portugal胜</span>
@@ -1388,6 +1547,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇺🇿<br><b>Uzbekistan</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1415,6 +1575,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">Ghana胜</span>
@@ -1431,6 +1592,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇭🇷<br><b>Croatia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1451,6 +1613,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">England胜</span>
@@ -1467,6 +1630,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right winner">🇭🇷<br><b>Croatia</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -1487,6 +1651,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
       </div>
       
       
+      
         <div class="pred-box">
           <div class="pred-row">
             <span class="pred-str">England胜</span>
@@ -1503,6 +1668,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="vs">VS</span>
         <span class="team-name right ">🇬🇭<br><b>Ghana</b></span>
       </div>
+      
       
       
         <div class="pred-box">
@@ -2914,7 +3080,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析 &nbsp;·&nbsp;
-  最后更新：2026-06-14 12:35
+  最后更新：2026-06-14 12:42
 </footer>
 
 <script>
