@@ -165,8 +165,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub">美国 · 加拿大 · 墨西哥 &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>70</b><small>已预测</small></div>
-      <div class="stat"><b>7</b><small>已完赛</small></div>
-      <div class="stat hi"><b>40.0%</b><small>预测准确率</small></div>
+      <div class="stat"><b>8</b><small>已完赛</small></div>
+      <div class="stat hi"><b>33.3%</b><small>预测准确率</small></div>
       <div class="stat"><b>6</b><small>高爆冷风险</small></div>
     </div>
   </div>
@@ -632,7 +632,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_D_MD1_2">
+    <div class="match-card incorrect" id="WC2026_D_MD1_2">
       <div class="match-meta">MD1 · 06-13 · BC Place</div>
       <div class="teams">
         <span class="team-name ">🇦🇺<br><b>Australia</b></span>
@@ -640,7 +640,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right winner">🇹🇷<br><b>Turkiye</b></span>
       </div>
       
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">2-0</span>
+            <span class="result-outcome">实际：Australia胜</span>
+          </div>
+        </div>
       
+            <div class="verdict incorrect">
+              <span class="verdict-pred">预测：Turkiye胜（高置信）</span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual">实际：Australia胜 2-0</span>
+              <span class="verdict-badge">预测有误 ✗</span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -1875,23 +1888,29 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                     </div>
               <div class="reasons-detail"><ul><li>维尼修斯边路爆破能力世界顶级，摩洛哥需双人包夹，易给巴西中路空档。</li><li>巴西中场卡塞米罗+帕奎塔控制力强于摩洛哥状态下滑的阿姆拉巴特，可压制反击出球点。</li><li>摩洛哥边卫马兹拉维缺阵，巴西可重点冲击其替补防线肋部。</li></ul></div>
             </div>
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished incorrect" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇦🇺 Australia</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label">Turkiye胜</div>
-                  <div class="pred-meta"><span class="conf-dot high"></span>高 </div>
+                  <div class="score-block finished incorrect">
+                  <span class="sched-result-icon">✗</span>
+                  <span class="score">2-0</span>
                 </div>
                   <div class="sched-team right">🇹🇷 Turkiye</div>
                 </div>
                 <div class="sched-meta">
                   <span class="stage-tag">第D组 MD1</span>
                   <span class="venue-tag">BC Place</span>
-                  <span class="status-tag predicted">已预测</span>
+                  <span class="status-tag finished">完赛</span>
                 </div>
               </div>
               
+                    <div class="sched-verdict incorrect">
+                      <span>预测：Turkiye胜（高）</span>
+                      <span class="sv-arrow">→</span>
+                      <span>实际：Australia胜 2-0</span>
+                      <span class="sv-badge incorrect">预测有误 ✗</span>
+                    </div>
               <div class="reasons-detail"><ul><li>Türkiye's transition speed and wing quality exploits Au</li><li>Turkey (team_b) holds a contextual edge as group favori</li><li>Turkiye hold a clear individual quality edge through Gu</li></ul></div>
             </div></div>
         </div>
@@ -3220,7 +3239,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析 &nbsp;·&nbsp;
-  最后更新：2026-06-14 15:34
+  最后更新：2026-06-14 15:54
 </footer>
 
 <script>
