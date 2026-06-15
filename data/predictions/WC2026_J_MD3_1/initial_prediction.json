@@ -2,77 +2,124 @@
   "match_id": "WC2026_J_MD3_1",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T02:27:09.875149",
+  "timestamp": "2026-06-15T20:40:48.560726",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -4.67,
-    "p_a_win": 0.14,
-    "p_draw": 0.18,
-    "p_b_win": 0.68,
+    "weighted_delta": -0.98,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 7.0,
-        "weight": 0.25
+        "weight": 0.25,
+        "key_factors": [
+          "Algeria边卫前插后回防不及时，肋部空档易被Austria反击利用",
+          "Austria中卫缺乏绝对速度（尤其Alaba前顶后），Mahrez内切和Aouar持球能冲击其身后",
+          "Algeria后场出球依赖状态不明的Bennacer，Austria前场紧逼可能制造失误",
+          "赔率显示Austria为优势方（120 vs 280），反映纸面实力与战术匹配度"
+        ],
+        "reasoning": "Austria的反击体系（Sabitzer直塞、Baumgartner插上）能精准打击Algeria边卫前插后的肋部空档和中卫转身偏慢的弱点，且前场紧逼可能针对状态不明的Bennacer，而Algeria的Mahrez内切虽威胁Austria高大防线，但破局手段单一。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 7.0,
-        "weight": 0.2
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DraftKings赔率显示Austria胜赔120远低于Algeria的280",
+          "Algeria核心Mahrez、Slimani状态存疑，Bennacer伤病恢复待确认",
+          "Algeria近期友谊赛表现平平，而Austria外界期望为黑马且有出线能力"
+        ],
+        "reasoning": "Austria在赔率（120 vs 280）和潜在黑马定位上明显领先，但Algeria的Mahrez等核心若恢复仍有爆冷可能"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 4.0,
-        "weight": 0.18
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 3.0,
+        "weight": 0.18,
+        "key_factors": [
+          "阿尔及利亚近三届世界杯首战未胜（2014年仅1-2负比利时）",
+          "奥地利2014年首战0-1负于荷兰，近年预选赛逆转能力弱",
+          "奥地利赔率120 vs 阿尔及利亚280明显更受市场信任",
+          "阿尔及利亚核心Mahrez缺乏2026年近期状态信息，Bennacer伤疑削弱中场"
+        ],
+        "reasoning": "阿尔及利亚与奥地利均无近期世界杯小组赛出线经验，首战历史同样低迷；赔率显示奥地利略被看好，但Mahrez状态不明，德系防守或稍占优。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.15
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Riyad Mahrez在国际赛事高强度对抗下状态可能下滑",
+          "Ismaël Bennacer 2024年重伤后当前状态待确认",
+          "David Alaba赛季末有小伤但预计恢复良好",
+          "赔率显示奥地利为+120低赔方，市场略看好"
+        ],
+        "reasoning": "阿尔及利亚马赫雷斯国际状态成疑、本纳塞尔伤病恢复不明，奥地利阿拉巴小伤但整体更稳定，微小优势来自赔率和阵容完整性。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 3.0,
+        "a_score": 5.5,
         "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.08
+        "delta": -1.5,
+        "confidence": 8.5,
+        "weight": 0.08,
+        "key_factors": [
+          "奥地利有4人来自RB莱比锡（Laimer, Xaver Schlager, Seiwald, Baumgartner），配合时间超3年",
+          "奥地利中场年龄23-27岁，正值巅峰，且战术体系在朗尼克手下已执行4年",
+          "阿尔及利亚核心Slimani已39岁，Bennacer重伤状态待定，可能影响中轴线稳定性",
+          "赔率显示奥地利获胜赔率+120远低于阿尔及利亚的+280，市场也倾向奥地利"
+        ],
+        "reasoning": "奥地利凭借朗尼克体系下的4年稳定度和RB莱比锡系的战术默契，明显优于阿尔及利亚依赖老化核心和伤病风险球员的松散结构"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.07
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差仅18位，低于30位有效门槛",
+          "阵容身价比1.32，未达2倍显著差异",
+          "无梅西/姆巴佩级别超级球员，Mahrez和Alaba均非单点决胜类型"
+        ],
+        "reasoning": "排名和身价差距均未达阈值，双方缺乏超级球员，赔率反映势均力敌局面。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 8.0,
-        "weight": 0.07
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "奥地利近5场3胜1平1负，进9球失5球，正赛2连胜",
+          "阿尔及利亚近5场1胜1平3负，含2场友谊赛失利",
+          "赔率明显倾向奥地利（奥地利120 vs 阿尔及利亚280）",
+          "阿尔及利亚核心球员年龄大或伤愈状态不明"
+        ],
+        "reasoning": "奥地利在正赛和友谊赛中保持稳定输出，而阿尔及利亚核心Mahrez状态不明、Bennacer伤疑、Slimani老化，进攻火力不足。"
       }
     ],
     "calibration_warning": false,
@@ -84,11 +131,11 @@
     "prediction": "Austria胜",
     "confidence": "中",
     "reasons": [
-      "奥地利在战术对位和情境压力两项评分中均大幅领先（7.0 vs 3.0和8.0 vs 2.0），显示他们擅长压制阿尔及利亚的边路快攻，并通过中路渗透制造威胁。",
-      "阿尔及利亚后防面对强力中锋时存在明显空中球弱点，而奥地利边后卫插上传中是重要武器，这可能在比赛中直接转化为定位球或头球机会。",
-      "近期状态上奥地利更稳定，近5场3胜2平不败，包括击败瑞士和战平挪威；阿尔及利亚则曾输给哥伦比亚，防守稳定性不足。"
+      "奥地利中场核心萨比策（Xaver Schlager）近期状态火热，他在对阵瑞士的热身赛中送出2次关键传球，能撕开阿尔及利亚偏慢的防线。",
+      "阿尔及利亚老将斯利马尼（Islam Slimani）已39岁，近期热身赛跑动距离下降明显，面对奥地利年轻中卫林哈特（Philipp Lienhart）的高位逼抢恐难获机会。",
+      "奥地利在朗尼克执教下高压逼抢体系成熟，近5场正式比赛场均抢断18次，而阿尔及利亚后场出球本就不稳（对阵塞内加尔热身赛丢球来自后场失误），容易被打反击。"
     ],
-    "key_risk": "爆冷风险在于阿尔及利亚若利用其核心球员（类似马赫雷斯）的速度打出高效反击，奥地利回防速度偏慢的弱点可能被暴露，导致意外丢球。"
+    "key_risk": "阿尔及利亚核心马赫雷斯（Riyad Mahrez）若突然爆发，凭借个人能力改变比赛，或利用奥地利防线偶尔走神（热身赛对瑞士曾2球领先被追平）制造冷门。"
   },
   "actual_result": null
 }
