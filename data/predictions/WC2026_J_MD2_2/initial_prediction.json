@@ -2,93 +2,138 @@
   "match_id": "WC2026_J_MD2_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T01:40:20.891273",
+  "timestamp": "2026-06-15T19:37:30.677373",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -5.28,
-    "p_a_win": 0.14,
-    "p_draw": 0.18,
-    "p_b_win": 0.68,
+    "weighted_delta": -0.6,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 1.5,
-        "b_score": 8.5,
-        "delta": -7.0,
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
         "confidence": 8.0,
-        "weight": 0.25
+        "weight": 0.25,
+        "key_factors": [
+          "Jordan中卫组合转身慢，难以应付Algeria快速传切和Mahrez内切",
+          "Jordan后场出球能力差（抗压球差），Algeria高位逼抢（Bennacer）将制造大量失误",
+          "Jordan核心武器是长传反击找Al-Naimat，但Algeria中卫（即使转身慢）身体对抗占优",
+          "Algeria进攻点多元（右路Mahrez/左路Benrahma/中路Aouar），防守方难以针对性限制"
+        ],
+        "reasoning": "Algeria的进攻（Mahrez/Aouar）能持续利用Jordan中卫之间的巨大空当，而Jordan的防反套路（Tamari抢射）在Algeria因边卫前插导致的肋部空当上能获得机会，但整体抗压能力差距使Algeria优势明显。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 8.0,
-        "weight": 0.2
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率Algeria -200 vs Jordan +600，实力差距悬殊",
+          "Algeria拥有多名欧洲主流联赛球员（如马赫雷斯、本拉赫马）",
+          "Jordan近期3胜1平但对手实力有限，核心塔马里状态未知"
+        ],
+        "reasoning": "赔率显示Algeria是压倒性热门（-200 vs +600），且拥有马赫雷斯等顶级球员，纸面实力明显优于Jordan的塔马里领衔的阵容，但小组赛首战双方都想赢，动机差异不大。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
         "confidence": 4.0,
-        "weight": 0.18
+        "weight": 0.18,
+        "key_factors": [
+          "赔率显示Algeria为-200大热门，Jordan为+600弱旅，差距悬殊",
+          "Jordan首次参加世界杯，无大赛首战经验，精神韧性不足",
+          "Algeria有2014年世界杯经历，近期热身赛连平埃及和塞内加尔，状态稳定"
+        ],
+        "reasoning": "Algeria凭借赔率优势和2014年世界杯经验（即使首战输比利时）拥有轻微心理和实力优势，而Jordan首次参赛且逆转能力弱，难以在首战制造冷门。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
+        "a_score": 8.0,
+        "b_score": 4.5,
+        "delta": 3.5,
         "confidence": 7.0,
-        "weight": 0.15
+        "weight": 0.15,
+        "key_factors": [
+          "阿尔及利亚拥有多名在欧洲和顶级联赛稳定出场的球员（马赫雷斯、本纳塞尔、本塞拜尼），阵容配置远优于约旦",
+          "约旦核心穆萨·塔马里和亚赞·阿尔-奈马特是仅有的靠谱得分点，缺乏高质量替代方案",
+          "赔率（阿尔及利亚-200）和纸面实力均显示阿尔及利亚有显著优势",
+          "阿尔及利亚防守端有本塞拜尼和本纳塞尔，能有效限制约旦的边路和中路进攻"
+        ],
+        "reasoning": "阿尔及利亚在马赫雷斯、本纳塞尔和本塞拜尼三线核心完备，阵容深度碾压；约旦进攻完全依赖塔马里和阿尔-奈马特，两人若被针对则无人可替，差距极其明显。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.08
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Jordan有多名来自Al-Wehdat和Al-Faisaly的球员，俱乐部默契度高",
+          "Jordan主教练Ammouta执教近3年，战术体系成熟稳定",
+          "Algeria球员分散于不同联赛（如Bennacer、Aouar），无直接同队经历",
+          "Algeria新帅Petković上任后体系调整仍需时间磨合"
+        ],
+        "reasoning": "Jordan依靠Al-Wehdat和Al-Faisaly的俱乐部集群以及Ammouta的长期执教，在核心默契和体系成熟度上明显优于集结时间短、缺乏俱乐部纽带的Algeria。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 8.0,
-        "weight": 0.07
+        "weight": 0.07,
+        "key_factors": [
+          "Jordan FIFA排名80 vs Algeria排名41，差距39位",
+          "Jordan总身价1500万€ vs Algeria总身价1.85亿€，相差12倍以上",
+          "Algeria拥有多名欧洲主流联赛球员如Rayan Aït-Nouri和Adam Ounas，Jordan缺乏同等深度"
+        ],
+        "reasoning": "Algeria凭借FIFA排名领先39位、身价超12倍以及Aït-Nouri等五大联赛球员优势，对阵仅有穆萨·塔马里单点威胁的Jordan占据明确优势。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.0,
-        "b_score": 4.0,
-        "delta": 2.0,
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 7.0,
-        "weight": 0.07
+        "weight": 0.07,
+        "key_factors": [
+          "Algeria近3场进球趋势上升，从0球到3球再到2球，状态火热",
+          "Jordan近3场进球递减，从2球到1球再到1球，攻击力下滑",
+          "赔率显示Algeria是-200大热门，Jordan为+600大冷门，差距明显"
+        ],
+        "reasoning": "Algeria状态上升且赔率支持，但Jordan主场有韧性且塔马里可能制造威胁。"
       }
     ],
-    "calibration_warning": false,
-    "calibration_note": "",
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=14%/P(D)=19%/P(B)=67%",
     "judge_reasoning": "Algeria胜"
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Algeria胜",
-    "confidence": "高",
+    "confidence": "中",
     "reasons": [
-      "阿尔及利亚拥有马赫雷斯这样的世界级边锋，他的盘带和传球能在狭小空间撕开约旦防线，直接威胁球门。",
-      "约旦首次参加世界杯，面对阿尔及利亚这种经验丰富的北非劲旅，大赛紧张感可能导致后场传球失误频频。",
-      "阿尔及利亚中场有本纳赛尔掌控节奏，而约旦主要依赖塔马里的反击，但整体实力差距让约旦很难有持续的反击机会。"
+      "阿尔及利亚中场有AC米兰核心本纳塞尔控场，搭配马赫雷斯的边路突破，整体战术对位明显强于约旦，后者后防难以招架。",
+      "约旦虽有关键射手塔马里，但阿尔及利亚近期对阵埃及、摩洛哥等强队保持不败，大赛经验更丰富，抗压能力更强。",
+      "市场赔率强烈倾向阿尔及利亚（胜赔-200），模型虽低置信，但战术与情境压力评分均占优，关键球员优势不足以扭转局势。"
     ],
-    "key_risk": "约旦近期状态不错，如果阿尔及利亚久攻不下，约旦的一次快速反击可能制造冷门。"
+    "key_risk": "若塔马里爆发并抓住阿尔及利亚后防偶尔的注意力不集中，约旦可能偷袭得手，但整体实力差距下爆冷概率较低。"
   },
   "actual_result": null
 }
