@@ -2,93 +2,140 @@
   "match_id": "WC2026_C_MD2_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T01:14:11.147135",
+  "timestamp": "2026-06-15T19:01:02.569245",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -3.67,
-    "p_a_win": 0.14,
-    "p_draw": 0.18,
-    "p_b_win": 0.68,
+    "weighted_delta": -1.22,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 3.0,
+        "a_score": 5.5,
         "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.25
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "苏格兰边翼卫身后空档大，摩洛哥右路哈基米-齐耶赫组合能持续冲击这一区域",
+          "苏格兰三中卫横向移动慢，摩洛哥通过快速转移或过顶球可穿透防线",
+          "苏格兰后场高压下出球能力差，摩洛哥中场压迫可迫使失误",
+          "摩洛哥恩内斯里的近门柱抢点能力针对苏格兰中卫的防守弱点"
+        ],
+        "reasoning": "摩洛哥凭借哈基米和齐耶赫的右路冲击能精准打击苏格兰边翼卫身后空档，而苏格兰出球能力弱难以组织有效反击。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.2
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Morocco赔率-130对Scotland+400，市场预期差距显著",
+          "Morocco被视为黑马，媒体压力带来额外动力",
+          "Scotland核心Andy Robertson年龄偏大（34岁），状态存疑"
+        ],
+        "reasoning": "Morocco在赔率和黑马预期上有明显优势，但Scotland的防守反击能力（如Robertson左路传中）可能制造麻烦，差距不到碾压程度。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
         "confidence": 5.0,
-        "weight": 0.18
+        "weight": 0.18,
+        "key_factors": [
+          "摩洛哥2022年世界杯小组赛0-0平克罗地亚，展现大赛防守韧性",
+          "苏格兰自1998年后未晋级世界杯，缺乏大赛首轮经验",
+          "赔率显示摩洛哥明显占优（-130 vs 400）",
+          "苏格兰在落后时进攻手段匮乏，逆转能力弱"
+        ],
+        "reasoning": "摩洛哥得益于2022年世界杯四强经验及稳固防守，苏格兰缺乏近期参赛记录且逆转能力弱，安德鲁·罗伯逊领衔的防线难以应对摩洛哥定位球威胁。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 4.0,
-        "b_score": 6.0,
-        "delta": -2.0,
-        "confidence": 7.0,
-        "weight": 0.15
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Andy Robertson回防速度下降，左路防御可能被Hakimi攻击突破",
+          "Scott McTominay俱乐部出场时间不稳定影响国家队中场连贯性",
+          "赔率显示摩洛哥为-130优势方，市场看高摩洛哥胜率",
+          "摩洛哥Hakimi和Amrabat状态稳定，苏格兰缺乏对等限制球员"
+        ],
+        "reasoning": "摩洛哥依靠Hakimi稳定状态和整体阵容优势略优于苏格兰，但Robertson状态下滑和McTominay俱乐部不稳定削弱了苏格兰韧性。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.08
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "苏格兰核心球员罗伯逊与蒂尔尼在左路有多年俱乐部级配合",
+          "苏格兰主帅克拉克执教4年，体系根深蒂固，轮换少",
+          "摩洛哥球员哈基米、阿姆拉巴特等分散在不同联赛，磨合略弱"
+        ],
+        "reasoning": "苏格兰依靠罗伯逊-蒂尔尼左路配合和克拉克4年体系，在俱乐部集群和战术稳定性上略胜摩洛哥，但摩洛哥核心组合经验相当。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 8.0,
-        "weight": 0.07
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名摩洛哥第12，苏格兰第36，差距24名但未达30名以上标准，影响中等",
+          "摩洛哥总身价3.41亿€，苏格兰2.1亿€，差距约1.6倍，稍未达2倍显著阈值",
+          "摩洛哥有阿什拉夫·哈基米这种世界级边后卫，苏格兰无对应级别球员",
+          "赔率显示摩洛哥-130为热门，苏格兰400为弱方"
+        ],
+        "reasoning": "摩洛哥凭借更高的FIFA排名（12 vs 36）和更雄厚阵容（哈基米、布努等），在关键位置有优势，而苏格兰依赖罗伯逊和麦金但缺乏顶级突破点。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.07
+        "a_score": 4.5,
+        "b_score": 6.0,
+        "delta": -1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "摩洛哥近5场3胜2平保持不败，包括击败智利",
+          "苏格兰近5场友谊赛仅2胜，输给挪威和葡萄牙",
+          "赔率显示摩洛哥-130 vs 苏格兰+400，市场明显倾向北非球队",
+          "摩洛哥进攻稳定，近3场场均1.4球，苏格兰近期有0-2和0-1失利"
+        ],
+        "reasoning": "摩洛哥近5场不败且赔率支持，苏格兰友谊赛表现不稳且对手较弱"
       }
     ],
-    "calibration_warning": false,
-    "calibration_note": "",
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 B_WIN P(A)=24%/P(D)=33%/P(B)=43% vs 市场 P(A)=23%/P(D)=9%/P(B)=67%",
     "judge_reasoning": "Morocco胜"
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Morocco胜",
-    "confidence": "高",
+    "confidence": "中",
     "reasons": [
-      "摩洛哥右路的阿什拉夫·哈基米将用速度强吃苏格兰三中卫体系的边翼卫，苏格兰的边路防守很难跟上他的冲刺和传中。",
-      "苏格兰核心麦克托米奈需要持续回防，但摩洛哥中场阿姆拉巴特能切断他的传球线路，让苏格兰的反击陷入孤立无援。",
-      "苏格兰首轮爆冷胜海地，但面对真正强队时后防松散——摩洛哥刚逼平巴西，齐耶赫的穿插跑动会撕开苏格兰的低位防线。"
+      "摩洛哥的边路有哈基米和齐耶赫，两人速度快、突破犀利，能直接冲击苏格兰老将罗伯逊的防区，罗伯逊虽强但34岁体力下滑，可能被频繁打身后。",
+      "苏格兰中场核心麦金状态不稳，近期面对强队（如西班牙、荷兰）时控球率仅40%左右，难以组织有效进攻；反观摩洛哥效力欧洲联赛的球员多，整体阵容更均衡。",
+      "苏格兰近5场有3场丢球超过1个，防守漏洞明显；摩洛哥进攻端靠反击效率高，近期面对突尼斯、加纳都取得进球，这种暴力反击正是苏格兰防线的噩梦。"
     ],
-    "key_risk": "苏格兰凭借顽强的定位球战术（如麦金后插上头球）偷得一分，迫使摩洛哥陷入急躁围攻而失误。"
+    "key_risk": "爆冷风险在于市场对摩洛哥信心过高（赔率偏差24%），若苏格兰摆出铁桶阵并利用定位球（如罗伯逊的传球），可能逼平甚至偷一个胜利。"
   },
   "actual_result": null
 }
