@@ -1,79 +1,140 @@
 {
   "match_id": "WC2026_D_MD1_2",
   "round": "initial",
-  "round_label": "初始预测(7Agent完整模型+新权重)",
-  "timestamp": "2026-06-14T15:34:50.626356",
-  "output": {
-    "prediction": "Turkiye胜",
-    "confidence": "高",
-    "reasons": [
-      "土耳其攻防转换快，边路一冲，奥地利就漏人。",
-      "土耳其作为小组头号热门，心理和局面都占优。",
-      "居莱尔拿球就是威胁，个人能力碾压对手防线。"
-    ],
-    "key_risk": "爆冷风险:低",
-    "reasons_zh": [
-      "土耳其攻防转换快，边路一冲，奥地利就漏人。",
-      "土耳其作为小组头号热门，心理和局面都占优。",
-      "居莱尔拿球就是威胁，个人能力碾压对手防线。"
-    ],
-    "reasons_en": [
-      "Türkiye's transition speed and wing quality exploits Au",
-      "Turkey (team_b) holds a contextual edge as group favori",
-      "Turkiye hold a clear individual quality edge through Gu"
-    ]
-  },
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T17:57:14.902106",
   "_internal": {
-    "upset_risk": "低",
-    "delta": -2.39,
-    "p_a": 0.22,
-    "p_d": 0.28,
-    "p_b": 0.5,
-    "breakdown": {
-      "F_tactical": {
-        "a": 4,
-        "b": 6,
-        "conf": 6,
-        "r": "Türkiye's transition speed and wing quality exploits Australia's high-press vulnerabilities more effectively than Australia's physicality disrupts Türkiye's direct structure."
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.02,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "澳大利亚防守弱点（边中卫空当、后防速度慢）被土耳其进攻优势（肋部直塞、技术渗透）精准克制",
+          "澳大利亚核心战术棋子McGree缺阵，直接影响长传摆渡后的后排插上完成度",
+          "土耳其拥有技术中场（Çalhanoğlu），抗压球能力中等，能在中场建立控制，比澳大利亚（低抗压）更适应比赛节奏",
+          "澳大利亚的定位球是唯一明确优势，但土耳其整体战术体系的匹配度更高"
+        ],
+        "reasoning": "土耳其的技术中场体系（Çalhanoğlu/Kökçü）能利用直塞球反复打击澳大利亚缓慢且漏洞明显（边中卫结合部）的后防线，澳大利亚缺少McGree后，长传找Duke的战术立体性下降，难以持续威胁土耳其回追能力尚可的后卫线。"
       },
-      "E_context": {
-        "a": 4,
-        "b": 6,
-        "conf": 5,
-        "r": "Turkey (team_b) holds a contextual edge as group favorites with European-based stars, less travel disruption, and better climate adaptation to Vancouver, while Australia faces greater time zone displacement and underdog pressure, though both teams equally need points from this Group D opener."
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "土耳其赔率-135，获胜概率约58%，明显被市场看高",
+          "澳大利亚核心中场Riley McGree因腹股沟手术缺阵，中场组织受影响",
+          "土耳其媒体压力高可能增加心理负担，但淘汰赛经验不足被赔率优势抵消",
+          "澳大利亚近期面对日本0-2失利，缺乏对阵强队的稳定性"
+        ],
+        "reasoning": "土耳其作为赔率-135的强队，进攻端依靠黑马反压能力，而澳大利亚因McGree缺阵导致中场创造力受损，Leckie和Duke的边中结合难以对土耳其后防形成持续威胁。"
       },
-      "G_dna": {
-        "a": 4,
-        "b": 6,
-        "conf": 3,
-        "r": "Turkiye holds a slight tournament DNA edge with more consistent recent WC group stage presence and a tradition of strong early-tournament performances compared to Australia's uneven record."
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.18,
+        "key_factors": [
+          "Australia近3届世界杯首战全部告负（2014智利、2018法国、2022法国），呈现稳定慢热模式",
+          "Turkiye自2002年后首次参赛，近2届未晋级，无近期世界杯首战数据可参考",
+          "Turkiye预选赛首战表现波动，且落后时逆转能力评价为弱，缺乏大赛逆风局心理储备",
+          "Australia核心边锋Mathew Leckie经验丰富但无世界杯胜场支撑团队心态"
+        ],
+        "reasoning": "双方小组赛DNA均薄弱，Australia首轮三连败但累计经验更多，Turkiye无近期世界杯参考且预选赛心态波动，0.5分优势仅来自赔率指向和对手缺阵影响，整体接近均势"
       },
-      "D_keyplayer": {
-        "a": 3,
-        "b": 7,
-        "conf": 7,
-        "r": "Turkiye hold a clear individual quality edge through Guler and Calhanoglu, both in strong club form, versus Australia's key players performing at a functional but lower-ceiling level."
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Hakan Çalhanoğlu状态极佳，是意甲冠军级中场，而Australia的中场核心Aaron Mooy状态下滑且缺阵",
+          "Australia确认缺阵Riley McGree，后防核心Harry Souttar缺阵导致制空和定位球能力削弱",
+          "赔率显示Turkiye明显是热门，DraftKings赔率Australia+425 vs Turkiye-135"
+        ],
+        "reasoning": "Turkiye凭借Hakan Çalhanoğlu的顶级状态和Arda Güler的上升期，在中场创造力上压制缺少Aaron Mooy和Harry Souttar的Australia。"
       },
-      "B_chemistry": {
-        "a": 4,
-        "b": 6,
-        "conf": 6,
-        "r": "Turkiye holds a modest chemistry edge via longer managerial tenure, a youth-cohort core, and stronger same-system familiarity compared to Australia's more scattered, newer-setup squad."
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Arnold执教澳大利亚7年，体系成熟稳定；Montella执教土耳其仅2年，战术改造不充分",
+          "澳大利亚更衣室团结，无内部矛盾；土耳其存在Galatasaray与Fenerbahçe帮派对抗及老将Burak Yılmaz与年轻球员的摩擦",
+          "澳大利亚后防核心Souttar和Rowles有4年国家队配合经验；土耳其中生代球员断层，核心组合仅2年磨合"
+        ],
+        "reasoning": "澳大利亚在Arnold的7年执教、固定体系和稳定更衣室氛围上明显优于土耳其，后者因俱乐部帮派对立、新旧交替期战术不稳和内部摩擦处于劣势。"
       },
-      "A_strength": {
-        "a": 4,
-        "b": 6,
-        "conf": 6,
-        "r": "Turkiye holds a moderate edge in squad depth, European pedigree, and individual star power, though Australia is competitive enough to keep the gap from being decisive."
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阵容身价: Australia 4500万€ vs Turkiye 3.5亿€，差距7.8倍",
+          "土耳其有3名以上五大联赛主力（如Söyüncü、Demiral、Çelik），澳大利亚无人效力顶级联赛",
+          "赔率: Turkiye -135 (客场热门) vs Australia 425 (大幅弱旅)"
+        ],
+        "reasoning": "土耳其阵容身价是澳大利亚的7.8倍，拥有多名五大联赛球员如Çağlar Söyüncü、Merih Demiral，而澳大利亚缺少关键中场McGree且赔率大幅落后，土耳其占压倒性优势。"
       },
-      "C_form": {
-        "a": 4,
-        "b": 6,
-        "conf": 6,
-        "r": "Türkiye's stronger recent competitive opposition and improving attack gives them a modest recent form edge over Australia's solid but less tested AFC campaign."
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其近5场正赛（含世预赛）3胜2平不败，胜率60%",
+          "澳大利亚近5场正赛仅2胜1平2负，世预赛输给日本且平沙特",
+          "土耳其赔率-135显示明显实力优势，澳大利亚为425弱队定位",
+          "澳大利亚确认中场McGree缺阵，土耳其无核心伤停"
+        ],
+        "reasoning": "土耳其近期世预赛3战2胜1平且友谊赛赢波兰，状态优于澳大利亚（预选赛输日本、平沙特），赔率显示土耳其为热门，且澳大利亚缺中场核心McGree。"
       }
-    },
-    "system": "N=7 F=25% E=20% G=18% D=15% B=8% A=7% C=7%"
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Turkiye胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Turkiye胜",
+    "confidence": "中",
+    "reasons": [
+      "土耳其的哈坎·恰尔汗奥卢是球场上的节拍器，他的直塞和远射能让澳大利亚的防线手足无措；而澳大利亚中场核心杰克逊·欧文在防守时很难限制他的跑动范围，这就像一台失控的引擎。",
+      "澳大利亚的后防支柱哈里·苏塔刚从伤病中恢复，面对土耳其前锋岑克·托松的冲击和转身速度，很可能会被甩在身后，就像袋鼠跳不过狐狸一样。",
+      "土耳其近期虽然赔率小负意大利，但场面不落下风，而澳大利亚的胜利只是友谊赛击败了阵容不整的沙特，缺乏真正硬仗的考验，土耳其的韧性更值得信赖。"
+    ],
+    "key_risk": "澳大利亚的团队化学反应（+1.5）和主场球迷助威可能激发全队拼劲，若土耳其久攻不下，一次边路传中和高空轰炸（如米切尔·杜克头球）就能爆冷偷走平局乃至胜利。"
   },
   "actual_result": null
 }
