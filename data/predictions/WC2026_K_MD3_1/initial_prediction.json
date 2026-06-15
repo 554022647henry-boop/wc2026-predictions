@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_K_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T22:05:58.457747",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.6,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "葡萄牙中前场B席与B费在右侧肋部的配合，能直接利用哥伦比亚中卫回追速度慢的弱点打身后",
+          "哥伦比亚边后卫插上后留下的空档，是葡萄牙反击中的理想通道",
+          "葡萄牙中场（B席、B费、维蒂尼亚）高压下出球能力优秀，能有效破解哥伦比亚的逼抢",
+          "哥伦比亚的主要进攻手段（迪亚兹内切）恰好对准葡萄牙的防守弱环（坎塞洛身侧），但对方抗压能力强，切断其传球路线"
+        ],
+        "reasoning": "葡萄牙的B费后插上和B席肋部配合能精准打击哥伦比亚中卫Mina、Sánchez回追慢及边卫助攻后留下的空档，这一战术优势巨大；哥伦比亚虽有迪亚兹可冲击坎塞洛身后，但缺乏整体持续性，且葡萄牙中场抗压能力优秀，不易失误。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "葡萄牙拥有C罗、B席等顶级球星，纸面实力碾压哥伦比亚",
+          "赔率显示葡萄牙胜赔1.10，为赛前明确优势方",
+          "哥伦比亚进攻核心路易斯·迪亚斯状态不明，J罗年龄偏大影响输出"
+        ],
+        "reasoning": "葡萄牙纸面实力、球星成色（如B席、B费）与近期状态均优于哥伦比亚，赔率也体现明显优势，且哥伦比亚核心迪亚斯状态一般，难以弥补实力差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 4.0,
+        "weight": 0.18,
+        "key_factors": [
+          "Portugal赔率110 vs Colombia赔率255，市场明显看好Portugal",
+          "Portugal近三届世界杯小组赛首轮1胜1平1负，Colombia首战2胜2平1负",
+          "两队逆转能力均弱，先失球时胜率不足20%"
+        ],
+        "reasoning": "Portugal赔率占优且近期大赛表现更稳定（2022八强），但小组赛首战历史优势微弱（近三届1胜1平1负），Colombia首战历史稍好（过去5届首战2胜2平1负）但2022未晋级有不确定性。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [],
+        "reasoning": "l后防稳定性。\",\n    \"Rafael Leão近三场国家队场均4次成功过人，左路突破威胁大。\",\n    \"Colombia近5场仅2胜，包括1-2负于日本，整体状态低迷。\",\n    \"赔率显示Portugal（110）明显被看好，而Colombia（255）是弱势方。\"\n]\n##END##"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "葡萄牙拥有本菲卡、曼城、巴黎圣日耳曼等多组俱乐部搭档，提供场上默契",
+          "哥伦比亚的詹姆斯·罗德里格斯年事已高，与阿普里拉、杜兰等新人的化学反应需要验证",
+          "葡萄牙主帅马丁内斯执教时间较长，体系相对稳定，而哥伦比亚年轻球员对出场时间存在潜在微词"
+        ],
+        "reasoning": "葡萄牙凭借多个俱乐部小团体（B席与迪亚斯、内维斯与席尔瓦）带来的默契略胜一筹，而哥伦比亚老将与新人（詹姆斯与杜兰）的磨合尚存不确定性。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 7.0,
+        "delta": -1.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Colombia身价2.89亿欧元，Portugal身价9.8亿欧元，相差超过3倍",
+          "FIFA排名: Colombia第12，Portugal第7，差距虽不足30名但身价差距极大",
+          "赔率显示Portugal(110)远低于Colombia(255)，市场大幅看好Portugal"
+        ],
+        "reasoning": "Portugal凭借更高的FIFA排名、3倍以上的阵容身价优势以及更均衡的顶级配置占据明显上风，而Colombia虽有Diaz和J罗但整体实力与稳定性不足。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "葡萄牙近5场4胜1平，进11球失4球，状态明显优于哥伦比亚",
+          "哥伦比亚近5场仅2胜，且友谊赛输给日本，关键战缺乏说服力",
+          "赔率显示葡萄牙为获胜热门（110 vs 255），市场信心在葡萄牙一侧"
+        ],
+        "reasoning": "葡萄牙近期4胜1平不败且进攻火力旺盛，而哥伦比亚状态不稳定且核心球员J罗年龄偏大，赔率也支持葡萄牙优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "低",
+    "reasons": [
+      "葡萄牙中场有B席和B费的双核驱动，能频繁撕开哥伦比亚防线，而哥伦比亚的J罗年龄偏大，跑动覆盖不足，容易在中场失势。",
+      "葡萄牙近期热身赛4-0大胜爱尔兰，进攻端配合流畅，而哥伦比亚刚1-2输给日本，防守漏洞明显，此消彼长下葡萄牙更占优势。",
+      "哥伦比亚的进攻依赖路易斯·迪亚斯的个人突破，但葡萄牙后防有经验丰富的鲁本·迪亚斯坐镇，能限制他的内切射门空间。"
+    ],
+    "key_risk": "葡萄牙可能因轻敌或状态慢热，而哥伦比亚若利用定位球战术（如高中锋抢点）可能偷得平局。"
+  },
+  "actual_result": null
+}
