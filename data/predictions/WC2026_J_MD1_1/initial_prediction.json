@@ -2,93 +2,139 @@
   "match_id": "WC2026_J_MD1_1",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T00:56:09.869454",
+  "timestamp": "2026-06-15T18:32:51.793168",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": 5.77,
-    "p_a_win": 0.68,
-    "p_draw": 0.18,
-    "p_b_win": 0.14,
+    "weighted_delta": 1.4,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 8.0,
-        "b_score": 2.0,
-        "delta": 6.0,
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
         "confidence": 7.0,
-        "weight": 0.25
+        "weight": 0.25,
+        "key_factors": [
+          "Messi内切后分球给套上Molina传中，直击阿尔及利亚边卫回防不及时的弱点",
+          "阿尔及利亚中卫转身偏慢，Lautaro Martinez的速度型抢点将利用防线身后空间",
+          "阿根廷抗压球能力极高（Messi回撤+多点出球），能有效应对阿尔及利亚的中路压迫",
+          "阿尔及利亚Bennacer在紧逼下易失误，阿根廷中场逼抢可制造转换机会"
+        ],
+        "reasoning": "阿根廷Messi+Molina的右路套路能精准打击阿尔及利亚左后卫Aït-Nouri回防慢的肋部空档，而阿尔及利亚Mahrez-Aouar的线路虽有威胁但阿根廷后场出球点（如Messi回撤）能缓解压迫"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 8.0,
-        "b_score": 2.0,
-        "delta": 6.0,
-        "confidence": 8.0,
-        "weight": 0.2
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "阿根廷赔率-255，德拉夫特金斯显示赢球概率超70%",
+          "阿尔及利亚近期战绩空白，实力评估靠陪跑定位",
+          "梅西参与状态未确认，但阿根廷仍有劳塔罗等稳定攻击手"
+        ],
+        "reasoning": "阿根廷赔率-255远优于阿尔及利亚850，且历史战绩稳定，梅西即使出战存疑也是心理威慑，评分基于纸面实力和赔率碾压级优势。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 8.0,
-        "b_score": 2.0,
-        "delta": 6.0,
-        "confidence": 4.0,
-        "weight": 0.18
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "Argentina近两届世界杯首战表现不稳（2022年1-2沙特）",
+          "Algeria近三届世界杯首战0胜（2014年1-2比利时）",
+          "赔率-255 vs 850显示实力差距悬殊",
+          "Messi状态未确认是Argentina核心隐患"
+        ],
+        "reasoning": "Argentina实力碾压但小组赛首战慢热历史明显，Messi状态未确认增加不确定性，Algeria缺乏大赛经验且赔率差距极大"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 8.0,
-        "b_score": 4.0,
-        "delta": 4.0,
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
         "confidence": 7.0,
-        "weight": 0.15
+        "weight": 0.15,
+        "key_factors": [
+          "Messi参与状态未确认，若缺阵Argentina进攻体系崩塌",
+          "E. Martínez在英超状态出色，后防基石稳固",
+          "Algeria的Mahrez在沙特联赛高强度对抗下状态或下滑，右路威胁减弱"
+        ],
+        "reasoning": "Argentina有E. Martínez和De Paul的稳定状态作为基础，但Messi参与存疑削弱最大优势；Algeria的Mahrez状态下滑和Bennacer伤后恢复不确定性限制其威胁，赔率支持Argentina占优。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 8.0,
-        "b_score": 3.0,
-        "delta": 5.0,
-        "confidence": 7.0,
-        "weight": 0.08
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.08,
+        "key_factors": [
+          "阿根廷核心框架自2022世界杯后保留至今，已共事6年",
+          "阿尔及利亚主帅Petković上任不久，体系磨合尚不成熟",
+          "阿根廷以梅西为核心更衣室团结，无矛盾报道",
+          "阿尔及利亚无大型俱乐部集群，球员缺乏同队经历"
+        ],
+        "reasoning": "阿根廷有6年核心组合稳定性和极高系统成熟度（梅西、迪马利亚等主力框架自2022保留），阿尔及利亚仅3年核心配合且Petković体系未定型"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 9.0,
-        "b_score": 1.0,
-        "delta": 8.0,
-        "confidence": 8.0,
-        "weight": 0.07
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差距40位（第1 vs 第41），远超30名显著门槛",
+          "阵容身价8.2亿€对1.85亿€，差距4.4倍远超2倍阈值",
+          "阿根廷有梅西这种能单场改变比赛走向的超级球员（即使状态存疑）",
+          "赔率Argentina -255 vs Algeria 850，机构认为阿根廷胜率极高"
+        ],
+        "reasoning": "阿根廷FIFA排名高出40位、身价是阿尔及利亚4.4倍，且拥有梅西（即便状态存疑也是超级变量）和劳塔罗等球星，阿尔及利亚无对应抗衡能力。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 8.0,
-        "b_score": 2.0,
-        "delta": 6.0,
-        "confidence": 8.0,
-        "weight": 0.07
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿根廷近5场正式比赛4胜1平，含对阵巴西和乌拉圭的强势表现",
+          "阿尔及利亚近3场友谊赛1平2负（0-1塞内加尔、1-2埃及）",
+          "赔率显示阿根廷为-255绝对热门，阿尔及利亚+850冷门"
+        ],
+        "reasoning": "阿根廷有3项优势：近期正式比赛4胜1平不败，击败巴西和乌拉圭等高强度对手；阿尔及利亚近3场友谊赛2负且对手实力一般；主场或中立场阿根廷赔率压倒性优势。"
       }
     ],
-    "calibration_warning": false,
-    "calibration_note": "",
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=72%/P(D)=18%/P(B)=10%",
     "judge_reasoning": "Argentina胜"
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Argentina胜",
-    "confidence": "高",
+    "confidence": "中",
     "reasons": [
-      "阿根廷的战术对位优势明显，阿尔及利亚防线难以招架梅西（若出场）或劳塔罗的穿插跑动，梅西的直塞球能撕裂对手密集防守。",
-      "阿尔及利亚核心马赫雷斯和本纳塞尔状态成疑，而阿根廷中场恩佐和德保罗的逼抢强度很高，能让阿尔及利亚出球困难。",
-      "阿根廷近期连胜强敌（如意大利、巴西），球队化学和大赛DNA出色，而阿尔及利亚时隔多年重返世界杯，小组赛首战容易紧张。"
+      "阿根廷整体实力碾压，阿尔及利亚防线很难顶住劳塔罗·马丁内斯的冲击，他近期在国家队进球效率极高。",
+      "阿尔及利亚关键球员马赫雷斯虽然状态在线，但阿根廷中场德保罗的贴身盯防会限制他的拿球空间，切断球队进攻发动机。",
+      "阿根廷大赛经验丰富，小组赛首战往往进入状态快，而阿尔及利亚在大赛开局容易慢热，近5场热身赛仅1胜暴露调整问题。"
     ],
-    "key_risk": "若梅西因年龄问题替补或状态不佳，阿根廷进攻可能缺乏最后一击的创造力，阿尔及利亚若摆出铁桶阵并利用定位球机会，可能逼平对手。"
+    "key_risk": "梅西疑似伤停，若他缺阵中前场创造力会下降，可能被阿尔及利亚的密集防守拖入平局。"
   },
   "actual_result": null
 }
