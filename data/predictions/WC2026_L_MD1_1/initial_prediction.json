@@ -2,93 +2,137 @@
   "match_id": "WC2026_L_MD1_1",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T00:59:08.638675",
+  "timestamp": "2026-06-15T18:38:37.590316",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -2.28,
-    "p_a_win": 0.22,
-    "p_draw": 0.28,
-    "p_b_win": 0.5,
+    "weighted_delta": -0.07,
+    "p_a_win": 0.32,
+    "p_draw": 0.39,
+    "p_b_win": 0.29,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 7.0,
-        "weight": 0.25
+        "weight": 0.25,
+        "key_factors": [
+          "核心中场托马斯·帕尔特伊缺阵，加纳中场防守和抗逼抢能力显著下降",
+          "巴拿马的进攻核心是长传至肋部找布莱克森和托雷斯，这直接威胁加纳中场与后卫线之间的空当",
+          "加纳的边后卫一对一防守弱（Lamptey/Seidu），但巴拿马的边路进攻（传中找前锋）并非专用快马边锋，威胁度稍减"
+        ],
+        "reasoning": "加纳因帕尔特伊缺阵导致中路防守和出球问题暴露，巴拿马的长传反击和肋部冲击能有效利用这一漏洞。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.2
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Ghana核心中场Thomas Partey因入境问题缺席首场比赛。",
+          "Panama赔率较高（240.0）显示市场不看好。",
+          "两队均小组出线困难，动机强度接近。"
+        ],
+        "reasoning": "Ghana稍占优势但因Thomas Partey缺席削弱中场，Panama赔率更低但需依靠整体防守补平差距。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
         "confidence": 4.0,
-        "weight": 0.18
+        "weight": 0.18,
+        "key_factors": [
+          "加纳近3届世界杯首轮1胜2负，无稳定慢热规律，但唯一胜场为2006年，显示经验累积",
+          "巴拿马2018年首战0-3负比利时，三场均先丢球后无逆转，心态易崩",
+          "加纳关键球员伊纳基·威廉姆斯（毕尔巴鄂）具西甲级冲击力，帕尔特伊缺阵减少中场控制"
+        ],
+        "reasoning": "加纳有伊纳基·威廉姆斯等关键球员，经验优于巴拿马，但帕尔特伊缺阵降低优势；巴拿马一遇强队即崩溃的历史显示其底牌薄弱。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 6.0,
-        "weight": 0.15
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Thomas Partey因入境问题确认缺席，加纳中场失去核心组织者",
+          "Mohammed Kudus状态良好但效率略低于巅峰，仍是前场创造力关键",
+          "Adalberto Carrasquilla在MLS助攻效率高，是巴拿马唯一可靠出球点",
+          "赔率显示加纳为120.0，巴拿马为240.0，存在明显实力差距"
+        ],
+        "reasoning": "加纳因Thomas Partey确认缺阵，中场控制力大幅下降，但Kudus和Williams的进攻组合仍有明显优势；巴拿马依赖Carrasquilla的中场出球和Escobar的防线领导力，整体实力处于劣势。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 4.0,
-        "b_score": 6.0,
+        "a_score": 5.5,
+        "b_score": 7.5,
         "delta": -2.0,
-        "confidence": 7.0,
-        "weight": 0.08
+        "confidence": 7.5,
+        "weight": 0.08,
+        "key_factors": [
+          "加纳核心中场托马斯·帕尔特伊因入境问题缺席，打乱攻防节奏",
+          "巴拿马主帅执教6年，战术体系成熟，核心阵容磨合5年",
+          "加纳更衣室存在Ayew兄弟与Kudus等年轻球员的代际沟通问题",
+          "巴拿马更衣室以戈多伊和埃斯科巴尔为首，气氛团结"
+        ],
+        "reasoning": "加纳因帕尔特伊缺阵、主帅Hughton战绩不稳及代际沟通问题处于劣势；巴拿马凭借戈多伊等老将6年稳定体系和团结更衣室明显占优。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 7.0,
-        "b_score": 3.0,
-        "delta": 4.0,
-        "confidence": 7.0,
-        "weight": 0.07
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加纳阵容身价1.8亿欧元，是巴拿马1850万欧元的9.7倍，差异远超2倍阈值",
+          "加纳拥有库杜斯（西汉姆联）和伊尼亚基·威廉姆斯（毕尔巴鄂竞技）两位五大联赛核心级别攻击手",
+          "巴拿马阵容无顶级联赛明星，且FIFA排名优势（第55 vs 第65）在身价差距下无关紧要"
+        ],
+        "reasoning": "加纳凭借库杜斯和伊尼亚基·威廉姆斯的个人能力及9倍身价优势，对巴拿马形成强势压制。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.0,
-        "b_score": 4.0,
-        "delta": 2.0,
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 7.0,
-        "weight": 0.07
+        "weight": 0.07,
+        "key_factors": [
+          "Ghana近5场2胜1平2负，友谊赛表现不佳（0-2 Algeria）",
+          "Panama近期友谊赛3连胜（胜Qatar、Canada、Grenada）且零封对手",
+          "Ghana主力中场Thomas Partey因入境问题确认缺阵"
+        ],
+        "reasoning": "Ghana状态起伏且中场核心Thomas Partey缺阵，而Panama近期友谊赛取得3连胜且一球未失，状态上升明显。"
       }
     ],
     "calibration_warning": true,
-    "calibration_note": "⚠️ 赔率偏差 33%：模型 B_WIN P(A)=22%/P(D)=28%/P(B)=50% vs 市场 P(A)=55%/P(D)=9%/P(B)=36%",
-    "judge_reasoning": "Panama胜"
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 DRAW P(A)=32%/P(D)=39%/P(B)=29% vs 市场 P(A)=50%/P(D)=10%/P(B)=40%",
+    "judge_reasoning": "平局"
   },
   "output": {
     "说明": "对外展示到HTML",
-    "prediction": "Panama胜",
-    "confidence": "中",
+    "prediction": "平局",
+    "confidence": "低",
     "reasons": [
-      "加纳核心中场托马斯·帕尔特伊因入境问题无法出战，导致球队中场拦截和攻守转换能力大幅下降，而巴拿马的中场组合可以轻松施压加纳后防线。",
-      "巴拿马在战术对位上优势明显，评分7.0对加纳3.0，他们擅长利用边路快速反击，加纳缺少帕尔特伊后很难限制巴拿马的推进速度。",
-      "巴拿马近期心态稳定，刚逼平沙特，面对强敌墨西哥也只输一球，而加纳在面对类似强度的埃及时1-2落败，防守漏洞明显。"
+      "加纳核心托马斯·帕尔特伊因入境问题缺席，中场控制力严重下滑，库杜斯需要更多回撤拿球，进攻端威胁打折。",
+      "巴拿马近期状态正佳，近5场仅1负，球队化学反应评分高达7.5，伊斯梅尔·迪亚斯领衔的锋线擅长快速反击，可能抓住加纳压上后的空当。",
+      "两队实力接近但风格相克：加纳绝对实力占优（7.5 vs 5.5），但帕尔特伊缺阵后战术对位处于劣势（5.5 vs 6.5），市场赔率也显示平局被严重低估（模型39% vs 市场10%），存在纠偏可能。"
     ],
-    "key_risk": "加纳虽然整体评分劣势，但绝对实力评分（7.0对3.0）和近期状态评分（6.0对4.0）占优，若靠个人能力强突（如库杜斯灵光一现），仍可能爆冷取胜。"
+    "key_risk": "加纳若利用伊尼亚基·威廉姆斯的速度和身体优势早早破门，巴拿马阵地战能力不足可能崩盘，导致模型低估的加纳胜出。"
   },
   "actual_result": null
 }
