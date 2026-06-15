@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:25:01.370054",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.83,
+    "p_a_win": 0.5,
+    "p_draw": 0.28,
+    "p_b_win": 0.22,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 3.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "塞内加尔胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "塞内加尔胜",
+    "confidence": "中",
+    "reasons": [
+      "塞内加尔在绝对实力上碾压伊拉克，评分高达8.0对2.0，意味着即使伊拉克拼尽全力，也很难挡住塞内加尔的整体攻防节奏。",
+      "战术对位和情境压力两项关键指标上，塞内加尔均以6.0比4.0领先，说明他们能通过高压逼抢和快速转换打乱伊拉克的阵型，比如马内或迪亚洛的边路冲击可能直接撕开防线。",
+      "尽管大赛DNA和关键球员评分持平，但塞内加尔近期的非洲杯经验让他们更适应小组赛的紧张氛围，而伊拉克年轻球员可能在关键时刻出现失误。"
+    ],
+    "key_risk": "最大爆冷风险在于伊拉克可能摆出铁桶阵死守，塞内加尔若久攻不下，容易急躁，而伊拉克若抓住一次反击机会（如利用塞内加尔后防速度短板），可能导致平局甚至偷胜。"
+  },
+  "actual_result": null
+}

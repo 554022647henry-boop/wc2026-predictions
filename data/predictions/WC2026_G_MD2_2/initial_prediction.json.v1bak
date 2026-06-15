@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:28:46.316379",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -5.18,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Egypt胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Egypt胜",
+    "confidence": "高",
+    "reasons": [
+      "埃及的锋线由萨拉赫领衔，他的速度和跑位能轻易撕开新西兰的防线，加上埃及的中场控制力强，新西兰很难限制他的拿球和射门。",
+      "新西兰的战术核心是克里斯·伍德的高空轰炸，但埃及后防线身材高大且经验丰富，伍德很难在对抗中占到便宜，埃及的防线能有效化解高空球威胁。",
+      "埃及虽然在友谊赛中连败，但对手是克罗地亚和比利时这样的强队，而新西兰的近期胜绩对手是斐济和巴布亚新几内亚，实力差距明显，埃及的硬仗能力远超新西兰。"
+    ],
+    "key_risk": "埃及近期友谊赛两连败，球队士气可能受挫，若萨拉赫状态不佳或新西兰死守逼平，埃及久攻不下可能爆冷平局。"
+  },
+  "actual_result": null
+}

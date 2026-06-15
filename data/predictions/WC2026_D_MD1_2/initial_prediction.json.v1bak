@@ -1,0 +1,79 @@
+{
+  "match_id": "WC2026_D_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测(7Agent完整模型+新权重)",
+  "timestamp": "2026-06-14T15:34:50.626356",
+  "output": {
+    "prediction": "Turkiye胜",
+    "confidence": "高",
+    "reasons": [
+      "土耳其攻防转换快，边路一冲，奥地利就漏人。",
+      "土耳其作为小组头号热门，心理和局面都占优。",
+      "居莱尔拿球就是威胁，个人能力碾压对手防线。"
+    ],
+    "key_risk": "爆冷风险:低",
+    "reasons_zh": [
+      "土耳其攻防转换快，边路一冲，奥地利就漏人。",
+      "土耳其作为小组头号热门，心理和局面都占优。",
+      "居莱尔拿球就是威胁，个人能力碾压对手防线。"
+    ],
+    "reasons_en": [
+      "Türkiye's transition speed and wing quality exploits Au",
+      "Turkey (team_b) holds a contextual edge as group favori",
+      "Turkiye hold a clear individual quality edge through Gu"
+    ]
+  },
+  "_internal": {
+    "upset_risk": "低",
+    "delta": -2.39,
+    "p_a": 0.22,
+    "p_d": 0.28,
+    "p_b": 0.5,
+    "breakdown": {
+      "F_tactical": {
+        "a": 4,
+        "b": 6,
+        "conf": 6,
+        "r": "Türkiye's transition speed and wing quality exploits Australia's high-press vulnerabilities more effectively than Australia's physicality disrupts Türkiye's direct structure."
+      },
+      "E_context": {
+        "a": 4,
+        "b": 6,
+        "conf": 5,
+        "r": "Turkey (team_b) holds a contextual edge as group favorites with European-based stars, less travel disruption, and better climate adaptation to Vancouver, while Australia faces greater time zone displacement and underdog pressure, though both teams equally need points from this Group D opener."
+      },
+      "G_dna": {
+        "a": 4,
+        "b": 6,
+        "conf": 3,
+        "r": "Turkiye holds a slight tournament DNA edge with more consistent recent WC group stage presence and a tradition of strong early-tournament performances compared to Australia's uneven record."
+      },
+      "D_keyplayer": {
+        "a": 3,
+        "b": 7,
+        "conf": 7,
+        "r": "Turkiye hold a clear individual quality edge through Guler and Calhanoglu, both in strong club form, versus Australia's key players performing at a functional but lower-ceiling level."
+      },
+      "B_chemistry": {
+        "a": 4,
+        "b": 6,
+        "conf": 6,
+        "r": "Turkiye holds a modest chemistry edge via longer managerial tenure, a youth-cohort core, and stronger same-system familiarity compared to Australia's more scattered, newer-setup squad."
+      },
+      "A_strength": {
+        "a": 4,
+        "b": 6,
+        "conf": 6,
+        "r": "Turkiye holds a moderate edge in squad depth, European pedigree, and individual star power, though Australia is competitive enough to keep the gap from being decisive."
+      },
+      "C_form": {
+        "a": 4,
+        "b": 6,
+        "conf": 6,
+        "r": "Türkiye's stronger recent competitive opposition and improving attack gives them a modest recent form edge over Australia's solid but less tested AFC campaign."
+      }
+    },
+    "system": "N=7 F=25% E=20% G=18% D=15% B=8% A=7% C=7%"
+  },
+  "actual_result": null
+}

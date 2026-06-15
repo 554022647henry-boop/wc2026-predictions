@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:23:04.947383",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.75,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=64%/P(D)=9%/P(B)=27%",
+    "judge_reasoning": "Netherlands胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Netherlands胜",
+    "confidence": "中",
+    "reasons": [
+      "荷兰队近期状态火热，近5场4胜1平，包括击败巴西和德国，加克波在边路的突破是瑞典防线的噩梦",
+      "瑞典依赖伊萨克的速度和定位球，但荷兰拥有范迪克领衔的顶级防线，身高和对抗完全不落下风",
+      "瑞典中场组织能力不足，面对荷兰的高位压迫容易出现失误，德容的传球调度将主导比赛节奏"
+    ],
+    "key_risk": "德容是否首发存疑，若他缺阵，荷兰中场控制力下降，瑞典可能通过长传冲吊和定位球制造冷门"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_J_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:40:20.891273",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -5.28,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 1.5,
+        "b_score": 8.5,
+        "delta": -7.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Algeria胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Algeria胜",
+    "confidence": "高",
+    "reasons": [
+      "阿尔及利亚拥有马赫雷斯这样的世界级边锋，他的盘带和传球能在狭小空间撕开约旦防线，直接威胁球门。",
+      "约旦首次参加世界杯，面对阿尔及利亚这种经验丰富的北非劲旅，大赛紧张感可能导致后场传球失误频频。",
+      "阿尔及利亚中场有本纳赛尔掌控节奏，而约旦主要依赖塔马里的反击，但整体实力差距让约旦很难有持续的反击机会。"
+    ],
+    "key_risk": "约旦近期状态不错，如果阿尔及利亚久攻不下，约旦的一次快速反击可能制造冷门。"
+  },
+  "actual_result": null
+}

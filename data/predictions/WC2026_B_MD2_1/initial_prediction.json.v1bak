@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_B_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:08:34.362714",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.85,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Switzerland胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Switzerland胜",
+    "confidence": "高",
+    "reasons": [
+      "瑞士的沙奇里和巴尔加斯在边路能频繁制造威胁，而波黑老将哲科回防慢，两侧空档会被反复利用。",
+      "波黑防线转身速度偏慢，瑞士前场扎卡里亚、恩博洛等人擅长快速穿插，定位球和反击有望破门。",
+      "瑞士刚逼平东道主卡塔尔，全队大赛韧性足；波黑近5场只赢过立陶宛，面对高强度逼抢容易失误丢球。"
+    ],
+    "key_risk": "波黑若收缩防线并依赖哲科的高空支点打反击，瑞士久攻不下可能陷入闷平，尤其球队首轮体能消耗较大。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,30 @@
+{
+  "match_id": "WC2026_B_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "output": {
+    "prediction": "Canada胜",
+    "confidence": "中",
+    "reasons": [
+      "主场东道主气势如虹，主场优势碾压",
+      "戴维斯速度爆炸，防线无力应对",
+      "波黑老龄化严重，体能撑不住90分钟"
+    ],
+    "key_risk": "Canada wins this match with moderate confidence. The combination of home advanta",
+    "reasons_zh": [
+      "主场东道主气势如虹，主场优势碾压",
+      "戴维斯速度爆炸，防线无力应对",
+      "波黑老龄化严重，体能撑不住90分钟"
+    ],
+    "reasons_en": [
+      "Home team dominant, crushing with home advantage.",
+      "Davies' explosive pace, defense can't cope.",
+      "Bosnia's aging squad can't last 90 minutes."
+    ]
+  },
+  "_internal": {
+    "judge_reasoning": "Canada wins this match with moderate confidence. The combination of home advantage, superior athleticism, Davies as a game-changer, and Bosnia's aging spine tips the balance clearly. Bosnia can make it uncomfortable, but Canada's high press should create enough chances to convert at least once. Expected score: Canada 2-1 Bosnia. The upset risk is rated MEDIUM because Bosnia's counter-attacking threat and set-piece quality give them a genuine path to a point or three.",
+    "upset_risk": "中"
+  },
+  "actual_result": null
+}

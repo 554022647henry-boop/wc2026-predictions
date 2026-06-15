@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:34:07.939236",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.85,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.5,
+        "b_score": 4.5,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=55%/P(D)=9%/P(B)=36%",
+    "judge_reasoning": "Senegal胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Senegal胜",
+    "confidence": "低",
+    "reasons": [
+      "别看挪威有哈兰德和厄德高，但塞内加尔的整体防守体系更成熟，库利巴利领衔的后防能掐死哈兰德的冲刺空间，让他很难舒服接球。",
+      "塞内加尔的中场通过伊萨·西索科等人的拦截和快速由守转攻，能直接绕开挪威的单点依赖，马内在反击中的爆发力足够让挪威后卫狼狈不堪。",
+      "挪威时隔多年重返世界杯，小组赛首战压力山大，而塞内加尔是上届非洲冠军，世界杯经验丰富，心理层面更稳，尤其是在关键平局概率不高的情况下，更倾向找状态老到的球队。"
+    ],
+    "key_risk": "如果哈兰德和厄德高连线成功并打出个人天赋，塞内加尔的防守体系可能会出现瞬间失误，而且赔率数据显示市场更看好挪威，暗示模型可能低估了挪威的主场或核心球员效应。"
+  },
+  "actual_result": null
+}

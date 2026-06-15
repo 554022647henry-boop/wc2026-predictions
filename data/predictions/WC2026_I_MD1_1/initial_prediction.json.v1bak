@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:52:32.345282",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 5.2,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "France胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "高",
+    "reasons": [
+      "法国队姆巴佩的速度和格列兹曼的串联将撕开塞内加尔防线，就像上一场对荷兰那样，边路突破后传中制造杀机。",
+      "塞内加尔核心马内近期状态不稳，而法国中场楚阿梅尼的拦截能力能有效切断塞内加尔的快速反击路线，让他们陷入阵地战瓶颈。",
+      "法国队近期状态火热，近5场4胜1平，而塞内加尔面对强队时防守偶有漏洞，比如对科特迪瓦的平局就暴露了后防专注度问题。"
+    ],
+    "key_risk": "塞内加尔凭借身体对抗和定位球战术（如库利巴利的头球）在混乱中偷得进球，迫使法国久攻不下后心态失衡。"
+  },
+  "actual_result": null
+}

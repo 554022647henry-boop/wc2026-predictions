@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_J_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:37:44.902019",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 4.32,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "高",
+    "reasons": [
+      "梅西在中前场的穿针引线让阿根廷的进攻如虎添翼，他的盘带和传球能轻松撕开奥地利防线，劳塔罗在禁区内的抢点将是致命武器。",
+      "阿根廷中场控制力强大——麦卡利斯特和恩佐的跑动覆盖和串联组织，让奥地利很难通过中场发起反击，莱默尔和萨比策将陷入苦战。",
+      "奥地利后防高度依赖阿拉巴的健康，但他若状态不佳，面对阿根廷多变的边路进攻（如迪马利亚的突破）将漏洞百出，近期热身赛输给土耳其也暴露了防守不稳。"
+    ],
+    "key_risk": "若梅西在本场比赛前确认缺阵或因伤状态不佳，阿根廷的进攻创造力将大打折扣，奥地利可能靠莱默尔和萨比策的中场拼抢抓住反击机会爆冷。"
+  },
+  "actual_result": null
+}

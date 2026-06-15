@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:13:02.825850",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.57,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 5.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 38%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=64%/P(D)=9%/P(B)=27%",
+    "judge_reasoning": "Egypt胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Egypt胜",
+    "confidence": "中",
+    "reasons": [
+      "埃及拥有世界级球星萨拉赫，他在关键比赛中往往能以一己之力改变战局，尤其面对伊朗相对年轻的防线时，他的速度和内切射门将是最大杀器。",
+      "伊朗虽然整体战术纪律强，但近期友谊赛面对卡塔尔、伊拉克等队都未能取胜，进攻端塔雷米和阿兹蒙的配合不够流畅，面对埃及的密集防守可能陷入僵局。",
+      "埃及近期热身赛击败沙特、逼平突尼斯和阿尔及利亚，展现了面对亚洲球队时的身体对抗和控场优势，且小组赛首战往往更依赖经验而非冒险。"
+    ],
+    "key_risk": "伊朗的防守反击效率极高，如果埃及久攻不下，伊朗可能利用塔雷米的反击跑位或定位球机会偷袭得分，爆冷取胜。"
+  },
+  "actual_result": null
+}

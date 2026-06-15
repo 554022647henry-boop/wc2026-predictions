@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:40:55.205975",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 10.25,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 65.0,
+        "b_score": 35.0,
+        "delta": 30.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "荷兰胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "荷兰胜",
+    "confidence": "高",
+    "reasons": [
+      "荷兰的绝对实力优势明显，尤其是范迪克领衔的后防线，将极大限制三笘薰的边路突破，而日本队倚重的快速反击在身高和对抗上处于下风。",
+      "荷兰近期的进攻火力十足，德佩和加克波的边翼卫配合高效，近5场打进11球，面对日本队防线，他们能频繁利用肋部空当制造威胁。",
+      "日本队近期状态起伏，友谊赛不敌美国，战平韩国，而荷兰在正式比赛中连胜挪威和保加利亚，战术纪律和大赛DNA更胜一筹，尤其小组赛首战往往能稳扎稳打。"
+    ],
+    "key_risk": "日本队的爆冷风险在于，若荷兰首发阵容临场混乱（因阵容消息矛盾），可能导致配合失误，同时日本利用久保建英的盘带和远藤航的中场拦截发动快速反击，抓住荷兰边翼卫压上后的空当。"
+  },
+  "actual_result": null
+}

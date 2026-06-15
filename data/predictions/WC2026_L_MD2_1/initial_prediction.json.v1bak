@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_L_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:42:02.557509",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 5.0,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 0.0,
+        "delta": 9.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "中",
+    "reasons": [
+      "英格兰前场三叉戟凯恩、萨卡和福登状态火热，近期友谊赛2-1击败巴西展现了破密集防守的能力，而加纳防线漏洞百出。",
+      "加纳核心托马斯·帕尔特伊虽能组织，但库杜斯和阿尤兄弟面对英格兰边后卫沃克和特里皮尔的回追速度难有突破空间。",
+      "英格兰近期9场评分占优，贝林厄姆和赖斯的中场组合能压制加纳的快速反击，定位球战术（如马奎尔争顶）将成破局利器。"
+    ],
+    "key_risk": "加纳若在英格兰大举压上时通过长传找库杜斯或乔丹·阿尤偷得反击机会，可能复制2010年世界杯冷门一幕。"
+  },
+  "actual_result": null
+}

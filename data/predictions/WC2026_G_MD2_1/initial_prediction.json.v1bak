@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:27:14.544413",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 2.92,
+    "p_a_win": 0.58,
+    "p_draw": 0.23,
+    "p_b_win": 0.19,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Belgium胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "高",
+    "reasons": [
+      "比利时中前场拥有德布劳内和卢卡库的威胁组合，德布劳内的直塞球能精准撕开伊朗紧凑防线，卢卡库的冲击力在禁区里像一台坦克，伊朗后卫很难单对单限制。",
+      "伊朗的反击虽依赖塔雷米支点，但比利时后腰用控球压制能切断中场到前锋的联系，近6场比赛伊朗面对强队时进攻效率低下，很难威胁库尔图瓦把守的球门。",
+      "大赛经验上，比利时黄金一代多次征战淘汰赛，而伊朗在小组赛面对欧洲顶级球队时往往因体能下降崩盘，下半场比利时替补深度可进一步施压。"
+    ],
+    "key_risk": "伊朗利用定位球偷袭——他们的身高优势明显，若比利时防守专注度不足，一次角球或任意球就能逆转局面。"
+  },
+  "actual_result": null
+}

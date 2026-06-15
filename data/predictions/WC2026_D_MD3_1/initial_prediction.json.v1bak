@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_D_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:59:32.032722",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.74,
+    "p_a_win": 0.19,
+    "p_draw": 0.23,
+    "p_b_win": 0.58,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "United States胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "United States胜",
+    "confidence": "中",
+    "reasons": [
+      "美国队前场有普利西奇和雷纳的快速突破，土耳其后防转身慢，很容易被对手打身后制造单刀机会。",
+      "土耳其中场恰尔汗奥卢和居莱尔虽然技术细腻，但防守端硬度不足，面对麦肯尼和穆萨的逼抢容易丢球失误。",
+      "美国队小组赛首战4-1大胜巴拉圭，主场气势正盛，而土耳其世界杯经验欠缺，大赛压力下可能崩盘。"
+    ],
+    "key_risk": "土耳其凭借前场三叉戟的创造性在反击中抓住美国防线的冒进，利用远射或定位球意外领先，逼迫美国队急躁进攻从而翻车。"
+  },
+  "actual_result": null
+}

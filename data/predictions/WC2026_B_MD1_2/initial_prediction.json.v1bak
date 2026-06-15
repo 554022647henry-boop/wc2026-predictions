@@ -1,0 +1,30 @@
+{
+  "match_id": "WC2026_B_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "output": {
+    "prediction": "Switzerland胜",
+    "confidence": "高",
+    "reasons": [
+      "瑞士全欧洲顶级联赛阵容，实力碾压",
+      "卡塔尔2022惨败，大赛经验严重不足",
+      "沙奇里+扎卡中场控制，瑞士压制全场"
+    ],
+    "key_risk": "Switzerland are a top-15 FIFA nation with a squad drawn from Champions League an",
+    "reasons_zh": [
+      "瑞士全欧洲顶级联赛阵容，实力碾压",
+      "卡塔尔2022惨败，大赛经验严重不足",
+      "沙奇里+扎卡中场控制，瑞士压制全场"
+    ],
+    "reasons_en": [
+      "Swiss all-star Euro league lineup dominates.",
+      "Qatar 2022 flop, big-tourney inexperience kills.",
+      "Shaqiri and Xaka control midfield, Swiss boss."
+    ]
+  },
+  "_internal": {
+    "judge_reasoning": "Switzerland are a top-15 FIFA nation with a squad drawn from Champions League and top-5 European league clubs (Sommer at Inter, Akanji at Man City, Xhaka at Leverkusen). Qatar are almost entirely domestic-based and their only prior World Cup (2022, as hosts) produced zero wins and 7 goals conceded — the worst host performance in tournament history. The tactical and individual quality gap is substantial. Qatar's sole danger is Akram Afif on the counter, but Switzerland's defensive block under Yakin is disciplined and Sommer is elite between the sticks. A Switzerland victory by 2+ goals is the most probable outcome. Upset risk is low because even a disciplined Qatar defensive setup lacks the attacking quality to punish Switzerland on the break consistently.",
+    "upset_risk": "低"
+  },
+  "actual_result": null
+}

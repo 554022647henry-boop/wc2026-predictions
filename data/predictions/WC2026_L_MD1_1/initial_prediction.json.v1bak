@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_L_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:59:08.638675",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.28,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 33%：模型 B_WIN P(A)=22%/P(D)=28%/P(B)=50% vs 市场 P(A)=55%/P(D)=9%/P(B)=36%",
+    "judge_reasoning": "Panama胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Panama胜",
+    "confidence": "中",
+    "reasons": [
+      "加纳核心中场托马斯·帕尔特伊因入境问题无法出战，导致球队中场拦截和攻守转换能力大幅下降，而巴拿马的中场组合可以轻松施压加纳后防线。",
+      "巴拿马在战术对位上优势明显，评分7.0对加纳3.0，他们擅长利用边路快速反击，加纳缺少帕尔特伊后很难限制巴拿马的推进速度。",
+      "巴拿马近期心态稳定，刚逼平沙特，面对强敌墨西哥也只输一球，而加纳在面对类似强度的埃及时1-2落败，防守漏洞明显。"
+    ],
+    "key_risk": "加纳虽然整体评分劣势，但绝对实力评分（7.0对3.0）和近期状态评分（6.0对4.0）占优，若靠个人能力强突（如库杜斯灵光一现），仍可能爆冷取胜。"
+  },
+  "actual_result": null
+}

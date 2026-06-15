@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_B_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:09:51.099622",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.09,
+    "p_a_win": 0.58,
+    "p_draw": 0.23,
+    "p_b_win": 0.19,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Canada胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Canada胜",
+    "confidence": "高",
+    "reasons": [
+      "加拿大有阿方索·戴维斯和乔纳森·戴维这对‘快刀组合’，戴维斯能从左路撕开卡塔尔防线，而戴维在禁区内的抢点能力让门将胆寒，卡塔尔老迈的后卫很难跟上节奏。",
+      "加拿大近期状态火热，近5场3胜2平，包括逼平美国、击败墨西哥，而卡塔尔刚输给乌兹别克斯坦，士气低迷，中场阿菲夫一旦被加拿大双后腰锁死，进攻就瘫痪。",
+      "赔率开出加拿大胜-340（相当于胜率77%），且量化模型显示加拿大在战术对位和关键球员维度全面占优，实力差距明显，卡塔尔很难守住平局。"
+    ],
+    "key_risk": "加拿大若开局久攻不下，可能心态急躁被卡塔尔利用反击偷分，但考虑到加拿大边路速度和整体优势，爆冷概率低。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_J_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:58:05.204069",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.21,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 40%：模型 B_WIN P(A)=24%/P(D)=33%/P(B)=43% vs 市场 P(A)=64%/P(D)=9%/P(B)=27%",
+    "judge_reasoning": "Austria胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Austria胜",
+    "confidence": "低",
+    "reasons": [
+      "奥地利拥有萨比策和鲍姆加特纳等球员，中前场个人能力强于约旦，对手防线很难完全限制住他们的突袭和远射。",
+      "约旦在关键球员维度上评价更高，但奥地利在绝对实力和情境压力上占优，且主场氛围下球队易超常发挥。",
+      "市场赔率大幅偏向奥地利（-290 vs 800），专业机构看好其取胜，虽然模型有分歧但市场信心可参考。"
+    ],
+    "key_risk": "模型认为约旦战术对位和关键球员优势明显，且奥地利核心阿拉巴长期缺阵，若约旦成功执行防反战术，可能爆冷取胜。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,30 @@
+{
+  "match_id": "WC2026_C_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "output": {
+    "prediction": "Scotland胜",
+    "confidence": "高",
+    "reasons": [
+      "苏格兰英超球星云集，整体实力碾压级差距",
+      "海地首次世界杯，大赛经验严重不足",
+      "苏格兰背水一战求出线，动力与执行力更强"
+    ],
+    "key_risk": "综合来看，两队实力差距是客观存在的结构性差异，而非偶然因素。苏格兰球员联赛级别、战术成熟度、大赛经验均全面占优。海地的\"首次世界杯\"光环更多是情感叙事而非竞技优",
+    "reasons_zh": [
+      "苏格兰英超球星云集，整体实力碾压级差距",
+      "海地首次世界杯，大赛经验严重不足",
+      "苏格兰背水一战求出线，动力与执行力更强"
+    ],
+    "reasons_en": [
+      "Scots' stars dominate, crushing gap in quality.",
+      "Haiti's World Cup debut, severely lacking experience.",
+      "Scotland must-win; stronger drive and execution."
+    ]
+  },
+  "_internal": {
+    "judge_reasoning": "综合来看，两队实力差距是客观存在的结构性差异，而非偶然因素。苏格兰球员联赛级别、战术成熟度、大赛经验均全面占优。海地的\"首次世界杯\"光环更多是情感叙事而非竞技优势。预计苏格兰以2-0或2-1取胜，控制比赛节奏，上半场通过定位球或中场推进率先破门，下半场锁定胜局。爆冷风险低，但苏格兰需警惕开场20分钟的节奏失控窗口。",
+    "upset_risk": "低"
+  },
+  "actual_result": null
+}

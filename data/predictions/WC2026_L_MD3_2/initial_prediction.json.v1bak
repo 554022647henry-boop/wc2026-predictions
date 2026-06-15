@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_L_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:32:57.461416",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 4.11,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "克罗地亚胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "克罗地亚胜",
+    "confidence": "高",
+    "reasons": [
+      "克罗地亚的中场由莫德里奇坐镇，他的传球调度能轻松撕开加纳缺少帕尔特伊保护的中路防线，加纳很难在中场抢回球权。",
+      "加纳核心后腰托马斯·帕尔特伊因入境问题缺阵，这让本就脆弱的防守组织雪上加霜，克罗地亚的格瓦迪奥尔领衔的后防可以放心前压施压。",
+      "克罗地亚近期状态稳定，近5场赢下3场且只输1场，而加纳在友谊赛刚输给摩洛哥，面对强队时攻坚能力不足，克罗地亚的控球压制会让加纳全场疲于奔命。"
+    ],
+    "key_risk": "如果克罗地亚久攻不下，加纳凭借库杜斯和威廉姆斯的个人速度发动快速反击，可能偷得一球造成冷门。"
+  },
+  "actual_result": null
+}

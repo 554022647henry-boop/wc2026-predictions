@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_I_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:54:04.268916",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -6.57,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 B_WIN P(A)=14%/P(D)=18%/P(B)=68% vs 市场 P(A)=0%/P(D)=9%/P(B)=91%",
+    "judge_reasoning": "Norway胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Norway胜",
+    "confidence": "高",
+    "reasons": [
+      "挪威的绝对火力碾压伊拉克防线：哈兰德即使轮休，厄德高和索尔洛特也能在中场和锋线撕开伊拉克的密集防守，伊拉克后卫缺乏应对顶级前锋的速度和经验。",
+      "挪威大赛经验远超世界杯新军：伊拉克队史第二次参赛，球员紧张易失误；挪威时隔28年重返舞台，拥有厄德高、哈兰德等欧冠级别的核心，临场调整能力更强。",
+      "赔率和模型一致指向悬殊差距：市场主胜赔率高达1400，挪威胜赔率仅-525，量化模型预测概率68%且各维度评分均大比分领先（如战术对位-6.0），爆冷可能性极低。"
+    ],
+    "key_risk": "伊拉克死守+挪威久攻不下造平局：若挪威轻敌或末轮轮换保留体力，伊拉克密集541阵型可能拖垮挪威耐心，尤其是哈兰德若未首发，挪威阵地战效率可能打折。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_G_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:50:01.642188",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.77,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Belgium胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "中",
+    "reasons": [
+      "比利时前场有德布劳内精准直塞和卡拉斯科的边路突破，能撕开埃及密集防线，德国团队的反击配合也胜过对手。",
+      "埃及近期对阵沙特和摩洛哥表现低迷，进攻过度依赖萨拉赫单打，小组赛很难应对比利时多层防线与快速回防。",
+      "比利时中场控制力更强，蒂莱曼斯和阿马杜·奥纳纳的拦截与出球能切断埃及攻防转换，迫使对方失误。"
+    ],
+    "key_risk": "埃及若死守并靠萨拉赫反击偷到进球，比利时久攻不下可能心态急躁，平局或小负爆冷风险存在。"
+  },
+  "actual_result": null
+}

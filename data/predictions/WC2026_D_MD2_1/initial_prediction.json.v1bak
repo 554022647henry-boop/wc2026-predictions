@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_D_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:15:12.095136",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.04,
+    "p_a_win": 0.58,
+    "p_draw": 0.23,
+    "p_b_win": 0.19,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Turkiye胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Turkiye胜",
+    "confidence": "中",
+    "reasons": [
+      "土耳其近5场友谊赛和欧预赛取得3胜2平，包括2-1力克荷兰，球队状态火热；而巴拉圭近5场仅1胜，且攻击乏力，最近两场友谊赛只进1球。",
+      "土耳其核心恰尔汗奥卢坐镇中场，他精准的长传和远射是破局利器，加上边路云代尔的快速内切，能撕开巴拉圭偏慢的4-4-2防线。",
+      "土耳其主场作战且战术评分全面占优（战术对位+2.0、关键球员+3.0），面对巴拉圭依赖阿尔米隆的单一反击点，控制力更强。"
+    ],
+    "key_risk": "巴拉圭若摆出铁桶阵并利用阿尔米隆的闪电反击偷袭得手，可能导致土耳其久攻不下心态急躁，出现冷门平局。"
+  },
+  "actual_result": null
+}

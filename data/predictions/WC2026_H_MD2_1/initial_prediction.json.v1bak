@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:30:14.878344",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 7.18,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 2.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Uruguay胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Uruguay胜",
+    "confidence": "高",
+    "reasons": [
+      "乌拉圭拥有巴尔韦德和努涅斯组成的欧洲顶级中轴线，巴尔韦德的中场调度和努涅斯的冲击力将在对阵佛得角时形成碾压优势",
+      "乌拉圭近期状态出色，近5场4胜1平，包括击败智利和秘鲁，球队整体配合默契，而佛得角面对强队时防守脆弱",
+      "大赛DNA和经验差距明显：乌拉圭是世界杯常客，多名球员效力皇马、巴萨等豪门，而佛得角大赛经验匮乏，关键时刻容易失误"
+    ],
+    "key_risk": "本届世界杯动能缺失：两队均无世界杯完赛记录，乌拉圭可能因轻敌或慢热导致进攻效率下降，而佛得角若死守反击偷得平局"
+  },
+  "actual_result": null
+}

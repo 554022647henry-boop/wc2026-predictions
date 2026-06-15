@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_C_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:48:28.786857",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -7.66,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Brazil胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "高",
+    "reasons": [
+      "巴西拥有维尼修斯和罗德里戈这样的顶级边锋，他们全场都能用速度和内切突破苏格兰的防线，苏格兰的边翼卫很难一对一盯防。",
+      "苏格兰的关键得分手段是定位球和边路传中，但巴西的高位逼抢能限制苏格兰边翼卫起球，麦克托米奈和亚当斯的抢点机会将被大幅压缩。",
+      "苏格兰28年后再进世界杯，面对巴西这种级别的对手，大赛经验不足会让球队紧张，而巴西近期连续大胜日本和阿尔及利亚，状态上乘，心理优势明显。"
+    ],
+    "key_risk": "苏格兰可能通过密集防守和铁血拼抢拖入平局，尤其是利用定位球制造混乱，而巴西若久攻不下可能急躁失误，但实力差距让这种可能性较低。"
+  },
+  "actual_result": null
+}

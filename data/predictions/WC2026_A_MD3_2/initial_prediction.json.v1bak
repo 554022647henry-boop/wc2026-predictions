@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_A_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:58:02.139797",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -6.39,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.5,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 3.0,
+        "b_score": 8.0,
+        "delta": -5.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "South Korea胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "South Korea胜",
+    "confidence": "高",
+    "reasons": [
+      "孙兴慜在热刺的快速反击能力将直接撕开南非防线，他上一场对阵日本刚打入制胜球，状态正佳。",
+      "金玟哉领衔的韩国后防线近5场仅丢2球，面对南非表现平平的锋线（头号射手Lyle Foster在伯恩利并非主力）将占据绝对优势。",
+      "韩国中场李刚仁的盘带和传球创造力远超南非核心Teboho Mokoena，他在巴黎圣日耳曼的欧冠经验足以掌控比赛节奏。"
+    ],
+    "key_risk": "南非利用身体对抗和定位球偷袭制造冷门，但韩国整体实力和大赛经验远超对手，爆冷概率极低。"
+  },
+  "actual_result": null
+}

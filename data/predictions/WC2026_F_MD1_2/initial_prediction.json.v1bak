@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:42:10.591148",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.66,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 3.5,
+        "delta": 3.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Sweden胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Sweden胜",
+    "confidence": "中",
+    "reasons": [
+      "瑞典拥有伊萨克和哲凯赖什这样的强力前锋，他们最近在五大联赛状态火热，能靠个人能力撕开突尼斯不太稳固的后防线。",
+      "突尼斯在近期热身赛中对阵非非洲球队时防守漏洞明显，比如被阿尔及利亚逼平，而瑞典的中场控制力更强，库卢塞夫斯基的串联是关键。",
+      "从战术对位看，瑞典的高位逼抢和边路进攻将压制突尼斯的防守反击，后者很难应对瑞典球员的身体对抗和速度优势。"
+    ],
+    "key_risk": "突尼斯防守反击可能带来意外，如果瑞典久攻不下，突尼斯的姆萨克尼和斯利蒂能在边路制造快速威胁，打出冷门平局。"
+  },
+  "actual_result": null
+}

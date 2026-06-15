@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_E_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:03:53.825215",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -7.56,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 0.0,
+        "b_score": 10.0,
+        "delta": -10.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Ivory Coast胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ivory Coast胜",
+    "confidence": "中",
+    "reasons": [
+      "科特迪瓦拥有阿莱、凯西等多名五大联赛球星，个人能力上的碾压已是明面优势，特别是阿莱在禁区内的支点作用，库拉索后卫几乎无法单防。",
+      "库拉索最近10场友谊赛输多赢少，防线尤其不稳，面对摩洛哥和喀麦隆这样的强队时被暴露频繁，而科特迪瓦近5场仅失2球，防守重心稳定。",
+      "科特迪瓦快马边锋如阿达玛·特劳雷的冲阵能力，一旦首发便能撕开库拉索矮小边卫，进攻中门将的横传骚扰模式极易在右路打出爆点配合，制造进球机会。"
+    ],
+    "key_risk": "科特迪瓦可能轮换半数主力，若新阵容缺乏默契，库拉索凭借反击速度（比如加西亚的冲刺）或许能先偷到一球，激发出平局的根基。"
+  },
+  "actual_result": null
+}

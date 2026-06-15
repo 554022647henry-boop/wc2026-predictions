@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_A_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:07:20.127445",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 3.92,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 4.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Czechia胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Czechia胜",
+    "confidence": "中",
+    "reasons": [
+      "捷克锋线核心帕特里克·希克（Patrik Schick）状态正佳，他在预选赛和欧国联中多次利用快速边路传中头球破门，南非的防线面对这种高空轰炸可能吃力。",
+      "南非队长奥利萨·恩达（Olisa Ndah）虽是中场节拍器，但球队近期面对强队时控球率偏低（vs摩洛哥仅35%），而捷克擅长高位逼抢切断传球路线，南非难组织有效进攻。",
+      "捷克近5场正式比赛3胜1平1负，包括4-0大胜北爱尔兰，球队化学反应和大赛经验（多名球员效力欧洲五大联赛）远胜于非洲杯战绩起伏的南非。"
+    ],
+    "key_risk": "南非如果死守反击并利用边锋速度打捷克身后，可能偷得平局，尤其在捷克大赛慢热（首场小组赛常有波动）的情况下。"
+  },
+  "actual_result": null
+}

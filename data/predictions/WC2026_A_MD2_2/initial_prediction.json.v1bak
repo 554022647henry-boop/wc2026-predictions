@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_A_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:11:00.934693",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.77,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 4.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 30%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=73%/P(D)=9%/P(B)=18%",
+    "judge_reasoning": "Mexico胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "中",
+    "reasons": [
+      "墨西哥近期状态火热，近5场4胜1平，而韩国队虽然有孙兴慜领衔，但整体表现起伏较大，墨西哥的攻势足球有望在开场就占据主动。",
+      "墨西哥的关键球员Zendejas近期创造力十足，他的快速传球和射门能力能撕开韩国防线，而韩国队防空是软肋，墨西哥的定位球战术将是得分利器。",
+      "从战术对位看，墨西哥的快速边锋和团队配合优于韩国依赖孙兴慜个人突破的单打模式，中场的逼抢将限制韩国的进攻发起点。"
+    ],
+    "key_risk": "市场赔率显示墨西哥大热（胜率73%），但模型概率仅43%，若韩国凭借孙兴慜的个人能力打出反击高效，可能制造冷门平局或胜利。"
+  },
+  "actual_result": null
+}

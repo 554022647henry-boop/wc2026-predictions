@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_J_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:29:15.319064",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -7.25,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 0.0,
+        "b_score": 10.0,
+        "delta": -10.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "高",
+    "reasons": [
+      "阿根廷拥有劳塔罗和阿尔瓦雷斯这对锋线组合，他们能在禁区前不断穿插跑动，撕开约旦的密集防线，而约旦后防线缺乏顶级赛事经验，很难盯住这两人的灵活换位。",
+      "约旦的反击依赖穆萨·塔阿马里的个人盘带，但阿根廷的中场有恩佐和麦卡利斯特进行高位逼抢，一旦断球就能迅速形成二次进攻，这让约旦很难打出有效转换。",
+      "阿根廷作为卫冕冠军和美洲杯得主，大赛气质远超首次参赛的约旦，即便梅西轮休，替补球员的战术执行力也足以掌控节奏，约旦很难在90分钟内保持专注。"
+    ],
+    "key_risk": "若约旦死守成功将比赛拖入僵局，阿根廷可能因久攻不下而急躁，被塔阿马里的快速反击偷袭得手，造成爆冷平局。"
+  },
+  "actual_result": null
+}

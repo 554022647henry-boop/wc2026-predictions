@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_D_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:01:40.220718",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.45,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 4.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 29%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=55%/P(D)=9%/P(B)=36%",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "中",
+    "reasons": [
+      "巴拉圭头号球星阿尔米隆（Almirón）近两场友谊赛状态回升，但面对澳洲年轻有活力的防线（如中卫苏塔尔）难获轻松射门机会，他的盘带突破将是破局关键。",
+      "澳大利亚近期三场不败且零封新西兰，门将瑞安（Ryan）和费耶诺德新星库奥尔（Kuol）的反击组合极具威胁，但巴拉圭中场压迫（维拉巴、库巴斯）能切断其传球线路。",
+      "两队小组赛形势胶着：巴拉圭首战大败后急需止血，澳大利亚则希望稳守出线优势，这种心理下双方都会优先避免失误，比赛可能陷入沉闷拉锯。"
+    ],
+    "key_risk": "市场赔率严重倾向巴拉圭（胜率55%），但模型显示双方实力接近，若澳大利亚利用年轻体能优势在下半场突然提速，巴拉圭防线可能崩盘。"
+  },
+  "actual_result": null
+}

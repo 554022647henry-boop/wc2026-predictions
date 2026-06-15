@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_B_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:51:32.918886",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 2.89,
+    "p_a_win": 0.58,
+    "p_draw": 0.23,
+    "p_b_win": 0.19,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 5.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 6.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Switzerland胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Switzerland胜",
+    "confidence": "高",
+    "reasons": [
+      "瑞士队近期状态火热，近5场比赛赢下3场，包括击败葡萄牙和丹麦这样的强队，而加拿大队近5场输了4场，防守漏洞百出（场均丢2球以上）。",
+      "中场核心扎卡和弗罗伊勒的传控能力将压制加拿大相对薄弱的中场，加拿大队依赖阿方索·戴维斯的反击但瑞士的边翼卫威德默和罗德里格斯能有效限制他的突破。",
+      "瑞士队大赛经验丰富，世界杯常客的沉稳气质在小组赛关键战中是巨大优势，而加拿大队历史战绩惨淡（仅1次小组出线），心态上容易急躁。"
+    ],
+    "key_risk": "加拿大如果利用阿方索·戴维斯的速度在反击中撕开瑞士防线，并抓住瑞士防线偶尔的注意力不集中（如近期对阵奥地利丢2球），可能制造冷门平局甚至险胜。"
+  },
+  "actual_result": null
+}

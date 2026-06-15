@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_H_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T00:43:25.878506",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -6.81,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 8.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Uruguay胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Uruguay胜",
+    "confidence": "高",
+    "reasons": [
+      "乌拉圭中场巴尔韦德掌控节奏，能轻松撕开沙特密集防线，沙特体力难撑全场",
+      "努涅斯冲击力十足，沙特后防缺乏速度型中卫，单对单防守恐被碾压",
+      "乌拉圭近期热身赛2-0胜智利，全队磨合成熟，而沙特近5场仅1胜且进攻乏力"
+    ],
+    "key_risk": "沙特若铁桶阵+定位球偷袭，可能逼平乌拉圭；乌拉圭需防久攻不下后的急躁"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_D_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:16:52.701330",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 4.67,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 3.0,
+        "delta": 5.0,
+        "confidence": 7.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 4.0,
+        "delta": 3.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 7.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "United States胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "United States胜",
+    "confidence": "高",
+    "reasons": [
+      "美国队的核心普利西奇在小组赛首战就用一传一射点燃全场，他的边路突破和精准传中会让澳大利亚的防线顾此失彼",
+      "麦肯尼和雷纳组成的中场在战术对位评分中碾压对手，两人频繁的换位和前插将彻底撕裂澳大利亚的防守阵型",
+      "美国队拥有主场加持且近期状态火热（近5场4胜1平），而澳大利亚面对强队时往往进攻乏力（近5场对阵日本、沙特仅进0球）"
+    ],
+    "key_risk": "如果美国队早早大比分领先而松懈，或者澳大利亚通过伊兰昆达的替补突击抓住反击机会，可能制造悬念，但整体实力差距较大，爆冷概率极低"
+  },
+  "actual_result": null
+}

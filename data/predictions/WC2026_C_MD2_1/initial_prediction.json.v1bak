@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_C_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:12:55.697389",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 7.15,
+    "p_a_win": 0.68,
+    "p_draw": 0.18,
+    "p_b_win": 0.14,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 10.0,
+        "b_score": 0.0,
+        "delta": 10.0,
+        "confidence": 9.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 8.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 8.0,
+        "b_score": 2.0,
+        "delta": 6.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 8.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 10.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 9.0,
+        "b_score": 1.0,
+        "delta": 8.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Brazil胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "高",
+    "reasons": [
+      "巴西队的整体实力和战术体系远超海地，即使轮换阵容，像维尼修斯和罗德里戈这样的攻击手也能轻易撕开海地的密集防守。",
+      "海地世界杯经验匮乏，面对巴西的高位逼抢和快速转换，后防线容易出现失误，而巴西的锋线把握机会能力极强。",
+      "巴西近期状态火热，过去5场仅失2球，而海地进攻乏力，很难攻破由马尔基尼奥斯领衔的防线。"
+    ],
+    "key_risk": "巴西可能大规模轮换主力，导致进攻配合生疏，若海地顽强死守并利用定位球偷袭，有可能逼出平局。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,30 @@
+{
+  "match_id": "WC2026_D_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "output": {
+    "prediction": "United States胜",
+    "confidence": "高",
+    "reasons": [
+      "主场之利+普利西奇领衔，进攻火力全开",
+      "美国高位压迫打乱巴拉圭节奏，4球碾压",
+      "世界杯首战主队士气爆棚，巴拉圭无力抵挡"
+    ],
+    "key_risk": "比赛已结束，美国4-1大胜巴拉圭。美国主场作战，球迷支持+阵容整体实力明显占优，普利西奇等核心球员状态出色。巴拉圭南美预选赛表现平平，面对东道主高强度压迫毫无还",
+    "reasons_zh": [
+      "主场之利+普利西奇领衔，进攻火力全开",
+      "美国高位压迫打乱巴拉圭节奏，4球碾压",
+      "世界杯首战主队士气爆棚，巴拉圭无力抵挡"
+    ],
+    "reasons_en": [
+      "Home advantage plus Pulisic-led attack in full flow.",
+      "US high press disrupted Paraguay, routing them 4-0.",
+      "Hosts' World Cup opener morale soared, Paraguay overwhelmed."
+    ]
+  },
+  "_internal": {
+    "judge_reasoning": "比赛已结束，美国4-1大胜巴拉圭。美国主场作战，球迷支持+阵容整体实力明显占优，普利西奇等核心球员状态出色。巴拉圭南美预选赛表现平平，面对东道主高强度压迫毫无还手之力。4-1的比分充分说明两队实力差距，美国以强势姿态开启本届世界杯征程。",
+    "upset_risk": "低"
+  },
+  "actual_result": "United States 4-1 Paraguay"
+}

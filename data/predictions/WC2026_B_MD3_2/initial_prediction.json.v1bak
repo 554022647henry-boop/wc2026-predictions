@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_B_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T01:53:56.818483",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.13,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 4.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 4.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 6.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 30%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=73%/P(D)=9%/P(B)=18%",
+    "judge_reasoning": "Bosnia and Herzegovina胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Bosnia and Herzegovina胜",
+    "confidence": "中",
+    "reasons": [
+      "波黑虽然近期状态起伏，但拥有哲科这样的老将坐镇锋线，在小组赛关键战中，他的经验能抓住卡塔尔防线的瞬间松懈完成致命一击",
+      "卡塔尔的阿菲夫和阿里是反击利器，但波黑的中场由皮亚尼奇（若出战）调度，能有效控制节奏，切断卡塔尔的反击发起点",
+      "波黑的绝对实力评分（7比3）和大赛DNA（6比4）占优，面对亚洲球队，欧洲球队的身体对抗和高空球优势会成为破局关键"
+    ],
+    "key_risk": "波黑近期状态不佳（3场不胜），且关键球员皮亚尼奇是否出战存疑，若中场失控，卡塔尔凭借阿菲夫的快速突击可能爆冷取胜"
+  },
+  "actual_result": null
+}

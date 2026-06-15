@@ -1,0 +1,94 @@
+{
+  "match_id": "WC2026_F_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T02:10:36.203884",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -3.84,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 3.0,
+        "delta": 4.0,
+        "confidence": 7.0,
+        "weight": 0.25
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.2
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 1.0,
+        "b_score": 9.0,
+        "delta": -8.0,
+        "confidence": 4.0,
+        "weight": 0.18
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.15
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 7.0,
+        "weight": 0.08
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 2.0,
+        "b_score": 8.0,
+        "delta": -6.0,
+        "confidence": 9.0,
+        "weight": 0.07
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Netherlands胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Netherlands胜",
+    "confidence": "高",
+    "reasons": [
+      "荷兰队后防有范戴克坐镇，他的领袖气质和经验能顶住突尼斯前锋的冲击，即使突尼斯打快速反击也没那么容易破门。",
+      "中场德容的控球和传球是荷兰节奏的节拍器，他会通过精准直塞和跑动不断撕开突尼斯的密集防线，让加克波等人获得射门机会。",
+      "突尼斯近期友谊赛连败给阿尔及利亚和埃及，面对强队时进攻乏力，而荷兰友谊赛刚逼平比利时，整体状态和求胜欲明显更高。"
+    ],
+    "key_risk": "突尼斯若死守摆大巴，荷兰队久攻不下产生急躁情绪，可能导致一次定位球失误被对手偷袭得手，制造冷门平局。"
+  },
+  "actual_result": null
+}
