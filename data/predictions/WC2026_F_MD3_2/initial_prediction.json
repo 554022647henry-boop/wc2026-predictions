@@ -2,93 +2,137 @@
   "match_id": "WC2026_F_MD3_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T02:10:36.203884",
+  "timestamp": "2026-06-15T20:20:53.356648",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -3.84,
-    "p_a_win": 0.14,
-    "p_draw": 0.18,
-    "p_b_win": 0.68,
+    "weighted_delta": -1.05,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 7.0,
-        "b_score": 3.0,
-        "delta": 4.0,
-        "confidence": 7.0,
-        "weight": 0.25
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "突尼斯抗压球能力弱，中后场在高压下无法稳定出球，难以实现Skhiri的长传直塞反击",
+          "荷兰边后卫-边锋套边配合可针对性攻击突尼斯边后卫Kechrida与Abdi的防守弱点",
+          "荷兰的德容和西蒙斯具备控场能力，能有效规避本方防线身后的风险"
+        ],
+        "reasoning": "突尼斯的反击直塞理论能威胁荷兰的高位防线，但自身抗压极弱（Skhiri/后防受压易失误），而荷兰的边路套边（邓弗里斯/加克波）能持续打穿突尼斯边后卫（Kechrida/Abdi）的防守漏洞，形成攻防两端的巨大差距。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 9.0,
-        "weight": 0.2
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示荷兰-290对突尼斯+800，实力差距巨大",
+          "荷兰是夺冠热门，突尼斯仅为陪跑角色，动机强度差异显著",
+          "突尼斯核心Youssef Msakni年龄35岁且状态不明，Wajdi Kechrida有伤病史，削弱进攻威胁"
+        ],
+        "reasoning": "荷兰在实力、赔率和夺冠动机上全面占优，突尼斯缺乏球星且核心状态存疑，但荷兰可能难以大胜，突尼斯防守韧性是唯一不确定因素。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 1.0,
-        "b_score": 9.0,
-        "delta": -8.0,
-        "confidence": 4.0,
-        "weight": 0.18
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "荷兰近3届世界杯小组赛首战全胜且场均净胜2球（2022年2-0塞内加尔，2014年5-1西班牙）",
+          "突尼斯近两届世界杯首战均不败（1-1平英格兰、1-0胜法国），防守韧性突出",
+          "荷兰纸面实力远超突尼斯，赔率-290显示市场高度看好荷兰"
+        ],
+        "reasoning": "荷兰小组赛首战历史极强且整体实力碾压，突尼斯虽有冷门基因但攻击力有限，核心球员Msakni状态存疑，荷兰大概率主导比赛。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 9.0,
-        "weight": 0.15
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Youssef Msakni状态下滑且年龄偏大，存在小伤风险，突尼斯进攻瘫痪",
+          "Ellyes Skhiri虽状态优秀，但中场整体仍无法对抗荷兰",
+          "荷兰Frenkie de Jong、Xavi Simons状态出色，Van Dijk提供防线保障",
+          "赔率显示荷兰为明显热门（-290），突尼斯为800大幅看衰"
+        ],
+        "reasoning": "荷兰的Frenkie de Jong、Virgil van Dijk和Xavi Simons均状态稳定或出色，而突尼斯核心Youssef Msakni状态下滑且有伤疑，球队进攻端缺乏有效替补，两者差距明显。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 7.0,
-        "weight": 0.08
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "突尼斯多名核心球员同效力沙特联赛，如Msakni与Jaziri，俱乐部配合基础强",
+          "突尼斯教练Kadri执教多年，战术体系稳定，而科曼调整频繁",
+          "突尼斯锋线年龄偏大但经验尚存，荷兰年轻球员多但信任磨合不足"
+        ],
+        "reasoning": "突尼斯凭借多名沙特联赛同队老将（Msakni、Jaziri）默契及Kadri长期执教下严明战术纪律形成明显优势，荷兰在核心组合稳定性无显著领先且战术调整多。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 9.0,
-        "weight": 0.07
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰阵容身价6.95亿欧元，是突尼斯9500万欧元的7.3倍",
+          "荷兰FIFA排名第6，突尼斯第32，差距26位未达30名阈值",
+          "突尼斯关键球员Youssef Msakni年龄35岁且有伤情不确定，Kechrida有脚踝伤病史",
+          "赔率显示荷兰为-290大热，突尼斯+800冷门"
+        ],
+        "reasoning": "荷兰整体实力占优，阵容身价碾压突尼斯7倍以上，但排名差距未达30名且缺乏姆巴佩级超级球员，优势有限。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 2.0,
-        "b_score": 8.0,
-        "delta": -6.0,
-        "confidence": 9.0,
-        "weight": 0.07
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰近3场友谊赛2胜1平，包括1-0胜德国、2-2平法国，状态上升",
+          "突尼斯近5场仅2胜，且友谊赛连续不胜（0-0平冰岛、1-2负沙特）",
+          "荷兰阵容深度远优于突尼斯，无重大伤停，而突尼斯有Msakni和Kechrida伤疑"
+        ],
+        "reasoning": "荷兰队近3场友谊赛攻入5球，面对德法保持不败，而突尼斯核心Msakni状态不明且进攻乏力，荷兰在关键球员实力和近期状态上全面占优。"
       }
     ],
-    "calibration_warning": false,
-    "calibration_note": "",
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 36%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=11%/P(D)=15%/P(B)=74%",
     "judge_reasoning": "Netherlands胜"
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Netherlands胜",
-    "confidence": "高",
+    "confidence": "中",
     "reasons": [
-      "荷兰队后防有范戴克坐镇，他的领袖气质和经验能顶住突尼斯前锋的冲击，即使突尼斯打快速反击也没那么容易破门。",
-      "中场德容的控球和传球是荷兰节奏的节拍器，他会通过精准直塞和跑动不断撕开突尼斯的密集防线，让加克波等人获得射门机会。",
-      "突尼斯近期友谊赛连败给阿尔及利亚和埃及，面对强队时进攻乏力，而荷兰友谊赛刚逼平比利时，整体状态和求胜欲明显更高。"
+      "荷兰队中前场拥有德佩和德容这样的世界级球星，即使德容有伤病史，其替补阵容也足够深厚，而突尼斯核心球员姆萨克尼年龄偏大状态不明，关键球员对比上荷兰明显占优",
+      "荷兰队的战术对位评分高达7.5，远高于突尼斯的5.0，范加尔治下的荷兰队擅长控球和快速反击，而突尼斯防守体系在强队冲击下容易出现漏洞",
+      "突尼斯近期热身赛1-2输给阿尔及利亚，防守端不稳定，而荷兰刚刚2-2战平德国，进攻火力有保证，历史上荷兰对非洲球队也保持较高胜率"
     ],
-    "key_risk": "突尼斯若死守摆大巴，荷兰队久攻不下产生急躁情绪，可能导致一次定位球失误被对手偷袭得手，制造冷门平局。"
+    "key_risk": "荷兰队多名主力如德利赫特、德容、德佩存在伤停风险，如果核心无法出场或状态不佳，突尼斯凭借顽强的防守和反击有可能制造冷门"
   },
   "actual_result": null
 }
