@@ -2,93 +2,137 @@
   "match_id": "WC2026_D_MD3_1",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T01:59:32.032722",
+  "timestamp": "2026-06-15T20:06:45.956485",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -2.74,
-    "p_a_win": 0.19,
-    "p_draw": 0.23,
-    "p_b_win": 0.58,
+    "weighted_delta": -0.43,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 3.0,
-        "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.25
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "土耳其中卫Demiral/Söyüncü回追速度慢，美国Pulisic/Robinson的左路冲击组合恰好能利用此弱点。",
+          "美国中卫Ream转身速度慢，土耳其核心Çalhanoğlu的直塞和Aktürkoğlu的内切能针对性打击该区域。",
+          "美国队前场逼抢能力（Adams领衔）可能打乱土耳其依赖技术中场（Çalhanoğlu/Kökçü）的短传出球节奏。"
+        ],
+        "reasoning": "美国队的边路速度与传中（Pulisic内切+Robinson套边）能更直接地打击土耳其中卫回追慢和高位防线的弱点；土耳其虽能通过Çalhanoğlu的直塞攻击Ream身后，但自身后防压力更大。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 4.0,
-        "b_score": 6.0,
-        "delta": -2.0,
-        "confidence": 6.0,
-        "weight": 0.2
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.2,
+        "key_factors": [
+          "恰尔汗奥卢和普利西奇均为待定状态，均等削弱双方攻击力",
+          "DraftKings赔率接近，市场无明确偏向",
+          "媒体压力差异不大，且小组赛MD1双方动机对等"
+        ],
+        "reasoning": "双方核心球员恰尔汗奥卢和普利西奇均有伤疑，近期战绩和赔率接近，无明显优势维度，需等待官方名单与赛前发布会信息。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
-        "a_score": 4.0,
+        "a_score": 5.5,
         "b_score": 6.0,
-        "delta": -2.0,
-        "confidence": 4.0,
-        "weight": 0.18
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "美国近两届世界杯首战均有积分（2014胜加纳，2022平威尔士），展现基本拿分能力",
+          "土耳其2002年后首次参赛，小组赛经验空白，首战表现无历史参考",
+          "美国队核心球员如普利西奇更熟悉大赛节奏，而土耳其依赖状态成疑的恰尔汗奥卢"
+        ],
+        "reasoning": "美国队有更丰富的小组赛经验，且首战慢热倾向下仍能拿分（如2022平威尔士），土耳其缺乏世界杯首战参考且近期防守不稳定（对荷兰丢3球），赔率也支持美国微弱优势。"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 4.0,
-        "b_score": 6.0,
-        "delta": -2.0,
-        "confidence": 7.0,
-        "weight": 0.15
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Hakan Calhanoglu被标注为疲劳待确认但无确认伤停",
+          "Christian Pulisic肌肉伤病历史导致状态未知",
+          "两队近5场友谊赛战绩接近（土耳其1胜2平2负，美国1胜3平1负）",
+          "无教练表态或针对战术布置信息"
+        ],
+        "reasoning": "双方核心都存疑（Calhanoglu与Pulisic各自有疲劳或伤病历史），且缺少训练/热身首发确认，不存在任何一方有明显状态或战术压倒性优势。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 3.0,
+        "a_score": 5.0,
         "b_score": 7.0,
-        "delta": -4.0,
-        "confidence": 7.0,
-        "weight": 0.08
+        "delta": -2.0,
+        "confidence": 7.5,
+        "weight": 0.08,
+        "key_factors": [
+          "美国核心阵容合作4年，土耳其仅2年；",
+          "土耳其更衣室存在Burak Yılmaz与年轻球员的摩擦，美国矛盾已解决；",
+          "土耳其教练Montella战术体系磨合短，美国Berhalter体系成熟多年。"
+        ],
+        "reasoning": "美国队阵容稳定（核心合作4年，教练执教多年，无重大派系冲突），明显优于土耳其（更衣室隐患、俱乐部对立、生力军到队晚）的化学反应。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 4.0,
-        "b_score": 6.0,
-        "delta": -2.0,
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
         "confidence": 7.0,
-        "weight": 0.07
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差27名，未达到30名影响阈值",
+          "土耳其身价3.5亿欧元 vs 美国3.15亿欧元，差异不足2倍",
+          "双方均无梅西/姆巴佩级别可单场改变比赛的球员",
+          "赔率DraftKings上土耳其175 vs 美国145，接近持平"
+        ],
+        "reasoning": "双方排名接近、身价相当、缺乏超级巨星，且赔率显示均势，判为完全平等。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 4.0,
-        "b_score": 6.0,
-        "delta": -2.0,
-        "confidence": 7.0,
-        "weight": 0.07
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其近5场3胜2平，含两场世预赛大胜",
+          "美国队近4场热身赛3胜1平，含胜墨西哥和逼平塞内加尔",
+          "恰尔汗奥卢和普利西奇均有伤疑，核心状态成最大变量"
+        ],
+        "reasoning": "土耳其占优在于世预赛对弱旅的强势（如4-0黑山），但核心恰尔汗奥卢的伤疑削弱组织；美国队热身赛连胜墨西哥和战平塞内加尔，但客场稳定性稍弱，整体无显著统治力。"
       }
     ],
     "calibration_warning": false,
     "calibration_note": "",
-    "judge_reasoning": "United States胜"
+    "judge_reasoning": "平局"
   },
   "output": {
     "说明": "对外展示到HTML",
-    "prediction": "United States胜",
-    "confidence": "中",
+    "prediction": "平局",
+    "confidence": "低",
     "reasons": [
-      "美国队前场有普利西奇和雷纳的快速突破，土耳其后防转身慢，很容易被对手打身后制造单刀机会。",
-      "土耳其中场恰尔汗奥卢和居莱尔虽然技术细腻，但防守端硬度不足，面对麦肯尼和穆萨的逼抢容易丢球失误。",
-      "美国队小组赛首战4-1大胜巴拉圭，主场气势正盛，而土耳其世界杯经验欠缺，大赛压力下可能崩盘。"
+      "土耳其核心恰尔汗奥卢疲劳状态不明，而美国核心普利西奇也有伤病史，两队进攻中枢都存隐患，让比赛沦为中场绞杀战。",
+      "美国队外场组（球队化学7.0）远胜土耳其（5.0），年轻球员跑动覆盖能力强，但土耳其的近期状态（6.0对5.5）略优，近两场热身赛战平意大利只输荷兰一球，韧性较足。",
+      "战术对位和关键球员评分都是平手，而且小组赛压力小，双方都怕输，很可能像土耳其近期对葡萄牙的0-0那样谨慎收场。"
     ],
-    "key_risk": "土耳其凭借前场三叉戟的创造性在反击中抓住美国防线的冒进，利用远射或定位球意外领先，逼迫美国队急躁进攻从而翻车。"
+    "key_risk": "美国队若普利西奇健康出战且个人爆发，凭其单点爆破能力可打破平衡，土耳其的阵容深度不足以应对。"
   },
   "actual_result": null
 }
