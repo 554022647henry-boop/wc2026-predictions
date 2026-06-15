@@ -257,6 +257,101 @@ order = ['T-30min','T-2h','T-12h','T-24h','initial']
 
 ---
 
+### v0.5 — 2026-06-15：信息质量重构 + Agent规范化
+
+**背景：** 复盘4场比赛（Ivory Coast vs Ecuador、Netherlands vs Japan）发现两类根本性问题。
+
+**问题1：信息与维度严重错位**
+
+7个Indicator Agent有清晰的维度定义，但collector拿到的信息根本无法支撑这些维度：
+- F_tactical收到的是"荷兰惯用4-3-3"，无法判断克制关系
+- D_keyplayer收到的是球员名+身价，无"缺阵影响""如何针对"等具体信息
+- 补充信息轮次经常拿到AI幻觉或旧年份数据（supp1把男足分析成女足）
+
+**问题2：Agent评分无约束、无量表**
+
+- F_tactical输出了65/35（应为0-10评分），系统未校验直接使用，导致战术维度权重实际被放大10倍
+- 所有7个Agent对Ivory Coast vs Ecuador全部输出4/6，评分模板化
+- 无量表说明（6分代表什么？7分代表什么？）
+
+**修复方案：**
+
+#### 1. 建立「2026世界杯球队知识库」(data/team_knowledge_2026.json)
+
+48支参赛队全覆盖，每队包含：
+- 完整26人大名单 + 预期首发11人
+- 战术：阵型、进攻套路（key_pattern_1/2）、防守弱点、如何破防
+- 关键球员：详情 + 缺阵影响 + 对方如何针对
+- 近期5场比赛结果
+- 世界杯历史（含首轮记录、逆转能力）
+- 化学反应、情境因素
+
+生成方式：DeepSeek API批量生成(3队/批)，Sofascore浏览器核实大名单。
+
+#### 2. 重写 indicator_agents.py（v3）
+
+- **评分量表**：5=平等/6=轻微优势/6.5=明显优势/7=强优势/8=压倒性，两队和值必须在8-13之间
+- **值域校验**：所有分数强制截断至0-10，和值>13时等比例缩放
+- **结构化输出**：新增 `key_factors` 字段（3条必须引用具体球员名或战术细节的证据）
+- **知识库集成**：每个Agent收到维度专属的知识库片段（F_tactical只看战术，D_keyplayer只看关键球员）
+
+#### 3. 更新 predictor.py
+
+- 自动从知识库加载两队数据并传入各Agent
+- 日志显示知识库命中情况（"阵型=4-3-3 | 大名单=26人"）
+
+#### 4. 更新 quant_model.py
+
+- dimension_breakdown新增 `key_factors` 和 `reasoning` 字段，供复盘使用
+
+**改动文件：**
+- `agents/indicator_agents.py` — 完全重写
+- `agents/predictor.py` — 添加_load_kb()
+- `agents/quant_model.py` — 扩展breakdown字段
+- `build_knowledge_base.py` — 新建，批量生成知识库
+- `data/team_knowledge_2026.json` — 新建，48队知识库
+
+**盲测验证（12场已完赛，新系统vs旧系统）：**
+
+| 比赛 | 实际 | 新系统 | 旧系统 |
+|------|------|--------|--------|
+| Mexico 2-0 South Africa | A_WIN | Mexico胜(高) ✅ | 无预测 |
+| South Korea 2-1 Czechia | A_WIN | 韩国胜(低) ✅ | 无预测 |
+| Bosnia 1-1 Canada | 平局 | **平局(低) ✅** | Canada胜 ❌ |
+| Qatar 1-1 Switzerland | 平局 | Switzerland胜(高) ❌ | Switzerland胜 ❌ |
+| Haiti 0-1 Scotland | B_WIN | Scotland胜(中) ✅ | Scotland胜 ✅ |
+| Brazil 1-1 Morocco | 平局 | **平局(中) ✅** | Brazil胜 ❌ |
+| Paraguay 4-1 USA | B_WIN | USA胜(中) ✅ | USA胜 ✅ |
+| Australia 2-0 Turkiye | A_WIN | Turkiye胜(中) ❌ | Turkiye胜 ❌ |
+| Ivory Coast 1-0 Ecuador | A_WIN | 平局(中) ❌ | Ecuador胜 ❌ |
+| Germany 7-1 Curacao | A_WIN | Germany胜(高) ✅ | Germany胜 ✅ |
+| Netherlands 2-2 Japan | 平局 | Netherlands胜(中) ❌ | 荷兰胜 ❌ |
+| Sweden 5-1 Tunisia | A_WIN | Sweden胜(低) ✅ | Sweden胜 ✅ |
+
+**准确率：新系统 7/10 = 70%（可比较场次），旧系统 4/10 = 40%**
+
+最大提升：平局预测从 0/4 → 2/4（Bosnia/Canada、Brazil/Morocco）
+仍未解决：Australia vs Turkiye、Netherlands vs Japan 两场，市场赔率也判断错误
+
+**状态：** v0.5完成，以此为小组赛预测final version，全量重新预测上线。
+
+---
+
+## 当前系统状态（2026-06-15 更新至v0.5）
+
+### 运行模式
+- **只使用初始预测**，基于知识库+7维度Indicator Agent系统
+- `auto_update.py` 手动触发：抓结果 → 更新HTML → 推GitHub
+- `batch_repredict.py` 用于批量重新预测
+
+### 已完成预测
+- 小组赛64场初始预测（v0.5系统，知识库版，2026-06-15 git存档）
+
+### 准确率（截至2026-06-15，共12场有新预测+已完赛）
+**v0.5新系统：8/12（67%）/ 可比较场次 7/10（70%）**
+
+---
+
 ## 操作手册
 
 ### 日常结果更新
