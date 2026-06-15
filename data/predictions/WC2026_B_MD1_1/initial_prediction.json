@@ -2,29 +2,140 @@
   "match_id": "WC2026_B_MD1_1",
   "round": "initial",
   "round_label": "初始预测",
-  "output": {
-    "prediction": "Canada胜",
-    "confidence": "中",
-    "reasons": [
-      "主场东道主气势如虹，主场优势碾压",
-      "戴维斯速度爆炸，防线无力应对",
-      "波黑老龄化严重，体能撑不住90分钟"
-    ],
-    "key_risk": "Canada wins this match with moderate confidence. The combination of home advanta",
-    "reasons_zh": [
-      "主场东道主气势如虹，主场优势碾压",
-      "戴维斯速度爆炸，防线无力应对",
-      "波黑老龄化严重，体能撑不住90分钟"
-    ],
-    "reasons_en": [
-      "Home team dominant, crushing with home advantage.",
-      "Davies' explosive pace, defense can't cope.",
-      "Bosnia's aging squad can't last 90 minutes."
-    ]
-  },
+  "timestamp": "2026-06-15T17:38:34.406157",
   "_internal": {
-    "judge_reasoning": "Canada wins this match with moderate confidence. The combination of home advantage, superior athleticism, Davies as a game-changer, and Bosnia's aging spine tips the balance clearly. Bosnia can make it uncomfortable, but Canada's high press should create enough chances to convert at least once. Expected score: Canada 2-1 Bosnia. The upset risk is rated MEDIUM because Bosnia's counter-attacking threat and set-piece quality give them a genuine path to a point or three.",
-    "upset_risk": "中"
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.31,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "加拿大左路戴维斯内切可反复冲击Kolašinac速度慢的身后空当",
+          "波黑中卫Zukanović（37岁）和Kolašinac移动慢，易被对手直塞打身后",
+          "波黑进攻依赖哲科背身拿球，但哲科40岁且状态存疑，进攻支点可能减弱",
+          "加拿大高位逼抢可迫使波黑后防出球失误，而波黑后场出球能力差"
+        ],
+        "reasoning": "加拿大凭借戴维斯和布坎南的快速冲击能有效利用波黑后防年龄大、移动慢的弱点，而波黑依赖哲科支点的进攻节奏较慢，且哲科状态存疑。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "波黑核心Edin Džeko40岁状态存疑，出场时间减少",
+          "加拿大有明确小组出线目标，媒体压力中等，斗志更强",
+          "赔率DraftKings波黑-115略优于加拿大350，反映市场稍看好波黑"
+        ],
+        "reasoning": "波黑靠哲科经验与赔率优势稍占上风，但加拿大出线动力和年轻阵容可抵消差距"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.18,
+        "key_factors": [
+          "波黑近两次世界杯均未晋级，小组赛经验匮乏",
+          "加拿大2022年首战0-1负比利时场面不落下风，展现韧性",
+          "波黑核心哲科40岁状态存疑，影响进攻火力",
+          "两队均缺乏逆转能力，波黑近10场落后时仅逆转1次"
+        ],
+        "reasoning": "波黑凭借略高的赔率优势和仅有的一次世界杯经历稍占微小优势，但哲科年龄和阵容老化削弱了纸面差距。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Edin Džeko年事已高、体能下滑且可能缺席，Bosnia进攻威胁骤降",
+          "Alphonso Davies在拜仁状态优异，是Canada唯一爆点",
+          "Canada的Jonathan David赛季20+进球，锋线效率稳定",
+          "Bosnia中场Pjanić状态一般，后场出球存隐患"
+        ],
+        "reasoning": "Canada的Alphonso Davies和Jonathan David状态上佳，而Bosnia核心Džeko状态存疑且可能缺席，进攻体系脆弱。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "波黑核心Džeko（40岁）状态下滑且入选存疑，影响进攻体系稳定性",
+          "加拿大拥有来自同一俱乐部（多伦多FC、CF Montréal）的球员组合，贡献国内联赛默契",
+          "波黑更衣室存在老将与年轻球员沟通问题，加拿大氛围良好无已知矛盾",
+          "波黑教练Bar执教仅一年，体系未成熟；加拿大Marsch体系虽新但球员更年轻适应力强"
+        ],
+        "reasoning": "加拿大依靠多伦多FC（Osorio、Laryea）和CF Montréal（Piette、Choinière）的俱乐部组合及良好氛围，比波黑依赖分散老将（Džeko状态存疑）且有代沟的更衣室更具化学反应优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "波黑FIFA排名52与加拿大49相差仅3位，无实质影响",
+          "加拿大阵容总身价1.85亿欧是波黑9000万欧的2倍以上，身价差距显著",
+          "波黑核心哲科40岁且状态存疑，可能无法出场"
+        ],
+        "reasoning": "波黑身价仅为加拿大一半且哲科状态存疑，加拿大拥有戴维斯等年轻球员略有优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.8,
+        "b_score": 5.2,
+        "delta": 0.6,
+        "confidence": 5.5,
+        "weight": 0.07,
+        "key_factors": [
+          "Bosnia近5场仅1胜，且对手为弱旅Malta、Luxembourg",
+          "Canada近5场3胜1平1负，包含4-0大胜El Salvador",
+          "Džeko40岁体能下滑，能否首发存疑",
+          "赔率更倾向Bosnia但差距不大"
+        ],
+        "reasoning": "Bosnia主场+赔率支撑略有优势，但Džeko状态存疑且对手实力不足，Canada预选赛客场胜巴拿马展现韧性。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 32%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=60%/P(D)=20%/P(B)=20%",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "波黑老将哲科年近40岁状态存疑，锋线终结力可能下降，而加拿大年轻但配合生疏，双方都难打出高效率进攻。",
+      "加拿大的高位逼抢战术在热身赛对阵墨西哥时暴露出防守漏洞，波黑若利用长传反击可制造威胁，但自身中场创造力不足。",
+      "两队小组赛首场均输球，输球即基本出局的压力下都会优先求稳，比赛可能演变为中场绞杀，射门机会偏少。"
+    ],
+    "key_risk": "加拿大利用身体对抗和速度优势打穿波黑老化防线，戴维斯边路突破可能制造点球或角球机会，导致客队偷胜。"
   },
   "actual_result": null
 }
