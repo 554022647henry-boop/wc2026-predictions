@@ -2,29 +2,139 @@
   "match_id": "WC2026_C_MD1_1",
   "round": "initial",
   "round_label": "初始预测",
-  "output": {
-    "prediction": "Scotland胜",
-    "confidence": "高",
-    "reasons": [
-      "苏格兰英超球星云集，整体实力碾压级差距",
-      "海地首次世界杯，大赛经验严重不足",
-      "苏格兰背水一战求出线，动力与执行力更强"
-    ],
-    "key_risk": "综合来看，两队实力差距是客观存在的结构性差异，而非偶然因素。苏格兰球员联赛级别、战术成熟度、大赛经验均全面占优。海地的\"首次世界杯\"光环更多是情感叙事而非竞技优",
-    "reasons_zh": [
-      "苏格兰英超球星云集，整体实力碾压级差距",
-      "海地首次世界杯，大赛经验严重不足",
-      "苏格兰背水一战求出线，动力与执行力更强"
-    ],
-    "reasons_en": [
-      "Scots' stars dominate, crushing gap in quality.",
-      "Haiti's World Cup debut, severely lacking experience.",
-      "Scotland must-win; stronger drive and execution."
-    ]
-  },
+  "timestamp": "2026-06-15T17:54:54.419566",
   "_internal": {
-    "judge_reasoning": "综合来看，两队实力差距是客观存在的结构性差异，而非偶然因素。苏格兰球员联赛级别、战术成熟度、大赛经验均全面占优。海地的\"首次世界杯\"光环更多是情感叙事而非竞技优势。预计苏格兰以2-0或2-1取胜，控制比赛节奏，上半场通过定位球或中场推进率先破门，下半场锁定胜局。爆冷风险低，但苏格兰需警惕开场20分钟的节奏失控窗口。",
-    "upset_risk": "低"
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.49,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "海地边后卫速度慢、对抗差，苏格兰利用罗伯逊内切与芒特配合下底传中是直接打击点",
+          "海地中卫站位过平，苏格兰中场麦金的后插上与斜传身后可以轻松穿透",
+          "海地门将与中卫出球能力极差，苏格兰高位逼抢可迫使海地后场失误直接转化为射门机会",
+          "赔率显示苏格兰胜赔1.61 vs 海地4.25，市场不看好实力较弱的海地"
+        ],
+        "reasoning": "苏格兰左路罗伯逊的传中与麦金后插上能精准打击海地的速度短板边后卫和平铺的中卫线；海地虽有Pierrot高点摆渡战术，但苏格兰三中卫在肉搏战中不落下风，且海地极弱的抗压球能力在苏格兰前场逼抢下将频繁丢失球权。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 4.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率明显偏向苏格兰（-160 vs +425），体现实力差距",
+          "Haiti教练明确提及限制Robertson，显示针对性防守布置",
+          "两队小组赛首轮都想取胜，动机差异小",
+          "缺少首发阵容信息限制评估精度"
+        ],
+        "reasoning": "苏格兰拥有整体实力优势（赔率-160），但Haiti有Carnejy Antoine和Ronaldo Damus的进攻威胁，教练强调防守纪律可能缩小差距"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 3.0,
+        "weight": 0.18,
+        "key_factors": [
+          "海地从未晋级世界杯，小组赛首秀未知数极大",
+          "苏格兰上一次世界杯在1998年，无近期小组赛DNA参考",
+          "赔率显示苏格兰实力被看好（-160），但逆转能力同样弱"
+        ],
+        "reasoning": "双方均无近期世界杯正赛经验，海地零底蕴，苏格兰仅凭赔率暗示实力略占优但缺乏比赛样本支撑"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Che Adams在英冠进球效率稳定，是反击核心",
+          "Andy Robertson的传中是苏格兰左路进攻主要威胁，海地虽有针对性限制但执行存疑",
+          "Duckens Nazon状态平平，海地进攻组织依赖他一人，替补方案不足"
+        ],
+        "reasoning": "苏格兰凭借Che Adams的稳定状态和Robertson的传中威胁，以及海地核心Nazon状态平庸且缺乏备用方案，形成明显优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.08,
+        "key_factors": [
+          "苏格兰核心组合合作4年，罗伯逊和蒂尔尼在左路有多年默契",
+          "克拉克执教多年且轮换少，体系高度成熟",
+          "海地主帅2024年上任，阵容处于重建期配合生疏",
+          "海地归化球员与本土球员存在隔阂，更衣室氛围一般"
+        ],
+        "reasoning": "苏格兰凭借罗伯逊-蒂尔尼左路配合和克拉克多年体系占据明显优势，海地核心组合仅1年且阵容不整。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差距：苏格兰36 vs 海地86，排名差达50名，远超30名门槛。",
+          "阵容身价差距：苏格兰2.1亿€ vs 海地800万€，身价比约26:1，远大于2倍门槛。",
+          "苏格兰拥有Kieran Tierney等英超球员，海地缺乏一线联赛核心级球员匹配。"
+        ],
+        "reasoning": "苏格兰的阵容质量（FIFA排名高50名、身价是海地26倍）远胜海地，海地只能依靠Antoine的反击和个人能力制造偶然机会。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.8,
+        "weight": 0.07,
+        "key_factors": [
+          "苏格兰赔率-160大幅领先海地+425，机构信心差距显著",
+          "海地近5场友谊赛仅1胜，且输给Jamaica和Cuba暴露实力瓶颈",
+          "苏格兰近3场进球1/2/2，攻击效率有回升但未稳定",
+          "苏格兰上一场对加拿大未经历加时，体力储备完整"
+        ],
+        "reasoning": "苏格兰国际排名、球员质量和赔率支持都明显占优，但近期状态起伏给予海地一定爆冷空间，关键看Antoine能否利用反击突破苏格兰防线"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Scotland胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Scotland胜",
+    "confidence": "中",
+    "reasons": [
+      "苏格兰的关键球员评分高达7.0，海地仅4.5，差距明显。Carnejy Antoine虽是海地主要得分手，但面对苏格兰整体防守很难获得机会，而苏格兰的进攻线如切·亚当斯能利用海地防线漏洞",
+      "苏格兰在战术对位（7.5 vs 5.5）和球队化学（7.0 vs 5.0）上全面占优，尤其是队长安德鲁·罗伯逊预计能压制海地边路反击，限制Ronaldo Damus的速度优势",
+      "海地主帅加布里埃尔·卡尔德隆合同不确定，可能影响临场指挥，而苏格兰近5场虽胜率不高但面对波兰赢球，经验更丰富，平局概率虽高但取胜仍是大概率结果"
+    ],
+    "key_risk": "海地若摆出铁桶阵，苏格兰久攻不下可能被反击爆冷，加之上次友谊赛苏格兰0-1输挪威显示进攻效率不稳定"
   },
   "actual_result": null
 }
