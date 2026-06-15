@@ -1,0 +1,140 @@
+{
+  "match_id": "WC2026_K_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T22:08:34.763617",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.73,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "DR Congo的Meschak Elia左路一对一突破能力强，Uzbekistan边后卫防守能力有限",
+          "Uzbekistan中卫速度慢，DR Congo的Bakambu可做球+反越位打身后",
+          "两队后防专注度均不稳定，但DR Congo有三前锋快攻套路，转换效率可能更高",
+          "Uzbekistan依赖Shomurodov抢点，但DR Congo防线虽有空档但身高对抗不落下风"
+        ],
+        "reasoning": "DR Congo的Meschak Elia左路爆破和Bakambu背身做球能精准打击Uzbekistan中卫速度慢和边卫个人防守弱的双重漏洞，而Uzbekistan的边路传中虽威胁但需依赖对方失误，双方后场抗压均差，但DR Congo反击套路更具针对性。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DR Congo拥有Yoane Wissa（布伦特福德）等顶级联赛球员，阵容经验更丰富",
+          "Uzbekistan赛前信息缺失，无近期战绩或关键球员报告",
+          "双方均为小组赛首战，求胜动机持平且无附加心理或环境影响"
+        ],
+        "reasoning": "DR Congo凭借Wissa、Bakambu、Mbemba等欧洲一线球员的个人能力略占上风，但Uzbekistan信息极少，差距微乎其微。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.0,
+        "weight": 0.18,
+        "key_factors": [
+          "DR Congo近期友谊赛逼平Cameroon、击败Morocco，展现一定对抗强度",
+          "Uzbekistan无世界杯参赛历史，首战未知因素更多",
+          "DR Congo拥有Yoane Wissa、Cédric Bakambu等五大联赛球员，个人能力储备稍占优"
+        ],
+        "reasoning": "DR Congo近期对阵Cameroon、Morocco等队均有不俗表现，而Uzbekistan无相关强对抗战绩，略微看好DR Congo的适应能力。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Chancel Mbemba状态优秀且是防线领袖，无伤停隐患",
+          "Yoane Wissa在英超持续输出，状态出色",
+          "Eldor Shomurodov在卡利亚里出场时间推测为替补，状态存疑",
+          "Jaloliddin Masharipov在沙特出场时间有限，组织能力受影响"
+        ],
+        "reasoning": "刚果民主共和国的Mbemba、Wissa和Bakambu三个核心状态良好且无伤停，而乌兹别克斯坦的Shomurodov和马沙里波夫存在俱乐部出场时间不足的隐患，防线Aliqulov经验难以匹敌刚果锋线。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "DR Congo阵容来自多国联赛，核心组合仅2年磨合，体系尚不稳定",
+          "Uzbekistan有至少5名球员同属Pakhtakor俱乐部，天生默契",
+          "Uzbekistan主教练Katanec执教近5年，战术执行稳定",
+          "DR Congo更衣室氛围存在潜在管理风险"
+        ],
+        "reasoning": "Uzbekistan凭借Katanec近5年执教和至少5名Pakhtakor球员的俱乐部默契，在稳定性和更衣室氛围上明显压制了DR Congo阵容分散、轮换频繁的体系。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DR Congo阵容身价7500万€，是Uzbekistan 1500万€的5倍",
+          "DR Congo拥有Yoane Wissa、Cédric Bakambu、Chancel Mbemba三名欧洲顶级联赛核心球员",
+          "两队FIFA排名仅差2位，无明显排名差距",
+          "Uzbekistan球员多来自本土或亚洲联赛，缺乏同级别个人能力突出的球员"
+        ],
+        "reasoning": "DR Congo凭借阵容身价5倍优势和Wissa/Bakambu/Mbemba三位欧洲联赛核心球员取得明显优势，Uzbekistan排名相近但球员层次明显较低。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DR Congo近5场3胜2平保持不败，胜率60%",
+          "Uzbekistan近5场仅1胜2平2负，胜率20%",
+          "Uzbekistan近3场正赛（世预赛）仅进1球，进攻乏力"
+        ],
+        "reasoning": "DR Congo凭借近期稳定的防守表现（近5场仅失2球）和核心球员Mbemba领衔的后防线占据轻微优势，而Uzbekistan进攻疲软且正赛胜率低。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "DR Congo胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "DR Congo胜",
+    "confidence": "低",
+    "reasons": [
+      "DR Congo拥有英超布伦特福德的维萨和西甲贝蒂斯的巴坎布，两人在快速反击中的个人能力足以撕开乌兹别克斯坦防线，尤其是维萨的边路突破极具威胁。",
+      "乌兹别克斯坦核心肖穆罗多夫在俱乐部出场时间不稳定，状态成疑，而DR Congo的姆本巴领衔的后防线经验丰富，能有效限制他的发挥。",
+      "DR Congo近5场3胜1平1负，包括战胜摩洛哥和逼平喀麦隆，球队在硬仗中展现了韧性；而乌兹别克斯坦刚0-3惨败日本，士气受挫。"
+    ],
+    "key_risk": "DR Congo的球队化学评分偏低，若球员之间配合生疏，乌兹别克斯坦稳定的团队协作（化学评分7.0）可能通过控球和防守反击制造冷门。"
+  },
+  "actual_result": null
+}
