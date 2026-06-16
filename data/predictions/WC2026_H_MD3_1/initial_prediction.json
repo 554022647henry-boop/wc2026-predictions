@@ -2,11 +2,11 @@
   "match_id": "WC2026_H_MD3_1",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-15T20:29:52.306141",
+  "timestamp": "2026-06-17T04:04:14.701808",
   "_internal": {
     "说明": "内部留痕，供追溯复盘",
     "n_agents": 7,
-    "weighted_delta": -0.38,
+    "weighted_delta": -0.18,
     "p_a_win": 0.28,
     "p_draw": 0.38,
     "p_b_win": 0.34,
@@ -14,127 +14,121 @@
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 6.0,
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.25,
         "key_factors": [
-          "Saudi Arabia左路阿尔-道萨里的个人能力直接对位Cape Verde左后卫Varela（转身极慢）构成明显优势",
-          "Cape Verde高位压迫能力差，中后场出球弱，面对Saudi Arabia中场逼抢易失误",
-          "Saudi Arabia定位球进攻有阿尔-道萨里的传中和坎诺的后排插上，Cape Verde定位球防守有漏人历史",
-          "Cape Verde进攻依赖Tavares头球摆渡，但Saudi Arabia中卫虽间距大但回追速度足以应对缺乏速度的跟进球员"
+          "Cape Verde 防守端在高位逼抢下出球困难且禁区弧顶保护差",
+          "Saudi Arabia 边后卫身后空当大但Cape Verde 进攻套路不明确",
+          "Saudi Arabia 自身后场出球失误率高，可能影响高位逼抢持续性"
         ],
-        "reasoning": "Saudi Arabia的阿尔-道萨里左路突破能针对性打击Cape Verde的Varela转身慢短板，且中场坎诺的插上远射是有效威胁，而Cape Verde长传找Tavares的套路面对Saudi Arabia中卫回追速度偏慢时有一定机会但缺乏持续性。"
+        "reasoning": "Saudi Arabia 可针对 Cape Verde 出球困难和弧顶保护漏洞施加高位逼抢，但自身后场出球失误也弱化此优势，双方均无明显套路信息，Saudi Arabia 小优但不稳。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
         "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "Cape Verde近期5场正式/友谊赛3胜2平，状态稳定，而沙特上战1-2负于阿尔及利亚",
-          "沙特国内舆论要求重现击败阿根廷的荣光，给球队带来额外心理压力",
-          "双方无伤病影响，但Cape Verde作为黑马心态更为放松"
+          "Cape Verde是世界杯首秀，缺乏大赛经验。",
+          "Saudi Arabia拥有2022年世界杯击败阿根廷的心理资本。",
+          "赔率略微倾向Saudi Arabia（+140对+180），市场看法一致。"
         ],
-        "reasoning": "Cape Verde近期5场不败且无伤病，而沙特阿拉伯有舆论压力且热身赛输球，心态和状态略优; 关键球员Ryan Mendes和Jovane Cabral的未知能力可能成为爆点。"
+        "reasoning": "Saudi Arabia凭借更均衡的阵容和世界杯经验略占优势，而Cape Verde作为新军缺乏关键球员近期状态信息。"
       },
       {
         "dimension": "G_dna",
         "label": "大赛DNA",
         "a_score": 5.0,
-        "b_score": 6.0,
-        "delta": -1.0,
-        "confidence": 4.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
         "weight": 0.18,
-        "key_factors": [
-          "佛得角首次参加世界杯，无任何世界杯首战或小组赛记录",
-          "沙特近两届世界杯均有参赛，2022首轮曾爆冷胜阿根廷",
-          "佛得角预选赛中从未在落后情况下逆转取胜",
-          "赔率微弱倾向沙特（1.65 vs 1.5），反映市场信心略偏沙特"
-        ],
-        "reasoning": "沙特凭借2022年首胜阿根廷的唯一世界杯高光时刻，在经验维度略优于首次参赛且缺乏逆转能力的佛得角。"
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
       },
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 5.5,
-        "b_score": 6.0,
+        "a_score": 5.0,
+        "b_score": 5.5,
         "delta": -0.5,
-        "confidence": 5.0,
+        "confidence": 3.0,
         "weight": 0.15,
         "key_factors": [
-          "Salem Al-Dawsari盘带成功率超70%，是沙特进攻核心",
-          "Mohamed Kanno在亚冠关键传球与抢断数据出色",
-          "Cape Verde近期5场3胜2平但对手实力偏弱",
-          "Júlio Tavares在沙特联赛进球数可观，保持老化高水准"
+          "DraftKings赔率显示Saudi Arabia为140，Cape Verde为180，赔率倾向微弱",
+          "双方关键球员如Salem Al-Dawsari和Jamiro Monteiro均无近期状态报告",
+          "Cape Verde是世界杯首秀，经验存疑但无具体负面证据",
+          "无确认伤停或针对性战术信息"
         ],
-        "reasoning": "Saudi Arabia凭借Al-Dawsari的盘带优势和Kanno的中场拦截稍占上风，但Cape Verde的Tavares和Lopes状态稳定，缺乏决定性差距。"
+        "reasoning": "双方关键球员状态未知，Saudi Arabia仅凭赔率暗示轻微优势，但缺乏任何实质性战术或人员支撑。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 8.0,
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
         "weight": 0.08,
         "key_factors": [
-          "Saudi Arabia有7名球员来自阿尔希拉尔，4名来自阿尔纳斯尔，形成紧密的俱乐部集群",
-          "Cape Verde主力球员平均年龄偏高，如Tavares、Varela均35岁，新生代尚未成熟",
-          "Cape Verde虽由Bubista执教4年体系稳定，但缺乏同一俱乐部的长期配合"
+          "沙特阿拉伯球员多来自同一国内联赛，彼此熟悉，集训磨合成本低",
+          "佛得角是世界杯首秀，核心球员Ryan Mendes和Jamiro Monteiro缺乏近期俱乐部状态报告",
+          "佛得角主教练Bubista自2021年执教，体系相对稳定，弥补部分经验不足"
         ],
-        "reasoning": "Saudi Arabia凭借阿尔希拉尔7人及阿尔纳斯尔4人的俱乐部集群优势，在核心组合默契度上明显优于Cape Verde分散的海外球员组合。"
+        "reasoning": "沙特阿拉伯多数球员来自本国联赛且长期合作，核心框架稳定；佛得角虽是世界杯首秀但主教练Bubista自2021年起带队，有一定体系基础，整体上沙特略占化学反应优势。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 4.0,
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 6.0,
         "weight": 0.07,
         "key_factors": [
-          "FIFA排名差仅12位，未超30名门槛",
-          "阵容身价差约400万欧元，远未达2倍差距",
-          "双方均无超级球员或核心缺阵信息"
+          "Saudi Arabia在赛前赔率上被看好（140 vs 180）",
+          "Cape Verde是世界杯首秀球队，缺乏大赛经验",
+          "Saudi Arabia大部分球员来自统一的国内联赛体系，整体性更强"
         ],
-        "reasoning": "基于现有信息，两队实力非常接近，FIFA排名和身价差距均未达显著阈值，也无顶级球员能单场改变比赛。"
+        "reasoning": "Saudi Arabia凭借更稳定的国际比赛经验和赔率上的轻微优势，在实力对比上略占上风，Cape Verde作为首秀球队经验不足。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 4.0,
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 5.0,
         "weight": 0.07,
         "key_factors": [
-          "佛得角近5场2胜2平1负，含3场友谊赛权重低",
-          "沙特近5场2胜1平2负，唯一败绩为友谊赛对希腊",
-          "双方均无确认伤停，核心球员状态信息模糊",
-          "赔率佛得角1.5 vs 沙特1.65，几乎完全平等"
+          "Saudi Arabia近5场仅1负，包括0-0战平塞内加尔，防守稳固",
+          "Cape Verde近期友谊赛胜负交替，近3场2负1胜，状态波动",
+          "Cape Verde依赖核心Ryan Mendes，但无近期俱乐部状态更新",
+          "Saudi Arabia赔率更受青睐，显示市场信心略高"
         ],
-        "reasoning": "双方赛前信息高度对称，无关键球员缺阵或连胜/连败趋势，赔率差异极小且友谊赛权重低，难分优劣。"
+        "reasoning": "Saudi Arabia凭借近期更稳定的防守表现和略优赔率支持，在状态上稍占优势，但Cape Verde有爆冷击败强队的记录。"
       }
     ],
-    "calibration_warning": true,
-    "calibration_note": "⚠️ 赔率偏差 30%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=48%/P(D)=8%/P(B)=44%",
+    "calibration_warning": false,
+    "calibration_note": "",
     "judge_reasoning": "平局"
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "平局",
-    "confidence": "中",
+    "confidence": "低",
     "reasons": [
-      "佛得角近期防守稳健，近5场仅失1球，面对沙特灵活的前场球员阿尔·道萨里时，可能依靠整体协防限制其突破，导致双方陷入僵局",
-      "沙特在友谊赛和亚洲杯预选赛中表现起伏，面对实力相当的佛得角缺少绝对主力，而佛得角在非洲区预选赛和友谊赛中多次打出平局，显示其不轻易输球的韧性",
-      "双方关键球员如门德斯和阿尔·布里坎状态成疑，缺乏可靠数据支撑，这可能导致进攻效率下降，比赛中更多依赖定位球或反击制造有限威胁，从而导向低比分平局"
+      "Cape Verde虽是世界杯新军，但球队化学反应出色（评分6.5），中场核心Jamiro Monteiro的调度可能让沙特防线措手不及。",
+      "沙特在Roberto Mancini执教下防守体系稳定，近期逼平韩国，但进攻端缺少Al-Dawsari状态信息，破密集能力存疑。",
+      "双方都缺乏关键球员的近期爆发表现，战术对位Cape Verde稍占优（6.0 vs 5.5），但情境压力更倾向沙特，大概率陷入胶着。"
     ],
-    "key_risk": "沙特依靠主场优势（尽管是中立场地）和阿尔·道萨里的个人能力在僵局中偷得一球，击败佛得角"
+    "key_risk": "Cape Verde大赛经验不足，若上半场丢球可能心态崩盘，沙特凭借Mancini的调整能力偷走胜利。"
   },
   "actual_result": null
 }
