@@ -1,0 +1,140 @@
+{
+  "match_id": "WC2026_A_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T18:54:59.199476",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.99,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "墨西哥右边锋洛萨诺的内切突破直接针对韩国左后卫李记帝速度慢的弱点",
+          "韩国后场抗压能力一般，可能在墨西哥中场逼抢下失误，而墨西哥中场传控抗压能力优秀",
+          "韩国中后卫横向移动较慢，易被墨西哥的快速横向转移球拉扯出空当"
+        ],
+        "reasoning": "墨西哥的右路洛萨诺内切直面对韩国速度偏慢的左后卫李记帝，且其中场抗压能力优于韩国的后场出球稳定性，韩国虽有孙兴慜左路威胁但难破墨西哥的团队传控。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "墨西哥作为东道主，主场环境带来明显优势",
+          "赔率Mexico 100 vs South Korea 320显示纸面实力差距较大",
+          "Santiago Gimenez在费耶诺德状态出色，是核心得分点"
+        ],
+        "reasoning": "墨西哥凭借东道主主场优势和Gimenez近期良好状态，在赔率上被明显看好，但韩国队作为黑马目标合理，Son Heung-min等球员具备反击威胁，差距并非压倒性。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.18,
+        "key_factors": [
+          "墨西哥近两届世界杯首战全胜，但2022年首战0-0波兰暴露进球难题",
+          "韩国近四届世界杯首战2胜1平1负，但遇强队时易输球（如2010负阿根廷）",
+          "赔率显示墨西哥更低（100 vs 320），反映市场轻微信任",
+          "墨西哥关键前锋Santiago Gimenez状态良好，但团队近5场仅2胜"
+        ],
+        "reasoning": "墨西哥凭借首战历史小优和稍高赔率略占上风，但状态不稳定且对韩国的逆转能力未知"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Hirving Lozano在PSV状态火热，提供关键纵深威胁",
+          "Son Heung-min世界杯前有小伤，状态存疑",
+          "Kim Min-jae在拜仁状态极佳，韩国防线稳固",
+          "赔率Mexico略被看好，但差距不大"
+        ],
+        "reasoning": "Mexico因Lozano状态火热且Son有小伤隐患而占据轻微优势，但韩国整体阵容深度足够弥补。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "墨西哥多位球员来自Pachuca、America和Guadalajara体系，形成俱乐部集群优势",
+          "韩国队海外球员占主导，缺乏长期俱乐部配合默契",
+          "墨西哥门将Ochoa经验丰富，老中青过渡健康",
+          "韩国队后防线偏老龄化，换血缓慢"
+        ],
+        "reasoning": "墨西哥凭借多名来自Pachuca、America和Guadalajara的球员形成的俱乐部配合默契，以及Ochoa与新生代的和谐更衣室，在核心组合稳定性上压制韩国队，后者虽有孙兴慜领导但海外球员缺乏长期配合。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥FIFA排名12高于韩国23，身价350M€接近韩国185M€的两倍但未严格超出2倍",
+          "金玟哉作为顶级中卫是韩国最大防守保障，可能抵消墨西哥进攻威胁",
+          "赔率显示墨西哥明显被看好(100 vs 320)，但无超级球员改变比赛走向"
+        ],
+        "reasoning": "墨西哥凭借排名和身价优势略占上风，但金玟哉领衔的防线能有效遏制桑蒂·吉梅内斯，缺乏胜负手球员使优势有限。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥近5场4胜1平，含3场零封（胜过哥伦比、哥斯达、洪都拉斯）",
+          "韩国近5场2胜2平1负，且最近一场友谊赛0-0平日本无进球",
+          "赔率显示墨西哥为明显热门（100 vs 320），市场信心差距大",
+          "墨西哥关键前锋Santiago Gimenez状态出色，中场Edson Alvarez提供防守稳固性"
+        ],
+        "reasoning": "墨西哥近5场4胜1平且3场零封，状态明显优于韩国，而韩国进攻端波动较大且关键战缺乏说服力。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 26%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=61%/P(D)=10%/P(B)=29%",
+    "judge_reasoning": "Mexico胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "低",
+    "reasons": [
+      "墨西哥的洛萨诺和希门尼斯在边路的速度优势，将撕开韩国队转身偏慢的防线，尤其希门尼斯近期的抢点状态火热",
+      "韩国队中场缺少能覆盖拦截的球员，墨西哥的阿尔瓦雷斯和埃雷拉可以轻松掌控中场节奏，切断孙兴慜的回撤接球路线",
+      "墨西哥在小组赛首战历来擅长高压逼抢，而韩国队后场出球失误率偏高，客战气候闷热下体能下滑会更明显"
+    ],
+    "key_risk": "市场赔率严重偏向墨西哥（胜率61%），但模型认为平局概率高达36%，韩国队若死守反击并由孙兴慜打身后，可能偷走一分"
+  },
+  "actual_result": null
+}

@@ -4,7 +4,7 @@ Tab 1: 按小组（Groups）
 Tab 2: 按日期（Schedule，体育 APP 风格）
 """
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import sys
 
@@ -36,7 +36,19 @@ def f(t): return FLAGS.get(t, '⚽')
 def load_fixtures():
     fp = Path(config.FIXTURES_FILE)
     if not fp.exists(): return {'matches': [], 'groups': {}}
-    return json.loads(fp.read_text(encoding='utf-8'))
+    data = json.loads(fp.read_text(encoding='utf-8'))
+    # 自动从 kickoff_utc 计算北京时间（UTC+8）的日期和时间
+    CST = timezone(timedelta(hours=8))
+    for m in data.get('matches', []):
+        if m.get('kickoff_utc'):
+            try:
+                dt = datetime.fromisoformat(m['kickoff_utc'].replace('Z', '+00:00'))
+                dt_cst = dt.astimezone(CST)
+                m['kickoff_cst']  = dt_cst.strftime('%H:%M')
+                m['date_cst']     = dt_cst.strftime('%Y-%m-%d')   # 正确的北京日期
+            except Exception:
+                pass
+    return data
 
 def load_latest_prediction(match_id):
     order = ['initial']
@@ -121,7 +133,8 @@ def _upset_tag(risk):
 def _match_card(match, results, compact=False):
     mid = match['match_id']
     ta, tb = match['team_a'], match['team_b']
-    date = match.get('date','')
+    # 优先用北京时间的日期（date_cst），避免UTC日期跨天显示错误
+    date = match.get('date_cst') or match.get('date','')
     venue = match.get('venue','').split(',')[0]
     md = match.get('matchday', '')
     md_tag = f'MD{md} · ' if md else ''
@@ -283,18 +296,18 @@ def render_groups_tab(matches, results):
 def render_schedule_tab(matches, results):
     from collections import defaultdict
 
-    # 按精确时间排序（date + kickoff_cst），没有时间的排后面
+    # 按精确时间排序（北京日期 + kickoff_cst），没有时间的排后面
     def sort_key(m):
-        date = m.get('date', '9999-99-99')
+        date = m.get('date_cst') or m.get('date', '9999-99-99')
         time = m.get('kickoff_cst', '99:99')
         return f'{date} {time}'
 
     sorted_matches = sorted(matches, key=sort_key)
 
-    # 按日期分组（保持时间排序）
+    # 按日期分组（用北京时间日期，保持时间排序）
     by_date = defaultdict(list)
     for m in sorted_matches:
-        date = m.get('date', '')
+        date = m.get('date_cst') or m.get('date', '')
         if date:
             by_date[date].append(m)
 

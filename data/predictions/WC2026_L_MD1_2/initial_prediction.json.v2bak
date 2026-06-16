@@ -1,0 +1,132 @@
+{
+  "match_id": "WC2026_L_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:08:06.126181",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.87,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "英格兰核心球员凯恩和贝林厄姆能针对克罗地亚防线转身慢的弱点创造机会",
+          "克罗地亚边后卫助攻后空当可能被英格兰边路进攻利用",
+          "英格兰防守存在被反击打身后的漏洞"
+        ],
+        "reasoning": "英格兰凭借凯恩和贝林厄姆的个人能力在进攻端有优势，可针对克罗地亚转身偏慢的防线，但其防守空当可能被克罗地亚反击利用，不过克罗地亚进攻信息不足。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示英格兰-140明显强于克罗地亚+390",
+          "英格兰近期3胜2平保持不败，士气正旺",
+          "克罗地亚热身赛输给葡萄牙，状态存疑"
+        ],
+        "reasoning": "英格兰凭借凯恩和贝林厄姆的球星效应及更优赔率优势占优，但MD1双方都想赢且克罗地亚经验丰富，差距有限。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "英格兰近期3胜2平保持不败，含击败突尼斯和阿尔巴尼亚。",
+          "赛前赔率支持英格兰 (-140) 远强于克罗地亚 (+390)。",
+          "双方均无确认伤停或状态输入，评估信息不足。"
+        ],
+        "reasoning": "赔率显示英格兰明显占优 (-140 vs +390)，但双方关键球员 (Harry Kane, Jude Bellingham, Luka Modric) 赛前状态完全未知，英格兰近期状态略好但不足以支撑更大分差。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合年限数据均为null",
+          "教练确认但无执教时长细节",
+          "近期比赛阵容轮换信息缺失"
+        ],
+        "reasoning": "两队均缺乏阵容稳定性和系统磨合的具体数据，仅凭赔率差异不足以认定化学反应优劣"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰赔率-140明显有利，反映市场看好其取胜",
+          "凯恩（拜仁）和贝林厄姆（皇马）具备单场改变走势的超级球员能力",
+          "克罗地亚阵容深度不如英格兰，但格瓦迪奥尔和利瓦科维奇是顶级防线支柱"
+        ],
+        "reasoning": "英格兰有凯恩和贝林厄姆两名超级球员，整体阵容五大联赛主力级，赔率显示优势，但克罗地亚有格瓦迪奥尔、利瓦科维奇等稳定核心，实力差距有限。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰近2场正赛零封对手（2-0胜塞尔维亚、2-0胜阿尔巴尼亚）",
+          "克罗地亚友谊赛3连败且场均失球2+（1-2负巴西、0-2负比利时、1-3平局输）",
+          "博彩赔率英格兰-140明显成热门"
+        ],
+        "reasoning": "英格兰拥有Harry Kane和Jude Bellingham的关键球员优势，且正赛零封表现强于克罗地亚的近3场友谊赛连败趋势"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=62%/P(D)=14%/P(B)=24%",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "英格兰前场凯恩和贝林厄姆状态火热，但克罗地亚拥有经验丰富的莫德里奇在中场调度，他能在高压下控制节奏，让英格兰的快攻难以连续奏效。",
+      "英格兰在小组赛首战往往慢热，近5场比赛有3场平局，而克罗地亚防守稳固，格瓦迪奥尔领衔的后防线擅长限制对手核心球员。",
+      "市场赔率（英格兰胜62%）与模型概率（38%）差距明显，暗示英格兰被过度看好，实际对阵克罗地亚的硬仗可能难分高下。"
+    ],
+    "key_risk": "若莫德里奇因体能问题下半场被换下，克罗地亚中场可能失控，英格兰将利用速度和身体优势打破僵局。"
+  },
+  "actual_result": null
+}

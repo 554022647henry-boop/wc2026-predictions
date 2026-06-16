@@ -1,0 +1,140 @@
+{
+  "match_id": "WC2026_B_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T19:55:40.853972",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.84,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "瑞士右路Ndoye与Widmer配合能针对Davies助攻后空档",
+          "Embolo反越位直塞攻击Vitória转身慢",
+          "Xhaka中场调度能限制加拿大反击节奏",
+          "加拿大中后场面对高位逼抢易失误"
+        ],
+        "reasoning": "瑞士利用Embolo反越位和右路配合精准打击加拿大左路空档及中卫转身慢的弱点，而加拿大进攻过度依赖Davies且中场抗压能力不足。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "瑞士核心扎卡场均传球成功率89%，中场控制力强",
+          "加拿大拥有阿方索·戴维斯等速度型攻击手，威胁较大",
+          "双方均为小组出线目标，动机接近，媒体压力瑞士低、加拿大中",
+          "赔率显示瑞士小幅度领先（115 vs 250），市场轻微看好"
+        ],
+        "reasoning": "瑞士中场扎卡的组织能力与加拿大戴维斯的边路突破形成对比，但瑞士近期状态更稳且赔率略占优势，加拿大年轻但缺乏大赛磨合。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.5,
+        "weight": 0.18,
+        "key_factors": [
+          "瑞士近3届世界杯首轮全胜（2014、2018、2022），开局表现强势",
+          "加拿大唯一世界杯首轮（2022）0-1负比利时，未能得分",
+          "赔率显示瑞士胜赔115远低于加拿大250，市场信心倾斜",
+          "瑞士核心球员Xhaka无伤停报告，阵容完整度高"
+        ],
+        "reasoning": "瑞士近3届世界杯小组赛首轮全胜，而加拿大仅一次参赛且首轮失利，瑞士在开局节奏和大赛稳定性上明显占优。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Granit Xhaka赛季关键传球数排名前五，是球队节拍器，状态极高无伤停",
+          "Breel Embolo法甲16球4助，支点作用不可替代，而Canada的Jonathan David替代者Larin类型不同",
+          "Canada的左路攻防依赖Alphonso Davies唯一爆点，缺阵威胁骤降70%，且Stephen Eustáquio替代者Koné经验不足"
+        ],
+        "reasoning": "Switzerland的Xhaka（德甲+欧冠关键传球前五）和Embolo（法甲16球4助）状态高位且无伤停，相对Canada的Davies（拜仁优异）和David（20+球）更依赖唯一爆点，替代者Larin和Koné经验不足，瑞士中场控制力略优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "瑞士核心组合（Xhaka、Shaqiri、Sommer等）已合作超过4年，历经欧洲杯和世界杯正赛考验，战术体系高度成熟",
+          "Bologna俱乐部三人组（Freuler、Ndoye、Aebischer）可直接套用俱乐部战术，无需额外适应",
+          "加拿大Jesse Marsch执教仅约1年，且球员来自美职联、欧洲各国俱乐部，系统磨合仍在初期",
+          "加拿大两人Simon LaRoc和Anass, 实际并无此项因素，无相关重大内部矛盾报"
+        ],
+        "reasoning": "瑞士核心阵容已稳定征战4年，Bologna连线提供俱乐部级默契，战术理解远超刚磨合的加拿大；加拿大因海外球员分散和教练更迭，体系成熟度明显不足。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士FIFA排名15远高于加拿大49，差距34名",
+          "加拿大阵容身价1.85亿低于瑞士2.85亿，但未达2倍阈值",
+          "加拿大拥有阿方索·戴维斯，具备改变比赛的单兵能力"
+        ],
+        "reasoning": "瑞士排名和近期战绩占优，但加拿大有阿方索·戴维斯能单点爆破，扎卡的中场控制与戴维斯的边路冲击形成关键对抗。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加拿大近3场世预赛2胜1平且每场进球≥2",
+          "瑞士近3场进球为2-0-1，火力波动明显",
+          "加拿大无核心伤停，瑞士需防高龄球员（Sommer/Shaqiri）体能影响"
+        ],
+        "reasoning": "瑞士有Xhaka中场控制力及欧国联胜意大利的硬仗经验，但加拿大世预赛连胜且进球稳定，体能与进攻趋势更好"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Switzerland胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Switzerland胜",
+    "confidence": "中",
+    "reasons": [
+      "瑞士队拥有阿森纳中场核心扎卡，他场均89%的传球成功率能牢牢掌控节奏，加拿大年轻中场很难限制他的调度。",
+      "加拿大队刚在2026年1-2输给美国，防守连续犯错；而瑞士最近热身赛逼平荷兰，防线经验更老道。",
+      "瑞士队大赛经验丰富，沙奇里等老将能抓住定位球机会——加拿大在禁区防守上常有注意力不集中问题。"
+    ],
+    "key_risk": "加拿大左路阿方索·戴维斯可能用速度冲击瑞士右路防线，如果瑞士边后卫体能下降，戴维斯一次奔袭就能改变比赛。"
+  },
+  "actual_result": null
+}

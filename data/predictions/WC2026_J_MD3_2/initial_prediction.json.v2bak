@@ -1,0 +1,141 @@
+{
+  "match_id": "WC2026_J_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T20:43:32.129889",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.37,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.5,
+        "b_score": 7.5,
+        "delta": -4.0,
+        "confidence": 9.0,
+        "weight": 0.25,
+        "key_factors": [
+          "阿根廷核心套路（Messi内切分球+Molina传中+Martínez抢点）专打约旦中卫间空当大的防守弱点",
+          "约旦后场出球能力差，面对阿根廷高位逼抢极易失误丢球",
+          "阿根廷定位球进攻中（如奥塔门迪/罗梅罗）身高优势可攻击约旦后点区域漏洞",
+          "约旦反击依赖长传找Naimat争顶，但阿根廷中卫组合（罗梅罗/奥塔门迪）对抗和争顶能力强"
+        ],
+        "reasoning": "阿根廷的Messi-Molina右路进攻组合能精准打击约旦中卫间空当大的弱点，且其顶级抗压能力完全压制约旦后场出球差的命门。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DraftKings赔率-550 vs 1400体现10倍以上实力差距",
+          "阿根廷近期连胜状态佳而约旦胜负交替稳定性差",
+          "阿根廷有卫冕冠军经验而约旦世界杯首秀缺乏对抗强度匹配能力"
+        ],
+        "reasoning": "阿根廷依赖梅西、劳塔罗和恩佐等顶级球员的整体实力远超约旦，后者仅靠塔马里反击难以形成威胁，赔率差和大赛经验差距显著。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "Argentina近两届世界杯首战仅1胜1负（2022年1-2输沙特），开赛慢热明显",
+          "Jordan首次参赛无大赛经验，且历史精神韧性弱（逆转比赛能力差）",
+          "赔率DraftKings显示Argentina-550对Jordan1400，实力碾压但小组赛冷门风险存在"
+        ],
+        "reasoning": "Argentina整体实力碾压（卫冕冠军+塔马里独木难支），但首战慢热历史（2022年输沙特）削弱其优势，Jordan首次参赛无压力但缺乏逆转能力。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Argentina核心Lionel Messi状态顶级但体能受限，仍是进攻核心",
+          "Argentina门将Emiliano Martínez状态出色提供后防保障",
+          "Jordan依赖Mousa Al-Tamari和Yazan Al-Naimat，但缺乏大赛经验和备用方案",
+          "赔率显示Argentina为压倒性热门（-550 vs Jordan 1400）"
+        ],
+        "reasoning": "阿根廷凭借Messi、Martínez和De Paul的顶级状态及阵容深度压制Jordan，Jordan核心Al-Tamari和Al-Naimat难以突破阿根廷防线且无备用方案"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Argentina核心组合已稳定6年，比Jordan的3年多出3年",
+          "Argentina更衣室以Messi为核心无负面报道，Jordan虽团结但缺乏顶级领袖",
+          "Jordan作为世界杯新军大赛经验匮乏，Argentina则有2022冠军班底",
+          "Argentina年龄老化但年轻球员已接班，Jordan平均年龄29岁且无新血"
+        ],
+        "reasoning": "Argentina拥有自2022世界杯夺冠后保留至今的核心阵容（Messi、Di María等），体系稳定性和更衣室团结度远超约旦，而约旦仅靠国内俱乐部集群和Ammouta三年执教提供有限支撑。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 10.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名第1 vs 第80，相差79位，远超标配30位的显著差距门槛",
+          "总身价8.2亿€ vs 1500万€，相差约55倍，远超2倍阈值",
+          "阿根廷拥有梅西（当前射门转化率22%、关键传球3.1次/90分钟）和劳塔罗（俱乐部29球），足以单场主导比赛；约旦无任何同级球员",
+          "近期战绩：阿根廷连续击败乌拉圭、厄瓜多尔等强敌，约旦仅险胜亚洲中游球队科威特、阿曼"
+        ],
+        "reasoning": "阿根廷FIFA排名、总身价和超级球星储备（梅西、劳塔罗）全面碾压约旦，约旦仅靠法甲边锋塔马里创造零星机会，实力鸿沟不可逾越。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina近5场4胜1平不败，而Jordan近5场2胜2平1负且输给沙特",
+          "Argentina上一场大胜厄瓜多尔无体力消耗，Jordan上一场输伊拉克士气受挫",
+          "Argentina拥有梅西、劳塔罗等世界级球星，纸面实力碾压Jordan",
+          "赔率显示Argentina-550的绝对优势，市场信心极强"
+        ],
+        "reasoning": "Jordan整体实力与大赛经验远逊于Argentina，且塔马里缺乏强力支援，无法抗衡梅西与劳塔罗领衔的豪华攻击线。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 49%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=7%/P(D)=10%/P(B)=83%",
+    "judge_reasoning": "Argentina胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "高",
+    "reasons": [
+      "阿根廷拥有梅西这一定海神针，他在前场的回撤组织和致命传球能撕开约旦的防线，而约旦核心塔马里虽然速度快，但孤掌难鸣，难以抵挡阿根廷的压迫。",
+      "阿根廷近期状态火热，连续战胜乌拉圭、巴西等强队，球队化学和绝对实力碾压约旦，后者作为世界杯新军大赛经验不足，容易在高压下犯错。",
+      "战术上阿根廷的高位逼抢会针对约旦中场出球能力不足的弱点，而约旦边后卫身后的空当正是梅西和恩佐·费尔南德斯擅长利用的区域，定位球防守也是阿根廷的隐患，但整体实力差距太大。"
+    ],
+    "key_risk": "约旦若死守反击，利用塔马里的速度偷袭阿根廷边路身后空当，且阿根廷在领先时松懈，可能爆冷逼平，但市场赔率显示阿根廷胜率高达83%，爆冷概率极低。"
+  },
+  "actual_result": null
+}

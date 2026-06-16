@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_I_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T18:29:53.943473",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -2.15,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.5,
+        "b_score": 7.5,
+        "delta": -3.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "挪威进攻：厄德高+哈兰德直塞打伊拉克中卫身后是明确弱点",
+          "伊拉克防守弱点：中卫转身慢被直塞球打穿，后腰与中卫间距大",
+          "挪威防守漏洞：快速横向转移时中场回位慢，边路2打1风险",
+          "伊拉克左路进攻：Ali Jasim内切+传中找Ayman Hussein是唯一威胁"
+        ],
+        "reasoning": "挪威凭借厄德高的中路组织、哈兰德对伊拉克中卫转身慢的冲击以及整体实力碾压，但伊拉克左路传中找Ayman Hussein可能利用挪威边路防守空当。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "挪威拥有世界级前锋哈兰德，其个人能力可单场改变比赛",
+          "赔率DraftKings显示Norway -525 vs Iraq +1400，市场认定差距悬殊",
+          "伊拉克近期仅对越南赢球，对伊朗和沙特未胜，缺乏顶级对抗韧性"
+        ],
+        "reasoning": "挪威因哈兰德的顶级进攻能力和赔率暗示的纸面碾压，占据明显优势，伊拉克则依赖Ayman Hussein的反击效率但整体差距大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 4.0,
+        "b_score": 6.0,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "挪威核心球员多来自欧洲五大联赛，整体牌面碾压伊拉克",
+          "赔率差极大（-525 vs +1400），市场预期近乎一边倒",
+          "伊拉克近期逆转能力为0%，面对强队难以制造冷门"
+        ],
+        "reasoning": "赔率显示挪威为-525vs伊拉克1400，实力碾压；且伊拉克缺乏对等欧洲级别球员对抗，挪威拥有战术级别优势。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Erling Haaland状态极佳，赛季进球率稳定在每90分钟0.9球以上，缺阵时挪威进球效率预计下降60%",
+          "Martin Ødegaard虽体能下降，但在阿森纳保持高助攻率，提供关键创造力",
+          "Iraq前锋Ayman Hussein状态火热（17球），但球队缺乏替代射手，且挪威中场Sander Berge对抗成功率超70%可限制"
+        ],
+        "reasoning": "挪威因哈兰德（每90分钟0.9球+）和厄德高的双重核心优势，以及伊拉克缺少针对性的防守方案，占据压倒性优势，而伊拉克虽然有阿耶曼·侯赛因的17球支撑，但整体实力和备用方案均不足。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "伊拉克: 5名阿尔-肖塔俱乐部同队球员组合（如Ayman Hussein、Ibrahim Bayesh）",
+          "伊拉克: 主帅Casas执教3年，战术系统成熟",
+          "挪威: 无同一俱乐部大规模团体，仅博德闪耀3人",
+          "挪威: 哈兰德首发状态未确认，集训时间短可能影响配合"
+        ],
+        "reasoning": "伊拉克有5名阿尔-肖塔同队球员且体系稳定3年，挪威依赖球星个人能力但缺乏集体默契。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 4.5,
+        "b_score": 7.5,
+        "delta": -3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Iraq FIFA排名58 vs Norway排名18，实力差距显著",
+          "Norway阵容总身价423M€约是Iraq 12.5M€的34倍，纸面完全碾压",
+          "Norway拥有Erling Haaland这一顶级超级球员，具备单场决定比赛走向的能力"
+        ],
+        "reasoning": "Norway凭借Haaland的超强个人能力、423M€碾压级身价（Iraq仅12.5M€）及FIFA排名领先40位的多重优势，形成压倒性优势"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.0,
+        "b_score": 6.5,
+        "delta": -2.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Iraq近5场仅1胜，面对亚洲强队竞争力不足",
+          "Norway近5场3胜2平不败，进9球失4球展现攻防稳定",
+          "赔率Norway-525 vs Iraq+1400，市场认定实力差距悬殊"
+        ],
+        "reasoning": "Norway凭借整体实力、不败趋势和Haaland潜在威胁压制Iraq，但友谊赛性质和对手质量有限制预测置信度。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 33%：模型 B_WIN P(A)=22%/P(D)=28%/P(B)=50% vs 市场 P(A)=7%/P(D)=10%/P(B)=83%",
+    "judge_reasoning": "Norway胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Norway胜",
+    "confidence": "高",
+    "reasons": [
+      "挪威拥有超级射手哈兰德，即使他刚伤愈，仅靠无球跑动和禁区威慑力就足以撕碎伊拉克防线，伊拉克中卫很难跟上他的爆发力",
+      "伊拉克战术上核心依赖前场抢断后的快速反击，但挪威中场厄德高和厄斯高能通过精准长传和控球切断其反击源头，让伊拉克被迫陷入阵地战",
+      "伊拉克门将贾拉尔·哈桑扑点球和单刀经验丰富，但挪威的贝格或索尔洛特擅长远射和头球，会利用伊拉克禁区弧顶防守空档频繁制造威胁"
+    ],
+    "key_risk": "最大爆冷风险在于哈兰德若因肌肉疲劳被迫轮休或效率下降，加之挪威后防新星阿耶因经验不足，可能被伊拉克头号射手侯赛因的头球争顶或定位球偷袭得手"
+  },
+  "actual_result": null
+}

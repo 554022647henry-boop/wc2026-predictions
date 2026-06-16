@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_F_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T19:17:55.777268",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.14,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "突尼斯中场Skhiri与Laïdouni之间的肋部斜传球通道是日本前腰后插上的目标区域",
+          "突尼斯边后卫Kechrida与Abdi容易被打套边配合，恰好对应日本左路Mitoma和Soma的2对1战术",
+          "日本抗压球能力好，后腰和中卫能短传破逼抢，削弱突尼斯中场截球后直塞的效率"
+        ],
+        "reasoning": "日本利用突尼斯中场肋部空档和边后卫套边弱点，结合Mitoma左路冲击和前腰后插上，对突尼斯防守形成明显优势，且抗压能力更强；突尼斯直塞反击虽有一定威胁，但日本后场出球能力可缓解逼抢。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 7.0,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "日本队目标是小组出线，媒体压力高，动机强；突尼斯为陪跑角色，压力小。",
+          "赔率显示日本队为-190大热门，突尼斯为+600弱队。",
+          "日本队近期战胜美国且世预赛两连胜，突尼斯近期友谊赛表现一般。"
+        ],
+        "reasoning": "日本队凭借更强的整体实力、明确的小组出线动机以及核心球员（如久保建英）的支撑，在现场对阵陪跑心态的突尼斯时占据明显优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.18,
+        "key_factors": [
+          "Japan近两届世界杯均进入16强，而Tunisia连续两届小组赛出局。",
+          "Japan近三届世界杯首战1胜2负，两次击败强队（德国、哥伦比亚），擅长以弱胜强。",
+          "Japan在2022世界杯两次逆转强队（德国、西班牙），心理素质极佳；Tunisia在落后时很少能组织有效反击。"
+        ],
+        "reasoning": "日本凭借近两届16强战绩、多次首战爆冷（胜德国、哥伦比亚）以及历史证明的强逆转能力（2022世界杯逆转德国、西班牙），心理素质和晋级基因明显优于近两届小组赛出局且逆转能力弱的突尼斯。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Kaoru Mitoma状态正佳（赛季进球助攻双10+），是日本进攻核心",
+          "Youssef Msakni状态下滑，且突尼斯无可靠替补",
+          "日本后防有Takehiro Tomiyasu组织，中场Wataru Endo提供防守硬度",
+          "突尼斯关键球员Wahbi Khazri状态存疑，进攻选项受限"
+        ],
+        "reasoning": "日本凭借Mitoma的状态出色、富安健洋和远藤航的稳定性，以及整体阵容深度，在核心球员对比上明显优于突尼斯的Msakni状态下滑和Khazri存疑。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Japan核心组合磨合4年，比Tunisia的3年更多稳定时间",
+          "Japan老中青三代结合（Gonda、富安、铃木），而Tunisia前锋线偏老（平均33岁）",
+          "Tunisia多个球员同效力沙特联赛，但年轻球员Mejbri和El Atri出场有限"
+        ],
+        "reasoning": "Japan因森保一执教4年且阵容平衡（如端户、富安、久保）对战Tunisia的沙特联赛集群（Msakni、Jaziri）有轻微化学反应优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "日本阵容总身价2.8亿€ vs 突尼斯9500万€，差异超3倍，对应得分差异明显",
+          "FIFA排名日本15 vs 突尼斯32，差距17名未达30名门槛，对评分影响有限",
+          "突尼斯关键球员斯希里和哈兹里状态存疑，缺乏可单场改变局势的超级球员"
+        ],
+        "reasoning": "日本阵容总身价约3倍于突尼斯，且富安健洋、伊东纯也等欧战球员形成多维度优势，突尼斯防守端可能稳固但缺乏顶级反击核心。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "日本世预赛2-0胜澳大利亚展现冲击力",
+          "突尼斯近3场友谊赛1平2负且零进球",
+          "日本赔率-190显示市场明显看好",
+          "突尼斯世预赛期间3连胜且零封对手"
+        ],
+        "reasoning": "基于赔率日本被看好，但突尼斯世预赛连胜与防守稳定抵消部分差距，Skhiri和Khazri状态存疑削弱突尼斯进攻预期"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 B_WIN P(A)=24%/P(D)=33%/P(B)=43% vs 市场 P(A)=14%/P(D)=20%/P(B)=66%",
+    "judge_reasoning": "Japan胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Japan胜",
+    "confidence": "中",
+    "reasons": [
+      "日本队的中前场拥有久保建英和远藤航这样的顶级球员，久保的盘带突破能撕开突尼斯密集防守，远藤航的拦截将限制突尼斯核心斯希里的组织。",
+      "突尼斯近期友谊赛表现低迷，0-2输给马里、1-1平阿尔及利亚，而日本虽然输韩国但曾2-1胜美国，整体进攻配合更流畅，边路三笘薰的复出增加了变数。",
+      "小组赛关键时刻日本更擅长应对压力，近5场世预赛4胜1平，而突尼斯在强度对抗中经常失误，比如对喀麦隆的0-0闷平暴露了得分乏力。"
+    ],
+    "key_risk": "突尼斯若利用身体对抗打乱日本节奏，并通过定位球由中卫梅里亚或前锋哈兹里偷袭，可能逼平日本，而日本近期友谊赛防守不稳（对韩国丢2球）是隐患。"
+  },
+  "actual_result": null
+}
