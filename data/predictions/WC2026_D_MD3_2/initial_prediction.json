@@ -2,45 +2,46 @@
   "match_id": "WC2026_D_MD3_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-17T03:46:05.698767",
+  "timestamp": "2026-06-17T12:36:10.349486",
+  "pipeline": "v2_match_context",
   "_internal": {
-    "说明": "内部留痕，供追溯复盘",
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": 0.77,
-    "p_a_win": 0.38,
-    "p_draw": 0.36,
-    "p_b_win": 0.26,
+    "weighted_delta": -0.14,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 6.5,
-        "b_score": 6.0,
-        "delta": 0.5,
-        "confidence": 7.0,
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.5,
         "weight": 0.25,
         "key_factors": [
-          "巴拉圭防守弱点明确：惧怕快速传切和转身球，而澳大利亚的4-3-3阵型擅长此道。",
-          "巴拉圭核心阿尔米隆的持球能力可威胁澳大利亚中场弧顶保护不足的问题。",
-          "巴拉圭首战0-4惨败士气低落，而澳大利亚无此负面消息，心理状态更优。",
-          "澳大利亚后防线回追速度存在隐患，但巴拉圭的反击效率在首战中未能体现。"
+          "巴拉圭防守在反击中被利用肋部空间打穿防线的情况较多，澳大利亚4-3-3边锋群擅长冲击这个区域",
+          "澳大利亚首轮1-0胜美国展现良好防守纪律与转换效率，巴拉圭首轮虽大胜但对手实力较弱",
+          "澳大利亚中场对禁区弧顶保护有隐患，但巴拉圭缺少技术型前腰进行惩罚",
+          "场地为中立场，赔率倾向小幅看好澳大利亚（+255 vs +115），反映市场对其战术克制有信心"
         ],
-        "reasoning": "澳大利亚的边路进攻和直线传身后打法，能精准打击巴拉圭中后卫转身慢和肋部空档的防守命门，占据明显战术优势。"
+        "reasoning": "澳大利亚的边路快速推进与肋部渗透能精准打击巴拉圭中卫转身慢、肋部空档大的防守弱点，而巴拉圭缺乏穿透性组织核心来破解澳大利亚紧凑防线。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 6.5,
-        "b_score": 5.5,
+        "a_score": 6.0,
+        "b_score": 5.0,
         "delta": 1.0,
         "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "Paraguay赔率115大幅低于Australia的255，市场信心偏向Paraguay",
-          "Paraguay首战0-4负于美国，本场必须赢球否则几乎出局，动机强度极高",
-          "Australia疑似伤停Leckie（35岁）和Boyle（十字韧带重伤史），影响边路进攻深度"
+          "巴拉圭首轮3分净胜球+3但因排名低需抢分，澳大利亚已3分可接受平局",
+          "赔率DraftKings显示巴拉圭胜赔115低于澳大利亚255，市场略看好巴拉圭",
+          "双方均在中立场费城比赛，无主客场差异"
         ],
-        "reasoning": "Paraguay在赔率（115 vs 255）、纸面实力和首战惨败后的强烈求胜欲望上占据明显优势，Australia则因Leckie和Boyle的状态不确定性削弱了关键位置；Almiron的个人能力是Paraguay打破僵局的关键。"
+        "reasoning": "巴拉圭因积分劣势有更强的求胜动机（输球即濒临出局），且赔率暗示其纸面略优；澳大利亚心态放松但战术执行更务实，差距不大。"
       },
       {
         "dimension": "G_dna",
@@ -56,78 +57,87 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 6.0,
+        "a_score": 5.5,
         "b_score": 5.0,
-        "delta": 1.0,
-        "confidence": 4.0,
+        "delta": 0.5,
+        "confidence": 3.0,
         "weight": 0.15,
         "key_factors": [
-          "DraftKings赔率显示巴拉圭胜赔115远低于澳大利亚的255",
-          "巴拉圭近期友谊赛1胜1平，澳大利亚首战0-4负于美国",
-          "澳大利亚老将马修·莱基（35岁）体能存疑，马丁·博伊尔有十字韧带重伤史"
+          "Paraguay在赔率上被看好（DraftKings: +115 vs +255）",
+          "两队均无确认伤停或状态信息，核心球员Enciso、Irvine、Hrustic状态未知",
+          "无针对性防守方案或替补深度数据可评估"
         ],
-        "reasoning": "巴拉圭赔率优势及近期战绩略占上风，但核心如阿尔米隆状态未知，澳大利亚关键球员有隐患但无确认伤停，整体差异微小。"
+        "reasoning": "赔率偏向Paraguay（115 vs 255），但无任何球员状态、伤停或战术限制的具体信息，尤其是Julio Enciso和Jackson Irvine的状态均未知。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 6.0,
-        "b_score": 5.5,
-        "delta": 0.5,
-        "confidence": 4.0,
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
         "weight": 0.08,
         "key_factors": [
-          "Paraguay首战0-4负美国，小组出线压力导致战术调整风险",
-          "Australia老将Leckie和Boyle体能/伤病状态不确定",
-          "两队核心组合稳定性数据均缺失，集训时间同等受限"
+          "双方教练均已确认但无执教时长数据",
+          "无核心组合合作年限信息",
+          "无更衣室矛盾或战术磨合报道"
         ],
-        "reasoning": "Paraguay虽核心Almiron在阵，但0-4惨败暴露系统漏洞，Australia阵容经验更均衡但老将状态存疑"
+        "reasoning": "赛前信息严重不足，无核心组合、更衣室氛围或体系稳定性的具体数据可评估差异"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
-        "confidence": 6.5,
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.07,
         "key_factors": [
-          "Paraguay阵容有Miguel Almiron（纽卡斯尔联）等五大联赛主力，Australia仅少数球员在欧洲中下游联赛效力",
-          "赔率Paraguay 115 vs Australia 255，市场预期差距达2.2倍",
-          "Paraguay首战0-4负于美国暴露防守问题，但Australia近期热身赛缺乏亮点"
+          "Paraguay后防线有3名五大联赛级别球员（Gómez/Alonso/Balbuena）",
+          "Australia后防以英冠和澳超球员为主（如Souttar/Degenek）",
+          "赔率偏向Paraguay（115 vs 255），体现市场轻微优势"
         ],
-        "reasoning": "Paraguay拥有Miguel Almiron（纽卡斯尔联主力）等五大联赛球员，阵容档次高于Australia，且赔率115 vs 255显示市场明确看好Paraguay，但无超级球员且首战惨败削弱信心。"
+        "reasoning": "Paraguay拥有Gustavo Gómez、Júnior Alonso、Fabián Balbuena等五大联赛主力后卫，阵容经验和档次略优于Australia以英冠和澳超为主的配置，赔率也略占优。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.5,
-        "b_score": 5.0,
-        "delta": 1.5,
-        "confidence": 6.0,
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.07,
         "key_factors": [
-          "Paraguay在世界杯预选赛中曾战平厄瓜多尔、击败秘鲁，对抗南美强队经验丰富",
-          "Australia近5场友谊赛仅1胜，且对手实力偏弱（库拉索、喀麦隆）",
-          "赔率明确显示Paraguay为热门（115 vs 255），主场优势显著"
+          "Paraguay在近3场正式预选赛中取得1胜1平1负且仅失1球，防守稳固。",
+          "Australia近3场友谊赛1胜1平1负，战胜弱旅Curaçao含金量有限，面对Mexico和Switzerland均未取胜。",
+          "Paraguay首轮小组赛输给强敌，但比赛过程可能暴露了问题也积累了经验；Australia虽赢球但对手较弱，状态成色待检验。"
         ],
-        "reasoning": "Paraguay拥有主场优势和更高质量预选赛经验，Miguel Almiron的突破能力是破局关键，而Australia近期友谊赛表现起伏，且核心球员Leckie年龄问题影响稳定性。"
+        "reasoning": "Paraguay在近期正式预选赛中展现了更强的防守稳定性（对阵Ecuador和Peru零失球），而Australia的友谊赛表现波动较大（负于Mexico、战平Switzerland），且Paraguay的硬仗经验可能略有优势。"
       }
     ],
-    "calibration_warning": true,
-    "calibration_note": "⚠️ 赔率偏差 27%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=57%/P(D)=9%/P(B)=34%",
-    "judge_reasoning": "Paraguay胜"
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760469)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
   },
   "output": {
     "说明": "对外展示到HTML",
-    "prediction": "Paraguay胜",
-    "confidence": "低",
+    "prediction": "平局",
+    "confidence": "中",
     "reasons": [
-      "巴拉圭整体实力占优，Miguel Almiron在禁区前沿的突破是撕开澳大利亚防线的利器，他本赛季在纽卡贡献5球4助攻，状态在线。",
-      "澳大利亚核心Mathew Leckie和Martin Boyle年龄偏大且有伤病隐患，一旦体能下滑，巴拉圭的快速反击将更具威胁。",
-      "巴拉圭首战0-4惨败美国，背水一战必须抢分，球队的战术纪律和防守韧性历来是他们的DNA，有望在重压下反弹。"
+      "Paraguay急需抢分，但澳大利亚拥有更成熟的战术体系，两队中场很可能陷入缠斗，机会都不多。",
+      "Paraguay休息了13天，身体状态占优，但久疏战阵可能影响进攻节奏，而澳大利亚防守稳健，很难被快速击穿。",
+      "平局赔率高达235.0，市场并不看好单边碾压，结合小组形势，双方各拿1分是都可接受的结果，心态上更倾向于保守。"
     ],
-    "key_risk": "市场赔率严重偏离模型预期，澳大利亚胜赔率仅34%而模型概率为26%，且平局赔率极低（9%），暗示实际平局可能性被低估，爆冷风险在于巴拉圭久攻不下被澳大利亚偷袭得手。"
+    "key_risk": "Paraguay如果在上半场利用身体优势率先破门，澳大利亚可能会被迫大举压上，反而给对手扩大比分的机会，导致比赛失去平衡。"
   },
   "actual_result": null
 }
