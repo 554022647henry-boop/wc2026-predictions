@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026世界杯 · AI预测模型介绍</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:    #08101e;
+  --bg2:   #0d1a2e;
+  --bg3:   #111f35;
+  --gold:  #f0c040;
+  --green: #3ecf8e;
+  --blue:  #4fa3e8;
+  --text:  #dde4ee;
+  --muted: #7a8fa8;
+  --border:#1c2d42;
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ── NAV ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: rgba(8,16,30,.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  height: 52px;
+}
+.nav-logo { color: var(--gold); font-weight: 800; font-size: 15px; white-space: nowrap; }
+.nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  transition: color .2s, background .2s;
+}
+.nav-links a:hover { color: var(--text); background: var(--bg3); }
+
+/* ── LAYOUT ── */
+.container { max-width: 900px; margin: 0 auto; padding: 0 28px; }
+section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+section:last-child { border-bottom: none; }
+
+/* ── HERO ── */
+#hero {
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.hero-glow-1 { width:600px; height:400px; background:rgba(240,192,64,.05); top:-80px; right:-100px; }
+.hero-glow-2 { width:400px; height:300px; background:rgba(62,207,142,.04); bottom:0; left:0; }
+.hero-tag {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: rgba(240,192,64,.1);
+  border: 1px solid rgba(240,192,64,.25);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 12px; color: var(--gold); font-weight: 600;
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: clamp(32px, 5vw, 58px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 18px;
+}
+h1 em { color: var(--gold); font-style: normal; }
+.hero-desc {
+  font-size: clamp(14px, 1.6vw, 17px);
+  color: var(--muted);
+  max-width: 620px;
+  margin-bottom: 36px;
+}
+.pill-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.pill {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-size: 13px;
+  display: flex; align-items: center; gap: 7px;
+}
+
+/* ── SECTION HEADERS ── */
+.sec-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 8px;
+}
+h2 {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+h2 em { color: var(--gold); font-style: normal; }
+.sec-lead { color: var(--muted); max-width: 680px; margin-bottom: 36px; font-size: 15px; }
+.divider { width: 40px; height: 3px; background: linear-gradient(90deg,var(--gold),var(--green)); border-radius: 2px; margin-bottom: 36px; }
+
+/* ── KPI GRID ── */
+.kpi-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 28px; }
+.kpi-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 18px;
+  text-align: center;
+}
+.kpi-n { font-size: clamp(28px, 3.5vw, 40px); font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+.kpi-l { font-size: 12px; color: var(--muted); line-height: 1.5; }
+.insight {
+  background: linear-gradient(135deg,rgba(62,207,142,.07),rgba(79,163,232,.07));
+  border: 1px solid rgba(62,207,142,.18);
+  border-radius: 12px;
+  padding: 18px 22px;
+  font-size: 14px;
+}
+.insight strong { color: var(--green); }
+
+/* ── PIPELINE ── */
+.pipeline { display: flex; flex-direction: column; gap: 0; }
+.layer {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 26px;
+}
+.layer-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 2px; margin-bottom: 6px; }
+.layer.l1 .layer-eyebrow { color: var(--blue); }
+.layer.l2 .layer-eyebrow { color: var(--green); }
+.layer.l3 .layer-eyebrow { color: var(--gold); }
+.layer-title { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+.tag-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.tag {
+  font-size: 12px; font-weight: 600;
+  padding: 4px 11px; border-radius: 10px;
+}
+.l1 .tag { background: rgba(79,163,232,.12); color: var(--blue); }
+.l2 .tag { background: rgba(62,207,142,.12); color: var(--green); }
+.l3 .tag { background: rgba(240,192,64,.12); color: var(--gold); }
+.arrow { text-align: center; padding: 10px 0; color: var(--muted); font-size: 20px; }
+
+/* ── DIMENSIONS TABLE ── */
+.dim-table { width: 100%; border-collapse: separate; border-spacing: 0 6px; }
+.dim-table thead th {
+  font-size: 11px; color: var(--muted); font-weight: 600;
+  padding: 0 14px 8px; letter-spacing: 1px; text-align: left;
+}
+.dim-table thead th:nth-child(3) { text-align: center; }
+.dim-row td {
+  background: var(--bg2);
+  padding: 13px 14px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.dim-row td:first-child { border-radius: 8px 0 0 8px; }
+.dim-row td:last-child  { border-radius: 0 8px 8px 0; }
+.dim-code { font-weight: 900; font-size: 17px; width: 34px; text-align: center; }
+.dim-name { font-weight: 700; color: #fff; }
+.dim-desc { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.wt-wrap { display: flex; align-items: center; gap: 10px; }
+.wt-bar-bg { flex:1; height: 7px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.wt-bar { height: 100%; border-radius: 4px; }
+.wt-num { font-size: 13px; font-weight: 700; color: var(--gold); min-width: 34px; text-align: right; }
+.dim-range { font-size: 12px; color: var(--muted); text-align: center; white-space: nowrap; }
+.rule-box {
+  background: rgba(240,192,64,.07);
+  border: 1px solid rgba(240,192,64,.2);
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 13px; color: var(--gold);
+  margin-top: 16px;
+  display: flex; align-items: flex-start; gap: 8px;
+}
+
+/* ── FORMULA ── */
+.formula-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 32px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.formula-label { font-size: 12px; color: var(--muted); letter-spacing: 1px; margin-bottom: 16px; }
+.formula {
+  font-size: clamp(13px, 1.6vw, 17px);
+  color: var(--gold);
+  font-family: 'Courier New', monospace;
+  line-height: 2.2;
+}
+.frac { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; margin: 0 6px; }
+.frac-n { border-bottom: 2px solid var(--gold); padding: 2px 8px; }
+.frac-d { padding: 2px 8px; }
+.formula-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+
+.prob-grid { display: grid; grid-template-columns: repeat(5,1fr); gap: 10px; }
+.prob-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+}
+.prob-label { font-weight: 800; font-size: 13px; color: var(--gold); margin-bottom: 4px; }
+.prob-delta { font-size: 11px; color: var(--muted); margin-bottom: 10px; line-height: 1.4; }
+.pbar-row { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; font-size: 11px; }
+.pbar-key { width: 22px; color: var(--muted); }
+.pbar-bg { flex:1; height: 5px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.pbar-fill { height: 100%; border-radius: 3px; }
+.pbar-fill.a { background: var(--gold); }
+.pbar-fill.d { background: var(--blue); }
+.pbar-fill.b { background: var(--green); }
+.pbar-val { width: 28px; text-align: right; color: var(--muted); }
+
+/* ── QUALITY CONTROL ── */
+.flow { display: flex; align-items: stretch; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+.flow-box {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 13px;
+  min-width: 120px;
+  flex: 1;
+}
+.flow-box .fb-title { font-weight: 700; font-size: 12px; margin-bottom: 4px; }
+.flow-box .fb-body { color: var(--muted); font-size: 11px; }
+.flow-arrow { color: var(--muted); font-size: 18px; display: flex; align-items: center; }
+.check-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 24px; }
+.check-item {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 11px 14px;
+  font-size: 13px; display: flex; align-items: center; gap: 8px;
+}
+.src-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+.src-card { border-radius: 10px; padding: 16px 18px; }
+.src-card.ok   { background: rgba(62,207,142,.07);  border: 1px solid rgba(62,207,142,.18); }
+.src-card.warn { background: rgba(240,192,64,.06);   border: 1px solid rgba(240,192,64,.18); }
+.src-name { font-weight: 700; margin-bottom: 5px; font-size: 14px; }
+.src-card.ok   .src-name { color: var(--green); }
+.src-card.warn .src-name { color: var(--gold); }
+.src-body { color: var(--muted); font-size: 12px; line-height: 1.6; }
+
+/* ── CREDIBILITY ── */
+.cred-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.cred-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px 20px;
+}
+.cred-icon { font-size: 28px; margin-bottom: 12px; }
+.cred-title { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.cred-body { font-size: 13px; color: var(--muted); line-height: 1.7; }
+.cred-body strong { color: var(--green); }
+.rounds { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.round-pill {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: 20px; padding: 5px 13px;
+  font-size: 12px; display: flex; align-items: center; gap: 6px;
+}
+.rp-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+.rp-dot.g { background: var(--green); }
+
+/* ── STATS ── */
+.stats-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin-bottom: 24px; }
+.stat-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 26px 20px; text-align: center;
+}
+.stat-n { font-size: clamp(36px, 4.5vw, 52px); font-weight: 900; line-height: 1; margin-bottom: 6px; }
+.stat-l { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+.stat-s { font-size: 12px; color: var(--muted); }
+.stat-n.c { color: var(--green); }
+.stat-n.t { color: var(--blue); }
+.stat-n.r { color: var(--gold); }
+.hl-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
+.hl-card {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 16px 20px;
+}
+.hl-title { font-weight: 700; color: var(--gold); margin-bottom: 6px; font-size: 14px; }
+.hl-body { color: var(--muted); font-size: 13px; line-height: 1.6; }
+
+/* ── TABLE SECTION ── */
+#table-section { padding: 80px 0 0; }
+.table-frame {
+  width: 100%;
+  height: 820px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0a0f1a;
+}
+.table-frame iframe { width: 100%; height: 100%; border: none; display: block; }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--border);
+}
+footer span { color: var(--gold); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 700px) {
+  nav { padding: 0 16px; gap: 14px; }
+  .container { padding: 0 16px; }
+  .kpi-grid { grid-template-columns: repeat(2,1fr); }
+  .prob-grid { grid-template-columns: repeat(2,1fr); }
+  .cred-grid, .stats-grid, .src-grid, .check-grid { grid-template-columns: 1fr; }
+  .hl-grid { grid-template-columns: 1fr; }
+  .flow { flex-direction: column; }
+  .flow-arrow { transform: rotate(90deg); }
+  .table-frame { height: 600px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">⚽ WC2026 · AI预测</div>
+  <div class="nav-links">
+    <a href="#overview">概览</a>
+    <a href="#arch">架构</a>
+    <a href="#dims">维度</a>
+    <a href="#model">模型</a>
+    <a href="#quality">质控</a>
+    <a href="#cred">可信度</a>
+    <a href="#stats">战绩</a>
+    <a href="#table-section">预测表</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="container" style="position:relative">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-tag">⚽ 2026 FIFA World Cup</div>
+    <h1>AI 预测系统<br><em>技术原理介绍</em></h1>
+    <p class="hero-desc">10 个 AI Agent 协作，7 个维度独立评分，ESPN 官方数据驱动——每一个预测都有量化依据，每一个结论都可拆解复盘。</p>
+    <div class="pill-row">
+      <div class="pill">🤖 10 个协作 Agent</div>
+      <div class="pill">📐 7 维度量化评分</div>
+      <div class="pill">📡 ESPN 官方数据</div>
+      <div class="pill">🔒 Git 时间戳存档</div>
+      <div class="pill">⚽ 72 场赛前预测</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OVERVIEW ── -->
+<section id="overview">
+  <div class="container">
+    <div class="sec-eyebrow">01 · 系统概览</div>
+    <h2>用<em>结构化推理</em>代替「感觉」</h2>
+    <div class="divider"></div>
+    <p class="sec-lead">传统预测依赖经验直觉，本系统将每场比赛分解为 7 个可量化维度，由独立 AI Agent 分别评分，再通过数学模型聚合为概率分布，输出有据可查的预测结论。</p>
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-n">72</div><div class="kpi-l">小组赛全覆盖<br>赛前初始预测</div></div>
+      <div class="kpi-card"><div class="kpi-n">10</div><div class="kpi-l">协作 AI Agent<br>分工明确互不干扰</div></div>
+      <div class="kpi-card"><div class="kpi-n">7</div><div class="kpi-l">量化维度<br>加权评分聚合</div></div>
+      <div class="kpi-card"><div class="kpi-n">5×</div><div class="kpi-l">预测轮次<br>T-24h / T-2h 更新</div></div>
+    </div>
+    <div class="insight">
+      💡 <strong>核心理念：</strong>每个 Agent 只负责一个维度，避免「因素叠加」偏差。7 个 Agent 给出的分数通过加权公式合并，最终结论可拆解、可复盘、可追溯到每一条证据。
+    </div>
+  </div>
+</section>
+
+<!-- ── ARCHITECTURE ── -->
+<section id="arch">
+  <div class="container">
+    <div class="sec-eyebrow">02 · 系统架构</div>
+    <h2>三层 <em>Agent 流水线</em></h2>
+    <div class="divider"></div>
+    <p class="sec-lead">信息搜集 → 质量审阅 → 量化预测，每层职责清晰，数据在链路中逐步被验证和丰富。</p>
+    <div class="pipeline">
+      <div class="layer l1">
+        <div class="layer-eyebrow">LAYER 1 · 信息搜集层</div>
+        <div class="layer-title">Agent 1 · 信息搜集官</div>
+        <div class="tag-row">
+          <span class="tag">⚡ ESPN API（官方赔率 / 首发 / 伤停）</span>
+          <span class="tag">📊 WhoScored（球员数据）</span>
+          <span class="tag">📰 CBS Sports（赛前报道）</span>
+          <span class="tag">📚 AI 知识库（历史DNA，来源标注）</span>
+        </div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="layer l2">
+        <div class="layer-eyebrow">LAYER 2 · 信息审阅层</div>
+        <div class="layer-title">Agent 2 · 信息审阅官</div>
+        <div class="tag-row">
+          <span class="tag">✅ 7 维度信息完整性打分（0–10）</span>
+          <span class="tag">🔍 缺口检测 → 触发补充搜集</span>
+          <span class="tag">🔄 最多 2 轮递归补充</span>
+          <span class="tag">📋 结构化输出供预测层调用</span>
+        </div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="layer l3">
+        <div class="layer-eyebrow">LAYER 3 · 预测引擎层</div>
+        <div class="layer-title">7 Indicator Agent + 赔率校验 + 裁判确认</div>
+        <div class="tag-row">
+          <span class="tag">🔢 7 个维度 Agent 并行评分</span>
+          <span class="tag">⚖️ 加权分差 → 概率分布</span>
+          <span class="tag">📉 赔率校验（对比市场隐含概率）</span>
+          <span class="tag">🎯 裁判 Agent 最终确认输出</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── DIMENSIONS ── -->
+<section id="dims">
+  <div class="container">
+    <div class="sec-eyebrow">03 · 评分体系</div>
+    <h2>7 个维度 · <em>独立评分</em> · 差异化权重</h2>
+    <div class="divider"></div>
+    <p class="sec-lead">每个维度由一个专属 Agent 独立评分，杜绝单一模型「什么都想考虑」导致的因素叠加偏差。</p>
+    <table class="dim-table">
+      <thead>
+        <tr>
+          <th width="34"></th>
+          <th>维度</th>
+          <th style="width:200px">权重分布</th>
+          <th>评分范围</th>
+          <th>评估内容</th>
+        </tr>
+      </thead>
+      <tbody id="dim-tbody"></tbody>
+    </table>
+    <div class="rule-box">
+      ⚠️ &nbsp;<strong>硬性约束：</strong>双方得分之和必须在 <strong>8.0 ~ 13.0</strong> 之间——防止 AI 对两队「都喜欢」导致结果虚高
+    </div>
+  </div>
+</section>
+
+<!-- ── QUANT MODEL ── -->
+<section id="model">
+  <div class="container">
+    <div class="sec-eyebrow">04 · 量化模型</div>
+    <h2>加权分差 <em>→</em> 概率分布</h2>
+    <div class="divider"></div>
+    <p class="sec-lead">所有维度评分通过置信度加权后合并为一个标量 δ，再经过针对国际赛事校准的概率映射表转换为三方概率。</p>
+    <div class="formula-card">
+      <div class="formula-label">加权分差 Weighted Delta</div>
+      <div class="formula">
+        δ &nbsp;=&nbsp;
+        <span class="frac">
+          <span class="frac-n">Σ &thinsp;( w<sub>i</sub> &thinsp;·&thinsp; c<sub>i</sub> &thinsp;·&thinsp; (A<sub>i</sub> − B<sub>i</sub>) )</span>
+          <span class="frac-d">Σ &thinsp;( w<sub>i</sub> &thinsp;·&thinsp; c<sub>i</sub> )</span>
+        </span>
+      </div>
+      <div class="formula-note">w<sub>i</sub> = 维度权重 &nbsp;|&nbsp; c<sub>i</sub> = 信息置信度（0–10）&nbsp;|&nbsp; 评分 ∈ [4, 8]，δ &gt; 0 表示 A 队占优</div>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px">δ 到概率映射——已针对国际赛事校准</p>
+    <div class="prob-grid" id="prob-grid"></div>
+    <div class="rule-box" style="margin-top:18px">
+      📉 &nbsp;<strong>赔率校验：</strong>若模型概率与市场隐含概率偏差 &gt; 20%，触发置信度警告——不改变预测方向，但会降低 confidence 标签
+    </div>
+  </div>
+</section>
+
+<!-- ── QUALITY CONTROL ── -->
+<section id="quality">
+  <div class="container">
+    <div class="sec-eyebrow">05 · 质量控制</div>
+    <h2>信息质量 <em>多层把关</em></h2>
+    <div class="divider"></div>
+    <p class="sec-lead">Agent 2 在预测之前对所有原始信息打质量分，低分项触发递归补充，确保关键信息不缺失。</p>
+
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px">Agent 2 审阅流程</p>
+    <div class="flow">
+      <div class="flow-box">
+        <div class="fb-title" style="color:var(--blue)">初审</div>
+        <div class="fb-body">收到 Agent 1 原始数据</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box">
+        <div class="fb-title" style="color:var(--blue)">7 维打分</div>
+        <div class="fb-body">每维度 0–10 质量分</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box">
+        <div class="fb-title" style="color:var(--gold)">缺口检测</div>
+        <div class="fb-body">得分 &lt; 3 触发补充</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box" style="border-color:rgba(62,207,142,.3)">
+        <div class="fb-title" style="color:var(--green)">输出</div>
+        <div class="fb-body">结构化富文本，最多 2 轮补充</div>
+      </div>
+    </div>
+
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px">7 项必查信息</p>
+    <div class="check-grid">
+      <div class="check-item">🤕 双队伤停 / 停赛名单</div>
+      <div class="check-item">📈 近期 3+ 场比赛战绩</div>
+      <div class="check-item">💰 当前赔率（市场隐含概率）</div>
+      <div class="check-item">👕 首发阵容（T-1h 更新）</div>
+      <div class="check-item">⚔️ 战术对位关键信息</div>
+      <div class="check-item">🏆 历史大赛 DNA 数据</div>
+    </div>
+
+    <p style="font-size:13px;color:var(--muted);margin:24px 0 12px">数据来源分级</p>
+    <div class="src-grid">
+      <div class="src-card ok">
+        <div class="src-name">✅ ESPN API</div>
+        <div class="src-body">官方数据：大名单、赔率、伤停、首发阵容。100% 真实可信，所有字段标注 _source + _verified</div>
+      </div>
+      <div class="src-card ok">
+        <div class="src-name">✅ WhoScored / CBS Sports</div>
+        <div class="src-body">赛事报道、球员评分、赛程确认。可信的第三方媒体来源</div>
+      </div>
+      <div class="src-card warn">
+        <div class="src-name">⚠️ AI 知识库</div>
+        <div class="src-body">历史大赛表现、教练风格（供参考，标注来源）。<strong style="color:var(--gold)">严禁编造近期战绩或球员名单</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CREDIBILITY ── -->
+<section id="cred">
+  <div class="container">
+    <div class="sec-eyebrow">06 · 可信度保证</div>
+    <h2>三重机制确保预测 <em>不可篡改</em></h2>
+    <div class="divider"></div>
+    <div class="cred-grid">
+      <div class="cred-card">
+        <div class="cred-icon">⏱️</div>
+        <div class="cred-title">Git 时间戳存档</div>
+        <div class="cred-body">
+          每条预测生成后<strong>自动 Git commit</strong>，时间戳记录在代码仓库，利用 GitHub 的不可篡改性证明预测发生在赛前。<br><br>
+          提交格式：<br>
+          <code style="font-size:11px;color:var(--gold);display:block;margin-top:6px;background:var(--bg3);padding:8px;border-radius:6px;line-height:1.7">[预测存档] 队A vs 队B<br>| 初始预测 | 队A胜 | 2026-06-12</code>
+        </div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">🚫</div>
+        <div class="cred-title">AI 幻觉防护</div>
+        <div class="cred-body">
+          <strong>明确禁止</strong> AI 编造球员名单（如已退役球员出现在大名单中）。<br><br>
+          所有近期战绩、首发阵容必须来自 <strong>ESPN API 真实数据</strong>，AI 生成内容仅限历史大赛 DNA，且必须标注「供参考」。
+        </div>
+      </div>
+      <div class="cred-card">
+        <div class="cred-icon">🔄</div>
+        <div class="cred-title">多轮次滚动更新</div>
+        <div class="cred-body">同一场比赛有 5 个时间节点的预测版本，信息随时间丰富而迭代更新。</div>
+        <div class="rounds">
+          <div class="round-pill"><div class="rp-dot"></div>初始预测</div>
+          <div class="round-pill"><div class="rp-dot"></div>T-24h</div>
+          <div class="round-pill"><div class="rp-dot"></div>T-12h</div>
+          <div class="round-pill"><div class="rp-dot g"></div>T-2h</div>
+          <div class="round-pill"><div class="rp-dot g"></div>T-30min 封盘</div>
+        </div>
+      </div>
+    </div>
+    <div class="insight" style="margin-top:20px">
+      🔬 &nbsp;<strong>完整复盘链路：</strong>每个预测文件包含 7 个维度的详细推理、关键证据列表、置信度评分，随时可拆解分析哪个维度判断失误，用于持续迭代优化。
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section id="stats">
+  <div class="container">
+    <div class="sec-eyebrow">07 · 当前战绩</div>
+    <h2>截至 <em>2026-06-17</em> · 第一轮小组赛全部完成</h2>
+    <div class="divider"></div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-n t">20</div>
+        <div class="stat-l">已完成比赛</div>
+        <div class="stat-s">12 组 × 小组赛第 1 轮</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-n c">12</div>
+        <div class="stat-l">预测正确</div>
+        <div class="stat-s">含平局识别 3 场</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-n r">60%</div>
+        <div class="stat-l">整体命中率</div>
+        <div class="stat-s">足球预测基准约 50%</div>
+      </div>
+    </div>
+    <div class="hl-grid">
+      <div class="hl-card">
+        <div class="hl-title">✅ 置信度「高」场次全部命中</div>
+        <div class="hl-body">墨西哥、德国、法国、奥地利（共 5 场高置信度预测，均正确）。置信度系统有效区分了确定性场次。</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-title">⚠️ 平局识别是最大挑战</div>
+        <div class="hl-body">第一轮出现了 8 场平局（史上最多轮次之一），系统在平局识别上表现不佳——8 场中仅命中 3 场，后续轮次将针对性优化。</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-title">🎯 方向判断准确率更高</div>
+        <div class="hl-body">若仅考虑「谁赢谁平」的方向（忽略平局被预测为一方赢的情况），命中率显著提升，说明强弱判断基本正确。</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-title">📊 后续优化方向</div>
+        <div class="hl-body">T-2h / T-30min 预测引入首发阵容信息后，置信度和命中率预期进一步提升。72 场全预测将在小组赛结束后统计最终准确率。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TABLE ── -->
+<section id="table-section">
+  <div class="container">
+    <div class="sec-eyebrow">08 · 完整预测表</div>
+    <h2>📅 赛程 AI 预测 · 按日期排序</h2>
+    <div class="divider"></div>
+  </div>
+  <div style="max-width:960px;margin:0 auto;padding:0 28px">
+    <div class="table-frame">
+      <iframe src="prediction_schedule_zh.html" title="赛程预测表" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>⚽ 2026 FIFA World Cup</span> · AI 预测系统 · 更新于 2026-06-17 · 数据来源 ESPN API
+  </div>
+</footer>
+
+<script>
+// ── Dimensions data ──────────────────────────────────────────────
+const DIMS = [
+  { code:'F', color:'#4fa3e8', name:'战术对位', wt:25, range:'5.0–8.0', desc:'阵型克制关系、边路攻防对位、中场人数对比' },
+  { code:'E', color:'#e08040', name:'情境压力', wt:20, range:'5.0–8.0', desc:'主客场因素、晋级形势、心理包袱与动机强度' },
+  { code:'G', color:'#9b59b6', name:'大赛 DNA',  wt:18, range:'4.0–8.0', desc:'世界杯历史表现、首战规律、逆境抗压能力' },
+  { code:'D', color:'#e05060', name:'关键球员', wt:15, range:'5.0–8.0', desc:'核心球员当前状态、伤停/停赛对阵容的影响' },
+  { code:'B', color:'#3ecf8e', name:'球队化学', wt:8,  range:'5.0–8.0', desc:'核心组合稳定性、新老球员经验分布与默契度' },
+  { code:'A', color:'#f0c040', name:'绝对实力', wt:7,  range:'5.0–8.0', desc:'FIFA 排名差距、阵容总身价、超级球星溢价' },
+  { code:'C', color:'#4fa3e8', name:'近期状态', wt:7,  range:'4.0–8.0', desc:'近 5 场比赛成绩、进球趋势、失球稳定性' },
+];
+
+const tbody = document.getElementById('dim-tbody');
+DIMS.forEach(d => {
+  tbody.innerHTML += `
+  <tr class="dim-row">
+    <td class="dim-code" style="color:${d.color}">${d.code}</td>
+    <td><div class="dim-name">${d.name}</div><div class="dim-desc">${d.desc}</div></td>
+    <td>
+      <div class="wt-wrap">
+        <div class="wt-bar-bg"><div class="wt-bar" style="width:${d.wt*4}%;background:${d.color}"></div></div>
+        <div class="wt-num">${d.wt}%</div>
+      </div>
+    </td>
+    <td class="dim-range">${d.range}</td>
+  </tr>`;
+});
+
+// ── Probability mapping ─────────────────────────────────────────
+const PROBS = [
+  { label:'A 大热',    delta:'δ ≥ 3.5',         pa:68, pd:18, pb:14 },
+  { label:'A 明显占优', delta:'1.5 ≤ δ < 3.5',   pa:54, pd:25, pb:21 },
+  { label:'势均力敌',  delta:'-1.5 < δ < 1.5',   pa:34, pd:38, pb:28 },
+  { label:'B 明显占优', delta:'-3.5 < δ ≤ -1.5', pa:21, pd:25, pb:54 },
+  { label:'B 大热',    delta:'δ ≤ -3.5',         pa:14, pd:18, pb:68 },
+];
+const pg = document.getElementById('prob-grid');
+PROBS.forEach(p => {
+  pg.innerHTML += `
+  <div class="prob-card">
+    <div class="prob-label">${p.label}</div>
+    <div class="prob-delta">${p.delta}</div>
+    <div class="pbar-row"><span class="pbar-key">A胜</span><div class="pbar-bg"><div class="pbar-fill a" style="width:${p.pa}%"></div></div><span class="pbar-val">${p.pa}%</span></div>
+    <div class="pbar-row"><span class="pbar-key">平</span><div class="pbar-bg"><div class="pbar-fill d" style="width:${p.pd}%"></div></div><span class="pbar-val">${p.pd}%</span></div>
+    <div class="pbar-row"><span class="pbar-key">B胜</span><div class="pbar-bg"><div class="pbar-fill b" style="width:${p.pb}%"></div></div><span class="pbar-val">${p.pb}%</span></div>
+  </div>`;
+});
+</script>
+</body>
+</html>
