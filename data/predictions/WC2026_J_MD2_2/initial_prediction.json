@@ -2,11 +2,12 @@
   "match_id": "WC2026_J_MD2_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-17T01:22:48.545194",
+  "timestamp": "2026-06-17T12:26:24.232407",
+  "pipeline": "v2_match_context",
   "_internal": {
-    "说明": "内部留痕，供追溯复盘",
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -1.05,
+    "weighted_delta": -0.83,
     "p_a_win": 0.26,
     "p_draw": 0.36,
     "p_b_win": 0.38,
@@ -14,32 +15,28 @@
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 6.0,
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
         "weight": 0.25,
-        "key_factors": [
-          "阿尔及利亚防线回追速度不足，易被Al-Dardour直线冲刺型打法利用",
-          "阿尔及利亚防守定位球第二落点保护差，约旦可能通过角球制造威胁",
-          "阿尔及利亚4-3-3控制中场节奏，限制约旦控球反击机会"
-        ],
-        "reasoning": "阿尔及利亚整体实力和控场能力占优，但防线回追速度慢和定位球第二落点保护差为约旦的反击与禁区内抢点提供具体突破口。"
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 6.0,
+        "a_score": 4.5,
         "b_score": 6.5,
-        "delta": -0.5,
-        "confidence": 7.0,
+        "delta": -2.0,
+        "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "Algeria关键后卫Bensebaini疑似伤停，防守稳定性下降",
-          "Jordan首次参加世界杯，但近5场不败且体系稳定，挑战者心态减轻压力",
-          "赔率Algeria -200 vs Jordan 600，纸面实力差距明显"
+          "赔率显示阿尔及利亚是明显热门（-200 vs +550）",
+          "阿尔及利亚净胜球为-3，而约旦为0，阿尔及利亚出线压力更大但非动机差异",
+          "约旦无世界大赛经验，阿尔及利亚有非洲杯和世界杯经历"
         ],
-        "reasoning": "赔率显示Algeria实力占优，但Jordan有Al-Tamari的创造力且体系稳定，Bensebaini疑似伤停削弱Algeria防守，战意相当下Algeria稍优。"
+        "reasoning": "阿尔及利亚在纸面实力、赔率支持和声望上明显强于约旦，但两队都是0分且需争胜，动机相近；对手后防线经验不足可能被阿尔及利亚前锋如斯利马尼或本拉赫马利用。"
       },
       {
         "dimension": "G_dna",
@@ -55,17 +52,17 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 5.0,
-        "b_score": 7.0,
-        "delta": -2.0,
-        "confidence": 7.0,
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
         "weight": 0.15,
         "key_factors": [
-          "市场赔率显示Algeria胜赔-200，Jordan胜赔600，差距悬殊",
-          "Algeria无确认伤停，核心阵容完整；Jordan首次参加世界杯，大赛经验不足",
-          "Jordan依赖Mousa Al-Tamari（法甲3球4助）和Hamza Al-Dardour（沙特联9球），但对手整体实力压制明显"
+          "Algeria拥有Bentaleb、Aouar和Boudaoui等具备顶级联赛经验的中场球员，核心战力较强",
+          "Jordan阵容缺乏知名球员，整体实力有限，且无针对性限制对手核心的方案",
+          "赔率DraftKings显示Algeria胜赔-200，Jordan高达550，市场信心悬殊"
         ],
-        "reasoning": "Algeria拥有多名欧洲顶级联赛核心如Nabil Bentaleb和Houssem Aouar，且无伤停隐患，而Jordan虽依赖Mousa Al-Tamari和Hamza Al-Dardour，但整体大赛经验及阵容深度不足，赔率差距巨大。"
+        "reasoning": "Algeria凭借Bentaleb、Aouar等球员的欧洲联赛经验在纸面实力上明显优于Jordan的阵容，赔率也指向Algeria占优。"
       },
       {
         "dimension": "B_chemistry",
@@ -73,62 +70,69 @@
         "a_score": 5.0,
         "b_score": 5.0,
         "delta": 0.0,
-        "confidence": 3.0,
+        "confidence": 2.0,
         "weight": 0.08,
         "key_factors": [
-          "Jordan教练Hussein Ammouta执教超3年，体系稳定",
-          "Algeria关键后卫Bensebaini疑似伤停可能影响防线默契",
-          "两队均缺乏核心组合一起踢球时间的明确数据"
+          "两队化学反应数据均缺失",
+          "双方教练均已确认，但无执教时长或体系细节",
+          "暂无任何关于内部矛盾或主力阵容稳定性的报道"
         ],
-        "reasoning": "双方核心组合稳定性和更衣室信息均不明确，唯一可知的是Jordan教练执教超3年有微弱体系优势，但不足以拉开分差。"
+        "reasoning": "双方均无核心组合年限、战术体系磨合或内部氛围的具体信息，无法判定化学反应差异。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 5.5,
+        "a_score": 5.0,
         "b_score": 7.0,
-        "delta": -1.5,
-        "confidence": 8.5,
+        "delta": -2.0,
+        "confidence": 8.0,
         "weight": 0.07,
         "key_factors": [
-          "Jordan仅Mousa Al-Tamari效力五大联赛（法甲Montpellier），其余球员多来自亚洲联赛",
-          "Algeria至少有3名五大联赛主力：Bensebaini（多特蒙德）、Aït-Nouri（狼队）、Mandi（比利亚雷亚尔）",
-          "赔率Jordan 600 vs Algeria -200，庄家认为Algeria获胜概率远高于Jordan",
-          "Jordan首次参加世界杯，国际大赛经验为0，Algeria曾在2019年非洲杯夺冠"
+          "Algeria阵中有至少5名五大联赛主力（Bensebaini、Aït-Nouri、Mandï等），Jordan无五大联赛球员",
+          "赔率DraftKings显示Algeria为-200大热门，Jordan为+550冷门",
+          "Algeria国际大赛经验丰富，Jordan缺乏顶级对抗经历"
         ],
-        "reasoning": "Algeria凭借多名五大联赛主力（Bensebaini、Aït-Nouri、Mandi）在阵容档次上明显压制Jordan，Mousa Al-Tamari是Jordan唯一五大联赛球员且法甲非顶尖水平，赔率600 vs -200验证实力悬殊"
+        "reasoning": "Algeria拥有Bensebaini、Aït-Nouri、Mandï等多名五大联赛主力，阵容档次远高于以亚洲联赛为主的Jordan，赔率-200也确认了碾压式优势。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 5.5,
+        "a_score": 5.0,
         "b_score": 7.0,
-        "delta": -1.5,
-        "confidence": 7.5,
+        "delta": -2.0,
+        "confidence": 8.0,
         "weight": 0.07,
         "key_factors": [
-          "阿尔及利亚友谊赛中4-0完胜玻利维亚、1-0击败荷兰，展现提升的进攻效率",
-          "约旦近5场仅1胜且面对哥伦比亚、瑞士均丢2球以上，防守不稳",
-          "赔率显示阿尔及利亚胜赔为-200，市场信心远超约旦的600",
-          "阿尔及利亚有本塞拜尼等欧洲主力坐镇，阵容深度优于约旦"
+          "阿尔及利亚近4场3胜1平不败，包括击败荷兰和7-0大胜危地马拉",
+          "约旦近4场2平2负不胜，面对瑞士和哥伦比亚共丢6球",
+          "博彩赔率阿尔及利亚(-200)明显优于约旦(550)"
         ],
-        "reasoning": "阿尔及利亚近3场2胜1平且击败荷兰，而约旦连续战平弱旅且输给哥伦比亚/瑞士，状态差距大。"
+        "reasoning": "阿尔及利亚近期3胜1平保持不败，进攻犀利（近4场进12球），而约旦连续4场不胜且防守脆弱（场均丢2.5球）；赔率数据（-200 vs 550）明确显示阿尔及利亚占优。"
       }
     ],
     "calibration_warning": true,
-    "calibration_note": "⚠️ 赔率偏差 27%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=30%/P(D)=9%/P(B)=61%",
-    "judge_reasoning": "Algeria胜"
+    "calibration_note": "⚠️ 赔率偏差 31%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=21%/P(D)=10%/P(B)=69%",
+    "judge_reasoning": "Algeria胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760455)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Algeria胜",
     "confidence": "中",
     "reasons": [
-      "关键球员差距：Mahrez在沙特联赛本赛季31场贡献8球12助，状态火热，而Jordan防线经验不足，难以限制他的盘带和传球。",
-      "中场控制力：Algeria拥有Bentaleb和Feghouli等经验丰富的球员，能通过精准长传转移调动Jordan的防守阵型，就像热身赛对阵Senegal时2-0那样。",
-      "大赛压力回报：Jordan首次参加世界杯，面对Algeria的北非硬朗风格，可能因紧张出现后场失误，类似此前对阵South Korea时0-2的被动表现。"
+      "阿尔及利亚在绝对实力和近期状态上都明显占优，这得益于多位核心球员的个人能力，而约旦的防守体系在人盯人对抗中可能被频繁突破。",
+      "比赛压力天平严重倾斜，约旦首战0分且净胜球劣势，必须抢分，而阿尔及利亚刚经历一场大败反弹意愿强烈，总教练更容易激发球员专注力。",
+      "身体对抗与速度方面，阿尔及利亚的中前场球员普遍在爆发力上超过约旦的后卫线，特别是在边路1对1时，约旦的边后卫很难跟上对手的节奏。"
     ],
-    "key_risk": "市场赔率分歧较大（模型预测Algeria胜38% vs 市场61%），若Bensebaini因伤缺阵，Algeria左路防守可能被Al-Tamari的内切突破针对。"
+    "key_risk": "主要爆冷风险在于约旦可能死守反击偷得一球，同时阿尔及利亚久攻不下心态急躁，导致平局乃至小负——平局选项在模型概率和赔率上均有一定支撑。"
   },
   "actual_result": null
 }
