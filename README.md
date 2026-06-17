@@ -2,6 +2,12 @@
 
 > 用ESPN官方数据 + 10个协作AI Agent，对世界杯每场比赛进行赛前结构化预测，Git提交时间戳证明预测不可篡改
 
+## 🌐 预测结果网站
+
+**👉 [https://554022647henry-boop.github.io/wc2026-predictions/](https://554022647henry-boop.github.io/wc2026-predictions/)**
+
+实时更新的预测与赛果对比，支持中英文切换，按小组或按赛程日期查看。
+
 ---
 
 ## 一、为什么要做这个
@@ -229,6 +235,8 @@ GitHub Pages         ← 发布，Git时间戳证明赛前预测
 ---
 
 ## 十一、网站展示
+
+**网站地址：[https://554022647henry-boop.github.io/wc2026-predictions/](https://554022647henry-boop.github.io/wc2026-predictions/)**
 
 所有预测结果通过 GitHub Pages 公开展示，纯静态 HTML，零后端依赖。
 
