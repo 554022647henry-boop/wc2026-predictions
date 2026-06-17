@@ -4,9 +4,11 @@
 
 ## 🌐 预测结果网站
 
+[![Deploy to GitHub Pages](https://github.com/554022647henry-boop/wc2026-predictions/actions/workflows/deploy.yml/badge.svg)](https://github.com/554022647henry-boop/wc2026-predictions/actions/workflows/deploy.yml)
+
 **👉 [https://554022647henry-boop.github.io/wc2026-predictions/](https://554022647henry-boop.github.io/wc2026-predictions/)**
 
-实时更新的预测与赛果对比，支持中英文切换，按小组或按赛程日期查看。
+实时更新的预测与赛果对比，支持中英文切换，按小组或按赛程日期查看。每次推送 `web/` 目录变更时自动重新部署。
 
 ---
 
@@ -238,7 +240,7 @@ GitHub Pages         ← 发布，Git时间戳证明赛前预测
 
 **网站地址：[https://554022647henry-boop.github.io/wc2026-predictions/](https://554022647henry-boop.github.io/wc2026-predictions/)**
 
-所有预测结果通过 GitHub Pages 公开展示，纯静态 HTML，零后端依赖。
+所有预测结果通过 GitHub Pages 公开展示，纯静态 HTML，零后端依赖。每次推送 `web/` 目录的变更，GitHub Actions 会自动重新部署。
 
 **两种视图**：
 - **按小组**：8个小组，每组显示所有比赛的预测情况
