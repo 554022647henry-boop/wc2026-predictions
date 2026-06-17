@@ -2,11 +2,12 @@
   "match_id": "WC2026_K_MD3_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-17T04:26:55.305260",
+  "timestamp": "2026-06-17T12:47:35.304695",
+  "pipeline": "v2_match_context",
   "_internal": {
-    "说明": "内部留痕，供追溯复盘",
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": 0.49,
+    "weighted_delta": 0.23,
     "p_a_win": 0.34,
     "p_draw": 0.38,
     "p_b_win": 0.28,
@@ -14,33 +15,33 @@
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 6.0,
-        "b_score": 5.0,
-        "delta": 1.0,
-        "confidence": 6.0,
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.5,
         "weight": 0.25,
         "key_factors": [
-          "DR Congo前锋巴坎布的个人能力是Uzbekistan防守弱点的克星（身后球）",
-          "Uzbekistan防守弱项（被身后球打穿）直接对应DR Congo潜在进攻优势（利用巴坎布的速度）",
-          "DR Congo的防守弱点（横向转移和远射）需要Uzbekistan有精准的传球和远射手，但信息未明确其有此能力",
-          "双方定位球防守都有问题，但DR Congo拥有更强的身体对抗能力，可能在争顶中占优"
+          "DR Congo的定位球进攻可以利用Uzbekistan盯人不紧和对抗不足的弱点，这是1项具体有利因素",
+          "Uzbekistan的快速横向转移和身后球打法能有效针对DR Congo边后卫压上后的空当以及防线松散问题，是1项具体有利因素",
+          "DR Congo在2023年非洲杯暴露的禁区前沿保护不足问题可能被Uzbekistan的中场远射利用，但信息中未强调后者远射能力",
+          "两队防守弱点均涉及快速转移，但Uzbekistan的中后卫转身速度是更明确的漏洞，DR Congo的边路速度可能更容易利用这一点"
         ],
-        "reasoning": "DR Congo拥有核心前锋巴坎布，其特点能有效利用乌兹别克斯坦中卫转身慢、协同差的防守短板，同时自身定位球防守问题虽存但乌兹别克斯坦进攻端缺乏明确强点来惩罚。"
+        "reasoning": "DR Congo（A队）在利用身体对抗和定位球进攻方面对阵Uzbekistan（B队）的定位球防守短板有明显优势，而Uzbekistan的快速转移能力能威胁DR Congo的防线空当，但DR Congo在中路保护和远射防守上的弱点不如Uzbekistan的后防速度短板那么致命。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 5.5,
-        "b_score": 5.5,
+        "a_score": 5.0,
+        "b_score": 5.0,
         "delta": 0.0,
-        "confidence": 5.0,
+        "confidence": 3.0,
         "weight": 0.2,
         "key_factors": [
-          "双方均为小组赛首轮，必须赢的动机相同（无差异）",
-          "DR Congo核心前锋Cédric Bakambu状态不明，近期球队输给科特迪瓦、塞内加尔等强队",
-          "Uzbekistan近期战胜阿联酋和约旦，但输给伊朗和韩国，缺乏硬仗取胜记录"
+          "小组赛MD1，两队均为0分，求胜欲望相同",
+          "比赛在中立场地Estadio BBVA进行，无主场优势",
+          "缺乏两队历史交锋或近期状态的具体信息"
         ],
-        "reasoning": "两队首轮无额外压力，实力接近，DR Congo依赖Bakambu但状态不稳，Uzbekistan整体性稍好但缺乏致命武器，平衡局面。"
+        "reasoning": "双方小组赛首战，动机、场地、休息日完全平等，缺乏具体球员或战术信息支撑任何一方优势。"
       },
       {
         "dimension": "G_dna",
@@ -62,11 +63,11 @@
         "confidence": 3.0,
         "weight": 0.15,
         "key_factors": [
-          "DR Congo核心Cédric Bakambu状态不明，无近期俱乐部数据",
-          "Uzbekistan核心Jaloliddin Masharipov状态未知，无针对性限制信息",
-          "两队近期战绩均无持续连胜或连败，差异微弱"
+          "两队关键球员Kakuta、Tshibola、Bongonda（DR Congo）和Iskanderov、Masharipov、Xamrobekov（Uzbekistan）均无近期状态或伤停报道",
+          "无赔率、历史交锋或针对性限制方案信息",
+          "小组赛首轮，两队积分均为0，无此前战绩参考"
         ],
-        "reasoning": "所有关键球员状态不明，近期战绩相近，无伤停或针对性战术信息，无法判断任何一方优势"
+        "reasoning": "缺乏关键球员状态、伤停及针对性战术信息，两队均无明确优势因素，故评分完全对等。"
       },
       {
         "dimension": "B_chemistry",
@@ -77,11 +78,11 @@
         "confidence": 3.0,
         "weight": 0.08,
         "key_factors": [
-          "无具体数据支持核心组合的年限或俱乐部关联度",
-          "无内部矛盾或更衣室氛围的具体报道",
-          "缺乏近期比赛阵容和战术轮换的详细资料"
+          "两队核心组合年限数据均为null，无法比较稳定性",
+          "乌兹别克斯坦与刚果民主共和国的教练均已确认，但无执教时长细节",
+          "无任何内部矛盾或集训进程的公开报道"
         ],
-        "reasoning": "缺乏具体球员合作年限、更衣室动态或战术体系成熟度的信息，仅知两队教练已确认，无法评估核心组合稳定性及体系成熟度的差异。"
+        "reasoning": "双方均无核心阵容合作年限、体系磨合时间或更衣室矛盾的公开信息，无法区分化学反应优势。"
       },
       {
         "dimension": "A_strength",
@@ -89,45 +90,54 @@
         "a_score": 6.5,
         "b_score": 5.5,
         "delta": 1.0,
-        "confidence": 6.0,
+        "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "DR Congo有4名五大联赛主力（Mbemba/马赛、Wan-Bissaka/英超、Masuaku/贝西克塔斯、Tuanzebe/英超经验）",
-          "乌兹别克斯坦大名单无五大联赛球员，主要来自本国联赛和亚洲联赛",
-          "DR Congo近期对手含科特迪瓦、塞内加尔、喀麦隆等强队，乌兹别克斯坦对手强度相对较低"
+          "刚果名单有Aaron Wan-Bissaka（英超曼联/西汉姆联）和Chancel Mbemba（法甲马赛）等五大联赛核心球员",
+          "乌兹别克斯坦名单主要来自本土联赛，缺乏五大联赛背景",
+          "刚果球员平均俱乐部档次显著高于乌兹别克斯坦"
         ],
-        "reasoning": "DR Congo拥有Mbemba、Wan-Bissaka、Masuaku、Tuanzebe等五大联赛主力，整体阵容档次明显优于全队来自亚洲/国内联赛的乌兹别克斯坦，构成2项具体有利因素。"
+        "reasoning": "刚果民主共和国多名五大联赛主力（如Wan-Bissaka、Mbemba、Masuaku）占据明显阵容优势，而乌兹别克斯坦名单中无五大联赛球员。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.0,
-        "b_score": 5.5,
-        "delta": 0.5,
-        "confidence": 6.0,
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "DR Congo近3场进球数波动（1-0-2），进攻节奏不稳定",
-          "Uzbekistan近3场仅1球，进攻持续低迷",
-          "双方均无连胜或连败，状态信号平缓"
+          "DR Congo近3场友谊赛1胜1平1负，唯一胜仗对Bermuda（世界排名低下）",
+          "Uzbekistan近5场友谊赛1胜2平2负，但曾3-1胜Gabon且对荷兰仅1-2小负",
+          "DR Congo上一场对阵Chile失2球，防守稳定性不足"
         ],
-        "reasoning": "DR Congo近期进攻有波动但略优，Uzbekistan近3场仅进1球且连续2场被零封，但双方友谊赛含金量相近，整体无明显差距。"
+        "reasoning": "Uzbekistan对阵强敌（荷兰、加拿大）时有进球能力且进攻威胁略强于DR Congo，但双方均为友谊赛状态，优势有限。"
       }
     ],
     "calibration_warning": false,
     "calibration_note": "",
-    "judge_reasoning": "平局"
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "平局",
     "confidence": "低",
     "reasons": [
-      "两队都缺大赛经验，刚果的巴坎布和乌兹别克斯坦的阿卜杜拉伊莫夫各自是进攻核心，但状态数据缺失，可能互相限制。",
-      "近期战绩起伏，刚果胜赞比亚但输科特迪瓦，乌兹别克赢阿联酋但负伊朗，双方缺乏致命一击的稳定性。",
-      "战术对位和绝对实力上刚果稍占优（+0.5），但情境压力和球队化学评分平衡，预计是谨慎拉锯战。"
+      "刚果民主共和国的防守核心Chancel Mbemba和边路快马Arthur Masuaku经验丰富，能限制乌兹别克斯坦的快速反击，但进攻端缺少关键支点。",
+      "乌兹别克斯坦在近期状态评分稍高（6.0 vs 5.5），但整体实力和战术对位都处于下风，很难打破刚果的密集防线。",
+      "两队都处在小组赛首战，积分压力小，比赛节奏可能偏慢，双方在中场展开绞杀，最终以低比分闷平收场。"
     ],
-    "key_risk": "乌兹别克斯坦通过阿卜杜拉伊莫夫的中场串联意外爆冷，利用刚果防守紧凑性不足打反击。"
+    "key_risk": "乌兹别克斯坦若利用定位球或远射先破门，刚果民主共和国的心理压力会骤增，可能因急躁而崩盘。"
   },
   "actual_result": null
 }
