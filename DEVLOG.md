@@ -355,18 +355,201 @@ order = ['T-30min','T-2h','T-12h','T-24h','initial']
 
 ---
 
-## 当前系统状态（2026-06-15 更新至v0.5）
+### v0.6 — 2026-06-17：真实数据知识库重建（ESPN API）
 
-### 运行模式
-- **只使用初始预测**，基于知识库+7维度Indicator Agent系统
-- `auto_update.py` 手动触发：抓结果 → 更新HTML → 推GitHub
-- `batch_repredict.py` 用于批量重新预测
+**背景：** 发现 v0.5 知识库（build_knowledge_base.py）完全依赖 DeepSeek AI 生成，存在严重问题：
+- 大名单含未入选球员（法国队有格列兹曼/卡马文加，实际均未入选）
+- 近期战绩是 AI 编造（"法国5-2胜瑞士"根本没发生）
+- 数据无来源标注，无法区分真实vs幻觉
 
-### 已完成预测
-- 小组赛72场：12场已完赛有结果，60场已用v0.5系统重新预测（2026-06-15 22:08 git存档）
+**根本原因：** 2026年世界杯大名单在6月初才正式公布，DeepSeek 训练数据截至2026年初，只能根据历史猜测名单。
 
-### 准确率（截至2026-06-15，共12场有预测+已完赛）
-**v0.5新系统：8/12（67%）/ 可比较10场：6/10（60%）**
+**可用数据来源（实测确认）：**
+
+| 来源 | 数据内容 | 可信度 |
+|------|---------|--------|
+| `ESPN Roster API` | 官方WC注册大名单（26人，含姓名/位置/年龄）| ✅ 实时官方 |
+| `ESPN fifa.friendly API` | 2026年热身赛真实赛果 | ✅ 实时 |
+| `ESPN fifa.worldq.* API` | 各洲预选赛战绩 | ✅ 实时 |
+| `ESPN Scoreboard API` | WC比赛结果和赔率 | ✅ 实时官方 |
+| `DEEPSEEK_HISTORICAL` | WC历史/战术风格（标注不可信）| ⚠️ AI历史 |
+| Sofascore | 球员俱乐部信息 | ⚠️ 需浏览器 |
+
+**新建知识库 v2（data/team_knowledge_v2.json）：**
+- 48/48支队均有 ESPN 官方大名单（22-26人）
+- 47/48支队有真实近期战绩（3-20场，含2026年6月比赛）
+- 每个字段都有 `_source` + `_verified` 标注
+- 找不到的数据填 `null`，绝不填假数据
+
+**新增文件：**
+- `build_kb_v2.py` — Agent1采集（ESPN真实数据）+ Agent2审核（验证来源）
+- `data_sources.py` — 定义所有可靠数据来源及其规格
+- `data/team_knowledge_v2.json` — 48队真实知识库
+
+---
+
+### v0.7 — 2026-06-17：预测流水线重构（新架构）
+
+**背景：** v0.5/v0.6流水线存在问题：
+- 每场要调15次DeepSeek API（collector + reviewer补充轮 + 7个Agent）
+- collector仍让DeepSeek生成球员名和战绩 → 格列兹曼/卡马文加幻觉
+- 补充轮搜到的是2022年数据或女足分析
+
+**新架构（match_context.py）：**
+
+```
+KB v2（静态真实数据）+ ESPN实时
+  大名单（ESPN✅）+ 近期战绩（ESPN✅）
+  小组积分榜（从已完赛结果计算）
+  赔率（ESPN实时✅）
+  首发（开球前1小时，ESPN✅）
+     ↓
+直接给7个Indicator Agents（无DeepSeek补充）
+     ↓
+数学聚合 → 赔率校验 → 裁判Agent
+```
+
+**核心优化：**
+- 每场 API 调用：15次 → **9次**（快40%）
+- 大名单/战绩来自ESPN官方，不再过DeepSeek
+- 积分榜自动从已完赛结果计算（体现动机/晋级形势）
+
+**新函数：**
+- `agents/match_context.py` — 比赛上下文构建器
+- `agents/predictor.py::run_prediction_v2()` — 新版预测入口
+- `batch_repredict.py` 改为调用 `run_prediction_v2`
+
+**预测分布变化（53场对比）：**
+
+| 指标 | 旧v0.5 | 新v0.7 |
+|------|--------|--------|
+| 平局预测率 | 15% | **28.3%** ✅ |
+| 高置信预测 | 27% | 11%（更谨慎）|
+| 每场API调用 | ~15次 | ~9次 |
+
+---
+
+### v0.8 — 2026-06-17：幻觉球员修复 + 评分倒置修复
+
+**问题1：幻觉球员（最严重）**
+
+格列兹曼/卡马文加出现在法国队预测理由里，原因：
+- `B_chemistry`（球队化学）和 `E_context`（情境压力）Agent 没加禁止幻觉约束
+- 只给了 `C_form`、`D_keyplayer`、`F_tactical` 三个Agent加了约束，漏了4个
+
+**修复：** 给全部7个Indicator Agent都加 `ANTI_SQUAD_HALLUCINATION` 约束：
+```python
+禁止在评分理由中提及：格列兹曼、Griezmann、卡马文加、Camavinga、吉鲁、Giroud、洛里斯、Lloris
+只能提及上下文「ESPN官方知识库✅」大名单中出现的球员
+```
+
+**问题2：评分方向倒置**
+
+Jordan vs Argentina 预测结果：Jordan胜(中)（完全错误）
+- A_strength维度：Jordan=7.5，Argentina=5.0
+- 但理由明确写"阿根廷有梅西、劳塔罗等超级球员"
+- 评分与理由相互矛盾
+
+**根本原因：** Agent收到的 user prompt 没有明确标注哪队是 team_a（左边）、哪队是 team_b（右边），输出时搞反了。
+
+**修复：** 新增 `_make_user()` 函数，每个Agent的 prompt 开头明确写：
+```
+比赛：Jordan(=team_a，左边队) vs Argentina(=team_b，右边队)
+⚠️ 如果Argentina更强，则team_b_score更高；如果Jordan更强，则team_a_score更高
+```
+
+**问题3：`_SCHEMA_NOTE` 描述不清**
+
+原文只说"team_a_score"，没有说哪边是哪边，导致Agent按错方向打分。已修复为明确说明"左边那队的得分"。
+
+**改动文件：**
+- `agents/indicator_agents.py` — 加 `_make_user()` + 全7个Agent加幻觉禁令
+
+---
+
+### v0.9 — 2026-06-17：Fixtures日期Bug修复
+
+**问题：** 网站赛程显示时间错误
+
+1. **缺 kickoff_utc**：6场比赛没有具体开球时间，显示为空白
+   - 原因：ESPN API 有这些比赛的数据但 fixtures.json 没有录入
+   - 修复：用 ESPN scoreboard 批量查所有比赛 UTC 时间，全部补全
+
+2. **北京时间跨天错误**：
+   - `date` 字段存的是 UTC 日期，但显示用的是北京时间（UTC+8）
+   - 深夜比赛（如 17:00 UTC = 北京时间次日 01:00）会显示错误日期
+   - 修复：`html_updater.py::load_fixtures()` 自动从 `kickoff_utc` 计算正确的北京日期 `date_cst`
+
+**改动文件：**
+- `data/fixtures.json` — 补全所有缺失的 kickoff_utc
+- `agents/html_updater.py` — 加 UTC→CST 日期转换，修复跨天显示
+
+---
+
+### v1.0 — 2026-06-17：预测表格升级（中英文双版本）
+
+**新增 `generate_zh_tables.py`：** 生成4张预测表格图片
+
+| 文件 | 内容 |
+|------|------|
+| `prediction_group_zh.png` | 按小组（中文队名）|
+| `prediction_schedule_zh.png` | 按赛程日期（中文）|
+| `prediction_group_en.png` | 按小组（英文队名）|
+| `prediction_schedule_en.png` | 按赛程日期（英文）|
+
+**格式设计：**
+- 已完赛：绿色实际比分 + 预测箭头 + ✅/❌ 对错标记
+- 未完赛：预测箭头方向（◀▶）+ 置信度徽标（高/中/低）
+- 深色主题，北京时间显示
+
+---
+
+## 当前系统状态（2026-06-17 更新至v1.0）
+
+### 架构总览
+
+```
+ESPN API（实时）
+  大名单26人 / 近期战绩 / 赔率 / 积分
+       ↓
+match_context.py（上下文构建）
+       ↓
+7个Indicator Agents（全部加幻觉禁令）
+  _make_user()明确标注team_a/team_b
+       ↓
+数学聚合 + 赔率校验 + 裁判Agent
+       ↓
+run_prediction_v2() 保存预测
+```
+
+### 数据质量
+- 大名单：ESPN官方 ✅（无幻觉球员）
+- 近期战绩：ESPN真实赛果 ✅（无编造比赛）
+- 战术/历史：DeepSeek AI ⚠️（标注不可信，仅供参考）
+- 球员俱乐部：暂缺 ❌（ESPN不提供，待补充）
+
+### 已知问题
+- 平局预测率 28.3%，仍低于历史均值 ~24%（方向对了，未来继续验证）
+- 球员俱乐部信息缺失（影响A_strength维度，权重7%）
+
+### 准确率（截至2026-06-17，共20场已完赛）
+**v0.7新系统（ESPN真实数据）：11/20 = 55%**
+
+| 今日（MD1第3批）| 实际 | 预测 |
+|----------------|------|------|
+| France 3-1 Senegal | A_WIN | France胜(中) ✅ |
+| Iraq 1-4 Norway | B_WIN | Norway胜(中) ✅ |
+| Argentina 3-0 Algeria | A_WIN | Argentina胜(中) ✅ |
+| Austria 3-1 Jordan | A_WIN | Austria胜(高) ✅ |
+
+| 昨日（MD1第2批）| 实际 | 预测 |
+|----------------|------|------|
+| Spain 0-0 Cape Verde | 平局 | Spain胜(中) ❌ |
+| Belgium 1-1 Egypt | 平局 | Belgium胜(中) ❌ |
+| Saudi Arabia 1-1 Uruguay | 平局 | Uruguay胜(中) ❌ |
+| Iran 2-2 New Zealand | 平局 | Iran胜(中) ❌ |
+
+**主要失误规律：** 平局仍预测不准（4连平全错），强队对弱队心理上倾向预测强队胜。
 
 ---
 
@@ -379,12 +562,30 @@ python auto_update.py
 ```
 效果：抓ESPN最新结果 → 更新HTML → 推GitHub Pages
 
-### 重新出一版初始预测
+### 重新出一版初始预测（v0.7新流水线）
 ```bash
-# 修改预测逻辑后，批量重跑所有未完赛比赛
+# 用新系统（KB v2 + ESPN实时）批量重跑所有未完赛比赛
 python batch_repredict.py
-# 运行时间：约1.5小时（64场 × ~85秒）
+# 运行时间：约45分钟（53场 × ~50秒，无DeepSeek补充轮）
 # 完成后自动git commit + push + 更新网站
+```
+
+### 生成预测表格图片（中英文双版本）
+```bash
+python generate_zh_tables.py
+# 生成4张图片到 web/ 目录：
+# - prediction_group_zh.png   (按小组，中文)
+# - prediction_schedule_zh.png (按赛程，中文)
+# - prediction_group_en.png   (按小组，英文)
+# - prediction_schedule_en.png (按赛程，英文)
+```
+
+### 更新知识库（当球队名单/教练变化时）
+```bash
+python build_kb_v2.py
+# 从 ESPN API 重新拉取48队官方大名单和近期战绩
+# 每队独立保存，支持断点续跑
+# 输出到 data/team_knowledge_v2.json
 ```
 
 ### 生成预测图表（中英文双版本）
@@ -409,4 +610,46 @@ with sync_playwright() as p:
 
 ---
 
-*最后更新：2026-06-15 22:30（v0.5 final 上线，60场全量重新预测完成）*
+---
+
+### v0.6 — 2026-06-17：真实数据知识库重建
+
+**背景：** 发现 v0.5 知识库（build_knowledge_base.py）完全依赖 DeepSeek AI 生成，导致：
+- 大名单含未入选球员（如法国队的格列兹曼）
+- 近期战绩是 AI 编造（"法国 5-2 瑞士"根本没发生过）
+- 数据无来源标注，无法区分真实vs幻觉
+
+**修复方案（数据来源层重建）：**
+
+新增 `data_sources.py`：定义所有可靠数据来源，每个来源有type/provides/reliability标注。
+
+新增 `build_kb_v2.py`：Agent1采集 + Agent2审核 流水线，每个字段必须标注 `_source` 和 `_verified`。
+
+**可用数据来源（实测）：**
+- `ESPN_ROSTER`：官方 WC 注册大名单（26人，姓名/位置/年龄） ✅ 100%可信
+- `ESPN_SCOREBOARD`：WC 比赛结果和赔率 ✅
+- `ESPN_FIFA_FRIENDLY`：近期热身赛真实战绩 ✅
+- `ESPN_WCQ`：各洲预选赛战绩 ✅
+- `DEEPSEEK_HISTORICAL`：AI历史知识（WC历史/战术），必须标注 `_verified:false` ⚠️
+- `SOFASCORE_BROWSER`：球员俱乐部（需浏览器）⚠️
+
+**知识库质量（v2）：**
+- 48/48 支队有 ESPN 官方大名单（22-26人）
+- 47/48 支队有真实近期战绩（3-20场）
+- 所有字段带 `_source` + `_verified` 标注
+- 找不到的数据填 `null`，不填假数据
+
+**代码改动：**
+- `predictor.py`：优先读 v2，`_normalize_kb_v2()` 转换格式
+- `indicator_agents.py`：更新 C_form/A_strength 兼容 v2 战绩格式，标注 ESPN 来源
+
+**预测变化（56场对比）：**
+- 方向：基本不变（A胜52%→50%，平局16%→16%）
+- 置信度：高置信27%→18%（更谨慎，更诚实）
+- 9场置信度升高（真实数据更丰富）
+
+**已知局限：**
+- 球员俱乐部信息仍缺失（ESPN不提供，Sofascore需浏览器）
+- 平局预测率仍16%（低于历史均值25%），是系统性问题
+
+*最后更新：2026-06-17 16:30（v1.0：ESPN真实数据知识库+新预测流水线+幻觉修复+表格生成，累计20场已完赛，准确率55%）*

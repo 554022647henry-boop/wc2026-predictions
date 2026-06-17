@@ -118,6 +118,12 @@ JUDGE_SYSTEM = """你是世界杯比赛预测的最终裁判。
 2. 写3条面向普通球迷的预测理由（具体、有画面感，提到球员名或战术细节）
 3. 指出最主要的爆冷风险
 
+【关于球员名字的严格要求】：
+- 只能提及「来源4a ESPN官方知识库」中出现的球员
+- 禁止提及：格列兹曼(Griezmann)、卡马文加(Camavinga)、吉鲁(Giroud)、洛里斯(Lloris) 等未入选球员
+- 禁止编造比赛结果（如"4-1大胜阿根廷"这类可能不真实的结果）
+- 如果不确定球员是否入选，只写"核心球员"而不写具体名字
+
 只输出 JSON，格式：
 {"prediction": "A队名胜/平局/B队名胜", "confidence": "高/中/低",
  "reasons": ["...", "...", "..."], "key_risk": "..."}
@@ -471,6 +477,130 @@ def run_prediction(match_info: dict, reviewed: dict,
         print(f"  理由{i}: {r}")
 
     # Git 存档（不可篡改的时间戳证明）
+    _git_archive(save_path, team_a, team_b, round_label,
+                 prediction['output']['prediction'])
+
+    return prediction
+
+
+def run_prediction_v2(match_info: dict, round_key: str = "initial",
+                      round_label: str = "初始预测",
+                      n_agents: int = None) -> dict:
+    """
+    新版预测流水线（v2）：
+      KB v2（静态真实数据）+ ESPN实时数据
+        → 直接给7个Indicator Agents
+        → aggregate → 赔率校验 → 裁判
+
+    与旧版的区别：
+      - 不再运行collector/reviewer（省去10+次DeepSeek API调用）
+      - 大名单/战绩直接从KB v2读（ESPN官方数据）
+      - 实时数据（赔率/积分/首发）直接从ESPN API读
+      - 信息质量更高，速度更快（约3-4次API调用 vs 15次）
+    """
+    from agents.match_context import build_match_context, context_to_text
+
+    if n_agents is None:
+        stage_key = match_info.get("stage", "group_stage")
+        is_ko = stage_key not in ("group_stage", "小组赛")
+        n_agents = N_FOR_KNOCKOUT if is_ko else N_FOR_GROUP_STAGE
+
+    match_id = match_info["match_id"]
+    team_a   = match_info["team_a"]
+    team_b   = match_info["team_b"]
+    stage    = match_info.get("stage", "group_stage")
+    is_knockout = stage not in ("group_stage", "小组赛")
+
+    print(f"\n[预测引擎v2] {team_a} vs {team_b} | {round_label} | N={n_agents}")
+    print("=" * 60)
+
+    # 1. 构建比赛上下文（KB v2 + ESPN实时）
+    ctx_dict = build_match_context(match_info)
+    context  = context_to_text(ctx_dict)
+
+    # 2. 加载KB数据供各Agent使用（从match_context里提取格式化好的kb_a/kb_b）
+    kb_a, kb_b = _load_kb(team_a, team_b)
+
+    # 3. 把积分/赔率等实时数据补充到kb的context_factors里
+    st = ctx_dict.get("standings", {})
+    if kb_a:
+        kb_a.setdefault("context_factors", {})
+        kb_a["context_factors"]["stakes"] = st.get("stakes_a", "")
+        kb_a["context_factors"]["rest_days"] = ctx_dict.get("rest_days_a", {}).get("rest_days")
+    if kb_b:
+        kb_b.setdefault("context_factors", {})
+        kb_b["context_factors"]["stakes"] = st.get("stakes_b", "")
+        kb_b["context_factors"]["rest_days"] = ctx_dict.get("rest_days_b", {}).get("rest_days")
+
+    # 4. 运行7个Indicator Agents
+    print(f"  [运行{n_agents}个Indicator Agents]")
+    scores = run_n_agents(n_agents, team_a, team_b, context, stage,
+                          kb_a=kb_a, kb_b=kb_b)
+
+    # 5. 赔率校验器
+    print("  [赔率校验器]")
+    calibrator = run_odds_calibrator(team_a, team_b, context)
+
+    # 6. 数学聚合
+    quant_result = aggregate_scores(scores, calibrator, is_knockout)
+    quant_result["n_agents"] = n_agents
+
+    # 7. 裁判
+    print("  [裁判] 生成预测结论...")
+    judge = run_judge(team_a, team_b, stage, quant_result, context)
+
+    # 8. 组装并保存
+    prediction = {
+        "match_id":    match_id,
+        "round":       round_key,
+        "round_label": round_label,
+        "timestamp":   datetime.now().isoformat(),
+        "pipeline":    "v2_match_context",
+
+        "_internal": {
+            "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+            "n_agents": n_agents,
+            "weighted_delta": quant_result["weighted_delta"],
+            "p_a_win":  quant_result["p_a_win"],
+            "p_draw":   quant_result["p_draw"],
+            "p_b_win":  quant_result["p_b_win"],
+            "dimension_breakdown": quant_result["dimension_breakdown"],
+            "calibration_warning": quant_result.get("calibration_warning", False),
+            "calibration_note":    quant_result.get("calibration_note", ""),
+            "judge_reasoning":     judge.get("prediction", ""),
+            "data_sources": {
+                "squad":      "ESPN_ROSTER✅",
+                "form":       "ESPN_API✅",
+                "odds":       ctx_dict.get("odds_source", "未获取"),
+                "standings":  ctx_dict.get("standings", {}).get("_source", "无"),
+                "lineup":     ctx_dict.get("lineup_source", "未获取"),
+                "tactics":    "DEEPSEEK_HISTORICAL⚠️",
+                "wc_history": "DEEPSEEK_HISTORICAL⚠️",
+            },
+        },
+
+        "output": {
+            "说明": "对外展示到HTML",
+            "prediction": judge.get("prediction", ""),
+            "confidence": judge.get("confidence", "中"),
+            "reasons":    judge.get("reasons", [])[:3],
+            "key_risk":   judge.get("key_risk", ""),
+        },
+
+        "actual_result": None,
+    }
+
+    save_dir  = Path(config.PREDICTIONS_DIR) / match_id
+    save_dir.mkdir(parents=True, exist_ok=True)
+    save_path = save_dir / f"{round_key}_prediction.json"
+    save_path.write_text(
+        json.dumps(prediction, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    print(f"\n[预测引擎v2] 完成: {prediction['output']['prediction']} ({prediction['output']['confidence']})")
+    for i, r in enumerate(prediction["output"]["reasons"], 1):
+        print(f"  理由{i}: {r}")
+
     _git_archive(save_path, team_a, team_b, round_label,
                  prediction['output']['prediction'])
 

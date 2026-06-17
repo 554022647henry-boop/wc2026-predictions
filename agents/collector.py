@@ -317,33 +317,72 @@ def collect_prematch_info(match_info: dict, round_label: str,
     print(f"  [CBS Sports] 获取WC赛事报道...")
     cbs = cbssports_fetch(team_a, team_b)
 
-    # ── 用 DeepSeek 补充历史知识 ────────────────────────────────
-    print(f"  [DeepSeek] 补充历史知识（近期战绩/战术/DNA）...")
-    knowledge_prompt = f"""为以下世界杯比赛提供赛前历史背景信息。
+    # ── 从 v2 知识库注入真实数据 ────────────────────────────────
+    kb_v2_text_a = ""
+    kb_v2_text_b = ""
+    try:
+        kb_v2_file = Path(config.BASE_DIR) / "data" / "team_knowledge_v2.json"
+        if kb_v2_file.exists():
+            kb_v2 = json.loads(kb_v2_file.read_text(encoding="utf-8"))
+            for team, out_var in [(team_a, "a"), (team_b, "b")]:
+                t = kb_v2.get(team, {})
+                sq = t.get("squad", {}).get("data", [])
+                form = t.get("recent_form", {}).get("data", [])
+                hist = t.get("historical", {})
+                lines = []
+                if sq:
+                    lines.append(f"【{team} 官方注册大名单（ESPN✅ 真实可信）】")
+                    pos_groups = {}
+                    for p in sq:
+                        pos = p.get("pos", "?")
+                        pos_groups.setdefault(pos, []).append(p["name"])
+                    for pos, names in pos_groups.items():
+                        lines.append(f"  {pos}: {', '.join(names)}")
+                if form:
+                    lines.append(f"【{team} 近期战绩（ESPN✅ 真实比赛结果）】")
+                    for m in form[:6]:
+                        h, a = m.get("home","?"), m.get("away","?")
+                        hs, as_ = m.get("home_score","?"), m.get("away_score","?")
+                        lines.append(f"  {m.get('date','?')} {h} {hs}-{as_} {a} [{m.get('type','?')}]")
+                if hist.get("formation"):
+                    lines.append(f"【{team} 战术（AI历史⚠️ 仅供参考）】")
+                    lines.append(f"  阵型: {hist.get('formation','?')} | 教练: {hist.get('coach','?')}")
+                    if hist.get("attack_style"):
+                        lines.append(f"  进攻: {hist['attack_style']}")
+                    if hist.get("defensive_weakness"):
+                        lines.append(f"  防守弱点: {hist['defensive_weakness']}")
+                if out_var == "a":
+                    kb_v2_text_a = "\n".join(lines)
+                else:
+                    kb_v2_text_b = "\n".join(lines)
+    except Exception as e:
+        print(f"  [KB v2] 加载失败: {e}")
+
+    # ── 用 DeepSeek 补充【仅限历史/DNA，禁止生成球员名或近期战绩】────
+    print(f"  [DeepSeek] 补充历史DNA（WC历史/交锋记录）...")
+    knowledge_prompt = f"""为以下世界杯比赛提供历史背景信息。
 
 比赛：{team_a} vs {team_b}
 阶段：{stage}
-日期：{match_date}
-场地：{venue}
 
-【重要】只提供历史/背景信息，不要提及这场比赛的实际结果。
+【严格禁止】：
+- 禁止生成球员名字列表（大名单已从ESPN官方获取，你的名单可能过时）
+- 禁止生成近期比赛结果（近期战绩已从ESPN真实数据获取，你的结果可能是错的）
+- 禁止提及格列兹曼、卡马文加、吉鲁、洛里斯等已退役/未入选球员
 
-请提供：
-1. {team_a} 近期5场竞赛场结果（最近的排前面，含对手、赛事类型、比分）
-2. {team_b} 近期5场竞赛场结果
-3. {team_a} 战术风格：阵型、进攻方式、防守策略
-4. {team_b} 战术风格
-5. 两队历史交锋记录（近10年，最多3场）
-6. {team_a} 世界杯历史表现（近3届）
-7. {team_b} 世界杯历史表现（近3届）
-8. 赛前主流预期（谁被看好，为什么）
+【只需提供以下历史信息】：
+1. 两队历史交锋记录（近10年，最多3场，只写你有把握的）
+2. {team_a} 世界杯历史表现（2014/2018/2022三届结果）
+3. {team_b} 世界杯历史表现（2014/2018/2022三届结果）
+4. 哪支队在小组赛首战表现更稳定（历史规律）
+5. 大赛DNA：哪支队在逆境中表现更好
 
-格式：直接给信息，不要废话，不要说"我无法确认"之类的话。"""
+格式：简洁直接，不要废话。如果某项你不确定，直接写"不确定"，不要猜测或编造。"""
 
     try:
         resp = client.messages.create(
             model=config.MODEL,
-            max_tokens=1500,
+            max_tokens=800,
             messages=[{"role": "user", "content": knowledge_prompt}]
         )
         historical_knowledge = resp.content[0].text
@@ -411,8 +450,20 @@ def collect_prematch_info(match_info: dict, round_label: str,
     else:
         sections.append("CBS报道: 暂无直接相关赛前文章")
 
-    # DeepSeek历史知识
-    sections.append("\n【来源4: AI历史知识库 - 背景信息】")
+    # ── 来源4a: KB v2 官方真实数据（ESPN，最可信）────────────────
+    sections.append("\n【来源4a: ESPN官方知识库 - 大名单+近期战绩（真实数据✅）】")
+    sections.append("⚠️ 以下大名单和战绩来自ESPN官方API，是本届真实注册球员和真实比赛结果，请以此为准，忽略其他来源中的球员名字或战绩。")
+    if kb_v2_text_a:
+        sections.append(kb_v2_text_a)
+    else:
+        sections.append(f"{team_a}: KB v2数据未找到")
+    if kb_v2_text_b:
+        sections.append(kb_v2_text_b)
+    else:
+        sections.append(f"{team_b}: KB v2数据未找到")
+
+    # ── 来源4b: DeepSeek历史DNA（仅WC历史，不含球员名/近期战绩）────
+    sections.append("\n【来源4b: AI历史DNA（仅WC历史和交锋记录，⚠️禁止用于球员名或近期战绩）】")
     sections.append(historical_knowledge)
 
     return "\n".join(sections)

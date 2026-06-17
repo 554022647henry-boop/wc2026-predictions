@@ -1,0 +1,30 @@
+{
+  "_note": "2018俄罗斯世界杯 — 代表性比赛列表，不含比赛结果，用于回测",
+  "year": 2018,
+  "tournament": "FIFA World Cup Russia 2018",
+  "matches": [
+    {"id": "WC18_GS_D1", "team_a": "Germany", "team_b": "Mexico", "stage": "group_stage", "group": "F", "date": "2018-06-17", "venue": "Luzhniki Stadium, Moscow"},
+    {"id": "WC18_GS_D2", "team_a": "Argentina", "team_b": "Croatia", "stage": "group_stage", "group": "D", "date": "2018-06-21", "venue": "Nizhny Novgorod Stadium"},
+    {"id": "WC18_GS_D3", "team_a": "Japan", "team_b": "Colombia", "stage": "group_stage", "group": "H", "date": "2018-06-19", "venue": "Mordovia Arena, Saransk"},
+    {"id": "WC18_GS_D4", "team_a": "South Korea", "team_b": "Germany", "stage": "group_stage", "group": "F", "date": "2018-06-27", "venue": "Kazan Arena"},
+    {"id": "WC18_GS_D5", "team_a": "Brazil", "team_b": "Switzerland", "stage": "group_stage", "group": "E", "date": "2018-06-17", "venue": "Rostov Arena"},
+    {"id": "WC18_GS_D6", "team_a": "France", "team_b": "Australia", "stage": "group_stage", "group": "C", "date": "2018-06-16", "venue": "Kazan Arena"},
+    {"id": "WC18_GS_D7", "team_a": "Spain", "team_b": "Portugal", "stage": "group_stage", "group": "B", "date": "2018-06-15", "venue": "Fisht Stadium, Sochi"},
+    {"id": "WC18_GS_D8", "team_a": "England", "team_b": "Tunisia", "stage": "group_stage", "group": "G", "date": "2018-06-18", "venue": "Volgograd Arena"},
+    {"id": "WC18_R16_1", "team_a": "France", "team_b": "Argentina", "stage": "round_of_16", "date": "2018-06-30", "venue": "Kazan Arena"},
+    {"id": "WC18_R16_2", "team_a": "Uruguay", "team_b": "Portugal", "stage": "round_of_16", "date": "2018-06-30", "venue": "Fisht Stadium, Sochi"},
+    {"id": "WC18_R16_3", "team_a": "Russia", "team_b": "Spain", "stage": "round_of_16", "date": "2018-07-01", "venue": "Luzhniki Stadium, Moscow"},
+    {"id": "WC18_R16_4", "team_a": "Croatia", "team_b": "Denmark", "stage": "round_of_16", "date": "2018-07-01", "venue": "Nizhny Novgorod Stadium"},
+    {"id": "WC18_R16_5", "team_a": "Brazil", "team_b": "Mexico", "stage": "round_of_16", "date": "2018-07-02", "venue": "Samara Arena"},
+    {"id": "WC18_R16_6", "team_a": "Belgium", "team_b": "Japan", "stage": "round_of_16", "date": "2018-07-02", "venue": "Rostov Arena"},
+    {"id": "WC18_R16_7", "team_a": "Colombia", "team_b": "England", "stage": "round_of_16", "date": "2018-07-03", "venue": "Spartak Stadium, Moscow"},
+    {"id": "WC18_R16_8", "team_a": "Sweden", "team_b": "Switzerland", "stage": "round_of_16", "date": "2018-07-03", "venue": "Saint Petersburg Stadium"},
+    {"id": "WC18_QF_1", "team_a": "France", "team_b": "Uruguay", "stage": "quarterfinal", "date": "2018-07-06", "venue": "Nizhny Novgorod Stadium"},
+    {"id": "WC18_QF_2", "team_a": "Brazil", "team_b": "Belgium", "stage": "quarterfinal", "date": "2018-07-06", "venue": "Kazan Arena"},
+    {"id": "WC18_QF_3", "team_a": "Russia", "team_b": "Croatia", "stage": "quarterfinal", "date": "2018-07-07", "venue": "Fisht Stadium, Sochi"},
+    {"id": "WC18_QF_4", "team_a": "Sweden", "team_b": "England", "stage": "quarterfinal", "date": "2018-07-07", "venue": "Samara Arena"},
+    {"id": "WC18_SF_1", "team_a": "France", "team_b": "Belgium", "stage": "semifinal", "date": "2018-07-10", "venue": "Saint Petersburg Stadium"},
+    {"id": "WC18_SF_2", "team_a": "Croatia", "team_b": "England", "stage": "semifinal", "date": "2018-07-11", "venue": "Luzhniki Stadium, Moscow"},
+    {"id": "WC18_FINAL", "team_a": "France", "team_b": "Croatia", "stage": "final", "date": "2018-07-15", "venue": "Luzhniki Stadium, Moscow"}
+  ]
+}

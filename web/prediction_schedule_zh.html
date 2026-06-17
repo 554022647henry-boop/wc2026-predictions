@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026世界杯 · 赛程AI预测</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0f1a; color: #e8e8e8; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; padding: 20px; }
+h1 { font-size: 18px; color: #f0c040; text-align: center; margin-bottom: 6px; font-weight: 700; }
+.sub { text-align: center; color: #888; font-size: 11px; margin-bottom: 20px; }
+.legend { text-align: center; font-size: 11px; color: #aaa; margin-bottom: 16px; }
+.legend span { margin: 0 10px; }
+.leg-g { color: #4caf80; }
+.leg-y { color: #f0c040; }
+
+.grp, .day { margin-bottom: 18px; background: #111827; border-radius: 8px; overflow: hidden; border: 1px solid #1e2d3d; }
+.grp-hd, .day-hd { background: #0d1f35; color: #f0c040; font-weight: 700; padding: 8px 12px; font-size: 14px; }
+.grp-teams { color: #aaa; font-size: 11px; font-weight: 400; margin-left: 10px; }
+
+table { width: 100%; border-collapse: collapse; }
+th { background: #0a1520; color: #888; font-weight: 600; padding: 5px 8px; font-size: 11px; text-align: center; }
+td { padding: 6px 8px; border-bottom: 1px solid #1a2535; text-align: center; }
+.md, .tm, .grpb { color: #888; font-size: 11px; width: 48px; }
+.dt { color: #888; font-size: 11px; width: 80px; }
+.ta { text-align: right; font-weight: 500; }
+.tb { text-align: left; font-weight: 500; }
+.ta.w, .tb.w { color: #f0c040; font-weight: 700; }
+.sc { width: 60px; font-weight: 700; }
+.cf { width: 36px; }
+
+tr.played td { background: #0d2218; }
+tr.played .sc { color: #4caf80; }
+tr.pred td { background: #1a1500; }
+tr.upcoming td { opacity: 0.5; }
+
+.arr-l { color: #f0c040; font-size: 14px; }
+.arr-r { color: #f0c040; font-size: 14px; }
+.arr-draw { color: #888; font-size: 13px; }
+.arr-vs { color: #555; font-size: 11px; }
+.score { font-size: 13px; font-weight: 700; color: #4caf80; }
+.pred-sm { font-size: 11px; color: #aaa; display: inline-block; margin-top: 1px; }
+.ok { color: #4caf80; font-size: 11px; }
+.ng { color: #f44; font-size: 11px; }
+
+.conf { font-size: 10px; padding: 1px 4px; border-radius: 3px; font-weight: 600; }
+.c-h { background: #1a3a1a; color: #4caf80; }
+.c-m { background: #2a2000; color: #f0c040; }
+.c-l { background: #2a1a00; color: #ff9944; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<h1>2026世界杯 · 赛程AI预测</h1>
+<p class="sub">2026 FIFA 世界杯 · AI预测 · 更新于 2026-06-17 16:24 北京时间</p>
+<div class="legend">
+  <span class="leg-g">■ 绿色 = 已完赛（实际比分）</span>
+  <span class="leg-y">■ 黄色 = AI预测（◀▶指向赢队，— = 平局）</span>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月12日 周五</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">03:00</td><td class="grpb">A组</td><td class="ta w">墨西哥</td><td class="sc"><span class="score">2-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">南非</td><td class="cf"></td></tr><tr class="played"><td class="tm">10:00</td><td class="grpb">A组</td><td class="ta w">韩国</td><td class="sc"><span class="score">2-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">捷克</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月13日 周六</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">03:00</td><td class="grpb">B组</td><td class="ta">波黑</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ok">✅</span></span></td><td class="tb">加拿大</td><td class="cf"></td></tr><tr class="played"><td class="tm">09:00</td><td class="grpb">D组</td><td class="ta">巴拉圭</td><td class="sc"><span class="score">4-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">美国</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月14日 周日</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">03:00</td><td class="grpb">B组</td><td class="ta">卡塔尔</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">瑞士</td><td class="cf"></td></tr><tr class="played"><td class="tm">06:00</td><td class="grpb">C组</td><td class="ta">巴西</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ok">✅</span></span></td><td class="tb">摩洛哥</td><td class="cf"></td></tr><tr class="played"><td class="tm">09:00</td><td class="grpb">C组</td><td class="ta">海地</td><td class="sc"><span class="score">0-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">苏格兰</td><td class="cf"></td></tr><tr class="played"><td class="tm">12:00</td><td class="grpb">D组</td><td class="ta w">澳大利亚</td><td class="sc"><span class="score">2-0</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">土耳其</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月15日 周一</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">01:00</td><td class="grpb">E组</td><td class="ta w">德国</td><td class="sc"><span class="score">7-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">库拉索</td><td class="cf"></td></tr><tr class="played"><td class="tm">04:00</td><td class="grpb">F组</td><td class="ta">荷兰</td><td class="sc"><span class="score">2-2</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">日本</td><td class="cf"></td></tr><tr class="played"><td class="tm">07:00</td><td class="grpb">E组</td><td class="ta w">科特迪瓦</td><td class="sc"><span class="score">1-0</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ng">❌</span></span></td><td class="tb">厄瓜多尔</td><td class="cf"></td></tr><tr class="played"><td class="tm">10:00</td><td class="grpb">F组</td><td class="ta w">瑞典</td><td class="sc"><span class="score">5-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">突尼斯</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月16日 周二</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">00:00</td><td class="grpb">H组</td><td class="ta">西班牙</td><td class="sc"><span class="score">0-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">佛得角</td><td class="cf"></td></tr><tr class="played"><td class="tm">03:00</td><td class="grpb">G组</td><td class="ta">比利时</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">埃及</td><td class="cf"></td></tr><tr class="played"><td class="tm">06:00</td><td class="grpb">H组</td><td class="ta">沙特</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">乌拉圭</td><td class="cf"></td></tr><tr class="played"><td class="tm">09:00</td><td class="grpb">G组</td><td class="ta">伊朗</td><td class="sc"><span class="score">2-2</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">新西兰</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月17日 周三</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="played"><td class="tm">03:00</td><td class="grpb">I组</td><td class="ta w">法国</td><td class="sc"><span class="score">3-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">塞内加尔</td><td class="cf"></td></tr><tr class="played"><td class="tm">06:00</td><td class="grpb">I组</td><td class="ta">伊拉克</td><td class="sc"><span class="score">1-4</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">挪威</td><td class="cf"></td></tr><tr class="played"><td class="tm">09:00</td><td class="grpb">J组</td><td class="ta w">阿根廷</td><td class="sc"><span class="score">3-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">阿尔及利亚</td><td class="cf"></td></tr><tr class="played"><td class="tm">12:00</td><td class="grpb">J组</td><td class="ta w">奥地利</td><td class="sc"><span class="score">3-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">约旦</td><td class="cf"></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月18日 周四</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">01:00</td><td class="grpb">K组</td><td class="ta w">葡萄牙</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">刚果(金)</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">04:00</td><td class="grpb">L组</td><td class="ta w">英格兰</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">克罗地亚</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">07:00</td><td class="grpb">L组</td><td class="ta">加纳</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">巴拿马</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">K组</td><td class="ta">乌兹别克</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">哥伦比亚</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月19日 周五</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">00:00</td><td class="grpb">A组</td><td class="ta w">捷克</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">南非</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">03:00</td><td class="grpb">B组</td><td class="ta w">瑞士</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">波黑</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">06:00</td><td class="grpb">B组</td><td class="ta w">加拿大</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">卡塔尔</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">09:00</td><td class="grpb">A组</td><td class="ta w">墨西哥</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">韩国</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月20日 周六</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">03:00</td><td class="grpb">D组</td><td class="ta w">美国</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">澳大利亚</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">06:00</td><td class="grpb">C组</td><td class="ta">苏格兰</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">摩洛哥</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">08:30</td><td class="grpb">C组</td><td class="ta w">巴西</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">海地</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="tm">11:00</td><td class="grpb">D组</td><td class="ta">土耳其</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">巴拉圭</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月21日 周日</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">01:00</td><td class="grpb">F组</td><td class="ta w">荷兰</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">瑞典</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">04:00</td><td class="grpb">E组</td><td class="ta w">德国</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">科特迪瓦</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">08:00</td><td class="grpb">E组</td><td class="ta w">厄瓜多尔</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">库拉索</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">12:00</td><td class="grpb">F组</td><td class="ta">突尼斯</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">日本</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月22日 周一</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">00:00</td><td class="grpb">H组</td><td class="ta w">西班牙</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">沙特</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">03:00</td><td class="grpb">G组</td><td class="ta w">比利时</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">伊朗</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">06:00</td><td class="grpb">H组</td><td class="ta w">乌拉圭</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">佛得角</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">09:00</td><td class="grpb">G组</td><td class="ta">新西兰</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">埃及</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月23日 周二</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">01:00</td><td class="grpb">J组</td><td class="ta w">阿根廷</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">奥地利</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">05:00</td><td class="grpb">I组</td><td class="ta w">法国</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">伊拉克</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="tm">08:00</td><td class="grpb">I组</td><td class="ta">挪威</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">塞内加尔</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">11:00</td><td class="grpb">J组</td><td class="ta">约旦</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">阿尔及利亚</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月24日 周三</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">01:00</td><td class="grpb">K组</td><td class="ta w">葡萄牙</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">乌兹别克</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">04:00</td><td class="grpb">L组</td><td class="ta w">英格兰</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">加纳</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">07:00</td><td class="grpb">L组</td><td class="ta">巴拿马</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">克罗地亚</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">K组</td><td class="ta w">哥伦比亚</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">刚果(金)</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月25日 周四</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">03:00</td><td class="grpb">B组</td><td class="ta">瑞士</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">加拿大</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">03:00</td><td class="grpb">B组</td><td class="ta w">波黑</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">卡塔尔</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">06:00</td><td class="grpb">C组</td><td class="ta">苏格兰</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">巴西</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">06:00</td><td class="grpb">C组</td><td class="ta w">摩洛哥</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">海地</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="tm">09:00</td><td class="grpb">A组</td><td class="ta">捷克</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">墨西哥</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">09:00</td><td class="grpb">A组</td><td class="ta">南非</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">韩国</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月26日 周五</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">04:00</td><td class="grpb">E组</td><td class="ta">库拉索</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">科特迪瓦</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="tm">04:00</td><td class="grpb">E组</td><td class="ta">厄瓜多尔</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">德国</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">07:00</td><td class="grpb">F组</td><td class="ta w">日本</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">瑞典</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">07:00</td><td class="grpb">F组</td><td class="ta">突尼斯</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">荷兰</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">D组</td><td class="ta">土耳其</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">美国</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">D组</td><td class="ta">巴拉圭</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">澳大利亚</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月27日 周六</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">03:00</td><td class="grpb">I组</td><td class="ta">挪威</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">法国</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">03:00</td><td class="grpb">I组</td><td class="ta w">塞内加尔</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">伊拉克</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">08:00</td><td class="grpb">H组</td><td class="ta">佛得角</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">沙特</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">08:00</td><td class="grpb">H组</td><td class="ta">乌拉圭</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">西班牙</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">11:00</td><td class="grpb">G组</td><td class="ta">埃及</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">伊朗</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">11:00</td><td class="grpb">G组</td><td class="ta">新西兰</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">比利时</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="day">
+  <div class="day-hd">06月28日 周日</div>
+  <table>
+    <tr class="hdr"><th>时间</th><th>小组</th><th>主场</th><th></th><th>客场</th><th>置信</th></tr>
+    <tr class="pred"><td class="tm">05:00</td><td class="grpb">L组</td><td class="ta">巴拿马</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">英格兰</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="tm">05:00</td><td class="grpb">L组</td><td class="ta w">克罗地亚</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">加纳</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">07:30</td><td class="grpb">K组</td><td class="ta">哥伦比亚</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">葡萄牙</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="tm">07:30</td><td class="grpb">K组</td><td class="ta">刚果(金)</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">乌兹别克</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">J组</td><td class="ta">阿尔及利亚</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">奥地利</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="tm">10:00</td><td class="grpb">J组</td><td class="ta">约旦</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">阿根廷</td><td class="cf"><span class="conf c-h">高</span></td></tr>
+  </table>
+</div>
+</body>
+</html>

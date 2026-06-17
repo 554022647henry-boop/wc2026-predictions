@@ -31,6 +31,12 @@ client = config.make_client()
 
 ANTI_HINDSIGHT = """【严格禁止后见之明】你在做赛前预测，必须完全忽略任何关于比赛结果的知识，只基于提供的赛前信息打分。"""
 
+ANTI_SQUAD_HALLUCINATION = """【严格禁止编造球员】
+1. 只能提及上下文「ESPN官方知识库✅」大名单中明确出现的球员名字。
+2. 禁止从训练知识中引入任何未在大名单里出现的球员（包括其他队球员）。
+3. 明确禁止提及：格列兹曼、Griezmann、卡马文加、Camavinga、吉鲁、Giroud、洛里斯、Lloris。
+4. 如果不确定某球员是否在本场比赛的大名单中，用"队长"/"前锋核心"等描述代替具体名字。"""
+
 # 统一评分量表（嵌入每个Agent的提示词）
 SCORING_RUBRIC = """
 【评分量表 — 必须遵守】
@@ -50,12 +56,14 @@ SCORING_RUBRIC = """
 
 _SCHEMA_NOTE = """
 【输出格式 — 严格遵守】
+⚠️ 关键：team_a_score = 比赛中写在"vs"左边那支队的得分，team_b_score = 右边那支队的得分。
+如果左边那队实力弱，左边得分应该低；如果右边那队实力强，右边得分应该高。
 先写2-4句分析，然后输出：
 
 ##SCORES##
 {
-  "team_a_score": <0.0-10.0，保留1位小数>,
-  "team_b_score": <0.0-10.0，保留1位小数>,
+  "team_a_score": <左边那队的得分，0.0-10.0，保留1位小数>,
+  "team_b_score": <右边那队的得分，0.0-10.0，保留1位小数>,
   "confidence": <0-10，信息充分程度>,
   "reasoning": "<1句总结，必须提到具体球员名或战术细节>",
   "key_factors": ["<因素1，具体事实>", "<因素2，具体事实>", "<因素3，具体事实>"]
@@ -76,6 +84,17 @@ def _extract_kb_section(kb: dict, sections: list) -> str:
         if val:
             parts.append(f"[{section}] {json.dumps(val, ensure_ascii=False)}")
     return "\n".join(parts)
+
+
+def _make_user(ta: str, tb: str, kb_text: str, ctx: str, ctx_limit: int = 500) -> str:
+    """构建 Agent 的 user message，明确标注 team_a/team_b。"""
+    return (
+        f"比赛：{ta}(=team_a，左边队) vs {tb}(=team_b，右边队)\n"
+        f"⚠️ 评分规则：team_a_score是【{ta}】的得分，team_b_score是【{tb}】的得分。\n"
+        f"   如果{tb}更强，则team_b_score更高；如果{ta}更强，则team_a_score更高。\n"
+        f"   只能提及上下文大名单中出现的球员，禁止引入其他队球员。\n"
+        f"{kb_text}\n赛前信息：{ctx[:ctx_limit]}"
+    )
 
 
 def _call(system: str, user: str) -> dict:
@@ -157,14 +176,14 @@ def agent_A_strength(ta: str, tb: str, ctx: str,
             kb_text += f" | {len(squad26)}人名单: {', '.join(p['name'] for p in squad26[:8])}..."
 
     return _call(
-        f"""你是绝对实力评估员。{ANTI_HINDSIGHT}
+        f"""你是绝对实力评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. FIFA排名/ELO差距（排名差30名以上才有实质影响，排名未知则根据赛前信息推断）
 2. 阵容整体档次（五大联赛主力 vs 中下游联赛；球员名单来自ESPN官方，可信）
 3. 是否有能单场改变比赛走向的超级球员（梅西/姆巴佩级别，不是泛泛的"核心"）
 注意：大名单来自ESPN官方WC注册名单（真实可信），身价/排名如无数据请基于球员俱乐部档次判断。
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -178,14 +197,14 @@ def agent_B_chemistry(ta: str, tb: str, ctx: str,
             kb_text += f"\n[{name}化学反应] {json.dumps(chem, ensure_ascii=False)}"
 
     return _call(
-        f"""你是球队化学反应评估员。{ANTI_HINDSIGHT}
+        f"""你是球队化学反应评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. 核心组合稳定性：主力阵容在一起打了多少年？同俱乐部球员有几人？
 2. 更衣室氛围：教练执教多久？有无内部矛盾公开报道？
 3. 体系成熟度：这套战术系统磨合多久？临阵换人会不会打乱节奏？
 注意：世界杯集训仅约14天，化学反应差距会被放大。
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -210,14 +229,14 @@ def agent_C_form(ta: str, tb: str, ctx: str,
                 kb_text += f"\n[{name}近期战绩-来源ESPN✅] " + " | ".join(parts)
 
     return _call(
-        f"""你是近期状态评估员。{ANTI_HINDSIGHT}
+        f"""你是近期状态评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. 近5场竞赛场成绩（友谊赛权重30%，预选赛/正赛权重100%）
 2. 进失球趋势（近3场进球是增加还是减少？）
 3. 上一场是否留下体力消耗（加时、高强度比赛）？
 4. 状态上升/下滑信号（是否3连胜/3连败？）
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -237,7 +256,7 @@ def agent_D_keyplayer(ta: str, tb: str, ctx: str,
                 kb_text += f"\n[{name}关键球员] {kp_str}"
 
     return _call(
-        f"""你是关键球员状态评估员。{ANTI_HINDSIGHT}
+        f"""你是关键球员状态评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. 核心1-2名球员当前状态是否处于本赛季/本备战期高位？
 2. 是否有确认伤停或存疑的隐患？
@@ -245,7 +264,7 @@ def agent_D_keyplayer(ta: str, tb: str, ctx: str,
 4. 如果核心球员缺阵/状态不佳，球队备用方案是否充分？
 必须引用具体球员名字，不能只说"核心球员"。
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -259,7 +278,7 @@ def agent_E_context(ta: str, tb: str, ctx: str, stage: str = "",
             kb_text += f"\n[{name}情境] 期望:{cf.get('tournament_expectation','?')} | 媒体压力:{cf.get('media_pressure','?')}"
 
     return _call(
-        f"""你是赛前情境评估员。{ANTI_HINDSIGHT}
+        f"""你是赛前情境评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. 必须赢/可平/可输的动机强度差异（小组赛MD1双方都想赢，差异小；MD3差异大）
 2. 休息天数差距（≥2天差距才有影响）
@@ -267,7 +286,7 @@ def agent_E_context(ta: str, tb: str, ctx: str, stage: str = "",
 4. 主场/中立场/敌对环境（比如墨西哥队在美国踢）
 5. 教练赛前发布会中的异常表态（自信/紧张信号）
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}（{stage}）\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -289,7 +308,7 @@ def agent_F_tactical(ta: str, tb: str, ctx: str,
             kb_text += f" | 抗压球能力:{pr.get('can_play_under_press','?')}"
 
     return _call(
-        f"""你是战术对位评估员。{ANTI_HINDSIGHT}
+        f"""你是战术对位评估员。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 核心问题：这两套打法放在一起，谁的风格在这个具体对阵中占便宜？
 
 必须分析：
@@ -300,7 +319,7 @@ def agent_F_tactical(ta: str, tb: str, ctx: str,
 
 不是评价谁的战术"先进"，而是谁的具体打法在这个配对中更有利。
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n{kb_text}\n赛前信息：{ctx[:500]}"
+        _make_user(ta, tb, kb_text, ctx)
     )
 
 
@@ -319,7 +338,7 @@ def agent_G_dna(ta: str, tb: str, ctx: str, stage: str = "",
 
     if not is_knockout:
         return _call(
-            f"""你是大赛基因评估员（小组赛版本）。{ANTI_HINDSIGHT}
+            f"""你是大赛基因评估员（小组赛版本）。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度（小组赛阶段）：
 1. 近3届世界杯小组赛出线率（是否经常首轮失常？）
 2. 世界杯首战历史表现规律（慢热 vs 开门红型）
@@ -327,17 +346,17 @@ def agent_G_dna(ta: str, tb: str, ctx: str, stage: str = "",
 
 注意：小组赛DNA信号弱，confidence 主动设低（不超过6分）。
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-            f"比赛：{ta} vs {tb}（{stage}）\n{kb_text}\n赛前信息：{ctx[:400]}"
+            _make_user(ta, tb, kb_text, ctx, 400)
         )
     return _call(
-        f"""你是大赛DNA评估员（淘汰赛版本）。{ANTI_HINDSIGHT}
+        f"""你是大赛DNA评估员（淘汰赛版本）。{ANTI_HINDSIGHT}{ANTI_SQUAD_HALLUCINATION}
 评估维度：
 1. 近3届世界杯淘汰赛成绩（克罗地亚式DNA vs 纸老虎型）
 2. 落后时的历史翻盘记录（逆境中会不会崩？）
 3. 点球大战记录（如有相关历史）
 4. 关键战役中个人英雄主义是否出现过？
 {SCORING_RUBRIC}{_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}（{stage}）\n{kb_text}\n赛前信息：{ctx[:400]}"
+        _make_user(ta, tb, kb_text, ctx, 400)
     )
 
 
@@ -353,7 +372,7 @@ team_a_score / team_b_score 直接填写 A队胜/B队胜的隐含概率×10
 （例：A胜概率55% → team_a_score=5.5，B胜概率30% → team_b_score=3.0，平局=1.5）
 若无赔率数据，confidence=2，给5.0/5.0。
 {_SCHEMA_NOTE}""",
-        f"比赛：{ta} vs {tb}\n赛前信息（含赔率）：{ctx[:600]}"
+        f"比赛：{ta}(=team_a) vs {tb}(=team_b)\nteam_a_score是【{ta}】的胜率×10，team_b_score是【{tb}】的胜率×10\n赛前信息（含赔率）：{ctx[:600]}"
     )
     result["is_calibrator"] = True
     return result

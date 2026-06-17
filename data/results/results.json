@@ -1,0 +1,144 @@
+{
+  "_note": "实际比赛结果。通过 python main.py result --match <id> --outcome <A胜/平局/B胜> --score <2-1> 录入。",
+  "_outcome_values": "A胜 / 平局 / B胜",
+  "WC2026_B_MD1_1": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Bosnia and Herzegovina",
+    "team_b": "Canada",
+    "recorded_at": "2026-06-13T14:04:25.711403"
+  },
+  "WC2026_A_MD1_1": {
+    "outcome": "A_WIN",
+    "score": "2-0",
+    "team_a": "Mexico",
+    "team_b": "South Africa",
+    "recorded_at": "2026-06-13T14:04:25.711403"
+  },
+  "WC2026_A_MD1_2": {
+    "outcome": "A_WIN",
+    "score": "2-1",
+    "team_a": "South Korea",
+    "team_b": "Czechia",
+    "recorded_at": "2026-06-13T14:04:25.711403"
+  },
+  "WC2026_D_MD1_1": {
+    "outcome": "B_WIN",
+    "score": "4-1",
+    "team_a": "Paraguay",
+    "team_b": "United States",
+    "recorded_at": "2026-06-13T14:04:25.711403"
+  },
+  "WC2026_B_MD1_2": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Qatar",
+    "team_b": "Switzerland",
+    "recorded_at": "2026-06-14T05:34:02.770140"
+  },
+  "WC2026_C_MD1_2": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Brazil",
+    "team_b": "Morocco",
+    "recorded_at": "2026-06-14T08:34:03.153997"
+  },
+  "WC2026_C_MD1_1": {
+    "outcome": "B_WIN",
+    "score": "0-1",
+    "team_a": "Haiti",
+    "team_b": "Scotland",
+    "recorded_at": "2026-06-14T11:04:02.806371"
+  },
+  "WC2026_D_MD1_2": {
+    "outcome": "A_WIN",
+    "score": "2-0",
+    "team_a": "Australia",
+    "team_b": "Turkiye",
+    "recorded_at": "2026-06-14T15:53:08.564353"
+  },
+  "WC2026_E_MD1_2": {
+    "outcome": "A_WIN",
+    "score": "7-1",
+    "team_a": "Germany",
+    "team_b": "Curacao",
+    "recorded_at": "2026-06-15T03:04:02.122163"
+  },
+  "WC2026_F_MD1_1": {
+    "outcome": "DRAW",
+    "score": "2-2",
+    "team_a": "Netherlands",
+    "team_b": "Japan",
+    "recorded_at": "2026-06-15T06:04:00.712775"
+  },
+  "WC2026_E_MD1_1": {
+    "outcome": "A_WIN",
+    "score": "1-0",
+    "team_a": "Ivory Coast",
+    "team_b": "Ecuador",
+    "recorded_at": "2026-06-15T09:34:02.953003"
+  },
+  "WC2026_F_MD1_2": {
+    "outcome": "A_WIN",
+    "score": "5-1",
+    "team_a": "Sweden",
+    "team_b": "Tunisia",
+    "recorded_at": "2026-06-15T14:18:06.442197"
+  },
+  "WC2026_H_MD1_2": {
+    "outcome": "DRAW",
+    "score": "0-0",
+    "team_a": "Spain",
+    "team_b": "Cape Verde",
+    "recorded_at": "2026-06-16T10:59:00.965493"
+  },
+  "WC2026_G_MD1_2": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Belgium",
+    "team_b": "Egypt",
+    "recorded_at": "2026-06-16T10:59:05.728879"
+  },
+  "WC2026_H_MD1_1": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Saudi Arabia",
+    "team_b": "Uruguay",
+    "recorded_at": "2026-06-16T10:59:05.731888"
+  },
+  "WC2026_G_MD1_1": {
+    "outcome": "DRAW",
+    "score": "2-2",
+    "team_a": "Iran",
+    "team_b": "New Zealand",
+    "recorded_at": "2026-06-16T11:49:36.527813"
+  },
+  "WC2026_I_MD1_1": {
+    "outcome": "A_WIN",
+    "score": "3-1",
+    "team_a": "France",
+    "team_b": "Senegal",
+    "recorded_at": "2026-06-17T11:39:37.719775"
+  },
+  "WC2026_I_MD1_2": {
+    "outcome": "B_WIN",
+    "score": "1-4",
+    "team_a": "Iraq",
+    "team_b": "Norway",
+    "recorded_at": "2026-06-17T11:39:40.995059"
+  },
+  "WC2026_J_MD1_1": {
+    "outcome": "A_WIN",
+    "score": "3-0",
+    "team_a": "Argentina",
+    "team_b": "Algeria",
+    "recorded_at": "2026-06-17T11:39:40.997797"
+  },
+  "WC2026_J_MD1_2": {
+    "outcome": "A_WIN",
+    "score": "3-1",
+    "team_a": "Austria",
+    "team_b": "Jordan",
+    "recorded_at": "2026-06-17T14:53:37.300277"
+  }
+}

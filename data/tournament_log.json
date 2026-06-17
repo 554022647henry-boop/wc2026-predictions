@@ -1,0 +1,330 @@
+{
+  "_note": "本届世界杯各队已完成比赛记录。每场比赛结束后通过 python main.py log-result 更新。",
+  "_format": {
+    "stage": "group_stage / round_of_16 / quarterfinal / semifinal / final",
+    "result": "W（赢）/ D（平）/ L（输）",
+    "score": "己方进球-对方进球（如含加时/点球注明）",
+    "xg_for": "可选，己方预期进球",
+    "xg_against": "可选，对方预期进球"
+  },
+  "Mexico": [
+    {
+      "stage": "group_stage",
+      "vs": "South Africa",
+      "result": "W",
+      "score": "2-0"
+    }
+  ],
+  "South Africa": [
+    {
+      "stage": "group_stage",
+      "vs": "Mexico",
+      "result": "L",
+      "score": "0-2"
+    }
+  ],
+  "South Korea": [
+    {
+      "stage": "group_stage",
+      "vs": "Czechia",
+      "result": "W",
+      "score": "2-1"
+    }
+  ],
+  "Czechia": [
+    {
+      "stage": "group_stage",
+      "vs": "South Korea",
+      "result": "L",
+      "score": "1-2"
+    }
+  ],
+  "Canada": [
+    {
+      "stage": "group_stage",
+      "vs": "Bosnia and Herzegovina",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Bosnia and Herzegovina": [
+    {
+      "stage": "group_stage",
+      "vs": "Canada",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "United States": [
+    {
+      "stage": "group_stage",
+      "vs": "Paraguay",
+      "result": "W",
+      "score": "4-1"
+    }
+  ],
+  "Paraguay": [
+    {
+      "stage": "group_stage",
+      "vs": "United States",
+      "result": "L",
+      "score": "1-4"
+    }
+  ],
+  "Qatar": [
+    {
+      "stage": "group_stage",
+      "vs": "Switzerland",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Switzerland": [
+    {
+      "stage": "group_stage",
+      "vs": "Qatar",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Brazil": [
+    {
+      "stage": "group_stage",
+      "vs": "Morocco",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Morocco": [
+    {
+      "stage": "group_stage",
+      "vs": "Brazil",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Haiti": [
+    {
+      "stage": "group_stage",
+      "vs": "Scotland",
+      "result": "L",
+      "score": "0-1"
+    }
+  ],
+  "Scotland": [
+    {
+      "stage": "group_stage",
+      "vs": "Haiti",
+      "result": "W",
+      "score": "1-0"
+    }
+  ],
+  "Australia": [
+    {
+      "stage": "group_stage",
+      "vs": "Turkiye",
+      "result": "W",
+      "score": "2-0"
+    }
+  ],
+  "Turkiye": [
+    {
+      "stage": "group_stage",
+      "vs": "Australia",
+      "result": "L",
+      "score": "0-2"
+    }
+  ],
+  "Germany": [
+    {
+      "stage": "group_stage",
+      "vs": "Curacao",
+      "result": "W",
+      "score": "7-1"
+    }
+  ],
+  "Curacao": [
+    {
+      "stage": "group_stage",
+      "vs": "Germany",
+      "result": "L",
+      "score": "1-7"
+    }
+  ],
+  "Netherlands": [
+    {
+      "stage": "group_stage",
+      "vs": "Japan",
+      "result": "D",
+      "score": "2-2"
+    }
+  ],
+  "Japan": [
+    {
+      "stage": "group_stage",
+      "vs": "Netherlands",
+      "result": "D",
+      "score": "2-2"
+    }
+  ],
+  "Ivory Coast": [
+    {
+      "stage": "group_stage",
+      "vs": "Ecuador",
+      "result": "W",
+      "score": "1-0"
+    }
+  ],
+  "Ecuador": [
+    {
+      "stage": "group_stage",
+      "vs": "Ivory Coast",
+      "result": "L",
+      "score": "0-1"
+    }
+  ],
+  "Sweden": [
+    {
+      "stage": "group_stage",
+      "vs": "Tunisia",
+      "result": "W",
+      "score": "5-1"
+    }
+  ],
+  "Tunisia": [
+    {
+      "stage": "group_stage",
+      "vs": "Sweden",
+      "result": "L",
+      "score": "1-5"
+    }
+  ],
+  "Spain": [
+    {
+      "stage": "group_stage",
+      "vs": "Cape Verde",
+      "result": "D",
+      "score": "0-0"
+    }
+  ],
+  "Cape Verde": [
+    {
+      "stage": "group_stage",
+      "vs": "Spain",
+      "result": "D",
+      "score": "0-0"
+    }
+  ],
+  "Belgium": [
+    {
+      "stage": "group_stage",
+      "vs": "Egypt",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Egypt": [
+    {
+      "stage": "group_stage",
+      "vs": "Belgium",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Saudi Arabia": [
+    {
+      "stage": "group_stage",
+      "vs": "Uruguay",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Uruguay": [
+    {
+      "stage": "group_stage",
+      "vs": "Saudi Arabia",
+      "result": "D",
+      "score": "1-1"
+    }
+  ],
+  "Iran": [
+    {
+      "stage": "group_stage",
+      "vs": "New Zealand",
+      "result": "D",
+      "score": "2-2"
+    }
+  ],
+  "New Zealand": [
+    {
+      "stage": "group_stage",
+      "vs": "Iran",
+      "result": "D",
+      "score": "2-2"
+    }
+  ],
+  "France": [
+    {
+      "stage": "group_stage",
+      "vs": "Senegal",
+      "result": "W",
+      "score": "3-1"
+    }
+  ],
+  "Senegal": [
+    {
+      "stage": "group_stage",
+      "vs": "France",
+      "result": "L",
+      "score": "1-3"
+    }
+  ],
+  "Iraq": [
+    {
+      "stage": "group_stage",
+      "vs": "Norway",
+      "result": "L",
+      "score": "1-4"
+    }
+  ],
+  "Norway": [
+    {
+      "stage": "group_stage",
+      "vs": "Iraq",
+      "result": "W",
+      "score": "4-1"
+    }
+  ],
+  "Argentina": [
+    {
+      "stage": "group_stage",
+      "vs": "Algeria",
+      "result": "W",
+      "score": "3-0"
+    }
+  ],
+  "Algeria": [
+    {
+      "stage": "group_stage",
+      "vs": "Argentina",
+      "result": "L",
+      "score": "0-3"
+    }
+  ],
+  "Austria": [
+    {
+      "stage": "group_stage",
+      "vs": "Jordan",
+      "result": "W",
+      "score": "3-1"
+    }
+  ],
+  "Jordan": [
+    {
+      "stage": "group_stage",
+      "vs": "Austria",
+      "result": "L",
+      "score": "1-3"
+    }
+  ]
+}
