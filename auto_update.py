@@ -241,26 +241,31 @@ def push_to_github_pages():
     html_bytes = Path(config.HTML_FILE).read_bytes()
     encoded = base64.b64encode(html_bytes).decode()
 
-    # 获取当前文件 SHA
-    r2 = req.get(f'https://api.github.com/repos/{username}/{repo}/contents/index.html',
-                 headers=H, timeout=10)
-    sha = r2.json().get('sha', '') if r2.status_code == 200 else ''
+    # 推送到 web/index.html（GitHub Actions 从 web/ 目录部署）
+    # 注意：不再推根目录 index.html，因为 GitHub Pages 现在用 Actions 从 web/ 部署
+    msg = f'⚽ Auto-update {datetime.now().strftime("%Y-%m-%d %H:%M")}'
+    success = True
 
-    # 推送
-    r3 = req.put(
-        f'https://api.github.com/repos/{username}/{repo}/contents/index.html',
-        headers=H,
-        json={'message': f'⚽ Auto-update {datetime.now().strftime("%Y-%m-%d %H:%M")}',
-              'content': encoded, **({'sha': sha} if sha else {})},
-        timeout=30
-    )
+    for target_path in ['web/index.html']:
+        r2 = req.get(f'https://api.github.com/repos/{username}/{repo}/contents/{target_path}',
+                     headers=H, timeout=10)
+        sha = r2.json().get('sha', '') if r2.status_code == 200 else ''
 
-    if r3.status_code in (200, 201):
-        print(f'[GitHub] 推送成功 → https://{username}.github.io/{repo}/')
-        return True
-    else:
-        print(f'[GitHub] 推送失败: {r3.status_code} {r3.text[:80]}')
-        return False
+        r3 = req.put(
+            f'https://api.github.com/repos/{username}/{repo}/contents/{target_path}',
+            headers=H,
+            json={'message': msg, 'content': encoded, **({'sha': sha} if sha else {})},
+            timeout=30
+        )
+        if r3.status_code in (200, 201):
+            print(f'[GitHub] {target_path} 推送成功')
+        else:
+            print(f'[GitHub] {target_path} 推送失败: {r3.status_code} {r3.text[:60]}')
+            success = False
+
+    if success:
+        print(f'[GitHub] 网站更新成功 → https://{username}.github.io/{repo}/')
+    return success
 
 
 if __name__ == '__main__':
