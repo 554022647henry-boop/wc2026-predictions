@@ -2,11 +2,12 @@
   "match_id": "WC2026_H_MD2_2",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-17T01:11:56.803352",
+  "timestamp": "2026-06-17T12:23:52.124443",
+  "pipeline": "v2_match_context",
   "_internal": {
-    "说明": "内部留痕，供追溯复盘",
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": 1.68,
+    "weighted_delta": 1.65,
     "p_a_win": 0.43,
     "p_draw": 0.33,
     "p_b_win": 0.24,
@@ -15,32 +16,33 @@
         "dimension": "F_tactical",
         "label": "战术对位",
         "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
+        "b_score": 5.0,
+        "delta": 1.5,
         "confidence": 7.0,
         "weight": 0.25,
         "key_factors": [
-          "西班牙近期0-0平Cape Verde暴露破密集防守乏力，但沙特后场出球失误率高（vs高位逼抢时）",
-          "沙特边后卫身后空当大，西班牙可通过亚马尔/尼科·威廉姆斯传中或内切制造威胁",
-          "西班牙防线回追速度不足（vs沙特快速反击），且定位球第二落点保护不稳（vs沙特长传冲吊）"
+          "西班牙防线回追速度不足，沙特反击中直塞球和长传可能制造威胁",
+          "沙特边后卫身后空当大，西班牙边锋（如尼科·威廉姆斯或费兰·托雷斯）可切入传中或内射",
+          "赔率显示西班牙胜率极高（-1000），反映了纸面实力巨大差距",
+          "西班牙定位球第二落点保护不稳，沙特可能通过定位球进攻寻找机会"
         ],
-        "reasoning": "西班牙控球优势可压制沙特边路空当，但沙特反击与定位球可能利用西班牙中卫转身慢、回追速度不足的弱点（如达瓦萨里冲击拉波尔特身后）。"
+        "reasoning": "西班牙进攻能利用沙特边后卫空当，但其防线回追慢和定位球防守漏洞可能被沙特反击和定位球利用，风格对位中西班牙优势明显但非完全碾压。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 7.5,
-        "b_score": 5.0,
-        "delta": 2.5,
-        "confidence": 8.0,
+        "a_score": 7.2,
+        "b_score": 5.3,
+        "delta": 1.9,
+        "confidence": 9.0,
         "weight": 0.2,
         "key_factors": [
-          "西班牙首轮0-0平佛得角，必须赢球压力巨大，赢球动机远强于沙特",
-          "西班牙阵容有罗德里、佩德里、亚马尔等世界级球员，纸面实力完全碾压沙特",
-          "DraftKings赔率Spain -1000 vs Saudi Arabia 2500，市场极低看好沙特爆冷可能",
-          "沙特首轮1-1平乌拉圭拿分，心态较放松但缺乏对抗顶级传控的能力"
+          "西班牙世界排名远高于沙特，阵容深度和球员个人能力碾压",
+          "DraftKings赔率Spain -1000显示极端市场倾向",
+          "双方均需赢球但西班牙阵容优势使动机转化为绝对优势",
+          "中立场地无主场影响，西班牙历史无小组赛阴影"
         ],
-        "reasoning": "西班牙实力碾压且必须赢球，沙特实力明显不足，罗德里和佩德里的中场控制力将主导比赛节奏"
+        "reasoning": "西班牙在纸面实力、赔率（-1000）和历史交锋中全面占优，沙特无任何显著利好因素，西班牙必须赢球积分的动机虽强但对手无法匹敌。"
       },
       {
         "dimension": "G_dna",
@@ -56,80 +58,88 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
-        "confidence": 4.0,
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
         "weight": 0.15,
         "key_factors": [
-          "西班牙首轮0-0平弱旅，进攻效率存疑",
-          "赔率Spain -1000大幅倾向，但缺乏状态数据验证",
-          "沙特平乌拉圭展现防守韧性，Salem Al-Dawsari是威胁点",
-          "佩德里、加维伤病风险未确认，可能影响中场创造力"
+          "赔率显示西班牙胜率超过90%，DraftKings Spain -1000远低于Saudi Arabia 2500",
+          "西班牙有多名实力派中场（如Marcos Llorente、Mikel Merino、Fabián Ruiz），沙特中场Mohamed Kanno和Salem Al-Dawsari无法匹配",
+          "沙特无确认伤停但有Al-Dawsari依赖症，替补深度不足；西班牙备用方案充分"
         ],
-        "reasoning": "西班牙阵容深度占优（Rodri、Morata），但首轮哑火且佩德里状态不明；沙特赔率悬殊但近期平乌拉圭，核心Al-Dawsari等状态未知，无针对性限制信息。"
+        "reasoning": "西班牙凭借Marcos Llorente和Mikel Merino的中场优势及全队深度，对沙特形成压倒性优势，沙特缺乏限制方案且阵容薄弱"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 3.0,
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 5.0,
         "weight": 0.08,
         "key_factors": [
-          "西班牙首轮0-0平Cape Verde，但球员合作时间未公开",
-          "沙特阿拉伯首轮1-1平Uruguay，但核心阵容磨合信息缺失",
-          "赔率显示西班牙实力优势，但化学反应无法从赔率直接推断"
+          "沙特阿拉伯主教练勒纳尔自2023年执教，短期集训体系较稳",
+          "沙特球员几乎全部来自本国联赛，日常配合频繁",
+          "西班牙阵容更依赖欧洲俱乐部个体，国家队集训时间短",
+          "赔率显示西班牙实力碾压，但化学反应优势可能被低估"
         ],
-        "reasoning": "缺乏具体核心球员合作时长、教练任期或更衣室报道，只能基于平局假设，两队无优势差异。"
+        "reasoning": "沙特阿拉伯在教练勒纳尔执教稳定性和本土联赛球员长期配合上略有优势，而西班牙核心组合信息不足，但个人能力突出可能弥补默契短板。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 8.0,
-        "b_score": 5.0,
-        "delta": 3.0,
-        "confidence": 9.0,
-        "weight": 0.07,
-        "key_factors": [
-          "西班牙FIFA排名/ELO远高于沙特，排名差超50名",
-          "西班牙阵容有罗德里、佩德里、亚马尔等欧冠级别球员，沙特全队无欧洲五大联赛主力",
-          "赔率Spain -1000 vs Saudi Arabia 2500，市场预期胜负概率极悬殊"
-        ],
-        "reasoning": "西班牙拥有罗德里、佩德里等五大联赛核心，阵容深度和战术执行远胜沙特本土联赛班底，赔率差距巨大体现实力鸿沟。"
-      },
-      {
-        "dimension": "C_form",
-        "label": "近期状态",
         "a_score": 7.5,
         "b_score": 5.0,
         "delta": 2.5,
         "confidence": 8.0,
         "weight": 0.07,
         "key_factors": [
-          "西班牙在世预赛11月两场打入6球，攻击力有保障",
-          "沙特近5场友谊赛仅1胜，且输给埃及、厄瓜多尔",
-          "西班牙阵容有罗德理、佩德里等关键球员，沙特无同等级球星",
-          "赔率显示西班牙为绝对热门（-1000），优势巨大"
+          "西班牙阵容有David Raya、Aymeric Laporte、Pedro Porro等五大联赛球员",
+          "DraftKings赔率Spain -1000 vs Saudi Arabia 2500，压倒性优势",
+          "沙特全场球员来自本土联赛，无五大联赛主力或超级球员"
         ],
-        "reasoning": "西班牙拥有罗德理、亚马尔等顶级球员，纸面实力和世预赛表现远强于沙特，后者在友谊赛中面对非洲和南美球队表现挣扎。"
+        "reasoning": "西班牙有David Raya、Aymeric Laporte等五大联赛主力，赔率显示-1000的绝对优势，沙特球员全来自本土联赛，无抗衡能力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Spain近5场仅1胜（3-0塞尔维亚），其他4场平局或小胜弱旅",
+          "Saudi Arabia近期友谊赛1胜4负，唯一胜场对波多黎各含金量低",
+          "两队上一次正赛都是11个月前（Spain对土耳其平局，Saudi Arabia无近期世界杯预选赛记录）"
+        ],
+        "reasoning": "Spain友谊赛对手弱且表现平庸，Saudi Arabia友谊赛连败但对手含埃及、塞内加尔有参考性，赔率西班牙大热但缺乏近期正赛硬证据支撑，故仅给轻微优势。"
       }
     ],
     "calibration_warning": true,
-    "calibration_note": "⚠️ 赔率偏差 38%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=81%/P(D)=9%/P(B)=11%",
-    "judge_reasoning": "Spain胜"
+    "calibration_note": "⚠️ 赔率偏差 27%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=70%/P(D)=8%/P(B)=22%",
+    "judge_reasoning": "Spain胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760453)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
   },
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Spain胜",
     "confidence": "中",
     "reasons": [
-      "西班牙首战0-0被佛得角逼平，莫拉塔和亚马尔浪费多次机会，但这场面对沙特，罗德里和佩德里的中场控制力将彻底压制对手，西班牙急需一场大胜来缓解舆论压力。",
-      "沙特首轮逼平乌拉圭展现了防守韧性，但西班牙的传控体系擅长通过边路拉扯和肋部穿插撕开防线，亚马尔的速度和莫拉塔的抢点能力正是破密集防守的关键。",
-      "从绝对实力看，西班牙全队身价远超沙特，且近期状态更好（击败荷兰、克罗地亚），而沙特过去5场只赢过泰国，硬仗能力有限。"
+      "西班牙中场控制力远超沙特，罗德里和佩德里的传控将让沙特难以摸到球，形成半场攻防演练。",
+      "西班牙边路有亚马尔和尼科·威廉姆斯的速度冲击，沙特后防很难跟上他们的节奏，容易被打穿。",
+      "沙特在小组赛首轮后仅有5天休息，体能储备不如西班牙的6天，加上西班牙逼抢强度高，沙特下半场可能崩盘。"
     ],
-    "key_risk": "西班牙进攻效率低下，若久攻不下可能被沙特反击偷分，尤其是阿尔达瓦萨里的个人能力可能制造冷门。"
+    "key_risk": "西班牙大赛DNA评分仅5.0，与沙特持平，若久攻不下或遭遇沙特反击偷袭，可能爆冷平局。"
   },
   "actual_result": null
 }
