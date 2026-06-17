@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_D_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T03:43:06.764388",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.47,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "土耳其防守端高位压迫时阵型脱节，面对美国快速传切（如边路突破）存在明显漏洞",
+          "美国中路防守对直塞球和弧顶保护不足，恰尔汗奥卢的直塞和伊尔迪兹的跑位可能穿透防线",
+          "土耳其定位球防守历史性漏洞可能被美国利用，但无具体定位球数据支持",
+          "赔率美国略占优（145 vs 175），但双方近期战绩接近，无压倒性优势"
+        ],
+        "reasoning": "土耳其的高位压迫排型脱节易被美国快速传切利用，而美国的中路防守漏洞恰被土耳其的组织核心恰尔汗奥卢和中路渗透克制。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.2,
+        "key_factors": [
+          "土耳其近期战绩胜率较高，包括赢瑞士和平荷兰",
+          "美国刚输给墨西哥（1-2），略显士气波动",
+          "赔率美国轻微占优（145 vs 175）但不构成明显优势"
+        ],
+        "reasoning": "双方在MD1中动机对等，近期状态和整体实力接近，赔率差微小，无关键消息或历史包袱影响，因此完全平等。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "土耳其近期2胜1平1负，包括击败瑞士",
+          "美国近期1胜2负，包括输给墨西哥",
+          "赔率显示美国略占优但差距不足1个档位"
+        ],
+        "reasoning": "双方关键球员状态和伤停信息均缺失，赔率差距极小，无法看出任何一方优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "土耳其和美国均未提供核心阵容共事年限数据",
+          "双方教练均为已确认状态，无内部矛盾或体系变化报道",
+          "无关键球员俱乐部同队或战术磨合深度信息"
+        ],
+        "reasoning": "双方均缺乏核心组合稳定性、更衣室氛围或体系成熟度的具体事实，仅教练已确认，无助于评分，故判定完全平等。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.07,
+        "key_factors": [
+          "United States赔率145略低于Turkiye 175，但差距在10%以内",
+          "Turkiye有Calhanoglu（国米核心）领衔，阵容以欧洲联赛为主",
+          "美国队名单以英超/美职联混合，Pulisic不在大名单中"
+        ],
+        "reasoning": "两队排名/阵容档次接近，赔率显示美国略占优但差距微小，无超级球员，基本面均势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其近3场世预赛正赛全胜且0失球（vs科索沃、罗马尼亚、西班牙平局），含金量高",
+          "美国近4场友谊赛1胜3负，场均失球2.5个（对比利时丢5球、葡萄牙丢2球）",
+          "土耳其核心Hakan Calhanoglu保持稳定组织输出，美国缺少同等持球核心"
+        ],
+        "reasoning": "土耳其近3场世预赛全胜且零封对手，而美国友谊赛1胜3负防守崩盘，即使赔率接近状态差距明显"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "土耳其近期状态不错，6月赢了瑞士和挪威，但美国队也有Pulisic和Balogun这样的攻击手，两队实力接近，预计会陷入中场绞杀，进球不多。",
+      "关键球员Calhanoglu和Pulisic都擅长定位球和远射，但双方防守纪律都一般，可能各有一次致命失误，导致1-1平局。",
+      "两队都是年轻阵容，大赛经验有限，小组赛首战容易紧张，节奏偏慢，配合失误多，机会转化率低，平局概率在38%最高。"
+    ],
+    "key_risk": "美国队若通过Pulisic边路突破先破门，土耳其可能急躁压上被反击扩大比分，导致平局不成立。"
+  },
+  "actual_result": null
+}

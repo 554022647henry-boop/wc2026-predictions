@@ -1,0 +1,137 @@
+{
+  "match_id": "WC2026_C_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:34:58.025062",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.08,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "苏格兰中后卫回追速度偏慢，巴西边锋群（如维尼修斯、拉菲尼亚）的快速突破可轻松制造威胁",
+          "苏格兰进攻依赖边路传中，但巴西边后卫个人防守能力强，且苏格兰缺少顶级抢点手",
+          "巴西中场技术优势可控制节奏，苏格兰高强度逼抢下后场出球易失误",
+          "苏格兰定位球进攻是主要威胁，但巴西整体防守纪律性在常规时间可应对"
+        ],
+        "reasoning": "巴西的边路冲击和快速转换能精准打击苏格兰三后卫回追慢的致命弱点，而苏格兰缺乏惩罚巴西防守空当的顶级速度，巴西在节奏控制和球员能力上明显占优。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴西纸面实力碾压，多名顶级球员在五大联赛效力",
+          "苏格兰核心Andy Robertson赛季末疲劳，冲刺能力下降",
+          "赔率强烈倾向巴西（-225 vs 苏格兰+550）",
+          "小组赛首轮双方都想赢，动机差异小，但巴西实力优势突出"
+        ],
+        "reasoning": "巴西凭借维尼修斯和罗德里戈等顶级攻击线形成明显实力优势，苏格兰核心罗伯逊疲劳且整体阵容深度不足。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "巴西中场(Casemiro/Fabinho/Bruno Guimarães)在技术和防守覆盖上远强于苏格兰中场",
+          "苏格兰核心边后卫Robertson赛季末疲劳，冲刺次数下降10-15%",
+          "赔率大幅偏向巴西(-225)，市场认为实力差距显著",
+          "苏格兰近期战绩含金量一般，对阵葡萄牙仅0-0平，对挪威2-1险胜"
+        ],
+        "reasoning": "巴西中场三人组(Casemiro/Fabinho/Bruno Guimarães)实力碾压苏格兰中场(Christie/McLean/McGinn)，且苏格兰核心Robertson存在疲劳隐患，巴西赔率-225反映优势明显。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "双方均无核心组合年限数据",
+          "苏格兰核心Andy Robertson处于疲劳状态，可能影响边路进攻体系稳定性",
+          "巴西没有公开的内部矛盾报道，但战术系统磨合情况未知"
+        ],
+        "reasoning": "双方均缺乏核心组合年限及战术磨合的明确信息，但巴西因球员个人能力优势在体系成熟度上略有潜在优势，而苏格兰因Robertson疲劳状态可能影响稳定性。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西门将位置拥有阿利松和埃德松两名世界级选择，苏格兰门将均为英超替补级别",
+          "巴西后防线马基尼奥斯、达尼洛等均在顶级豪门效力，苏格兰后防来自英冠/英超中下游",
+          "赔率显示巴西-225明显被看好，苏格兰胜赔550",
+          "巴西阵容深度远超苏格兰，替补席有众多五大联赛主力"
+        ],
+        "reasoning": "巴西拥有阿利松、埃德松、马基尼奥斯等顶级球员，苏格兰仅罗伯逊和麦克托米奈属于五大联赛主力，整体阵容档次差距明显"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Brazil友谊赛3连胜，进11球丢4球",
+          "Scotland近5场仅2胜，对手包括库拉索、玻利维亚等弱旅",
+          "Andy Robertson疲劳状态，影响Scotland边路进攻核心",
+          "赔率显示Brazil胜赔-225，市场明显看好"
+        ],
+        "reasoning": "Brazil近3场友谊赛全胜且场均进3.7球，而Scotland近5场仅2胜且核心Andy Robertson疲劳，进攻火力不足。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 27%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=25%/P(D)=9%/P(B)=65%",
+    "judge_reasoning": "Brazil胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "中",
+    "reasons": [
+      "巴西的进攻线太豪华了——维尼修斯在左路的技术和速度能让苏格兰的防线手忙脚乱，苏格兰的边后卫很难一对一限制他。",
+      "苏格兰的核心罗伯逊本赛季末段明显疲劳，冲刺次数下降，这将削弱他们最依赖的边路传中战术，而巴西的中卫组合喜欢应对这类进攻。",
+      "两队实力差距明显：巴西在绝对实力和近期状态上都占优，且热身赛连续大胜（比如4-0塞内加尔），苏格兰对阵强队时往往进攻乏力。"
+    ],
+    "key_risk": "市场赔率显示巴西胜过热（65%），而模型预测平局概率高达36%，如果巴西久攻不下或苏格兰利用定位球偷袭，平局风险不可忽视。"
+  },
+  "actual_result": null
+}

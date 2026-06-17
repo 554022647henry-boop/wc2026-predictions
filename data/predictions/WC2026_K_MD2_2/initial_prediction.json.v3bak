@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_K_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:32:10.689363",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.61,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 5.0,
+        "weight": 0.25,
+        "key_factors": [
+          "哥伦比亚核心路易斯·迪亚斯的速度和盘带正是民主刚果边后卫压上后空当的克星",
+          "民主刚果禁区前沿保护不足，易被詹姆斯·罗德里格斯的远射或直塞威胁",
+          "哥伦比亚近期战绩含击败巴拉圭和加拿大，状态优于民主刚果负于日本",
+          "赔率-210对650显示哥伦比亚为明显热门"
+        ],
+        "reasoning": "哥伦比亚依赖迪亚斯的速度和詹姆斯·罗德里格斯的传球，能有效打击民主刚果边后卫空当和禁区前沿保护不足的防守弱点。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "哥伦比亚近期击败巴拉圭、战平埃及，状态稳定",
+          "DR Congo刚0-4输给日本，状态存疑",
+          "赔率大幅倾向哥伦比亚（-210 vs +650）显示实力差距"
+        ],
+        "reasoning": "哥伦比亚凭借路易斯·迪亚斯的速度和詹姆斯·罗德里格斯的组织能力，在纸面和近期状态上明显优于刚输给日本的DR Congo。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Luis Díaz作为利物浦核心，2024/25赛季状态良好，速度和盘带无对应限制方案",
+          "James Rodríguez的组织能力在近期热身赛中持续发挥作用",
+          "刚果民主共和国近期0-1输给日本，进攻乏力且缺乏针对性战术"
+        ],
+        "reasoning": "哥伦比亚凭借Luis Díaz和James Rodríguez的个人能力及近期胜绩，对比刚果民主共和国无明确限制方案且核心Kakuta状态未知，优势明显。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "哥伦比亚的核心球员Luis Díaz和James Rodriguez已在国家队多次并肩作战，有默契基础",
+          "哥伦比亚近期热身赛3胜1平1负，包括击败巴拉圭和加拿大，显示阵容磨合优于对手",
+          "刚果（金）无任何核心组合年限或战术体系报道，集训信息完全空白"
+        ],
+        "reasoning": "哥伦比亚有路易斯·迪亚斯和詹姆斯·罗德里格斯等长期配合的核心球员，并且世界杯预选赛战绩稳定，而刚果（金）无任何具体化学反应信息，且近期热身赛表现不佳，只能给哥伦比亚轻微优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "哥伦比亚FIFA排名约12-15位，刚果（金）约60-70位，差距超过40位",
+          "哥伦比亚拥有利物浦边锋路易斯·迪亚斯、经验丰富的詹姆斯·罗德里格斯等五大联赛级别球员",
+          "刚果（金）有万-比萨卡（英超主力级后卫）和姆本巴（法甲马赛主力），但整体阵容深度不足"
+        ],
+        "reasoning": "哥伦比亚拥有多名五大联赛主力（迪亚斯、罗德里格斯、米纳、桑切斯），FIFA排名差距超过50位，但刚果（金）有万-比萨卡、姆本巴等英超球员，并非完全无力抵抗。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Colombia近5场友谊赛2胜1平2负，对手含法国、克罗地亚等强队",
+          "DR Congo近3场友谊赛1平1负，且输给Bermuda级对手",
+          "赔率Colombia -210 vs DR Congo 650，市场明显看好Colombia"
+        ],
+        "reasoning": "Colombia拥有Luis Díaz和James Rodriguez等核心球员，近期面对法国、克罗地亚等队不落下风，而DR Congo仅战平丹麦、输给Bermuda，缺乏有效对抗能力。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 25%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=68%/P(D)=10%/P(B)=22%",
+    "judge_reasoning": "Colombia胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Colombia胜",
+    "confidence": "中",
+    "reasons": [
+      "哥伦比亚的锋线尖刀路易斯·迪亚斯（Luis Díaz）凭借闪电般的速度和犀利盘带，将直接冲击刚果（金）的防线，他近期的联赛状态火热，个人能力足以撕开对手的密集防守。",
+      "中场大师哈梅斯·罗德里格斯（James Rodriguez）的组织调度是球队的进攻引擎，他精准的直塞和定位球传中能为队友创造大量得分机会，尤其在刚果（金）防守经验不足的情况下。",
+      "哥伦比亚近期热身赛表现稳健，先后击败巴拉圭和加拿大，球队整体化学反应良好；而刚果（金）0-2完败日本，暴露出面对技术流球队时防线的漏洞和进攻乏力。"
+    ],
+    "key_risk": "主要爆冷风险是刚果（金）全员退守打反击，利用巴坎布（Bakambu）和维萨（Wissa）的速度偷袭得手，而哥伦比亚若久攻不下可能心态急躁，导致平局甚至失利。"
+  },
+  "actual_result": null
+}

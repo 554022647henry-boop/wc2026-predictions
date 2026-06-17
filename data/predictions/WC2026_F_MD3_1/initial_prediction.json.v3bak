@@ -1,0 +1,132 @@
+{
+  "match_id": "WC2026_F_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T03:53:45.330243",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.3,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.25,
+        "key_factors": [
+          "日本队技术型边锋的速度能针对瑞典边后卫回追不足的弱点",
+          "瑞典队身体对抗强，能利用日本队在高压下的转身和争顶短板",
+          "双方阵型相同，节奏对抗上日本控球与技术略优，瑞典反击强度更高"
+        ],
+        "reasoning": "日本队的快速技术型边锋（如伊东纯也）能利用瑞典边后卫回追慢的弱点，但瑞典的身体对抗和反击能打击日本队的转身及防空短板，双方互有牵制，日本略优。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.2,
+        "key_factors": [
+          "小组赛首轮双方赢球动机均等",
+          "缺乏关键球员、战术或历史交锋信息",
+          "无主场优势或心理包袱数据"
+        ],
+        "reasoning": "双方均无明显优势，仅因小组赛MD1动机平等且信息不足，无法识别具体球员或战术差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.15,
+        "key_factors": [
+          "双方关键球员（如远藤航、肯·塞马）的状态和缺阵影响均无数据",
+          "无针对性防守方案或备用方案信息",
+          "无赔率或近期表现数据支撑任何一方优势"
+        ],
+        "reasoning": "缺乏具体球员状态、伤停和战术信息，无法判断日本或瑞典在核心球员层面存在任何优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Japan与Sweden均无核心组合年限数据",
+          "两队系统稳定性仅注明‘教练已确认’，无具体磨合时间",
+          "无任何关于更衣室氛围或内部矛盾的公开报道"
+        ],
+        "reasoning": "双方均无核心组合年限、教练执教时长或战术磨合细节等任何具体事实依据，无法区分化学反应差异"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.07,
+        "key_factors": [
+          "日本拥有英超阿森纳主力富安健洋和德甲斯图加特后卫伊藤洋辉",
+          "瑞典有英超曼联后卫林德洛夫",
+          "赛前缺乏排名、身价及赔率数据"
+        ],
+        "reasoning": "日本有多名五大联赛主力（富安健洋、伊藤洋辉），瑞典有林德洛夫，但缺乏顶级巨星且排名未知，整体均衡。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Japan近3场友谊赛全胜且零封对手（vs冰岛、英格兰、苏格兰）",
+          "Sweden近5场2胜2平1负，含世预赛胜波兰和乌克兰的高强度胜利",
+          "日本无加时或高强度消耗记录，瑞典3-2波兰一战可能消耗更多体力"
+        ],
+        "reasoning": "Japan凭借三连胜和零封纪录展示攻防平衡，但友谊赛对手偏弱；Sweden世预赛表现更硬核但状态不稳，核心伊萨克状态存疑。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "日本队在近期状态上占优，评分高出瑞典1分，但瑞典队的防守韧性和战术纪律性不容小觑，双方可能陷入僵持。",
+      "关键球员评分持平，意味着两队缺乏决定比赛的超级明星，比赛可能更多依赖整体，进球机会有限。",
+      "小组赛阶段平局是常见结果，尤其当两队实力接近且缺少战意差异时，模型给出的平局概率最高达38%。"
+    ],
+    "key_risk": "瑞典队若利用身体优势打破日本队的传控节奏，可能取得意外领先，但日本队反击速度快，爆冷胜负概率低。"
+  },
+  "actual_result": null
+}

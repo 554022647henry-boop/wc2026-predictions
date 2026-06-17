@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_G_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T04:01:51.950147",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.54,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "New Zealand防守弱点明确：面对快速技术型边锋时身后空当和中后卫转身慢，Belgium 4-3-3正好拥有此类边锋",
+          "Belgium防守弱点在应对快速反击，但New Zealand核心前锋Chris Wood是站桩型中锋，非速度型，难以有效冲击",
+          "赔率显示Belgium是绝对热门（-450 vs +1200），反映实力和战术预期差距悬殊",
+          "New Zealand近期战绩面对强队（如哥斯达黎加、沙特）均落败，抗压能力存疑"
+        ],
+        "reasoning": "Belgium凭借快速技术型边锋完美利用New Zealand中后卫转身慢和边后卫身后空当的防守弱点，而New Zealand进攻缺乏速度威胁难以惩罚比利时边后卫回防漏洞。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "比利时赔率-450，新西兰+1200，市场预期差距巨大",
+          "新西兰近期热身赛输给哥斯达黎加和沙特，状态成疑",
+          "比利时阵容深度厚，无确认伤停，全员可战"
+        ],
+        "reasoning": "比利时全队身价和大赛经验远超新西兰，核心德布劳内和卢卡库的创造性可轻易撕开对手防线，而新西兰仅有克里斯·伍德单一进攻支点，实力差距在赔率上已反映为明显优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "无确认伤停信息影响任何一方核心球员",
+          "无针对性防守或战术限制方案披露",
+          "所有关键球员（Ryan Thomas、Kevin De Bruyne等）状态均为未知"
+        ],
+        "reasoning": "缺乏任何关于Chris Wood或Kevin De Bruyne等核心球员的具体状态、伤停或战术限制信息，无法判断优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "比利时全队多数来自五大联赛，但核心德布劳内、卢卡库等近年年龄增长，国家队配合时间有限",
+          "新西兰长期在大洋洲赛事中练兵，与顶级对手抗衡经验不足",
+          "两者均无明确内部矛盾报道，但比利时教练执教时间更久体系更稳定"
+        ],
+        "reasoning": "比利时虽有大牌球员但核心更替频繁，新西兰依赖伍德但整体磨合有限，信息不足以拉开更大分差。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "比利时阵容中多名球员效力于欧冠级别俱乐部（如库尔图瓦/皇马、蒂勒曼斯/维拉），新西兰仅Chris Wood一人为五大联赛主力",
+          "赛前赔率显示比利时胜赔为-450（隐含概率约82%），机构认定其为绝对热门",
+          "新西兰近期面对非强队如哥斯达黎加和沙特均告负，暴露了与顶级球队对抗的实力断层"
+        ],
+        "reasoning": "比利时拥有库尔图瓦、卢卡库等多名五大联赛核心球员，整体阵容实力和大赛经验远超以Chris Wood为单核、多数球员来自二三级联赛的新西兰。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "比利时近5场场均进球超过2.5，进攻稳定性远超新西兰",
+          "新西兰近4场友谊赛仅1胜，且2场被零封，士气低迷",
+          "赔率显示比利时胜率极高，实力和状态碾压对手"
+        ],
+        "reasoning": "比利时近5场4胜1平，且大胜突尼斯、克罗地亚，进攻火力稳定；新西兰近4场友谊赛1胜3负，防守脆弱，面对英格兰和海地均失球，Chris Wood缺乏有效支援。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 39%：模型 B_WIN P(A)=24%/P(D)=33%/P(B)=43% vs 市场 P(A)=8%/P(D)=10%/P(B)=82%",
+    "judge_reasoning": "Belgium胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "高",
+    "reasons": [
+      "比利时拥有世界级中场德布劳内，他的传球视野和关键直塞能轻松撕开新西兰的防线，尤其是在对手防守强度不足时，德布劳内会制造多次威胁机会。",
+      "新西兰锋线核心伍德虽在诺丁汉森林表现出色，但比利时后防有经验丰富的球员盯防，而新西兰中场缺乏创造力，很难为伍德输送足够炮弹。",
+      "比利时近期状态稳定，热身赛2-1击败埃及，而新西兰面对中北美球队哥斯达黎加0-1落败，整体实力差距明显，比利时控球和节奏控制将主导比赛。"
+    ],
+    "key_risk": "新西兰利用密集防守和反击，由伍德抓住定位球或对手失误偷袭得手，而比利时若久攻不下可能急躁，导致平局或冷门。"
+  },
+  "actual_result": null
+}

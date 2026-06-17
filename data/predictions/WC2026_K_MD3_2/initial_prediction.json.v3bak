@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_K_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T04:26:55.305260",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.49,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "DR Congo前锋巴坎布的个人能力是Uzbekistan防守弱点的克星（身后球）",
+          "Uzbekistan防守弱项（被身后球打穿）直接对应DR Congo潜在进攻优势（利用巴坎布的速度）",
+          "DR Congo的防守弱点（横向转移和远射）需要Uzbekistan有精准的传球和远射手，但信息未明确其有此能力",
+          "双方定位球防守都有问题，但DR Congo拥有更强的身体对抗能力，可能在争顶中占优"
+        ],
+        "reasoning": "DR Congo拥有核心前锋巴坎布，其特点能有效利用乌兹别克斯坦中卫转身慢、协同差的防守短板，同时自身定位球防守问题虽存但乌兹别克斯坦进攻端缺乏明确强点来惩罚。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "双方均为小组赛首轮，必须赢的动机相同（无差异）",
+          "DR Congo核心前锋Cédric Bakambu状态不明，近期球队输给科特迪瓦、塞内加尔等强队",
+          "Uzbekistan近期战胜阿联酋和约旦，但输给伊朗和韩国，缺乏硬仗取胜记录"
+        ],
+        "reasoning": "两队首轮无额外压力，实力接近，DR Congo依赖Bakambu但状态不稳，Uzbekistan整体性稍好但缺乏致命武器，平衡局面。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "DR Congo核心Cédric Bakambu状态不明，无近期俱乐部数据",
+          "Uzbekistan核心Jaloliddin Masharipov状态未知，无针对性限制信息",
+          "两队近期战绩均无持续连胜或连败，差异微弱"
+        ],
+        "reasoning": "所有关键球员状态不明，近期战绩相近，无伤停或针对性战术信息，无法判断任何一方优势"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "无具体数据支持核心组合的年限或俱乐部关联度",
+          "无内部矛盾或更衣室氛围的具体报道",
+          "缺乏近期比赛阵容和战术轮换的详细资料"
+        ],
+        "reasoning": "缺乏具体球员合作年限、更衣室动态或战术体系成熟度的信息，仅知两队教练已确认，无法评估核心组合稳定性及体系成熟度的差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DR Congo有4名五大联赛主力（Mbemba/马赛、Wan-Bissaka/英超、Masuaku/贝西克塔斯、Tuanzebe/英超经验）",
+          "乌兹别克斯坦大名单无五大联赛球员，主要来自本国联赛和亚洲联赛",
+          "DR Congo近期对手含科特迪瓦、塞内加尔、喀麦隆等强队，乌兹别克斯坦对手强度相对较低"
+        ],
+        "reasoning": "DR Congo拥有Mbemba、Wan-Bissaka、Masuaku、Tuanzebe等五大联赛主力，整体阵容档次明显优于全队来自亚洲/国内联赛的乌兹别克斯坦，构成2项具体有利因素。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DR Congo近3场进球数波动（1-0-2），进攻节奏不稳定",
+          "Uzbekistan近3场仅1球，进攻持续低迷",
+          "双方均无连胜或连败，状态信号平缓"
+        ],
+        "reasoning": "DR Congo近期进攻有波动但略优，Uzbekistan近3场仅进1球且连续2场被零封，但双方友谊赛含金量相近，整体无明显差距。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "两队都缺大赛经验，刚果的巴坎布和乌兹别克斯坦的阿卜杜拉伊莫夫各自是进攻核心，但状态数据缺失，可能互相限制。",
+      "近期战绩起伏，刚果胜赞比亚但输科特迪瓦，乌兹别克赢阿联酋但负伊朗，双方缺乏致命一击的稳定性。",
+      "战术对位和绝对实力上刚果稍占优（+0.5），但情境压力和球队化学评分平衡，预计是谨慎拉锯战。"
+    ],
+    "key_risk": "乌兹别克斯坦通过阿卜杜拉伊莫夫的中场串联意外爆冷，利用刚果防守紧凑性不足打反击。"
+  },
+  "actual_result": null
+}

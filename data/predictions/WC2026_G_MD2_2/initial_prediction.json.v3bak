@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_G_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:06:25.166935",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.04,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.8,
+        "b_score": 6.7,
+        "delta": -0.9,
+        "confidence": 5.0,
+        "weight": 0.25,
+        "key_factors": [
+          "新西兰防守端中后卫转身速度偏慢，容易被埃及快速边锋打身后",
+          "新西兰高位逼抢时中场与防线脱节，埃及可通过边中结合利用该区域",
+          "埃及对横向转移球和禁区弧顶远射的保护不力，但新西兰无明确远射或转移球战术",
+          "埃及4-3-3阵型在边路人数上可局部压制新西兰4-4-2的边前卫"
+        ],
+        "reasoning": "埃及的快速技术型边锋（如特雷泽盖或萨拉赫类球员）能利用新西兰中后卫转身慢和身后空当的防守弱点，而新西兰缺乏明确进攻套路来打击埃及的防守漏洞"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "埃及核心球员萨拉赫实力远超新西兰任何球员，赔率（-160 vs 450）显示巨大差距",
+          "新西兰近期仅胜弱旅斐济和所罗门群岛，对强队澳洲和秘鲁不胜",
+          "双方均为小组赛首战，赢球动机相近，但纸面实力主导评分"
+        ],
+        "reasoning": "埃及凭借萨拉赫领衔的阵容和更深厚的实力占据明显优势，新西兰仅靠克里斯·伍德难以弥补整体差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示埃及-160大幅领先新西兰+450，市场明确看好埃及。",
+          "新西兰近期对阵澳大利亚和约旦不胜，进攻效率存疑。",
+          "埃及中场Hamdy Fathy和Emam Ashour是稳定核心，无伤停信息。"
+        ],
+        "reasoning": "埃及赔率领先且整体实力更强，新西兰核心Chris Wood状态未知且近期战绩平庸。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "新西兰缺乏关于阵容稳定性和教练执教时长的具体信息",
+          "埃及同样缺乏核心组合和体系磨合度的具体数据",
+          "无任何关于双方内部矛盾或临阵换人的公开报道"
+        ],
+        "reasoning": "双方都缺乏关于核心组合磨合年限、更衣室氛围和战术体系稳定性的具体信息，无法评估优势，只能判定为完全平等。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "埃及赔率显示明显优势（-160 vs New Zealand +450）",
+          "新西兰核心Chris Wood虽强但缺乏同等档次的队友支持",
+          "埃及阵容中多名球员效力非洲顶级俱乐部及欧洲二级联赛，整体厚度更好"
+        ],
+        "reasoning": "埃及赔率明显占优（-160 vs +450），且阵容深度优于新西兰，后者过度依赖Chris Wood一人的表现。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "埃及近3场不败且0-0平西班牙，体现防守韧性",
+          "新西兰近3场友谊赛全败且丢7球，状态下滑明显",
+          "赔率显示埃及被看好（-160），市场信心更强"
+        ],
+        "reasoning": "埃及对更强对手表现更稳健，新西兰友谊赛连败且防守漏洞多，埃及有轻微优势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 30%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=23%/P(D)=9%/P(B)=68%",
+    "judge_reasoning": "Egypt胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Egypt胜",
+    "confidence": "中",
+    "reasons": [
+      "埃及拥有状态火热的萨拉赫，他在锋线的速度和突破会让新西兰防线非常难受，尤其是缺少顶级联赛后卫的新西兰后场很难一对一限制他。",
+      "新西兰近期面对强队战绩不佳，尤其是对阵澳大利亚和秘鲁时暴露出中场控制力不足的问题，而埃及的埃尔内尼和特雷泽盖能轻松掌控中场节奏。",
+      "埃及在非洲区预选赛和友谊赛展现了稳定的防守体系，近5场比赛仅丢2球，而新西兰的进攻主要依赖克里斯·伍德一人，一旦被重点盯防便难以破门。"
+    ],
+    "key_risk": "新西兰可能采用密集防守策略，加上埃及近期客场进攻效率有时偏低，若萨拉赫被多人包夹且运气不佳，平局概率不可忽视。"
+  },
+  "actual_result": null
+}

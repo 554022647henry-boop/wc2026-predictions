@@ -1,0 +1,132 @@
+{
+  "match_id": "WC2026_C_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:44:54.953119",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.01,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "摩洛哥4-3-3阵型利用边锋冲击力，直接攻击苏格兰3-4-2-1体系下的边路空当",
+          "苏格兰中后卫回追速度偏慢，面对摩洛哥快速反击时容易暴露",
+          "摩洛哥后场出球失误的弱点，苏格兰赛前信息中缺少高位逼抢的战术描述，威胁性降低"
+        ],
+        "reasoning": "摩洛哥的快速反击和边路突破能精准打击苏格兰防线回追速度偏慢及边路空当的弱点，而苏格兰的进攻威胁相对有限。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "摩洛哥-135赔率 vs 苏格兰+400，市场明显看好摩洛哥",
+          "摩洛哥近期1-2小负阿根廷，苏格兰0-2负巴西且0-3负葡萄牙",
+          "苏格兰关键球员罗伯逊年龄31岁，体能可能受限"
+        ],
+        "reasoning": "摩洛哥赔率占优且近期对阵强队表现更稳定，苏格兰虽有罗伯逊和麦金但整体实力稍逊。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示摩洛哥为热门（-135 vs Scotland 400）",
+          "双方近期战绩相近，均有两场失利",
+          "无确认伤停或针对核心球员的限制方案"
+        ],
+        "reasoning": "摩洛哥因赔率支持（-135）有轻微优势，但双方关键球员状态不明且无深度信息，苏格兰仅靠McGinn和Robertson的经验难以形成明显优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Morocco在赔率上被看好（-135 vs Scotland 400）暗示市场对其整体实力更认可",
+          "Scotland近期战绩包括0-2负巴西和0-3负葡萄牙，稳定性存疑",
+          "两队均无公开矛盾报道，集训时间相同，无明显更衣室差距"
+        ],
+        "reasoning": "双方均无核心阵容磨合时间数据，Morocco因赔率优势及对阵阿根廷的顽强表现略占心理优势，但不足以构成实质化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "摩洛哥阵容有7-8位五大联赛主力（哈基米、马兹拉维、阿格尔德、布努等），苏格兰仅2-3人（罗伯逊、麦克金、古恩）",
+          "FIFA排名差约25-30位，摩洛哥稳居世界前15，苏格兰约40位左右",
+          "赔率显示摩洛哥-135 vs 苏格兰+400，双方实力差距约一球以上"
+        ],
+        "reasoning": "摩洛哥坐拥阿什拉夫·哈基米、马兹拉维、布努等五大联赛主力，排名领先苏格兰近30位，赔率鲜明反映实力差，苏格兰仅罗伯逊与麦克金支撑中场。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Morocco近5场3胜2平，保持不败，进攻端打入10球仅失1球",
+          "Scotland近3场友谊赛2负1胜，状态不稳，对手实力偏弱",
+          "赔率明显倾向Morocco（-135 vs 400），反映市场对状态差异的认可"
+        ],
+        "reasoning": "Morocco近5场保持不败且近期进攻高效，而Scotland状态起伏明显，Andrew Robertson与John McGinn虽为核心但整体信不足。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Morocco胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Morocco胜",
+    "confidence": "中",
+    "reasons": [
+      "哈基米的右路冲击力是苏格兰防线的噩梦，罗伯逊的防守回追速度已不如巅峰期，摩洛哥擅长的快速反击正好命中这个软肋。",
+      "苏格兰中场依赖麦金的远射和后插上，但摩洛哥拥有恩·内斯里和齐耶赫的稳定配合，中场控球和传球精度更占优势。",
+      "从赔率看，DraftKings开出的摩洛哥胜赔-135明显看好客队，而苏格兰胜赔高达400，机构对苏格兰爆冷信心不足。"
+    ],
+    "key_risk": "苏格兰利用密集防守和定位球战术，由罗伯逊或麦金通过角球或远射意外得分，拖垮摩洛哥的阵型耐心。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,135 @@
+{
+  "match_id": "WC2026_L_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:21:19.591919",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 0.71,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Ghana核心库杜斯（西汉姆联）具备个人突破能力，可针对Panama边路防守覆盖不足的问题",
+          "Panama防线面对快速传切易失位，而Ghana中场帕尔特伊擅长直塞和节奏控制",
+          "Ghana近期战绩（胜日本、赞比亚）优于Panama（负美国、平沙特），状态更稳定",
+          "Panama缺少个人能力突出的进攻球员，难以高效利用Ghana身后空当"
+        ],
+        "reasoning": "Ghana凭借库杜斯的盘带和帕尔特伊的调度能有效利用Panama中场空当，而Panama缺少可靠反击点来持续打击Ghana的高位防线身后的短板。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Ghana赔率1.25显示轻微优势，但非压倒性",
+          "穆罕默德·库杜斯和托马斯·帕尔特伊有伤病史，状态存疑",
+          "Panama近期输给美国，但无重大心理包袱"
+        ],
+        "reasoning": "Ghana凭借库杜斯和帕尔特伊的个人能力在纸面上稍占优势，但双方状态和伤情信息不足，差距微小。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "加纳赔率125明显低于巴拿马240，市场看好加纳",
+          "穆罕默德·库杜斯有腿筋伤病史，但已恢复，存隐患",
+          "巴拿马关键球员无伤停报告，阵容完整",
+          "双方近期战绩均不稳定，无强势连胜记录"
+        ],
+        "reasoning": "加纳赔率占优且库杜斯可参赛，但状态不明，巴拿马无确凿劣势，优势极微。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "加纳核心球员库杜斯和帕尔特伊有伤病史，状态未确认",
+          "巴拿马近期热身战平沙特，输美国但过程不差",
+          "两队教练均确认，但集训时长和战术磨合细节未知"
+        ],
+        "reasoning": "两队均无关于核心阵容年限、更衣室矛盾或教练更迭的具体信息，库杜斯的伤病史和巴拿马的稳定战绩只能推测细微差异，但不构成明显维度优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加纳拥有西汉姆联核心库杜斯和阿森纳中场帕尔特伊，两人均为五大联赛主力",
+          "巴拿马无五大联赛主力球员，阵容以中北美和南美联赛球员为主",
+          "赛前赔率加纳125 vs 巴拿马240，预期胜率约65%",
+          "加纳近期战绩2胜1平1负，含战胜日本，状态稳定"
+        ],
+        "reasoning": "加纳有库杜斯和帕尔特伊双核领衔的五大联赛班底，阵容明显优于以美洲联赛为主的巴拿马，赔率也确认加纳是热门"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加纳近5场友谊赛1平4负，4场丢球≥2个，防守崩溃",
+          "巴拿马近5场2胜2平1负，包括战平波黑和沙特",
+          "巴拿马4-2胜多米尼加显示进攻火力，而加纳进攻乏力"
+        ],
+        "reasoning": "加纳虽有库杜斯、帕尔特伊等球星，但近5场友谊赛4负1平且防守糟糕，状态明显下滑；巴拿马近期2胜2平1负表现均衡，整体更稳定。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Ghana胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ghana胜",
+    "confidence": "中",
+    "reasons": [
+      "加纳的中场核心托马斯·帕尔特伊虽然年龄偏大，但他在阿森纳的绞杀能力足以切断巴拿马中场卡拉斯奎拉的传球线路，为库杜斯在前场制造空间",
+      "巴拿马近期对阵美国、墨西哥等强队均告失利，面对非洲球队的体能和身体对抗劣势明显，加纳的绝对实力评分高出1.5分说明硬实力碾压",
+      "加纳近5场比赛赢下3场，包括击败日本和赞比亚，而巴拿马在友谊赛中被沙特逼平，状态不稳，且加纳赔率125远低于巴拿马的240，市场更看好非洲劲旅"
+    ],
+    "key_risk": "加纳核心库杜斯和帕尔特伊近期伤病史可能影响场上发挥，如果两人状态不佳，缺少创造力的加纳可能被巴拿马拖入平局"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_A_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:45:31.086903",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.12,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.25,
+        "key_factors": [
+          "捷克防线对快速反击的脆弱性",
+          "墨西哥4-3-3具备前场速度和反击能力",
+          "捷克关键射手Patrik Schick伤情不明，进攻能力打折",
+          "墨西哥赔率明显占优（1.8 vs 3.7）"
+        ],
+        "reasoning": "墨西哥的快速反击能利用捷克三中卫边路空当，而捷克缺少希克后进攻威胁下降，但双方定位球防守弱点相互抵消。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率Mexico 1.8 vs Czechia 3.7，市场看好Mexico",
+          "Patrik Schick伤情不明且赛季末状态存疑，影响Czechia锋线",
+          "Mexico近期热身赛2-2平美国，状态稳定"
+        ],
+        "reasoning": "Mexico赔率1.8明显压制Czechia的3.7，且核心射手Schick伤情不明削弱进攻火力，但无其他压倒性心理或体能因素。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Czechia确认缺阵核心前锋Patrik Schick，进攻端关键输出点缺失",
+          "Mexico无伤停报告，阵容齐整，赔率1.8显示市场明显看好",
+          "Czechia最近2场1负（1-2 vs Poland），状态有波动"
+        ],
+        "reasoning": "Mexico在赔率上被高看（1.8 vs 3.7），且Czechia核心前锋Patrik Schick确认缺阵，近2场1负；Mexico无缺阵隐患，阵容完整度占优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Czechia核心组合合作年限未提供，无数据可评估",
+          "Mexico核心组合合作年限未提供，无数据可评估",
+          "双方系统稳定性均为教练已确认，无进一步战术磨合细节"
+        ],
+        "reasoning": "双方均缺乏核心组合合作年限、教练时长、更衣室氛围等具体数据，仅教练已确认，无法识别任何有利因素，故设定为无差异平局。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "捷克核心射手帕特里克·希克伤情不明，状态存疑，缺乏能改变比赛的超级球员",
+          "墨西哥后防有C·蒙特斯（西班牙人）和J·巴斯克斯（AC米兰）等五大联赛主力，防线档次更高",
+          "墨西哥锋线及中场球员整体效力于更高水平联赛，首发阵容经验更丰富"
+        ],
+        "reasoning": "墨西哥纸面实力占优，拥有奥乔亚、蒙特斯等多名五大联赛主力，而捷克队缺少状态不明的核心射手希克，中场控制力可能处于下风。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥近5场友谊赛4胜1平，且连续零封葡萄牙、比利时等强队",
+          "捷克近2场预选赛均2-2战平，防守不稳且希克伤情不明",
+          "墨西哥赔率1.8远低于捷克3.7，市场明确看好"
+        ],
+        "reasoning": "墨西哥近5场友谊赛4胜1平且4次零封，攻击线表现稳定，而捷克近期预选赛连续丢球且缺少关键射手希克，状态趋势明显处于劣势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Mexico胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "中",
+    "reasons": [
+      "墨西哥近期状态火热，近5场3胜1平1负，而捷克在友谊赛和欧国联中表现起伏，刚输给波兰，整体稳定性不如对手。",
+      "关键球员希克伤情不明，缺席风险极大，捷克的进攻火力将大打折扣；反观墨西哥的希门尼斯和泽德哈斯状态正佳，锋线更具威胁。",
+      "赔率上墨西哥胜赔仅1.8，而捷克高达3.7，市场明显看好墨西哥；且墨西哥在战术对位和情境压力（小组赛关键战）上都占优，中场控制力更强。"
+    ],
+    "key_risk": "若希克能带伤上阵并找回状态，捷克主场作战可能爆冷逼平，但模型和最新信息均倾向墨西哥胜出。"
+  },
+  "actual_result": null
+}

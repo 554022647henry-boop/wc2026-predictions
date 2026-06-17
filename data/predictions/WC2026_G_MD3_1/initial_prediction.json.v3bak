@@ -1,0 +1,135 @@
+{
+  "match_id": "WC2026_G_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T03:59:23.299935",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.06,
+    "p_a_win": 0.32,
+    "p_draw": 0.39,
+    "p_b_win": 0.29,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "伊朗反击中身体对抗占优，能利用埃及边后卫与中卫间隙进行斜插和传中",
+          "埃及防守对快速横向转移和远射保护不力，伊朗中场（如贾汉巴赫什）擅长此类远射",
+          "埃及核心萨拉赫疑似状态/年龄下降，伊朗高强度防守能有效限制其内切",
+          "伊朗体能下降后防守移动不足，但埃及缺乏针对性破密集防守的套路报道"
+        ],
+        "reasoning": "伊朗利用埃及防线对横向转移和弧顶远射的痼疾，且塔雷米/阿兹蒙的反击组合对埃及不稳固的边中结合部威胁更大。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率DraftKings显示埃及为+110热门，伊朗为+300冷门",
+          "双方均为小组赛第一场，求胜动机无显著差异",
+          "核心球员萨拉赫和塔雷米均存在推测性伤病风险，但无确凿报告"
+        ],
+        "reasoning": "赔率显示埃及被略微看好（+110 vs +300），但因缺乏实时伤病与球员状态的可靠证据，且小组赛首轮双方动机相近，优势微乎其微。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Mohamed Salah和Mehdi Taremi均无2026年6月具体伤停报告，仅推测存在伤病史",
+          "DraftKings赔率显示埃及胜赔110远低于伊朗的300，暗示市场看好埃及",
+          "埃及近5场4胜1平，包括战胜Cameroon和Senegal，伊朗近期战绩未提供",
+          "双方均无确认缺阵球员，但伊朗前场核心Taremi和Azmoun有年龄和伤病推测风险"
+        ],
+        "reasoning": "埃及凭借赔率暗示的微弱优势（DraftKings赔率Egypt 110 vs Iran 300）和近期战绩更佳（近5场4胜1平）略占上风，但缺乏具体球员状态证实，伊朗无确认伤停但Taremi和Azmoun推测有伤病风险"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "无核心组合年限信息",
+          "无内部矛盾或教练执教时长数据",
+          "无战术系统磨合时间"
+        ],
+        "reasoning": "赛前信息不足，无法判定埃及或伊朗在核心组合稳定性、更衣室氛围或体系成熟度上有任何优势，故均给予基线分数。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Egypt拥有利物浦主力萨拉赫，具备单场改变比赛能力",
+          "Iran核心塔雷米和Azmoun年龄偏大且无具体状态保障",
+          "DraftKings赔率Egypt 110 vs Iran 300显示一方优势明显"
+        ],
+        "reasoning": "Egypt有萨拉赫和马穆什双核驱动，伊朗的塔雷米和阿兹蒙年龄偏大且无顶级联赛支撑，赔率倾向Egypt。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "埃及近5场友谊赛3胜1平1负，对手包括巴西、西班牙",
+          "伊朗近5场友谊赛2胜2平1负，大胜哥斯达黎加",
+          "埃及赔率110 vs 伊朗300，市场明显倾向埃及",
+          "埃及核心萨拉赫无2026年6月具体状态报告，存在不确定性"
+        ],
+        "reasoning": "埃及赔率优势明显且近期友谊赛对手实力更强，但萨拉赫缺失状态信息削弱了可信度；伊朗无关键球员确认伤停但攻击线年龄偏大。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 DRAW P(A)=32%/P(D)=39%/P(B)=29% vs 市场 P(A)=55%/P(D)=15%/P(B)=30%",
+    "judge_reasoning": "Egypt 胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Egypt 胜",
+    "confidence": "中",
+    "reasons": [
+      "埃及拥有萨拉赫和马尔穆什的双核突击，伊朗防线虽硬但转身偏慢，法兰克福核心马尔穆什的穿插跑动可能撕开缺口。",
+      "伊朗近期状态起伏，6月刚0-2完败日本，而埃及近5场不败且击败喀麦隆，攻防体系更稳定。",
+      "埃及中场控制力占优，对阵伊朗的4-4-2菱形中场时，埃及双后腰能切断塔雷米与阿兹蒙的联系。"
+    ],
+    "key_risk": "萨拉赫年龄增长状态存疑，若埃及进攻哑火，伊朗可能依靠定位球或反击偷分，高赔率下市场看衰平局但需警惕意外。"
+  },
+  "actual_result": null
+}

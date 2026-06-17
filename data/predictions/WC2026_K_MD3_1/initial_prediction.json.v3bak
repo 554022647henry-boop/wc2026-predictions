@@ -1,0 +1,132 @@
+{
+  "match_id": "WC2026_K_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T04:23:44.889047",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.05,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "葡萄牙近期连胜荷兰和瑞士，状态更优",
+          "哥伦比亚防线回追速度慢，易被葡萄牙快速进攻打穿",
+          "葡萄牙边后卫助攻后空当可能被哥伦比亚迪亚兹利用"
+        ],
+        "reasoning": "葡萄牙凭借更稳定的近期战绩和整体实力在攻防转换中占优，但哥伦比亚的反击速度可能针对葡萄牙边后卫空当。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "哥伦比亚关键球员J罗状态推测下滑，近期输给阿根廷并战平厄瓜多尔。",
+          "葡萄牙近期胜荷兰、瑞士，阵容深度与士气占优。",
+          "赔率差距巨大（葡萄牙110.0 vs 哥伦比亚255.0），市场看好葡萄牙。"
+        ],
+        "reasoning": "赔率与近期战绩均指向葡萄牙明显占优（葡萄牙110vs哥伦比亚255，且击败荷兰、瑞士），但缺少休息日或心理包袱等额外因素。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.15,
+        "key_factors": [
+          "James Rodríguez无状态细节",
+          "Bruno Fernandes无状态细节",
+          "无任何伤停或限制方案信息"
+        ],
+        "reasoning": "信息不足以评估差距，两队关键球员状态均无具体数据，无法支持任何分数偏移"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "葡萄牙近期五场四胜，含胜荷兰；哥伦比亚有输阿根廷波动",
+          "赔率显示葡萄牙胜率预期远高于哥伦比亚",
+          "两队均无核心组合年限或更衣室矛盾公开报道"
+        ],
+        "reasoning": "葡萄牙近期战绩更稳定且赔率占优，但双方核心组合和体系磨合细节缺失，仅能基于有限线索认为葡萄牙有轻微优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "葡萄牙大名单包含多名五大联赛冠军级后卫（鲁本·迪亚斯、坎塞洛），哥伦比亚后防米纳、桑切斯近年状态下滑。",
+          "市场赔率葡萄牙胜赔110远低于哥伦比亚255，体现赛前预期差距。",
+          "哥伦比亚关键球员J罗（圣保罗）状态较巅峰期明显下滑，而葡萄牙中场（如B席等）正值当打之年。"
+        ],
+        "reasoning": "葡萄牙阵容普遍来自五大联赛豪门（如迪亚斯、坎塞洛等），哥伦比亚虽有路易斯·迪亚兹但整体欧洲顶级联赛深度不足，且赔率（葡萄牙110 vs 哥伦比亚255）明确指向葡萄牙优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Portugal近3场全胜且仅失1球（2-0荷兰、3-0瑞士、4-0斯洛伐克）",
+          "Colombia近3场对法国、克罗地亚、日本只赢1场，防守不稳",
+          "赔率显示Portugal获胜概率更高（110对255）"
+        ],
+        "reasoning": "Portugal近期3连胜且零封对手（荷兰、瑞士、斯洛伐克），而Colombia对强队（法国、克罗地亚）连续失利，Portugal有状态优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "中",
+    "reasons": [
+      "葡萄牙边路内切战术直击哥伦比亚防线软肋：B席和莱奥的快速突破将频繁利用哥伦比亚边后卫回追慢的弱点，尤其是莱奥的左路强突，容易制造传中或内切射门机会。",
+      "葡萄牙整体实力和近期状态占优：近5场4胜1平，包括2-0胜荷兰，而哥伦比亚仅2胜2平1负，且对强队阿根廷1-2告负，大赛稳定性上葡萄牙更可靠。",
+      "C罗虽41岁但B席和拉莫斯主导进攻：C罗可充当支点吸引防守，为B席和贡萨洛·拉莫斯创造空间，尤其拉莫斯在门前抢点能力突出，能终结比赛。"
+    ],
+    "key_risk": "葡萄牙存在轻敌风险，若哥伦比亚用密集防守和J罗的定位球偷袭得手，可能制造冷门平局。"
+  },
+  "actual_result": null
+}

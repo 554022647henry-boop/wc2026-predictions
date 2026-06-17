@@ -1,0 +1,132 @@
+{
+  "match_id": "WC2026_A_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:32:13.387796",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.08,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "捷克定位球进攻可针对南非定位球防守漏洞",
+          "南非4-3-3边锋可攻击捷克三中卫边路空当",
+          "捷克赔率-130显示明显实力优势"
+        ],
+        "reasoning": "捷克在定位球进攻（绍切克争顶）和整体实力上占优，但南非的快攻和三中卫身后的空当是主要威胁。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "捷克近5场比赛3胜1平1负，而南非近5场1胜2平2负且刚0-3输给塞内加尔",
+          "捷克拥有希克（前锋）和绍切克（中场）等顶级联赛球员，南非阵容缺乏欧洲主流联赛经验",
+          "赔率显示捷克为-130大热门，南非为390明显弱旅"
+        ],
+        "reasoning": "捷克凭借帕特里克·希克和托马斯·绍切克领衔的欧战级别阵容，以及更稳定的近期战绩，在面对刚惨败于塞内加尔的南非时占据明显优势；赔率也强烈指向捷克获胜。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "捷克近5场4胜1平，含击败挪威等强队",
+          "南非近2场1平1负，0-3负于塞内加尔",
+          "赔率DraftKings显示捷克-130，南非+390，市场预期差距明显"
+        ],
+        "reasoning": "捷克近期战绩和阵容深度占优，Tomáš Souček的中场控制力高于南非Teboho Mokoena，且赔率明显支持捷克。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Czechia近期友谊赛1胜1平，但关键球员Schick和Souček状态未知",
+          "South Africa刚0-3负于Senegal，且缺乏集训信息",
+          "两队均无公开更衣室矛盾或长期战术磨合记录"
+        ],
+        "reasoning": "双方均无核心组合年限或体系稳定性的具体数据，仅凭近期战绩和赔率差异不足以判断化学反应优劣。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "捷克拥有勒沃库森前锋帕特里克·希克和西汉姆联中场托马斯·绍切克，两人均为五大联赛主力",
+          "DraftKings 赔率捷克 -130 vs 南非 390，显示捷克赢面显著更高",
+          "捷克近5场取得3胜1平1负，包括平波兰、胜挪威；南非近2场0-3负塞内加尔、1-1平科特迪瓦，状态和对手质量均显弱势"
+        ],
+        "reasoning": "捷克凭借五大联赛核心（希克、绍切克）和稳定的近期战绩（胜挪威、平波兰），在阵容档次和赔率上明显优于南非（国内联赛为主，刚输塞内加尔）。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "捷克近5场2胜3平保持不败，包括逼平丹麦。",
+          "南非近4场仅1胜，对手均为低排名球队。",
+          "赔率强烈支持捷克（-130 vs 390），显示实力悬殊。"
+        ],
+        "reasoning": "捷克近5场不败且战胜危地马拉和科索沃，核心希克和索切克状态正佳，而南非近期对手弱且缺乏硬仗证明。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 27%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=54%/P(D)=9%/P(B)=38%",
+    "judge_reasoning": "Czechia胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Czechia胜",
+    "confidence": "中",
+    "reasons": [
+      "捷克近期热身赛2-0胜挪威、1-1平波兰，状态稳定，而南非0-3惨败塞内加尔，防线漏洞明显",
+      "捷克锋线有希克（勒沃库森射手）和中场核心绍切克，两人身高和对抗能力在定位球上占优，南非防空能力堪忧",
+      "战术对位评分捷克6.5-5.5领先，南非面对高压逼抢时失误率高，捷克可抓住中场到前场的转换机会"
+    ],
+    "key_risk": "市场赔率对捷克胜预期过高（54%），而模型仅38%，若南非摆铁桶阵并利用佩西·陶的速度反击，捷克久攻不下可能被逼平"
+  },
+  "actual_result": null
+}

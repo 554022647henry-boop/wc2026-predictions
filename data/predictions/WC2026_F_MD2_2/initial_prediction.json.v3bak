@@ -1,0 +1,133 @@
+{
+  "match_id": "WC2026_F_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:01:47.298492",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.7,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Tunisia惨败后教练位置不稳，战术执行力存疑",
+          "日本4-3-3阵型可依托控球，利用Tunisia松散防线打传导渗透",
+          "日本防守弱点（高空球、边后卫身后）对Tunisia有限，因Tunisia缺乏明确高效反击套路"
+        ],
+        "reasoning": "日本队虽防守有转身和边路空当的短板，但面对Tunisia惨败后的不稳战术，其技术性控球和节奏控制占优，能避开直接身体对抗并限制对手反击。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "突尼斯首战1-5惨败，心理受创",
+          "突尼斯教练可能被解雇，球队稳定存疑",
+          "日本队首战胜出，信心充足",
+          "赔率-190显示日本队被市场普遍看好"
+        ],
+        "reasoning": "日本队首战获胜士气高昂，而突尼斯首战1-5惨败且主帅面临下课，教练发布会异常表态（可能被解雇）是重大负面信号，日本队有明显心理和状态优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'NoneType' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示日本-190 vs 突尼斯600.0，市场预期差距大",
+          "日本近期4-0大胜萨尔瓦多，状态优于突尼斯1-5惨败瑞典",
+          "突尼斯教练位置不稳，影响球队稳定性"
+        ],
+        "reasoning": "基于赛前赔率（日本-190大幅领先）、日本近期竞技状态（4-0胜萨尔瓦多）及突尼斯教练危机（可能被解雇），日本在核心球员远藤航、镰田大地和堂安律均健康的前提下占优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "突尼斯教练可能在世界杯期间被解雇，严重影响更衣室氛围",
+          "日本队教练已获确认，体系成熟度更高",
+          "突尼斯首战1-5惨败暴露战术混乱，而日本有与巴西、萨尔瓦多等队的热身赛磨合"
+        ],
+        "reasoning": "突尼斯教练帅位不稳且体系不明，日本队教练已确认且战术稳定性更强。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 8.5,
+        "weight": 0.07,
+        "key_factors": [
+          "日本队久保建英、富安健洋等多为五大联赛主力，突尼斯核心球员多数效力非主流联赛",
+          "日本近期热身赛小负巴西、大胜萨尔瓦多，状态稳定；突尼斯首战1-5惨败瑞典且教练位置不稳",
+          "DraftKings赔率日本-190，突尼斯600，外界普遍看好日本"
+        ],
+        "reasoning": "日本队拥有久保建英、富安健洋等多名五大联赛主力，阵容档次和近期状态碾压突尼斯，且赔率显示日本为绝对大热门。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.5,
+        "b_score": 7.5,
+        "delta": -3.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Japan近5场友谊赛4胜1负，包括击败英格兰和苏格兰，而Tunisia近3场友谊赛0胜2负1平",
+          "Japan近3场仅失1球（对巴西），防守端表现稳定；Tunisia近3场失7球，趋势下滑",
+          "赔率Japan -190 vs Tunisia 600，市场信心严重偏向Japan"
+        ],
+        "reasoning": "Japan近5场友谊赛胜率高达80%，且近期连克英格兰、苏格兰，防守稳固（近3场仅失1球），而Tunisia状态低迷、连败且教练位置不稳，赔率明确指向Japan大优。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 28%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=14%/P(D)=20%/P(B)=66%",
+    "judge_reasoning": "Japan胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Japan胜",
+    "confidence": "中",
+    "reasons": [
+      "日本队前场有爆破点：三笘薰和久保建英在边路撕开防线的能力远超突尼斯的防守球员，尤其是三笘薰的1对1过人，面对速度偏慢的非洲后卫时威胁极大。",
+      "日本中场传控占优：久保、田中碧等人脚下技术细腻，能通过短传渗透控制节奏。突尼斯首战1-5惨败瑞典，士气低落，中场拦截可能跟不上日本的快速传递。",
+      "突尼斯内忧外患：首战惨败后，主教练面临下课危机，球队化学反应和专注度都让人怀疑；反观日本2-2逼平荷兰，心理和战术准备更充分。"
+    ],
+    "key_risk": "日本队近期锋线终结效率不高，若久保等核心球员被严防死守，而突尼斯抓住反击或定位球偷一个，比赛可能陷入胶着平局。"
+  },
+  "actual_result": null
+}

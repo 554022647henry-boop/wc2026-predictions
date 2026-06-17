@@ -1,0 +1,135 @@
+{
+  "match_id": "WC2026_H_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T01:11:56.803352",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.68,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "西班牙近期0-0平Cape Verde暴露破密集防守乏力，但沙特后场出球失误率高（vs高位逼抢时）",
+          "沙特边后卫身后空当大，西班牙可通过亚马尔/尼科·威廉姆斯传中或内切制造威胁",
+          "西班牙防线回追速度不足（vs沙特快速反击），且定位球第二落点保护不稳（vs沙特长传冲吊）"
+        ],
+        "reasoning": "西班牙控球优势可压制沙特边路空当，但沙特反击与定位球可能利用西班牙中卫转身慢、回追速度不足的弱点（如达瓦萨里冲击拉波尔特身后）。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "西班牙首轮0-0平佛得角，必须赢球压力巨大，赢球动机远强于沙特",
+          "西班牙阵容有罗德里、佩德里、亚马尔等世界级球员，纸面实力完全碾压沙特",
+          "DraftKings赔率Spain -1000 vs Saudi Arabia 2500，市场极低看好沙特爆冷可能",
+          "沙特首轮1-1平乌拉圭拿分，心态较放松但缺乏对抗顶级传控的能力"
+        ],
+        "reasoning": "西班牙实力碾压且必须赢球，沙特实力明显不足，罗德里和佩德里的中场控制力将主导比赛节奏"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "西班牙首轮0-0平弱旅，进攻效率存疑",
+          "赔率Spain -1000大幅倾向，但缺乏状态数据验证",
+          "沙特平乌拉圭展现防守韧性，Salem Al-Dawsari是威胁点",
+          "佩德里、加维伤病风险未确认，可能影响中场创造力"
+        ],
+        "reasoning": "西班牙阵容深度占优（Rodri、Morata），但首轮哑火且佩德里状态不明；沙特赔率悬殊但近期平乌拉圭，核心Al-Dawsari等状态未知，无针对性限制信息。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "西班牙首轮0-0平Cape Verde，但球员合作时间未公开",
+          "沙特阿拉伯首轮1-1平Uruguay，但核心阵容磨合信息缺失",
+          "赔率显示西班牙实力优势，但化学反应无法从赔率直接推断"
+        ],
+        "reasoning": "缺乏具体核心球员合作时长、教练任期或更衣室报道，只能基于平局假设，两队无优势差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "西班牙FIFA排名/ELO远高于沙特，排名差超50名",
+          "西班牙阵容有罗德里、佩德里、亚马尔等欧冠级别球员，沙特全队无欧洲五大联赛主力",
+          "赔率Spain -1000 vs Saudi Arabia 2500，市场预期胜负概率极悬殊"
+        ],
+        "reasoning": "西班牙拥有罗德里、佩德里等五大联赛核心，阵容深度和战术执行远胜沙特本土联赛班底，赔率差距巨大体现实力鸿沟。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "西班牙在世预赛11月两场打入6球，攻击力有保障",
+          "沙特近5场友谊赛仅1胜，且输给埃及、厄瓜多尔",
+          "西班牙阵容有罗德理、佩德里等关键球员，沙特无同等级球星",
+          "赔率显示西班牙为绝对热门（-1000），优势巨大"
+        ],
+        "reasoning": "西班牙拥有罗德理、亚马尔等顶级球员，纸面实力和世预赛表现远强于沙特，后者在友谊赛中面对非洲和南美球队表现挣扎。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 38%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=81%/P(D)=9%/P(B)=11%",
+    "judge_reasoning": "Spain胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Spain胜",
+    "confidence": "中",
+    "reasons": [
+      "西班牙首战0-0被佛得角逼平，莫拉塔和亚马尔浪费多次机会，但这场面对沙特，罗德里和佩德里的中场控制力将彻底压制对手，西班牙急需一场大胜来缓解舆论压力。",
+      "沙特首轮逼平乌拉圭展现了防守韧性，但西班牙的传控体系擅长通过边路拉扯和肋部穿插撕开防线，亚马尔的速度和莫拉塔的抢点能力正是破密集防守的关键。",
+      "从绝对实力看，西班牙全队身价远超沙特，且近期状态更好（击败荷兰、克罗地亚），而沙特过去5场只赢过泰国，硬仗能力有限。"
+    ],
+    "key_risk": "西班牙进攻效率低下，若久攻不下可能被沙特反击偷分，尤其是阿尔达瓦萨里的个人能力可能制造冷门。"
+  },
+  "actual_result": null
+}

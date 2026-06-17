@@ -1,0 +1,136 @@
+{
+  "match_id": "WC2026_A_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T03:40:09.030550",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -1.3,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.5,
+        "b_score": 6.5,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "南非近期友谊赛0-2负葡萄牙，进攻端未展示明确破局手段",
+          "韩国防守虽有问题，但南非没有明确快速传切或边路强点来利用这点",
+          "赔率韩国-165 vs 南非475，市场认为双方实力差距明显",
+          "南非的防守弱点是定位球和反击漏人，韩国正好擅长传切和边路打击"
+        ],
+        "reasoning": "韩国的传切和边路进攻能针对南非的防守注意力不集中和定位球防守弱点，而南非的进攻缺乏具体威胁信息，难以有效打击韩国的防线回追问题。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示韩国为-165大热门，南非为475明显弱势",
+          "韩国近期友谊赛0-1负乌拉圭，但纸面实力仍强于南非",
+          "南非近期战绩包括输葡萄牙和平摩洛哥，表现不稳定"
+        ],
+        "reasoning": "韩国凭借整体实力和赔率优势压制南非，但南非阵中Percy Tau和Lyle Foster具备个体威胁，韩国需警惕反击。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "韩国队近两场友谊赛0进球，进攻状态存疑",
+          "南非队有疑似伤停隐患，核心Percy Tau和Lyle Foster状态未知",
+          "赔率韩国-165显示市场认为韩国队更强",
+          "南非队近期有2-0胜沙特的表现"
+        ],
+        "reasoning": "韩国队凭赔率优势和整体实力占优，但南非队关键球员状态不明且韩国进攻表现不佳，优势有限。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "南非疑似伤停球员影响集训磨合",
+          "South Africa近期战绩不稳，1胜2平2负",
+          "South Korea近期战绩稳定，仅0-1负乌拉圭",
+          "双方核心合作年限数据均缺失，无法判断优势"
+        ],
+        "reasoning": "双方核心组合年限和体系稳定性信息缺失，南非有伤停疑云且关键球员状态不明，韩国近期赛程略清晰但无明显化学反应优势，故评分为平。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "South Korea拥有效力于拜仁慕尼黑的顶级中后卫Kim Min-Jae，这是可以改变比赛走势的超级球员",
+          "赔率显示South Korea是-165的明确热门，而South Africa是+475的明显下狗，市场差距显著",
+          "South Korea近期输给Uruguay和Japan都属硬仗；South Africa战胜Saudi Arabia和DR Congo含金量有限"
+        ],
+        "reasoning": "South Korea有拜仁主力中卫Kim Min-Jae这一世界级球员，而South Africa核心Percy Tau（Al Ahly）和Lyle Foster（未知俱乐部）档次明显不足，阵容整体档次差距巨大。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "韩国赛前赔率-165明显低于南非的+475，市场看好韩国",
+          "韩国近5场2胜3负但有5-0大胜特立尼达和多巴哥，进攻爆发力强",
+          "南非近5场仅1胜2平2负，进3球失5球，攻击力低迷",
+          "南非上轮1-1战平摩洛哥，面对强队有一定防守韧性"
+        ],
+        "reasoning": "韩国在赔率上被视为明显优势方（-165 vs +475），且近期有5-0大胜的进球表现，但信息不足，南非的不败战平摩洛哥也有一定韧性。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "South Korea胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "South Korea胜",
+    "confidence": "中",
+    "reasons": [
+      "韩国队拥有孙兴慜这样的世界级边锋，他的速度和突破能力能撕开南非相对薄弱的防线，而且金玟哉坐镇后防，高空球和拦截都占优。",
+      "南非的进攻依赖珀西·陶和莱尔·福斯特，但两人近期俱乐部状态成谜，面对韩国紧凑的防守体系，可能难以创造出绝佳机会。",
+      "韩国队整体战术纪律更强，主教练克林斯曼擅长利用边路进攻和快速转换，而南非在对抗强队时容易因失误丢球。"
+    ],
+    "key_risk": "南非队众志成城摆出铁桶阵，韩国队久攻不下被反击偷袭，或者孙兴慜状态不佳时进攻哑火，导致平局甚至爆冷。"
+  },
+  "actual_result": null
+}
