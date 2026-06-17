@@ -8,6 +8,8 @@
 
 **👉 [https://554022647henry-boop.github.io/wc2026-predictions/](https://554022647henry-boop.github.io/wc2026-predictions/)**
 
+**📖 [模型介绍](https://554022647henry-boop.github.io/wc2026-predictions/model_intro.html)**
+
 实时更新的预测与赛果对比，支持中英文切换，按小组或按赛程日期查看。每次推送 `web/` 目录变更时自动重新部署。
 
 ---
