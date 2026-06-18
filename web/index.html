@@ -178,8 +178,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub"><span class="zh">美国 · 加拿大 · 墨西哥</span><span class="en">USA · Canada · Mexico</span> &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>72</b><small><span class="zh">已预测</span><span class="en">Predicted</span></small></div>
-      <div class="stat"><b>23</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
-      <div class="stat hi"><b>60.9%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
+      <div class="stat"><b>24</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
+      <div class="stat hi"><b>58.3%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
       <div class="stat"><b>0</b><small><span class="zh">高爆冷风险</span><span class="en">Upset Risk</span></small></div>
     </div>
   </div>
@@ -1670,7 +1670,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
             <div class="group-chips"><span class="chip">🇵🇹 Portugal</span><span class="chip">🇨🇩 DR Congo</span><span class="chip">🇺🇿 Uzbekistan</span><span class="chip">🇨🇴 Colombia</span></div>
           </div>
           <div class="group-matches">
-    <div class="match-card " id="WC2026_K_MD1_1">
+    <div class="match-card incorrect" id="WC2026_K_MD1_1">
       <div class="match-meta">MD1 · 06-18 01:00 北京时间 · NRG Stadium</div>
       <div class="teams">
         <span class="team-name winner">🇵🇹<br><b>Portugal</b></span>
@@ -1678,7 +1678,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇨🇩<br><b>DR Congo</b></span>
       </div>
       
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">1-1</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">平局</span><span class="en">Draw</span></span>
+          </div>
+        </div>
       
+            <div class="verdict incorrect">
+              <span class="verdict-pred"><span class="zh">预测：Portugal胜（中置信）</span><span class="en">Pred: Portugal Win (Mid)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：平局 1-1</span><span class="en">Result: Draw 1-1</span></span>
+              <span class="verdict-badge"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -2497,13 +2510,13 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <div class="date-group">
           <div class="date-hd">06月18日 周四</div>
           <div class="date-matches">
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished incorrect" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇵🇹 Portugal</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Portugal胜</span><span class="en">Portugal Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot mid"></span><span class="zh">中</span><span class="en">Mid</span> </div>
+                  <div class="score-block finished incorrect">
+                  <span class="sched-result-icon">✗</span>
+                  <span class="score">1-1</span>
                 </div>
                   <div class="sched-team right">🇨🇩 DR Congo</div>
                 </div>
@@ -2511,10 +2524,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">01:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第K组 MD1</span><span class="en">Group K MD1</span></span>
                   <span class="venue-tag">NRG Stadium</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict incorrect">
+                      <span><span class="zh">预测：Portugal胜（中）</span><span class="en">Pred: Portugal Win (Mid)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：平局 1-1</span><span class="en">Result: Draw 1-1</span></span>
+                      <span class="sv-badge incorrect"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">葡萄牙中场有布鲁诺·费尔南德斯和贝尔纳多·席尔瓦掌控节奏，两人在禁区前沿的短传渗透能撕开刚果的密集防线。</span><span class="en">葡萄牙中场有布鲁诺·费尔南德斯和贝尔纳多·席尔瓦掌控节奏，两人在禁区前沿的短传渗透能撕开刚果的密集防线。</span></li><li><span class="zh">葡萄牙右路有坎塞洛插上助攻，他的传中球经常找到后插上的中场球员，刚果边后卫速度偏慢难以应对。</span><span class="en">葡萄牙右路有坎塞洛插上助攻，他的传中球经常找到后插上的中场球员，刚果边后卫速度偏慢难以应对。</span></li><li><span class="zh">刚果在小组赛首战经验不足，面对葡萄牙的高位逼抢可能在后场出球时失误，迪奥戈·科斯塔的快速手抛球能发动反击。</span><span class="en">刚果在小组赛首战经验不足，面对葡萄牙的高位逼抢可能在后场出球时失误，迪奥戈·科斯塔的快速手抛球能发动反击。</span></li></ul></div>
             </div>
             <div class="sched-card finished correct" onclick="this.classList.toggle('expanded')">
@@ -3643,7 +3662,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   <span class="zh">数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析</span><span class="en">Data: FIFA · ESPN API · DeepSeek AI</span> &nbsp;·&nbsp;
-  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-18 14:19
+  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-18 14:24
 </footer>
 
 <script>
