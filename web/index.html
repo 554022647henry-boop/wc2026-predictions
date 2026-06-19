@@ -178,8 +178,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub"><span class="zh">美国 · 加拿大 · 墨西哥</span><span class="en">USA · Canada · Mexico</span> &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>72</b><small><span class="zh">已预测</span><span class="en">Predicted</span></small></div>
-      <div class="stat"><b>27</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
-      <div class="stat hi"><b>59.3%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
+      <div class="stat"><b>28</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
+      <div class="stat hi"><b>60.7%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
       <div class="stat"><b>0</b><small><span class="zh">高爆冷风险</span><span class="en">Upset Risk</span></small></div>
     </div>
   </div>
@@ -437,7 +437,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_B_MD2_1">
+    <div class="match-card correct" id="WC2026_B_MD2_1">
       <div class="match-meta">MD2 · 06-19 03:00 北京时间 · SoFi Stadium</div>
       <div class="teams">
         <span class="team-name winner">🇨🇭<br><b>Switzerland</b></span>
@@ -445,7 +445,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇧🇦<br><b>Bosnia and Herzegovina</b></span>
       </div>
       
+        <div class="result-bar correct">
+          <span class="result-icon">✓</span>
+          <div class="result-detail">
+            <span class="result-score">4-1</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">Switzerland胜</span><span class="en">Switzerland Win</span></span>
+          </div>
+        </div>
       
+            <div class="verdict correct">
+              <span class="verdict-pred"><span class="zh">预测：Switzerland胜（低置信）</span><span class="en">Pred: Switzerland Win (Low)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：Switzerland胜 4-1</span><span class="en">Result: Switzerland Win 4-1</span></span>
+              <span class="verdict-badge"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -2683,13 +2696,13 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                     </div>
               <div class="reasons-detail"><ul><li><span class="zh">捷克在绝对实力和近期状态评分占优，尤其是锋线核心球员（如帕特里克·希克）若能首发，其冲击力将对南非后防制造威胁</span><span class="en">捷克在绝对实力和近期状态评分占优，尤其是锋线核心球员（如帕特里克·希克）若能首发，其冲击力将对南非后防制造威胁</span></li><li><span class="zh">南非在小组赛首战失利后士气受挫，而捷克休息时间更充裕且战术纪律性强，定位球可能成为破局关键</span><span class="en">南非在小组赛首战失利后士气受挫，而捷克休息时间更充裕且战术纪律性强，定位球可能成为破局关键</span></li><li><span class="zh">赔率市场倾向捷克（-130），且加权分差δ=+0.57指向微弱优势，但平局概率36%不可忽略</span><span class="en">赔率市场倾向捷克（-130），且加权分差δ=+0.57指向微弱优势，但平局概率36%不可忽略</span></li></ul></div>
             </div>
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished correct" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇨🇭 Switzerland</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Switzerland胜</span><span class="en">Switzerland Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot low"></span><span class="zh">低</span><span class="en">Low</span> </div>
+                  <div class="score-block finished correct">
+                  <span class="sched-result-icon">✓</span>
+                  <span class="score">4-1</span>
                 </div>
                   <div class="sched-team right">🇧🇦 Bosnia and Herzegovina</div>
                 </div>
@@ -2697,10 +2710,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">03:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第B组 MD2</span><span class="en">Group B MD2</span></span>
                   <span class="venue-tag">SoFi Stadium</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict correct">
+                      <span><span class="zh">预测：Switzerland胜（低）</span><span class="en">Pred: Switzerland Win (Low)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：Switzerland胜 4-1</span><span class="en">Result: Switzerland Win 4-1</span></span>
+                      <span class="sv-badge correct"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">瑞士在情境压力和绝对实力评分上占优，老将Granit Xhaka的中场拦截和长传调度能有效压制波黑的进攻节奏，尤其是面对波黑相对缓慢的后防线，瑞士的快速转换将制造机会。</span><span class="en">瑞士在情境压力和绝对实力评分上占优，老将Granit Xhaka的中场拦截和长传调度能有效压制波黑的进攻节奏，尤其是面对波黑相对缓慢的后防线，瑞士的快速转换将制造机会。</span></li><li><span class="zh">波黑在关键球员维度落后1.5分，缺少如Edin Džeko这样的稳定终结点时，球队的进攻效率可能下降；而瑞士的防守体系在Yann Sommer指挥下更紧凑，尤其在定位球防守中更有组织。</span><span class="en">波黑在关键球员维度落后1.5分，缺少如Edin Džeko这样的稳定终结点时，球队的进攻效率可能下降；而瑞士的防守体系在Yann Sommer指挥下更紧凑，尤其在定位球防守中更有组织。</span></li><li><span class="zh">瑞士休息时间仅比波黑少1天，但比赛在洛杉矶进行，瑞士球员更适应类似气候条件，且波黑近期状态评分偏低，长途跋涉可能影响其下半场体能。</span><span class="en">瑞士休息时间仅比波黑少1天，但比赛在洛杉矶进行，瑞士球员更适应类似气候条件，且波黑近期状态评分偏低，长途跋涉可能影响其下半场体能。</span></li></ul></div>
             </div>
             <div class="sched-card finished correct" onclick="this.classList.toggle('expanded')">
@@ -3719,7 +3738,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 
 <footer>
   <span class="zh">数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析</span><span class="en">Data: FIFA · ESPN API · DeepSeek AI</span> &nbsp;·&nbsp;
-  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-19 23:41
+  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-19 23:46
 </footer>
 
 <script>
