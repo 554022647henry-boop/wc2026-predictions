@@ -170,7 +170,6 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
   <div class="hdr-inner">
     <div class="hdr-top-bar">
       <div class="hdr-badge"><span class="zh">AI 预测系统 · 实时更新</span><span class="en">AI Prediction · Live</span></div>
-      <span style="color:var(--gold);font-weight:700;font-size:.8rem;letter-spacing:.03em">@Ligo哥</span>
       <button class="lang-btn" onclick="toggleLang()" title="Switch Language">
         <span class="zh">🇬🇧 EN</span><span class="en">🇨🇳 中文</span>
       </button>
@@ -179,8 +178,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     <p class="hdr-sub"><span class="zh">美国 · 加拿大 · 墨西哥</span><span class="en">USA · Canada · Mexico</span> &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
     <div class="stats">
       <div class="stat"><b>72</b><small><span class="zh">已预测</span><span class="en">Predicted</span></small></div>
-      <div class="stat"><b>24</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
-      <div class="stat hi"><b>58.3%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
+      <div class="stat"><b>27</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
+      <div class="stat hi"><b>59.3%</b><small><span class="zh">预测准确率</span><span class="en">Accuracy</span></small></div>
       <div class="stat"><b>0</b><small><span class="zh">高爆冷风险</span><span class="en">Upset Risk</span></small></div>
     </div>
   </div>
@@ -265,7 +264,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_A_MD2_1">
+    <div class="match-card incorrect" id="WC2026_A_MD2_1">
       <div class="match-meta">MD2 · 06-19 00:00 北京时间 · Mercedes-Benz Stadium</div>
       <div class="teams">
         <span class="team-name winner">🇨🇿<br><b>Czechia</b></span>
@@ -273,7 +272,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇿🇦<br><b>South Africa</b></span>
       </div>
       
+        <div class="result-bar incorrect">
+          <span class="result-icon">✗</span>
+          <div class="result-detail">
+            <span class="result-score">1-1</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">平局</span><span class="en">Draw</span></span>
+          </div>
+        </div>
       
+            <div class="verdict incorrect">
+              <span class="verdict-pred"><span class="zh">预测：Czechia胜（低置信）</span><span class="en">Pred: Czechia Win (Low)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：平局 1-1</span><span class="en">Result: Draw 1-1</span></span>
+              <span class="verdict-badge"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -284,7 +296,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_A_MD2_2">
+    <div class="match-card correct" id="WC2026_A_MD2_2">
       <div class="match-meta">MD2 · 06-19 09:00 北京时间 · Estadio Akron</div>
       <div class="teams">
         <span class="team-name winner">🇲🇽<br><b>Mexico</b></span>
@@ -292,7 +304,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇰🇷<br><b>South Korea</b></span>
       </div>
       
+        <div class="result-bar correct">
+          <span class="result-icon">✓</span>
+          <div class="result-detail">
+            <span class="result-score">1-0</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">Mexico胜</span><span class="en">Mexico Win</span></span>
+          </div>
+        </div>
       
+            <div class="verdict correct">
+              <span class="verdict-pred"><span class="zh">预测：Mexico胜（低置信）</span><span class="en">Pred: Mexico Win (Low)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：Mexico胜 1-0</span><span class="en">Result: Mexico Win 1-0</span></span>
+              <span class="verdict-badge"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -431,7 +456,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
           
         </div>
     </div>
-    <div class="match-card " id="WC2026_B_MD2_2">
+    <div class="match-card correct" id="WC2026_B_MD2_2">
       <div class="match-meta">MD2 · 06-19 06:00 北京时间 · Arrowhead Stadium</div>
       <div class="teams">
         <span class="team-name winner">🇨🇦<br><b>Canada</b></span>
@@ -439,7 +464,20 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <span class="team-name right ">🇶🇦<br><b>Qatar</b></span>
       </div>
       
+        <div class="result-bar correct">
+          <span class="result-icon">✓</span>
+          <div class="result-detail">
+            <span class="result-score">6-0</span>
+            <span class="result-outcome"><span class="zh">实际：</span><span class="en">Result:</span> <span class="zh">Canada胜</span><span class="en">Canada Win</span></span>
+          </div>
+        </div>
       
+            <div class="verdict correct">
+              <span class="verdict-pred"><span class="zh">预测：Canada胜（中置信）</span><span class="en">Pred: Canada Win (Mid)</span></span>
+              <span class="verdict-sep">→</span>
+              <span class="verdict-actual"><span class="zh">实际：Canada胜 6-0</span><span class="en">Result: Canada Win 6-0</span></span>
+              <span class="verdict-badge"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+            </div>
       
         <div class="pred-box">
           <div class="pred-row">
@@ -2619,13 +2657,13 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
         <div class="date-group">
           <div class="date-hd">06月19日 周五</div>
           <div class="date-matches">
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished incorrect" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇨🇿 Czechia</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Czechia胜</span><span class="en">Czechia Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot low"></span><span class="zh">低</span><span class="en">Low</span> </div>
+                  <div class="score-block finished incorrect">
+                  <span class="sched-result-icon">✗</span>
+                  <span class="score">1-1</span>
                 </div>
                   <div class="sched-team right">🇿🇦 South Africa</div>
                 </div>
@@ -2633,10 +2671,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">00:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第A组 MD2</span><span class="en">Group A MD2</span></span>
                   <span class="venue-tag">Mercedes-Benz Stadium</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict incorrect">
+                      <span><span class="zh">预测：Czechia胜（低）</span><span class="en">Pred: Czechia Win (Low)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：平局 1-1</span><span class="en">Result: Draw 1-1</span></span>
+                      <span class="sv-badge incorrect"><span class="zh">预测有误 ✗</span><span class="en">Wrong ✗</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">捷克在绝对实力和近期状态评分占优，尤其是锋线核心球员（如帕特里克·希克）若能首发，其冲击力将对南非后防制造威胁</span><span class="en">捷克在绝对实力和近期状态评分占优，尤其是锋线核心球员（如帕特里克·希克）若能首发，其冲击力将对南非后防制造威胁</span></li><li><span class="zh">南非在小组赛首战失利后士气受挫，而捷克休息时间更充裕且战术纪律性强，定位球可能成为破局关键</span><span class="en">南非在小组赛首战失利后士气受挫，而捷克休息时间更充裕且战术纪律性强，定位球可能成为破局关键</span></li><li><span class="zh">赔率市场倾向捷克（-130），且加权分差δ=+0.57指向微弱优势，但平局概率36%不可忽略</span><span class="en">赔率市场倾向捷克（-130），且加权分差δ=+0.57指向微弱优势，但平局概率36%不可忽略</span></li></ul></div>
             </div>
             <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
@@ -2659,13 +2703,13 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
               
               <div class="reasons-detail"><ul><li><span class="zh">瑞士在情境压力和绝对实力评分上占优，老将Granit Xhaka的中场拦截和长传调度能有效压制波黑的进攻节奏，尤其是面对波黑相对缓慢的后防线，瑞士的快速转换将制造机会。</span><span class="en">瑞士在情境压力和绝对实力评分上占优，老将Granit Xhaka的中场拦截和长传调度能有效压制波黑的进攻节奏，尤其是面对波黑相对缓慢的后防线，瑞士的快速转换将制造机会。</span></li><li><span class="zh">波黑在关键球员维度落后1.5分，缺少如Edin Džeko这样的稳定终结点时，球队的进攻效率可能下降；而瑞士的防守体系在Yann Sommer指挥下更紧凑，尤其在定位球防守中更有组织。</span><span class="en">波黑在关键球员维度落后1.5分，缺少如Edin Džeko这样的稳定终结点时，球队的进攻效率可能下降；而瑞士的防守体系在Yann Sommer指挥下更紧凑，尤其在定位球防守中更有组织。</span></li><li><span class="zh">瑞士休息时间仅比波黑少1天，但比赛在洛杉矶进行，瑞士球员更适应类似气候条件，且波黑近期状态评分偏低，长途跋涉可能影响其下半场体能。</span><span class="en">瑞士休息时间仅比波黑少1天，但比赛在洛杉矶进行，瑞士球员更适应类似气候条件，且波黑近期状态评分偏低，长途跋涉可能影响其下半场体能。</span></li></ul></div>
             </div>
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished correct" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇨🇦 Canada</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Canada胜</span><span class="en">Canada Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot mid"></span><span class="zh">中</span><span class="en">Mid</span> </div>
+                  <div class="score-block finished correct">
+                  <span class="sched-result-icon">✓</span>
+                  <span class="score">6-0</span>
                 </div>
                   <div class="sched-team right">🇶🇦 Qatar</div>
                 </div>
@@ -2673,19 +2717,25 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">06:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第B组 MD2</span><span class="en">Group B MD2</span></span>
                   <span class="venue-tag">Arrowhead Stadium</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict correct">
+                      <span><span class="zh">预测：Canada胜（中）</span><span class="en">Pred: Canada Win (Mid)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：Canada胜 6-0</span><span class="en">Result: Canada Win 6-0</span></span>
+                      <span class="sv-badge correct"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">加拿大的阿方索·戴维斯在左路的速度和突破是卡塔尔防线难以应对的利器，他频繁的内切传中将制造大量威胁。</span><span class="en">加拿大的阿方索·戴维斯在左路的速度和突破是卡塔尔防线难以应对的利器，他频繁的内切传中将制造大量威胁。</span></li><li><span class="zh">加拿大在情境压力维度得分大幅领先（7.0 vs 5.0），且休息天数多1天，体能和求胜欲望更强，有望在主场式氛围中掌控节奏。</span><span class="en">加拿大在情境压力维度得分大幅领先（7.0 vs 5.0），且休息天数多1天，体能和求胜欲望更强，有望在主场式氛围中掌控节奏。</span></li><li><span class="zh">卡塔尔近期防守稳定性不足，关键球员评分落后（5.0 vs 6.5），加拿大中场核心能通过直塞球撕开对手防线。</span><span class="en">卡塔尔近期防守稳定性不足，关键球员评分落后（5.0 vs 6.5），加拿大中场核心能通过直塞球撕开对手防线。</span></li></ul></div>
             </div>
-            <div class="sched-card predicted " onclick="this.classList.toggle('expanded')">
+            <div class="sched-card finished correct" onclick="this.classList.toggle('expanded')">
               <div class="sched-row">
                 <div class="sched-teams">
                   <div class="sched-team">🇲🇽 Mexico</div>
-                  <div class="score-block predicted">
-                  <div class="pred-label"><span class="zh">Mexico胜</span><span class="en">Mexico Win</span></div>
-                  <div class="pred-meta"><span class="conf-dot low"></span><span class="zh">低</span><span class="en">Low</span> </div>
+                  <div class="score-block finished correct">
+                  <span class="sched-result-icon">✓</span>
+                  <span class="score">1-0</span>
                 </div>
                   <div class="sched-team right">🇰🇷 South Korea</div>
                 </div>
@@ -2693,10 +2743,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
                   <span class="time-tag">09:00 <span class="zh">北京时间</span><span class="en">CST</span></span>
                   <span class="stage-tag"><span class="zh">第A组 MD2</span><span class="en">Group A MD2</span></span>
                   <span class="venue-tag">Estadio Akron</span>
-                  <span class="status-tag predicted"><span class="zh">已预测</span><span class="en">Predicted</span></span>
+                  <span class="status-tag finished"><span class="zh">完赛</span><span class="en">Final</span></span>
                 </div>
               </div>
               
+                    <div class="sched-verdict correct">
+                      <span><span class="zh">预测：Mexico胜（低）</span><span class="en">Pred: Mexico Win (Low)</span></span>
+                      <span class="sv-arrow">→</span>
+                      <span><span class="zh">实际：Mexico胜 1-0</span><span class="en">Result: Mexico Win 1-0</span></span>
+                      <span class="sv-badge correct"><span class="zh">预测正确 ✓</span><span class="en">Correct ✓</span></span>
+                    </div>
               <div class="reasons-detail"><ul><li><span class="zh">墨西哥主场作战，在瓜达拉哈拉的阿克伦球场，他们的进攻线能利用韩国队防线转身慢的弱点，特别是洛萨诺的突破和希门尼斯的抢点将制造威胁。</span><span class="en">墨西哥主场作战，在瓜达拉哈拉的阿克伦球场，他们的进攻线能利用韩国队防线转身慢的弱点，特别是洛萨诺的突破和希门尼斯的抢点将制造威胁。</span></li><li><span class="zh">墨西哥中场控制力更强，埃雷拉和瓜尔达多的经验能压制韩国队的反击发起，而韩国队的核心球员孙兴慜可能被蒙特斯重点盯防。</span><span class="en">墨西哥中场控制力更强，埃雷拉和瓜尔达多的经验能压制韩国队的反击发起，而韩国队的核心球员孙兴慜可能被蒙特斯重点盯防。</span></li><li><span class="zh">墨西哥休息时间多一天，且首战净胜球领先，士气正旺；韩国队虽首胜但防守端暴露过漏洞，面对墨西哥的快速传切容易失位。</span><span class="en">墨西哥休息时间多一天，且首战净胜球领先，士气正旺；韩国队虽首胜但防守端暴露过漏洞，面对墨西哥的快速传切容易失位。</span></li></ul></div>
             </div></div>
         </div>
@@ -3662,9 +3718,8 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 </main>
 
 <footer>
-  <strong style="color:var(--gold)">@Ligo哥</strong> &nbsp;·&nbsp;
   <span class="zh">数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析</span><span class="en">Data: FIFA · ESPN API · DeepSeek AI</span> &nbsp;·&nbsp;
-  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-18 14:24
+  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-06-19 23:41
 </footer>
 
 <script>
