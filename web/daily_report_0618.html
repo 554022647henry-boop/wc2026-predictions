@@ -50,20 +50,18 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 32px 16px 64px;
+      padding: 0;
       font-family: var(--f-body);
       -webkit-font-smoothing: antialiased;
     }
 
     /* ─── 舞台 640px ───────────────────────────── */
     .stage {
-      width: min(640px, 100%);
+      width: 100%; max-width: 640px;
       background: var(--bg);
-      border-radius: 4px;
+      border-radius: 0;
       overflow: hidden;
-      box-shadow:
-        0 0 0 1px rgba(255,255,255,.05),
-        0 40px 100px rgba(0,0,0,.6);
+      box-shadow: none;
       animation: rise 0.7s var(--ease-out) both;
     }
 
@@ -453,7 +451,7 @@
 
     .insight blockquote {
       font-family: var(--f-display);
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 700;
       color: var(--blue-dark);
       line-height: 1.4;
@@ -1122,7 +1120,7 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.12 });
 
   document.querySelectorAll('.r').forEach(el => io.observe(el));
 
