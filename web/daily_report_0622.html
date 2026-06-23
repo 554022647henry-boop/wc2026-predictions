@@ -130,23 +130,6 @@
     .prob-bar-legend{display:flex;justify-content:space-between;margin-top:8px;}
     .prob-bar-legend span{font-family:var(--f-mono);font-size:13px;color:var(--ink-3);}
 
-    /* ── BEFORE / AFTER ────────────────────── */
-    .before-after{background:#fafafa;border-bottom:1px solid var(--border);padding:36px 72px;}
-    .ba-label{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--ink-3);margin-bottom:16px;text-transform:uppercase;}
-    .ba-grid{display:grid;grid-template-columns:1fr 40px 1fr;align-items:start;gap:0 20px;}
-    .ba-col h4{font-family:var(--f-display);font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-0.01em;margin-bottom:10px;}
-    .ba-col ul{list-style:none;padding:0;}
-    .ba-col ul li{font-size:14px;line-height:1.8;color:var(--ink-2);padding:4px 0;padding-left:18px;position:relative;}
-    .ba-col ul li::before{content:'';position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;}
-    .ba-before ul li::before{background:var(--red);}
-    .ba-after ul li::before{background:var(--green);}
-    .ba-before h4{color:var(--red);}
-    .ba-after h4{color:var(--green);}
-    .ba-arrow{display:flex;align-items:center;justify-content:center;padding-top:24px;}
-    .ba-arrow span{font-family:var(--f-mono);font-size:28px;color:var(--border);}
-    .ba-time-badge{display:inline-flex;align-items:center;gap:6px;margin-top:12px;background:var(--blue-bg);border:1px solid var(--blue-mid);border-radius:4px;padding:8px 16px;font-family:var(--f-mono);font-size:12px;color:var(--blue);font-weight:700;}
-    .ba-time-badge .num{font-family:var(--f-display);font-size:22px;color:var(--blue-dark);}
-
     /* ── MISC ──────────────────────────────── */
     .divider-section{padding:56px 0 0;}
 
@@ -158,39 +141,6 @@
 </head>
 <body>
 <div class="stage">
-
-  <!-- ═══════════════════════════════════════ -->
-  <!-- BEFORE → AFTER                        -->
-  <!-- ═══════════════════════════════════════ -->
-  <div class="before-after r">
-    <div class="ba-label">这个系统是怎么来的</div>
-    <div class="ba-grid">
-      <div class="ba-col ba-before">
-        <h4>之前</h4>
-        <ul>
-          <li>去各个看板上下载原始数据</li>
-          <li>有些数据每周要重新跑 SQL</li>
-          <li>跑完粘贴到 Excel 看板上</li>
-          <li>Excel 公式自动算出结果</li>
-          <li>根据结果手动作洞察分析</li>
-        </ul>
-      </div>
-      <div class="ba-arrow"><span>→</span></div>
-      <div class="ba-col ba-after">
-        <h4>现在</h4>
-        <ul>
-          <li>ESPN API 自动拉取比赛数据</li>
-          <li>7 个 AI Agent 各自独立评分</li>
-          <li>数学模型自动聚合概率</li>
-          <li>裁判 Agent 生成预测+理由</li>
-          <li>HTML 一键生成，GitHub 自动发布</li>
-        </ul>
-      </div>
-    </div>
-    <div class="ba-time-badge">
-      <span class="num">3-4h</span> → <span class="num">2min</span> &nbsp;每周省下整块时间做更深的洞察
-    </div>
-  </div>
 
   <div class="hero">
     <div class="hero-meta r">AI预测日报 &nbsp;·&nbsp; 2026世界杯 &nbsp;·&nbsp; 06.22</div>
