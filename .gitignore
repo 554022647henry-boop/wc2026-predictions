@@ -11,38 +11,35 @@ __pycache__/
 *.pyc
 *.pyo
 
-# 调试临时文件
-data/debug_batch_*.txt
-
-# 原始采集数据（太大，不需要）
-data/collected/
-data/reviewed/
-data/odds_history/
-
-# 备份文件（各种版本备份）
+# 备份文件（重预测时自动生成）
 *.bak
 *.v1bak
 *.v2bak
 *.v3bak
 *.prebak
 
-# 旧版知识库（已被v2取代）
+# 原始采集数据（pipeline 中间产物，太大不需要提交）
+data/collected/
+data/reviewed/
+data/odds_history/
+
+# 调试临时文件
+data/debug_batch_*.txt
+
+# 旧版知识库（已被 v2 取代）
 data/team_knowledge_2026.json
 
-# 临时图片（飞书授权二维码）
+# 临时图片
 lark_qr*.png
 web/lark_qr*.png
-
-# 无用脚本
-build_html.py
-generate_html_from_workflow.py
-generate_image.py
-save_predictions.py
-translate_reasons.py
-feature_analysis.py
-setup_github_pages.py
 
 # 测试文件
 test_*.txt
 test_*.json
 source_test_result.txt
+
+# ── 生成文件（由脚本/Agent 自动生成）──
+web/daily_report_*.html
+data/pred_summary.json
+data/pred_tmr.json
+_results_out.txt
