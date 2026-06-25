@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_L_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:27:55.758367",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.07,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "巴拿马防守弱点：中场与后卫线之间空当常被技术型强队利用",
+          "克罗地亚防守弱点：防线转身速度偏慢，边后卫助攻后空当易被利用",
+          "克罗地亚擅长传切配合，能针对巴拿马防线失位问题",
+          "巴拿马具备利用克罗地亚定位球防守注意力不集中机会的能力"
+        ],
+        "reasoning": "克罗地亚技术传切能有效利用巴拿马中场与后卫线间的空当，而巴拿马的反击和边路冲击也能打击克罗地亚转身慢及边后卫助攻后的空当，但克罗地亚整体控制力略占上风。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Croatia纸面实力碾压（世界排名远高于Panama，拥有多名顶级联赛球员）",
+          "Croatia历史成绩出色（2018亚军，2022季军），Panama世界杯经验匮乏",
+          "赔率强烈倾向Croatia（DraftKings -175 vs Panama 550）",
+          "中立场地无主场优势，Panama缺乏打破强队防线的战术储备"
+        ],
+        "reasoning": "Croatia在中场控制力和大赛经验上明显占优，Luka Modrić的调度能力远超Panama防线应对范围。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "克罗地亚中场核心莫德里奇状态处于高位，科瓦契奇具备控制节奏的成熟能力，二人近期在皇马和曼城均保持健康且竞技状态良好。",
+          "巴拿马缺少能够一对一限制莫德里奇跑动与出球的防守型中场（安尼瓦尔·戈多伊偏重拦截但年龄增长后覆盖范围下降），且无明确针对性战术安排。",
+          "双方阵容厚度对比明显：克罗地亚还有布罗佐维奇等备选方案应对轮换，而巴拿马若核心状态不佳（如巴尔塞纳斯），替补席缺乏改变比赛走势的球员。"
+        ],
+        "reasoning": "克罗地亚凭借莫德里奇和科瓦契奇的顶级中场控制力，状态稳定且战术执行能力强，而巴拿马虽团结但缺乏限制对方核心的特定防守悍将和备用方案，中场实力差距明显。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "克罗地亚核心三人组莫德里奇-科瓦西奇-布罗佐维奇自2018年合作至今，默契度极深",
+          "克罗地亚在2022世界杯后仅微调阵容，体系延续性远超巴拿马",
+          "巴拿马大部分球员来自本土联赛或美职联，与顶级欧洲球队的对抗经验不足"
+        ],
+        "reasoning": "克罗地亚由莫德里奇、科瓦西奇、格瓦迪奥尔等核心串联，整支球队在过去两届世界杯保持高度稳定，而巴拿马缺乏大赛经验和长期固定核心阵容"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "克罗地亚拥有格瓦迪奥尔（曼城）、科瓦契奇（曼城）等世界级球员，巴拿马无人效力五大联赛顶级球队",
+          "赔率显示克罗地亚为-175热门，巴拿马+550，赔率差距5倍以上",
+          "克罗地亚是上届世界杯季军，大赛经验与心理素质压倒性占优",
+          "巴拿马FIFA排名约45-50，克罗地亚排名前10，排名差35+"
+        ],
+        "reasoning": "克罗地亚在FIFA排名、五大联赛主力数量和大赛经验上全面占优，格瓦迪奥尔、科瓦契奇等世界级球员与巴拿马中美洲联赛阵容差距显著"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.5,
+        "b_score": 6.5,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "克罗地亚近6场友谊赛3胜3负，防守端场均失球超过2个，稳定性不足",
+          "巴拿马近6场2胜2平2负，包括4-2胜多米尼加、2-1胜南非，状态略有回暖",
+          "赔率显示克罗地亚为-175明显热门，但巴拿马主场球迷支持可能提供额外动力"
+        ],
+        "reasoning": "克罗地亚虽有莫德里奇、科瓦西奇等核心坐镇，但近期友谊赛丢球频繁且胜率不稳，巴拿马则靠伊斯梅尔-迪亚斯等人制造惊喜，整体实力仍是克罗地亚占优。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 26%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=15%/P(D)=21%/P(B)=64%",
+    "judge_reasoning": "Croatia胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760460)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Croatia胜",
+    "confidence": "中",
+    "reasons": [
+      "克罗地亚拥有莫德里奇这样的中场大师，他的传球和调度能撕开巴拿马的防线，尤其巴拿马后卫阿米尔·穆里略在高压下容易出现失误。",
+      "巴拿马在洲际大赛中缺乏经验，而克罗地亚多次经历世界杯淘汰赛洗礼，心理素质和战术纪律远超对手，尤其是在关键的小组赛首战。",
+      "克罗地亚前锋克拉马里奇近期状态火热，他在禁区内的跑位和终结能力将是巴拿马后防的噩梦，巴拿马门将路易斯·梅希亚很难抵挡连续冲击。"
+    ],
+    "key_risk": "克罗地亚中场控制力虽强，但若莫德里奇被巴拿马重点盯防限制出球，且天气炎热导致体能下降，巴拿马可能凭借反击偷得一球，爆冷拿分。"
+  },
+  "actual_result": null
+}

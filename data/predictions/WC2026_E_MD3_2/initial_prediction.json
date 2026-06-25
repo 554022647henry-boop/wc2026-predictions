@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_E_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:37:42.489587",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.85,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "\n    \"ESPN信息明确厄瓜多尔的防守弱点为“对对手在进攻三区的快速横向转移和远射保护不足”，德国队4-2-3-1阵型中场有能力执行此战术。\",\n    \"德国队的防守弱点“应对快速反击时身后空当大”，但厄瓜多尔自身的防线（中卫组合）也存在应对高空球和斜线身后球漏人的问题，限制了其反击的稳定输出"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "厄瓜多尔积0分，净胜球-1，本场不胜将濒临出局，动机远强于德国",
+          "德国首战大胜+6净胜球，心态放松且手握平局资本",
+          "赔率显示德国为-140热门，纸面实力碾压厄瓜多尔"
+        ],
+        "reasoning": "厄瓜多尔必须赢球才能保留出线希望，动机极强，但德国队在实力（穆西亚拉、维尔茨）、首战表现和赔率（-140）上有明显优势，足以在中立场抵御对手的拼死一搏。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "德国队中场基米希、戈雷茨卡和格罗斯配合默契，状态处于高位。",
+          "厄瓜多尔首战失利，中场控制力不足，难以限制德国队的中路渗透。",
+          "德国队净胜球+6，团队士气与战术执行稳定性更优。"
+        ],
+        "reasoning": "德国队中场基米希和戈雷茨卡状态上佳，整体实力与战术执行力明显强于厄瓜多尔，后者核心凯塞多独木难支。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "德国队多数球员来自德甲俱乐部，如拜仁、多特蒙德，俱乐部层面配合经验丰富",
+          "德国队主教练执教时间较长，战术体系延续性强，集训时间短更利于磨合",
+          "厄瓜多尔首战失利后压力较大，核心阵容稳定性信息缺失"
+        ],
+        "reasoning": "德国队凭借长期稳定的战术体系和德甲球员的默契配合占优，厄瓜多尔缺乏足够信息支持其化学反应优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.5,
+        "weight": 0.07,
+        "key_factors": [
+          "德国队球员来自五大联赛豪门，厄瓜多尔阵容深度明显不足",
+          "赛前赔率显示德国获胜概率远高于厄瓜多尔",
+          "德国队小组赛第一场净胜球+6，状态与实力均有保障"
+        ],
+        "reasoning": "德国队从FIFA排名、阵容整体实力（诺伊尔、吕迪格等豪门主力）以及赛前赔率（-140大幅领先+390）来看，对厄瓜多尔形成了明显全面占优的局面。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "德国近5场各项赛事全胜，进攻端场均2.8球，状态强势上升。",
+          "厄瓜多尔在正式比赛（世预赛）中近两场仅1球小胜阿根廷、0-0平巴拉圭，进攻效率不如友谊赛。",
+          "德国过往对阵南美球队有心理优势，且阵容厚度远胜厄瓜多尔。"
+        ],
+        "reasoning": "德国近期5连胜，进攻端如维尔纳和穆西亚拉状态火热，而厄瓜多尔虽有防守韧性，但整体实力和大赛经验与德国有明显差距，且必须赢球的压力可能影响发挥。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Germany胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760468)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "低",
+    "reasons": [
+      "德国队在中场拥有约纳坦·塔和帕夫洛维奇等核心球员，他们的战术对位评分高达7.0，远超厄瓜多尔的4.5，预计能通过高位逼抢切断厄瓜多尔的反击路线。",
+      "厄瓜多尔前锋线缺乏稳定得分点，而德国队后卫吕迪格和聚勒的绝对实力评分占优，有望在禁区内限制对手的射门机会。",
+      "德国队小组赛首战净胜球+6，士气高涨，厄瓜多尔则0分垫底求胜心切可能冒进，这会给德国队反击空间，比如萨内或穆西亚拉的速度优势。"
+    ],
+    "key_risk": "厄瓜多尔球员Pervis Estupiñán的边路突破和任意球是主要爆冷风险，若德国队防守注意力不集中，厄瓜多尔可能偷得进球。"
+  },
+  "actual_result": null
+}

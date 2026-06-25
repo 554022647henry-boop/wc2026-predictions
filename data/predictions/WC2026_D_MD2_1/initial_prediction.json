@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_D_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:15:10.042938",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.31,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "土耳其高位压迫时中后卫与边后卫之间空档大，易被巴拉圭4-4-2反击打身后",
+          "巴拉圭中后卫转身速度慢，对土耳其快速传切及肋部渗透防守吃力",
+          "土耳其赔率-105为热门，主场优势可助节奏控制，但防守反越位历史漏洞抵消部分优势"
+        ],
+        "reasoning": "土耳其凭借4-2-3-1阵型的边路传切和肋部渗透，能针对巴拉圭中后卫转身慢的弱点形成轻微优势，但双方防守漏洞都易被快速反击利用。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "双方D组均0分垫底，输球则基本出局，赢球动机相同",
+          "比赛在波士顿中立场进行，无主场环境差异",
+          "首发信息未公布，无战术细节可用于判断优势",
+          "心理包袱方面两队均无显著历史阴影"
+        ],
+        "reasoning": "双方首轮都输球，赢球动机完全一致；中立场波士顿无主场优势；赔率微倾向土耳其但不足以构成有意义的优势；无休息天数、心理包袱或教练异常信号可用。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "土耳其中场核心恰尔汗奥卢状态未知，无近期比赛数据支撑高位",
+          "巴拉圭攻击手恩西索同样缺乏状态报告，无法判断是否处于高位",
+          "赔率土耳其-105轻微占优，但未反映明显阵容或状态优势",
+          "两队首战均失利，且积分榜垫底，本场心理压力接近"
+        ],
+        "reasoning": "双方首战均告负，核心球员恰尔汗奥卢与恩西索状态均无明确信息，赔率略倾向土耳其但差距微小，无已知伤停或战术克制，整体均势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队均仅确认教练，无核心阵容合作年限数据",
+          "无内部矛盾或更衣室氛围公开报道",
+          "世界杯集训时间短，但两队均缺乏体系成熟度证据"
+        ],
+        "reasoning": "因缺乏核心组合年限、战术磨合时长及内部矛盾报道，两队化学反应基本持平"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Turkiye有Hakan Çalhanoglu（国米核心）等五大联赛球员，阵容深度更强",
+          "Paraguay主力如Gustavo Gómez（帕尔梅拉斯）和Miguel Almirón（纽卡），整体南美联赛背景",
+          "赔率显示Turkiye -105 vs Paraguay +320，明显倾向Turkiye",
+          "双方首轮都输球，但Turkiye净胜球-2略好于Paraguay的+3（注：+3是Paraguay输球净胜球逻辑矛盾，实际应为负值？但按提供信息保留）"
+        ],
+        "reasoning": "Turkiye拥有多名五大联赛主力（如Hakan Çalhanoglu、Çağlar Söyüncü），赔率显著占优，而Paraguay阵容主要依托南美联赛，档次略低，但仍有Almirón等关键球员。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其近5场不败，包括击败罗马尼亚和战平西班牙，状态更稳定",
+          "巴拉圭近3场友谊赛2胜1负，但世预赛面对强敌时进攻乏力（0进球）",
+          "双方首战皆负，本场为生死战，战意对等，但土耳其整体进攻组合考验更成熟"
+        ],
+        "reasoning": "土耳其近期比赛稳定性略优，尤其是对阵欧洲球队时的防守组织和进攻效率（如伊尔马兹）稍强于巴拉圭，但双方实力接近且均需抢分，比赛不确定性高。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760443)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "两队首轮均告失利，此役必须拿分才能延续出线希望，保守心态可能导致场面胶着。土耳其拥有经验丰富的门将Mert Günok和后卫Çaglar Söyüncü，防守端具备韧性，而巴拉圭在首轮虽输球但净胜球为+3，说明进攻效率不俗，双方都不敢贸然压上。",
+      "土耳其的战术对位评分（6.0）略高于巴拉圭（5.5），但关键球员和球队化学评分持平，说明两队实力接近且缺乏绝对爆点。中场核心如Kaan Ayhan需承担攻防转换任务，而巴拉圭的防守反击可能让比赛陷入中场绞杀。",
+      "赔率显示土耳其胜赔-105（低赔）但平局赔率高达240，暗示机构认为平局概率不低。结合两队首轮均未赢球且积分榜压力山大，一场1-1或0-0的闷战符合双方战略需求。"
+    ],
+    "key_risk": "巴拉圭若利用土耳其防线偶尔的注意力不集中（如首轮净胜球-2反映的防守漏洞），通过快速反击偷袭得手，可能将比分改写为1-0并终结比赛悬念。"
+  },
+  "actual_result": null
+}

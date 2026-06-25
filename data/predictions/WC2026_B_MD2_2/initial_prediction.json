@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_B_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:11:31.105211",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.14,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "加拿大4-4-2防守弱点在弧顶和边中卫空当，卡塔尔5-3-2中路紧凑可远射或肋部直塞",
+          "卡塔尔三中卫转换中横向覆盖不足，加拿大边路快速进攻能利用肋部空当",
+          "赔率显示加拿大-360大热，但防守注意力下降的历史问题未解决"
+        ],
+        "reasoning": "加拿大边路进攻可针对卡塔尔三中卫横向覆盖不足的弱点，但自身禁区弧顶保护差给了卡塔尔远射和肋部直塞机会，双方各有明显漏洞，加拿大赔率优势下稍有战术利好。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示加拿大-360，卡塔尔+1000，纸面实力碾压",
+          "加拿大作为2026东道主之一，在北美中立场有显著心理和球迷优势",
+          "卡塔尔上次世界杯（2022）三战全败，历史心理包袱沉重"
+        ],
+        "reasoning": "加拿大凭借主场大洲优势、压倒性赔率支持和更强的阵容深度（如阿方索·戴维斯与乔纳森·戴维），在动机和实力上明显优于略显青涩的卡塔尔队。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示加拿大-360大幅领先卡塔尔+1000，市场信心极强。",
+          "加拿大阵容中有多名效力欧洲顶级联赛的球员（如戴维、戴维斯），卡塔尔整体国际大赛经验不足。",
+          "双方首场表现相近，但加拿大纸面实力更优，具备更强的战术应变能力。"
+        ],
+        "reasoning": "加拿大拥有乔纳森·戴维和阿方索·戴维斯等顶级球员，整体实力和赔率优势明显，而卡塔尔缺乏足够应对方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年限和系统稳定性信息均不可用",
+          "加拿大和卡塔尔均只有教练已确认，无更衣室矛盾报道",
+          "没有足够事实支持任何一方有明确的磨合或氛围优势"
+        ],
+        "reasoning": "缺乏具体球员和战术磨合数据，无法判断化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "加拿大拥有世界顶级边卫Alphonso Davies（拜仁慕尼黑），具备单场改变比赛能力",
+          "赔率深度差距巨大：Canada -360 vs Qatar +1000，市场认定胜率差距极大",
+          "Qatar阵容全来自本国联赛，无五大联赛主力球员，纸面实力明显逊于Canada的Euro-heavy阵容"
+        ],
+        "reasoning": "Canada有英超/拜仁级别球员（Alphonso Davies）且赔率-360完全碾压Qatar的+1000，阵容实力与市场预期均占明显优势"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加拿大近5场友谊赛1胜4平保持不败，对手包括爱尔兰等欧洲球队。",
+          "卡塔尔近2场友谊赛1平1负且一球未进，进攻端状态低迷。",
+          "赔率显示加拿大为-360大热门，市场高度看好其获胜能力。"
+        ],
+        "reasoning": "加拿大的近期不败（近5场不败）和博彩支持（-360）构成明显优势，而卡塔尔近2场不胜且未进球（进攻哑火）处于劣势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 35%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=78%/P(D)=13%/P(B)=9%",
+    "judge_reasoning": "Canada胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760440)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Canada胜",
+    "confidence": "中",
+    "reasons": [
+      "加拿大的阿方索·戴维斯在左路的速度和突破是卡塔尔防线难以应对的利器，他频繁的内切传中将制造大量威胁。",
+      "加拿大在情境压力维度得分大幅领先（7.0 vs 5.0），且休息天数多1天，体能和求胜欲望更强，有望在主场式氛围中掌控节奏。",
+      "卡塔尔近期防守稳定性不足，关键球员评分落后（5.0 vs 6.5），加拿大中场核心能通过直塞球撕开对手防线。"
+    ],
+    "key_risk": "赔率偏差高达35%，市场过度看好加拿大（胜率78% vs 模型43%），卡塔尔若摆出铁桶阵并利用反击，可能爆冷逼平甚至取胜。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_H_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:42:47.803720",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.07,
+    "p_a_win": 0.32,
+    "p_draw": 0.39,
+    "p_b_win": 0.29,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "乌拉圭的反击速度与双前锋（如努涅斯）直接威胁西班牙回追慢的防线",
+          "西班牙面对密集防守时的阵地战攻坚能力存疑，节奏对乌拉圭有利",
+          "乌拉圭在定位球进攻（头球能力）对比西班牙定位球防守（第二落点保护差）有明显优势"
+        ],
+        "reasoning": "乌拉圭的防守反击和定位球战术，精准克制西班牙惧怕身后球和定位球第二落点的防守弱点；西班牙的传控可能陷入乌拉圭的密集防守。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DraftKings赔率西班牙-185 vs 乌拉圭+500，西班牙赢球赔率显著更低",
+          "四队同积1分，双方赢球动力对等，无动机强度差异",
+          "中立场地AT&T Stadium，西班牙客场作战但无真实主场劣势",
+          "乌拉圭拥有巴尔韦德、努涅斯等球星，具备反击爆冷能力"
+        ],
+        "reasoning": "西班牙纸面实力和阵容深度明显占优，赔率-185强力支持，但乌拉圭拥有巴尔韦德等核心且四队同分局面下双方战意对等，削弱了实力差距的绝对优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率DraftKings显示西班牙-185 vs Uruguay 500，西班牙优势明显",
+          "两队积分相同（各1分），均需争胜，比赛重要性对等",
+          "无ESPN官方大名单及状态数据，球员具体状态和伤停未知"
+        ],
+        "reasoning": "市场赔率明确显示西班牙占优（-185 vs 500），但缺乏ESPN官方大名单和球员状态细节，无法评估具体核心状态或伤停，乌拉圭优势不显著。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年限均未提供",
+          "两队主教练均已确认但无执教时长信息",
+          "世界杯集训时间短，两队均需磨合"
+        ],
+        "reasoning": "双方均无核心组合或教练更迭的具体数据，且集训时长与阵容来源相似，无法判断化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "西班牙拥有拉波尔特、库库雷利亚等五大联赛豪门主力",
+          "乌拉圭核心球员巴尔韦德虽强但缺少同等量级帮手",
+          "赔率显示西班牙获胜预期显著高于乌拉圭"
+        ],
+        "reasoning": "西班牙在球员整体档次、近期团队稳定性和赔率上均占优，乌拉圭虽有经验但阵容星光稍逊"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "西班牙近5场不败（3胜2平），状态稳定；乌拉圭近3场仅2平1负且连续2场无进球。",
+          "西班牙近3场比赛场均进球接近2球，进攻火力明显强于乌拉圭（近3场仅1球）。",
+          "市场赔率（Spain -185）显示西班牙是明显优势方，反映了实力和状态差距。"
+        ],
+        "reasoning": "西班牙在近期状态、进攻效率和市场赔率上均优于乌拉圭，乌拉圭进攻端近2场无进球是主要隐患。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 36%：模型 DRAW P(A)=32%/P(D)=39%/P(B)=29% vs 市场 P(A)=17%/P(D)=18%/P(B)=65%",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760479)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "乌拉圭的防线在希门内斯领衔下向来硬朗，他们很可能会用高强度的身体对抗打乱西班牙的传控节奏，迫使比赛进入慢速、混乱的肉搏模式。",
+      "西班牙在缺少关键得分手的情况下，阵地战攻坚能力存疑，而乌拉圭擅长在定位球中制造威胁，这将是他们最有希望的破门方式。",
+      "两队仅休息11天且小组积分相同都渴望赢球，但激烈的出线压力可能让双方上半场互相试探，下半场体能下降后更趋向保守，平局是情理之中的结果。"
+    ],
+    "key_risk": "市场赔率严重看好西班牙（胜率65%），如果乌拉圭防线出现一次低级失误被西班牙抓住，比赛天平可能彻底倒向斗牛士军团。"
+  },
+  "actual_result": null
+}

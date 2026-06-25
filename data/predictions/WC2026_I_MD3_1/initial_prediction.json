@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_I_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T15:06:07.557321",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.41,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "France赔率-120 vs Norway+330，实力差距显著",
+          "France的进攻手段（快速转换+个人能力）更擅长攻击Norway边后卫回追速度不足的弱点",
+          "Norway的防守弱点（中场对第二落点保护弱）在对抗France中场时面临较大压力"
+        ],
+        "reasoning": "France整体实力与赔率优势明显，其进攻端能有效针对Norway高位防线回追慢和禁区前保护弱的防守漏洞，而Norway缺乏足够手段惩罚France类似的防守隐患。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DraftKings赔率显示France-120明显优于Norway的330",
+          "France历史交锋心理占优，且拥有姆巴佩等顶级球员",
+          "双方出线形势相同，动机强度接近但France实力差距带来优势"
+        ],
+        "reasoning": "France赔率强势且阵容深度占优，Norway虽有哈兰德但整体实力稍逊，两队均需争胜但France纸面更优。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "France在DraftKings上以-120赔率明显优于Norway的330，市场预期差距大",
+          "法国中场拥有坎特和楚阿梅尼，具备限制厄德高的防守能力",
+          "Norway未披露任何核心球员高状态或对手弱点信息，法国阵容完整性更可靠"
+        ],
+        "reasoning": "France占据赔率、中场防守深度（坎特、楚阿梅尼）和体系稳定性优势，Norway依赖厄德高但缺少针对性限制方案披露。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "France赔率-120显示市场对其整体实力和稳定性的高度信任",
+          "Norway首轮净胜球+3但缺乏顶级大赛磨合经验",
+          "France教练已确认且无内乱报道，更衣室氛围更稳"
+        ],
+        "reasoning": "France凭借更成熟的大赛阵容和战术体系（如队长等核心球员经验丰富）在化学反应上占优，而Norway虽有首胜势头但整体磨合时间不足。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "France拥有姆巴佩这样能单场改变比赛走向的超级球员，而Norway无对应级别",
+          "France阵容中迈尼昂、埃尔南德斯、乌帕梅卡诺等均为五大联赛顶级球员，整体档次更高",
+          "赔率France -120 vs Norway 330，市场明确看好法国"
+        ],
+        "reasoning": "France凭借姆巴佩的超级单兵能力和迈尼昂、埃尔南德斯等五大联赛顶级球员的整体优势，在阵容档次和赔率上明显占优，而Norway缺乏同等级别的抗衡资本。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "法国队近6场正赛+友谊赛5胜1负，优于挪威的3胜1平2负",
+          "法国队连续击败巴西、哥伦比亚等高排位对手，状态含金量高",
+          "赔率显示法国队获胜概率远高于挪威（DraftKings France -120 vs Norway +330）",
+          "挪威近3场比赛场均进球2.3个，进攻端表现出稳定性"
+        ],
+        "reasoning": "法国队近5场友谊赛4胜1负，击败巴西和哥伦比亚，状态和对手质量均优于挪威（近5场友谊赛1胜2平2负），但挪威预选赛收官两连胜且进球效率高，具备爆冷潜质。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "France胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760475)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "中",
+    "reasons": [
+      "法国在战术对位和关键球员评分上明显占优，尤其是中场的控制力将压制挪威的进攻组织，姆巴佩的速度是挪威防线的最大威胁。",
+      "法国近期状态稳定，绝对实力评分高达7.0，而挪威在绝对实力上只有5.0，整体阵容深度和经验差距明显。",
+      "挪威依赖核心球员的个人发挥，但法国在情境压力下表现更成熟，大赛中法国往往能把握关键机会。"
+    ],
+    "key_risk": "挪威如果通过反击率先破门，法国可能陷入急躁，而挪威的防守反击效率在首轮比赛中已经展现，这是最大的爆冷风险。"
+  },
+  "actual_result": null
+}

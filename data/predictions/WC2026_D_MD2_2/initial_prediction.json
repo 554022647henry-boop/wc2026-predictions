@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_D_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:16:06.778187",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.87,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "美国队主场作战且赔率强势（-170），显示赛前被看好。",
+          "美国队防守漏洞（中路直塞和边路突破）与澳大利亚进攻特点匹配度未知，但澳大利亚的防守弱点（回追慢、弧顶空当）与美国队速度型攻击手（普利西奇、巴洛贡）的风格高度匹配。",
+          "澳大利亚首战净胜球+2表现稳健，但面对技术型强队时防线回追不足是历史弱点。"
+        ],
+        "reasoning": "美国队的快速转换和边路冲击（如普利西奇、维阿）能直接利用澳大利亚防线回追速度慢的弱点，而澳大利亚虽可能依靠身体和定位球制造威胁，但中场对弧顶的保护空当可能被美国队的中路渗透（如麦肯尼插上）利用。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "主场优势：AT&T Stadium在达拉斯，美国球迷占绝对多数",
+          "净胜球差异：美国-3 vs 澳大利亚+2，美国必须赢球才有出线主动权",
+          "赔率指向：DraftKings美国-170远低于澳大利亚450，市场看好美国"
+        ],
+        "reasoning": "美国主场+必须赢的动机更强（净胜球-3劣势），澳大利亚可平且净胜球+2优势，赔率-170也支持美国"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Pulisic近期俱乐部状态火热（联赛15球8助），是美国队进攻核心",
+          "Tyler Adams的防守能力可有效限制Australia中场Jackson Irvine或Ajdin Hrustic的创造力",
+          "DraftKings赔率美国队-170显著高于澳大利亚450，反映实力差距"
+        ],
+        "reasoning": "美国队有Pulisic状态高位、Adams可限制对方核心，赔率-170显示优势；澳大利亚缺少顶级球星和针对方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "美国由波切蒂诺执教，世界杯前刚接手，训练时间有限",
+          "澳大利亚首战3-1赢土耳其，球队状态和信心更佳",
+          "美国队依赖旅欧球员（如普利西奇），合练时间少",
+          "澳大利亚阵中有更多A联赛背景球员，彼此更熟悉"
+        ],
+        "reasoning": "两队赛前信息过少，无法确定明显差异；但澳大利亚在教练稳定性（波波维奇比波切蒂诺执教更久）和首战表现上略占优势，美国阵容天赋更高但磨合未知"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "美国首发阵容多为五大联赛主力（如特纳/英超、罗宾逊/富勒姆、普利西奇/AC米兰）",
+          "澳大利亚虽有瑞安、苏塔尔等个别五大联赛球员，但多数效力中下游联赛",
+          "赔率美国-170大幅领先澳大利亚+450，体现实力差距",
+          "美国主场作战且首轮取胜士气正旺"
+        ],
+        "reasoning": "美国拥有普利西奇、麦肯尼、巴洛贡等五大联赛核心球员，阵容整体档次远高于澳大利亚，且主场优势加持，但澳大利亚首轮大胜巴拉圭展现韧性，不能完全低估。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "美国队近5场仅1胜4负，友谊赛战绩含金量低",
+          "澳大利亚近3场2平1负但仅失1球（对瑞士和墨西哥）",
+          "澳大利亚在D组净胜球+2明显优于美国-3，防守组织性更强"
+        ],
+        "reasoning": "澳大利亚近期防守更稳健（连续2场限制对手进球≤1），美国队防线连续3场丢2球以上，但美国有主场优势且前锋普利西奇具备个人能力。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 26%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=60%/P(D)=10%/P(B)=30%",
+    "judge_reasoning": "United States胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760442)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "United States胜",
+    "confidence": "中",
+    "reasons": [
+      "美国队依靠Antonee Robinson在左路的快速突进，能频繁冲击澳大利亚防线，尤其是针对对方边后卫回防速度慢的弱点。",
+      "Matt Turner在门前的稳定发挥是美国队后防的定心丸，过去6天休息让他体能充沛，能应对澳大利亚的快速反击。",
+      "澳大利亚在小组赛首轮虽胜但消耗巨大，5天休息后面对美国队的高位逼抢，中场可能失控，导致失误增多。"
+    ],
+    "key_risk": "美国队近期状态评分略低于对手，若开局慢热被澳大利亚先得分，心理压力会显著增加，且市场赔率低估平局可能。"
+  },
+  "actual_result": null
+}

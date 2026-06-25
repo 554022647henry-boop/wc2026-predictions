@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_J_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:25:41.431455",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.28,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "阿根廷的边锋群（如迪马利亚）在反击中对奥地利速度较慢的中后卫形成一对一优势",
+          "奥地利4-2-3-1阵型中双后腰覆盖不足，可能被阿根廷中场（如德保罗）的穿插肋部击穿",
+          "阿根廷在2022世界杯已暴露防身后漏洞，但奥地利缺乏顶级速度型前锋来持续惩罚这一点"
+        ],
+        "reasoning": "阿根廷进攻线（如梅西）能利用奥地利高位防线回追不足的弱点，而奥地利仅能靠零星反击威胁阿根廷防线身后。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率Argentina -165 vs Austria 500，实力差距大",
+          "Argentina已积3分，Austria0分但出线压力更大",
+          "中立场地无影响，休息天数相同"
+        ],
+        "reasoning": "Argentina纸面实力远强于Austria，赔率-165 vs 500，且已积3分心理更轻松，Austria实力不足且积分劣势明显。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "阿根廷中场帕雷德斯、德保罗、洛塞尔索均无伤病隐患，状态未知但阵容完整",
+          "奥地利核心赖默尔和萨比策具备反击能力，但缺乏对阵顶级球队的持续威胁",
+          "赔率显示阿根廷为-165热门，奥地利为+500冷门，差距显著"
+        ],
+        "reasoning": "阿根廷核心阵容齐整且战术体系成熟，德保罗和洛塞尔索的中场控制力较强，而奥地利虽无伤停但整体实力和大赛经验不足，赔率也支持阿根廷明显占优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合年限与阵容磨合数据不可用",
+          "赛前无内部矛盾或换帅等公开报道",
+          "两队积分和赔率差未能提供化学反应判断依据"
+        ],
+        "reasoning": "双方化学反应数据完全缺失，且缺乏任何关于阵容稳定性、内部氛围或战术磨合的具体信息。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿根廷有梅西，能在单场比赛中改变走向",
+          "阿根廷阵容主要以五大联赛豪门为核心（如迪马利亚、劳塔罗）",
+          "赔率显示阿根廷-165 vs 奥地利500，市场认可阿根廷强势",
+          "奥地利阵容中只有阿拉巴效力于顶级豪门皇马，其他球员多在中下游联赛"
+        ],
+        "reasoning": "阿根廷拥有梅西和五大联赛豪门主力阵容，奥地利仅阿拉巴为顶级球星，整体实力差距明显。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿根廷近5场4胜1负含友谊赛权重30%，但唯一预选赛0-1负厄瓜多尔暴露弱点",
+          "奥地利近5场4胜1平，预选赛2-0胜塞浦路斯和1-1平波黑，状态稳定",
+          "奥赔-165对阿根廷支持偏弱，两队在世界杯小组赛未有过交锋"
+        ],
+        "reasoning": "阿根廷友谊赛连胜但预选赛输球，奥地利近期不败且正赛表现更稳，双方无明显优势，赔率也反映势均力敌。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760456)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷在战术对位和绝对实力上全面占优，梅西的盘带与直塞球能撕裂奥地利防线，尤其奥地利的双后腰协防速度偏慢，容易被瞬间打穿",
+      "奥地利是本届小组赛新军，首战即面对世界冠军阿根廷，在MetLife Stadium数万阿根廷球迷助威下，球员紧张感可能加剧关键失误",
+      "阿根廷后防核心克里斯蒂安·罗梅罗领衔的防线经验丰富，而奥地利缺少顶级射手，难以突破阿根廷的紧凑阵型"
+    ],
+    "key_risk": "阿根廷大胜后可能轮换主力，若半场领先过多，下半场放慢节奏可能被奥地利抓住反击机会偷平局"
+  },
+  "actual_result": null
+}

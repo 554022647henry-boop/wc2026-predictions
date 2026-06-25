@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_D_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:35:33.025461",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.13,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "美国队快节奏进攻可针对土耳其高位压迫时中后卫与边后卫之间的空档",
+          "土耳其反击能利用美国队中卫回防失位和禁区弧顶保护漏洞",
+          "美国4-3-3阵型的中场人数优势有助于控制第二落点并压制土耳其双后腰的防守覆盖"
+        ],
+        "reasoning": "美国队的高位压迫和快速传切能利用土耳其防线在阵型脱节时的肋部空档，尤其是普利西奇和维阿的边路冲击力；土耳其的反击虽能威胁美国中卫高速回防时的失位，但整体节奏控制权易被美国掌握。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "场地为Hard Rock Stadium, Miami，是美国队的实际主场",
+          "美国首轮1胜积3分，土耳其0分面临出局压力",
+          "赔率显示美国队被轻微看好（+145对+175）",
+          "双方首战均暴露防守问题，美国队净胜球为-3"
+        ],
+        "reasoning": "美国队凭借主场优势和积分榜领先的竞争姿态占据轻微上风，但土耳其背水一战同样动力十足，赔率未拉开明显差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Turkiye核心Çalhanoglu需直面美国防守中场Tyler Adams的拦截，组织空间被压缩",
+          "United States核心Pulisic面对Turkiye无顶级边卫盯防，但缺乏稳定中锋接应其传球",
+          "积0分的Turkiye求胜压力更大，可能冒险进攻暴露防守空档",
+          "赔率DraftKings：Turkiye +175，美国+145，微幅看好美国"
+        ],
+        "reasoning": "双方均无明确伤停，核心球员Hakan Çalhanoglu与Christian Pulisic处于同等关键地位，且对方有相应中场防守者（Tyler Adams vs Özcan）可进行限制，中线博弈持平。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "无可靠数据体现任意一方的核心组合稳定性差异",
+          "两队教练均已确认，但无执教时长或内部氛围报道支撑判断",
+          "无法评估完整战术体系的训练周期与临场调整风险"
+        ],
+        "reasoning": "双方均缺核心组合年限、集训详情或内部动态数据，无法辨别任何一方的磨合优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其拥有多名五大联赛主力（如巴因德尔、瑟云聚、卡迪奥卢），阵容层次稍高",
+          "美国以美职联为基石，但特纳、雷姆、罗宾逊有英超经历，阵容深度尚可",
+          "赔率（美国+145对土耳其+175）显示美国略被看好，但差距极小",
+          "小组形势紧张，土耳其输球可能出局，但无一方有碾压性优势"
+        ],
+        "reasoning": "双方实力均衡，土耳其有五大联赛球员（巴因德尔、瑟云聚），美国有英超经验（特纳、雷姆），赔率接近，无决定性超级球员。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "土耳其近4场正式比赛（世预赛）3胜1平零失球，防守体系稳固",
+          "美国队近4场友谊赛1胜3负，2-5负比利时、0-2负葡萄牙，防线问题严重",
+          "土耳其有恰尔汗奥卢和伊尔马兹等核心球员状态稳定，美国队缺乏稳定得分点"
+        ],
+        "reasoning": "土耳其近4场正式比赛3胜1平且全部零封，而美国队近4场友谊赛1胜3负且场均丢球超2个，防守差距显著"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 28%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=34%/P(D)=10%/P(B)=56%",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760470)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "土耳其和美国的风格都偏硬朗，双方上轮都输了球，这场必须抢分——场面可能陷入中场肉搏战，谁都不敢冒险大举压上，平局概率最高",
+      "两队核心球员（如土耳其的哈米特·阿尔滕托普、美国的克里斯蒂安·普利西奇）状态平平，近两场热身赛中都没能创造绝佳机会，进攻端缺少爆点",
+      "迈阿密的高温潮湿天气可能拖慢节奏，双方在6-7天前的联赛后只休息了几天，体能储备不足，下半场容易进入沉闷的拉锯战"
+    ],
+    "key_risk": "美国如果通过快速反击先取得进球，土耳其急于扳平可能后防空虚，但美国防线也并不稳固，容易被土耳其通过定位球偷袭得手"
+  },
+  "actual_result": null
+}

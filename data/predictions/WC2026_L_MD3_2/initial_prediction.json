@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_L_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:46:22.093365",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.64,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "克罗地亚防线转身慢被加纳快速反击（如库杜斯）直接针对",
+          "加纳高位防线回追慢被克罗地亚控球渗透利用",
+          "克罗地亚中场控场能力更强，但边后卫助攻后空当易被加纳边锋（如苏莱曼纳）利用"
+        ],
+        "reasoning": "两队风格互有克制，克罗地亚控场优势对上加纳速度反击，但克罗地亚防线转身慢和加纳防线回追慢的弱点被彼此针对，形成均势"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "克罗地亚纸面实力占优，核心莫德里奇大赛经验丰富",
+          "DraftKings赔率显示克罗地亚-160大幅领先加纳+475",
+          "小组赛首轮，双方求胜欲望对等，无额外心理包袱或赛程干扰"
+        ],
+        "reasoning": "克罗地亚凭借莫德里奇领衔的中场实力和更深的淘汰赛经验，在首战关键战中占据明显优势，赔率也充分支持这一点。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "克罗地亚在赔率上被视为热门（-160 vs +475），体现纸面实力优势",
+          "关键球员莫德里奇、科瓦西奇与帕尔特伊状态均未知，无法评估高位状态",
+          "加纳未有明确战术或防守球员被提及能针对性限制克罗地亚核心中场"
+        ],
+        "reasoning": "克罗地亚凭借整体经验和赔率优势略占上风，但加纳有帕尔特伊等中场球员可能形成抗衡，双方关键球员状态均不明确。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合稳定性数据缺失，无法比较",
+          "更衣室氛围无公开报道或教练执教年限信息",
+          "系统磨合度因缺少战术变化及集训细节无法评估"
+        ],
+        "reasoning": "双方均无核心组合年限、教练执教时长或内部矛盾等具体信息，无法判断化学反差异，故评分平等。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.5,
+        "weight": 0.07,
+        "key_factors": [
+          "克罗地亚阵容包含多名五大联赛核心球员（如约什科·格瓦迪奥尔、利瓦科维奇、约西普·斯塔尼西奇）",
+          "加纳大名单中无明确五大联赛主力球员，整体实力和大赛经验不足",
+          "赔率显示克罗地亚为-160热门，盘口预示压倒性优势"
+        ],
+        "reasoning": "克罗地亚拥有格瓦迪奥尔、利瓦科维奇等五大联赛核心级球员，而加纳缺乏同等级别的超级球员支撑，整体阵容档次差距明显。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "克罗地亚近5场4胜且包括1场世界杯预选赛胜利，而加纳近4场全败仅1平",
+          "加纳近4场失球10个，防守质量极差；克罗地亚进攻端有克拉马里奇和佩特科维奇等稳定得分点",
+          "赔率显示克罗地亚-160，市场预期优势明显"
+        ],
+        "reasoning": "克罗地亚有2项具体有利因素：近期正赛3-1胜法罗群岛且近5场进球稳定，加纳则遭遇4连败且防线脆弱，克罗地亚中场莫德里奇和前锋克拉马里奇的组织能力对加纳后防构成明显威胁。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=62%/P(D)=21%/P(B)=17%",
+    "judge_reasoning": "Croatia胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760480)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Croatia胜",
+    "confidence": "中",
+    "reasons": [
+      "克罗地亚拥有世界级中场卢卡·莫德里奇掌控节奏，他在大赛中的经验能帮助球队在胶着阶段找到进攻突破口。",
+      "加纳在绝对实力和近期状态上均处劣势，克罗地亚的防守核心乔斯科·格瓦迪奥尔能有效限制加纳的快速反击。",
+      "克罗地亚在情境压力（小组首战）和近期状态评分中明显占优，球队整体性更强，更擅长在小组赛阶段稳扎稳打。"
+    ],
+    "key_risk": "克罗地亚大赛DNA评分较低，若加纳利用身体优势和反击率先破门，可能迫使克罗地亚陷入急躁进攻的陷阱。"
+  },
+  "actual_result": null
+}

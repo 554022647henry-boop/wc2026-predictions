@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_J_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:06:03.394072",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.47,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "A队进攻 vs B队防守：奥地利球员普遍效力欧洲顶级联赛，个人技术、对抗能力和战术执行力远超约旦，即使无特定核心套路，前场球员如萨比策等也能通过个人能力和小组配合制造大量威胁，而约旦防守体系难以匹配这种强度。",
+          "B队进攻 vs A队防守：约旦进攻缺乏世界级个人爆点，要打穿奥地利由阿拉巴等名将领衔的防线极其困难。他们理论上的反击机会（针对奥地利高位防线）需要极精准的传球和跑位，这在高压下很难持续实现。",
+          "阵型/节奏匹配：奥地利会占据控球优势并实施高位压迫，约旦将被迫长时间防守。奥地利节奏控制能力更强，约旦很难获得持续进攻机会，反击多会陷入孤立无援。",
+          "定位球：奥地利拥有多名身高体壮的球员，定位球进攻威胁远大于约旦。约旦定位球防守在面对欧洲球队的战术配合和身体冲击时，是明显的薄弱环节。"
+        ],
+        "reasoning": "奥地利整体实力与对抗层级远超约旦，约旦的反击速度虽理论上能威胁奥地利防线身后，但实际推进与传跑精度在高压下会大幅打折。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Austria国际足联排名和历史世界杯战绩优于Jordan",
+          "Jordan首次参加世界杯正赛，缺乏大赛经验",
+          "赔率显示DraftKings Austria -255 vs Jordan +800，实力差距明显",
+          "中立场地Levi's Stadium对双方公平"
+        ],
+        "reasoning": "Austria凭借其欧战经验及对Alaba等核心球员的依赖，在中立场拥有明显纸面优势，但首轮双方求胜欲相当，限制了差值扩大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "奥地利让球赔率-255显示明显市场看好",
+          "双方首发未公布，无即时状态数据",
+          "关键球员无伤停报告但无状态确认"
+        ],
+        "reasoning": "赔率显示奥地利有纸面实力优势，但缺乏Laimer和Sabitzer当前状态的具体信息，无法确认更高分数"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "双方核心组合成立年限信息均缺失",
+          "教练已确认但无执教时长或矛盾报道",
+          "无赛前阵容调整或争议影响更衣室氛围"
+        ],
+        "reasoning": "由于缺乏核心球员组合时长、内部氛围报道及战术磨合细节，无法区分奥地利和约旦在化学反应上的具体差异，故给予均等评分。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "奥地利有多名五大联赛主力球员（阿拉巴、莱因哈特、波施）",
+          "赔率显示奥地利是绝对热门（-255 vs +800）",
+          "约旦全队身价和联赛级别远低于奥地利"
+        ],
+        "reasoning": "奥地利拥有阿拉巴、莱因哈特等五大联赛主力，纸面实力远超以亚洲联赛为主的约旦。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "奥地利近5场竞赛4胜1平不败，包括3场零封对手",
+          "约旦连续2场友谊赛失利，且2场共失6球，防守表现糟糕",
+          "奥地利阵容更完整，整体实力和大赛经验远超约旦，赔率也显示巨大优势"
+        ],
+        "reasoning": "奥地利近期取得4胜1平，防守稳固且进攻多点开花，实力与状态远优于遭遇连败、防守脆弱的约旦。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=66%/P(D)=24%/P(B)=10%",
+    "judge_reasoning": "Austria胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760431)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Austria胜",
+    "confidence": "高",
+    "reasons": [
+      "奥地利在整体实力和近期状态上明显占优，核心球员如David Alaba领衔的防线稳固，而约旦队缺乏顶级联赛经验，难以抵挡奥地利的多点进攻。",
+      "战术对位评分Austria高达7分，Jordan仅5分，奥地利擅长高位逼抢和快速转换，约旦的中场控球能力较弱，容易在压力下失误。",
+      "赔率显示市场高度看好奥地利，DraftKings上奥地利胜赔仅-255，而Jordan胜赔高达800，平局赔率380，说明胜利是大概率事件。"
+    ],
+    "key_risk": "主要爆冷风险在于约旦可能依靠密集防守和反击偷分，若奥地利久攻不下，平局的可能性不容忽视，模型平局概率33%高于市场预期的24%。"
+  },
+  "actual_result": null
+}

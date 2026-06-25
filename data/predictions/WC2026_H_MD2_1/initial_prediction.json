@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_H_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:22:54.764714",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.14,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "乌拉圭双前锋体系能持续施压佛得角脆弱的中路防守（弧顶失球多）",
+          "佛得角面对高位逼抢出球困难，乌拉圭4-4-2中场拦截易形成二次进攻",
+          "佛得角4-3-3反击宽度可利用乌拉圭中后卫转身慢的弱点打身后",
+          "乌拉圭远射能力强（如巴尔韦德、德阿拉斯卡埃塔）可针对佛得角弧顶保护差",
+          "佛得角定位球进攻能力有限，乌拉圭防空相对稳固",
+          "乌拉圭经验更丰富且赔率-210显示明显优势"
+        ],
+        "reasoning": "乌拉圭的4-4-2双前锋压迫+远射能利用佛得角弧顶防守漏洞；佛得角的反击速度可冲击乌拉圭转身慢的中后卫，但自身出球困难限制了威胁频率。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "乌拉圭队内拥有巴尔韦德（皇马）、努涅斯（利物浦）等五大联赛核心，全队总身价远超佛得角",
+          "佛得角首轮逼平西班牙已属超常发挥，面对乌拉圭的强硬防守和进攻线将面临巨大考验",
+          "本场为小组赛第二轮，四队同分，乌拉圭必须取胜才能掌握出线主动权的动机强度更高"
+        ],
+        "reasoning": "乌拉圭拥有巴尔韦德、努涅斯等顶级球员，整体实力远胜于佛得角，且为争夺出线主动权的动机更强烈，而佛得角虽无心理包袱但硬实力差距过大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "乌拉圭世界排名和整体实力通常优于佛得角",
+          "佛得角无已知核心球员伤停但整体实力差距明显",
+          "缺乏ESPN球员名单导致无法评估具体状态或战术限制"
+        ],
+        "reasoning": "乌拉圭赔率优势约1.5倍，但缺乏核心球员状态和伤停信息，仅能依据赔率给予轻微优势"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合和体系磨合年限均无数据",
+          "教练均已确认，无不稳定因素",
+          "双方国际大赛经验差距无法量化"
+        ],
+        "reasoning": "无具体磨合年限或更衣室细节，仅凭教练确认和球队底蕴给出中性评分"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "乌拉圭全队身价远高于佛得角，球员多效力于西甲、意甲等顶级联赛",
+          "佛得角作为非洲球队，近期大赛成绩有提升，但爆冷强敌的稳定历史较少"
+        ],
+        "reasoning": "乌拉圭有戈丁和巴尔韦德等世界级球星坐镇，阵容整体来自五大联赛，但佛得角也有多名欧洲联赛主力，双方小组赛战绩完全相同。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "乌拉圭近5场仅1胜，近3场全部未进球（0-0阿尔及利亚、1-1英格兰、0-0智利）",
+          "Cape Verde近2场友谊赛1胜1平不败，上一场3-0击败塞尔维亚",
+          "DraftKings赔率乌拉圭-210为明显热门，但Cape Verde+700已被视为有爆冷可能"
+        ],
+        "reasoning": "乌拉圭虽纸面占优且为传统强队，但近3场零进球进攻严重哑火，Cape Verde近期友谊赛3-0胜塞尔维亚显示进攻火力，赔率支持乌拉圭但优势有限"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 25%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=68%/P(D)=19%/P(B)=13%",
+    "judge_reasoning": "Uruguay胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760450)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Uruguay胜",
+    "confidence": "中",
+    "reasons": [
+      "乌拉圭拥有费德里科·巴尔韦德这样的世界级中场，他既能用精准长传撕开佛得角防线，也能在禁区外远射制造威胁，而佛得角中场缺乏能限制他拿球转身的硬度。",
+      "乌拉圭在战术对位和情境压力上均占优（两项评分分别高1.0和2.0分），面对小组头名争夺战，他们更习惯用经验控制节奏；佛得角首次参加世界杯淘汰赛阶段，面对亚特兰大球场数万观众可能紧张失误。",
+      "后防由何塞·希门尼斯领衔，他在马竞以硬朗防守著称，将重点盯防佛得角唯一的反击支点；而佛得角近6天休息后体能充足，但缺少大赛经验的核心球员在生死战中容易暴露出球选择问题。"
+    ],
+    "key_risk": "市场赔率严重低估佛得角爆冷概率（模型预测胜率24% vs 市场13%），若乌拉圭久攻不下，佛得角利用一次反击或定位球偷袭得手，平局甚至小胜并非不可能。"
+  },
+  "actual_result": null
+}

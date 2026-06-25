@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_J_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:26:24.232407",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.83,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.5,
+        "b_score": 6.5,
+        "delta": -2.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示阿尔及利亚是明显热门（-200 vs +550）",
+          "阿尔及利亚净胜球为-3，而约旦为0，阿尔及利亚出线压力更大但非动机差异",
+          "约旦无世界大赛经验，阿尔及利亚有非洲杯和世界杯经历"
+        ],
+        "reasoning": "阿尔及利亚在纸面实力、赔率支持和声望上明显强于约旦，但两队都是0分且需争胜，动机相近；对手后防线经验不足可能被阿尔及利亚前锋如斯利马尼或本拉赫马利用。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Algeria拥有Bentaleb、Aouar和Boudaoui等具备顶级联赛经验的中场球员，核心战力较强",
+          "Jordan阵容缺乏知名球员，整体实力有限，且无针对性限制对手核心的方案",
+          "赔率DraftKings显示Algeria胜赔-200，Jordan高达550，市场信心悬殊"
+        ],
+        "reasoning": "Algeria凭借Bentaleb、Aouar等球员的欧洲联赛经验在纸面实力上明显优于Jordan的阵容，赔率也指向Algeria占优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队化学反应数据均缺失",
+          "双方教练均已确认，但无执教时长或体系细节",
+          "暂无任何关于内部矛盾或主力阵容稳定性的报道"
+        ],
+        "reasoning": "双方均无核心组合年限、战术体系磨合或内部氛围的具体信息，无法判定化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Algeria阵中有至少5名五大联赛主力（Bensebaini、Aït-Nouri、Mandï等），Jordan无五大联赛球员",
+          "赔率DraftKings显示Algeria为-200大热门，Jordan为+550冷门",
+          "Algeria国际大赛经验丰富，Jordan缺乏顶级对抗经历"
+        ],
+        "reasoning": "Algeria拥有Bensebaini、Aït-Nouri、Mandï等多名五大联赛主力，阵容档次远高于以亚洲联赛为主的Jordan，赔率-200也确认了碾压式优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿尔及利亚近4场3胜1平不败，包括击败荷兰和7-0大胜危地马拉",
+          "约旦近4场2平2负不胜，面对瑞士和哥伦比亚共丢6球",
+          "博彩赔率阿尔及利亚(-200)明显优于约旦(550)"
+        ],
+        "reasoning": "阿尔及利亚近期3胜1平保持不败，进攻犀利（近4场进12球），而约旦连续4场不胜且防守脆弱（场均丢2.5球）；赔率数据（-200 vs 550）明确显示阿尔及利亚占优。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 31%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=21%/P(D)=10%/P(B)=69%",
+    "judge_reasoning": "Algeria胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760455)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Algeria胜",
+    "confidence": "中",
+    "reasons": [
+      "阿尔及利亚在绝对实力和近期状态上都明显占优，这得益于多位核心球员的个人能力，而约旦的防守体系在人盯人对抗中可能被频繁突破。",
+      "比赛压力天平严重倾斜，约旦首战0分且净胜球劣势，必须抢分，而阿尔及利亚刚经历一场大败反弹意愿强烈，总教练更容易激发球员专注力。",
+      "身体对抗与速度方面，阿尔及利亚的中前场球员普遍在爆发力上超过约旦的后卫线，特别是在边路1对1时，约旦的边后卫很难跟上对手的节奏。"
+    ],
+    "key_risk": "主要爆冷风险在于约旦可能死守反击偷得一球，同时阿尔及利亚久攻不下心态急躁，导致平局乃至小负——平局选项在模型概率和赔率上均有一定支撑。"
+  },
+  "actual_result": null
+}

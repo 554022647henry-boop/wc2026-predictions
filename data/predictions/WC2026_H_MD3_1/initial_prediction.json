@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_H_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:41:52.197838",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.73,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.5,
+        "weight": 0.25,
+        "key_factors": [
+          "佛得角防守端有明确的中路站位松散和禁区弧顶保护漏洞。",
+          "沙特阿拉伯的4-3-3阵型可以通过中场控制和中路渗透，有效利用对手这个弱点。",
+          "佛得角的边路传中质量是未知数，可能无法稳定惩罚沙特边后卫身后的空当。",
+          "赔率显示沙特阿拉伯是获胜热门，体现了市场对其优势的认可。"
+        ],
+        "reasoning": "沙特阿拉伯的进攻能精准打击佛得角中路防守松散和惧怕远射的致命弱点，而佛得角边路进攻受限于传球质量，难以有效利用沙特边后卫身后空当。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "沙特阿拉伯赔率为140，而佛得角为180，市场更看好沙特",
+          "双方同积1分且净胜球相同，出线形势完全平等",
+          "比赛在中立场地温哥华进行，无主场优势"
+        ],
+        "reasoning": "赔率显示沙特阿拉伯是热门方（赔率140对180），但双方同分且处境完全一样，此优势不足以达到明显领先。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Cape Verde中场三人组Yannick Semedo、Laros Duarte、Jamiro Monteiro无具体状态信息",
+          "Saudi Arabia核心Salem Al-Dawsari和Mohamed Kanno无伤停或状态数据",
+          "DraftKings赔率显示Cape Verde+180 vs Saudi Arabia+140，优势微弱"
+        ],
+        "reasoning": "缺乏关键球员状态、伤停或针对性战术的具体信息，赔率差异极小，因此判断双方实力均衡。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队均无核心组合公开信息",
+          "教练均确认但执教时长未知",
+          "世界杯集训仅14天且信息不足"
+        ],
+        "reasoning": "缺乏具体球员合作年限或战术磨合细节，无法判断Cape Verde与Saudi Arabia的化学反应优劣。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DraftKings赔率显示沙特胜率更高（140 vs 180）",
+          "双方FIFA排名差距<30，无实质影响",
+          "两队均无超级巨星级别球员，阵容档次相近"
+        ],
+        "reasoning": "沙特凭借赔率优势（140 vs 180）和更强的本土联赛底蕴获得轻微优势，佛得角球员虽有多人在欧洲但整体实力接近。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Cape Verde近5场2胜1平2负，Saudi Arabia仅1胜1平3负",
+          "Cape Verde上一场3-0胜Serbia，进攻端有明显回暖信号",
+          "Saudi Arabia近3场仅入4球丢6球，防守漏洞明显"
+        ],
+        "reasoning": "Cape Verde上一场3-0大胜Serbia展现进攻回暖，且近期整体状态略优于Saudi Arabia的连续低迷（近5场仅1胜），但两队均为友谊赛备战，差距微小。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760478)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "两队都刚经历11天休整且首轮均战平，Cape Verde的防守核心Stopira领衔的后防线将全力限制沙特阿拉伯的边路冲击，而沙特在BC Place的草皮上需要时间适应。",
+      "沙特阿拉伯在战术对位和情境压力评分上占优，但Cape Verde的绝对实力评分更高（6.0比5.5），且近期状态持平，双方都没有明显优势。",
+      "DraftKings赔率显示沙特阿拉伯略被看好（140），但平局赔率高达280.0，市场对平局概率有低估，结合积分榜形势双方都急于求胜可能反而陷入僵局。"
+    ],
+    "key_risk": "沙特阿拉伯凭借更强的战术纪律性和经验在最后时刻打入制胜球，特别是如果Cape Verde进攻压上留下反击空间。"
+  },
+  "actual_result": null
+}

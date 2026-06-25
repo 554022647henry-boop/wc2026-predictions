@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_L_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:06:46.485342",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.34,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "加纳高位防线易被直塞打身后（2022世界杯对葡萄牙/韩国失球），但巴拿马缺乏顶级速度型前锋来有效利用",
+          "巴拿马中场与后卫线之间空当明显，加纳的4-3-3中场压上后可通过短传渗透创造机会",
+          "双方定位球进攻威胁均不突出，加纳在身体对抗和空中球上略有优势"
+        ],
+        "reasoning": "加纳在进攻端可以利用巴拿马边路防守覆盖不足和中场空当，其高位防线虽易被打身后但巴拿马的反击效率有限，整体节奏和身体对抗上加纳稍占上风。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "加纳赔率明显优于巴拿马（+125 vs +245）",
+          "加纳球员整体效力欧洲顶级联赛，个人能力更强",
+          "双方均为小组赛首轮，无心理包袱和积分压力"
+        ],
+        "reasoning": "加纳凭借库杜斯、帕尔特伊等更高水平的球员储备在中立场占据轻微优势，但首轮双方战意接近，差距不大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年限数据均缺失",
+          "两队教练均已确认但无执教时长信息",
+          "无公开更衣室矛盾报道可参考"
+        ],
+        "reasoning": "双方均缺乏核心组合年限、更衣室氛围或战术磨合的具体信息，无法量化优势差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加纳赔率125 vs 巴拿马245，庄家明显看好加纳",
+          "加纳名单中多名球员效力于英超、意甲等顶级联赛，巴拿马核心多来自美职联",
+          "加纳拥有库杜斯等能在前场创造威胁的球员，巴拿马缺乏同等级别爆点"
+        ],
+        "reasoning": "加纳拥有多名五大联赛主力（如阿马泰、库杜斯等），阵容深度和个体质量明显优于主要以美职联为班的巴拿马，赔率也支持加纳优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "加纳近5场1平3负，场均丢2.5球，防守崩盘",
+          "巴拿马近5场2胜1平1负，且击败多米尼加并逼平波黑",
+          "加纳近3场进球递减（1→0→1），攻击力不稳定",
+          "巴拿马上场非高强度消耗，体力储备更好"
+        ],
+        "reasoning": "巴拿马近期战绩和攻防平衡优于加纳，加纳近5场全败或平且丢球多，巴拿马有胜场表现更稳定。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760434)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "加纳拥有托马斯·帕蒂在中场的拦截与调度，但巴拿马近期状态更佳（近3场2胜），双方中场绞杀可能导致进球机会寥寥。",
+      "加纳的边后卫巴巴·拉赫曼与吉迪恩·门萨压上助攻是主要进攻手段，但巴拿马防线（德里克·卢卡森、阿卜杜勒·穆明领衔）对抗高空球有优势，容易守住平局。",
+      "两队大赛经验接近（DNA评分均为5.0），且小组首战压力下可能谨慎为先，参考赔率倾向平局（DraftKings平赔220.0）。"
+    ],
+    "key_risk": "巴拿马近期的锋线状态（近期状态评分6.5）可能抓住加纳后防的偶然失误偷得一球，打破平局平衡。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_L_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:26:58.456853",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.17,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "英格兰锋线凯恩、萨卡等球员的速度和跑位正好针对加纳高位防线和回追慢的弱点。",
+          "加纳的进攻主要依赖库杜斯和阿尤的个人能力，但英格兰拥有沃克、斯通斯等经验丰富的后卫，能较好应对其快速反击。",
+          "英格兰在定位球进攻中拥有马奎尔等高点头球优势，而加纳防守定位球时曾出现注意力不集中的情况。"
+        ],
+        "reasoning": "英格兰纸面实力碾压，前锋凯恩和边锋萨卡能充分利用加纳中卫协防慢、容易被打身后的致命弱点。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "英格兰世界排名远高于加纳，拥有凯恩、福登等顶级球员，身价差距巨大",
+          "DraftKings赔率显示英格兰-310 vs 加纳+850，市场高度看好英格兰",
+          "这是小组赛首轮，双方求胜欲相当但实力鸿沟明显",
+          "比赛在中立场地进行，无主场/敌对环境影响"
+        ],
+        "reasoning": "英格兰在纸面实力上拥有压倒性优势，赔率-310对+850的差距足以说明其阵容深度和球星成色远超加纳，中立场无明显环境干扰。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.15,
+        "key_factors": [
+          "英格兰核心球员Jordan Henderson和Declan Rice状态未知",
+          "加纳核心球员Thomas Partey状态未知",
+          "赔率显示英格兰为绝对热门，但无法量化核心球员即时状态差异"
+        ],
+        "reasoning": "双方核心球员（如英格兰的Henderson和Rice，加纳的Partey）状态均为“None”，无任何赛前信息可判断优劣，赔率是唯一参考但不足以量化为具体状态优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队均无公开的核心组合年数数据",
+          "两队教练均已确认但无执教时长信息",
+          "无内部矛盾或体系磨合程度的报道"
+        ],
+        "reasoning": "赛前情报中英格兰和加纳均缺乏核心阵容磨合时间、内部矛盾报道或战术调整记录，因此无法评估化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 9.5,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰全队身价为加纳的30倍以上，纸面实力碾压",
+          "英格兰拥有贝林厄姆、凯恩（5.0级）等能单场决定比赛的超级球员",
+          "加纳大名单中仅有少数球员在欧洲五大联赛效力，整体球员档次不足",
+          "赛前英格兰赔率-310，赔率显示英格兰胜率超过75%"
+        ],
+        "reasoning": "英格兰拥有凯恩、贝林厄姆等超级球员，且全队身价远超加纳，而加纳阵容中缺乏能在欧洲顶级联赛立足的核心。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰近2场比赛全部零封对手，包括3-0击败哥斯达黎加，防守稳固",
+          "加纳遭遇3连败，且近4场友谊赛失球11个，防守状态糟糕",
+          "赔率显示英格兰为-310大热，机构压倒性看好"
+        ],
+        "reasoning": "英格兰虽然有3场友谊赛不胜，但最近两场零封对手且上一场3球大胜，状态回升明显；加纳则遭遇3连败且失球数高，防线堪忧，双方实力差距被赔率进一步证实。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 33%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=76%/P(D)=13%/P(B)=11%",
+    "judge_reasoning": "England胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760458)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "中",
+    "reasons": [
+      "英格兰拥有凯恩和贝林厄姆这样的关键球员，他们的攻击组合在小组赛首战往往能快速打开局面，尤其是凯恩的回撤接应和贝林厄姆的后插上，会给加纳的防线制造持续压力。",
+      "加纳首战对阵英格兰，年轻的后防线在防守定位球时容易失误，而英格兰的斯通斯和赖斯在角球战术中抢点能力极强，这可能是破局的突破口。",
+      "英格兰主场作战且大赛经验丰富，整体跑动和前场压迫的节奏更快，加纳如果开场阶段未能顶住，很可能在比赛第60分钟后因体能下降而被连续攻破球门。"
+    ],
+    "key_risk": "加纳的反击速度是主要爆冷风险，若英格兰久攻不下，加纳的边锋利用速度打身后，可能制造意外平局甚至偷胜。"
+  },
+  "actual_result": null
+}

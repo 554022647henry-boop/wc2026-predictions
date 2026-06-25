@@ -1,0 +1,135 @@
+{
+  "match_id": "WC2026_I_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:13:41.850098",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.69,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "伊拉克定位球防守是明确弱点，挪威拥有1.95米的中后卫或潜在高点（如厄斯蒂高）在定位球进攻中占优",
+          "挪威的中路逼抢能利用伊拉克后场出球失误率高的弱点，在中路断球形成反击",
+          "挪威高位防线虽易被打身后，但伊拉克核心射手Ayman Hussein并非速度型，难以持续制造威胁"
+        ],
+        "reasoning": "挪威对伊拉克的进攻威胁（厄德高组织+边锋斜传）针对伊拉克边后卫回追慢和定位球漏人弱点，而伊拉克的快速反击虽有Mohammed Ali的速度，但难以持续突破挪威高位的防守配置。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示挪威-450，伊拉克+1300，实力差距悬殊",
+          "挪威拥有多名欧洲顶级联赛球员，伊拉克服役于亚洲联赛",
+          "伊拉克近期面对强队如日本、澳大利亚均无胜绩"
+        ],
+        "reasoning": "挪威拥有阵容深度和赔率的绝对优势，伊拉克虽有阿扬·侯赛因这样的射手，但整体实力差距明显，且作为首战双方动机相当，挪威更占优。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 7.5,
+        "weight": 0.15,
+        "key_factors": [
+          "挪威拥有世界级组织核心厄德高（效力阿森纳），状态稳定且不可预测",
+          "挪威中场托斯比（恩波利）提供硬度，伊拉克中场雅库布、舍尔等球员缺乏顶级联赛验证",
+          "赔率（Iraq +1300 vs Norway -450）明确显示纸面实力悬殊",
+          "伊拉克近期对阵强队（日本、澳大利亚）失利，且缺乏限制挪威核心的针对性防守球员"
+        ],
+        "reasoning": "挪威凭借厄德高和托斯比的中场统治力及深度阵容，在关键球员状态、战术储备上对伊拉克构成碾压，伊拉克缺乏有效应对方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "挪威核心厄德高（阿森纳）与哈兰德（曼城）在俱乐部和国家队有长期配合基础",
+          "挪威赔率-450显示市场对其整体实力和化学反应更自信",
+          "伊拉克近期战绩不平（1-1平加纳，0-2负喀麦隆）且关键球员俱乐部背景分散"
+        ],
+        "reasoning": "挪威拥有更成熟的体系（厄德高、哈兰德等核心球员配合时间长），而伊拉克核心球员Ayman Hussein分散于不同联赛，阵容稳定性不足。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "赔率显示挪威-450 vs 伊拉克+1300，实力差距明显",
+          "挪威拥有厄德高（阿森纳）、哈兰德（曼城，可能缺阵）等顶级联赛主力",
+          "伊拉克球员主要来自亚洲联赛（Al-Quwa Al-Jawiya、Al-Sadd等），无五大联赛主力",
+          "伊拉克近期战绩1胜1平2负，对阵亚洲/非洲球队尚无亮眼表现"
+        ],
+        "reasoning": "挪威有厄德高等多名五大联赛核心球员，阵容整体档次远超伊拉克（主要亚洲联赛球员），赔率-450也明确显示一方占优。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 4.5,
+        "b_score": 7.0,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Norway近5场2胜2平1负，包含预选赛4-1胜Italy（权重100%）",
+          "Iraq近5场仅1胜（对Andorra），预选赛输Japan和Australia",
+          "赔率Norway-450对Iraq+1300，差距悬殊",
+          "Norway阵容深度和球员个体质量（核心框架欧战级）优于Iraq"
+        ],
+        "reasoning": "Norway核心框架完整，近6场仅1负且有预选赛大胜意大利记录，而Iraq近期仅平西班牙一场亮点，整体实力和近期状态差距显著"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 43%：模型 B_WIN P(A)=26%/P(D)=36%/P(B)=38% vs 市场 P(A)=10%/P(D)=10%/P(B)=81%",
+    "judge_reasoning": "Norway胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Norway胜",
+    "confidence": "中",
+    "reasons": [
+      "挪威有哈兰德和厄德高两大球星坐镇，哈兰德在禁区的冲击力足以撕破伊拉克的防线。",
+      "伊拉克近期面对强队战绩不佳，过去5场对阵日本、澳大利亚、西班牙等队仅1平4负，防守漏洞明显。",
+      "挪威近期友谊赛3-0大胜瑞典，球队磨合良好，而伊拉克在热身赛中1-1平加纳、0-2负喀麦隆，状态起伏。"
+    ],
+    "key_risk": "市场赔率严重偏向挪威（胜率81%），但模型认为平局概率达36%，伊拉克可能依靠密集防守和反击偷得平局，且哈兰德状态不确定。"
+  },
+  "actual_result": null
+}

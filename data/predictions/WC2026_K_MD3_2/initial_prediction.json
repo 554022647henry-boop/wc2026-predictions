@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_K_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:47:35.304695",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.23,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.5,
+        "weight": 0.25,
+        "key_factors": [
+          "DR Congo的定位球进攻可以利用Uzbekistan盯人不紧和对抗不足的弱点，这是1项具体有利因素",
+          "Uzbekistan的快速横向转移和身后球打法能有效针对DR Congo边后卫压上后的空当以及防线松散问题，是1项具体有利因素",
+          "DR Congo在2023年非洲杯暴露的禁区前沿保护不足问题可能被Uzbekistan的中场远射利用，但信息中未强调后者远射能力",
+          "两队防守弱点均涉及快速转移，但Uzbekistan的中后卫转身速度是更明确的漏洞，DR Congo的边路速度可能更容易利用这一点"
+        ],
+        "reasoning": "DR Congo（A队）在利用身体对抗和定位球进攻方面对阵Uzbekistan（B队）的定位球防守短板有明显优势，而Uzbekistan的快速转移能力能威胁DR Congo的防线空当，但DR Congo在中路保护和远射防守上的弱点不如Uzbekistan的后防速度短板那么致命。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.2,
+        "key_factors": [
+          "小组赛MD1，两队均为0分，求胜欲望相同",
+          "比赛在中立场地Estadio BBVA进行，无主场优势",
+          "缺乏两队历史交锋或近期状态的具体信息"
+        ],
+        "reasoning": "双方小组赛首战，动机、场地、休息日完全平等，缺乏具体球员或战术信息支撑任何一方优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "两队关键球员Kakuta、Tshibola、Bongonda（DR Congo）和Iskanderov、Masharipov、Xamrobekov（Uzbekistan）均无近期状态或伤停报道",
+          "无赔率、历史交锋或针对性限制方案信息",
+          "小组赛首轮，两队积分均为0，无此前战绩参考"
+        ],
+        "reasoning": "缺乏关键球员状态、伤停及针对性战术信息，两队均无明确优势因素，故评分完全对等。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年限数据均为null，无法比较稳定性",
+          "乌兹别克斯坦与刚果民主共和国的教练均已确认，但无执教时长细节",
+          "无任何内部矛盾或集训进程的公开报道"
+        ],
+        "reasoning": "双方均无核心阵容合作年限、体系磨合时间或更衣室矛盾的公开信息，无法区分化学反应优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "刚果名单有Aaron Wan-Bissaka（英超曼联/西汉姆联）和Chancel Mbemba（法甲马赛）等五大联赛核心球员",
+          "乌兹别克斯坦名单主要来自本土联赛，缺乏五大联赛背景",
+          "刚果球员平均俱乐部档次显著高于乌兹别克斯坦"
+        ],
+        "reasoning": "刚果民主共和国多名五大联赛主力（如Wan-Bissaka、Mbemba、Masuaku）占据明显阵容优势，而乌兹别克斯坦名单中无五大联赛球员。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "DR Congo近3场友谊赛1胜1平1负，唯一胜仗对Bermuda（世界排名低下）",
+          "Uzbekistan近5场友谊赛1胜2平2负，但曾3-1胜Gabon且对荷兰仅1-2小负",
+          "DR Congo上一场对阵Chile失2球，防守稳定性不足"
+        ],
+        "reasoning": "Uzbekistan对阵强敌（荷兰、加拿大）时有进球能力且进攻威胁略强于DR Congo，但双方均为友谊赛状态，优势有限。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "刚果民主共和国的防守核心Chancel Mbemba和边路快马Arthur Masuaku经验丰富，能限制乌兹别克斯坦的快速反击，但进攻端缺少关键支点。",
+      "乌兹别克斯坦在近期状态评分稍高（6.0 vs 5.5），但整体实力和战术对位都处于下风，很难打破刚果的密集防线。",
+      "两队都处在小组赛首战，积分压力小，比赛节奏可能偏慢，双方在中场展开绞杀，最终以低比分闷平收场。"
+    ],
+    "key_risk": "乌兹别克斯坦若利用定位球或远射先破门，刚果民主共和国的心理压力会骤增，可能因急躁而崩盘。"
+  },
+  "actual_result": null
+}

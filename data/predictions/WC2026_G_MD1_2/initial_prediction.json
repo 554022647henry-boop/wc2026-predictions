@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_G_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T18:25:14.069643",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.03,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Belgium的De Bruyne长传找Doku/Trossard前插直接威胁Egypt由攻转守回追慢的问题",
+          "Egypt中场（如Elneny）拿球能力弱，面对Belgium高压易丢球",
+          "Egypt的萨拉赫内切针对Belgium三中卫肋部空当及Vertonghen速度下降是主要威胁",
+          "Belgium的Vertonghen速度下降是明显防守漏洞，但Egypt其他进攻点贡献有限"
+        ],
+        "reasoning": "Belgium的De Bruyne长传找边锋前插能精准打击Egypt回追慢和防线中场间隙大的弱点，而Egypt依靠萨拉赫内切攻击Vertonghen速度软肋有一定威胁但整体对抗压迫能力差。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "比利时赔率-175明显优于埃及的500",
+          "德布劳内虽伤病风险高但无官方确认缺席",
+          "埃及近期友谊赛表现平庸，而比利时有胜葡萄牙的战绩"
+        ],
+        "reasoning": "比利时因德布劳内外加整体阵容深度更优，赔率-175明确支持其优势，但萨拉赫可能为埃及带来变数。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.18,
+        "key_factors": [
+          "比利时近3届世界杯首战全胜，开门红基因强",
+          "埃及近3届世界杯首战1平2负，表现慢热",
+          "赔率Belgium -175远优于Egypt 500，体现市场强势倾向"
+        ],
+        "reasoning": "比利时依托De Bruyne和Lukaku的火力以及出色的首战历史压制埃及，但埃及的慢热模式和缺乏逆转能力使其难以威胁对手。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "比利时近5场3胜1平1负，包括击败葡萄牙，状态优于埃及的平沙特",
+          "德布劳内34岁、腿筋伤史，虽未确认但隐患大；卢卡库国家队效率高但切尔西出场少",
+          "埃及萨拉赫年龄导致爆发力下降，无官方状态确认，且替补方案不足",
+          "赔率-175对比500，市场高度看好比利时，Belgium控场能力较强"
+        ],
+        "reasoning": "比利时德布劳内无确认伤停但状态存疑，卢卡库国家队高效，埃及萨拉赫年龄下滑且无可靠替代，比利时整体阵容深度和赔率优势明显。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "比利时多名球员来自英超，俱乐部间配合熟悉（如德布劳内-多库-特罗萨德）",
+          "比利时核心组合配合6年，但老将新血磨合仍需检验",
+          "埃及半数球员来自阿尔阿赫利和金字塔FC，俱乐部默契高但战术偏向保守"
+        ],
+        "reasoning": "比利时凭借英超球员集群和长期核心配合（如德布劳内与多库的曼城联系）在化学反反应上占优，而埃及虽国内俱乐部默契高但战术僵化和年龄偏大限制了优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Belgium FIFA排名第5，Egypt第38，差距33名，影响实质",
+          "Belgium阵容总身价6.5亿€，是Egypt（1.2亿€）的5.4倍，差距显著",
+          "Kevin De Bruyne有腿筋伤病史，Mohamed Salah无官方状态确认，双方关键球员不确定性高",
+          "赔率Belgium -175明显被看好，但非碾压，表明市场预期优势但非绝对"
+        ],
+        "reasoning": "Belgium凭借FIFA排名差和5倍身价优势占优，但Egypt有Mohamed Salah可局部抵消De Bruyne的影响力，且两队都是黄金一代末期，状态存疑。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "比利时近5场4胜1平，其中WCQ两连胜击败爱沙尼亚和挪威",
+          "埃及近3场进球从2-1到1-0到0-0连续下降",
+          "比利时-175赔率反映市场优势，埃及+500赔率暗示冷门概率低"
+        ],
+        "reasoning": "比利时近5场4胜1平且含WCQ两连胜，埃及近3场进球递减且对手偏弱，赔率支持比利时明显优势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 26%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=64%/P(D)=19%/P(B)=17%",
+    "judge_reasoning": "Belgium胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "中",
+    "reasons": [
+      "比利时拥有德布劳内这样的中场大师，他精准的直塞和远射能力能轻松撕开埃及防线，创造得分机会。",
+      "埃及队过度依赖萨拉赫的个人发挥，但比利时后防有经验丰富的维尔通亨和阿尔德韦雷尔德，能通过协防限制萨拉赫的冲刺空间。",
+      "比利时在近期友谊赛中2-1击败葡萄牙，展现出进攻端默契配合，而埃及过去三场热身赛仅打入2球，进攻效率明显不足。"
+    ],
+    "key_risk": "德布劳内若因历史腿筋伤情复发缺阵，比利时中场创造力将大幅下降，埃及可能凭借萨拉赫的反击偷走平局甚至胜利。"
+  },
+  "actual_result": null
+}

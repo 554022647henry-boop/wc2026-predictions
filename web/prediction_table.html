@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FIFA World Cup 2026 · AI Group Stage Predictions</title>
+<style>
+:root{
+  --bg:#0b1120;--s1:#111827;--s2:#1a2234;--s3:#243049;
+  --gold:#f5b731;--gold2:#d4981e;--green:#34d399;--red:#f87171;
+  --text:#f1f5f9;--muted:#64748b;--border:#1e293b;
+  --played-bg:rgba(52,211,153,.08);--pred-bg:rgba(245,183,49,.07);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Segoe UI',system-ui,sans-serif;
+  padding:28px 24px 40px;
+}
+
+/* ── 标题区 ── */
+.page-title{
+  text-align:center;margin-bottom:20px;
+  padding:22px 16px 20px;
+  background:linear-gradient(160deg,#0c1525 0%,#1a2740 100%);
+  border:1px solid var(--border);border-radius:10px;
+}
+.title-badge{
+  display:inline-block;border:1px solid var(--gold2);color:var(--gold);
+  background:rgba(245,183,49,.08);padding:2px 14px;border-radius:20px;
+  font-size:10px;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:10px;
+}
+h1{
+  font-size:clamp(1.2rem,3.5vw,1.9rem);font-weight:900;letter-spacing:-.3px;
+  background:linear-gradient(135deg,var(--gold) 20%,#fff 55%,var(--gold) 90%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  margin-bottom:4px;
+}
+.byline{
+  font-size:12px;color:var(--muted);margin-bottom:16px;
+  font-style:italic;letter-spacing:.3px;
+}
+.byline em{color:var(--gold);font-style:normal;font-weight:600}
+
+/* 图例 */
+.legend{
+  display:flex;justify-content:center;gap:20px;flex-wrap:wrap;
+  font-size:11px;color:var(--muted);
+}
+.leg{display:flex;align-items:center;gap:6px}
+.leg-swatch{width:14px;height:10px;border-radius:2px;flex-shrink:0}
+.leg-played{background:rgba(52,211,153,.3);border:1px solid rgba(52,211,153,.5)}
+.leg-pred{background:rgba(245,183,49,.25);border:1px solid rgba(245,183,49,.4)}
+
+/* ── 组网格 ── */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:20px;
+}
+
+/* ── 单组卡片 ── */
+.group-wrap{
+  background:var(--s1);
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+}
+.group-hd{
+  background:linear-gradient(135deg,#1a3a5c,#243049);
+  padding:8px 12px;
+  border-bottom:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.g-name{font-weight:800;font-size:13px;color:var(--gold);letter-spacing:.3px}
+.g-teams{font-size:9.5px;color:#7fa8c9;font-style:italic}
+
+/* ── 表格 ── */
+table{width:100%;border-collapse:collapse;font-size:11px}
+.col-hd th{
+  padding:4px 6px;text-align:center;
+  font-size:9.5px;font-weight:600;color:var(--muted);
+  background:rgba(255,255,255,.04);
+  border-bottom:1px solid var(--border);
+}
+tr td{padding:4px 6px;border-bottom:1px solid rgba(255,255,255,.04);color:#c8d6e5}
+tr:last-child td{border-bottom:none}
+
+/* 列对齐 */
+td.md,th.md{width:22px;text-align:center;color:var(--muted)}
+td.dt,th.dt{width:44px;text-align:center;color:var(--muted);font-size:10px}
+td.t1{text-align:right;width:36%}
+td.t2{text-align:left;width:36%}
+th.t1{text-align:right}
+th.t2{text-align:left}
+td.sc,th.sc{width:44px;text-align:center}
+
+/* winner 加粗 + 金色 */
+td.winner{color:var(--gold);font-weight:700}
+
+/* 状态行背景 */
+tr.played td{background:var(--played-bg)}
+tr.predicted td{background:var(--pred-bg)}
+tr.upcoming td{opacity:.6}
+
+/* 比分 / 结果标签 */
+.played-sc{font-weight:800;font-size:12px;color:var(--green)}
+.draw-lbl{
+  font-size:9px;font-weight:600;color:var(--muted);
+  background:rgba(100,116,139,.15);padding:1px 5px;
+  border-radius:4px;border:1px solid var(--border);
+}
+.vs-lbl{font-size:9px;color:rgba(100,116,139,.5);font-weight:600}
+
+/* 页脚 */
+footer{
+  text-align:center;margin-top:22px;
+  color:var(--muted);font-size:10px;
+  border-top:1px solid var(--border);padding-top:14px;
+  letter-spacing:.3px;
+}
+</style>
+</head>
+<body>
+
+<div class="page-title">
+  <div class="title-badge">AI Prediction System · DeepSeek 7-Agent</div>
+  <h1>FIFA World Cup 2026 — Group Stage Predictions</h1>
+  <div class="byline">by <em>ligo哥</em> · Bold team name = predicted winner · Draw = draw predicted</div>
+  <div class="legend">
+    <div class="leg"><div class="leg-swatch leg-played"></div>Played (final score)</div>
+    <div class="leg"><div class="leg-swatch leg-pred"></div>AI Predicted</div>
+  </div>
+</div>
+
+<div class="grid">
+
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group A</span>
+      <span class="g-teams">Mexico | South Korea | Czechia | South Africa</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-12</td>
+          <td class="t1 winner">Mexico</td>
+          <td class="sc played-sc">2-0</td>
+          <td class="t2">South Africa</td>
+        </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-12</td>
+          <td class="t1 winner">South Korea</td>
+          <td class="sc played-sc">2-1</td>
+          <td class="t2">Czechia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-19</td>
+          <td class="t1 winner">Czechia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">South Africa</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-19</td>
+          <td class="t1 winner">Mexico</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">South Korea</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1">Czechia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Mexico</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1">South Africa</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">South Korea</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group B</span>
+      <span class="g-teams">Canada | Qatar | Switzerland | Bosnia and H.</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-12</td>
+          <td class="t1">Bosnia and H.</td>
+          <td class="sc played-sc">1-1</td>
+          <td class="t2">Canada</td>
+        </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-14</td>
+          <td class="t1">Qatar</td>
+          <td class="sc played-sc">1-1</td>
+          <td class="t2">Switzerland</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-18</td>
+          <td class="t1 winner">Switzerland</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Bosnia and H.</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-19</td>
+          <td class="t1 winner">Canada</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Qatar</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1">Switzerland</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">Canada</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1 winner">Bosnia and H.</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Qatar</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group C</span>
+      <span class="g-teams">Brazil | Haiti | Scotland | Morocco</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-14</td>
+          <td class="t1">Haiti</td>
+          <td class="sc played-sc">0-1</td>
+          <td class="t2 winner">Scotland</td>
+        </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-14</td>
+          <td class="t1">Brazil</td>
+          <td class="sc played-sc">1-1</td>
+          <td class="t2">Morocco</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-20</td>
+          <td class="t1 winner">Brazil</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Haiti</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-20</td>
+          <td class="t1">Scotland</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Morocco</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1">Scotland</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Brazil</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-25</td>
+          <td class="t1 winner">Morocco</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Haiti</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group D</span>
+      <span class="g-teams">USA | Australia | Turkiye | Paraguay</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-13</td>
+          <td class="t1">Paraguay</td>
+          <td class="sc played-sc">4-1</td>
+          <td class="t2 winner">USA</td>
+        </tr>
+        <tr class="played">
+          <td class="md">1</td>
+          <td class="dt">06-14</td>
+          <td class="t1 winner">Australia</td>
+          <td class="sc played-sc">2-0</td>
+          <td class="t2">Turkiye</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-20</td>
+          <td class="t1 winner">Turkiye</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Paraguay</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-20</td>
+          <td class="t1 winner">USA</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Australia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Turkiye</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">USA</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Paraguay</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Australia</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group E</span>
+      <span class="g-teams">Germany | Ivory Coast | Ecuador | Curacao</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-15</td>
+          <td class="t1">Ivory Coast</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Ecuador</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-15</td>
+          <td class="t1 winner">Germany</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Curacao</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-21</td>
+          <td class="t1 winner">Germany</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Ivory Coast</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-21</td>
+          <td class="t1 winner">Ecuador</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Curacao</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Curacao</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Ivory Coast</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Ecuador</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Germany</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group F</span>
+      <span class="g-teams">Netherlands | Sweden | Tunisia | Japan</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-15</td>
+          <td class="t1 winner">Netherlands</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Japan</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-15</td>
+          <td class="t1 winner">Sweden</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Tunisia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-21</td>
+          <td class="t1 winner">Netherlands</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Sweden</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-21</td>
+          <td class="t1">Tunisia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Japan</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Japan</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">Sweden</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-26</td>
+          <td class="t1">Tunisia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Netherlands</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group G</span>
+      <span class="g-teams">Belgium | Iran | New Zealand | Egypt</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-16</td>
+          <td class="t1 winner">Iran</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">New Zealand</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-16</td>
+          <td class="t1 winner">Belgium</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Egypt</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-22</td>
+          <td class="t1 winner">Belgium</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Iran</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-22</td>
+          <td class="t1">New Zealand</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Egypt</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1">Egypt</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">Iran</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1">New Zealand</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Belgium</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group H</span>
+      <span class="g-teams">Spain | Saudi Arabia | Uruguay | Cape Verde</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-16</td>
+          <td class="t1">Saudi Arabia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Uruguay</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-16</td>
+          <td class="t1 winner">Spain</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Cape Verde</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-22</td>
+          <td class="t1 winner">Uruguay</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Cape Verde</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-22</td>
+          <td class="t1 winner">Spain</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Saudi Arabia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1">Cape Verde</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Saudi Arabia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1">Uruguay</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Spain</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group I</span>
+      <span class="g-teams">France | Iraq | Norway | Senegal</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-17</td>
+          <td class="t1 winner">France</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Senegal</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-17</td>
+          <td class="t1">Iraq</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Norway</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-23</td>
+          <td class="t1">Norway</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">Senegal</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-23</td>
+          <td class="t1 winner">France</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Iraq</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1">Norway</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">France</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-27</td>
+          <td class="t1 winner">Senegal</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Iraq</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group J</span>
+      <span class="g-teams">Argentina | Austria | Jordan | Algeria</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-17</td>
+          <td class="t1 winner">Argentina</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Algeria</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-17</td>
+          <td class="t1 winner">Austria</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Jordan</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-23</td>
+          <td class="t1 winner">Argentina</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Austria</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-23</td>
+          <td class="t1">Jordan</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Algeria</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-28</td>
+          <td class="t1">Algeria</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Austria</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-28</td>
+          <td class="t1">Jordan</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Argentina</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group K</span>
+      <span class="g-teams">Portugal | Uzbekistan | Colombia | DR Congo</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-17</td>
+          <td class="t1 winner">Portugal</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">DR Congo</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-18</td>
+          <td class="t1">Uzbekistan</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Colombia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-23</td>
+          <td class="t1 winner">Colombia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">DR Congo</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-24</td>
+          <td class="t1 winner">Portugal</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Uzbekistan</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-28</td>
+          <td class="t1">Colombia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Portugal</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-30</td>
+          <td class="t1">DR Congo</td>
+          <td class="sc"><span class="draw-lbl">Draw</span></td>
+          <td class="t2">Uzbekistan</td>
+        </tr>
+    </table>
+  </div>
+  <div class="group-wrap">
+    <div class="group-hd">
+      <span class="g-name">Group L</span>
+      <span class="g-teams">England | Ghana | Panama | Croatia</span>
+    </div>
+    <table>
+      <tr class="col-hd">
+        <th>MD</th><th>Date</th>
+        <th class="t1">Team 1</th>
+        <th class="sc"></th>
+        <th class="t2">Team 2</th>
+      </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-18</td>
+          <td class="t1 winner">Ghana</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Panama</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">1</td>
+          <td class="dt">06-18</td>
+          <td class="t1 winner">England</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Croatia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-24</td>
+          <td class="t1 winner">England</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Ghana</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">2</td>
+          <td class="dt">06-24</td>
+          <td class="t1">Panama</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">Croatia</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-28</td>
+          <td class="t1">Panama</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2 winner">England</td>
+        </tr>
+        <tr class="predicted">
+          <td class="md">3</td>
+          <td class="dt">06-28</td>
+          <td class="t1 winner">Croatia</td>
+          <td class="sc"><span class="vs-lbl">vs</span></td>
+          <td class="t2">Ghana</td>
+        </tr>
+    </table>
+  </div>
+</div>
+
+<footer>ligo哥 · DeepSeek 7-Agent World Cup 2026 Prediction System · wc2026-predictions</footer>
+
+</body>
+</html>

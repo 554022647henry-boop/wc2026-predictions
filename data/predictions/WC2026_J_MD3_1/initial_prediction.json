@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_J_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:44:36.971340",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.5,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "奥地利4-2-3-1阵型中场人数占优，能通过直塞和长传精准打击阿尔及利亚后卫线身后空当",
+          "阿尔及利亚中后卫组合（曼迪、本塞拜尼）面对直线冲刺型前锋时回追速度不足，是明确防守弱点",
+          "阿尔及利亚首战0-3失利暴露防守体系不稳定，奥地利则0-0平局后更需调整进攻端"
+        ],
+        "reasoning": "奥地利的中场人数优势和直塞打法能更直接地利用阿尔及利亚中后卫（如曼迪、本塞拜尼）回追速度慢的弱点，而阿尔及利亚的边路进攻虽可能冲击奥地利高位防线，但鉴于奥地利首战尚未暴露严重问题，此消彼长下奥地利稍占便宜。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "阿尔及利亚若输球将提前出局，必须取胜的动机远超奥地利",
+          "赔率略微倾向奥地利（+140对+230），但并非压倒性优势",
+          "首战0-3惨败给阿根廷暴露阿尔及利亚防守问题，但球队有足够时间调整"
+        ],
+        "reasoning": "阿尔及利亚因首战惨败而面临“赢或回家”的绝境，动机更强；赔率略看好奥地利但差距微小，故阿尔及利亚有微弱优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "ESPN赔率显示奥地利获胜赔率140，低于阿尔及利亚的230，市场更看好奥地利",
+          "奥地利核心Konrad Laimer和Marcel Sabitzer具有大赛经验，而阿尔及利亚核心Nabil Bentaleb和Houssem Aouar状态未知",
+          "阿尔及利亚首战0-3失利，积分落后，需主动进攻可能暴露防线"
+        ],
+        "reasoning": "奥地利赔率更优且中场核心Laimer和Sabitzer经验占优，但双方均无明确状态或伤停信息，优势极有限。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "阿尔及利亚教练已确认，但无阵容磨合时长数据",
+          "奥地利教练已确认，但无更衣室或体系成熟度信息",
+          "两队均无公开矛盾或主力合作年限，系统信息不充分"
+        ],
+        "reasoning": "双方均无核心组合稳定性与更衣室细节，仅教练已确认，无法判定化学反应差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "奥地利阵容以德甲/英超主力为主，核心阿拉巴为皇马关键球员",
+          "赔率显示奥地利胜赔140远低于阿尔及利亚230，市场预期悬殊",
+          "阿尔及利亚首战0-3负于阿根廷，状态和信心存疑"
+        ],
+        "reasoning": "奥地利拥有阿拉巴、施拉格等更多五大联赛主力，且赔率明显倾向，市场判断奥地利高一档"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "奥地利近3场友谊赛全胜，击败突尼斯、韩国等实力对手。",
+          "阿尔及利亚近5场友谊赛4胜1平，但对手包括玻利维亚、危地马拉等弱旅。",
+          "阿尔及利亚小组赛首战0-3负于阿根廷，士气与出线压力更大。"
+        ],
+        "reasoning": "双方均以友谊赛为主，状态难分高下，但奥地利近期对手实力更强且取得连胜，稍占优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760484)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "阿尔及利亚首战净负3球，但休整11天体能占优，奥地利则只有1天恢复时间，双方体能差距可能抵消奥地利在战术对位上的微弱优势。",
+      "奥地利关键球员如萨比策（若在名单中）有远射威胁，但阿尔及利亚左路拉米·本塞拜尼的防守经验能限制边路传中，双方中场绞杀可能让比赛陷入僵局。",
+      "两队历史上交手记录偏少且实力接近，平局赔率低至2.05，市场隐含概率最高，符合模型平局概率38%的预期。"
+    ],
+    "key_risk": "奥地利若利用阿尔及利亚后防不稳定的弱点（首战丢3球）打出快速反击，可能客场偷胜，但阿尔及利亚主场级氛围可能激发意外表现。"
+  },
+  "actual_result": null
+}

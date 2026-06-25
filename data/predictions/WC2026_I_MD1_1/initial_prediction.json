@@ -1,0 +1,135 @@
+{
+  "match_id": "WC2026_I_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T11:26:17.783238",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.37,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.25,
+        "key_factors": [
+          "法国进攻核心姆巴佩速度可能撕开塞内加尔肋部防守漏洞",
+          "法国高位防线在应对快速反击时存在身后空当，塞内加尔可能利用",
+          "赛前赔率显示法国明显占优（-200 vs 550），反映整体实力差距",
+          "双方4-3-3阵型对位，中场争夺可能决定比赛节奏"
+        ],
+        "reasoning": "法国拥有姆巴佩的速度和进攻火力，可能针对塞内加尔肋部防守疏漏制造威胁，但自身高位防线易被塞内加尔反击利用，形成轻微对位优势。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "法国核心姆巴佩状态预期极佳，是绝对进攻强点",
+          "法国近期热身赛胜率较高，展现良好竞技状态",
+          "赔率-200对+550显示市场认为法国胜算远超塞内加尔",
+          "小组赛首战双方战意相近，无额外动机差异"
+        ],
+        "reasoning": "法国凭借姆巴佩的顶级火力与更深的阵容厚度，在纸面实力上形成对塞内加尔的明显优势，赔率也充分支持这一判断。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "法国核心姆巴佩（Real Madrid）处于赛季高位，是绝对进攻爆点",
+          "塞内加尔后防无顶级盯人防守者能一对一限制姆巴佩",
+          "法国近期3-1胜北爱尔兰，进攻状态稳定；塞内加尔赛前无明确有利信息"
+        ],
+        "reasoning": "法国拥有姆巴佩（状态极佳）且无伤停，进攻端优势明显；塞内加尔缺少能针对性限制姆巴佩的顶级后卫，且近期缺乏与强队抗衡的实证。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "法国核心组合（姆巴佩、格列兹曼等）已共同征战多届大赛，稳定性远超塞内加尔",
+          "法国教练德尚执教超12年，战术体系成熟，塞内加尔教练执教时间较短",
+          "法国近期胜率高（近5场4胜），塞内加尔状态起伏较大（近5场2胜2平1负）"
+        ],
+        "reasoning": "法国拥有姆巴佩、格列兹曼等长期配合的核心，德尚执教超十年体系稳固，而塞内加尔核心老化且磨合时间有限，因此法国在稳定性上明显占优。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "France拥有当今足坛Top3超级球员Kylian Mbappé，具备单场决定比赛的能力",
+          "France阵容多来自五大联赛豪门（皇马、AC米兰、拜仁等），整体档次明显高于Senegal",
+          "赛前赔率France -200（67%胜率）vs Senegal 550（15%胜率），差距显著",
+          "Senegal虽有Koulibaly等名将，但缺乏与Mbappé同等级的进攻终结者"
+        ],
+        "reasoning": "France凭借姆巴佩的超级个人能力和六大豪门级首发阵容明显占优，而Senegal由库利巴利领衔但整体实力逊色一筹"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "法国近5场取得4胜，包括击败巴西和哥伦比亚，状态稳定；塞内加尔近4场仅1胜，且不敌美国。",
+          "法国进攻火力稳定，5场进12球，场均2.4球；塞内加尔4场仅进5球。",
+          "基于DraftKings赔率，法国-200显示市场对其信心远超塞内加尔（+550）。"
+        ],
+        "reasoning": "法国队凭借姆巴佩领衔的豪华阵容和4胜1负的强势战绩，对比塞内加尔1胜2平1负的平庸表现，在进攻端有明显优势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=67%/P(D)=18%/P(B)=15%",
+    "judge_reasoning": "France胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "中",
+    "reasons": [
+      "法国队的战术对位更占优势，姆巴佩的速度和突破能力能在边路撕开塞内加尔的防线，尤其是后者边后卫回追偏慢。",
+      "法国队近期状态稳定，上一场3-1击败塞内加尔，核心球员如Kylian Mbappé在关键比赛中的大场面表现值得信赖。",
+      "塞内加尔依赖Sadio Mané的支点作用，但他年龄增长后状态下滑，面对法国队整体协防很难持续制造威胁。"
+    ],
+    "key_risk": "市场赔率显示法国胜概率远高于模型预测（67% vs 43%），若法国队轻敌或开场慢热，塞内加尔可能通过反击偷走平局甚至胜利。"
+  },
+  "actual_result": null
+}

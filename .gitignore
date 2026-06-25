@@ -1,0 +1,48 @@
+# 敏感文件
+.github_token
+config.py
+
+# Claude 会话数据
+.claude/
+.mcp.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 调试临时文件
+data/debug_batch_*.txt
+
+# 原始采集数据（太大，不需要）
+data/collected/
+data/reviewed/
+data/odds_history/
+
+# 备份文件（各种版本备份）
+*.bak
+*.v1bak
+*.v2bak
+*.v3bak
+*.prebak
+
+# 旧版知识库（已被v2取代）
+data/team_knowledge_2026.json
+
+# 临时图片（飞书授权二维码）
+lark_qr*.png
+web/lark_qr*.png
+
+# 无用脚本
+build_html.py
+generate_html_from_workflow.py
+generate_image.py
+save_predictions.py
+translate_reasons.py
+feature_analysis.py
+setup_github_pages.py
+
+# 测试文件
+test_*.txt
+test_*.json
+source_test_result.txt

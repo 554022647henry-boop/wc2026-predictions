@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_E_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:36:46.187896",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -2.01,
+    "p_a_win": 0.22,
+    "p_draw": 0.28,
+    "p_b_win": 0.5,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 4.0,
+        "b_score": 7.0,
+        "delta": -3.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "科特迪瓦整体球员实力（如凯西、阿莱等）远超库拉索，个人能力决定比赛节奏",
+          "库拉索首战净负德国6球，防守组织与抗压能力严重不足",
+          "科特迪瓦尽管防守转换有松散弱点，但库拉索反击能力有限，难以持续利用",
+          "赔率显示科特迪瓦胜赔低至-700，市场信心极高，反映实力鸿沟"
+        ],
+        "reasoning": "科特迪瓦凭借球员级别和战术纪律的全面优势，在攻防两端都占据主动，库拉索缺乏有效反制手段。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示科特迪瓦胜赔-700，库拉索+1800，市场完全指向一方",
+          "科特迪瓦首轮1-0取胜，士气与状态良好，库拉索首轮1-6惨败于德国",
+          "科特迪瓦拥有阿莱、凯西等欧洲五大联赛核心球员，库拉索阵容多为低级别联赛或无职业经历球员",
+          "比赛在美国洛杉矶中立场进行，对双方均无主场优势影响"
+        ],
+        "reasoning": "科特迪瓦在攻防两端拥有阿莱和凯西等顶级球星，整体实力远超库拉索，后者首战丢6球暴露防线漏洞，面对非洲大象的冲击力几乎无法抵抗。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "科特迪瓦中场Franck Kessié与Seko Fofana均在五大联赛效力，状态稳定",
+          "Curacao首战净负6球，防守体系暴露出巨大漏洞",
+          "赔率显示科特迪瓦获胜赔率-700，实力悬殊明显",
+          "Curacao缺乏可依赖的进攻支点，Leandro Bacuna与Juninho Bacuna难以对抗科特迪瓦顶级中场"
+        ],
+        "reasoning": "科特迪瓦的中场三人组（Fofana, Seri, Kessié）在身价与经验上完全压制Curacao的Bacuna兄弟，且Curacao防线面对厄瓜多尔失球过多，无力抵挡。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "库拉索球员多来自荷兰低级别联赛，大赛备战期短且核心组合不稳定",
+          "科特迪瓦核心球员如凯西（沙特联赛）和阿莱（多特蒙德）等经验丰富，体系更成熟",
+          "赔率显示科特迪瓦实力碾压（-700），阵容化学反应优势明显"
+        ],
+        "reasoning": "科特迪瓦拥有多名五大联赛主力如凯西、阿莱，整体阵容层次和战术执行力远强于球员分散且大赛经验匮乏的库拉索。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.2,
+        "b_score": 7.3,
+        "delta": -2.1,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "科特迪瓦首发预期有多位五大联赛主力（Ndicka、Kossounou、Lafont），库拉索仅个别球员有荷甲经验",
+          "赔率显示科特迪瓦胜率极高（-700 vs +1800），市场完全倾斜",
+          "库拉索首战0-6惨败德国，净胜球-6，而科特迪瓦1-0胜厄瓜多尔，状态和士气差距显著"
+        ],
+        "reasoning": "科特迪瓦拥有五大联赛防线（Ndicka/Kossounou）和整体阵容深度，库拉索缺乏顶级联赛核心且实力悬殊，赔率和积分反映明显差距。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 0.5,
+        "b_score": 8.0,
+        "delta": -7.5,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "科特迪瓦近3场全胜且2-1击败法国，库拉索近5场全败场均失3.2球",
+          "赔率显示科特迪瓦胜赔-700，库拉索胜赔1800，实力差距悬殊",
+          "库拉索积分垫底且净胜球-6，科特迪瓦需胜利巩固出线优势"
+        ],
+        "reasoning": "科特迪瓦在状态、实力和赔率上全面碾压，库拉索近期连败且防守崩溃，无法形成有效对抗。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 32%：模型 B_WIN P(A)=22%/P(D)=28%/P(B)=50% vs 市场 P(A)=8%/P(D)=9%/P(B)=82%",
+    "judge_reasoning": "Ivory Coast胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760473)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ivory Coast胜",
+    "confidence": "高",
+    "reasons": [
+      "科特迪瓦刚经历了一场硬仗，全队状态正佳，首轮战胜厄瓜多尔让他们士气高涨，后防核心Sherel Floranus和Joshua Brenet需要顶住科特迪瓦的攻击线冲击",
+      "Curacao休息了11天，但首轮惨败德国净吞6球，防线漏洞明显，科特迪瓦的快速反击将利用这一点，比如利用边路速度直接打穿对手",
+      "科特迪瓦的中场控球能力更强，Eloy Room虽有经验但很难阻挡对手的持续施压，而Curacao关键球员个人能力强但缺少团队配合，难以形成威胁"
+    ],
+    "key_risk": "Curacao作为小国球队可能因毫无压力而超常发挥，若科特迪瓦轻敌或久攻不下，平局冷门可能出现"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_K_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:08:19.181183",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.73,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.8,
+        "b_score": 5.2,
+        "delta": 1.6,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "葡萄牙中场控制力强，可通过快速横向转移撕开民主刚果防线，针对其2023年非洲杯暴露的防守弱点",
+          "民主刚果定位球防守注意力不集中，葡萄牙有布鲁诺·费尔南德斯和C罗等定位球高手",
+          "葡萄牙边后卫助攻后空当易被反击利用，但民主刚果缺乏顶级终结者"
+        ],
+        "reasoning": "葡萄牙通过横向转移和远射手优势（针对民主刚果防线松散和禁区保护不足），而民主刚果的反击威胁难以持续，葡萄牙由攻转守漏洞可能被利用但整体压制力更强。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "葡萄牙纸面实力和世界排名远高于刚果民主共和国",
+          "DraftKings赔率显示葡萄牙胜赔-330，刚果民主共和国胜赔高达+1000，市场极度不看好后者",
+          "小组赛首轮，强队葡萄牙有强烈开门红需求，弱队刚果民主共和国以保平争胜为目标，动机强度差异大"
+        ],
+        "reasoning": "葡萄牙拥有多名世界级球星（如B席、莱奥），整体实力远超刚果民主共和国，且市场赔率（-330）显示出压倒性优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "葡萄牙拥有布鲁诺·费尔南德斯和贝尔纳多·席尔瓦两名状态高位的中场核心，组织与创造力世界级",
+          "刚果（金）无确认伤停，但关键球员卡库塔、邦贡达缺乏匹配顶级中场的防守或战术限制方案",
+          "赔率显示葡萄牙优势巨大（-330 vs 1000），刚果（金）替补深度不足以弥补实力差距"
+        ],
+        "reasoning": "葡萄牙凭借布鲁诺·费尔南德斯和贝尔纳多·席尔瓦的中场双核优势，以及对方缺乏针对性限制方案，形成明显统治力；刚果（金）虽核心无伤，但整体实力和应对能力不足。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "无核心组合年限或同俱乐部球员数据",
+          "无更衣室矛盾或教练执教时长信息",
+          "无战术系统磨合或临场变数具体描述"
+        ],
+        "reasoning": "信息不足以评估，两队无核心组合或体系数据，仅基于教练确认给出中性评分。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差距至少在50名以上，葡萄牙稳居前10，刚果约60-70名",
+          "赔率显示葡萄牙-330（隐含胜率约77%），刚果+1000（胜率不足10%）",
+          "葡萄牙阵容以五大联赛顶级豪门主力为主，刚果仅2-3名英超球员，其余来自法甲/比甲中下游"
+        ],
+        "reasoning": "葡萄牙拥有鲁本·迪亚斯、坎塞洛、B席等五大联赛顶级主力，排名和赔率均碾压刚果，刚果仅靠万-比萨卡和姆本巴在英超立足，整体档次差两个级别。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "葡萄牙近5场3胜1平1负，但含2场友谊赛权重30%",
+          "刚果民主共和国近3场1平2负未尝胜绩，唯一胜场对阵百慕大",
+          "赔率-330 vs +1000显示葡萄牙理论胜率约75%"
+        ],
+        "reasoning": "葡萄牙友谊赛3胜1平且阵容深度远超刚果民主共和国，但对手含金量不足且世预赛有败绩，刚果近3场仅失2球防守尚可。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 34%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=77%/P(D)=13%/P(B)=10%",
+    "judge_reasoning": "Portugal胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760435)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "中",
+    "reasons": [
+      "葡萄牙中场有布鲁诺·费尔南德斯和贝尔纳多·席尔瓦掌控节奏，两人在禁区前沿的短传渗透能撕开刚果的密集防线。",
+      "葡萄牙右路有坎塞洛插上助攻，他的传中球经常找到后插上的中场球员，刚果边后卫速度偏慢难以应对。",
+      "刚果在小组赛首战经验不足，面对葡萄牙的高位逼抢可能在后场出球时失误，迪奥戈·科斯塔的快速手抛球能发动反击。"
+    ],
+    "key_risk": "刚果若全线收缩防守并依靠反击偷袭，葡萄牙可能久攻不下被逼平，而刚果门将若超常发挥可能扑出关键射门。"
+  },
+  "actual_result": null
+}

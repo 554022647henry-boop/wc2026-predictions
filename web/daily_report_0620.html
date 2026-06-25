@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI预测日报 06.20 · 2026世界杯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:       #0a0a0a;
+      --ink-2:     #3f3f46;
+      --ink-3:     #71717a;
+      --bg:        #ffffff;
+      --surface:   #f4f4f5;
+      --border:    #e4e4e7;
+      --blue:      #1d4ed8;
+      --blue-dark: #1e3a8a;
+      --blue-bg:   #eff6ff;
+      --blue-mid:  #dbeafe;
+      --green:     #15803d;
+      --green-bg:  #f0fdf4;
+      --green-mid: #bbf7d0;
+      --red:       #b91c1c;
+      --red-bg:    #fef2f2;
+      --red-mid:   #fecaca;
+      --amber:     #b45309;
+      --amber-bg:  #fffbeb;
+      --amber-mid: #fde68a;
+      --f-display: 'Syne', sans-serif;
+      --f-body:    'Figtree', sans-serif;
+      --f-mono:    'Space Mono', monospace;
+      --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0;
+      font-family: var(--f-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .stage {
+      width: 100%; max-width: 640px;
+      background: var(--bg);
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: none;
+      animation: rise 0.7s var(--ease-out) both;
+    }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .r { opacity: 0; transform: translateY(16px); transition: opacity 0.55s var(--ease-out), transform 0.55s var(--ease-out); }
+    .r.on { opacity: 1; transform: none; }
+    .r-d1 { transition-delay: .06s; }
+    .r-d2 { transition-delay: .12s; }
+    .r-d3 { transition-delay: .18s; }
+    .r-d4 { transition-delay: .24s; }
+    .r-d5 { transition-delay: .30s; }
+    @media (prefers-reduced-motion: reduce) { .r { opacity: 1; transform: none; transition: none; } }
+
+    /* HERO */
+    .hero { background: var(--blue-dark); padding: 48px 40px 44px; position: relative; overflow: hidden; }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,.03) 39px, rgba(255,255,255,.03) 40px);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: ''; position: absolute; right: -60px; top: -60px;
+      width: 240px; height: 240px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.08); pointer-events: none;
+    }
+    .hero-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; font-family: var(--f-mono); font-size: 11px; color: rgba(255,255,255,.5); letter-spacing: .06em; position: relative; }
+    .hero-meta::before { content: ''; width: 24px; height: 1px; background: rgba(255,255,255,.3); }
+    .hero h1 { font-family: var(--f-display); font-size: clamp(30px, 5.5vw, 42px); font-weight: 800; color: #fff; line-height: 1.12; letter-spacing: -0.03em; text-wrap: balance; position: relative; margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: #93c5fd; }
+    .hero-sub { font-size: 15px; line-height: 1.65; color: rgba(255,255,255,.65); position: relative; }
+    .hero-score { position: relative; display: inline-flex; align-items: baseline; gap: 8px; margin-top: 28px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.12); border-radius: 3px; padding: 14px 20px; }
+    .hero-score-num { font-family: var(--f-display); font-size: 36px; font-weight: 800; color: #fff; line-height: 1; }
+    .hero-score-denom { font-family: var(--f-mono); font-size: 13px; color: rgba(255,255,255,.45); padding-bottom: 2px; }
+    .hero-score-label { font-family: var(--f-mono); font-size: 10px; letter-spacing: .08em; color: rgba(255,255,255,.4); margin-left: 4px; }
+
+    /* BODY */
+    .body { padding: 0 40px; }
+    .section-head { padding: 36px 0 24px; border-bottom: 1px solid var(--border); }
+    .section-label { font-family: var(--f-mono); font-size: 10px; letter-spacing: .1em; color: var(--ink-3); margin-bottom: 10px; text-transform: uppercase; }
+    .section-title { font-family: var(--f-display); font-size: 20px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
+
+    /* MATCH CARDS */
+    .matches { padding: 28px 0 36px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 12px; }
+    .match-card { border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+    .match-card.hit  { border-color: var(--green-mid); }
+    .match-card.miss { border-color: var(--red-mid); }
+    .match-card-top { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--border); }
+    .match-card.hit  .match-card-top { background: var(--green-bg); border-color: var(--green-mid); }
+    .match-card.miss .match-card-top { background: var(--red-bg);   border-color: var(--red-mid); }
+    .match-group-badge { font-family: var(--f-mono); font-size: 10px; letter-spacing: .08em; color: var(--ink-3); }
+    .match-verdict { display: flex; align-items: center; gap: 6px; font-family: var(--f-mono); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
+    .match-card.hit  .match-verdict { color: var(--green); }
+    .match-card.miss .match-verdict { color: var(--red); }
+    .verdict-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+    .match-card-body { padding: 16px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
+    .match-team { display: flex; flex-direction: column; gap: 2px; }
+    .match-team-name { font-family: var(--f-display); font-size: 15px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+    .match-team-flag { font-size: 22px; line-height: 1; }
+    .match-team.right { text-align: right; align-items: flex-end; }
+    .match-score-block { text-align: center; }
+    .match-score { font-family: var(--f-display); font-size: 28px; font-weight: 800; color: var(--ink); letter-spacing: -0.04em; line-height: 1; }
+    .match-score-sub { font-family: var(--f-mono); font-size: 10px; color: var(--ink-3); margin-top: 4px; letter-spacing: .04em; }
+    .match-card-foot { padding: 10px 16px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+    .match-card.hit  .match-card-foot { border-color: var(--green-mid); }
+    .match-card.miss .match-card-foot { border-color: var(--red-mid); }
+    .pred-label { font-family: var(--f-mono); font-size: 10px; color: var(--ink-3); letter-spacing: .06em; }
+    .pred-value { font-family: var(--f-mono); font-size: 12px; font-weight: 700; color: var(--ink-2); }
+
+    /* INSIGHT */
+    .insight { margin: 0 -40px; padding: 36px 40px; background: var(--blue-bg); border-top: 2px solid var(--blue-mid); border-bottom: 2px solid var(--blue-mid); }
+    .insight-label { font-family: var(--f-mono); font-size: 10px; letter-spacing: .1em; color: var(--blue); margin-bottom: 14px; }
+    .insight blockquote { font-family: var(--f-display); font-size: 22px; font-weight: 700; color: var(--blue-dark); line-height: 1.4; letter-spacing: -0.02em; text-wrap: balance; }
+    .insight-source { margin-top: 14px; font-size: 13px; color: var(--ink-3); font-style: italic; }
+
+    /* POINTS */
+    .points { padding: 36px 0; border-bottom: 1px solid var(--border); }
+    .point { display: grid; grid-template-columns: 48px 1fr; gap: 0 16px; padding: 24px 0; border-top: 1px solid var(--border); }
+    .point:first-of-type { border-top: none; padding-top: 0; }
+    .point-num { font-family: var(--f-mono); font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: .04em; padding-top: 3px; }
+    .point-content h3 { font-family: var(--f-display); font-size: 16px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; margin-bottom: 8px; }
+    .point-content p { font-size: 14px; line-height: 1.75; color: var(--ink-2); margin-bottom: 10px; }
+    .point-content p:last-child { margin-bottom: 0; }
+    .lesson-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--amber-bg); border: 1px solid var(--amber-mid); border-radius: 2px; padding: 4px 10px; font-family: var(--f-mono); font-size: 11px; color: var(--amber); font-weight: 700; }
+
+    /* PRED CARDS */
+    .pred-cards { padding: 28px 0 40px; display: flex; flex-direction: column; gap: 16px; }
+    .pred-card { border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+    .pred-card-header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; }
+    .pred-card-meta { display: flex; align-items: center; gap: 10px; }
+    .pred-card-group { font-family: var(--f-mono); font-size: 10px; letter-spacing: .08em; color: var(--ink-3); }
+    .pred-card-time { font-family: var(--f-mono); font-size: 10px; color: var(--ink-3); background: var(--bg); border: 1px solid var(--border); border-radius: 2px; padding: 2px 7px; }
+    .confidence-badge { font-family: var(--f-mono); font-size: 10px; font-weight: 700; letter-spacing: .06em; padding: 3px 9px; border-radius: 2px; border: 1px solid; }
+    .confidence-badge.high { color: var(--green); border-color: var(--green-mid); background: var(--green-bg); }
+    .confidence-badge.mid  { color: var(--blue);  border-color: var(--blue-mid);  background: var(--blue-bg); }
+    .confidence-badge.low  { color: var(--amber); border-color: var(--amber-mid); background: var(--amber-bg); }
+    .pred-card-matchup { padding: 18px 16px 14px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); }
+    .pred-team-name { font-family: var(--f-display); font-size: 14px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+    .pred-team-flag { font-size: 20px; line-height: 1; }
+    .pred-team.right { text-align: right; }
+    .pred-vs { font-family: var(--f-mono); font-size: 11px; color: var(--ink-3); text-align: center; }
+    .pred-verdict-block { text-align: center; }
+    .pred-verdict-label { font-family: var(--f-mono); font-size: 10px; color: var(--ink-3); letter-spacing: .06em; margin-bottom: 2px; }
+    .pred-verdict-value { font-family: var(--f-display); font-size: 16px; font-weight: 700; color: var(--blue-dark); letter-spacing: -0.01em; }
+    .pred-reasons { padding: 16px; }
+    .pred-reasons-title { font-family: var(--f-mono); font-size: 10px; letter-spacing: .08em; color: var(--ink-3); margin-bottom: 12px; }
+    .pred-reason-item { display: grid; grid-template-columns: 20px 1fr; gap: 0 10px; padding: 8px 0; border-top: 1px solid var(--surface); }
+    .pred-reason-item:first-of-type { border-top: none; padding-top: 0; }
+    .reason-bullet { font-family: var(--f-mono); font-size: 11px; color: var(--blue); font-weight: 700; padding-top: 1px; }
+    .reason-text { font-size: 13px; line-height: 1.65; color: var(--ink-2); }
+    .pred-risk { margin: 0 16px 16px; padding: 10px 12px; background: var(--amber-bg); border-left: 2px solid var(--amber-mid); border-radius: 0 2px 2px 0; }
+    .pred-risk-label { font-family: var(--f-mono); font-size: 10px; color: var(--amber); letter-spacing: .06em; margin-bottom: 4px; }
+    .pred-risk-text { font-size: 12px; line-height: 1.6; color: var(--amber); }
+
+    /* PROB BAR */
+    .prob-bar-wrap { padding: 0 16px 16px; }
+    .prob-bar-label { font-family: var(--f-mono); font-size: 10px; letter-spacing: .08em; color: var(--ink-3); margin-bottom: 8px; }
+    .prob-bar-track { height: 6px; background: var(--surface); border-radius: 3px; display: flex; overflow: hidden; gap: 2px; }
+    .prob-bar-a { background: var(--blue-dark); border-radius: 3px 0 0 3px; }
+    .prob-bar-d { background: #94a3b8; }
+    .prob-bar-b { background: #d1d5db; border-radius: 0 3px 3px 0; }
+    .prob-bar-legend { display: flex; justify-content: space-between; margin-top: 5px; }
+    .prob-bar-legend span { font-family: var(--f-mono); font-size: 10px; color: var(--ink-3); }
+
+    .divider-section { padding: 36px 0 0; }
+    .foot { background: var(--ink); padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; }
+    .foot-brand { font-family: var(--f-mono); font-size: 11px; color: rgba(255,255,255,.4); letter-spacing: .06em; }
+    .foot-ep    { font-family: var(--f-mono); font-size: 11px; color: rgba(255,255,255,.25); }
+  </style>
+</head>
+<body>
+<div class="stage">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-meta r">AI预测日报 &nbsp;·&nbsp; 2026世界杯 &nbsp;·&nbsp; 06.20</div>
+    <h1 class="r r-d1">今日复盘<br>明日<em>预测</em></h1>
+    <p class="hero-sub r r-d2">
+      美国、巴西、摩洛哥三连中，巴西高置信完美收官。<br>
+      巴拉圭用一个进球告诉我们：双生死局不一定出平局。
+    </p>
+    <div class="hero-score r r-d3">
+      <span class="hero-score-num">3</span>
+      <span class="hero-score-denom">/ 4</span>
+      <span class="hero-score-label">TODAY'S HIT RATE</span>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- SECTION 01: 今日结果 -->
+    <div class="divider-section">
+      <div class="section-label r">SECTION 01</div>
+      <div class="section-title r r-d1">今日比赛结果</div>
+    </div>
+
+    <div class="matches">
+
+      <!-- 03:00 美国 vs 澳大利亚 ✅ -->
+      <div class="match-card hit r r-d1">
+        <div class="match-card-top">
+          <span class="match-group-badge">D组 · MD2 · 达拉斯 · 03:00</span>
+          <div class="match-verdict"><div class="verdict-dot"></div>HIT ✓</div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <div class="match-team-flag">🇺🇸</div>
+            <div class="match-team-name">United States</div>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">2–0</div>
+            <div class="match-score-sub">FT</div>
+          </div>
+          <div class="match-team right">
+            <div class="match-team-flag">🇦🇺</div>
+            <div class="match-team-name">Australia</div>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">我方预测</span>
+          <span class="pred-value">United States胜 (中置信)</span>
+        </div>
+      </div>
+
+      <!-- 06:00 苏格兰 vs 摩洛哥 ✅ -->
+      <div class="match-card hit r r-d2">
+        <div class="match-card-top">
+          <span class="match-group-badge">C组 · MD2 · 费城 · 06:00</span>
+          <div class="match-verdict"><div class="verdict-dot"></div>HIT ✓</div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <div class="match-team-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</div>
+            <div class="match-team-name">Scotland</div>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">0–1</div>
+            <div class="match-score-sub">FT</div>
+          </div>
+          <div class="match-team right">
+            <div class="match-team-flag">🇲🇦</div>
+            <div class="match-team-name">Morocco</div>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">我方预测</span>
+          <span class="pred-value">Morocco胜 (中置信)</span>
+        </div>
+      </div>
+
+      <!-- 08:30 巴西 vs 海地 ✅ -->
+      <div class="match-card hit r r-d3">
+        <div class="match-card-top">
+          <span class="match-group-badge">C组 · MD2 · 旧金山 · 08:30</span>
+          <div class="match-verdict"><div class="verdict-dot"></div>HIT ✓</div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <div class="match-team-flag">🇧🇷</div>
+            <div class="match-team-name">Brazil</div>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">3–0</div>
+            <div class="match-score-sub">FT</div>
+          </div>
+          <div class="match-team right">
+            <div class="match-team-flag">🇭🇹</div>
+            <div class="match-team-name">Haiti</div>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">我方预测</span>
+          <span class="pred-value">Brazil胜 (高置信)</span>
+        </div>
+      </div>
+
+      <!-- 11:00 土耳其 vs 巴拉圭 ❌ -->
+      <div class="match-card miss r r-d4">
+        <div class="match-card-top">
+          <span class="match-group-badge">D组 · MD2 · 波士顿 · 11:00</span>
+          <div class="match-verdict"><div class="verdict-dot"></div>MISS</div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <div class="match-team-flag">🇹🇷</div>
+            <div class="match-team-name">Turkiye</div>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">0–1</div>
+            <div class="match-score-sub">FT</div>
+          </div>
+          <div class="match-team right">
+            <div class="match-team-flag">🇵🇾</div>
+            <div class="match-team-name">Paraguay</div>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">我方预测</span>
+          <span class="pred-value">平局 (低置信)</span>
+        </div>
+      </div>
+
+    </div><!-- /matches -->
+
+    <!-- INSIGHT -->
+    <div class="insight r">
+      <div class="insight-label">TODAY'S TAKEAWAY</div>
+      <blockquote>双生死局不一定出平局——净胜球落差更大的队，往往打得更拼，而不是更缩</blockquote>
+      <p class="insight-source">土耳其vs巴拉圭：巴拉圭净胜球-4的心理压力反而激发了拼劲，1-0爆冷拿下土耳其</p>
+    </div>
+
+    <!-- SECTION 02: 失败复盘 -->
+    <div class="section-head r">
+      <div class="section-label">SECTION 02</div>
+      <div class="section-title r r-d1">失败原因拆解</div>
+    </div>
+
+    <div class="points">
+      <div class="point r r-d1">
+        <div class="point-num">01</div>
+        <div class="point-content">
+          <h3>土耳其 vs 巴拉圭：低估了"背水一战"的爆发力</h3>
+          <p>
+            昨天捷克 vs 南非踢平，我们总结出"双生死局存在对消效应"。今天对着土耳其 vs 巴拉圭，又直接套用了这个逻辑——两队首轮均输，预测平局。
+          </p>
+          <p>
+            但结果是巴拉圭 <strong>1–0 爆冷拿下土耳其</strong>。回头看，两队处境并不对称：巴拉圭首轮 <strong>1–4 惨败美国</strong>，净胜球 -4，心理压力反而形成了"背水一战必须拼"的爆发动力；土耳其净胜球 -2，且赔率被看好（-105），反而踢得过于保守。
+            越是被逼到绝境，越可能打出超水平发挥——这是模型没有捕捉到的情绪变量。
+          </p>
+          <div class="lesson-tag">教训 — 净胜球落差大的队不是更保守，而是更拼命；"绝境爆发"需要在情境压力维度中单独加权</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 03: 明日预测 -->
+    <div class="divider-section">
+      <div class="section-label r">SECTION 03</div>
+      <div class="section-title r r-d1">明日预测 · 06.21</div>
+    </div>
+
+    <div class="pred-cards">
+
+      <!-- 01:00 荷兰 vs 瑞典 -->
+      <div class="pred-card r r-d1">
+        <div class="pred-card-header">
+          <div class="pred-card-meta">
+            <span class="pred-card-group">F组 · MD2 · 达拉斯</span>
+            <span class="pred-card-time">01:00 北京时间</span>
+          </div>
+          <span class="confidence-badge mid">中置信</span>
+        </div>
+        <div class="pred-card-matchup">
+          <div class="pred-team">
+            <div class="pred-team-flag">🇳🇱</div>
+            <div class="pred-team-name">Netherlands</div>
+          </div>
+          <div>
+            <div class="pred-vs">VS</div>
+            <div style="margin-top:8px;text-align:center">
+              <div class="pred-verdict-label">我方预测</div>
+              <div class="pred-verdict-value">荷兰胜</div>
+            </div>
+          </div>
+          <div class="pred-team right">
+            <div class="pred-team-flag">🇸🇪</div>
+            <div class="pred-team-name">Sweden</div>
+          </div>
+        </div>
+        <div class="prob-bar-wrap r">
+          <div class="prob-bar-label">胜平负概率分布</div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-a" style="width:38%"></div>
+            <div class="prob-bar-d" style="width:36%"></div>
+            <div class="prob-bar-b" style="width:26%"></div>
+          </div>
+          <div class="prob-bar-legend">
+            <span>荷兰胜 38%</span><span>平局 36%</span><span>瑞典胜 26%</span>
+          </div>
+        </div>
+        <div class="pred-reasons">
+          <div class="pred-reasons-title">预测依据</div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">范迪克和邓弗里斯领衔的防线身体对抗和防空能力强，能有效限制瑞典的传中战术</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">德佩小组赛首战表现活跃，他的盘带和远射是打破瑞典密集防线的关键武器</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">MD1瑞典5–1大胜突尼斯但荷兰与日本2–2战平，两队均需赢球，荷兰更强的纸面实力略占优</span>
+          </div>
+        </div>
+        <div class="pred-risk">
+          <div class="pred-risk-label">⚠ 核心风险</div>
+          <div class="pred-risk-text">瑞典若靠林德洛夫定位球头球破门，荷兰可能久攻不下陷入焦躁；平局概率36%不可忽视</div>
+        </div>
+      </div>
+
+      <!-- 04:00 德国 vs 科特迪瓦 -->
+      <div class="pred-card r r-d2">
+        <div class="pred-card-header">
+          <div class="pred-card-meta">
+            <span class="pred-card-group">E组 · MD2 · 纽约/新泽西</span>
+            <span class="pred-card-time">04:00 北京时间</span>
+          </div>
+          <span class="confidence-badge mid">中置信</span>
+        </div>
+        <div class="pred-card-matchup">
+          <div class="pred-team">
+            <div class="pred-team-flag">🇩🇪</div>
+            <div class="pred-team-name">Germany</div>
+          </div>
+          <div>
+            <div class="pred-vs">VS</div>
+            <div style="margin-top:8px;text-align:center">
+              <div class="pred-verdict-label">我方预测</div>
+              <div class="pred-verdict-value">德国胜</div>
+            </div>
+          </div>
+          <div class="pred-team right">
+            <div class="pred-team-flag">🇨🇮</div>
+            <div class="pred-team-name">Ivory Coast</div>
+          </div>
+        </div>
+        <div class="prob-bar-wrap r">
+          <div class="prob-bar-label">胜平负概率分布</div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-a" style="width:43%"></div>
+            <div class="prob-bar-d" style="width:33%"></div>
+            <div class="prob-bar-b" style="width:24%"></div>
+          </div>
+          <div class="prob-bar-legend">
+            <span>德国胜 43%</span><span>平局 33%</span><span>科特迪瓦胜 24%</span>
+          </div>
+        </div>
+        <div class="pred-reasons">
+          <div class="pred-reasons-title">预测依据</div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">德国首战7–1狂胜，穆夏拉和哈弗茨进攻端状态火热，科特迪瓦防线面对速度型冲击时屡现漏洞</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">京多安和基米希中场控制力占优，能持续压制科特迪瓦防守阵型，迫使其难以组织有效反击</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">科特迪瓦虽MD1取胜，但边路防守经验不足，德国的高位逼抢和快速转移将不断考验其后防</span>
+          </div>
+        </div>
+        <div class="pred-risk">
+          <div class="pred-risk-label">⚠ 核心风险</div>
+          <div class="pred-risk-text">德国大赛DNA评分偏低，若科特迪瓦靠定位球或快速反击率先破门，可能引发心态波动，德国爆冷平局的历史不是没有</div>
+        </div>
+      </div>
+
+      <!-- 08:00 厄瓜多尔 vs 库拉索 -->
+      <div class="pred-card r r-d3">
+        <div class="pred-card-header">
+          <div class="pred-card-meta">
+            <span class="pred-card-group">E组 · MD2 · 迈阿密</span>
+            <span class="pred-card-time">08:00 北京时间</span>
+          </div>
+          <span class="confidence-badge mid">中置信</span>
+        </div>
+        <div class="pred-card-matchup">
+          <div class="pred-team">
+            <div class="pred-team-flag">🇪🇨</div>
+            <div class="pred-team-name">Ecuador</div>
+          </div>
+          <div>
+            <div class="pred-vs">VS</div>
+            <div style="margin-top:8px;text-align:center">
+              <div class="pred-verdict-label">我方预测</div>
+              <div class="pred-verdict-value">厄瓜多尔胜</div>
+            </div>
+          </div>
+          <div class="pred-team right">
+            <div class="pred-team-flag">🇨🇼</div>
+            <div class="pred-team-name">Curacao</div>
+          </div>
+        </div>
+        <div class="prob-bar-wrap r">
+          <div class="prob-bar-label">胜平负概率分布</div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-a" style="width:50%"></div>
+            <div class="prob-bar-d" style="width:28%"></div>
+            <div class="prob-bar-b" style="width:22%"></div>
+          </div>
+          <div class="prob-bar-legend">
+            <span>厄瓜多尔胜 50%</span><span>平局 28%</span><span>库拉索胜 22%</span>
+          </div>
+        </div>
+        <div class="pred-reasons">
+          <div class="pred-reasons-title">预测依据</div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">厄瓜多尔英超主力左后卫埃斯图皮南的前插传中是破密集防守的利器，库拉索边路很难限制他</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">凯塞多和门德斯双后腰组合切断对手反击，持续施压；库拉索上场净吞6球，士气极度低迷</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">厄瓜多尔急需3分追赶积分，赔率-1100极度看好，主动进攻意愿远强于对手</span>
+          </div>
+        </div>
+        <div class="pred-risk">
+          <div class="pred-risk-label">⚠ 核心风险</div>
+          <div class="pred-risk-text">赔率过热（-1100）反而可能让厄瓜多尔心态急躁；库拉索若摆烂铁桶，可能像卡塔尔一样踢成0–0再被偷袭</div>
+        </div>
+      </div>
+
+      <!-- 12:00 突尼斯 vs 日本 -->
+      <div class="pred-card r r-d4">
+        <div class="pred-card-header">
+          <div class="pred-card-meta">
+            <span class="pred-card-group">F组 · MD2 · 温哥华</span>
+            <span class="pred-card-time">12:00 北京时间</span>
+          </div>
+          <span class="confidence-badge low">低置信</span>
+        </div>
+        <div class="pred-card-matchup">
+          <div class="pred-team">
+            <div class="pred-team-flag">🇹🇳</div>
+            <div class="pred-team-name">Tunisia</div>
+          </div>
+          <div>
+            <div class="pred-vs">VS</div>
+            <div style="margin-top:8px;text-align:center">
+              <div class="pred-verdict-label">我方预测</div>
+              <div class="pred-verdict-value">平局</div>
+            </div>
+          </div>
+          <div class="pred-team right">
+            <div class="pred-team-flag">🇯🇵</div>
+            <div class="pred-team-name">Japan</div>
+          </div>
+        </div>
+        <div class="prob-bar-wrap r">
+          <div class="prob-bar-label">胜平负概率分布</div>
+          <div class="prob-bar-track">
+            <div class="prob-bar-a" style="width:32%"></div>
+            <div class="prob-bar-d" style="width:39%"></div>
+            <div class="prob-bar-b" style="width:29%"></div>
+          </div>
+          <div class="prob-bar-legend">
+            <span>突尼斯胜 32%</span><span>平局 39%</span><span>日本胜 29%</span>
+          </div>
+        </div>
+        <div class="pred-reasons">
+          <div class="pred-reasons-title">预测依据</div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">两队首轮均未赢球，双生死压力下两队都不敢贸然全压——但今天巴拉圭的教训告诉我们，净胜球落差更大的一方（突尼斯0–5 vs 日本1–5）可能打得更拼</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">突尼斯近期状态评分反高于日本（6.5 vs 5.5），加上Bronn的身体对抗优势，可能限制日本核心球员的突破</span>
+          </div>
+          <div class="pred-reason-item">
+            <span class="reason-bullet">→</span>
+            <span class="reason-text">战术对位突尼斯略占优，两队休息时间相同；平局概率最高（39%），是今日所有场次里概率最集中的一场</span>
+          </div>
+        </div>
+        <div class="pred-risk">
+          <div class="pred-risk-label">⚠ 核心风险</div>
+          <div class="pred-risk-text">市场赔率严重偏向日本（胜率66% vs 模型29%），若日本上半场率先破门，突尼斯被迫压上后防线漏洞可能被日本打穿</div>
+        </div>
+      </div>
+
+    </div><!-- /pred-cards -->
+
+  </div><!-- /body -->
+
+  <div class="foot">
+    <span class="foot-brand">@Ligo哥 · AI预测系统</span>
+    <span class="foot-ep">WC2026 · 06.20</span>
+  </div>
+
+</div>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.r').forEach(el => io.observe(el));
+  setTimeout(() => {
+    document.querySelectorAll('.hero .r').forEach(el => el.classList.add('on'));
+  }, 200);
+</script>
+</body>
+</html>

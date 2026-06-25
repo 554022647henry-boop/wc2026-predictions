@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_A_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:09:51.099262",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.57,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "捷克三中卫体系边路与中卫空当易被南非快速边锋利用",
+          "南非防守定位球高空球能力较弱，捷克可利用这一点",
+          "捷克背水一战需主动进攻，可能暴露防线空当给南非反击"
+        ],
+        "reasoning": "捷克的三中卫体系对快速反击防守不足，南非边路速度能利用这一弱点；但南非定位球防守漏洞明显，捷克可能通过高空球取得突破。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示捷克胜率更高，-130 vs 390，实力被看好",
+          "双方都是MD2生死战，必须赢的动机几乎完全相同",
+          "比赛在中立场进行，无主客场优势影响"
+        ],
+        "reasoning": "捷克在纸面实力和赔率上有轻微优势，但双方都是生死战，动机对等，差距不显著。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 1.0,
+        "weight": 0.15,
+        "key_factors": [
+          "ESPN赔率显示捷克轻微热门，但非确定性评估依据",
+          "所有关键球员状态数据为空，无信息支撑",
+          "首发未公布，无法判断任何人员调整或隐患"
+        ],
+        "reasoning": "双方核心球员（如Tomáš Souček和Teboho Mokoena）状态未知，无任何伤停、状态或战术信息可区分优劣。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队都处于0分压力下，但无核心组合年限数据",
+          "无内部矛盾或体系成熟度公开信息",
+          "赛前赔率显示捷克稍被看好，但化学反应维度无具体支撑"
+        ],
+        "reasoning": "双方均无可用的阵容稳定性或更衣室细节，仅教练已确认，无明显化学反应差距"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "ESPN赔率显示Czechia胜率约56%，South Africa仅20%",
+          "Czechia球员多效力欧洲主流联赛（如Coufal英超、Krejci欧战级别），南非阵容全来自本土联赛（Pirates/Sundowns）",
+          "积分榜形势：双方均0分，但Czechia首战输1球、南非输2球，前者状态略优"
+        ],
+        "reasoning": "Czechia凭借欧洲主流联赛阵容深度（如西汉姆Coufal、布拉格斯拉维亚Krejci）和赔率优势（-130 vs +390）占据明显上风，南非本土联赛班底难以抗衡。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "捷克近3场2胜1平，南非近3场2平1负状态低迷",
+          "捷克近5场进12球，南非近3场仅1球且近2场零进球",
+          "捷克无连胜但对手实力稍强，南非攻击端缺乏有效威胁"
+        ],
+        "reasoning": "捷克近3场不败且场均进球超2球，南非连续3场不胜且近2场零进球，捷克攻击线如希克和绍切克状态更可靠。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Czechia胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760438)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Czechia胜",
+    "confidence": "低",
+    "reasons": [
+      "捷克在绝对实力和近期状态评分占优，尤其是锋线核心球员（如帕特里克·希克）若能首发，其冲击力将对南非后防制造威胁",
+      "南非在小组赛首战失利后士气受挫，而捷克休息时间更充裕且战术纪律性强，定位球可能成为破局关键",
+      "赔率市场倾向捷克（-130），且加权分差δ=+0.57指向微弱优势，但平局概率36%不可忽略"
+    ],
+    "key_risk": "捷克关键球员未在ESPN官方名单中明确出现，若核心（如希克）缺阵或状态不佳，进攻效率可能不足，南非反击偷分的可能性依然存在"
+  },
+  "actual_result": null
+}

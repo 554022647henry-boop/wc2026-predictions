@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_B_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:10:44.016933",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.77,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "DraftKings赔率显示瑞士为-170大幅领先波黑的+475",
+          "双方小组赛首战均为1分，赢球意愿强烈且无差异",
+          "比赛在中立场地洛杉矶进行，无主场优势"
+        ],
+        "reasoning": "瑞士在赔率上明显占优（-170），实力强于波黑，但小组赛首战双方战意相近，无明显其他有利因素叠加。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率明确倾向瑞士（-170 vs 475），体现纸面优势",
+          "瑞士中场Granit Xhaka长期为球队核心，经验优于波黑中场",
+          "波黑队缺乏明确战术或防守球员能针对性限制瑞士核心"
+        ],
+        "reasoning": "瑞士队凭借整体实力和赔率优势（-170）占据明显主动，Granit Xhaka和Remo Freuler的中场控制力优于波黑的Ivan Sunjic和Amir Hadziahmetovic，但缺少具体状态信息限制评分。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队的核心组合共事年限均为null，无法评估稳定性",
+          "两队教练均已确认但无执教时长或矛盾报道",
+          "无战术系统磨合时间或临场换人影响数据"
+        ],
+        "reasoning": "缺乏两队核心组合稳定性、更衣室氛围或体系成熟度的具体信息，无法区分化学反应差距。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士首发阵容包含曼努埃尔·阿坎吉（曼城）和格雷戈尔·科贝尔（多特蒙德）等欧冠级球员",
+          "波黑名单中无现役五大联赛常驻主力，塞亚德·科拉西纳茨年龄偏大且非核心",
+          "赔率显示瑞士胜率为-170（约63%），波黑+475（约17%），市场明显偏向瑞士"
+        ],
+        "reasoning": "瑞士拥有多名五大联赛主力（阿坎吉、科贝尔、罗德里格斯），而波黑阵容严重依赖老将科拉西纳茨，无同等级球员"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士赔率-170显示明显市场信心",
+          "瑞士近3场进球从4球降至1球，进攻效率下滑",
+          "波黑近5场不败（1胜4平）含逼平意大利，防守稳固"
+        ],
+        "reasoning": "瑞士有赔率明显优势和略微更好的球员质量（如国际赛经验），但近期战绩无3连胜且进球呈下降趋势，波黑不败韧性较强，差距不大。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 25%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=63%/P(D)=20%/P(B)=17%",
+    "judge_reasoning": "Switzerland胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760439)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Switzerland胜",
+    "confidence": "低",
+    "reasons": [
+      "瑞士在情境压力和绝对实力评分上占优，老将Granit Xhaka的中场拦截和长传调度能有效压制波黑的进攻节奏，尤其是面对波黑相对缓慢的后防线，瑞士的快速转换将制造机会。",
+      "波黑在关键球员维度落后1.5分，缺少如Edin Džeko这样的稳定终结点时，球队的进攻效率可能下降；而瑞士的防守体系在Yann Sommer指挥下更紧凑，尤其在定位球防守中更有组织。",
+      "瑞士休息时间仅比波黑少1天，但比赛在洛杉矶进行，瑞士球员更适应类似气候条件，且波黑近期状态评分偏低，长途跋涉可能影响其下半场体能。"
+    ],
+    "key_risk": "赔率显示市场极度看好瑞士（胜率63%），但模型预测瑞士胜仅38%，存在明显偏差，可能因波黑球迷集中投注或伤病情报未公开；若波黑采取铁桶阵并依靠反击偷分，瑞士久攻不下可能被逼平甚至爆冷输球。"
+  },
+  "actual_result": null
+}

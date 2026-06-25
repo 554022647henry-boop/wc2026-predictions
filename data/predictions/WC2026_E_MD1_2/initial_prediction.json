@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_E_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T18:00:11.462582",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 2.49,
+    "p_a_win": 0.5,
+    "p_draw": 0.28,
+    "p_b_win": 0.22,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.5,
+        "b_score": 4.5,
+        "delta": 3.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Musiala/Wirtz在肋部的活动将直接攻击库拉索两名35岁中卫Cuco Martina和Shermaine Martina的身后空当",
+          "Sané内切结合Kimmich套边下底传中，可针对库拉索边后卫助攻后回防不及时的漏洞",
+          "库拉索抗压球能力弱，面对德国中场Andrich、Kimmich的高位逼抢将频繁丢失球权，无法有效推进"
+        ],
+        "reasoning": "德国在进攻端对库拉索的防守弱点（中卫速度慢、边卫回追慢）有多个具体打击手段（Musiala肋部穿插、Sané内切、Füllkrug抢点），且库拉索的粗糙出球难以在德国逼抢下组织起有效进攻。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 9.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率Germany -3000远高于Curacao 2800，市场信心极强",
+          "德国队近期5场不败且击败荷兰、挪威等强队",
+          "库拉索近期世预赛两场不胜且输给牙买加",
+          "穆西亚拉虽恢复训练但可能限制出场时间"
+        ],
+        "reasoning": "德国队实力碾压且赔率-3000显示压倒性优势，但穆西亚拉和京多安的不确定性削弱了完全碾压的评分"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 4.0,
+        "weight": 0.18,
+        "key_factors": [
+          "德国近两届世界杯小组赛均出局，首轮对阵同等或稍弱对手（墨西哥、日本）全败",
+          "库拉索首次参加世界杯决赛圈，无任何大赛首轮经验",
+          "穆西亚拉腿筋拉伤可能限制出场时间，影响德国前场创造力"
+        ],
+        "reasoning": "德国实力碾压但小组赛首轮屡次翻车，库拉索首次参赛毫无经验，赔率差距巨大但历史DNA警告不可轻敌。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Musiala即使受限首发，德国仍有Wirtz和Undav等高水平替代",
+          "库拉索门将Room状态起伏，替补缺乏经验",
+          "赔率显示德国胜算极高（-3000），反映纸面碾压优势"
+        ],
+        "reasoning": "德国在实力、深度和状态上全面占优，库拉索仅依靠Benschop和Room但无应对手段"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.08,
+        "key_factors": [
+          "德国多名主力（Neuer, Kimmich, Musiala, Sané, Gnabry）来自同一豪门拜仁慕尼黑，长期训练比赛默契极佳",
+          "纳格尔斯曼执教第三年，阵容轮换稳定，战术体系成熟度高",
+          "库拉索主力平均年龄33岁，老化严重且缺乏领袖型球员"
+        ],
+        "reasoning": "德国凭借拜仁和勒沃库森的俱乐部核心集群提供了极高的场上默契和战术理解度，而库拉索虽有荷甲联系但平均年龄偏大且体系稳定度低。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差距76位，德国第8 vs 库拉索第84，排名差远超过30名界限",
+          "阵容身价差距296倍（9.5亿€ vs 320万€），远超2倍显著标准",
+          "德国拥有基米希、吕迪格等欧冠级别球员，库拉索无一人效力五大联赛顶级俱乐部"
+        ],
+        "reasoning": "德国FIFA排名和身价均碾压库拉索，基米希和吕迪格足以主导攻防，穆西亚拉即使受限仍是威胁；库拉索身价仅3.2M，无顶级球员，近期平海地负牙买加暴露实力不足。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Germany近5场3胜2平保持不败，含击败日本、意大利",
+          "Curacao近5场仅1胜且被厄瓜多尔0-3零封",
+          "Germany赔率-3000显示市场绝对统治力",
+          "Curacao近3场进球0-1-0，攻击效率极低"
+        ],
+        "reasoning": "Germany近期不败且战胜日本意大利，赔率-3000碾压，Curacao近5场仅1胜进攻乏力，整体实力鸿沟明显"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 31%：模型 A_WIN P(A)=50%/P(D)=28%/P(B)=22% vs 市场 P(A)=81%/P(D)=8%/P(B)=11%",
+    "judge_reasoning": "Germany胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "高",
+    "reasons": [
+      "德国队整体实力碾压，穆夏拉即使只踢半场也能用盘带撕开库拉索防线，就像他上赛季对阵拜仁对手时那样灵活。",
+      "库拉索在预选赛面对强队时防守漏洞明显，近期0-2输给牙买加，而德国队前场有维尔茨、萨内等快马，反击速度会让对手难以招架。",
+      "基米希和京多安的中场控制力远超库拉索的巴库纳，德国能在高位压迫下持续施压，预计上半场就会取得领先。"
+    ],
+    "key_risk": "德国队可能因轻松取胜而松懈，若穆夏拉状态受限且轮换过多，库拉索能抓住定位球或远射偷袭，造成冷门平局。"
+  },
+  "actual_result": null
+}

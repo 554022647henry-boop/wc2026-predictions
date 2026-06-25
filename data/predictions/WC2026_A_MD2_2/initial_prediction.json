@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_A_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:12:25.632643",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.64,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.5,
+        "weight": 0.25,
+        "key_factors": [
+          "墨西哥进攻（如洛萨诺、希门尼斯）擅长快速传切，可针对韩国队后防高强度压迫下回追速度慢的弱点。",
+          "韩国队（如孙兴慜、黄喜灿）的边路传中与定位球进攻，可直接利用墨西哥队大赛中屡次暴露的高空球争夺不力问题。",
+          "墨西哥主场作战且实力略占优（赔率支持），预计掌握控球节奏，这使其能更多地主导进攻并寻找韩国队的防守空当。"
+        ],
+        "reasoning": "墨西哥进攻端的地面传切能有效打击韩国队边路回追慢的弱点，而韩国队可以利用传中与定位球攻击墨西哥队公认的高空球防守短板，但墨西哥主场优势与整体实力略优使其占据更主动的对位优势。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "墨西哥主场作战，瓜达拉哈拉高原主场对韩国是巨大适应挑战",
+          "赔率显示墨西哥是明显热门（100 vs 310），市场信心差距大",
+          "双方均积3分，取胜欲望极强，无明显动机强度差异",
+          "韩国首战3分入账，心理无阴影且士气储备充足"
+        ],
+        "reasoning": "墨西哥坐拥主场之利（Estadio Akron）且赔率大幅领先，但韩国首胜后士气正佳且双方战意均等，墨西哥优势体现在主场环境而非绝对碾压。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "墨西哥在主场瓜达拉哈拉比赛，拥有地利优势",
+          "DraftKings赔率显示墨西哥胜率远高于韩国（+100 vs +310）",
+          "双方均无关键球员伤停消息，墨西哥核心如Edson Álvarez和Luis Chávez状态未知但阵容更完整"
+        ],
+        "reasoning": "墨西哥凭借主场优势及DraftKings赔率显示明显更被看好（Mexico +100 vs South Korea +310），而韩国队缺少顶级球星且无明确伤病优势，整体实力稍逊。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年限数据缺失，无法比较稳定性",
+          "双方教练均已确认，无临时更换风险",
+          "缺乏更衣室矛盾报道或体系磨合细节"
+        ],
+        "reasoning": "双方均无具体核心组合年份或战术磨合时长信息，仅教练已确认，无法判断差异。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "主场作战，赔率显示墨西哥胜率远超韩国（100 vs 310）",
+          "墨西哥核心奥乔亚、蒙特斯均为五大联赛主力，阵容档次更高",
+          "韩国缺乏超级球星，金玟哉虽强但难以单独改变比赛"
+        ],
+        "reasoning": "墨西哥有主场优势和赔率支持，阵容中奥乔亚、蒙特斯等球员的五大联赛经验优于韩国整体（金玟哉除外），且拥有洛萨诺这类能改变比赛的边路球员，优势明显。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥近6场正式比赛及友谊赛5胜1平未尝败绩，状态稳定。",
+          "墨西哥近3场友谊赛场均攻入2.67球（5-1胜塞尔维亚、1-0胜澳大利亚、2-0胜加纳），进攻端火力持续。",
+          "韩国队近4场友谊赛2胜2负，包括0-4惨败给科特迪瓦，状态波动较大。"
+        ],
+        "reasoning": "墨西哥近6场友谊赛5胜1平，且近期锋线状态火热（近3场场均3球），而韩国队状态有较大起伏（曾0-4负于科特迪瓦），墨西哥在整体稳定性和主场优势上占优。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Mexico胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760441)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "低",
+    "reasons": [
+      "墨西哥主场作战，在瓜达拉哈拉的阿克伦球场，他们的进攻线能利用韩国队防线转身慢的弱点，特别是洛萨诺的突破和希门尼斯的抢点将制造威胁。",
+      "墨西哥中场控制力更强，埃雷拉和瓜尔达多的经验能压制韩国队的反击发起，而韩国队的核心球员孙兴慜可能被蒙特斯重点盯防。",
+      "墨西哥休息时间多一天，且首战净胜球领先，士气正旺；韩国队虽首胜但防守端暴露过漏洞，面对墨西哥的快速传切容易失位。"
+    ],
+    "key_risk": "韩国队如果通过密集防守拖入僵局，利用孙兴慜的个人能力打反击，可能偷走一场平局甚至爆冷取胜。"
+  },
+  "actual_result": null
+}

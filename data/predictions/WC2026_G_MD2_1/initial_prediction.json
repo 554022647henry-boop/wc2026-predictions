@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_G_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:20:55.443256",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.18,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "比利时远射和中路渗透对伊朗中场-后卫线空当有威胁",
+          "伊朗反击可针对比利时边后卫回防不及时的弱点",
+          "比利时需赢球抢分，战术上更可能主动高压，增加体能消耗风险"
+        ],
+        "reasoning": "比利时进攻可通过横向转移和远射（如德布劳内）攻破伊朗防守空当，伊朗反击虽能利用比利时边后卫压上漏洞但整体压制力不足。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "比利时世界排名远高于伊朗，首发阵容整体身价差距显著",
+          "首轮两队均平局，动机相同且无休息天数劣势",
+          "中立场地无主场优势，伊朗防守反击战术可能限制比利时进攻"
+        ],
+        "reasoning": "比利时纸面实力占优且赔率支持，但伊朗防守稳固、首轮平局证明韧性，故比利时仅因阵容深度和关键球员（如德布劳内）能力获得明显但不压倒性优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "比利时核心德布劳内和蒂勒曼斯均无伤停，状态稳定可期",
+          "伊朗阵容深度不足，贾汉巴赫什等球员难以匹敌比利时中场",
+          "赔率显示比利时胜赔-235，伊朗胜赔700，市场高度看好比利时"
+        ],
+        "reasoning": "比利时拥有德布劳内、蒂勒曼斯等世界级中场组合，整体实力碾压伊朗，且无伤停隐患，赔率-235支持明显；伊朗缺乏针对性限制方案，备用方案不足。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "双方核心组合年限数据均不可用",
+          "系统稳定性仅标注‘教练已确认’，无更多细节",
+          "无内部矛盾或集训周期公开报道"
+        ],
+        "reasoning": "赛前信息不足，无法判断比利时或伊朗在磨合、更衣室或体系上有任何具体优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "比利时阵容有库尔图瓦（皇马）、卡斯塔涅（富勒姆）等五大联赛主力",
+          "伊朗大名单主要来自波斯波利斯等中东联赛，缺乏欧洲顶级赛事经验",
+          "赔率比利时-235对伊朗+700，市场预期胜率明显倾向比利时"
+        ],
+        "reasoning": "比利时拥有库尔图瓦、卡斯塔涅等顶级联赛主力，整体阵容档次远高于以中东联赛球员为主的伊朗，赔率比利-235对伊朗+700也确认了这一压倒性优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Belgium近5场总进20球，包括7-0大胜列支敦士登，进攻端状态火爆",
+          "赔率显示Belgium胜率-235，市场高度看好其取胜",
+          "Iran近4场友谊赛对手为Mali、Gambia、Costa Rica、Nigeria，实力普遍较弱，缺乏高强度对抗检验"
+        ],
+        "reasoning": "Belgium凭借近5场友谊赛打入20球的进攻火力（De Bruyne、Lukaku领衔）和赔率支持（-235）占据明显优势，而Iran虽防守稳健但对手实力有限，缺乏应对顶级攻击线的验证。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 27%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=70%/P(D)=16%/P(B)=14%",
+    "judge_reasoning": "Belgium胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760451)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Belgium胜",
+    "confidence": "中",
+    "reasons": [
+      "比利时拥有世界级门将库尔图瓦，他的高扑救率能有效限制伊朗的快速反击，尤其在对方射门机会有限时，他的一对一能力是关键。",
+      "伊朗的防守体系在面对技术型球队时容易暴露漏洞，比利时的中场休息天数多1天，体能优势可帮助边路球员如卡斯塔涅持续施压。",
+      "小组赛四队同积1分，比利时必须全力争胜，而伊朗可能更倾向于保守保平，战术主动性上比利时占优。"
+    ],
+    "key_risk": "伊朗如果利用身体对抗和高空球战术进攻，可能打破比利时防守的不稳定性，尤其是比利时的大赛DNA评分仅与伊朗持平，关键时刻容易失常。"
+  },
+  "actual_result": null
+}

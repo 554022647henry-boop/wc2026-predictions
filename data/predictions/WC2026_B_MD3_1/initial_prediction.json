@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_B_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:32:43.244118",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.09,
+    "p_a_win": 0.32,
+    "p_draw": 0.39,
+    "p_b_win": 0.29,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "加拿大4-4-2擅长通过快速纵向传球打穿瑞士3-4-2-1高位防线与边翼卫空档",
+          "加拿大防守对禁区弧顶保护不足，但瑞士缺乏稳定持球突破点来持续制造远射机会",
+          "瑞士高位防线在面对加拿大边路快攻时易暴露身后空间",
+          "加拿大在2022世界杯曾暴露领先下防守注意力下降问题，但本场瑞士创造力有限难以惩罚"
+        ],
+        "reasoning": "加拿大的快速纵向反击能针对瑞士高位防线和边翼卫空档，而瑞士远射威胁虽能针对加拿大弧顶保护不足，但整体进攻手段有限。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Canada拥有BC Place主场优势，且比赛地在温哥华，球迷支持强烈",
+          "积分榜四队同分，MD2双方赢球动机强，无显著心理包袱差异",
+          "赔率显示Switzerland为微弱热门（+115），但主场加成使Canada处于有利位置"
+        ],
+        "reasoning": "Canada主场作战（BC Place）提供明确的场地与球迷支持优势，足以弥补纸面实力差距，而Switzerland虽有更成熟的大赛体系，但客场挑战下优势被压缩。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Granit Xhaka本赛季德甲传球成功率92%，状态处于赛季高位",
+          "Jonathan Osorio近期因伤病出场时间不规律，是加拿大阵中隐性隐患",
+          "Remo Freuler和Djibril Sow的防守硬度可针对性限制Stephen Eustáquio的推进组织"
+        ],
+        "reasoning": "瑞士扎卡状态高位且加拿大奥索里奥存伤疑，瑞士中场防守配置可限制加拿大核心尤斯塔基奥。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队世界杯集训仅约14天，化学反应差距极小",
+          "双方教练均为近期确认，无长期带队优势",
+          "无公开更衣室矛盾报道，氛围中性",
+          "首发阵容赛前1小时公布，无法评估临场调整影响"
+        ],
+        "reasoning": "瑞士和加拿大均经历短暂集训，无长期核心组合稳定性或更衣室矛盾报道，体系成熟度相似"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士拥有曼城首发中卫Akanji和多特主力门将Kobel的世界级防线组合",
+          "瑞士赔率115显著低于加拿大250，赔率反映约60%胜率差距",
+          "加拿大核心Alphonso Davies具备单场改变比赛的个人能力，但队友整体档次不足"
+        ],
+        "reasoning": "瑞士赔率明显占优（115 vs 250），阵容以五大联赛主力为主（Akanji、Kobel、Rodríguez），大赛经验丰富；加拿大虽有Davies这样的超级球员，但整体阵容档次和深度的劣势明显。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士近5场对手包括德国（3-4）、澳大利亚等强队，比赛质量远高于加拿大面对的对手",
+          "加拿大近5场3场被零封（对阵爱尔兰、突尼斯、危地马拉），进攻端创造力不足",
+          "瑞士赔率115远低于加拿大250，市场明显看好瑞士",
+          "两队积分相同，均为生死战，瑞士球员大赛经验（扎卡、沙奇里等）更具关键战韧性"
+        ],
+        "reasoning": "瑞士凭借扎卡和沙奇里的大赛经验以及近5场对阵更强对手（德国、澳大利亚）的表现略优于加拿大，但加拿大防守端稳定性不容忽视"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760463)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "双方在小组赛首轮都只拿到1分，这场平局对两队都不够解渴，但彼此防守稳健——Switzerland的后防线有Silvan Widmer和Ricardo Rodríguez这样的经验球员，Canada也有速度型前锋能制造威胁，谁都不敢冒险强攻，很可能会陷入中场绞杀战。",
+      "战术对位数据上，Canada在整体压制（6.5 vs 5.5）和情境压力（6.5 vs 6.0）略占上风，但Switzerland在关键球员（6.0 vs 5.0）和绝对实力（6.5 vs 5.5）上有优势，双方在关键区域的对抗会互相抵消，很难出现一边倒的场面。",
+      "赔率显示平局赔率高达245.0（DraftKings），市场对平局的预期并不低，而量化模型给出平局概率39%为最高选项。考虑到两人都休息了11-12天，体能充沛但默契未必最佳，容易在最后时刻互相牵制，最终握手言和。"
+    ],
+    "key_risk": "最大的爆冷风险是Canada利用主场优势（BC Place, Vancouver）打出快攻一击制胜，比如核心前锋在反击中突然提速，Switzerland的防线稍显老迈可能跟不上节奏。"
+  },
+  "actual_result": null
+}

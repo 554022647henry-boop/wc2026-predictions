@@ -1,0 +1,140 @@
+{
+  "match_id": "WC2026_E_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:16:56.608175",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.29,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "eam_a_score\": 6.5,\n  \"team_b_score\": 5.5,\n  \"confidence\": 7.0,\n  \"reasoning\": \"德国队的整体传控和压迫打法，能系统性地利用科特迪瓦防线纪律性差和边后卫身后的空档，同时限制对手的反击次数，在节奏控制上占优。\",\n  \"key"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "德国首轮6-0大胜，净胜球+6，状态与进球火力极其强劲",
+          "赔率-185大幅指向德国，市场认为其纸面实力碾压科特迪瓦",
+          "科特迪瓦首轮也以3分确保出线希望，具备一定竞技状态与防守韧性"
+        ],
+        "reasoning": "德国凭借首战6-0大胜的强势表现与深厚阵容实力，在赔率有明显优势，但由于科特迪瓦同样首战获胜且净胜球差距未达压倒性，德国并未完全拉开极端差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "德国首轮6-0大胜，士气与状态处于高位",
+          "德国核心球员基米希和戈雷茨卡均无伤停隐患，全勤可用",
+          "科特迪瓦中场凯西和塞里在防守端难以遏制德国队的高位压迫与组织",
+          "赔率显示德国-185明显占优，且科特迪瓦无对应限制战术已知"
+        ],
+        "reasoning": "德国队凭借首轮大胜的士气、全员健康的核心阵容（基米希、戈雷茨卡）及战术深度，在攻防两端对科特迪瓦形成明显优势；科特迪瓦核心凯西和塞里面对德国中场控制力不足，且缺乏针对性限制方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "德国队与科特迪瓦队均首战获胜，核心组合年限和系统稳定性信息不可用",
+          "世界杯集训时间短（约14天），两队均无内部矛盾报道，教练已确认",
+          "缺少具体球员搭档历史或战术磨合细节，无法判断显著优势"
+        ],
+        "reasoning": "两队均无明确的长期核心组合数据或体系稳定性优势，赛前信息不足以区分化学反应差距"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "德国拥有诺伊尔、吕迪格、塔等多位欧冠级防线及拜仁核心",
+          "科特迪瓦仅恩迪卡（罗马）、科索努（勒沃库森）为五大联赛主力",
+          "赔率显示德国-185 vs 科特迪瓦+475，胜率差异悬殊",
+          "德国首轮净胜球+6，科特迪瓦仅+1，状态与实力差距明显"
+        ],
+        "reasoning": "德国FIFA排名长期前十且阵容五大联赛密布，诺伊尔、吕迪格等核心远强于科特迪瓦仅靠恩迪卡、科索努支撑的防线，赔率与首轮表现均印证碾压局。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "德国近5场全胜并4次打入2+球，进攻稳定性强",
+          "德国友谊赛对手实力（瑞士、美国）远超科特迪瓦对手（苏格兰、韩国）",
+          "科特迪瓦近3场无高强度消耗，但缺乏对强队考验"
+        ],
+        "reasoning": "德国近5场全胜含金量更高（击败瑞士、美国），进攻端多人状态火热（如哈弗茨），而科特迪瓦连胜对手较弱，中场控制力不足。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=59%/P(D)=9%/P(B)=32%",
+    "judge_reasoning": "Germany胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760448)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "中",
+    "reasons": [
+      "德国队关键球员在进攻端状态火热，首战狂轰6球，而科特迪瓦防线面对速度型冲击时屡现漏洞，穆夏拉和哈弗茨的穿插跑动将撕裂对手防线。",
+      "德国队中场控制力占优，京多安和基米希的传球调度能持续压制科特迪瓦的防守阵型，迫使其频繁回撤，难以组织有效反击。",
+      "科特迪瓦虽首战取胜，但面对德国的高位逼抢和快速转移，其边路防守经验不足，诺伊尔近年来大赛经验丰富，能稳定指挥防线。"
+    ],
+    "key_risk": "德国队大赛DNA评分偏低（5.0），若科特迪瓦利用定位球或快速反击率先破门，可能引发心态波动，导致爆冷平局甚至失利。"
+  },
+  "actual_result": null
+}

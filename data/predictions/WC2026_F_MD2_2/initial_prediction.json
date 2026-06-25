@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_F_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:19:54.328211",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.1,
+    "p_a_win": 0.32,
+    "p_draw": 0.39,
+    "p_b_win": 0.29,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "突尼斯需要赢球才能保留出线希望，战意和心理动机更强，可能采取更积极的身体对抗和高位逼抢。",
+          "日本防守弱点明确：惧怕身体对抗、节奏快以及对手利用边后卫助攻后的身后空当打反击。",
+          "日本队自身进攻风格未明确，且缺乏破密集防守的具体手段，面对突尼斯的身体对抗可能受阻。"
+        ],
+        "reasoning": "突尼斯抢分战意明确，其身体对抗和高空球优势能精准打击日本队防守在高压下转身慢和争顶高空球能力不足的明确短板。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "突尼斯首战0-4惨败瑞典，净胜球-4，后两场必须全力抢分",
+          "日本队首轮1-1平荷兰，积1分，出线形势同样紧迫但压力稍小",
+          "赔率显示日本队胜赔-190，突尼斯胜赔+600，实力差距显著",
+          "比赛在温哥华中立场进行，无主场优势影响"
+        ],
+        "reasoning": "突尼斯0-4惨败给瑞典后必须赢球以保持出线希望，但日本队实力更强且赔率更受看好，两队动机均强但实力差距抵消部分战意优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'NoneType' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "日本中场远藤航是利物浦主力，其拦截与转移能力是突尼斯无法对位的",
+          "日本三中场（远藤、镰田、堂安）在创造力上形成组合优势，突尼斯无对应核心限制方案",
+          "赔率DraftKings支持日本-190，突尼斯仅+600，市场预期悬殊"
+        ],
+        "reasoning": "突尼斯关键球员Rani Khedira与Ellyes Skhiri在攻防两端的个人能力明显弱于日本中场三人组远藤航、镰田大地和堂安律，且突尼斯防线在首战已暴露脆弱性，日本在赔率和中场控制力上占优。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "日本队教练已确认，带队时间较长，战术体系稳定",
+          "突尼斯队无核心组合或系统稳定性信息，集训磨合情况不明",
+          "日本队球员多来自欧洲及J联赛，同联赛背景可能提升默契"
+        ],
+        "reasoning": "日本队教练稳定性可提升体系成熟度，而突尼斯队缺乏可评估的阵容或战术信息，存在不确定性。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Japan -190 vs Tunisia +600赔率显示明显优势",
+          "Japan阵中有Tomiyasu（阿森纳）、Itakura（门兴）等五大联赛主力",
+          "Tunisia积分落后需赢球但纸面实力不足",
+          "FIFA排名推测Japan领先约15-20位，未达30名实质性差距阈值"
+        ],
+        "reasoning": "Japan拥有多名五大联赛主力（Tomiyasu、Itakura、Nagatomo），赔率显示Japan胜率约65%，Tunisia阵容含金量不足但非完全无竞争力"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "日本近3场友谊赛全胜且零封（胜英格兰、苏格兰、冰岛），展示稳定防守体系",
+          "突尼斯近5场1胜2平2负，包括0-5惨败比利时，防线明显脆弱",
+          "赔率显示日本为明显热门（-190），突尼斯高达600",
+          "日本积分1分需拿分巩固出线希望，突尼斯0分面临更大心理压力"
+        ],
+        "reasoning": "日本近期3连胜且全部零封对手（包括英格兰），状态、防守稳定性和赔率均占优；突尼斯近5场仅1胜且0-5惨败比利时，进攻效率低"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 37%：模型 DRAW P(A)=32%/P(D)=39%/P(B)=29% vs 市场 P(A)=14%/P(D)=20%/P(B)=66%",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760449)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "突尼斯在首战惨败后急需抢分，而日本同样出线压力巨大，两队都会采取稳守反击策略，中场绞杀将异常激烈，进攻端难以打出流畅配合。",
+      "日本绝对实力占优，但突尼斯在近期状态评分中更高（6.5对5.5），加上Bronn领衔的后防有身体对抗优势，可能限制日本核心球员的突破。",
+      "两队休息时间相同（6天），体能储备均衡，且战术对位突尼斯占优（6.5对5.5），预计比赛会陷入僵持，最终互交白卷或小比分平局。"
+    ],
+    "key_risk": "市场赔率严重偏向日本（胜率66%），若日本上半场利用反击率先破门，突尼斯可能会被迫压上导致防线漏洞，爆冷输球风险较高。"
+  },
+  "actual_result": null
+}

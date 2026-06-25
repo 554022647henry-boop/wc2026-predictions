@@ -1,0 +1,128 @@
+{
+  "match_id": "WC2026_J_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T00:16:20.451007",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": 1.4,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "根廷在本场对位中占据明显上风。\n\n##SCORES##\n{\n  \"team_a_score\": 7.0,\n  \"team_b_score\": 5.0,\n  \"confidence\": 8,\n  \"reasoning\": \"阿根廷的进攻（劳塔罗·马丁内斯的冲击力、梅西的创造力）能有效利用阿尔及利亚防线"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "梅西可能替补出场，阿根廷进攻端火力不确定性增加",
+          "阿尔及利亚近期热身赛2-2逼平科特迪瓦，展现防守韧性",
+          "阿根廷近期胜率高且丢球少（近5场仅失1球），状态稳健"
+        ],
+        "reasoning": "阿根廷在纸面实力、历史战绩和赔率支持上占据明显优势，但梅西可能替补且阿尔及利亚近期防守稳定，对方并非毫无抗力。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示阿根廷有重大市场优势（-230 vs 700）",
+          "无赛前伤病报告，但梅西可能替补影响进攻威胁",
+          "阿尔及利亚近期2-2战平科特迪瓦，状态稳定但无针对阿根廷核心的战术佐证"
+        ],
+        "reasoning": "阿根廷凭借赔率优势和历史实力占优，但梅西（Lionel Messi）状态不明、无具体克制方案，阿尔及利亚无明确限制手段，差距有限。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.08,
+        "key_factors": [
+          "无核心组合年限数据",
+          "无更衣室氛围或体系成熟度信息",
+          "仅赔率不构成化学反应判断依据"
+        ],
+        "reasoning": "缺乏球员搭档年限、教练执教时长或内部矛盾等任何具体化学反应依据，无法判断优势"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina F实力排名远高于Algeria，差距超过30名有实质影响",
+          "Argentina拥有梅西这一顶级超级球员，可单场决定比赛走向",
+          "Argentina阵容以五大联赛主力为主，Algeria阵容档次明显不足"
+        ],
+        "reasoning": "Argentina在FIFA排名、阵容档次和超级球员梅西三个维度上明显占优，Algeria无对应能力"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina近4场友谊赛全胜，进攻端场均3球，但对手（冰岛、洪都拉斯等）实力有限",
+          "Algeria击败荷兰、大胜玻利维亚，展现稳定性，近4场3胜1平且防守仅失1球",
+          "赔率明显倾向Argentina，但无梅西近期状态及首发确认，Algeria硬仗能力有亮点"
+        ],
+        "reasoning": "Argentina近期4场友谊赛全胜且进12球，但对手均较弱，且关键球员梅西可能替补未提供近期表现。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=63%/P(D)=9%/P(B)=28%",
+    "judge_reasoning": "Argentina胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷的战术优势明显，劳塔罗在锋线的高压逼抢和梅西的传球视野能轻松撕开阿尔及利亚五后卫的防线，尤其是马赫雷斯回防不积极，右路会成为突破口。",
+      "阿尔及利亚近3场热身赛丢了4球，面对阿根廷的快速反击（德保罗长传精准）很难保持专注，而阿根廷4场热身赛零封对手，防守体系更稳定。",
+      "大赛经验差距：阿根廷拥有世界杯冠军班底，团队在决赛后依然磨合成熟，而阿尔及利亚核心马赫雷斯状态未知，年轻球员可能因紧张犯错。"
+    ],
+    "key_risk": "阿根廷攻击线老化（梅西39岁、劳塔罗状态起伏），若久攻不下，阿尔及利亚利用本纳赛尔的中场拦截和赛义德的速度单刀反击，可能出现冷门平局。"
+  },
+  "actual_result": null
+}

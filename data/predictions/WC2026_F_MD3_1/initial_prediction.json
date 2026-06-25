@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_F_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:38:37.940078",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.26,
+    "p_a_win": 0.34,
+    "p_draw": 0.38,
+    "p_b_win": 0.28,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Sweden的身体对抗和快节奏能精准利用Japan防线在高压下的转身慢和争顶短板",
+          "Japan边后卫插上后的空当容易被Sweden的快速反击打穿",
+          "Sweden的4-3-3阵型在由攻转守时能形成紧凑中后场，压缩Japan技术型边锋的空间"
+        ],
+        "reasoning": "Sweden的整体身体优势和快速反击节奏能更有效地打击Japan的防守短板，如边后卫身后空当和争顶弱点。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "日本小组赛1分落后，必须赢球才能保留出线希望，动机强度明显高于瑞典",
+          "瑞典首战4-0大胜士气高昂，净胜球+4展现防守反击效率",
+          "赔率显示日本为小幅热门（110 vs 255），机构认可日本更强实力"
+        ],
+        "reasoning": "日本积分落后需赢球维持出线希望，动机更强，但瑞典首战大胜净胜球+4且防守稳固，日本依靠中场久保建英和前锋上田绮世的创造力欲破局。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "日本首轮仅平局，净胜球为零，出线压力大",
+          "瑞典首轮4-0大胜，净胜球+4，士气高涨",
+          "日本核心远藤航、镰田大地和堂安律无明确状态报告，存在不确定性"
+        ],
+        "reasoning": "日本有必须赢球的战意但核心远藤航、镰田大地状态不明，瑞典首战大胜且塞马、斯万贝里状态稳定，整体实力与信心略优"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队核心组合年份均未知",
+          "系统稳定性均为教练已确认，无具体磨合信息",
+          "无内部矛盾公开报道，集训时间相同"
+        ],
+        "reasoning": "双方均无核心组合年限或体系磨合细节，教练确认但无具体战术证据，日本需积分压力但非化学优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Japan has more players from top-5 leagues (Premier League, Bundesliga) than Sweden.",
+          "Odds heavily favor Japan (+110) vs Sweden (+255), indicating clear market confidence.",
+          "Sweden's squad includes several players from lower-tier leagues (Allsvenskan, MLS), limiting depth compared to Japan."
+        ],
+        "reasoning": "Japan's deeper, higher-quality squad in top leagues (Tomiyasu, Itakura, Ito) vs Sweden's heavy reliance on Lindelöf and weaker overall depth."
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Japan近3场友谊赛全胜且全部零封对手，防守稳固，击败英格兰和苏格兰有说服力。",
+          "Sweden近2场友谊赛1平1负且丢5球，防守状态不稳定。",
+          "Sweden近2场世预赛全胜且进6球，显示了强大的进攻火力，比赛含金量更高。",
+          "Sweden在积分榜上领先，心态相对放松，而Japan必须赢球，可能开局会更激进。"
+        ],
+        "reasoning": "Japan凭借友谊赛三连胜且零封对手的稳定防守状态占优，但Sweden在世预赛中击败波兰和乌克兰的表现含金量更高，且拥有一个净胜球优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Japan胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760471)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Japan胜",
+    "confidence": "中",
+    "reasons": [
+      "日本队绝对实力评分更高（6.5对5.5），队长远藤航的中场拦截和久保建英的边路突破将是撕开瑞典防线的关键。",
+      "瑞典队虽然首战大胜，但面对日本这样的技术型球队，其高位防线容易被日本队的快速传切打穿，特别是三笘薰的边路内切威胁极大。",
+      "日本队有11天休息调整，比瑞典多1天，体能充沛；且小组积分落后，必须全取3分，战意远强于已拿3分的瑞典。"
+    ],
+    "key_risk": "爆冷风险在于瑞典队反击效率：若日本久攻不下，瑞典老将伊萨克（Alexander Isak）的速度和身体对抗可能一击致命。"
+  },
+  "actual_result": null
+}

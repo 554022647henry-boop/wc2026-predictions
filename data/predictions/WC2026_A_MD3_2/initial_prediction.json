@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_A_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:34:57.646696",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.15,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "南非队的进攻弱点描述显示其擅长利用定位球和空中对抗，这直接针对韩国队历史上定位球防守失误和回追速度不足的弱点。",
+          "韩国队在2022年世界杯对阵加纳时因定位球和边路空当失球，而南非队若采取高强度冲击打法，将放大这一漏洞。",
+          "南非队因小组垫底且必须取胜，会采取更直接的进攻策略，这增加了利用韩国队防守注意力不集中和边路空当的机会。",
+          "虽然韩国队是赔率热门，但其防守短板在面对必须抢分的南非队时，可能被南非的身体优势和拼劲所压制。"
+        ],
+        "reasoning": "南非队的身体对抗和定位球冲击 (针对韩国防守弱点) 及破釜沉舟的进攻态度，使其战术风格在对阵中占有明显优势。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "韩国首战3分，本场不败即可保持出线主动，南非0分必须赢才有生机",
+          "ESPN赔率显示韩国胜赔-165，南非胜赔475，实力差距明显",
+          "Arrowhead Stadium中立场，无主场优势影响"
+        ],
+        "reasoning": "韩国在整体实力和积分优势上占优（赔率-165与孙兴慜领衔的攻击线），但南非背水一战的高动机略微缩小差距。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "DraftKings赔率显示韩国队是热门（-165 vs +475）",
+          "南非队关键球员Themba Zwane和Teboho Mokoena需承担进攻重任，但无状态佐证",
+          "韩国队中场Kim Jin-Gyu和Lee Jae-Sung在首轮取胜后状态稳定"
+        ],
+        "reasoning": "韩国队凭借赔率优势和整体实力占据轻微优势，但双方核心球员状态不明，南非队也有求胜动力。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队明确信息仅有各自教练已确认",
+          "未提供核心球员合作年限或俱乐部背景",
+          "未提供关于战术体系磨合或内部矛盾的报道"
+        ],
+        "reasoning": "由于缺乏核心组合、战术体系及更衣室氛围等具体化学反应信息，无法判断两队优劣，故给出等分。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "韩国队赔率-165（约60%胜率）远优于南非队+475",
+          "韩国队拥有金玟哉（拜仁慕尼黑主力中卫）等欧洲联赛球员",
+          "FIFA排名差距预计超过30名（韩国前40 vs 南非60+）",
+          "南非队大名单无五大联赛主力球员"
+        ],
+        "reasoning": "韩国队拥有拜仁主力中卫金玟哉领衔的更强阵容，赔率-165显示明显优势，且FIFA排名差距超过30名，南非队缺乏欧洲顶级联赛球员难以抗衡"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "韩国近2场友谊赛取得连胜，打入6球且零封对手，状态上升。",
+          "南非近4场友谊赛2平2负未尝胜绩，且仅打入2球，进攻端表现低迷。",
+          "韩国在小组赛首轮击败对手积3分，南非首轮失利积0分，比赛压力不同。"
+        ],
+        "reasoning": "韩国队近期进攻状态火热（近2场打入6球且1球未失），而南非队近4场不胜且进攻乏力（仅进2球），韩国队优势明显。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 28%：模型 DRAW P(A)=28%/P(D)=38%/P(B)=34% vs 市场 P(A)=26%/P(D)=12%/P(B)=62%",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760466)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "低",
+    "reasons": [
+      "南非队的战术对位评分更高，他们可能通过紧密的防守阵型限制韩国队的进攻，就像在小组赛首战中对阵墨西哥队时展现的韧性，尽管最终输球但场面不落下风。",
+      "韩国队近期状态出色，但关键球员如孙兴慜可能面临南非队后卫Aubrey Modiba的贴身盯防，这会让韩国队的进攻效率打折扣，平局是双方都能接受的保守结果。",
+      "这场比赛对出线形势至关重要：南非队必须赢球才能保留希望，而韩国队领先3分更倾向于稳守反击，这种心理对峙容易导致比赛陷入胶着，最终握手言和。"
+    ],
+    "key_risk": "市场赔率显示韩国队胜率高达62%，与模型平局预测出现明显偏差；如果韩国队核心球员在关键时刻发挥个人能力打破僵局，南非队将难以抵挡，爆冷风险来自韩国队的绝对实力和状态优势。"
+  },
+  "actual_result": null
+}

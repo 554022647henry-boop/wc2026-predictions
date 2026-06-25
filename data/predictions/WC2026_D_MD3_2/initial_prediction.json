@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_D_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:36:10.349486",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.14,
+    "p_a_win": 0.28,
+    "p_draw": 0.38,
+    "p_b_win": 0.34,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.5,
+        "weight": 0.25,
+        "key_factors": [
+          "巴拉圭防守在反击中被利用肋部空间打穿防线的情况较多，澳大利亚4-3-3边锋群擅长冲击这个区域",
+          "澳大利亚首轮1-0胜美国展现良好防守纪律与转换效率，巴拉圭首轮虽大胜但对手实力较弱",
+          "澳大利亚中场对禁区弧顶保护有隐患，但巴拉圭缺少技术型前腰进行惩罚",
+          "场地为中立场，赔率倾向小幅看好澳大利亚（+255 vs +115），反映市场对其战术克制有信心"
+        ],
+        "reasoning": "澳大利亚的边路快速推进与肋部渗透能精准打击巴拉圭中卫转身慢、肋部空档大的防守弱点，而巴拉圭缺乏穿透性组织核心来破解澳大利亚紧凑防线。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴拉圭首轮3分净胜球+3但因排名低需抢分，澳大利亚已3分可接受平局",
+          "赔率DraftKings显示巴拉圭胜赔115低于澳大利亚255，市场略看好巴拉圭",
+          "双方均在中立场费城比赛，无主客场差异"
+        ],
+        "reasoning": "巴拉圭因积分劣势有更强的求胜动机（输球即濒临出局），且赔率暗示其纸面略优；澳大利亚心态放松但战术执行更务实，差距不大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Paraguay在赔率上被看好（DraftKings: +115 vs +255）",
+          "两队均无确认伤停或状态信息，核心球员Enciso、Irvine、Hrustic状态未知",
+          "无针对性防守方案或替补深度数据可评估"
+        ],
+        "reasoning": "赔率偏向Paraguay（115 vs 255），但无任何球员状态、伤停或战术限制的具体信息，尤其是Julio Enciso和Jackson Irvine的状态均未知。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "双方教练均已确认但无执教时长数据",
+          "无核心组合合作年限信息",
+          "无更衣室矛盾或战术磨合报道"
+        ],
+        "reasoning": "赛前信息严重不足，无核心组合、更衣室氛围或体系稳定性的具体数据可评估差异"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Paraguay后防线有3名五大联赛级别球员（Gómez/Alonso/Balbuena）",
+          "Australia后防以英冠和澳超球员为主（如Souttar/Degenek）",
+          "赔率偏向Paraguay（115 vs 255），体现市场轻微优势"
+        ],
+        "reasoning": "Paraguay拥有Gustavo Gómez、Júnior Alonso、Fabián Balbuena等五大联赛主力后卫，阵容经验和档次略优于Australia以英冠和澳超为主的配置，赔率也略占优。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Paraguay在近3场正式预选赛中取得1胜1平1负且仅失1球，防守稳固。",
+          "Australia近3场友谊赛1胜1平1负，战胜弱旅Curaçao含金量有限，面对Mexico和Switzerland均未取胜。",
+          "Paraguay首轮小组赛输给强敌，但比赛过程可能暴露了问题也积累了经验；Australia虽赢球但对手较弱，状态成色待检验。"
+        ],
+        "reasoning": "Paraguay在近期正式预选赛中展现了更强的防守稳定性（对阵Ecuador和Peru零失球），而Australia的友谊赛表现波动较大（负于Mexico、战平Switzerland），且Paraguay的硬仗经验可能略有优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "平局",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760469)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "平局",
+    "confidence": "中",
+    "reasons": [
+      "Paraguay急需抢分，但澳大利亚拥有更成熟的战术体系，两队中场很可能陷入缠斗，机会都不多。",
+      "Paraguay休息了13天，身体状态占优，但久疏战阵可能影响进攻节奏，而澳大利亚防守稳健，很难被快速击穿。",
+      "平局赔率高达235.0，市场并不看好单边碾压，结合小组形势，双方各拿1分是都可接受的结果，心态上更倾向于保守。"
+    ],
+    "key_risk": "Paraguay如果在上半场利用身体优势率先破门，澳大利亚可能会被迫大举压上，反而给对手扩大比分的机会，导致比赛失去平衡。"
+  },
+  "actual_result": null
+}

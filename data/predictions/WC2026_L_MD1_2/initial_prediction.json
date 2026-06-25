@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_L_MD1_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:07:33.304619",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.76,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.5,
+        "weight": 0.25,
+        "key_factors": [
+          "双方均采用4-3-3阵型，战术结构对称",
+          "英格兰高位逼抢后防线空当与克罗地亚边卫助攻后空当均为潜在弱点，但无具体进攻手段对应",
+          "DraftKings赔率英格兰-135略高于克罗地亚400，反映市场微弱偏好",
+          "未提供进攻核心套路或关键球员信息，无法评估对位优势"
+        ],
+        "reasoning": "双方均未提供核心进攻手段、阵型相同，防守弱点互有漏洞但无具体对位证据，仅靠赔率暗示英格兰轻微优势，不足以拉开差距。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "英格兰赔率优势明显（DraftKings -135 vs +400）",
+          "中立场（AT&T Stadium, Dallas）无主场加成",
+          "克罗地亚有2018世界杯半决赛战胜英格兰的心理优势"
+        ],
+        "reasoning": "英格兰盘口（-135）远优于克罗地亚（+400），但中立场及克罗地亚历史战绩（2018半决赛胜英格兰）部分抵消优势，整体英格兰稍占主动。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "英格兰被DraftKings设为-135热门，赔率优势明显",
+          "英格兰中场赖斯无伤停报告，可执行防守任务",
+          "克罗地亚莫德里奇和科瓦契奇无明确状态提升信息，备选帕萨利奇作用有限"
+        ],
+        "reasoning": "英格兰凭借赔率优势和后卫赖斯的中场屏障占据轻微优势，克罗地亚核心莫德里奇状态未知且缺乏针对性限制方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.5,
+        "weight": 0.08,
+        "key_factors": [
+          "英格兰主教练索斯盖特已确认，连续执教多届大赛，战术一致性更高",
+          "克罗地亚近年核心阵容老化，拉基蒂奇退役后中前场组合未完全稳定",
+          "两队均无公开矛盾报道，但克罗地亚新老混搭磨合时间更短"
+        ],
+        "reasoning": "英格兰整体更年轻且体系延续性强，克罗地亚有莫德里奇等老将但阵容换血中，优势尚不明确。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 8.2,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰阵容中多名球员来自英超豪门，如斯通斯（曼城）、里斯·詹姆斯（切尔西），联赛档次和欧冠经验显著高于克罗地亚中后场",
+          "赔率DraftKings显示英格兰胜率约58%（-135），克罗地亚仅20%（+400），反映赛前市场绝对评估优势",
+          "克罗地亚核心球员如莫德里奇（假设未退役）或科瓦西奇存在年龄或状态不确定性，无法与英格兰年轻核心抗衡"
+        ],
+        "reasoning": "英格兰拥有英超顶级阵容，斯通斯、里斯·詹姆斯等球员在五大联赛欧冠级别俱乐部效力，且赔率-135显示明显优势；克罗地亚依赖格瓦迪奥尔和老化中场，缺乏超级巨星支撑比赛走向。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰近两场连胜且零封对手，防守稳固（对哥斯达黎加3-0、对新西兰1-0）",
+          "克罗地亚近3场友谊赛仅1胜（2-1斯洛文尼亚），且输给巴西和比利时，状态起伏",
+          "赔率显示英格兰胜率更高（-135 vs Croatia的+400），市场信心偏向英格兰"
+        ],
+        "reasoning": "英格兰凭借凯恩领衔的稳定攻防和赔率支持略占上风，克罗地亚防线不稳且中场控制力下滑"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760437)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "中",
+    "reasons": [
+      "英格兰队拥有主场般的支持，边路快速突破如Reece James的插上将给克罗地亚老化防线制造麻烦。",
+      "克罗地亚中场控制力下滑，而英格兰中场Declan Rice的拦截和推进能切断对手传球线路，迫使对方失误。",
+      "近期状态上，英格兰锋线核心球员（如队长或主要射手）把握机会能力强，而克罗地亚进攻依赖个别球员，效率偏低。"
+    ],
+    "key_risk": "克罗地亚若摆出铁桶阵并利用定位球偷袭，英格兰可能久攻不下陷入平局，尤其是大赛小组赛首战常遇僵局。"
+  },
+  "actual_result": null
+}

@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_H_MD1_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-15T18:17:07.764641",
+  "_internal": {
+    "说明": "内部留痕，供追溯复盘",
+    "n_agents": 7,
+    "weighted_delta": -0.88,
+    "p_a_win": 0.26,
+    "p_draw": 0.36,
+    "p_b_win": 0.38,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "沙特中后卫空间大、回身慢，恰好被乌拉圭核心套路（长传找努涅斯）直接针对",
+          "沙特右后卫助攻后身后空当明显，是乌拉圭左路球员的潜在突破口",
+          "沙特进攻依赖道萨里个人能力创造远射机会，无法实施乌拉圭最怕的‘快速转移打身后’战术"
+        ],
+        "reasoning": "乌拉圭可通过努涅斯的速度反复打击沙特中后卫回身慢的致命弱点，而沙特的进攻核心道萨里虽然技术出色，但缺乏直接冲击乌拉圭中卫身后速度的队友，战术针对性上乌拉圭占优。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.2,
+        "key_factors": [
+          "双方均无具体战术或阵容信息",
+          "动机强度相近，无明确休息天数差距",
+          "无历史包袱或环境因素可参考"
+        ],
+        "reasoning": "缺乏任何具体赛前数据（战术、球员、教练表态等），无法区分两队优劣势，只能给出完全对称评分。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 5.0,
+        "weight": 0.18,
+        "key_factors": [
+          "乌拉圭近三届世界杯首战2胜1平，首轮表现强势",
+          "沙特近两届世界杯首轮1胜1负，且2018年首战惨败5球",
+          "乌拉圭历史大赛中多次逆转，精神属性优于沙特",
+          "沙特落后时近5场仅1次追平，逆转能力极弱"
+        ],
+        "reasoning": "乌拉圭近三届世界杯首战不败且小组赛经验更稳定，沙特虽爆冷阿根廷但整体起伏大、逆转能力弱。"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Federico Valverde在皇马保持全能中场高水平，可覆盖攻防两端",
+          "Darwin Núñez赛季进球20+，为沙特防线提供速度冲击",
+          "Salem Al-Dawsari高龄但状态不错，然而沙特缺乏同等替代者",
+          "Mohamed Kanno中场拦截关键，但乌拉圭中场整体实力压制"
+        ],
+        "reasoning": "乌拉圭凭借瓦尔韦德和努涅斯的顶级状态及阵容深度，在中前场占据明显优势，沙特过度依赖高龄达瓦萨里且替补实力不足。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "沙特有7名球员来自同一俱乐部阿尔希拉尔，核心组合已联手4年",
+          "乌拉圭无大规模俱乐部集群，仅德阿拉斯卡埃塔与德拉克鲁斯有5年同队史",
+          "沙特老将道萨里与布雷希领袖作用明确，更衣室无矛盾报道；乌拉圭贝尔萨严苛风格可能造成紧张"
+        ],
+        "reasoning": "沙特阿尔希拉尔7人集群+4年配合+曼奇尼战术一致，明显优于乌拉圭分散的2年体系与贝尔萨适应波动，德阿拉斯卡埃塔的Flamengo默契不足以弥补整体差距"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名Saudi Arabia第54 vs Uruguay第14，差距40名",
+          "阵容身价Saudi Arabia 3100万€ vs Uruguay 4.2亿€，差距13.5倍",
+          "Uruguay拥有巴萨后卫Ronald Araújo和马竞后卫José María Giménez，属能改变比赛走向的顶级球员"
+        ],
+        "reasoning": "Uruguay凭借FIFA排名领先40位、身价超13倍以及Ronald Araújo和Giménez的顶级防线，对Saudi Arabia形成压倒性优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "沙特近5场包括友谊赛仅2胜1平2负，且对手实力较弱",
+          "乌拉圭近期对阵西班牙、阿根廷等强队表现不落下风，世预赛击败厄瓜多尔",
+          "沙特友谊赛爆冷输给希腊，防守稳定性存疑",
+          "乌拉圭阵容深度和球员个人能力（如努涅斯、巴尔韦德）高于沙特"
+        ],
+        "reasoning": "乌拉圭因面对西班牙、阿根廷等强敌的经验和战术纪律，以及巴尔韦德的中场控制力，在关键对抗维度上有明显优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Uruguay胜"
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Uruguay胜",
+    "confidence": "中",
+    "reasons": [
+      "乌拉圭的绝对实力碾压沙特，戈丁领衔的后防线几乎不可能被沙特锋线突破，卡瓦尼的反击速度会让沙特后卫狼狈不堪。",
+      "沙特队虽然团队默契不错，但在世界杯这样的大舞台上大赛经验严重不足，乌拉圭作为南美传统强队，关键比赛中的韧性和战术纪律远胜对手。",
+      "从战术对位看，乌拉圭中场控制力更强，能有效压制沙特擅长的边路推进，比赛很可能变成乌拉圭半场攻防演练，最终凭借定位球或苏亚雷斯的个人能力打破僵局。"
+    ],
+    "key_risk": "沙特可能死守逼平对手——如果乌拉圭前场配合生疏或运气欠佳，沙特凭借顽强的身体对抗和主场氛围偷走一场平局。"
+  },
+  "actual_result": null
+}

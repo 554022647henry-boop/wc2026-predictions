@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_C_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:13:18.062986",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 2.24,
+    "p_a_win": 0.5,
+    "p_draw": 0.28,
+    "p_b_win": 0.22,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 9.0,
+        "weight": 0.25,
+        "key_factors": [
+          "巴西队进攻端拥有维尼修斯、罗德里戈等顶级边锋，能通过个人突破撕开海地队协防不足的后防线。",
+          "海地队定位球防守是长期短板，巴西队拥有马尔基尼奥斯等高点，定位球进攻优势巨大。",
+          "巴西队防守弱点依赖对手高质量反击，但海地队中场持球和推进能力有限，无法稳定制造威胁。"
+        ],
+        "reasoning": "巴西凭借维尼修斯、拉菲尼亚等球员的个人能力和整体高位压迫，对海地队薄弱且缺乏现代化训练的后防线形成碾压；海地队进攻端缺乏稳定输出，几乎无法利用巴西边后卫压上的空档。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴西队首战平局后，本场赢球是维持出线希望的底线，动机极强",
+          "赔率显示巴西获胜概率超过90%，实力差距巨大",
+          "海地队首战告负且净胜球为-1，整体实力与巴西不在同一级别"
+        ],
+        "reasoning": "巴西队为保出线希望，必须战胜实力悬殊的海地队，且拥有维尼修斯、里沙利松等顶级攻击手，而海地队缺乏抗衡能力。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "巴西中场拥有Casemiro、Fabinho和Bruno Guimarães三名顶级球员，阵容深度远超海地",
+          "赔率显示巴西-1000，海地+2200，反映出纸面实力悬殊",
+          "海地核心球员如Bellegarde和Pierre缺乏高水平对抗经验，无已知针对巴西的战术方案"
+        ],
+        "reasoning": "巴西以Casemiro和Fabinho领衔的中场阵容碾压海地，赔率-1000显示压倒性优势，且海地无确认核心限制方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "巴西教练已确认，体系稳定",
+          "巴西阵容身价和经验远超海地",
+          "海地赛前化学反应信息完全不可用"
+        ],
+        "reasoning": "巴西有教练稳定性和阵容深度优势，但缺少核心组合年限和更衣室细节；海地信息缺失，难以评估"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西拥有阿利松、埃德森等顶级门将，后防有马基尼奥斯、达尼洛；海地主力门将普拉西德效力于法甲降级队。",
+          "FIFA排名巴西常年前5，海地约100名开外，排名差超80名。",
+          "内马尔（基于赛前国家队常设）具备单场改变比赛能力，海地无同级别球员。",
+          "赔率显示巴西胜率约91%，直接反映实力鸿沟。"
+        ],
+        "reasoning": "巴西由阿利松、马基尼奥斯等五大联赛核心领衔，海地阵容多为法甲中下游或非主流联赛球员，排名差极大且超级球员缺失。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "actors\": [\n    \"巴西世界排名远高于海地，且拥有维尼修斯、内马尔等顶级球星，阵容深度绝对碾压。\",\n    \"巴西近3场友谊赛进球从6球降到2球，进攻状态呈下滑趋势，并非最佳状态。\",\n    \"海地近期无连胜/连败趋势信号，且对手实力普遍较弱，缺乏对强队的考验和爆冷记录。\"\n  ]\n"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 26%：模型 A_WIN P(A)=50%/P(D)=28%/P(B)=22% vs 市场 P(A)=76%/P(D)=8%/P(B)=16%",
+    "judge_reasoning": "Brazil胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760444)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "高",
+    "reasons": [
+      "巴西队前场拥有热苏斯和维尼修斯这样速度极快的攻击手，面对海地偏慢的后防线，一次直塞就能造成单刀机会。",
+      "中场核心卡塞米罗的拦截能力能轻松切断海地队的反击路线，迫使对手只能在后场倒脚，失误率会很高。",
+      "海地队小组赛首战失利，士气低落，而巴西队急需3分才能跟上苏格兰，战意和比赛节奏均占优。"
+    ],
+    "key_risk": "巴西队久攻不下时海地可能靠快速反击得分，或因心态急躁导致后场失误被偷袭得手。"
+  },
+  "actual_result": null
+}

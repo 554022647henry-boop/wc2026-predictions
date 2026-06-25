@@ -1,0 +1,146 @@
+{
+  "match_id": "WC2026_K_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:28:47.399142",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.46,
+    "p_a_win": 0.43,
+    "p_draw": 0.33,
+    "p_b_win": 0.24,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "葡萄牙边后卫助攻后留下的空当可能被乌兹别克斯坦的反击利用，但乌兹别克斯坦个人能力有限，转化效率低",
+          "乌兹别克斯坦中后卫协同补位和转身速度是明显短板，葡萄牙擅长利用快速转移和直塞球撕开防线",
+          "葡萄牙后场出球面对高位逼抢有失误风险，但乌兹别克斯坦的前场逼抢强度预计不足，难以持续施压",
+          "定位球方面葡萄牙有身体对抗和争顶优势，乌兹别克斯坦定位球防守盯人不紧，葡萄牙可能通过角球或任意球得分"
+        ],
+        "reasoning": "葡萄牙进攻端能通过快速横向转移和身后球精准打击乌兹别克斯坦转身慢的中后卫组合，乌兹别克斯坦则依赖零星反击机会，但难以持续制造威胁。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "赔率显示Portugal胜率极高（-425 vs +1100），实力差距明显",
+          "中立场波士顿比赛，双方均无主场优势",
+          "小组赛首轮双方都有赢球动机，无特殊心理包袱",
+          "Uzbekistan作为新军，缺乏对抗顶级强队的经验和阵容厚度"
+        ],
+        "reasoning": "Portugal在小组赛首轮对阵弱旅Uzbekistan，赔率和纸面实力占据压倒性优势，关键球员如C罗或B席的球星效应将主导比赛节奏。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "葡萄牙核心B费与B席状态正常且无伤停隐患。",
+          "乌兹别克斯坦缺少能限制顶级个人能力的针对性防守球员或战术。",
+          "赔率显示葡萄牙压倒性优势（-425），反映纸面实力鸿沟。"
+        ],
+        "reasoning": "葡萄牙拥有B费、B席等世界级核心，乌兹别克斯坦无对应防守方案且阵容深度不足。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合合作年限信息缺失",
+          "体系稳定性仅标注教练已确认，无细节",
+          "无公开内部矛盾报道"
+        ],
+        "reasoning": "无任何球员合作年限、战术系统磨合或更衣室气氛的具体信息，无法评估化学反应差异"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "葡萄牙首发阵容涵盖多位五大联赛豪门主力，如曼城的鲁本·迪亚斯和巴萨的坎塞洛",
+          "DraftKings赔率显示葡萄牙胜赔低至-425，市场认为胜率超80%",
+          "乌兹别克斯坦大名单无知名欧洲联赛球员，实力仅相当于亚洲中游",
+          "葡萄牙拥有B费、莱奥等可单兵决定比赛的攻击手，乌兹别克斯坦无此类型球员"
+        ],
+        "reasoning": "葡萄牙拥有迪奥戈·科斯塔、鲁本·迪亚斯、坎塞洛等五大联赛核心，且赔率-425指代碾压优势；乌兹别克斯坦球员主要来自亚洲联赛，无对位抗衡能力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "葡萄牙近5场4胜1平（含9-1大胜亚美尼亚），进攻火力稳定，C罗、B席等核心状态在线",
+          "乌兹别克斯坦近4场1平3负，仅入2球失7球，进攻乏力且防守不稳",
+          "赔率葡萄牙-425 vs 乌兹别克斯坦+1100，市场预期葡萄牙获胜概率超80%",
+          "乌兹别克斯坦面对荷兰、加拿大等队均输球，但失球数控制尚可（2球以内），非大比分溃败"
+        ],
+        "reasoning": "葡萄牙近5场4胜1平，乌兹别克斯坦4场不胜且失球多，双方实力差距明显，但乌兹别克斯坦有身体对抗和防守韧性。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 31%：模型 A_WIN P(A)=43%/P(D)=33%/P(B)=24% vs 市场 P(A)=74%/P(D)=9%/P(B)=17%",
+    "judge_reasoning": "Portugal胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760461)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "中",
+    "reasons": [
+      "葡萄牙的布鲁诺·费尔南德斯在中场调度能力极强，他能通过精准直塞撕开乌兹别克斯坦的防线，而乌兹别克斯坦的中场拦截能力相对较弱，容易被打穿。",
+      "葡萄牙后防有鲁本·迪亚斯坐镇，他的高空球和对抗能力能有效限制乌兹别克斯坦的反击长传，尤其面对对方的快速边锋时，他的预判是关键。",
+      "葡萄牙近期状态更好，战术执行力强，边路若昂·坎塞洛的前插传中是重要武器，而乌兹别克斯坦的边卫在高压下容易失位，这将给葡萄牙创造大量机会。"
+    ],
+    "key_risk": "葡萄牙大赛DNA评分低，若开场久攻不下，心态可能急躁，被乌兹别克斯坦抓住反击机会偷分。"
+  },
+  "actual_result": null
+}

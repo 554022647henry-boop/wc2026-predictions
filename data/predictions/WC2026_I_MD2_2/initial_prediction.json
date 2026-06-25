@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_I_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T15:05:27.056438",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 2.08,
+    "p_a_win": 0.5,
+    "p_draw": 0.28,
+    "p_b_win": 0.22,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 9.0,
+        "weight": 0.25,
+        "key_factors": [
+          "法国前场快马（如队长及边锋）擅长反越位和边路冲刺，针对伊拉克边后卫回追速度不足的弱点。",
+          "伊拉克后场面对高位逼抢出球失误率高，法国中场和前锋具备就地反抢后快速反击的能力。",
+          "法国防线虽偶有身后空当，但伊拉克缺乏顶级速度型前锋和稳定的中场输送，难以形成有效打击。"
+        ],
+        "reasoning": "法国前场球员的速度与高位逼抢能精准打击伊拉克边卫回追慢及后场出球易失误的致命短板，形成多维度压制。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 9.0,
+        "weight": 0.2,
+        "key_factors": [
+          "法国队世界排名第2，伊拉克排名第70，纸面实力完全碾压",
+          "赔率显示法国胜率极高（-1100），伊拉克胜率极低（+2500）",
+          "伊拉克首战净负3球，净胜球-3，面临出局压力，心理负担沉重"
+        ],
+        "reasoning": "法国队由姆巴佩、登贝莱等顶级球员领衔，实力远超伊拉克，且伊拉克首战惨败后士气低落，赔率差近2500点足以说明实力鸿沟。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "法国队中场拥有Kanté、Rabiot和Tchouaméni三名世界级球员，组合深度与个人能力远超对手。",
+          "伊拉克队中场核心Bayesh、Yakob、Sher缺乏国际大赛顶级对抗经验，且无确认伤病或状态利好。",
+          "DraftKings赔率显示法国-1100，市场高度看好法国赢球，反映纸面实力悬殊。"
+        ],
+        "reasoning": "法国队中场由Kanté、Rabiot、Tchouaméni等顶级球员领衔，而伊拉克队对应球员Bayesh、Yakob、Sher在实力与经验上完全处于劣势，缺乏任何针对性限制方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "法国队当前3分且净胜球+2，实力预期远高于伊拉克",
+          "伊拉克积分落后且净胜球-3，急需赢球但压力巨大",
+          "赛前未提供任何球员或教练具体信息，无法验证更衣室细节"
+        ],
+        "reasoning": "法国队赔率-1100显示压倒性优势，但缺乏球员名字和磨合数据支撑，只能依靠积分和赔率推断化学反应的稳定性优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "ESPN赔率法国-1100（胜率约91.7%）vs Iraq+2500，差距悬殊",
+          "法国除门将外全员来自五大联赛核心阵容，伊拉克无五大联赛球员",
+          "法国首发前锋能力达到世界级，伊拉克无对应爆点球员"
+        ],
+        "reasoning": "法国拥有Mike Maignan、Dayot Upamecano等五大联赛顶级球员，整体实力与赔率碾压伊拉克，后者无对应级别球员。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "法国近5场4胜1负，胜率80%，近3场进球数分别为3、2、3，进攻持续稳定",
+          "伊拉克近3场1胜1平1负，仅胜鱼腩安道尔，上场0-2输给委内瑞拉",
+          "法国小组赛首战获胜，出线主动权在握，球员心态和体能储备均占优",
+          "赔率显示法国胜赔-1100，市场极度看好法国"
+        ],
+        "reasoning": "法国近5场4胜且场均进球2.5+，进攻状态火热，而伊拉克仅1胜且面对强敌防守不稳"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 37%：模型 A_WIN P(A)=50%/P(D)=28%/P(B)=22% vs 市场 P(A)=87%/P(D)=9%/P(B)=4%",
+    "judge_reasoning": "France胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760457)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "高",
+    "reasons": [
+      "法国队拥有姆巴佩这样的超级射手，他上一场刚打入关键球，状态火热，面对伊拉克的防线能轻松撕开空间",
+      "伊拉克中场缺乏拦截能力，尤帕梅卡诺和孔德组成的后防线能轻松压制对手的反击，法国队控场优势明显",
+      "法国队休息6天，体能储备充足，而伊拉克刚经历苦战且积分落后，心理压力巨大，很难抵挡法国队的整体进攻。"
+    ],
+    "key_risk": "法国队可能因大热而轻敌，若开场久攻不下，伊拉克通过定位球或快速反击偷得一球，可能制造冷门。"
+  },
+  "actual_result": null
+}

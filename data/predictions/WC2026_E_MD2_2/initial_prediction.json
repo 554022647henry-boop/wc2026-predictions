@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_E_MD2_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:17:43.360131",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 2.23,
+    "p_a_win": 0.5,
+    "p_draw": 0.28,
+    "p_b_win": 0.22,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.5,
+        "b_score": 4.5,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.25,
+        "key_factors": [
+          "赔率显示厄瓜多尔胜率极高（-1100对+2500），实力预期天差地别",
+          "厄瓜多尔首战德国虽败但展现出高强度对抗能力，库拉索首轮被科特迪瓦打入6球防守崩溃",
+          "厄瓜多尔中场（凯塞多/门德斯）的拦截和转换能力远超库拉索中场配置",
+          "库拉索缺少有效推进手段，进攻三区威胁极小，难以利用厄瓜多尔防守时偶尔的横向空档"
+        ],
+        "reasoning": "厄瓜多尔在身体、技术和战术纪律上对库拉索形成压倒性优势，尤其厄瓜多尔的边锋群（如普拉塔）能轻易撕开库拉索密度不足的防线，而库拉索进攻手段单一，几乎无法考验厄瓜多尔相对稳固的防守体系。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "厄瓜多尔在积分榜0分，必须赢球否则接近出局，动机极强",
+          "赔率DraftKings显示厄瓜多尔-1100 vs 库拉索2500，纸面实力碾压",
+          "中立场迈阿密有大量厄瓜多尔裔球迷，环境偏主队",
+          "库拉索首战净负6球，防守能力与厄瓜多尔差距巨大"
+        ],
+        "reasoning": "厄瓜多尔必须赢球以维持出线希望，面对实力悬殊的库拉索，赔率-1100和大概率控场优势让球队具备3项以上有利因素（动机、实力、球迷支持）。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "厄瓜多尔拥有英超顶级中场莫伊塞斯·凯塞多，这是库拉索任何球员都无法匹配的战术资源。",
+          "赛前赔率（-1100 vs 2500）显示市场认为厄瓜多尔取胜几乎是板上钉钉。",
+          "厄瓜多尔首战告负，本场赢球是维持出线希望的唯一选择，战意和求胜欲更强。"
+        ],
+        "reasoning": "厄瓜多尔核心凯塞多坐镇中场，在个人级别和战术影响力上远胜库拉索的巴库纳兄弟，赔率与出线形势完全倾斜厄瓜多尔。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "核心组合年限数据为空，无法判断Ecuador与Curacao的长期合作稳定性",
+          "教练均已确认，但无执教时长或更衣室报道支撑氛围差异",
+          "系统磨合细节缺失，无临场换人或战术调整信息来源"
+        ],
+        "reasoning": "缺乏核心组合年限、内部氛围和战术磨合具体信息，两队化学反应无法区分差距，故判定为持平。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.8,
+        "b_score": 5.2,
+        "delta": 2.6,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Ecuador拥有Pervis Estupiñán（英超布莱顿主力边卫）等五大联赛主力球员",
+          "Curacao球员主要效力荷甲/荷乙中下游联赛和美国次级联赛",
+          "赔率DraftKings显示Ecuador-1100 vs Curacao+2500，差距悬殊",
+          "Curacao首轮小组赛0-6惨败，净胜球-6"
+        ],
+        "reasoning": "Ecuador优势巨大，赔率-1100碾压+2500，阵容五大联赛级别vs中下游联赛，首战Curacao净负6球实力不济。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.5,
+        "weight": 0.07,
+        "key_factors": [
+          "厄瓜多尔近5场3胜2平保持不败，包括世预赛1-0战胜阿根廷，防守稳固",
+          "库拉索近4场友谊赛1胜3负，失15球，防线崩盘",
+          "赔率显示厄瓜多尔胜赔-1100，市场认定胜负悬念极低"
+        ],
+        "reasoning": "厄瓜多尔近5场不败且战平荷兰、战胜阿根廷，库拉索防守脆弱且近期连败4场，厄瓜多尔在整体实力和状态上占据压倒性优势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 37%：模型 A_WIN P(A)=50%/P(D)=28%/P(B)=22% vs 市场 P(A)=87%/P(D)=9%/P(B)=4%",
+    "judge_reasoning": "Ecuador胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760446)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Ecuador胜",
+    "confidence": "中",
+    "reasons": [
+      "厄瓜多尔拥有埃斯图皮南这样的英超主力左后卫，他的前插传中是破密集防守的利器，库拉索边路很难限制他。",
+      "厄瓜多尔中场控制力更强，凯塞多和门德斯的双后腰组合能有效切断对手反击，让球队持续施压。",
+      "库拉索上一场净吞六球，士气低迷，而厄瓜多尔急需三分，主场氛围下会从第一分钟就全力猛攻。"
+    ],
+    "key_risk": "赔率严重偏向厄瓜多尔（胜赔-1100），市场过热可能导致球队心态急躁，若久攻不下可能被库拉索偷得平局。"
+  },
+  "actual_result": null
+}

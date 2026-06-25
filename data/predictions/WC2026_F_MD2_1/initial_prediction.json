@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_F_MD2_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:18:46.319599",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.87,
+    "p_a_win": 0.38,
+    "p_draw": 0.36,
+    "p_b_win": 0.26,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "荷兰队边锋群（加克波、马伦）的速度和技术能有效冲击瑞典回追慢的边后卫",
+          "瑞典队缺乏顶级速度前锋（如伊萨克状态存疑），难以利用荷兰中卫转身慢的弱点",
+          "荷兰中场（德容恩、赖因德斯）的控球能力优于瑞典中场（埃克达尔、斯万贝里），能压制节奏"
+        ],
+        "reasoning": "荷兰队的技术型边锋群（如加克波）能精准打击瑞典边后卫回追慢的短板，且中场控球能力更强；瑞典队虽有身体优势但缺乏速度型前锋惩罚荷兰的高位防线，局部对位荷兰占优。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "荷兰1分落后瑞典3分，必须赢才可能出线，动机更强",
+          "赔率荷兰-140略被看好，但瑞典+400显示差距不大",
+          "中立场地无主场优势，两队休息天数相同（4天）",
+          "无历史心理包袱或教练异常表态"
+        ],
+        "reasoning": "荷兰必须赢的动机赋予轻微优势，但瑞典整体实力和积分领先可抵消部分差距，关键取决于荷兰锋线如德佩的发挥。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "荷兰队-140赔率显示赔率商认定其有轻微优势",
+          "瑞典队首战3分且净胜球+4，状态和信心占优",
+          "双方关键球员均无伤停或状态报告，信息不足以评估高位"
+        ],
+        "reasoning": "荷兰队赔率占优但核心球员状态不明，瑞典队首战净胜球+4士气高涨，双方均无明显克制方案或伤停隐患。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "荷兰教练已确认但执教年限未公布",
+          "瑞典教练已确认但执教年限未公布",
+          "两队均无内部矛盾公开报道",
+          "核心组合磨合时间信息缺失"
+        ],
+        "reasoning": "双方核心组合稳定性及教练稳定性信息不足，无法判别具体优势，默认视为平手。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰队有范迪克、阿克等多名英超豪门主力，阵容档次明显高于瑞典",
+          "赔率显示荷兰胜赔-140，反映市场预期荷兰明显占优",
+          "瑞典队核心球员林德洛夫之外，多数球员效力于欧洲中下游联赛"
+        ],
+        "reasoning": "荷兰队FIFA排名显著高于瑞典，且阵容以五大联赛主力为主（如范迪克、阿克），整体实力和深度占优，瑞典仅林德洛夫等少数球员具备五大联赛竞争力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰近5场友谊赛2胜1平2负，预选赛4-0胜立陶宛但整体波动较大",
+          "瑞典预选赛近3场正赛2胜1负，友谊赛1平1负，状态稳定性稍强",
+          "积分形势上瑞典3分领先，但荷兰主场作战且历史交锋稍占优"
+        ],
+        "reasoning": "荷兰队近5场友谊赛2胜1平2负表现不稳，但预选赛大胜立陶宛展现进攻能力，而瑞典预选赛正赛状态更稳但友谊赛连续不胜，双方无明显状态差，荷兰略有主场和交锋心理优势。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 27%：模型 A_WIN P(A)=38%/P(D)=36%/P(B)=26% vs 市场 P(A)=59%/P(D)=9%/P(B)=32%",
+    "judge_reasoning": "Netherlands胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760447)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Netherlands胜",
+    "confidence": "中",
+    "reasons": [
+      "荷兰队拥有范迪克和邓弗里斯领衔的防线，身体对抗和防空能力强，能有效限制瑞典的传中战术",
+      "德佩在小组赛首战表现活跃，他的盘带和远射是打破瑞典密集防线的关键武器",
+      "瑞典队本场必须抢分，但荷兰队主场氛围火热，快速反击中范迪克的长传能直接找到前场核心球员"
+    ],
+    "key_risk": "瑞典队若利用角球或定位球由林德洛夫头球破门，荷兰队可能陷入久攻不下的焦躁局面"
+  },
+  "actual_result": null
+}

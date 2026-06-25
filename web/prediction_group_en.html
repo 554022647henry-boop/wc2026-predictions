@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026 FIFA World Cup · Group Stage AI Predictions</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0a0f1a; color: #e8e8e8; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; padding: 20px; }
+h1 { font-size: 18px; color: #f0c040; text-align: center; margin-bottom: 6px; font-weight: 700; }
+.sub { text-align: center; color: #888; font-size: 11px; margin-bottom: 20px; }
+.legend { text-align: center; font-size: 11px; color: #aaa; margin-bottom: 16px; }
+.legend span { margin: 0 10px; }
+.leg-g { color: #4caf80; }
+.leg-y { color: #f0c040; }
+
+.grp, .day { margin-bottom: 18px; background: #111827; border-radius: 8px; overflow: hidden; border: 1px solid #1e2d3d; }
+.grp-hd, .day-hd { background: #0d1f35; color: #f0c040; font-weight: 700; padding: 8px 12px; font-size: 14px; }
+.grp-teams { color: #aaa; font-size: 11px; font-weight: 400; margin-left: 10px; }
+
+table { width: 100%; border-collapse: collapse; }
+th { background: #0a1520; color: #888; font-weight: 600; padding: 5px 8px; font-size: 11px; text-align: center; }
+td { padding: 6px 8px; border-bottom: 1px solid #1a2535; text-align: center; }
+.md, .tm, .grpb { color: #888; font-size: 11px; width: 48px; }
+.dt { color: #888; font-size: 11px; width: 80px; }
+.ta { text-align: right; font-weight: 500; }
+.tb { text-align: left; font-weight: 500; }
+.ta.w, .tb.w { color: #f0c040; font-weight: 700; }
+.sc { width: 60px; font-weight: 700; }
+.cf { width: 36px; }
+
+tr.played td { background: #0d2218; }
+tr.played .sc { color: #4caf80; }
+tr.pred td { background: #1a1500; }
+tr.upcoming td { opacity: 0.5; }
+
+.arr-l { color: #f0c040; font-size: 14px; }
+.arr-r { color: #f0c040; font-size: 14px; }
+.arr-draw { color: #888; font-size: 13px; }
+.arr-vs { color: #555; font-size: 11px; }
+.score { font-size: 13px; font-weight: 700; color: #4caf80; }
+.pred-sm { font-size: 11px; color: #aaa; display: inline-block; margin-top: 1px; }
+.ok { color: #4caf80; font-size: 11px; }
+.ng { color: #f44; font-size: 11px; }
+
+.conf { font-size: 10px; padding: 1px 4px; border-radius: 3px; font-weight: 600; }
+.c-h { background: #1a3a1a; color: #4caf80; }
+.c-m { background: #2a2000; color: #f0c040; }
+.c-l { background: #2a1a00; color: #ff9944; }
+
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<h1>2026 FIFA World Cup · Group Stage AI Predictions</h1>
+<p class="sub">2026 FIFA World Cup · AI Predictions · Updated 2026-06-17 16:24 CST</p>
+<div class="legend">
+  <span class="leg-g">■ Green = Played (actual score)</span>
+  <span class="leg-y">■ Yellow = AI Prediction (◀▶ = predicted winner, — = draw)</span>
+</div>
+<div class="grid">
+<div class="grp">
+  <div class="grp-hd">Group A <span class="grp-teams">Czechia · Mexico · S. Africa · South Korea</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/12 03:00</td><td class="ta w">Mexico</td><td class="sc"><span class="score">2-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">S. Africa</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/12 10:00</td><td class="ta w">South Korea</td><td class="sc"><span class="score">2-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Czechia</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/19 00:00</td><td class="ta w">Czechia</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">S. Africa</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/19 09:00</td><td class="ta w">Mexico</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">South Korea</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 09:00</td><td class="ta">Czechia</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Mexico</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 09:00</td><td class="ta">S. Africa</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">South Korea</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group B <span class="grp-teams">Bosnia · Canada · Qatar · Switzerland</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/13 03:00</td><td class="ta">Bosnia</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ok">✅</span></span></td><td class="tb">Canada</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/14 03:00</td><td class="ta">Qatar</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">Switzerland</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/19 03:00</td><td class="ta w">Switzerland</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Bosnia</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/19 06:00</td><td class="ta w">Canada</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Qatar</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 03:00</td><td class="ta">Switzerland</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Canada</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 03:00</td><td class="ta w">Bosnia</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Qatar</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group C <span class="grp-teams">Brazil · Haiti · Morocco · Scotland</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/14 06:00</td><td class="ta">Brazil</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ok">✅</span></span></td><td class="tb">Morocco</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/14 09:00</td><td class="ta">Haiti</td><td class="sc"><span class="score">0-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">Scotland</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/20 06:00</td><td class="ta">Scotland</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Morocco</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/20 08:30</td><td class="ta w">Brazil</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Haiti</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 06:00</td><td class="ta">Scotland</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Brazil</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/25 06:00</td><td class="ta w">Morocco</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Haiti</td><td class="cf"><span class="conf c-h">高</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group D <span class="grp-teams">Australia · Paraguay · Turkiye · USA</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/13 09:00</td><td class="ta">Paraguay</td><td class="sc"><span class="score">4-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">USA</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/14 12:00</td><td class="ta w">Australia</td><td class="sc"><span class="score">2-0</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">Turkiye</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/20 03:00</td><td class="ta w">USA</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Australia</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/20 11:00</td><td class="ta">Turkiye</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Paraguay</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 10:00</td><td class="ta">Turkiye</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">USA</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 10:00</td><td class="ta">Paraguay</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Australia</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group E <span class="grp-teams">Curacao · Ecuador · Germany · Ivory Coast</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/15 01:00</td><td class="ta w">Germany</td><td class="sc"><span class="score">7-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Curacao</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/15 07:00</td><td class="ta w">Ivory Coast</td><td class="sc"><span class="score">1-0</span><br><span class="pred-sm"><span class="arr-draw">平</span><span class="ng">❌</span></span></td><td class="tb">Ecuador</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/21 04:00</td><td class="ta w">Germany</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Ivory Coast</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/21 08:00</td><td class="ta w">Ecuador</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Curacao</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 04:00</td><td class="ta">Curacao</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Ivory Coast</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 04:00</td><td class="ta">Ecuador</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Germany</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group F <span class="grp-teams">Japan · Netherlands · Sweden · Tunisia</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/15 04:00</td><td class="ta">Netherlands</td><td class="sc"><span class="score">2-2</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">Japan</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/15 10:00</td><td class="ta w">Sweden</td><td class="sc"><span class="score">5-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Tunisia</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/21 01:00</td><td class="ta w">Netherlands</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Sweden</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/21 12:00</td><td class="ta">Tunisia</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Japan</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 07:00</td><td class="ta w">Japan</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Sweden</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/26 07:00</td><td class="ta">Tunisia</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Netherlands</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group G <span class="grp-teams">Belgium · Egypt · Iran · New Zealand</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/16 03:00</td><td class="ta">Belgium</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">Egypt</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/16 09:00</td><td class="ta">Iran</td><td class="sc"><span class="score">2-2</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">New Zealand</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/22 03:00</td><td class="ta w">Belgium</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Iran</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/22 09:00</td><td class="ta">New Zealand</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Egypt</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 11:00</td><td class="ta">Egypt</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Iran</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 11:00</td><td class="ta">New Zealand</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Belgium</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group H <span class="grp-teams">C. Verde · Saudi Arabia · Spain · Uruguay</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/16 00:00</td><td class="ta">Spain</td><td class="sc"><span class="score">0-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ng">❌</span></span></td><td class="tb">C. Verde</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/16 06:00</td><td class="ta">Saudi Arabia</td><td class="sc"><span class="score">1-1</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ng">❌</span></span></td><td class="tb">Uruguay</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/22 00:00</td><td class="ta w">Spain</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Saudi Arabia</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/22 06:00</td><td class="ta w">Uruguay</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">C. Verde</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 08:00</td><td class="ta">C. Verde</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Saudi Arabia</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 08:00</td><td class="ta">Uruguay</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Spain</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group I <span class="grp-teams">France · Iraq · Norway · Senegal</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/17 03:00</td><td class="ta w">France</td><td class="sc"><span class="score">3-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Senegal</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/17 06:00</td><td class="ta">Iraq</td><td class="sc"><span class="score">1-4</span><br><span class="pred-sm"><span class="arr-r">▶</span><span class="ok">✅</span></span></td><td class="tb w">Norway</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/23 05:00</td><td class="ta w">France</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Iraq</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/23 08:00</td><td class="ta">Norway</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Senegal</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 03:00</td><td class="ta">Norway</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">France</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/27 03:00</td><td class="ta w">Senegal</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Iraq</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group J <span class="grp-teams">Algeria · Argentina · Austria · Jordan</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="played"><td class="md">MD1</td><td class="dt">06/17 09:00</td><td class="ta w">Argentina</td><td class="sc"><span class="score">3-0</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Algeria</td><td class="cf"></td></tr><tr class="played"><td class="md">MD1</td><td class="dt">06/17 12:00</td><td class="ta w">Austria</td><td class="sc"><span class="score">3-1</span><br><span class="pred-sm"><span class="arr-l">◀</span><span class="ok">✅</span></span></td><td class="tb">Jordan</td><td class="cf"></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/23 01:00</td><td class="ta w">Argentina</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Austria</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/23 11:00</td><td class="ta">Jordan</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Algeria</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 10:00</td><td class="ta">Algeria</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Austria</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 10:00</td><td class="ta">Jordan</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Argentina</td><td class="cf"><span class="conf c-h">高</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group K <span class="grp-teams">Colombia · DR Congo · Portugal · Uzbekistan</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="pred"><td class="md">MD1</td><td class="dt">06/18 01:00</td><td class="ta w">Portugal</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">DR Congo</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD1</td><td class="dt">06/18 10:00</td><td class="ta">Uzbekistan</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Colombia</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/24 01:00</td><td class="ta w">Portugal</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Uzbekistan</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/24 10:00</td><td class="ta w">Colombia</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">DR Congo</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 07:30</td><td class="ta">Colombia</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Portugal</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 07:30</td><td class="ta">DR Congo</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Uzbekistan</td><td class="cf"><span class="conf c-l">低</span></td></tr>
+  </table>
+</div>
+
+<div class="grp">
+  <div class="grp-hd">Group L <span class="grp-teams">Croatia · England · Ghana · Panama</span></div>
+  <table>
+    <tr class="hdr"><th>MD</th><th>CST</th><th>Home</th><th>Score/Pred</th><th>Away</th><th></th></tr>
+    <tr class="pred"><td class="md">MD1</td><td class="dt">06/18 04:00</td><td class="ta w">England</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Croatia</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD1</td><td class="dt">06/18 07:00</td><td class="ta">Ghana</td><td class="sc"><span class="arr-draw">平</span></td><td class="tb">Panama</td><td class="cf"><span class="conf c-l">低</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/24 04:00</td><td class="ta w">England</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Ghana</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD2</td><td class="dt">06/24 07:00</td><td class="ta">Panama</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">Croatia</td><td class="cf"><span class="conf c-m">中</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 05:00</td><td class="ta">Panama</td><td class="sc"><span class="arr-r">▶</span></td><td class="tb w">England</td><td class="cf"><span class="conf c-h">高</span></td></tr><tr class="pred"><td class="md">MD3</td><td class="dt">06/28 05:00</td><td class="ta w">Croatia</td><td class="sc"><span class="arr-l">◀</span></td><td class="tb">Ghana</td><td class="cf"><span class="conf c-m">中</span></td></tr>
+  </table>
+</div></div>
+</body>
+</html>

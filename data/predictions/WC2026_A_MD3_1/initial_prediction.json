@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_A_MD3_1",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T12:34:18.836887",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.21,
+    "p_a_win": 0.24,
+    "p_draw": 0.33,
+    "p_b_win": 0.43,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "捷克3-4-3阵型边路与中卫间空当大，墨西哥433边锋群（如洛萨诺或安图尼亚）可频繁冲击",
+          "墨西哥大赛经验丰富且赔率-125明显被看好，捷克背水一战需赢球会暴露更多反击空间",
+          "捷克缺少顶级头球手，难以有效利用墨西哥高空球防守漏洞这一已知弱点"
+        ],
+        "reasoning": "墨西哥在整体实力和节奏控制上占优，其快速边锋能利用捷克三中卫边路空当，而捷克缺少针对性高空武器难以惩罚墨西哥防线短板"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "捷克队首战失利积0分，必须赢球才能保持出线希望，动机强",
+          "墨西哥队首战获胜积3分，可接受平局，但整体实力和赔率更被看好",
+          "比赛在达拉斯进行，墨西哥在美国有大量球迷支持，场地优势偏向墨西哥"
+        ],
+        "reasoning": "墨西哥队实力更强，赔率-125明显优势，且在美国场地拥有球迷支持，但捷克队因积分落后有更强赢球动机，限制分差。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "墨西哥首轮3分净胜球+2，状态和积分优势明显",
+          "赔率倾向墨西哥（DraftKings墨西哥-125 vs 捷克370）",
+          "捷克队核心达里达和绍切克状态未知，且上轮失利后无实质性调整信息"
+        ],
+        "reasoning": "墨西哥有状态和赔率支持（路易斯·查韦斯中场组织+埃德森·阿尔瓦雷斯防守屏障），捷克需赢球但核心达里达、绍切克状态不明且无针对性限制方案。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "墨西哥首战获胜（3分），战术体系得到实战验证，心理更稳定",
+          "捷克0分垫底，可能被迫变阵或提升激进程度，打断磨合节奏",
+          "两队教练均确认在位，但无具体执教时长信息"
+        ],
+        "reasoning": "墨西哥1胜后体系延续性略高于背水一战的捷克，但双方具体阵容磨合时长均未知，优势极微弱。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.5,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥首战3分，净胜球+2，捷克0分且净胜球-1",
+          "墨西哥阵容核心基干五大联赛和顶级本土联赛，如奥乔亚（萨勒尼塔纳）、蒙特斯（西班牙人）、Johan Vásquez（热那亚）",
+          "捷克阵容以国内联赛和低级别联赛为主，无公认超级球员",
+          "DraftKings赔率：墨西哥-125，捷克+370，差距显著"
+        ],
+        "reasoning": "墨西哥在阵容质量（大部分来自五大联赛及墨超豪门）、近期状态（首胜）和赔率（-125 vs +370）上均明显占优，奥乔亚、蒙特斯领衔的后防线协同成熟，面对捷克中等偏下的前场配备具有较大优势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥近期取得友谊赛3连胜，且击败过比利时这样的强队，状态稳定。",
+          "捷克近5场不败但对手实力有限，最近一场正式比赛预选赛是平局，缺乏亮眼表现。",
+          "墨西哥在小组赛首轮获胜，心理和体能储备上略占优势，而捷克首轮失利，压力更大。"
+        ],
+        "reasoning": "墨西哥凭借近3场友谊赛的全胜战绩（包括击败比利时），展现了更好的进攻状态和比赛节奏，而捷克虽然不败但对手实力较弱，且关键预选赛表现平平。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 24%：模型 B_WIN P(A)=24%/P(D)=33%/P(B)=43% vs 市场 P(A)=30%/P(D)=9%/P(B)=61%",
+    "judge_reasoning": "Mexico胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760467)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Mexico胜",
+    "confidence": "中",
+    "reasons": [
+      "墨西哥队拥有更强的进攻火力，核心球员在近期比赛中状态火热，而捷克队后防在面对快节奏攻势时容易出现漏洞",
+      "墨西哥队中场控制力占优，能够通过传导球压制捷克队的反击，战术对位评分明显领先",
+      "捷克队首战失利后压力巨大，必须赢球才有出线希望，但墨西哥队经历多天休整后体能充沛，更适应达拉斯AT&T球场的大场面"
+    ],
+    "key_risk": "墨西哥队若因领先而放松，捷克队利用定位球或快速反击可能制造冷门，且市场赔率对墨西哥胜的倾斜已接近赔率偏差红线，存在过热风险"
+  },
+  "actual_result": null
+}

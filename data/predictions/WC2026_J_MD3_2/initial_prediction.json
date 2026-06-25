@@ -1,0 +1,142 @@
+{
+  "match_id": "WC2026_J_MD3_2",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-17T14:50:46.682797",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -3.69,
+    "p_a_win": 0.14,
+    "p_draw": 0.18,
+    "p_b_win": 0.68,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 3.5,
+        "b_score": 8.5,
+        "delta": -5.0,
+        "confidence": 9.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Argentina拥有压倒性的阵容实力和战术素养，其4-3-3阵型能有效控制中场和比赛节奏",
+          "Jordan的防守反击策略理论上能针对Argentina的高位防线（根据ESPN信息），但缺乏足够具体的进攻手段信息来支撑这种战术有效执行",
+          "市场赔率 (Argentina -550 vs Jordan +1400) 和积分榜形势证实了巨大的实力差距，Argentina正为巩固小组第一而战"
+        ],
+        "reasoning": "Jordan唯一的理论优势在于利用Argentina的高位防线打快速反击，但整体实力差距巨大使其难以持续威胁；Argentina在控球、整体实力和战术执行上全面占优，打身后弱点需Jordan精准执行才能暴露，而Jordan进攻信息缺失表明其无法提供足够压力。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Argentina首轮3-0大胜Algeria，净胜球+3，攻防状态极佳",
+          "DraftKings赔率Jordan +1400 vs Argentina -550，实力差距巨大",
+          "Jordan首轮0-0平Austria，进攻乏力且缺乏爆冷历史"
+        ],
+        "reasoning": "Argentina拥有Messi、Alvarez等顶级攻击手，Jordan后防难以抵挡其多点进攻，赔率悬殊且积分榜压力小。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 3.0,
+        "b_score": 8.0,
+        "delta": -5.0,
+        "confidence": 9.0,
+        "weight": 0.15,
+        "key_factors": [
+          "赔率显示阿根廷胜率极高（-550 vs 1400），差距明显",
+          "阿根廷中场三人组（Paredes, De Paul, Lo Celso）经验与实力远胜约旦同位置球员",
+          "约旦关键球员状态全为None，无任何比赛节奏或优势证据"
+        ],
+        "reasoning": "阿根廷在赔率和阵容深度上全面占优，Leandro Paredes等中场核心状态无隐患，而约旦缺乏可对抗的具体球员信息。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Argentina教练已确认，战术系统稳定",
+          "Jordan核心组合年限数据缺失，集训磨合时间短",
+          "赔率显示Argentina实力碾压，但化学反应数据不完整"
+        ],
+        "reasoning": "Argentina虽无具体核心组合年限数据，但基于其长期稳定的教练体系和丰富大赛经验（例如梅西等核心球员），化学反应优势明显；Jordan信息不足，视为轻微劣势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 10.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿根廷FIFA排名第1，约旦约第70-80位，排名差远超30名",
+          "阿根廷首发均来自五大联赛豪门（如梅西、劳塔罗），约旦球员以本国联赛为主",
+          "阿根廷有梅西（历史级超级球员）可单场改变比赛"
+        ],
+        "reasoning": "阿根廷拥有梅西等顶级球星且FIFA排名碾压，约旦阵容几乎无五大联赛主力，实力差距悬殊。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 3.0,
+        "b_score": 7.0,
+        "delta": -4.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina近5场友谊赛全胜，包括3-0冰岛和2-0洪都拉斯",
+          "Jordan近4场仅2平2负，其中2-4处失球数高于进球数",
+          "赔率显示Argentina为-550大热门，Jordan为1400冷门"
+        ],
+        "reasoning": "Argentina近5场全胜且场均进2球以上，Jordan连续4场不胜防守不稳，实力差距明显。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760483)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "高",
+    "reasons": [
+      "阿根廷拥有梅西这样的超级巨星，他能在关键时刻撕开防线，而约旦的防守体系在强队面前往往顾此失彼。",
+      "阿根廷中场控制力远强于对手，德保罗和恩佐·费尔南德斯的跑动和传球能让约旦很难抢到球权。",
+      "约旦首战失利且休息时间更短，而阿根廷已拿到3分，阵容深度和大赛经验都能保证他们掌控节奏。"
+    ],
+    "key_risk": "阿根廷如果过于放松或轻敌，可能在上半场打不开局面，但整体实力差距太大，爆冷概率极低。"
+  },
+  "actual_result": null
+}
