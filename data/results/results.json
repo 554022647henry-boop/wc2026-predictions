@@ -334,5 +334,131 @@
     "team_a": "Colombia",
     "team_b": "DR Congo",
     "recorded_at": "2026-06-24T20:30:00"
+  },
+  "WC2026_B_MD3_1": {
+    "outcome": "A_WIN",
+    "score": "2-1",
+    "team_a": "Switzerland",
+    "team_b": "Canada",
+    "recorded_at": "2026-06-27T16:09:37.597993"
+  },
+  "WC2026_C_MD3_2": {
+    "outcome": "A_WIN",
+    "score": "4-2",
+    "team_a": "Morocco",
+    "team_b": "Haiti",
+    "recorded_at": "2026-06-27T16:09:37.613322"
+  },
+  "WC2026_C_MD3_1": {
+    "outcome": "B_WIN",
+    "score": "0-3",
+    "team_a": "Scotland",
+    "team_b": "Brazil",
+    "recorded_at": "2026-06-27T16:09:37.624223"
+  },
+  "WC2026_A_MD3_1": {
+    "outcome": "B_WIN",
+    "score": "0-3",
+    "team_a": "Czechia",
+    "team_b": "Mexico",
+    "recorded_at": "2026-06-27T16:09:37.633973"
+  },
+  "WC2026_A_MD3_2": {
+    "outcome": "A_WIN",
+    "score": "1-0",
+    "team_a": "South Africa",
+    "team_b": "South Korea",
+    "recorded_at": "2026-06-27T16:09:37.643519"
+  },
+  "WC2026_E_MD3_1": {
+    "outcome": "B_WIN",
+    "score": "0-2",
+    "team_a": "Curacao",
+    "team_b": "Ivory Coast",
+    "recorded_at": "2026-06-27T16:09:38.246776"
+  },
+  "WC2026_E_MD3_2": {
+    "outcome": "A_WIN",
+    "score": "2-1",
+    "team_a": "Ecuador",
+    "team_b": "Germany",
+    "recorded_at": "2026-06-27T16:09:38.257396"
+  },
+  "WC2026_F_MD3_1": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Japan",
+    "team_b": "Sweden",
+    "recorded_at": "2026-06-27T16:09:38.266779"
+  },
+  "WC2026_F_MD3_2": {
+    "outcome": "B_WIN",
+    "score": "1-3",
+    "team_a": "Tunisia",
+    "team_b": "Netherlands",
+    "recorded_at": "2026-06-27T16:09:38.276690"
+  },
+  "WC2026_D_MD3_2": {
+    "outcome": "DRAW",
+    "score": "0-0",
+    "team_a": "Paraguay",
+    "team_b": "Australia",
+    "recorded_at": "2026-06-27T16:09:38.287367"
+  },
+  "WC2026_D_MD3_1": {
+    "outcome": "A_WIN",
+    "score": "3-2",
+    "team_a": "Turkiye",
+    "team_b": "United States",
+    "recorded_at": "2026-06-27T16:09:38.300351"
+  },
+  "WC2026_I_MD3_1": {
+    "outcome": "B_WIN",
+    "score": "1-4",
+    "team_a": "Norway",
+    "team_b": "France",
+    "recorded_at": "2026-06-27T16:09:39.225098"
+  },
+  "WC2026_I_MD3_2": {
+    "outcome": "A_WIN",
+    "score": "5-0",
+    "team_a": "Senegal",
+    "team_b": "Iraq",
+    "recorded_at": "2026-06-27T16:09:39.242932"
+  },
+  "WC2026_H_MD3_1": {
+    "outcome": "DRAW",
+    "score": "0-0",
+    "team_a": "Cape Verde",
+    "team_b": "Saudi Arabia",
+    "recorded_at": "2026-06-27T16:09:39.257513"
+  },
+  "WC2026_H_MD3_2": {
+    "outcome": "B_WIN",
+    "score": "0-1",
+    "team_a": "Uruguay",
+    "team_b": "Spain",
+    "recorded_at": "2026-06-27T16:09:39.270700"
+  },
+  "WC2026_G_MD3_1": {
+    "outcome": "DRAW",
+    "score": "1-1",
+    "team_a": "Egypt",
+    "team_b": "Iran",
+    "recorded_at": "2026-06-27T16:09:39.279361"
+  },
+  "WC2026_G_MD3_2": {
+    "outcome": "B_WIN",
+    "score": "1-5",
+    "team_a": "New Zealand",
+    "team_b": "Belgium",
+    "recorded_at": "2026-06-27T16:09:39.289577"
+  },
+  "WC2026_B_MD3_2": {
+    "outcome": "A_WIN",
+    "score": "3-1",
+    "team_a": "Bosnia and Herzegovina",
+    "team_b": "Qatar",
+    "recorded_at": "2026-06-27T16:20:00"
   }
 }
