@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI预测日报 06.27 · 2026世界杯</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:#0a0a0a; --ink-2:#3f3f46; --ink-3:#71717a;
+    --bg:#ffffff; --surface:#f4f4f5; --border:#e4e4e7;
+    --blue:#1d4ed8; --blue-dark:#1e3a8a; --blue-bg:#eff6ff; --blue-mid:#dbeafe;
+    --green:#15803d; --green-bg:#f0fdf4; --green-mid:#bbf7d0;
+    --red:#b91c1c; --red-bg:#fef2f2; --red-mid:#fecaca;
+    --amber:#b45309; --amber-bg:#fffbeb; --amber-mid:#fde68a;
+    --f-display:'Syne',sans-serif; --f-body:'Figtree',sans-serif; --f-mono:'Space Mono',monospace;
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0d1117;min-height:100vh;display:flex;justify-content:center;align-items:flex-start;padding:0;font-family:var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .stage{width:1080px;max-width:1080px;min-height:1920px;background:var(--bg);overflow:hidden;animation:rise .7s var(--ease-out) both}
+  @keyframes rise{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+
+  /* ═══ 弹弹乐动画系统 ═══ */
+  @keyframes pop-in {
+    0%{opacity:0;transform:scale(.7) translateY(30px)}
+    60%{transform:scale(1.05) translateY(-4px)}
+    80%{transform:scale(.97) translateY(2px)}
+    100%{opacity:1;transform:scale(1) translateY(0)}
+  }
+  @keyframes bounce-in {
+    0%{opacity:0;transform:translateY(60px)}
+    50%{opacity:1;transform:translateY(-8px)}
+    70%{transform:translateY(3px)}
+    100%{transform:translateY(0)}
+  }
+  @keyframes float-subtle {
+    0%,100%{transform:translateY(0) rotate(0deg)}
+    40%{transform:translateY(-3px) rotate(.5deg)}
+    60%{transform:translateY(-1px) rotate(-.3deg)}
+  }
+  @keyframes flag-wave {
+    0%,100%{transform:rotate(0deg) scale(1)}
+    25%{transform:rotate(-5deg) scale(1.1)}
+    75%{transform:rotate(5deg) scale(1.1)}
+  }
+  @keyframes wobble {
+    0%{transform:translateX(0)}
+    15%{transform:translateX(-6px) rotate(-1deg)}
+    30%{transform:translateX(5px) rotate(1deg)}
+    45%{transform:translateX(-4px) rotate(-.5deg)}
+    60%{transform:translateX(3px) rotate(.5deg)}
+    75%{transform:translateX(-1px)}
+    100%{transform:translateX(0)}
+  }
+  @keyframes score-pop {
+    0%{transform:scale(0) rotate(-10deg);opacity:0}
+    60%{transform:scale(1.15) rotate(3deg);opacity:1}
+    100%{transform:scale(1) rotate(0)}
+  }
+
+  .pop{opacity:0;transform:scale(.7) translateY(30px);transition:opacity .6s var(--ease-bounce),transform .6s var(--ease-bounce)}
+  .pop.on{opacity:1;transform:scale(1) translateY(0)}
+  .bounce{opacity:0;transform:translateY(60px);transition:opacity .55s var(--ease-bounce),transform .55s var(--ease-bounce)}
+  .bounce.on{opacity:1;transform:translateY(0)}
+  .d1{transition-delay:.06s}.d2{transition-delay:.12s}.d3{transition-delay:.18s}
+  .d4{transition-delay:.24s}.d5{transition-delay:.30s}.d6{transition-delay:.36s}
+
+  .s1{transition-delay:0s}.s2{transition-delay:.7s}.s3{transition-delay:1.4s}
+  .s4{transition-delay:2.1s}.s5{transition-delay:2.8s}.s6{transition-delay:3.5s}
+
+  /* ═══ HERO ═══ */
+  .hero{background:var(--blue-dark);padding:80px 72px 72px;position:relative;overflow:hidden}
+  .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,.03) 59px,rgba(255,255,255,.03) 60px);pointer-events:none}
+  .hero-deco{position:absolute;right:-100px;top:-100px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(255,255,255,.06);pointer-events:none;animation:float-subtle 6s ease-in-out infinite}
+  .hero-emoji-bg{position:absolute;font-size:80px;opacity:.06;pointer-events:none;animation:float-subtle 8s ease-in-out infinite}
+  .he1{top:30px;right:120px;animation-delay:0s}
+  .he2{bottom:40px;right:200px;font-size:50px;animation-delay:3s}
+
+  .hero-meta{display:flex;align-items:center;gap:16px;font-family:var(--f-mono);font-size:16px;color:rgba(255,255,255,.5);letter-spacing:.06em;margin-bottom:32px;position:relative;z-index:1}
+  .hero-meta::before{content:'';width:36px;height:1px;background:rgba(255,255,255,.3)}
+  .hero h1{font-family:var(--f-display);font-size:72px;font-weight:800;color:#fff;line-height:1.08;letter-spacing:-0.03em;position:relative;z-index:1;margin-bottom:24px}
+  .hero h1 .wave{display:inline-block;animation:flag-wave 2.5s ease-in-out infinite;transform-origin:bottom center}
+  .hero h1 em{font-style:normal;color:#93c5fd}
+  .hero-sub{font-size:23px;line-height:1.6;color:rgba(255,255,255,.65);position:relative;z-index:1;max-width:760px;margin-bottom:32px}
+  .hero-data{font-family:var(--f-mono);font-size:16px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:16px;position:relative;z-index:1;margin-bottom:36px;flex-wrap:wrap}
+  .hd-dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.3)}
+  .hero-score{display:inline-flex;align-items:baseline;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:4px;padding:20px 30px;position:relative;z-index:1}
+  .hero-score-num{font-family:var(--f-display);font-size:72px;font-weight:800;color:#fff;line-height:1}
+  .hero-score-denom{font-family:var(--f-mono);font-size:22px;color:rgba(255,255,255,.45);padding-bottom:4px}
+  .hero-score-label{font-family:var(--f-mono);font-size:14px;letter-spacing:.08em;color:rgba(255,255,255,.4);margin-left:6px;padding-bottom:4px}
+
+  .body{padding:0 72px}
+
+  /* ─── Section 标题 ─── */
+  .sec-head{padding:56px 0 32px;border-bottom:1px solid var(--border);margin-bottom:36px}
+  .sec-label{font-family:var(--f-mono);font-size:14px;letter-spacing:.12em;color:var(--ink-3);margin-bottom:14px;text-transform:uppercase}
+  .sec-title{font-family:var(--f-display);font-size:34px;font-weight:700;color:var(--ink);letter-spacing:-0.02em}
+  .sec-title .emoji{display:inline-block;animation:float-subtle 4s ease-in-out infinite}
+
+  /* ─── 明日预测卡片（紧凑宽屏版） ─── */
+  .pred-cards{display:flex;flex-direction:column;gap:20px;padding-bottom:56px}
+  .pred-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all .3s var(--ease-bounce)}
+  .pred-card:hover{transform:translateY(-4px) scale(1.003);box-shadow:0 12px 40px rgba(0,0,0,.06);border-color:var(--blue-mid)}
+
+  .pc-header{display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--surface);border-bottom:1px solid var(--border)}
+  .pc-group{font-family:var(--f-mono);font-size:13px;color:var(--ink-3);letter-spacing:.06em}
+  .pc-time{font-family:var(--f-mono);font-size:12px;color:var(--blue);background:var(--blue-bg);border:1px solid var(--blue-mid);border-radius:3px;padding:3px 10px;margin-left:auto}
+  .pc-badge{font-family:var(--f-mono);font-size:12px;font-weight:700;padding:4px 12px;border-radius:3px;transition:transform .3s var(--ease-bounce)}
+  .pred-card:hover .pc-badge{transform:scale(1.08)}
+  .pc-badge.high{background:var(--green-bg);color:var(--green);border:1px solid var(--green-mid)}
+  .pc-badge.mid{background:#fffbeb;color:var(--amber);border:1px solid #fde68a}
+  .pc-badge.low{background:var(--red-bg);color:var(--red);border:1px solid var(--red-mid)}
+
+  .pc-main{display:flex;align-items:stretch;gap:0;border-bottom:1px solid var(--border)}
+  .pc-team{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;min-width:130px;flex-shrink:0}
+  .pc-team.pc-right{flex-direction:row-reverse}
+  .pc-flag{font-size:32px;line-height:1;transition:transform .3s var(--ease-bounce)}
+  .pred-card:hover .pc-flag{animation:flag-wave .5s ease-in-out}
+  .pc-name{font-family:var(--f-display);font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+
+  .pc-mid{flex:1;display:flex;flex-direction:column;gap:8px;padding:12px 20px;border-left:1px solid var(--border);border-right:1px solid var(--border)}
+  .pc-prob{display:flex;height:14px;border-radius:7px;overflow:hidden;gap:2px}
+  .pp-a{background:var(--blue-dark);border-radius:7px 0 0 7px;display:flex;align-items:center;justify-content:flex-end;padding-right:5px;font-family:var(--f-display);font-size:10px;font-weight:700;color:rgba(255,255,255,.9)}
+  .pp-d{background:#94a3b8;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:10px;font-weight:700;color:rgba(255,255,255,.9)}
+  .pp-b{background:#cbd5e1;border-radius:0 7px 7px 0;display:flex;align-items:center;justify-content:flex-start;padding-left:5px;font-family:var(--f-display);font-size:10px;font-weight:700;color:rgba(255,255,255,.9)}
+  .pc-info{display:flex;align-items:center;gap:10px}
+  .pc-info .pg-label{font-family:var(--f-mono);font-size:11px;font-weight:700;color:var(--blue);white-space:nowrap}
+  .pc-info .pg-label.ag{color:var(--ink-3)}
+  .pc-info .pg-track{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+  .pc-info .pg-track div{height:100%;background:var(--blue);border-radius:3px}
+  .pc-verdict{font-family:var(--f-display);font-size:15px;font-weight:700;color:var(--blue-dark);white-space:nowrap;margin-left:auto}
+
+  .pc-reasons{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--border)}
+  .pc-reasons .pr-item{display:flex;gap:8px;align-items:flex-start;padding:10px 20px;font-size:14px;line-height:1.65;color:var(--ink-2);transition:all .2s var(--ease-bounce)}
+  .pc-reasons .pr-item:hover{background:var(--surface)}
+  .pc-reasons .pr-item:first-child{border-right:1px solid var(--border)}
+  .pr-icon{font-size:16px;flex-shrink:0;margin-top:2px;transition:transform .2s var(--ease-bounce)}
+  .pc-reasons .pr-item:hover .pr-icon{transform:scale(1.25)}
+
+  .pc-risk{display:flex;gap:8px;align-items:center;padding:9px 20px;font-size:13px;line-height:1.6;color:var(--amber);background:var(--amber-bg)}
+
+  /* ═══ 比赛结果卡（弹弹乐版） ═══ */
+  .matches{padding:0 0 48px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .match-card{position:relative;border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:all .3s var(--ease-bounce)}
+  .match-card:hover{transform:translateY(-4px);box-shadow:0 10px 36px rgba(0,0,0,.04)}
+  .match-card.hit{border-color:var(--green-mid)}
+  .match-card.miss{border-color:var(--red-mid)}
+  .match-card.hit:hover .match-team-flag{animation:flag-wave .7s ease-in-out}
+  .match-card.miss:hover{animation:wobble .5s var(--ease-bounce)}
+  .match-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;z-index:1}
+  .match-card.hit::before{background:var(--green)}
+  .match-card.miss::before{background:var(--red)}
+
+  .match-card-top{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;background:var(--surface);border-bottom:1px solid var(--border)}
+  .match-card.hit .match-card-top{background:var(--green-bg);border-color:var(--green-mid)}
+  .match-card.miss .match-card-top{background:var(--red-bg);border-color:var(--red-mid)}
+  .match-group-badge{font-family:var(--f-mono);font-size:13px;letter-spacing:.06em;color:var(--ink-3)}
+  .match-verdict{display:flex;align-items:center;gap:8px}
+  .verdict-tag{font-family:var(--f-mono);font-size:13px;font-weight:700;letter-spacing:.04em;padding:5px 12px;border-radius:3px;border:1px solid;display:inline-block;transition:transform .3s var(--ease-bounce)}
+  .match-card:hover .verdict-tag{transform:scale(1.08)}
+  .match-card.hit .verdict-tag{color:var(--green);background:var(--green-bg);border-color:var(--green-mid)}
+  .match-card.miss .verdict-tag{color:var(--red);background:var(--red-bg);border-color:var(--red-mid)}
+
+  .match-card-body{padding:24px 20px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
+  .match-team{display:flex;flex-direction:column;gap:4px}
+  .match-team.right{text-align:right;align-items:flex-end}
+  .match-team-flag{font-size:32px;line-height:1;display:inline-block;transition:transform .3s var(--ease-bounce)}
+  .match-team-name{font-family:var(--f-display);font-size:22px;font-weight:700;color:var(--ink);letter-spacing:-0.01em}
+  .match-score-block{text-align:center}
+  .match-score{font-family:var(--f-display);font-size:52px;font-weight:800;line-height:1;letter-spacing:-0.04em;display:inline-block;transition:transform .3s var(--ease-bounce)}
+  .match-card.hit .match-score{color:var(--green)}
+  .match-card.miss .match-score{color:var(--ink-2)}
+  .match-card:hover .match-score{animation:score-pop .4s var(--ease-bounce)}
+  .match-score-sub{font-family:var(--f-mono);font-size:13px;color:var(--ink-3);margin-top:6px;letter-spacing:.04em}
+
+  .match-card-foot{padding:14px 22px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+  .match-card.hit .match-card-foot{border-color:var(--green-mid)}
+  .match-card.miss .match-card-foot{border-color:var(--red-mid)}
+  .pred-label{font-family:var(--f-mono);font-size:13px;color:var(--ink-3);letter-spacing:.06em}
+  .pred-value{font-family:var(--f-mono);font-size:15px;font-weight:700;color:var(--ink-2)}
+  .match-card.hit .pred-value{color:var(--green)}
+
+  /* ─── Insight ─── */
+  .insight{margin:0 -72px;padding:56px 72px;background:var(--blue-bg);border-top:2px solid var(--blue-mid);border-bottom:2px solid var(--blue-mid);position:relative;overflow:hidden}
+  .insight::after{content:'💡';position:absolute;right:60px;bottom:30px;font-size:48px;opacity:.2;animation:float-subtle 5s ease-in-out infinite;pointer-events:none}
+  .insight-label{font-family:var(--f-mono);font-size:14px;letter-spacing:.12em;color:var(--blue);margin-bottom:20px}
+  .insight blockquote{font-family:var(--f-display);font-size:34px;font-weight:700;color:var(--blue-dark);line-height:1.35;letter-spacing:-0.02em;text-wrap:balance}
+  .insight blockquote .emoji-me{display:inline-block;animation:flag-wave 2.5s ease-in-out infinite}
+  .insight-source{margin-top:20px;font-size:18px;line-height:1.6;color:var(--ink-3);font-style:italic}
+
+  /* ═══ 失败复盘 ═══ */
+  .points{padding:48px 0 24px;border-bottom:1px solid var(--border)}
+  .point{display:grid;grid-template-columns:64px 1fr;gap:0 24px;padding:36px 0;border-top:1px solid var(--border);transition:all .3s var(--ease-bounce)}
+  .point:first-of-type{border-top:none;padding-top:0}
+  .point:hover{background:var(--surface);padding-left:12px;border-radius:8px;margin:0 -12px;padding-right:12px}
+  .point-num{font-family:var(--f-mono);font-size:15px;font-weight:700;color:var(--red);letter-spacing:.04em;padding-top:4px;transition:transform .3s var(--ease-bounce);display:inline-block}
+  .point:hover .point-num{transform:scale(1.2)}
+  .point-content h3{font-family:var(--f-display);font-size:24px;font-weight:700;color:var(--ink);letter-spacing:-0.01em;margin-bottom:12px;line-height:1.3}
+  .point-content p{font-size:18px;line-height:1.75;color:var(--ink-2);margin-bottom:14px}
+  .point-content p:last-child{margin-bottom:0}
+  .lesson-tag{display:inline-flex;align-items:center;gap:8px;background:var(--amber-bg);border:1px solid var(--amber-mid);border-radius:3px;padding:8px 16px;font-family:var(--f-mono);font-size:14px;color:var(--amber);font-weight:700;margin-top:8px;transition:all .3s var(--ease-bounce)}
+  .lesson-tag:hover{transform:scale(1.03);background:#fef3c7}
+
+  .foot{background:var(--ink);padding:24px 72px;display:flex;align-items:center;justify-content:space-between}
+  .foot-brand{font-family:var(--f-mono);font-size:15px;color:rgba(255,255,255,.4);letter-spacing:.06em}
+  .foot-brand span{color:#93c5fd}
+  .foot-ep{font-family:var(--f-mono);font-size:15px;color:rgba(255,255,255,.25)}
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <!-- ═══════ HERO ═══════ -->
+  <div class="hero">
+    <div class="hero-deco"></div>
+    <div class="hero-emoji-bg he1">⚽</div>
+    <div class="hero-emoji-bg he2">🔥</div>
+    <div class="hero-meta bounce">AI预测日报 &nbsp;·&nbsp; 2026世界杯 &nbsp;·&nbsp; 06.27</div>
+    <h1 class="pop d1"><span class="wave">📊</span> 明日<em>预测</em><br>今日复盘</h1>
+    <p class="hero-sub bounce d2">
+      法国4–1塞内加尔5–0双中，两场平局方向正确。西班牙1–0比利时5–1，低置信平局失手两次。
+    </p>
+    <div class="hero-data bounce d3">
+      <span>命中 4/6</span>
+      <span class="hd-dot"></span>
+      <span>明日 5场</span>
+      <span class="hd-dot"></span>
+      <span>高置信 2/5</span>
+      <span class="hd-dot"></span>
+      <span>中置信 2/5</span>
+      <span class="hd-dot"></span>
+      <span>低置信 1/5</span>
+    </div>
+    <div class="hero-score pop d4">
+      <span class="hero-score-num">4</span>
+      <span class="hero-score-denom">/ 6</span>
+      <span class="hero-score-label">TODAY'S HIT RATE</span>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <!-- ═══════ SECTION 01: 明日预测 ═══════ -->
+    <div class="sec-head bounce">
+      <div class="sec-label">SECTION 01</div>
+      <div class="sec-title"><span class="emoji">🔮</span> 明日预测 · 06.28</div>
+    </div>
+
+    <div class="pred-cards">
+
+      <!-- 05:00 Panama vs England -->
+      <div class="pred-card pop s1">
+        <div class="pc-header">
+          <span class="pc-group">L组 · MD3 · 洛杉矶</span>
+          <span class="pc-time">05:00</span>
+          <span class="pc-badge high">高置信</span>
+        </div>
+        <div class="pc-main">
+          <div class="pc-team">
+            <span class="pc-flag">🇵🇦</span>
+            <span class="pc-name">巴拿马</span>
+          </div>
+          <div class="pc-mid">
+            <div class="pc-prob">
+              <span class="pp-a" style="flex:19">19%</span>
+              <span class="pp-d" style="flex:23">23%</span>
+              <span class="pp-b" style="flex:58">58%</span>
+            </div>
+            <div class="pc-info">
+              <span class="pg-label">支持</span>
+              <div class="pg-track"><div style="width:58%"></div></div>
+              <span class="pg-label ag">反对 42%</span>
+              <span class="pc-verdict">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰胜</span>
+            </div>
+          </div>
+          <div class="pc-team pc-right">
+            <span class="pc-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+            <span class="pc-name">英格兰</span>
+          </div>
+        </div>
+        <div class="pc-reasons">
+          <span class="pr-item"><span class="pr-icon">📊</span>英格兰绝对实力碾压（战术对位评分7.5 vs 2.5），攻防体系能有效压制巴拿马的密集防守</span>
+          <span class="pr-item"><span class="pr-icon">⚽</span>凯恩、斯特林等核心球员个人能力可随时打破僵局，巴拿马缺乏世界级球星回应</span>
+        </div>
+        <div class="pc-risk">
+          <span class="pr-icon">⚠️</span>
+          <span>巴拿马可能利用密集防守拖慢节奏，若英格兰久攻不下，平局风险会增加</span>
+        </div>
+      </div>
+
+      <!-- 05:00 Croatia vs Ghana -->
+      <div class="pred-card pop s2">
+        <div class="pc-header">
+          <span class="pc-group">L组 · MD3 · 费城</span>
+          <span class="pc-time">05:00</span>
+          <span class="pc-badge mid">中置信</span>
+        </div>
+        <div class="pc-main">
+          <div class="pc-team">
+            <span class="pc-flag">🇭🇷</span>
+            <span class="pc-name">克罗地亚</span>
+          </div>
+          <div class="pc-mid">
+            <div class="pc-prob">
+              <span class="pp-a" style="flex:38">38%</span>
+              <span class="pp-d" style="flex:36">36%</span>
+              <span class="pp-b" style="flex:26">26%</span>
+            </div>
+            <div class="pc-info">
+              <span class="pg-label">支持</span>
+              <div class="pg-track"><div style="width:38%"></div></div>
+              <span class="pg-label ag">反对 62%</span>
+              <span class="pc-verdict">🇭🇷 克罗地亚胜</span>
+            </div>
+          </div>
+          <div class="pc-team pc-right">
+            <span class="pc-flag">🇬🇭</span>
+            <span class="pc-name">加纳</span>
+          </div>
+        </div>
+        <div class="pc-reasons">
+          <span class="pr-item"><span class="pr-icon">⚽</span>莫德里奇掌控中场节奏，大赛经验能帮助球队在胶着阶段找到进攻突破口</span>
+          <span class="pr-item"><span class="pr-icon">📈</span>克罗地亚情境压力和近期状态评分明显占优，整体性更强，擅长小组赛稳扎稳打</span>
+        </div>
+        <div class="pc-risk">
+          <span class="pr-icon">⚠️</span>
+          <span>加纳若利用身体优势和反击率先破门，可能迫使克罗地亚陷入急躁进攻的陷阱</span>
+        </div>
+      </div>
+
+      <!-- 07:30 Colombia vs Portugal -->
+      <div class="pred-card pop s3">
+        <div class="pc-header">
+          <span class="pc-group">K组 · MD3 · 纽约/新泽西</span>
+          <span class="pc-time">07:30</span>
+          <span class="pc-badge mid">中置信</span>
+        </div>
+        <div class="pc-main">
+          <div class="pc-team">
+            <span class="pc-flag">🇨🇴</span>
+            <span class="pc-name">哥伦比亚</span>
+          </div>
+          <div class="pc-mid">
+            <div class="pc-prob">
+              <span class="pp-a" style="flex:24">24%</span>
+              <span class="pp-d" style="flex:33">33%</span>
+              <span class="pp-b" style="flex:43">43%</span>
+            </div>
+            <div class="pc-info">
+              <span class="pg-label">支持</span>
+              <div class="pg-track"><div style="width:43%"></div></div>
+              <span class="pg-label ag">反对 57%</span>
+              <span class="pc-verdict">🇵🇹 葡萄牙胜</span>
+            </div>
+          </div>
+          <div class="pc-team pc-right">
+            <span class="pc-flag">🇵🇹</span>
+            <span class="pc-name">葡萄牙</span>
+          </div>
+        </div>
+        <div class="pc-reasons">
+          <span class="pr-item"><span class="pr-icon">⚽</span>B费和B席的创造力能撕开哥伦比亚防线，菲利克斯和莱奥的边路冲击力是致命武器</span>
+          <span class="pr-item"><span class="pr-icon">📈</span>葡萄牙近期状态评分7.0远超哥伦比亚5.5，从预选赛到热身赛已展现稳定体系</span>
+        </div>
+        <div class="pc-risk">
+          <span class="pr-icon">⚠️</span>
+          <span>哥伦比亚若利用定位球早早破门，葡萄牙急躁追分时可能暴露防线身后空当</span>
+        </div>
+      </div>
+
+      <!-- 10:00 Algeria vs Austria -->
+      <div class="pred-card pop s4">
+        <div class="pc-header">
+          <span class="pc-group">J组 · MD3 · 迈阿密</span>
+          <span class="pc-time">10:00</span>
+          <span class="pc-badge low">低置信</span>
+        </div>
+        <div class="pc-main">
+          <div class="pc-team">
+            <span class="pc-flag">🇩🇿</span>
+            <span class="pc-name">阿尔及利亚</span>
+          </div>
+          <div class="pc-mid">
+            <div class="pc-prob">
+              <span class="pp-a" style="flex:28">28%</span>
+              <span class="pp-d" style="flex:38">38%</span>
+              <span class="pp-b" style="flex:34">34%</span>
+            </div>
+            <div class="pc-info">
+              <span class="pg-label">支持</span>
+              <div class="pg-track"><div style="width:38%"></div></div>
+              <span class="pg-label ag">反对 62%</span>
+              <span class="pc-verdict">🤝 平局</span>
+            </div>
+          </div>
+          <div class="pc-team pc-right">
+            <span class="pc-flag">🇦🇹</span>
+            <span class="pc-name">奥地利</span>
+          </div>
+        </div>
+        <div class="pc-reasons">
+          <span class="pr-item"><span class="pr-icon">📈</span>阿尔及利亚休整11天体能有绝对优势，奥地利仅1天恢复，体能差可能抵消战术对位优势</span>
+          <span class="pr-item"><span class="pr-icon">📊</span>两队实力接近，平局赔率低至2.05市场隐含概率最高，符合模型平局38%的预期</span>
+        </div>
+        <div class="pc-risk">
+          <span class="pr-icon">⚠️</span>
+          <span>奥地利若利用阿尔及利亚后防不稳打出快速反击，可能客场偷胜</span>
+        </div>
+      </div>
+
+      <!-- 10:00 Jordan vs Argentina -->
+      <div class="pred-card pop s5">
+        <div class="pc-header">
+          <span class="pc-group">J组 · MD3 · 亚特兰大</span>
+          <span class="pc-time">10:00</span>
+          <span class="pc-badge high">高置信</span>
+        </div>
+        <div class="pc-main">
+          <div class="pc-team">
+            <span class="pc-flag">🇯🇴</span>
+            <span class="pc-name">约旦</span>
+          </div>
+          <div class="pc-mid">
+            <div class="pc-prob">
+              <span class="pp-a" style="flex:14">14%</span>
+              <span class="pp-d" style="flex:18">18%</span>
+              <span class="pp-b" style="flex:68">68%</span>
+            </div>
+            <div class="pc-info">
+              <span class="pg-label">支持</span>
+              <div class="pg-track"><div style="width:68%"></div></div>
+              <span class="pg-label ag">反对 32%</span>
+              <span class="pc-verdict">🇦🇷 阿根廷胜</span>
+            </div>
+          </div>
+          <div class="pc-team pc-right">
+            <span class="pc-flag">🇦🇷</span>
+            <span class="pc-name">阿根廷</span>
+          </div>
+        </div>
+        <div class="pc-reasons">
+          <span class="pr-item"><span class="pr-icon">⚽</span>梅西能在关键时刻撕开防线，德保罗和恩佐的中场控制让约旦很难抢到球权</span>
+          <span class="pr-item"><span class="pr-icon">📋</span>约旦首战失利休息更短，阿根廷已拿3分，阵容深度和大赛经验保证掌控节奏</span>
+        </div>
+        <div class="pc-risk">
+          <span class="pr-icon">⚠️</span>
+          <span>阿根廷若过于放松轻敌，上半场可能打不开局面，但整体实力差距太大爆冷概率极低</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══════ SECTION 02: 今日复盘 ═══════ -->
+    <div class="sec-head bounce d2">
+      <div class="sec-label">SECTION 02</div>
+      <div class="sec-title"><span class="emoji">📺</span> 今日复盘 · 06.27</div>
+    </div>
+
+    <div class="matches">
+
+      <!-- ✅ Norway 1-4 France -->
+      <div class="match-card hit pop d1">
+        <div class="match-card-top">
+          <span class="match-group-badge">I组 · MD3 · 休斯顿 · 03:00</span>
+          <div class="match-verdict"><span class="verdict-tag">✅ 命中</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇳🇴</span>
+            <span class="match-team-name">挪威</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">1–4</div>
+            <div class="match-score-sub">预测正确 ✓</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇫🇷</span>
+            <span class="match-team-name">法国</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">法国胜 ✅</span>
+        </div>
+      </div>
+
+      <!-- ✅ Senegal 5-0 Iraq -->
+      <div class="match-card hit pop d2">
+        <div class="match-card-top">
+          <span class="match-group-badge">I组 · MD3 · 西雅图 · 03:00</span>
+          <div class="match-verdict"><span class="verdict-tag">✅ 命中</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇸🇳</span>
+            <span class="match-team-name">塞内加尔</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">5–0</div>
+            <div class="match-score-sub">预测正确 ✓</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇮🇶</span>
+            <span class="match-team-name">伊拉克</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">塞内加尔胜 ✅</span>
+        </div>
+      </div>
+
+      <!-- ✅ Cape Verde 0-0 Saudi Arabia -->
+      <div class="match-card hit pop d3">
+        <div class="match-card-top">
+          <span class="match-group-badge">H组 · MD3 · 温哥华 · 08:00</span>
+          <div class="match-verdict"><span class="verdict-tag">✅ 命中</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇨🇻</span>
+            <span class="match-team-name">佛得角</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">0–0</div>
+            <div class="match-score-sub">预测正确 ✓</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇸🇦</span>
+            <span class="match-team-name">沙特阿拉伯</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">平局 ✅</span>
+        </div>
+      </div>
+
+      <!-- ❌ Uruguay 0-1 Spain -->
+      <div class="match-card miss pop d4">
+        <div class="match-card-top">
+          <span class="match-group-badge">H组 · MD3 · 达拉斯 · 08:00</span>
+          <div class="match-verdict"><span class="verdict-tag">❌ 失误</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇺🇾</span>
+            <span class="match-team-name">乌拉圭</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">0–1</div>
+            <div class="match-score-sub">预测失误 ✗</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇪🇸</span>
+            <span class="match-team-name">西班牙</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">平局 ❌</span>
+        </div>
+      </div>
+
+      <!-- ✅ Egypt 1-1 Iran -->
+      <div class="match-card hit pop d5">
+        <div class="match-card-top">
+          <span class="match-group-badge">G组 · MD3 · 波士顿 · 11:00</span>
+          <div class="match-verdict"><span class="verdict-tag">✅ 命中</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇪🇬</span>
+            <span class="match-team-name">埃及</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">1–1</div>
+            <div class="match-score-sub">预测正确 ✓</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇮🇷</span>
+            <span class="match-team-name">伊朗</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">平局 ✅</span>
+        </div>
+      </div>
+
+      <!-- ❌ New Zealand 1-5 Belgium -->
+      <div class="match-card miss pop d6">
+        <div class="match-card-top">
+          <span class="match-group-badge">G组 · MD3 · 堪萨斯城 · 11:00</span>
+          <div class="match-verdict"><span class="verdict-tag">❌ 失误</span></div>
+        </div>
+        <div class="match-card-body">
+          <div class="match-team">
+            <span class="match-team-flag">🇳🇿</span>
+            <span class="match-team-name">新西兰</span>
+          </div>
+          <div class="match-score-block">
+            <div class="match-score">1–5</div>
+            <div class="match-score-sub">预测失误 ✗</div>
+          </div>
+          <div class="match-team right">
+            <span class="match-team-flag">🇧🇪</span>
+            <span class="match-team-name">比利时</span>
+          </div>
+        </div>
+        <div class="match-card-foot">
+          <span class="pred-label">预测</span>
+          <span class="pred-value">平局 ❌</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ Insight ═══ -->
+    <div class="insight bounce d3">
+      <div class="insight-label">⚡ 今日洞察</div>
+      <blockquote><span class="emoji-me">🤔</span> 平局预测中了两场也输了两场——模型押平局的逻辑没变，但西班牙和比利时的绝对实力在末轮"必须赢"的局面上根本不管平局概率</blockquote>
+      <p class="insight-source">四场平局预测：埃及1-1伊朗 ✅、佛得角0-0沙特 ✅、乌拉圭0-1西班牙 ❌、新西兰1-5比利时 ❌。后两场市场赔率都严重看好客队（西班牙65%、比利时远超模型预期），模型低估了强队在淘汰赛边缘的真实战斗力</p>
+    </div>
+
+    <!-- ═══════ SECTION 03: 失败复盘 ═══════ -->
+    <div class="sec-head bounce d4">
+      <div class="sec-label">SECTION 03</div>
+      <div class="sec-title"><span class="emoji">🔍</span> 失败复盘</div>
+    </div>
+
+    <div class="points">
+
+      <div class="point pop d1">
+        <div class="point-num">01</div>
+        <div class="point-content">
+          <h3>🇺🇾 乌拉圭 0–1 西班牙 — 赔率信号被无视</h3>
+          <p>模型预测平局（39%），理由是"乌拉圭防线硬朗、西班牙缺少关键得分手"。但市场赔率西班牙胜率压在65%——这已是强烈信号，模型却没有因此调整权重。</p>
+          <p>比赛走势是教科书式的一方围攻：西班牙全场控球近65%，乌拉圭的希门内斯和戈丁扛了78分钟后出现沟通失误，西班牙抓住机会打入制胜球。模型的情境压力评分能捕捉部分信息，但权重不足以压制赔率信号。</p>
+        </div>
+      </div>
+
+      <div class="point pop d2">
+        <div class="point-num">02</div>
+        <div class="point-content">
+          <h3>🇳🇿 新西兰 1–5 比利时 — 绝对实力碾压</h3>
+          <p>模型预测平局（38%），理由是"新西兰战术对位评分占优、比利时大赛DNA平庸"。结果比利时5-1大胜，绝对实力评分7.5 vs 3.5的差距在场上毫无悬念地展现。</p>
+          <p>模型犯了两个错误：过度依赖战术对位评分，忽略了绝对实力差意味着比利时能多维度同时施压；同时"比利时大赛DNA平庸"的判断忽略了其核心球员在俱乐部都是顶级的事实。关键是——风险提示已写明了"绝对实力差异可能导致崩盘"，但量化权重却没有响应这个信号。</p>
+        </div>
+      </div>
+
+      <div class="lesson-tag pop d4">
+        <span>📌</span> 教训小结：绝对实力差超过4分时平局权重应自动压制，市场赔率65%+时模型应提高赔率信号权重
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="foot">
+    <span class="foot-brand">⚽ <span>AI 预测系统</span> · Ligo哥</span>
+    <span class="foot-ep">日报 06.27 · 弹弹乐动效</span>
+  </div>
+
+</div>
+
+<script>
+  const io = new IntersectionObserver(e => { e.forEach(el => { if(el.isIntersecting) { el.target.classList.add('on'); io.unobserve(el.target); } }); }, { threshold: 0.08 });
+  document.querySelectorAll('.pop, .bounce').forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('.hero .pop, .hero .bounce').forEach(el => el.classList.add('on')), 100);
+</script>
+</body>
+</html>
