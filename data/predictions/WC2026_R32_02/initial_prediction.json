@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_R32_02",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:08:02.269368",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 1.42,
+    "p_a_win": 0.612,
+    "p_draw": 0.0,
+    "p_b_win": 0.389,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "巴西队小组赛攻入7球仅失1球，进攻端多维度破防能力明显",
+          "日本队防线在高压下的转身速度和空中争顶存在短板，巴西队可利用个人突破和定位球",
+          "巴西队赔率-140明显占优，市场信心高于日本队+425",
+          "日本队边后卫插上后身后空当易被巴西队反击利用"
+        ],
+        "reasoning": "巴西队小组赛进7失1展现统治力，前场个人能力在破密集防守时具有优势，且定位球威胁更大。日本队纪律性强但对抗和空中争顶存在短板，淘汰赛保守趋势下反击效率是主要武器。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴西小组赛净胜球+6，防守稳固（仅失1球）",
+          "巴西拥有维尼修斯等顶级攻击手，日本无同等天赋球员",
+          "赔率DraftKings显示巴西-140，日本+425，巴西明显被看好"
+        ],
+        "reasoning": "巴西在阵容深度、淘汰赛经验和赔率上明显压制日本，但日本纪律性可能拖入加时。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "巴西拥有Casemiro、Fabinho等中场顶级球员，中场控制力碾压日本",
+          "巴西小组赛场均进2.3球且仅失1球，攻防两端数据远超日本",
+          "日本核心远藤航和镰田大地在中场难以对抗巴西的压迫式防守",
+          "巴西在世界杯淘汰赛中有多次个人英雄主义表现，如罗纳尔多等"
+        ],
+        "reasoning": "巴西在整体实力、中场控制力、淘汰赛历史和个人英雄主义方面明显强于日本，日本在防守端和点球大战中无明显优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Brazil小组赛7分，进7失1，净胜球+6，表现极具统治力。",
+          "Japan小组赛4分，进3失4，净胜球-1，以第三名身份出线。",
+          "淘汰赛经验上，Brazil作为传统强队拥有心理优势。"
+        ],
+        "reasoning": "Brazil小组赛不败且净胜球巨大，防守稳固，核心阵容强大；Japan则以小组第三身份惊险出线，稳定性不足。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西FIFA排名第6远高于日本的第18位。",
+          "巴西小组赛2胜1平不败，净胜球+6，防守稳固。",
+          "日本小组赛仅1胜2负，表现滑坡。"
+        ],
+        "reasoning": "巴西凭借FIFA排名第6和三场小组赛仅失1球的表现明显强于日本，且阵容深度与淘汰赛经验占优。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Brazil小组赛末轮3-0零封Scotland，状态达到顶峰",
+          "Japan小组赛2胜1平不败，包括4-0大胜Tunisia",
+          "双方均未经历加时赛，体能状况良好",
+          "Brazil小组赛轨迹为平-胜-胜，渐入佳境"
+        ],
+        "reasoning": "Brazil小组赛状态渐入佳境且零失球，而Japan同样保持不败且近况不俗，但赔率和历史定位显示Brazil明显占优。"
+      }
+    ],
+    "calibration_warning": true,
+    "calibration_note": "⚠️ 赔率偏差 23%：模型 A_WIN P(A)=61%/P(D)=0%/P(B)=39% vs 市场 P(A)=58%/P(D)=23%/P(B)=19%",
+    "judge_reasoning": "Brazil胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760487)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "中",
+    "reasons": [
+      "巴西拥有内马尔和维尼修斯这样的关键球员，他们能在前场制造一对一威胁，加上日本后卫普遍缺乏顶级速度，巴西的快速转换进攻很可能撕开对手防线。",
+      "巴西在小组赛中防守稳固（仅失1球），而日本虽然进攻火力不错（进7球），但其防线在面对荷兰时曾暴露出漏洞，巴西的锋线组合将抓住这种机会。",
+      "日本休息天数更少，且从小组出线后体力消耗较大，巴西在情境压力评分上明显占优（7.0 vs 5.0），更容易在高强度淘汰赛中掌控节奏。"
+    ],
+    "key_risk": "爆冷风险在于巴西大赛DNA评分仅为5.0（低置信），若开场久攻不下，日本可能通过反击或定位球偷袭得手，拖入加时并制造意外。"
+  },
+  "actual_result": null
+}
