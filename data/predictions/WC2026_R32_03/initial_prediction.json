@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_R32_03",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:08:53.050887",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.72,
+    "p_a_win": 0.578,
+    "p_draw": 0.0,
+    "p_b_win": 0.422,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "荷兰小组赛7分第1出线，摩洛哥5分第2，纸面实力荷兰占优",
+          "荷兰有范迪克、德佩等多名世界杯淘汰赛老兵，摩洛哥全队无世界杯淘汰赛经验",
+          "摩洛哥小组赛仅进4球，进攻火力不足可能限制其爆冷能力"
+        ],
+        "reasoning": "荷兰凭借范迪克等老将的淘汰赛经验优势压制首次进入16强的摩洛哥，但赔率暗示差距不大"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Netherlands scored 10 goals in group stage (vs Morocco's 3)",
+          "Morocco have weaker attack with -2 GD",
+          "Frenkie de Jong is key midfielder for Netherlands, but no suspension risk noted"
+        ],
+        "reasoning": "Netherlands' superior group stage offense (10 goals) outweighs Morocco's midfield discipline from Frenkie de Jong and Sofyan Amrabat, but lack of knockout data limits confidence."
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "荷兰队小组赛2胜1平不败战绩，净胜球+6，展现强大稳定性",
+          "荷兰队历史上多次经历大赛点球大战，具备相关心理准备",
+          "摩洛哥队虽以小组第二出线，但缺乏淘汰赛关键战检验其凝聚力",
+          "教练范加尔有丰富的大赛淘汰赛指挥经验"
+        ],
+        "reasoning": "荷兰队凭借小组赛统治力（进10失4）和大赛历史底蕴，在核心稳定性与逆境凝聚力上略占优势；摩洛哥队缺乏足够淘汰赛数据支撑其同等条件下的反应能力。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰FIFA排名第8，小组赛2胜1平进10球，但淘汰赛历史稳定性一般",
+          "摩洛哥FIFA排名第7，有阿什拉夫和博努等核心，2022年淘汰赛经验丰富",
+          "赔率荷兰130对摩洛哥250，显示双方实力接近，荷兰仅轻微被看好"
+        ],
+        "reasoning": "荷兰拥有范迪克领衔的顶级防线和小组赛进攻火力（10球），但摩洛哥淘汰赛经验（2022年赢西班牙/葡萄牙）和近似的FIFA排名（第7）使差距极小，赔率反映均势。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "荷兰小组赛进球10个远超摩洛哥（6球）",
+          "荷兰末轮3-1突尼斯无消耗，摩洛哥4-2海地防守不稳",
+          "荷兰小组赛渐入佳境（后两场大胜），摩洛哥对手实力偏弱"
+        ],
+        "reasoning": "荷兰小组赛强势且末轮轻松取胜，核心球员如德佩等人状态正佳，而摩洛哥虽有韧性但末轮丢2球暴露防守隐患。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Netherlands胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": "ESPN_API✅ (event=760488)",
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Netherlands胜",
+    "confidence": "中",
+    "reasons": [
+      "荷兰队在小组赛阶段进攻火力全开，3场比赛打入10球，孟菲斯·德佩和科迪·加克波的边路突破屡屡撕开防线，面对摩洛哥相对缓慢的中后卫组合，荷兰的快速转换进攻将是致命武器。",
+      "摩洛哥虽然在小组赛保持不败，但面对巴西时暴露了中场控制力不足的问题，荷兰队的弗兰基·德容和瑞恩·格拉文贝赫能通过精准传球打穿摩洛哥的逼抢，掌控比赛节奏。",
+      "淘汰赛经验是关键，荷兰队核心球员如维吉尔·范迪克和史蒂文·伯格温经历过多次大赛洗礼，而摩洛哥大部分球员缺乏淘汰赛阶段的抗压能力，关键时刻可能失误。"
+    ],
+    "key_risk": "摩洛哥的反击速度——阿什拉夫·哈基米和索菲扬·阿姆拉巴特的快速突进可能利用荷兰队高位防线身后的空当，如果荷兰队久攻不下，一次反击就足以改变比赛走向。"
+  },
+  "actual_result": null
+}
