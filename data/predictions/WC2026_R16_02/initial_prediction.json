@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_R16_02",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:57:14.067718",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.49,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "大的优势仅在于可能通过速度冲击荷兰防线身后。\n\n##SCORES##\n{\n  \"team_a_score\": 5.5,\n  \"team_b_score\": 6.5,\n  \"confidence\": 7,\n  \"reasoning\": \"荷兰的战术纪律与替补深度优于加拿大，能更好利用加拿大禁区弧顶保护"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 4.5,
+        "b_score": 7.5,
+        "delta": -3.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Canada是世界杯新军，大部分球员首次参加淘汰赛，心理压力巨大。",
+          "Netherlands拥有丰富的淘汰赛经验，队内核心如范迪克等经历过多次大赛考验。",
+          "Netherlands小组第一出线，展现出更强的稳定性和竞争力。"
+        ],
+        "reasoning": "Netherlands拥有范迪克等老将坐镇，淘汰赛经验碾压首次参赛的Canada新军。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "双方关键球员名单均集中于中场，缺乏可改变比赛的锋线巨星",
+          "淘汰赛个人英雄主义历史和点球手质量信息缺失",
+          "黄牌累积/停赛风险信息完全未知"
+        ],
+        "reasoning": "双方核心球员信息不足，缺少锋线尖刀和淘汰赛个人英雄主义历史，黄牌风险和点球手质量均未知，实力差距极小。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Netherlands主教练科曼的淘汰赛临场指挥经验远胜于Canada主教练赫德曼。",
+          "Netherlands拥有多名经历过大场面的核心球员，在逆境中可能更冷静。",
+          "Canada小组赛防守端暴露出问题（失3球），可能在淘汰赛高压下被放大。"
+        ],
+        "reasoning": "Netherlands在教练科曼的淘汰赛经验和球星成色上占据优势，而Canada在防守端的不稳定性和大赛底蕴不足是隐患。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名荷兰第8对Canada第30，档次差距明显",
+          "荷兰拥有范戴克、阿克等欧冠级后卫，防守体系成熟",
+          "Canada淘汰赛经验匮乏，核心球员戴维斯尚未在大赛淘汰赛证明自己",
+          "荷兰小组头名出线，Canada小组第二且净胜球+5但表现起伏"
+        ],
+        "reasoning": "荷兰凭借FIFA第8的排名、范戴克领衔的顶级防线和小组头名出线背景，在整体实力和深度上对FIFA第30位的Canada形成显著优势；Canada仅有戴维斯个人能力可能制造威胁。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Netherlands小组赛2胜1平保持不败，状态渐入佳境",
+          "Canada小组赛高开低走，末轮负于瑞士，士气受挫",
+          "Netherlands近5场3胜1平1负，整体战绩优于Canada的2胜2平1负"
+        ],
+        "reasoning": "Netherlands小组赛渐入佳境（末轮3-1胜突尼斯），加拿大高开低走（末轮1-2负瑞士），荷兰状态优势明显。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Canada负",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Canada负",
+    "confidence": "高",
+    "reasons": [
+      "荷兰队小组赛三场轰入10球，进攻端火力全开，德佩、加克波等核心球员状态正佳，加拿大队防守小组赛场均丢2球以上，难以抵挡荷兰队的持续冲击。",
+      "荷兰队小组赛面对日本和瑞典等强队时展现了成熟的控场能力，战术纪律性极强，而加拿大队小组赛输给瑞士队时暴露出中场衔接不稳的问题。",
+      "淘汰赛经验层面荷兰队完胜，队内多名核心球员参加过上届世界杯淘汰赛，而加拿大队是时隔多年重返世界杯，年轻球员在高压下容易失误。"
+    ],
+    "key_risk": "加拿大可能依靠核心球员的速度和身体对抗在反击中制造威胁，若荷兰队后防线出现注意力不集中，加拿大队有机会爆冷。"
+  },
+  "actual_result": null
+}
