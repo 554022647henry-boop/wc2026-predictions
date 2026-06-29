@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_SF_01",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:20:44.741253",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.18,
+    "p_a_win": 0.451,
+    "p_draw": 0.0,
+    "p_b_win": 0.549,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.25,
+        "key_factors": [
+          "巴西边后卫压上后回防不及时，易被英格兰快速反击利用。",
+          "英格兰中后卫与边后卫之间的空档易被巴西前场球员切入利用。",
+          "淘汰赛阶段反击效率优于无效控球，英格兰的防守反击策略更匹配此环境。",
+          "双方小组赛控场能力相近（均7分，净胜球巴西+6略高），但英格兰防守协作更紧凑。"
+        ],
+        "reasoning": "巴西的进攻创造力稍强，但英格兰的反击效率和对比赛节奏的控制在淘汰赛单场决胜中略微占优，且防守纪律性更适应领先后收缩的场景。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.5,
+        "delta": 0.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴西小组赛仅失1球，防守稳定性优于英格兰的失2球",
+          "英格兰阵容平均年龄更年轻，淘汰赛体能储备理论上占优",
+          "两队均无核心球员停赛风险，且小组赛均以头名出线，心理准备充分"
+        ],
+        "reasoning": "双方各有一位世界级前锋（巴西的理查利森与英格兰的凯恩）坐镇，且阵容深度与大赛经验高度平衡，但巴西防线小组赛零封率略高，英格兰中场控制力稍强，形成轻微对位优势抵消。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "双方小组赛均以头名出线，战绩同为2胜1平，状态持平",
+          "未提供核心球员(如Casemiro、Declan Rice)的当前状态、伤病或停赛风险信息",
+          "缺乏明确的点球手历史数据和对方针对性的防守战术情报"
+        ],
+        "reasoning": "两队小组赛表现相近(均7分)，但缺乏核心球员具体状态、黄牌风险及点球质量等关键维度的信息，导致无法区分优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "两队小组赛均以7分出线，状态相当。",
+          "无历史淘汰赛落后反应或内讧记录。",
+          "教练淘汰赛换人和点球演练信息缺失。"
+        ],
+        "reasoning": "两队小组赛表现稳定但缺乏淘汰赛细节，信息不足以判断明显优势，核心组合、凝聚力、临场指挥及点球准备均无具体数据支撑，因此评分持平。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西小组赛防守稳固，仅失1球并零封对手，马尔基尼奥斯和埃德森领衔的后防线可靠",
+          "巴西拥有更多淘汰赛经历核心，如前锋核心曾在大赛中展现决定性作用",
+          "英格兰替补深度充足（如里斯·詹姆斯、丹·伯恩），但关键战缺乏个人爆发力改变比赛"
+        ],
+        "reasoning": "巴西在淘汰赛经验（多名球员有世界杯淘汰赛出场经历）和小组赛防守表现（仅失1球）上占优，英格兰阵容深度均衡但缺乏超级球星一锤定音的能力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西小组末轮对苏格兰大胜，但之前面对摩洛哥失球，防守专注度有待观察。",
+          "英格兰小组末轮战平加纳，主力获得轮休，队长为核心的后防线消耗更小。",
+          "巴西小组赛高开低走，首战战平摩洛哥，后两场渐入佳境但对手实力较弱。"
+        ],
+        "reasoning": "英格兰小组赛末轮轮换后防线，体能储备优于连续作战的巴西，且淘汰赛防守更稳健。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "低",
+    "reasons": [
+      "英格兰近期状态明显优于巴西，近6场赛事取得5胜，而巴西仅有2胜，进攻端如拉什福德和凯恩近期屡有斩获，而巴西防守端在小组赛对苏格兰时曾暴露漏洞。",
+      "战术对位上英格兰稍占优势（6.5对6.0），尤其是中场控制力更强，赖斯和贝林厄姆的拦截与推进能有效限制巴西的快速反击，而巴西的中场组织核心位置缺乏稳定人选。",
+      "巴西虽有绝对实力优势（6.5对6.0），但大赛DNA评分仅5.0，面对淘汰赛压力时往往配合生疏，此前小组赛1-1战平摩洛哥已显疲态，而英格兰近年大赛经验丰富。"
+    ],
+    "key_risk": "巴西拥有艾利森和阿利松两名世界级门将，若比赛进入点球大战，他们的扑点能力可能扭转局面，且英格兰历史点球大战表现不稳定。"
+  },
+  "actual_result": null
+}
