@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_QF_01",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:20:08.480871",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.2,
+    "p_a_win": 0.549,
+    "p_draw": 0.0,
+    "p_b_win": 0.451,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "荷兰的反击战术能精准打击巴西边后卫压上后的身后空档",
+          "淘汰赛保守趋势下，荷兰的战术执行力和比赛经验占优",
+          "巴西在破密集防守时，面对荷兰可能收缩的防线缺乏可靠的高点支点"
+        ],
+        "reasoning": "荷兰在淘汰赛模式下的反击效率和战术纪律性略优于巴西，巴西的边后卫空档在单场决胜中更容易被荷兰的快速转换利用。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "巴西小组赛零失球，防守体系稳固，队长经验丰富",
+          "荷兰队进攻端依赖年轻前锋，淘汰赛高压下稳定性存疑",
+          "两队休息天数相同，体能条件对等"
+        ],
+        "reasoning": "巴西拥有更丰富的淘汰赛经验和心理素质，前锋核心在关键时刻更可靠；荷兰队后防稳固但进攻线首次经历世界杯淘汰赛考验。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 7.0,
+        "b_score": 5.5,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Brazil拥有Casemiro和Fabinho的双后腰组合，防守覆盖和拦截能力远超Netherlands的Marten de Roon与Guus Til，能有效阻断对手核心Frenkie de Jong的组织。",
+          "Brazil小组赛进7球失1球，进攻端多点开花，而Netherlands进5球失3球，防守稳定性不足，且面对高位逼抢时后场出球存在隐患。",
+          "Brazil历史上在世界杯淘汰赛和点球大战中表现更为强势，拥有更强的个人英雄主义传统；Netherlands则多次在关键点球战中落败，点球手质量存疑。"
+        ],
+        "reasoning": "Brazil拥有Casemiro与Fabinho的中场控制力，以及更强大的进攻群，而Netherlands的Frenkie de Jong在遭遇重点逼抢时出球效率存疑，且缺少终结比赛的顶级射手。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "巴西小组赛仅失1球，防守稳固但淘汰赛经验未知",
+          "荷兰在2014年世界杯点球战胜哥斯达黎加，显示一定点球韧性",
+          "两队均无球员内讧历史，教练临场变招能力无直接比较信息"
+        ],
+        "reasoning": "双方小组赛均不败出线且核心阵容稳定，但缺少淘汰赛逆境历史与点球准备的具体证据，只能基于保守评估给分。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西队FIFA排名第6，全队世界杯淘汰赛经验丰富，阵容深度好于荷兰。",
+          "荷兰队小组赛同样不败，范迪克的防线在淘汰赛中极其可靠，范加尔的大赛淘汰赛执教记录出色。",
+          "巴西拥有个人能力更突出的球星，可能在僵局中发挥决定性作用。"
+        ],
+        "reasoning": "巴西在阵容顶级天赋（如边路进攻核心和门将阿利松）上稍有优势，且小组赛丢球更少，但荷兰拥有范迪克领衔的稳固防线和主教练范加尔的丰富淘汰赛经验，双方实力非常接近。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "巴西小组赛末轮对Haiti，主力可能得到更多轮换休息。",
+          "巴西近期友谊赛3胜1平，含击败克罗地亚和埃及，状态更具连续性。",
+          "荷兰小组赛末轮1-3胜Tunisia，消耗大于巴西末轮。",
+          "荷兰近期友谊赛曾0-1负于阿尔及利亚，状态略有起伏。"
+        ],
+        "reasoning": "巴西小组赛末轮对阵弱旅Haiti，核心球员如维尼修斯消耗更小，且近期友谊赛表现更稳定，而荷兰末轮消耗略大，状态有轻微波动。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Brazil胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Brazil胜",
+    "confidence": "低",
+    "reasons": [
+      "巴西拥有内马尔这样的关键球员，他在小组赛中已展现撕裂防线的能力，而荷兰后防核心范迪克虽然稳健，但面对巴西的灵动进攻线可能会暴露转身慢的弱点。",
+      "荷兰在小组赛防守端丢了4球，面对日本和瑞典时都曾出现漏洞，而巴西进攻端场均超过2球的火力会让荷兰后卫群持续受压。",
+      "巴西队在关键球员维度评分高达7.0，远胜荷兰的5.5，这意味着在胶着时刻巴西更可能凭借个人能力打破僵局。"
+    ],
+    "key_risk": "荷兰可能通过防守反击制造麻烦，尤其是利用边锋的速度冲击巴西压上后的空当，若巴西久攻不下，荷兰的反击效率可能成为冷门关键。"
+  },
+  "actual_result": null
+}
