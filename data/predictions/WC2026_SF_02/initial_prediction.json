@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_SF_02",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:03:11.309794",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.36,
+    "p_a_win": 0.451,
+    "p_draw": 0.0,
+    "p_b_win": 0.549,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "法国高位防线在2022年决赛中被阿根廷直塞球多次洞穿，淘汰赛更易被针对",
+          "阿根廷小组赛仅失1球，防守稳定性高于法国（失2球）",
+          "阿根廷定位球能力在淘汰赛权重翻倍，法国缺乏同等可靠空战武器"
+        ],
+        "reasoning": "阿根廷的反击直塞与定位球更适合淘汰赛节奏，法国高位防线在单场决胜中风险更高。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.2,
+        "key_factors": [
+          "双方小组赛均3战全胜出线，状态高度持平",
+          "France净胜球+8 vs Argentina净胜球+7，攻防几乎对称",
+          "两队阵中均有淘汰赛经验丰富的老将压阵",
+          "无休息天数差异或加时消耗信息，体力条件对等"
+        ],
+        "reasoning": "两队小组赛均全胜出线且攻防数据接近，淘汰赛经验都有老将坐镇，心理和状态层面无显著差异，预测为完全均势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Argentina有梅西，世界杯淘汰赛常凭一己之力改变比赛（如2022对荷兰1球1助）；France无同等量级核心",
+          "Argentina门将马丁内斯扑点能力顶级（2021美洲杯半决赛3扑点）；France门将扑点记录相对平凡",
+          "France中场Kanté缺阵，Tchouaméni虽强但无同等防守覆盖；Argentina中场Paredes和De Paul组合稳定"
+        ],
+        "reasoning": "Argentina凭借梅西的淘汰赛英雄主义历史和马丁内斯的扑点能力，在关键决胜因素上略优于France，而France整体齐整但缺少明确个人英雄主义点球手。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "法国小组赛3连胜净胜球+8，进攻端表现强势",
+          "阿根廷更衣室凝聚力强，有梅西等领袖在逆境中稳定军心",
+          "阿根廷门将马丁内斯扑点能力突出，曾帮助球队赢下关键点球大战"
+        ],
+        "reasoning": "法国小组赛全胜且进攻火力强劲，但历史上存在更衣室不和谐因素；阿根廷凝聚力强、点球大战准备更充分且门将扑点能力突出，轻微劣势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "France队中多名球员（如Lucas Hernández、Theo Hernández）有上届世界杯决赛和淘汰赛经验，整体大赛阅历更深",
+          "Argentina后防线（如Otamendi、Tagliafico）年龄偏大，加时赛体能和替补深度（Montiel）存疑",
+          "France替补席（Digne、Samba等）经验丰富，可支撑120分钟高强度对抗",
+          "Messi（阿根廷）是绝对超级球星，但France得分点更分散，防守体系更成熟"
+        ],
+        "reasoning": "France凭借卫冕冠军的淘汰赛深度和德尚的战术调整能力略占优势，但Argentina的梅西（Messi）是淘汰赛爆点，差距微弱。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "France近5场正式比赛总进球14个，进攻火力凶猛",
+          "Argentina小组赛3场零封对手，防守端优于法国",
+          "两队均无加时消耗，体能储备平等",
+          "Argentina小组赛末轮对阵Jordan时轮换程度未知"
+        ],
+        "reasoning": "两队小组赛全胜且均为头名出线，状态相当；但阿根廷3场零失球的防守稳定性略优于法国（失2球），这在高强度淘汰赛中至关重要。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷的前场三角进攻由梅西和劳塔罗·马丁内斯主导，他们的穿插跑位已经让三支小组赛防线崩溃，法国队的后防核心在缺少稳定领袖时容易被撕开空档。",
+      "法国队的边路防守存在隐患，阿根廷的边锋群像阿尔瓦雷斯和迪马利亚能利用速度在反击中制造威胁，尤其是在法国压上助攻后留下的空间。",
+      "中场控制力对比中，阿根廷的德保罗和帕雷德斯组合更擅长高位压迫，而法国队可能因中场衔接不畅导致攻守脱节，让梅西获得更多射门机会。"
+    ],
+    "key_risk": "如果法国队利用身体优势早开纪录并收缩防守，阿根廷可能陷入久攻不下的僵局，但淘汰赛无平局下最终胜负仍难预料。"
+  },
+  "actual_result": null
+}
