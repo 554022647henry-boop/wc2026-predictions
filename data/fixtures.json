@@ -1133,7 +1133,7 @@
       "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania",
       "kickoff_cst": "05:00",
       "kickoff_utc": "2026-07-04T21:00Z",
-      "note": "R32-01 Winner vs R32-02 Winner"
+      "note": "M89: Germany/Paraguay vs France/Sweden (RD32 W2 vs W5)"
     },
     {
       "match_id": "WC2026_R16_02",
@@ -1144,7 +1144,7 @@
       "venue": "NRG Stadium, Houston, Texas",
       "kickoff_cst": "01:00",
       "kickoff_utc": "2026-07-04T17:00Z",
-      "note": "R32-04 Winner vs R32-07 Winner"
+      "note": "M90: Canada vs Netherlands/Morocco (RD32 W1 vs W3)"
     },
     {
       "match_id": "WC2026_R16_03",
@@ -1155,7 +1155,7 @@
       "venue": "MetLife Stadium, East Rutherford, New Jersey",
       "kickoff_cst": "04:00",
       "kickoff_utc": "2026-07-05T20:00Z",
-      "note": "R32-03 Winner vs R32-05 Winner"
+      "note": "M91: Brazil/Japan vs Ivory Coast/Norway (RD32 W4 vs W6)"
     },
     {
       "match_id": "WC2026_R16_04",
@@ -1166,7 +1166,7 @@
       "venue": "Estadio Banorte, Mexico City, Mexico",
       "kickoff_cst": "08:00",
       "kickoff_utc": "2026-07-06T00:00Z",
-      "note": "R32-06 Winner vs R32-10 Winner"
+      "note": "M92: Mexico/Ecuador vs England/DR Congo (RD32 W7 vs W8)"
     },
     {
       "match_id": "WC2026_R16_05",
@@ -1177,7 +1177,7 @@
       "venue": "AT&T Stadium, Arlington, Texas",
       "kickoff_cst": "03:00",
       "kickoff_utc": "2026-07-06T19:00Z",
-      "note": "R32-12 Winner vs R32-11 Winner"
+      "note": "M93: Portugal/Croatia vs Spain/Austria (RD32 W11 vs W12)"
     },
     {
       "match_id": "WC2026_R16_06",
@@ -1188,7 +1188,7 @@
       "venue": "Lumen Field, Seattle, Washington",
       "kickoff_cst": "08:00",
       "kickoff_utc": "2026-07-07T00:00Z",
-      "note": "R32-09 Winner vs R32-08 Winner"
+      "note": "M94: USA/Bosnia vs Belgium/Senegal (RD32 W9 vs W10)"
     },
     {
       "match_id": "WC2026_R16_07",
@@ -1199,7 +1199,7 @@
       "venue": "Mercedes-Benz Stadium, Atlanta, Georgia",
       "kickoff_cst": "00:00",
       "kickoff_utc": "2026-07-07T16:00Z",
-      "note": "R32-15 Winner vs R32-14 Winner"
+      "note": "M95: Argentina/Cape Verde vs Australia/Egypt (RD32 W14 vs W16)"
     },
     {
       "match_id": "WC2026_R16_08",
@@ -1210,7 +1210,7 @@
       "venue": "BC Place, Vancouver, Canada",
       "kickoff_cst": "04:00",
       "kickoff_utc": "2026-07-07T20:00Z",
-      "note": "R32-13 Winner vs R32-16 Winner"
+      "note": "M96: Switzerland/Algeria vs Colombia/Ghana (RD32 W13 vs W15)"
     },
     {
       "match_id": "WC2026_QF_01",
@@ -1221,7 +1221,7 @@
       "venue": "TBD",
       "kickoff_cst": "04:00",
       "kickoff_utc": "2026-07-09T20:00Z",
-      "note": "R16-01 Winner vs R16-02 Winner"
+      "note": "M97 Foxborough: M89 winner vs M90 winner"
     },
     {
       "match_id": "WC2026_QF_02",
@@ -1232,7 +1232,7 @@
       "venue": "SoFi Stadium, Inglewood, California",
       "kickoff_cst": "03:00",
       "kickoff_utc": "2026-07-10T19:00Z",
-      "note": "R16-05 Winner vs R16-06 Winner"
+      "note": "M98 Inglewood: M93 winner vs M94 winner"
     },
     {
       "match_id": "WC2026_QF_03",
@@ -1243,7 +1243,7 @@
       "venue": "TBD",
       "kickoff_cst": "05:00",
       "kickoff_utc": "2026-07-11T21:00Z",
-      "note": "R16-03 Winner vs R16-04 Winner"
+      "note": "M99 Miami: M91 winner vs M92 winner"
     },
     {
       "match_id": "WC2026_QF_04",
@@ -1254,7 +1254,7 @@
       "venue": "TBD",
       "kickoff_cst": "09:00",
       "kickoff_utc": "2026-07-12T01:00Z",
-      "note": "R16-07 Winner vs R16-08 Winner"
+      "note": "M100 Kansas City: M95 winner vs M96 winner"
     },
     {
       "match_id": "WC2026_SF_01",
@@ -1265,7 +1265,7 @@
       "venue": "AT&T Stadium, Arlington, Texas",
       "kickoff_cst": "03:00",
       "kickoff_utc": "2026-07-14T19:00Z",
-      "note": "QF-01 Winner vs QF-02 Winner"
+      "note": "M101 Dallas: M97 winner vs M98 winner"
     },
     {
       "match_id": "WC2026_SF_02",
@@ -1276,7 +1276,7 @@
       "venue": "TBD",
       "kickoff_cst": "03:00",
       "kickoff_utc": "2026-07-15T19:00Z",
-      "note": "QF-03 Winner vs QF-04 Winner"
+      "note": "M102 Atlanta: M99 winner vs M100 winner"
     },
     {
       "match_id": "WC2026_3RD",
