@@ -1,0 +1,140 @@
+{
+  "match_id": "WC2026_R16_03",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:57:45.703646",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.27,
+    "p_a_win": 0.549,
+    "p_draw": 0.0,
+    "p_b_win": 0.451,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "德国拥有多次世界杯淘汰赛晋级经验，心理素质明显更稳",
+          "墨西哥小组赛全胜展现出色状态，但作为世界杯淘汰赛新军缺乏高压经验",
+          "德国小组赛末轮失利暴露防守专注度问题，可能给墨西哥反击机会",
+          "双方休息天数对等，无加时消耗差异"
+        ],
+        "reasoning": "德国凭借多次世界杯淘汰赛经验和大赛稳定心态占优，而墨西哥虽小组全胜状态火热但淘汰赛经验不足，可能在高压下出现波动。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Germany小组赛最后一轮失利，防守端稳定性存疑，但进攻端拥有多名顶级球员。",
+          "Mexico小组赛三战全胜，士气高涨，核心球员Edson Álvarez和Luis Chávez状态正佳。",
+          "双方均无核心球员身背黄牌面临停赛风险，战术动作不受限。"
+        ],
+        "reasoning": "两队实力接近，Germany的进攻核心Kimmich与Mexico的中场屏障Edson Álvarez形成关键对位，但双方均无明显短板或停赛风险。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Germany历史上在大赛落后时多次逆风翻盘（如世界杯淘汰赛），无内讧传统",
+          "Germany点球大战历史胜率高，门将具备扑点能力，第一点球手明确",
+          "Mexico小组全胜但淘汰赛阶段常在领先后保守或落后时崩盘",
+          "Germany教练在淘汰赛换人时机稍显保守，但整体战术变招能力较强"
+        ],
+        "reasoning": "Germany凭借历史点球大战优势和逆境中团结奋起的传统（如多次大赛绝地反击）占优，而Mexico小组全胜但淘汰赛历史中常有崩盘表现。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "墨西哥小组赛3胜0负，德国2胜1负",
+          "墨西哥奥乔亚有世界杯淘汰赛经验",
+          "德国末轮输球显示不稳定因素"
+        ],
+        "reasoning": "墨西哥小组赛全胜状态更佳，而德国末轮输球暴露稳定性问题，虽经验相当但墨西哥近期表现更具说服力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "德国小组赛轨迹高开低走，首场7-1后连场失球，末轮1-2输厄瓜多尔",
+          "墨西哥小组赛三战全胜且零失球，防守体系稳固，状态递增",
+          "德国核心球员可能因末轮失利承受额外心理压力，墨西哥士气高涨"
+        ],
+        "reasoning": "墨西哥小组赛零失球三连胜状态更稳定，德国末轮输球且防守暴露漏洞"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Germany胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Germany胜",
+    "confidence": "低",
+    "reasons": [
+      "德国队小组赛末轮输球后急需反弹，球队化学评分高达7分，团队凝聚力更强，面对小组全胜的墨西哥有望用整体压制对手。",
+      "墨西哥虽然小组赛零失球，但对手强度有限，面对德国队在中场的对抗和快速转换进攻，他们的防守将受到严峻考验。",
+      "关键球员评分两队持平，但德国队拥有更强的板凳深度和淘汰赛经验，如何在压力下调整状态是关键——这恰恰是德国队的历史强项。"
+    ],
+    "key_risk": "德国队小组赛最后一场失利暴露了防守端的不稳定性，而墨西哥小组赛三连胜、心理优势明显，若墨西哥利用反击率先破门，德国队可能陷入急躁而输掉比赛。"
+  },
+  "actual_result": null
+}
