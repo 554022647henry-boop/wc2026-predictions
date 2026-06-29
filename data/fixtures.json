@@ -967,10 +967,327 @@
     {
       "match_id": "WC2026_R32_01",
       "stage": "round_of_32",
+      "team_a": "Canada",
+      "team_b": "South Africa",
+      "date": "2026-06-28",
+      "venue": "SoFi Stadium, Inglewood, California",
+      "kickoff_cst": "10:00",
+      "kickoff_utc": "2026-06-28T02:00Z",
+      "result": "1-0"
+    },
+    {
+      "match_id": "WC2026_R32_02",
+      "stage": "round_of_32",
+      "team_a": "Brazil",
+      "team_b": "Japan",
+      "date": "2026-06-29",
+      "venue": "NRG Stadium, Houston, Texas",
+      "kickoff_cst": "01:00",
+      "kickoff_utc": "2026-06-29T17:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_03",
+      "stage": "round_of_32",
+      "team_a": "Netherlands",
+      "team_b": "Morocco",
+      "date": "2026-06-29",
+      "venue": "Estadio BBVA, Guadalupe, Mexico",
+      "kickoff_cst": "09:00",
+      "kickoff_utc": "2026-06-30T01:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_04",
+      "stage": "round_of_32",
+      "team_a": "Germany",
+      "team_b": "Paraguay",
+      "date": "2026-06-29",
+      "venue": "Gillette Stadium, Foxborough, Massachusetts",
+      "kickoff_cst": "04:30",
+      "kickoff_utc": "2026-06-29T20:30Z"
+    },
+    {
+      "match_id": "WC2026_R32_05",
+      "stage": "round_of_32",
+      "team_a": "Ivory Coast",
+      "team_b": "Norway",
+      "date": "2026-06-30",
+      "venue": "AT&T Stadium, Arlington, Texas",
+      "kickoff_cst": "01:00",
+      "kickoff_utc": "2026-06-30T17:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_06",
+      "stage": "round_of_32",
+      "team_a": "Mexico",
+      "team_b": "Ecuador",
+      "date": "2026-06-30",
+      "venue": "Estadio Banorte, Mexico City, Mexico",
+      "kickoff_cst": "09:00",
+      "kickoff_utc": "2026-07-01T01:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_07",
+      "stage": "round_of_32",
+      "team_a": "France",
+      "team_b": "Sweden",
+      "date": "2026-06-30",
+      "venue": "MetLife Stadium, East Rutherford, New Jersey",
+      "kickoff_cst": "05:00",
+      "kickoff_utc": "2026-06-30T21:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_08",
+      "stage": "round_of_32",
+      "team_a": "Belgium",
+      "team_b": "Senegal",
+      "date": "2026-07-01",
+      "venue": "Lumen Field, Seattle, Washington",
+      "kickoff_cst": "04:00",
+      "kickoff_utc": "2026-07-01T20:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_09",
+      "stage": "round_of_32",
+      "team_a": "United States",
+      "team_b": "Bosnia and Herzegovina",
+      "date": "2026-07-01",
+      "venue": "Levi's Stadium, Santa Clara, California",
+      "kickoff_cst": "08:00",
+      "kickoff_utc": "2026-07-02T00:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_10",
+      "stage": "round_of_32",
+      "team_a": "England",
+      "team_b": "DR Congo",
+      "date": "2026-07-01",
+      "venue": "Mercedes-Benz Stadium, Atlanta, Georgia",
+      "kickoff_cst": "00:00",
+      "kickoff_utc": "2026-07-01T16:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_11",
+      "stage": "round_of_32",
+      "team_a": "Spain",
+      "team_b": "Austria",
+      "date": "2026-07-02",
+      "venue": "SoFi Stadium, Inglewood, California",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-02T19:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_12",
+      "stage": "round_of_32",
+      "team_a": "Portugal",
+      "team_b": "Croatia",
+      "date": "2026-07-02",
+      "venue": "BMO Field, Toronto, Canada",
+      "kickoff_cst": "07:00",
+      "kickoff_utc": "2026-07-02T23:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_13",
+      "stage": "round_of_32",
+      "team_a": "Switzerland",
+      "team_b": "Algeria",
+      "date": "2026-07-02",
+      "venue": "BC Place, Vancouver, Canada",
+      "kickoff_cst": "11:00",
+      "kickoff_utc": "2026-07-03T03:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_14",
+      "stage": "round_of_32",
+      "team_a": "Australia",
+      "team_b": "Egypt",
+      "date": "2026-07-03",
+      "venue": "AT&T Stadium, Arlington, Texas",
+      "kickoff_cst": "02:00",
+      "kickoff_utc": "2026-07-03T18:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_15",
+      "stage": "round_of_32",
+      "team_a": "Argentina",
+      "team_b": "Cape Verde",
+      "date": "2026-07-03",
+      "venue": "Hard Rock Stadium, Miami Gardens, Florida",
+      "kickoff_cst": "06:00",
+      "kickoff_utc": "2026-07-03T22:00Z"
+    },
+    {
+      "match_id": "WC2026_R32_16",
+      "stage": "round_of_32",
+      "team_a": "Colombia",
+      "team_b": "Ghana",
+      "date": "2026-07-03",
+      "venue": "Arrowhead Stadium, Kansas City, Missouri",
+      "kickoff_cst": "09:30",
+      "kickoff_utc": "2026-07-04T01:30Z"
+    },
+    {
+      "match_id": "WC2026_R16_01",
+      "stage": "round_of_16",
       "team_a": "TBD",
       "team_b": "TBD",
       "date": "2026-07-04",
-      "venue": "TBD"
+      "venue": "Lincoln Financial Field, Philadelphia, Pennsylvania",
+      "kickoff_cst": "05:00",
+      "kickoff_utc": "2026-07-04T21:00Z",
+      "note": "R32-01 Winner vs R32-02 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_02",
+      "stage": "round_of_16",
+      "team_a": "Canada",
+      "team_b": "TBD",
+      "date": "2026-07-04",
+      "venue": "NRG Stadium, Houston, Texas",
+      "kickoff_cst": "01:00",
+      "kickoff_utc": "2026-07-04T17:00Z",
+      "note": "R32-04 Winner vs R32-07 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_03",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-05",
+      "venue": "MetLife Stadium, East Rutherford, New Jersey",
+      "kickoff_cst": "04:00",
+      "kickoff_utc": "2026-07-05T20:00Z",
+      "note": "R32-03 Winner vs R32-05 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_04",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-05",
+      "venue": "Estadio Banorte, Mexico City, Mexico",
+      "kickoff_cst": "08:00",
+      "kickoff_utc": "2026-07-06T00:00Z",
+      "note": "R32-06 Winner vs R32-10 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_05",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-06",
+      "venue": "AT&T Stadium, Arlington, Texas",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-06T19:00Z",
+      "note": "R32-12 Winner vs R32-11 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_06",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-06",
+      "venue": "Lumen Field, Seattle, Washington",
+      "kickoff_cst": "08:00",
+      "kickoff_utc": "2026-07-07T00:00Z",
+      "note": "R32-09 Winner vs R32-08 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_07",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-07",
+      "venue": "Mercedes-Benz Stadium, Atlanta, Georgia",
+      "kickoff_cst": "00:00",
+      "kickoff_utc": "2026-07-07T16:00Z",
+      "note": "R32-15 Winner vs R32-14 Winner"
+    },
+    {
+      "match_id": "WC2026_R16_08",
+      "stage": "round_of_16",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-07",
+      "venue": "BC Place, Vancouver, Canada",
+      "kickoff_cst": "04:00",
+      "kickoff_utc": "2026-07-07T20:00Z",
+      "note": "R32-13 Winner vs R32-16 Winner"
+    },
+    {
+      "match_id": "WC2026_QF_01",
+      "stage": "quarterfinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-09",
+      "venue": "TBD",
+      "kickoff_cst": "04:00",
+      "kickoff_utc": "2026-07-09T20:00Z",
+      "note": "R16-01 Winner vs R16-02 Winner"
+    },
+    {
+      "match_id": "WC2026_QF_02",
+      "stage": "quarterfinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-10",
+      "venue": "SoFi Stadium, Inglewood, California",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-10T19:00Z",
+      "note": "R16-05 Winner vs R16-06 Winner"
+    },
+    {
+      "match_id": "WC2026_QF_03",
+      "stage": "quarterfinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-11",
+      "venue": "TBD",
+      "kickoff_cst": "05:00",
+      "kickoff_utc": "2026-07-11T21:00Z",
+      "note": "R16-03 Winner vs R16-04 Winner"
+    },
+    {
+      "match_id": "WC2026_QF_04",
+      "stage": "quarterfinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-11",
+      "venue": "TBD",
+      "kickoff_cst": "09:00",
+      "kickoff_utc": "2026-07-12T01:00Z",
+      "note": "R16-07 Winner vs R16-08 Winner"
+    },
+    {
+      "match_id": "WC2026_SF_01",
+      "stage": "semifinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-14",
+      "venue": "AT&T Stadium, Arlington, Texas",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-14T19:00Z",
+      "note": "QF-01 Winner vs QF-02 Winner"
+    },
+    {
+      "match_id": "WC2026_SF_02",
+      "stage": "semifinal",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-15",
+      "venue": "TBD",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-15T19:00Z",
+      "note": "QF-03 Winner vs QF-04 Winner"
+    },
+    {
+      "match_id": "WC2026_3RD",
+      "stage": "third_place",
+      "team_a": "TBD",
+      "team_b": "TBD",
+      "date": "2026-07-18",
+      "venue": "Hard Rock Stadium, Miami Gardens, Florida",
+      "kickoff_cst": "05:00",
+      "kickoff_utc": "2026-07-18T21:00Z"
     },
     {
       "match_id": "WC2026_FINAL",
@@ -978,7 +1295,9 @@
       "team_a": "TBD",
       "team_b": "TBD",
       "date": "2026-07-19",
-      "venue": "MetLife Stadium, New Jersey"
+      "venue": "MetLife Stadium, East Rutherford, New Jersey",
+      "kickoff_cst": "03:00",
+      "kickoff_utc": "2026-07-19T19:00Z"
     }
   ]
 }
