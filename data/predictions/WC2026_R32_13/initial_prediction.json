@@ -1,0 +1,134 @@
+{
+  "match_id": "WC2026_R32_13",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:54:00.811860",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.53,
+    "p_a_win": 0.578,
+    "p_draw": 0.0,
+    "p_b_win": 0.422,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.2,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "瑞士小组赛2胜1平，进攻效率高（进7球）；阿尔及利亚1胜2负，进攻乏力（进2球）。",
+          "瑞士中场扎卡具备大赛经验和组织能力，阿尔及利亚中场本塔勒布和奥亚尔状态不明。",
+          "阿尔及利亚防守不稳（失4球），瑞士防守相对稳固（失3球）。"
+        ],
+        "reasoning": "瑞士小组头名且净胜球+4，核心扎卡中场控制力强；阿尔及利亚小组第三出线且进攻乏力，仅2球入账，本塔勒布和奥亚尔未展现个人英雄主义历史。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 5.0,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "瑞士小组赛7分头名出线，展现稳定状态",
+          "阿尔及利亚小组排名不完整，信息不足",
+          "两队均缺乏淘汰赛历史和点球演练的具体数据"
+        ],
+        "reasoning": "瑞士以小组头名出线（2胜1平），系统性稳定性略优于阿尔及利亚，但缺乏更衣室文化和教练临场信息，优势轻微。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "瑞士小组赛2胜1平不败，进7失3，攻防平衡",
+          "阿尔及利亚以小组第三出线，状态未知且淘汰赛经验不足",
+          "瑞士拥有Akanji、Rodríguez等世界杯淘汰赛出场经历球员"
+        ],
+        "reasoning": "瑞士凭借小组头名出线成绩和Akanji、Rodríguez等球员的淘汰赛经验，在稳定性和战术执行力上稍强于以小组第三晋级的阿尔及利亚。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Switzerland小组赛2胜1平保持不败，且后两场全胜，状态明显提升",
+          "Algeria小组末轮3-3战平奥地利，消耗巨大，而瑞士末轮2-1取胜，主力得到有效休整",
+          "Switzerland以小组头名出线，士气与信心更足"
+        ],
+        "reasoning": "Switzerland小组头名出线且状态渐入佳境，Algeria小组第三出线且末轮消耗大，瑞士在体能和状态延续性上占优。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Switzerland胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Switzerland胜",
+    "confidence": "低",
+    "reasons": [
+      "瑞士小组赛2胜1平不败出线，且净胜球+4，攻防更均衡；阿尔及利亚净胜球-2，防线不稳可能成为突破口。",
+      "瑞士的关键球员（如沙奇里）在小组赛末轮贡献关键助攻，状态正热；阿尔及利亚核心马赫雷斯虽强，但整体配合不如瑞士默契。",
+      "淘汰赛经验上瑞士更占优，2018年世界杯前八经历让球员更沉稳；阿尔及利亚年轻阵容可能关键时刻失误。"
+    ],
+    "key_risk": "阿尔及利亚的进攻爆发力（马赫雷斯个人能力）可能在一对一突破中撕开瑞士防线，若瑞士早早丢球则被动。"
+  },
+  "actual_result": null
+}
