@@ -176,6 +176,14 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
     </div>
     <h1>🏆 <span class="zh">FIFA 世界杯 2026</span><span class="en">FIFA World Cup 2026</span></h1>
     <p class="hdr-sub"><span class="zh">美国 · 加拿大 · 墨西哥</span><span class="en">USA · Canada · Mexico</span> &nbsp;|&nbsp; 2026.6.11 — 7.19</p>
+    <div style="margin-bottom:24px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+      <a href="knockout_bracket.html" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#ffd200,#f7971e);color:#0a1628;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.5px;">
+        🏆 <span class="zh">淘汰赛对阵图</span><span class="en">Knockout Bracket</span>
+      </a>
+      <a href="model_intro.html" style="display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);color:#c8d8ff;padding:8px 20px;border-radius:20px;font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.12);">
+        🤖 <span class="zh">10 Agent 模型介绍</span><span class="en">About Our Model</span>
+      </a>
+    </div>
     <div class="stats">
       <div class="stat"><b>72</b><small><span class="zh">已预测</span><span class="en">Predicted</span></small></div>
       <div class="stat"><b>72</b><small><span class="zh">已完赛</span><span class="en">Completed</span></small></div>
@@ -188,6 +196,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 <div class="tabs">
   <button class="tab-btn active" onclick="switchTab('groups',this)">⚽ <span class="zh">按小组</span><span class="en">Groups</span></button>
   <button class="tab-btn" onclick="switchTab('schedule',this)">📅 <span class="zh">赛程表</span><span class="en">Schedule</span></button>
+  <button class="tab-btn" onclick="switchTab('knockout',this)">🏆 <span class="zh">淘汰赛</span><span class="en">Knockout</span></button>
 </div>
 
 <main>
@@ -4570,6 +4579,15 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
             </div></div>
         </div></div>
   </div>
+
+  <div id="tab-knockout" class="tab-content">
+    <style>
+      #tab-knockout { padding: 0; overflow: hidden; }
+      #tab-knockout .ko-frame { width: 100%; height: calc(100vh - 120px); border: none; }
+    </style>
+    <iframe class="ko-frame" src="knockout_bracket.html" title="淘汰赛对阵图"></iframe>
+  </div>
+
 </main>
 
 <footer>
