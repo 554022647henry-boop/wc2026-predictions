@@ -143,11 +143,8 @@
   .tag-tbd { background: transparent; color: rgba(255,255,255,0.15); }
   .m .meta .loc { color: rgba(255,255,255,0.15); font-family: var(--f-mono); font-size: 7px; letter-spacing: 0.02em; }
 
-  /* ===== LEFT HALF Grid Positions ===== */
-  /* Correct bracket pairing per fixtures.json:
-     QF_01 = R16_01 + R16_02  →  SF_01
-     QF_02 = R16_05 + R16_06  →  SF_01
-  */
+  /* ===== LEFT HALF (上半区 → SF-01) Grid Positions ===== */
+  /* per fixtures.json: SF_01 ← QF_01(R16_01+R16_02) + QF_02(R16_05+R16_06) */
   .l-r32-02  { grid-column: 1; grid-row: 2; }
   .l-r32-05  { grid-column: 1; grid-row: 3; }
   .l-r32-01  { grid-column: 1; grid-row: 4; }
@@ -159,15 +156,16 @@
 
   .l-r16-1 { grid-column: 3; grid-row: 2 / span 2; }  /* R32_02 × R32_05 */
   .l-r16-2 { grid-column: 3; grid-row: 4 / span 2; }  /* R32_01 × R32_03 */
-  .l-r16-3 { grid-column: 3; grid-row: 6 / span 2; }  /* R32_11 × R32_12 */
-  .l-r16-4 { grid-column: 3; grid-row: 8 / span 2; }  /* R32_09 × R32_10 */
+  .l-r16-5 { grid-column: 3; grid-row: 6 / span 2; }  /* R32_11 × R32_12 → QF_02 */
+  .l-r16-6 { grid-column: 3; grid-row: 8 / span 2; }  /* R32_09 × R32_10 → QF_02 */
 
   .l-qf-1 { grid-column: 5; grid-row: 2 / span 4; }   /* R16_01 × R16_02 */
   .l-qf-2 { grid-column: 5; grid-row: 6 / span 4; }   /* R16_05 × R16_06 */
 
   .l-sf { grid-column: 7; grid-row: 2 / span 8; }     /* QF_01 × QF_02 → SF_01 */
 
-  /* ===== RIGHT HALF Grid Positions ===== */
+  /* ===== RIGHT HALF (下半区 → SF-02) Grid Positions ===== */
+  /* per fixtures.json: SF_02 ← QF_03(R16_03+R16_04) + QF_04(R16_07+R16_08) */
   .r-r32-04 { grid-column: 7; grid-row: 2; }
   .r-r32-06 { grid-column: 7; grid-row: 3; }
   .r-r32-07 { grid-column: 7; grid-row: 4; }
@@ -177,10 +175,10 @@
   .r-r32-13 { grid-column: 7; grid-row: 8; }
   .r-r32-15 { grid-column: 7; grid-row: 9; }
 
-  .r-r16-5 { grid-column: 5; grid-row: 2 / span 2; }  /* R32_04 × R32_06 */
-  .r-r16-6 { grid-column: 5; grid-row: 4 / span 2; }  /* R32_07 × R32_08 */
-  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }  /* R32_14 × R32_16 */
-  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }  /* R32_13 × R32_15 */
+  .r-r16-3 { grid-column: 5; grid-row: 2 / span 2; }  /* R32_04 × R32_06 → QF_03 */
+  .r-r16-4 { grid-column: 5; grid-row: 4 / span 2; }  /* R32_07 × R32_08 → QF_03 */
+  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }  /* R32_14 × R32_16 → QF_04 */
+  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }  /* R32_13 × R32_15 → QF_04 */
 
   .r-qf-3 { grid-column: 3; grid-row: 2 / span 4; }   /* R16_03 × R16_04 */
   .r-qf-4 { grid-column: 3; grid-row: 6 / span 4; }   /* R16_07 × R16_08 */
@@ -272,7 +270,7 @@
   <div class="hdr hdr-sf">半决赛</div>
 
   <!-- R32 — DOM order determines connector pairing:
-       pairs: (02,05)→R16-1, (01,03)→R16-2, (11,12)→R16-3, (09,10)→R16-4 -->
+       pairs: (02,05)→R16-1, (01,03)→R16-2, (11,12)→R16-5, (09,10)→R16-6 -->
   <div class="m l-r32-02"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">NRG</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西</span><span class="sc">-</span></div><div class="row"><span class="flag">🇯🇵</span><span class="nm">日本</span><span class="sc">-</span></div></div>
   <div class="m l-r32-05"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇨🇮</span><span class="nm">科特迪瓦</span><span class="sc"></span></div><div class="row"><span class="flag">🇳🇴</span><span class="nm">挪威</span><span class="sc"></span></div></div>
 
@@ -285,11 +283,11 @@
   <div class="m l-r32-09"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Levi's</span></div><div class="row"><span class="flag">🇺🇸</span><span class="nm">美国</span><span class="sc"></span></div><div class="row"><span class="flag">🇧🇦</span><span class="nm">波黑</span></div></div>
   <div class="m l-r32-10"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="nm">英格兰</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇩</span><span class="nm">刚果</span></div></div>
 
-  <!-- R16 (col 3) -->
+  <!-- R16 (col 3) — all feed SF_01: 01,02 → QF_01; 05,06 → QF_02 -->
   <div class="m l-r16-1"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Lincoln Financial</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">巴西 / 日本</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">科特迪瓦 / 挪威</span></div></div>
   <div class="m l-r16-2"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">NRG</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">荷兰 / 摩洛哥</span></div></div>
-  <div class="m l-r16-3"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">AT&T</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div></div>
-  <div class="m l-r16-4"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
+  <div class="m l-r16-5"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">AT&T</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div></div>
+  <div class="m l-r16-6"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
 
   <!-- QF (col 5) -->
   <div class="m l-qf-1"><div class="meta"><span class="tag tag-tbd">7/9</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-02 胜者</span></div></div>
@@ -333,13 +331,13 @@
   <div class="m r-qf-3"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-04 胜者</span></div></div>
   <div class="m r-qf-4"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-07 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-08 胜者</span></div></div>
 
-  <!-- R16 (col 5) -->
-  <div class="m r-r16-5"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">MetLife</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div></div>
-  <div class="m r-r16-6"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
+  <!-- R16 (col 5) — all feed SF_02: 03,04 → QF_03; 07,08 → QF_04 -->
+  <div class="m r-r16-3"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">MetLife</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div></div>
+  <div class="m r-r16-4"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
   <div class="m r-r16-7"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Mercedes-Benz</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">澳大利亚 / 埃及</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">哥伦比亚 / 加纳</span></div></div>
   <div class="m r-r16-8"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">BC Place</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">瑞士 / 阿尔及利亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">阿根廷 / 佛得角</span></div></div>
 
-  <!-- R32 (col 7) — DOM order: (04,06)→R16-5, (07,08)→R16-6, (14,16)→R16-7, (13,15)→R16-8 -->
+  <!-- R32 (col 7) — DOM order: (04,06)→R16-3, (07,08)→R16-4, (14,16)→R16-7, (13,15)→R16-8 -->
   <div class="m r-r32-04"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Gillette</span></div><div class="row"><span class="flag">🇩🇪</span><span class="nm">德国</span><span class="sc">-</span></div><div class="row"><span class="flag">🇵🇾</span><span class="nm">巴拉圭</span><span class="sc">-</span></div></div>
   <div class="m r-r32-06"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">Estadio Banorte</span></div><div class="row"><span class="flag">🇲🇽</span><span class="nm">墨西哥</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇨</span><span class="nm">厄瓜多尔</span></div></div>
 
@@ -402,15 +400,15 @@ function drawConnectors(svgId, halfEl, isRight) {
   let sf = null;
   allCards.forEach(c => {
     if (c.classList.contains('l-sf') || c.classList.contains('r-sf')) sf = c;
-    else if (c.classList.contains('l-r16-1')||c.classList.contains('l-r16-2')||c.classList.contains('l-r16-3')||c.classList.contains('l-r16-4')||
-            c.classList.contains('r-r16-5')||c.classList.contains('r-r16-6')||c.classList.contains('r-r16-7')||c.classList.contains('r-r16-8')) r16.push(c);
+    else if (c.classList.contains('l-r16-1')||c.classList.contains('l-r16-2')||c.classList.contains('l-r16-5')||c.classList.contains('l-r16-6')||
+            c.classList.contains('r-r16-3')||c.classList.contains('r-r16-4')||c.classList.contains('r-r16-7')||c.classList.contains('r-r16-8')) r16.push(c);
     else if (c.classList.contains('l-qf-1')||c.classList.contains('l-qf-2')||c.classList.contains('r-qf-3')||c.classList.contains('r-qf-4')) qf.push(c);
     else r32.push(c);
   });
 
   // R32 pairs by DOM order:
-  //   left: (0=02,1=05)→R16-1, (2=01,3=03)→R16-2, (4=11,5=12)→R16-3, (6=09,7=10)→R16-4
-  //   right: (0=04,1=06)→R16-5, (2=07,3=08)→R16-6, (4=14,5=16)→R16-7, (6=13,7=15)→R16-8
+  //   left: (0=02,1=05)→R16-1, (2=01,3=03)→R16-2, (4=11,5=12)→R16-5, (6=09,7=10)→R16-6
+  //   right: (0=04,1=06)→R16-3, (2=07,3=08)→R16-4, (4=14,5=16)→R16-7, (6=13,7=15)→R16-8
   for (let p = 0; p < 4; p++) {
     const a = r32[p*2], b = r32[p*2+1], r = r16[p];
     if (!a || !b || !r) continue;
