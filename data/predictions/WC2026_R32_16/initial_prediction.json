@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_R32_16",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:55:52.631360",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.31,
+    "p_a_win": 0.549,
+    "p_draw": 0.0,
+    "p_b_win": 0.451,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Ghana在2022世界杯面对葡萄牙和韩国时反击效率极高，锋线速度快，能直接威胁Colombia防线回追慢的弱点",
+          "Colombia预选赛暴露防线回追速度不足，淘汰赛中若被Ghana打身后将陷入被动，应对快速转换能力存疑",
+          "Ghana在淘汰赛中有更多经验（过往世界杯经历），且领先后收缩或定位球能力更强，Colombia破密防能力未知"
+        ],
+        "reasoning": "Ghana在2022世界杯上对葡萄牙(反击进2球)和韩国(3-2逆转被扳平后仍暴露问题)的实际表现显示其反击效率高，能抓住Colombia防线回追慢的致命弱点；Colombia小组赛仅失1球但与预选赛回追速度不足矛盾，在淘汰赛单场决胜下容易被反击刺穿"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "哥伦比亚小组赛2胜1平不败，防守仅失1球，稳定性极高",
+          "加纳小组赛1胜1平1负且三场均有丢球，防守脆弱，最后一轮输球信心受挫",
+          "两队均无加时赛消耗，但哥伦比亚心理素质更稳（头名出线）"
+        ],
+        "reasoning": "哥伦比亚小组赛不败，防守仅失1球，且无加时消耗；加纳小组赛三场全丢球，最后一轮输球出线导致心理波动大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Colombia以小组头名出线，战绩2胜1平，防守仅失1球。",
+          "James Rodríguez在2014年世界杯淘汰赛曾有决定表现，类似经历未见于加纳球员。",
+          "Ghana核心Thomas Partey将重点盯防James Rodríguez，可能削弱其影响力。"
+        ],
+        "reasoning": "哥伦比亚小组赛表现更稳健且核心球员James Rodríguez有淘汰赛个人英雄主义历史，而加纳中场Thomas Partey虽硬朗但仍需面对前任的进攻限制，整体差距不明显。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Colombia小组赛2胜1平，进4球失1球，防守体系稳固，球队士气高涨。",
+          "Ghana以小组第三身份惊险晋级，1胜1平1负的战绩显示球队稳定性欠缺。",
+          "Colombia小组赛首战告捷后经历平局仍能调整，体现了良好的更衣室纪律和教练纠错能力。"
+        ],
+        "reasoning": "Colombia小组第一的稳定性优于Ghana的绝境晋级模式，但双方核心组合及点球准备信息均不明确，优势微弱。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名差距悬殊（Colombia第13 vs Ghana第73），且Colombia小组赛7分不败出线，Ghana仅4分以第3名晋级",
+          "Colombia拥有多名世界杯淘汰赛经验球员：Yerry Mina（2018年8强，淘汰赛3球）、Davinson Sánchez、David Ospina",
+          "Colombia防守稳固（小组赛仅失1球），Ghana进攻效率低（3场仅2球）",
+          "Colombia替补深度足够（Ospina、Arias等经验球员），可应对加时赛第4次换人"
+        ],
+        "reasoning": "Colombia在FIFA排名、小组表现、淘汰赛经验（Yerry Mina、Davinson Sánchez）及阵容深度上全面占优，Ghana缺乏对抗顶级防守的进攻手段。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 6.5,
+        "b_score": 5.0,
+        "delta": 1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Colombia小组赛2胜1平零失球，Ghana仅1胜1平1负",
+          "Colombia近5场3胜2平稳定，Ghana近5场1胜2平2负",
+          "Ghana末轮1-2负于Croatia，核心球员打满全场消耗大"
+        ],
+        "reasoning": "Colombia小组头名出线且防守零封率高，Ghana状态起伏且末轮消耗大"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Colombia胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Colombia胜",
+    "confidence": "中",
+    "reasons": [
+      "Colombia在小组赛展现铁血防守，3场仅失1球，门将Ospina的稳健将是Ghana进攻的噩梦",
+      "Ghana小组赛末轮0-2输给Croatia暴露出进攻乏力的问题，面对Colombia更稳健的中后场难以破局",
+      "Colombia核心球员（如进攻端关键球员）在小组赛关键战展现高效，而Ghana中场控制力偏弱（战术对位评分6.5对5.5）"
+    ],
+    "key_risk": "Ghana若通过高位逼抢打乱Colombia节奏，利用边路速度制造反击机会，可能偷走比赛胜利"
+  },
+  "actual_result": null
+}
