@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_R16_05",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:58:53.268734",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.55,
+    "p_a_win": 0.422,
+    "p_draw": 0.0,
+    "p_b_win": 0.578,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Spain小组赛3场0失球但面对日本、摩洛哥时暴露中卫转身慢和易被直塞打穿的漏洞。",
+          "Portugal小组赛战平比利时和英格兰显示出面对强队时稳定的反击效率。",
+          "淘汰赛反弹效率权重大于控球率，Portugal边锋群的速度和一对一能力易于制造转化。",
+          "Portugal若领先后习惯收缩，Spain缺乏强力支点和远射手来破密集防守。"
+        ],
+        "reasoning": "Portugal的反击速度和边锋爆破能力更能利用Spain中卫回追慢和定位球第二落点保护的缺陷，而Spain缺少阵地战高效支点的问题在淘汰赛保守氛围下可能被放大。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "西班牙小组赛3场零失球，防线稳定是淘汰赛巨大优势",
+          "葡萄牙小组第二出线，且仅打入3球，进攻端效率不足",
+          "西班牙头名出线心理更放松，葡萄牙需主动进攻但缺乏压制力"
+        ],
+        "reasoning": "西班牙小组赛零失球且头名出线，防守心理占优；葡萄牙以小组第二晋级且进攻乏力，淘汰赛压力下破局难。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Spain小组赛5失0球，防守端表现稳定",
+          "Portugal中场Bruno Fernandes和Bernardo Silva具备淘汰赛改变比赛的能力",
+          "双方均无明显黄牌累积风险，点球手质量信息不足"
+        ],
+        "reasoning": "Portugal中场创造力（Bruno Fernandes、Bernardo Silva）在淘汰赛个人英雄主义历史中可能更突出，但Spain小组赛零失球防守稳固，且对方无明确点球经验提及。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "葡萄牙有2016年欧洲杯多次加时赛胜利的凝聚力传统",
+          "葡萄牙门将帕特里西奥扑点能力强，第一点球手C罗明确",
+          "西班牙小组赛3场零封但淘汰赛缺乏逆境调整历史"
+        ],
+        "reasoning": "葡萄牙在凝聚力（2016年欧洲杯多次加时赛逆转）和点球准备度（帕特里西奥扑点、C罗第一点球手）上明显占优，西班牙防守稳定但缺乏淘汰赛逆境经验。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Spain小组赛3场零失球防守体系成熟",
+          "Portugal拥有Cristiano Ronaldo和Pepe等多名世界杯淘汰赛经验丰富的球员",
+          "两队FIFA排名仅差3位且小组表现均稳健"
+        ],
+        "reasoning": "双方实力极为接近，Spain防守稳固但Portugal淘汰赛经验略占优（Cristiano Ronaldo/Pepe），整体几乎平分秋色"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "西班牙小组赛末轮未大轮换，核心球员如队长等打满全场，消耗较大",
+          "葡萄牙小组赛末轮对阵哥伦比亚时轮换了中场主力，体能储备更优",
+          "葡萄牙近5场4场零封，但进攻端场均超1.5球，状态轨迹为渐入佳境",
+          "西班牙进攻端小组赛仅5球，面对密集防守时破门效率偏低"
+        ],
+        "reasoning": "葡萄牙小组赛末轮轮换更大且进攻数据更好，西班牙防守更稳但核心球员消耗大且锋线未完全打开。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "低",
+    "reasons": [
+      "葡萄牙的进攻线在小组赛展现强大火力，若塔和拉莫斯在禁区的跑位灵活，而西班牙后防虽小组赛零失球，但面对过真正顶级锋线，难以抵挡葡萄牙的冲击。",
+      "中场控制上，葡萄牙通过内维斯和维蒂尼亚的紧凑阵型，能有效封锁西班牙从后场发起的短传渗透，迫使西班牙只能依赖边路传中，而这并非西班牙强项。",
+      "葡萄牙在淘汰赛的战术执行力更强，C罗替补出场的经验可破僵局，且主帅桑托斯善于在关键战调整防守反击节奏，而西班牙小组赛慢热需警惕。"
+    ],
+    "key_risk": "爆冷风险在于西班牙若通过前场紧逼在上半场破门，葡萄牙可能陷入急躁，但西班牙缺乏顶级终结点，故风险中等。"
+  },
+  "actual_result": null
+}
