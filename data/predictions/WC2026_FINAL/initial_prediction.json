@@ -2,46 +2,45 @@
   "match_id": "WC2026_FINAL",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T17:21:22.700331",
+  "timestamp": "2026-06-29T21:43:45.340843",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -1.25,
-    "p_a_win": 0.389,
+    "weighted_delta": -0.05,
+    "p_a_win": 0.496,
     "p_draw": 0.0,
-    "p_b_win": 0.612,
+    "p_b_win": 0.504,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
-        "a_score": 5.0,
-        "b_score": 7.0,
-        "delta": -2.0,
-        "confidence": 8.0,
+        "a_score": 5.5,
+        "b_score": 5.5,
+        "delta": 0.0,
+        "confidence": 5.0,
         "weight": 0.25,
         "key_factors": [
-          "阿根廷小组赛8球1净胜球证明高效进攻",
-          "英格兰防守反击漏洞明显，中后卫与边后卫空当易被利用",
-          "淘汰赛换人深度和定位球经验阿根廷更占优",
-          "英格兰可能因慢热陷入被动，阿根廷领先收缩能力更强"
+          "法国与阿根廷均采用高位防线，直塞球是互相打击的核心手段，纸面互爆。",
+          "淘汰赛双方均会保守，领先后的收缩围攻能力将成为决胜关键。",
+          "定位球是打破平衡的最可能变量，两队在这方面没有绝对优势。"
         ],
-        "reasoning": "阿根廷进攻反击效率高于英格兰破密防能力，且英格兰后防空当易被对方锋线利用。"
+        "reasoning": "双方都依赖快速转换和直塞打击高位防线，战术镜像导致高度均势，可能演变为细节和临场发挥的比拼。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 5.5,
+        "a_score": 6.5,
         "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 7.0,
+        "delta": 0.0,
+        "confidence": 4.0,
         "weight": 0.2,
         "key_factors": [
-          "Argentina小组赛3胜仅失1球，防守和心理韧性极强",
-          "England淘汰赛历史常有崩盘记录，如点球大战失利",
-          "梅西等老将能稳定军心，应对加时和点球的能力更强"
+          "法国作为卫冕冠军，全队有决赛赢球经验，心理层面略稳",
+          "阿根廷依赖梅西的个人发挥和领袖作用，但在淘汰赛决赛能提供独特凝聚力",
+          "双方休息天数相同（3天），体能恢复条件均等"
         ],
-        "reasoning": "Argentina凭借全胜战绩和梅西的领袖气质，在淘汰赛压力下比England更稳，而England历史淘汰赛崩盘倾向是心理隐患。"
+        "reasoning": "双方基本面均势，但法国的卫冕经验与阿根廷的梅西领袖气质在决赛高压下形成对等抵消，缺乏决定性的具体有利因子。"
       },
       {
         "dimension": "G_dna",
@@ -57,58 +56,63 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 5.5,
+        "a_score": 6.5,
         "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 6.0,
+        "delta": 0.0,
+        "confidence": 7.0,
         "weight": 0.15,
         "key_factors": [
-          "Argentina小组赛全胜且净胜球+7，统治力明显",
-          "Argentina中场Rodrigo De Paul和Leandro Paredes大赛经验丰富，能有效控制节奏",
-          "England核心Declan Rice可能被对方针对性限制出球"
+          "法国小组赛进10球失2球，进攻火力凶猛但决赛防守压力大增",
+          "阿根廷小组赛失1球，防守体系稳固，梅西在淘汰赛中常扮演英雄角色",
+          "双方均无主力球员身背黄牌停赛风险，可全力投入决赛"
         ],
-        "reasoning": "Argentina小组赛全胜进8失1展现统治力，中场De Paul和Paredes的控制力优于England的Rice和Henderson，且点球大战心理素质更可靠。"
+        "reasoning": "法国小组赛攻防俱佳，阿根廷防守稳健且梅西具备淘汰赛决定能力，两队状态几乎持平，坎特和德保罗的中场对决是核心焦点。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.5,
-        "b_score": 7.0,
-        "delta": -1.5,
-        "confidence": 7.0,
-        "weight": 0.08,
-        "key_factors": [
-          "Argentina小组全胜进8失1，净胜球优势巨大，而England有平局且进攻效率一般",
-          "England在逆境中历史韧性不足（多次点球失利），阿根廷近年多次逆风翻盘凝聚力更强",
-          "Argentina门将扑点能力突出且梅西为稳定点球手，England点球手稳定性存疑"
-        ],
-        "reasoning": "Argentina全胜出线且攻防碾压，凝聚力与点球准备（大马丁内斯、梅西）明显优於England，后者小组平局暴露攻坚问题"
-      },
-      {
-        "dimension": "A_strength",
-        "label": "绝对实力",
         "a_score": 5.0,
         "b_score": 5.0,
         "delta": 0.0,
         "confidence": 3.0,
-        "weight": 0.07,
-        "key_factors": [],
-        "reasoning": "数据不足，中性评分"
+        "weight": 0.08,
+        "key_factors": [
+          "两队均以小组全胜战绩出线，核心组合稳定性无法从现有信息判断优劣。",
+          "关于两队在逆境时的凝聚力和内讧传统，无可用赛前信息。",
+          "两位教练的淘汰赛临场指挥历史和点球大战准备度，无可用赛前信息。"
+        ],
+        "reasoning": "由于缺乏关于两队更衣室文化、教练淘汰赛经验和点球准备的具体赛前信息，无法判断任何一方优势，因此给出平局分数。"
       },
       {
-        "dimension": "C_form",
-        "label": "近期状态",
-        "a_score": 5.5,
-        "b_score": 6.0,
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 6.0,
+        "b_score": 6.5,
         "delta": -0.5,
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "Argentina小组赛3战全胜进8失1，统治力远超England的2胜1平进6失2",
-          "England末轮0-0闷平加纳，进攻端效率下滑，队长凯恩未找到破局方案",
-          "Argentina在世界大赛决赛经验及球星个人能力上占优，梅西的淘汰赛关键球能力是硬通货"
+          "Argentina阵容核心（如队长、Martínez）经历多届世界杯淘汰赛洗礼，整体心态更沉稳",
+          "France队内有多名年轻主力缺乏世界杯决赛及加时赛经验，阵容深度在120分钟内可能被考验",
+          "Messi在半决赛及关键战中展现出超级球员的淘汰赛爆发力"
         ],
-        "reasoning": "Argentina小组赛全胜且净胜球+7，状态稳定性明显优于England末轮被加纳逼平的高开低走走势，且梅西为核心的攻击线更具淘汰赛决定性"
+        "reasoning": "阿根廷队淘汰赛经验更丰富，整队磨合与战术执行力比亚于法国队更为稳定，而法国队依赖姆巴佩的个人能力弥补深度不足。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 5.0,
+        "weight": 0.07,
+        "key_factors": [
+          "France小组赛全胜，进10球失2球，进攻状态出色",
+          "Argentina小组赛全胜且零失球，防守稳固",
+          "双方末轮均未经历加时或点球，体能储备均等",
+          "决赛层面，两队状态轨迹均稳定，无高开低走情况"
+        ],
+        "reasoning": "两队小组赛均为全胜，状态和消耗相当，France进攻火力稍强，Argentina防守更稳，无明显优势方。"
       }
     ],
     "calibration_warning": false,
@@ -127,13 +131,13 @@
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Argentina胜",
-    "confidence": "中",
+    "confidence": "低",
     "reasons": [
-      "阿根廷在小组赛三战全胜进8球仅失1球，状态火热，而英格兰小组赛只赢下2场且失2球，防线稳定性存在疑问。",
-      "阿根廷前场核心如梅西（Messi）和劳塔罗（Lautaro Martinez）在淘汰赛阶段展现关键球能力，英格兰中卫组合面对灵活跑位时容易失位。",
-      "战术对位评分显示阿根廷以7.0对5.0明显占优，尤其在阵地战和反击转换中，阿根廷的边中结合打法能针对英格兰边后卫压上后的空当。"
+      "Argentina在绝对实力评分上略占优势（6.5 vs 6.0），且Messi在关键赛事中常有决定性发挥，能凭借个人能力打破僵局。",
+      "France虽然小组赛全胜，但面对防守严密的对手时进攻效率可能下降，而Argentina拥有世界级防线，核心球员如Otamendi能限制对手锋线。",
+      "两队战术对位完全持平（5.5-5.5），但Argentina近期状态稳定且球队化学良好，Messi与队友的默契可能成为转折点。"
     ],
-    "key_risk": "阿根廷若过早领先后放松节奏，英格兰可能通过定位球（如马奎尔头球）或快速反击扳平，拖入点球大战对双方均不可预测。"
+    "key_risk": "France的顶级中场掌控力若被低估，可能通过快速反击制造威胁，例如Mbappe的速度能撕开防线并改变比赛走势。"
   },
   "actual_result": null
 }
