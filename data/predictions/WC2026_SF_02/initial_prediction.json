@@ -2,15 +2,15 @@
   "match_id": "WC2026_SF_02",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T17:03:11.309794",
+  "timestamp": "2026-06-29T21:43:04.466872",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -0.36,
-    "p_a_win": 0.451,
+    "weighted_delta": -1.28,
+    "p_a_win": 0.389,
     "p_draw": 0.0,
-    "p_b_win": 0.549,
+    "p_b_win": 0.612,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
@@ -20,28 +20,23 @@
         "delta": -1.0,
         "confidence": 6.0,
         "weight": 0.25,
-        "key_factors": [
-          "法国高位防线在2022年决赛中被阿根廷直塞球多次洞穿，淘汰赛更易被针对",
-          "阿根廷小组赛仅失1球，防守稳定性高于法国（失2球）",
-          "阿根廷定位球能力在淘汰赛权重翻倍，法国缺乏同等可靠空战武器"
-        ],
-        "reasoning": "阿根廷的反击直塞与定位球更适合淘汰赛节奏，法国高位防线在单场决胜中风险更高。"
+        "key_factors": [],
+        "reasoning": "率，似乎略高于**英格兰的进攻**对**阿根廷防守弱点**（惧怕冲击）的打击效率。但英格兰在身体和定位球（淘汰赛翻倍权重）上的优势非常巨大。\n\n##SCORES##\n{\n  \"team_a_score\": 5.5,\n  \"team_b_score\": 6.5,\n  \"confidence\": 6,\n"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 4.0,
+        "a_score": 4.5,
+        "b_score": 6.5,
+        "delta": -2.0,
+        "confidence": 7.0,
         "weight": 0.2,
         "key_factors": [
-          "双方小组赛均3战全胜出线，状态高度持平",
-          "France净胜球+8 vs Argentina净胜球+7，攻防几乎对称",
-          "两队阵中均有淘汰赛经验丰富的老将压阵",
-          "无休息天数差异或加时消耗信息，体力条件对等"
+          "阿根廷队内有大量连续参加多届淘汰赛的老将，心理承受力强。",
+          "英格兰队中多名核心球员（如贝林厄姆、萨卡）首次出战世界杯淘汰赛，高压下表现存在不确定性。",
+          "阿根廷在历史世界杯点球大战中胜率高，具备'加时赛DNA'的传统。"
         ],
-        "reasoning": "两队小组赛均全胜出线且攻防数据接近，淘汰赛经验都有老将坐镇，心理和状态层面无显著差异，预测为完全均势。"
+        "reasoning": "阿根廷拥有梅西等老将，淘汰赛经验与心理素质远超英格兰年轻阵容，且历史点球大战优势明显。"
       },
       {
         "dimension": "G_dna",
@@ -57,64 +52,62 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 6.0,
-        "b_score": 6.5,
-        "delta": -0.5,
-        "confidence": 7.0,
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.0,
         "weight": 0.15,
         "key_factors": [
-          "Argentina有梅西，世界杯淘汰赛常凭一己之力改变比赛（如2022对荷兰1球1助）；France无同等量级核心",
-          "Argentina门将马丁内斯扑点能力顶级（2021美洲杯半决赛3扑点）；France门将扑点记录相对平凡",
-          "France中场Kanté缺阵，Tchouaméni虽强但无同等防守覆盖；Argentina中场Paredes和De Paul组合稳定"
+          "Argentina小组赛3胜0平，进8失1，状态强势；England小组赛2胜1平，有平局。",
+          "Argentina有梅西（淘汰赛多次一己之力改变比赛历史），England缺乏对应级别的英雄人物。",
+          "Argentina核心球员如De Paul和Paredes可能无黄牌担忧，而England的Henderson和Rice在防守压力下可能动作更保守。"
         ],
-        "reasoning": "Argentina凭借梅西的淘汰赛英雄主义历史和马丁内斯的扑点能力，在关键决胜因素上略优于France，而France整体齐整但缺少明确个人英雄主义点球手。"
+        "reasoning": "Argentina凭借梅西的淘汰赛英雄历史和小组赛全胜状态，在关键球员个人能力和团队稳定性上明显优于England，后者缺少同等级别的决定性球员。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.5,
-        "b_score": 5.0,
-        "delta": 0.5,
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
         "confidence": 5.0,
         "weight": 0.08,
         "key_factors": [
-          "法国小组赛3连胜净胜球+8，进攻端表现强势",
-          "阿根廷更衣室凝聚力强，有梅西等领袖在逆境中稳定军心",
-          "阿根廷门将马丁内斯扑点能力突出，曾帮助球队赢下关键点球大战"
+          "Argentina小组赛全胜，仅失1球，核心配合更稳定",
+          "England在点球历史上曾崩盘，而Argentina门将扑点能力出色",
+          "Argentina教练斯卡洛尼有成功淘汰赛换人记录，England教练南门在决赛中换人时机曾受质疑"
         ],
-        "reasoning": "法国小组赛全胜且进攻火力强劲，但历史上存在更衣室不和谐因素；阿根廷凝聚力强、点球大战准备更充分且门将扑点能力突出，轻微劣势。"
+        "reasoning": "Argentina全胜出线且防守稳健，历史凝聚力更强，门将扑点能力突出，但England在教练经验上有改善。"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 6.5,
-        "b_score": 6.0,
-        "delta": 0.5,
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "France队中多名球员（如Lucas Hernández、Theo Hernández）有上届世界杯决赛和淘汰赛经验，整体大赛阅历更深",
-          "Argentina后防线（如Otamendi、Tagliafico）年龄偏大，加时赛体能和替补深度（Montiel）存疑",
-          "France替补席（Digne、Samba等）经验丰富，可支撑120分钟高强度对抗",
-          "Messi（阿根廷）是绝对超级球星，但France得分点更分散，防守体系更成熟"
+          "Argentina FIFA排名第1且小组赛3胜0平0负进8失1，统治力强于England的2胜1平进6失2",
+          "Argentina核心球员（Emiliano Martínez、Cristian Romero、Nicolás Otamendi等）有世界杯淘汰赛夺冠经历，England仅部分球员有四强经验",
+          "Argentina替补深度和进攻组合更具爆发力，England缺少一己之力改变比赛走向的超级球星"
         ],
-        "reasoning": "France凭借卫冕冠军的淘汰赛深度和德尚的战术调整能力略占优势，但Argentina的梅西（Messi）是淘汰赛爆点，差距微弱。"
+        "reasoning": "Argentina在FIFA排名第1、小组全胜（进8失1）、以及拥有多名世界杯淘汰赛经验球员（如Emiliano Martínez、Cristian Romero），相较England的稳定但缺乏超级爆发力阵容占优"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.0,
+        "a_score": 5.5,
         "b_score": 6.5,
-        "delta": -0.5,
-        "confidence": 7.0,
+        "delta": -1.0,
+        "confidence": 6.0,
         "weight": 0.07,
         "key_factors": [
-          "France近5场正式比赛总进球14个，进攻火力凶猛",
-          "Argentina小组赛3场零封对手，防守端优于法国",
-          "两队均无加时消耗，体能储备平等",
-          "Argentina小组赛末轮对阵Jordan时轮换程度未知"
+          "Argentina小组赛3战全胜进8失1，末轮轮换后仍3-1获胜，状态稳定",
+          "England小组赛末轮0-0平Ghana，进攻效率不足，且近5场仅2场净胜1球以上",
+          "England小组赛轨迹为W-D-W，高开低走，末轮未展示淘汰赛强度"
         ],
-        "reasoning": "两队小组赛全胜且均为头名出线，状态相当；但阿根廷3场零失球的防守稳定性略优于法国（失2球），这在高强度淘汰赛中至关重要。"
+        "reasoning": "Argentina小组赛全胜且失球仅1个，进攻端压制力强于England起伏的状态，但England防守稳固（2场零封）可能限制对手节奏。"
       }
     ],
     "calibration_warning": false,
@@ -135,11 +128,11 @@
     "prediction": "Argentina胜",
     "confidence": "中",
     "reasons": [
-      "阿根廷的前场三角进攻由梅西和劳塔罗·马丁内斯主导，他们的穿插跑位已经让三支小组赛防线崩溃，法国队的后防核心在缺少稳定领袖时容易被撕开空档。",
-      "法国队的边路防守存在隐患，阿根廷的边锋群像阿尔瓦雷斯和迪马利亚能利用速度在反击中制造威胁，尤其是在法国压上助攻后留下的空间。",
-      "中场控制力对比中，阿根廷的德保罗和帕雷德斯组合更擅长高位压迫，而法国队可能因中场衔接不畅导致攻守脱节，让梅西获得更多射门机会。"
+      "阿根廷小组赛三战全胜进8球仅失1球，状态火热，而英格兰更多依赖定位球和防守反击，很难在运动战中撕开阿根廷防线。",
+      "梅西在关键比赛中往往能决定比赛走势，他的盘带和传球创造力将是英格兰后卫群的最大考验，而英格兰缺乏同等级别的超级巨星。",
+      "英格兰在半决赛的大赛压力下历史表现不佳，本届世界杯三场淘汰赛对手瑞士、波兰和乌拉圭实力有限，尚未经受像阿根廷这样具备冠军基因的强队考验。"
     ],
-    "key_risk": "如果法国队利用身体优势早开纪录并收缩防守，阿根廷可能陷入久攻不下的僵局，但淘汰赛无平局下最终胜负仍难预料。"
+    "key_risk": "若英格兰利用定位球由核心中卫头球破门先领先，阿根廷可能陷入急躁情绪，进攻效率下降，从而被拖入点球大战并输掉比赛。"
   },
   "actual_result": null
 }
