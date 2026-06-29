@@ -1,0 +1,143 @@
+{
+  "match_id": "WC2026_QF_04",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:02:33.983777",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.23,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Colombia防线回追速度不足，Argentina的反击可通过速度型球员打身后制造威胁",
+          "Argentina小组赛9分全胜，士气与战术执行力优于Colombia",
+          "定位球攻防中Argentina有身高优势，而Colombia在小组赛定位球防守有盯人失误"
+        ],
+        "reasoning": "Argentina的反击效率、定位球优势和领袖核心的终结能力，针对Colombia防线回追慢和定位球盯人漏洞形成多重压制"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Argentina小组赛3战全胜且零封对手，展现统治力与心理稳定性",
+          "Colombia小组赛2胜1平进4失1，防守可靠但关键战平局暴露终结能力不足",
+          "梅西的淘汰赛领袖经验与劳塔罗·马丁内斯的前锋冲击力是赛前明确优势"
+        ],
+        "reasoning": "Argentina小组全胜且淘汰赛经验占优，但Colombia防线稳固（J罗调度+米纳头球）可制造威胁，心理上Argentina略胜一筹。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.5,
+        "b_score": 5.5,
+        "delta": -1.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Argentina小组赛9分全胜出线，攻防表现更具统治力。",
+          "Colombia小组赛7分不败，防守稳固（仅失1球），具备抗衡能力。",
+          "无法评估关键球员James Rodríguez和Rodrigo De Paul的实时状态及黄牌累积风险等关键淘汰赛变量。"
+        ],
+        "reasoning": "Argentina小组赛全胜战绩优于Colombia，提供了微弱的状态惯性优势，但双方核心球员状态和停赛风险等关键淘汰赛信息完全缺失，无法拉开更大差距。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Argentina小组三战全胜，气势与凝聚力处于顶峰",
+          "Argentina门将马丁内斯以扑点球能力强著称，是淘汰赛关键武器",
+          "Colombia小组赛防守稳固且不败，但淘汰赛缺乏类似顶级对抗经验"
+        ],
+        "reasoning": "Argentina在点球大战由门将马丁内斯领衔，以及队长在淘汰赛中的领导力上占据明显优势，而Colombia阵容稳固但缺乏顶级淘汰赛考验。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "阿根廷拥有梅西这样在世界杯淘汰赛多次证明过自己的超级球星",
+          "阿根廷队内多名球员有世界杯决赛和半决赛经验，远胜哥伦比亚",
+          "阿根廷阵容深度充足（如Romero、Otamendi、Molina等），可支撑加时赛",
+          "哥伦比亚小组赛仅进4球且对阵弱旅，进攻端缺乏顶级杀手"
+        ],
+        "reasoning": "阿根廷在梅西的淘汰赛爆发力、整队丰富淘汰赛经验及阵容深度上全面领先，哥伦比亚虽有Yerry Mina等强大但经验不足"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina小组赛3战全胜积9分，进8失1；Colombia2胜1平积7分，进4失1",
+          "Colombia末轮0-0平Portugal，进攻哑火；Argentina末轮3-1胜Jordan，多点开花",
+          "Argentina小组赛每场净胜球至少2球，淘汰赛前轮换充分；Colombia核心球员在小组赛末期消耗较大"
+        ],
+        "reasoning": "Argentina小组赛全胜且状态稳定，末轮轮换主力体能占优，而Colombia最近一场平局暴露攻击力不足且状态略有下滑，淘汰赛节奏下Argentina的连续压迫和核心球员效率更具优势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷小组赛三战全胜轰入8球，梅西领衔的进攻线状态火热，而哥伦比亚小组赛仅进4球且末轮战平，进攻效率差距明显",
+      "战术对位评分阿根廷7.0远高于哥伦比亚5.5，阿根廷的快速传导和高压逼抢将打乱哥伦比亚依赖核心球员的个人发挥体系",
+      "阿根廷小组赛仅失1球，防守稳定性远超哥伦比亚（失1球但对手更强），淘汰赛经验丰富的防线更值得信赖"
+    ],
+    "key_risk": "哥伦比亚拥有出色的防守反击能力，若阿根廷久攻不下被对手偷袭得手，可能导致爆冷"
+  },
+  "actual_result": null
+}
