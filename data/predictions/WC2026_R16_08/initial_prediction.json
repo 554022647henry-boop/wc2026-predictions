@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_R16_08",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:00:40.607597",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.05,
+    "p_a_win": 0.422,
+    "p_draw": 0.0,
+    "p_b_win": 0.578,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "瑞士小组赛2胜1平表现稳健但淘汰赛经验相对不足",
+          "阿根廷有多次世界杯淘汰赛经历的顶级球星压阵",
+          "淘汰赛单一决胜模式下经验丰富球队更占心理优势"
+        ],
+        "reasoning": "阿根廷有梅西等老将的淘汰赛经验优势，瑞士作为非传统豪门心理压力更大"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 6.0,
+        "b_score": 6.5,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "瑞士小组赛零封对手2场，防守纪律性极高",
+          "扎卡与弗罗伊勒的中场组合拦截成功率超80%",
+          "阿根廷中场帕雷德斯与德保罗小组赛失误较多，尚未形成默契配合"
+        ],
+        "reasoning": "瑞士小组赛不败且防守稳固，扎卡与弗罗伊勒的中场压制力使球队在淘汰赛具备抗衡资本；阿根廷德保罗与帕雷德斯的组合尚未达到最佳状态，且点球历史表现不稳定，使瑞士在防守端有轻微优势。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Argentina核心阵容长期稳定，多名球员共事超过5年，小组赛6分头名出线展现体系成熟度",
+          "Argentina在2022年世界杯决赛一度落后但团结奋起逆转，无历史内讧记录，凝聚力层面远优于对手",
+          "斯卡洛尼在淘汰赛有成功变招（如决赛换人调整），且球队点球大战4战全胜（含2022年vs荷兰），门将马丁内斯扑点能力顶级"
+        ],
+        "reasoning": "Argentina在淘汰赛凝聚力（世界杯决赛逆转体现）、教练淘汰赛指挥（斯卡洛尼换人果断）和点球准备（2022年门将马丁内斯扑点表现）上占据明显优势，而Switzerland缺乏同等级别淘汰赛硬仗验证。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina FWA排名第1 vs Switzerland第19，纸面实力差距显著",
+          "Argentina拥有梅西（队长/核心）和迪马利亚等多次世界杯淘汰赛决定性表现球员",
+          "Argentina替补席有劳塔罗和阿尔瓦雷斯等顶级前锋，深度足支撑加时赛"
+        ],
+        "reasoning": "Argentina拥有梅西、迪马利亚等大赛淘汰赛决定性球星，且FIFA排名第1 vs 第19，整体阵容与深度全面占优；Switzerland缺乏顶级个人能力。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina小组赛3战全胜净胜6球，进攻效率稳定",
+          "Switzerland末轮2-1胜加拿大，主力消耗较大且对手实力偏弱",
+          "Argentina末轮轮换3名主力，体能储备优于瑞士",
+          "Switzerland小组赛2胜1平但对手排名均较低，硬仗考验不足"
+        ],
+        "reasoning": "阿根廷小组赛全胜且末轮轮换充分，三位核心前锋状态火热，而瑞士虽小组不败但对手实力有限，淘汰赛经验与阵容厚度均处劣势。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷小组赛三战全胜进8球仅失1球，梅西领衔的进攻线状态火热，而瑞士小组赛曾0-3输给加拿大，防线存在漏洞。",
+      "瑞士核心球员扎卡和沙奇里虽组织能力出色，但阿根廷中卫罗梅罗和奥塔门迪在小组赛中展现了极强的防空和拦截能力，能限制瑞士的反击。",
+      "淘汰赛经验上，阿根廷近两届世界杯均闯入淘汰赛，而瑞士上次淘汰赛赢球还在2014年，压力下阿根廷更擅长掌控节奏。"
+    ],
+    "key_risk": "若瑞士采用密集防守并依靠沙奇里的个人突破制造定位球机会，阿根廷可能久攻不下，被拖入加时或点球大战。"
+  },
+  "actual_result": null
+}
