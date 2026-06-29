@@ -2,15 +2,15 @@
   "match_id": "WC2026_QF_02",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T17:01:16.547463",
+  "timestamp": "2026-06-29T21:19:45.794878",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -0.69,
-    "p_a_win": 0.422,
+    "weighted_delta": 0.08,
+    "p_a_win": 0.534,
     "p_draw": 0.0,
-    "p_b_win": 0.578,
+    "p_b_win": 0.466,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
@@ -21,28 +21,28 @@
         "confidence": 7.0,
         "weight": 0.25,
         "key_factors": [
-          "葡萄牙由攻转守时对纵深保护不足，边后卫助攻后空当易被快速反击利用",
-          "英格兰小组赛2胜1平展现稳定进攻输出，反击效率高于葡萄牙无效控球",
-          "淘汰赛阶段定位球权重翻倍，英格兰拥有身高优势的定位球得分点",
-          "葡萄牙小组赛2场平局暴露破密防能力不足，英格兰若先领先可有效收缩"
+          "西班牙中后卫转身速度慢，易被比利时直塞球和快速反击打穿",
+          "比利时淘汰赛经验丰富，擅于控制节奏和收缩防守",
+          "西班牙缺少高效支点前锋，破密集防守手段有限",
+          "比利时在定位球和反击转换效率上明显强于西班牙"
         ],
-        "reasoning": "英格兰的反击效率和定位球优势在淘汰赛保守环境下更占优，葡萄牙边后卫压上后的空当易被英格兰边锋利用"
+        "reasoning": "比利时在淘汰赛单场决胜中利用西班牙防线回追慢的弱点打快速反击更具优势，且拥有更成熟的防反体系和定位球战术，西班牙破密防能力存疑。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
         "a_score": 6.5,
-        "b_score": 6.5,
-        "delta": 0.0,
-        "confidence": 5.0,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "Portugal小组仅失1球，防守稳固",
-          "England小组赛2胜，进攻端更具威胁",
-          "双方核心球员均无停赛风险，阵容完整",
-          "无休息天数或加时消耗差异"
+          "西班牙小组赛3场零失球，防守体系成熟",
+          "比利时1胜2平进3球，进攻效率偏低",
+          "比利时淘汰赛历史心理包袱较重（2018半决赛等）",
+          "双方休息时间相同，无加时消耗差异"
         ],
-        "reasoning": "双方实力、心理素质、休息时间均高度对等，葡萄牙小组防守记录略优，但England小组头名进攻火力更强，难以分出明显优势。"
+        "reasoning": "西班牙防守稳固+淘汰赛心理韧性优于比利时，比利时进攻低效且有历史崩盘标签，但双方纸面实力接近。"
       },
       {
         "dimension": "G_dna",
@@ -58,64 +58,68 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 5.0,
+        "a_score": 6.0,
+        "b_score": 5.0,
+        "delta": 1.0,
+        "confidence": 4.0,
         "weight": 0.15,
         "key_factors": [
-          "England 小组赛2胜1平，攻防均衡，中场 Rice 和 Henderson 覆盖率强",
-          "Portugal 小组赛1胜2平，防守稳固仅失1球，但进攻进球仅靠小组第三档对手",
-          "无明确黄牌累积风险，但 England 可能针对 Bruno Fernandes 进行中场限制"
+          "西班牙小组赛零失球表现（2胜1平，进5失0）",
+          "比利时小组赛仅1胜2平，进攻效率不足",
+          "双方关键球员状态信息缺失，无法评估即战力差异"
         ],
-        "reasoning": "England 凭借三战全胜出线的稳定性和中场深度占据轻微优势，而 Portugal 小组赛仅失1球的防守韧性是抗衡关键，但进攻端效率不足降低上限。"
+        "reasoning": "西班牙小组赛防守零封且战绩更优（2胜1平），比利时进攻乏力且状态平平均，但双方核心球员信息不充分，优势极有限。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.5,
-        "b_score": 6.0,
-        "delta": -0.5,
-        "confidence": 5.0,
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 6.0,
         "weight": 0.08,
         "key_factors": [
-          "England以小组头名出线，展现了更强的比赛控制力。",
-          "Portugal小组赛经历平局后依然稳定出线，防线极其稳固。",
-          "两队均无明确的内讧历史，但England的纪律性和大赛传统底蕴更优。"
+          "西班牙小组赛3场零失球，防守体系成熟",
+          "比利时黄金一代时期曾有内讧传统，逆境凝聚力存疑",
+          "西班牙门将乌奈·西蒙有基本扑点能力，比利时门将位置不确定性较大"
         ],
-        "reasoning": "England作为小组头名和传统强队，在淘汰赛的集体抗压能力和大赛经验上略强于Portugal，但两者都没有明显的化学反应优势点。"
+        "reasoning": "西班牙小组赛零失球防守稳固且更衣室无内讧传统，比利时历史上有大赛内讧隐患且淘汰赛表现常低于预期"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 5.0,
-        "b_score": 6.5,
-        "delta": -1.5,
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "英格兰FIFA排名第4略高于葡萄牙第5",
-          "英格兰小组赛2胜1平第1出线，葡萄牙1胜2平第2出线",
-          "英格兰索斯盖特执教淘汰赛战绩优于葡萄牙马丁内斯",
-          "凯恩、斯特林等人在世界杯淘汰赛阶段有进球记录"
+          "Spain FIFA排名第2，小组赛2胜1平0失球，防守端有拉波尔特等经验中卫领衔",
+          "Belgium小组赛1胜2平晋级，库尔图瓦在皇马多次欧冠决赛证明淘汰赛爆发力",
+          "Spain年轻防线（Eric García等）缺乏世界杯淘汰赛检验，Belgium替补席Castagne、泰特等经验球员支撑加时"
         ],
-        "reasoning": "英格兰淘汰赛经验更丰富（凯恩、斯特林、马奎尔等多人有世界杯淘汰赛进球），索斯盖特连续两届进四强；葡萄牙小组赛1胜2平出线过程略显挣扎"
+        "reasoning": "Spain整体实力和防守稳定性更强（FIFA排名第2 vs 第9），小组赛3场零封；Belgium在淘汰赛经验和超级门将库尔图瓦方面有优势。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 3.0,
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 7.0,
         "weight": 0.07,
-        "key_factors": [],
-        "reasoning": "数据不足，中性评分"
+        "key_factors": [
+          "Spain finished group with 7 points and 0 goals conceded, showing defensive dominance",
+          "Belgium only managed 5 points in group stage with draws against Iran and Egypt",
+          "Spain's 4-0 win in final group match shows strong form",
+          "Belgium's 5-1 R16 win over New Zealand is impressive but New Zealand is a weaker opponent"
+        ],
+        "reasoning": "Spain's flawless group stage defense (0 goals conceded) and gradual improvement trajectory give them a slight edge over Belgium, whose inconsistent group performances (two draws) raise concerns despite a strong R16 result."
       }
     ],
     "calibration_warning": false,
     "calibration_note": "",
-    "judge_reasoning": "England胜",
+    "judge_reasoning": "Spain胜",
     "data_sources": {
       "squad": "ESPN_ROSTER✅",
       "form": "ESPN_API✅",
@@ -128,14 +132,14 @@
   },
   "output": {
     "说明": "对外展示到HTML",
-    "prediction": "England胜",
+    "prediction": "Spain胜",
     "confidence": "低",
     "reasons": [
-      "英格兰中场拦截能力强于葡萄牙，赖斯和贝林厄姆的绞杀会让葡萄牙的传球很难顺畅运转，尤其是B费回撤接球时会受到持续压迫，导致进攻节奏被打断。",
-      "葡萄牙防线面对英格兰的边路冲击存在隐患，锋线组合（如凯恩回撤做球，拉什福德或萨卡内切）能频繁制造肋部空当，而葡萄牙两侧中卫的横向移动速度偏慢。",
-      "淘汰赛经验层面，英格兰近年大赛表现更稳定，罚点球心理素质进步明显；而葡萄牙在C罗时代后缺乏硬仗中后程咬住比分的典型案例。"
+      "西班牙小组赛三场零失球，防线稳固，而比利时虽有德布劳内串联，但面对西班牙中场压迫时容易失误。",
+      "西班牙的莫拉塔和尼科·威廉姆斯在边路冲击力强，比利时边后卫速度偏慢，这可能是破局关键。",
+      "比利时小组赛两场平局，进攻效率不稳定，而西班牙在淘汰赛阶段更擅长控制节奏，拖入消耗战。"
     ],
-    "key_risk": "葡萄牙核心球员在反击中个人能力瞬间爆发（如快速推进制造定位球或单刀），打破英格兰整体防守格局；且英格兰若久攻不下易急躁，被葡萄牙偷得先机。"
+    "key_risk": "比利时拥有德布劳内和卢卡库这样的个人能力爆点，若西班牙高位防线被一次反击打穿，比赛可能瞬间倒向比利时。"
   },
   "actual_result": null
 }
