@@ -1,0 +1,138 @@
+{
+  "match_id": "WC2026_QF_03",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:01:54.524318",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.12,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "France拥有执行快速反击的顶级前锋核心，能精准打击Germany高位防线身后的空当",
+          "Germany防守弱点明确，除反击外，边路传中和定位球高空球防守也存在隐患，这为France提供了额外进攻路径",
+          "Germany进攻核心套路未明，缺乏有效破防France的中路掌控型防守体系的明确手段"
+        ],
+        "reasoning": "France的快速反击打法高度针对Germany高位防线暴露的身后空当，而France高位防线虽有弱点，但Germany的破局能力未知，France在核心战术匹配度上优势明显。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "德国队小组赛失4球，防线稳定性存疑",
+          "法国队小组赛3战全胜，状态保持良好",
+          "法国队作为卫冕冠军，在淘汰赛关键时刻的经验和信心可能更强"
+        ],
+        "reasoning": "法国队在近期大赛统治力（2018年冠军）和小组赛全胜（3胜0负）的稳定性上优于德国队（2胜1负且防守有漏洞）。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 4.0,
+        "weight": 0.15,
+        "key_factors": [
+          "法国队在小组赛阶段3胜0负，展现出更强的比赛掌控力。",
+          "德国队小组赛曾遭遇一场失利，稳定性稍逊于法国队。",
+          "两队关键球员的状态和停赛风险信息不足，无法量化评估。"
+        ],
+        "reasoning": "法国队在小组赛阶段的统治力表现（3战全胜）优于德国队（2胜1负），且队内关键球员如Kanté和Tchouaméni在中场的控制力更令人信服。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Germany小组赛经历失利后立刻反弹，显示出更强的抗压能力和团队韧性。",
+          "France小组赛三战全胜，但未经历落后或僵局考验，其淘汰赛逆风球能力未知。",
+          "两队教练淘汰赛临场指挥的历史信息均未提供，视为均势。"
+        ],
+        "reasoning": "Germany小组赛输球后反弹以头名出线，展现出逆境下的调整能力；France全胜出线但缺乏应对逆境的检验，在淘汰赛的凝聚力维度上Germany有轻微优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "法国小组赛3胜0平0负，净胜球+9，德国2胜0平1负且末轮1-2负厄瓜多尔",
+          "法国末轮4-1大胜挪威，德国末轮轮换力度不足且防守失误偏多",
+          "法国小组赛未经历强对抗消耗，德国核心球员出场时间更集中"
+        ],
+        "reasoning": "法国小组赛全胜且末轮展现渐入佳境势头，德国高开低走且末轮输球暴露隐患，法国在状态延续性和体能储备上略占优。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "France胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "France胜",
+    "confidence": "中",
+    "reasons": [
+      "法国小组赛三战全胜且场均丢球不到1个，防线整体性远超德国，而德国末轮意外输球暴露出应对快速反击时的漏洞——姆巴佩和科曼的速度将直击这一软肋。",
+      "中场控制权预计被法国掌控：琼阿梅尼的拦截和拉比奥的推进能切断德国依赖基米希-京多安的连线，让德国只能靠边路传中寻找机会，但法国的防守高度（于帕梅卡诺+萨利巴）足以应对。",
+      "德国小组赛最后一场的失利并非偶然——他们面对低位防守时缺乏破局手段，而法国在德尚麾下擅长先稳住阵脚再一击致命，格列兹曼的缺席反而让法国更依赖整体，减少了战术不确定性。"
+    ],
+    "key_risk": "德国若在开场20分钟内利用主场球迷压力（若有）或任意球由吕迪格头球破门，可能迫使法国急躁压上，从而复制德国小组赛3-0胜葡萄牙时的高效反击模式。"
+  },
+  "actual_result": null
+}
