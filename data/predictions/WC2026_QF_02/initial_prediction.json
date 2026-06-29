@@ -1,0 +1,141 @@
+{
+  "match_id": "WC2026_QF_02",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:01:16.547463",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -0.69,
+    "p_a_win": 0.422,
+    "p_draw": 0.0,
+    "p_b_win": 0.578,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "葡萄牙由攻转守时对纵深保护不足，边后卫助攻后空当易被快速反击利用",
+          "英格兰小组赛2胜1平展现稳定进攻输出，反击效率高于葡萄牙无效控球",
+          "淘汰赛阶段定位球权重翻倍，英格兰拥有身高优势的定位球得分点",
+          "葡萄牙小组赛2场平局暴露破密防能力不足，英格兰若先领先可有效收缩"
+        ],
+        "reasoning": "英格兰的反击效率和定位球优势在淘汰赛保守环境下更占优，葡萄牙边后卫压上后的空当易被英格兰边锋利用"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 6.5,
+        "b_score": 6.5,
+        "delta": 0.0,
+        "confidence": 5.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Portugal小组仅失1球，防守稳固",
+          "England小组赛2胜，进攻端更具威胁",
+          "双方核心球员均无停赛风险，阵容完整",
+          "无休息天数或加时消耗差异"
+        ],
+        "reasoning": "双方实力、心理素质、休息时间均高度对等，葡萄牙小组防守记录略优，但England小组头名进攻火力更强，难以分出明显优势。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "England 小组赛2胜1平，攻防均衡，中场 Rice 和 Henderson 覆盖率强",
+          "Portugal 小组赛1胜2平，防守稳固仅失1球，但进攻进球仅靠小组第三档对手",
+          "无明确黄牌累积风险，但 England 可能针对 Bruno Fernandes 进行中场限制"
+        ],
+        "reasoning": "England 凭借三战全胜出线的稳定性和中场深度占据轻微优势，而 Portugal 小组赛仅失1球的防守韧性是抗衡关键，但进攻端效率不足降低上限。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 5.0,
+        "weight": 0.08,
+        "key_factors": [
+          "England以小组头名出线，展现了更强的比赛控制力。",
+          "Portugal小组赛经历平局后依然稳定出线，防线极其稳固。",
+          "两队均无明确的内讧历史，但England的纪律性和大赛传统底蕴更优。"
+        ],
+        "reasoning": "England作为小组头名和传统强队，在淘汰赛的集体抗压能力和大赛经验上略强于Portugal，但两者都没有明显的化学反应优势点。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "英格兰FIFA排名第4略高于葡萄牙第5",
+          "英格兰小组赛2胜1平第1出线，葡萄牙1胜2平第2出线",
+          "英格兰索斯盖特执教淘汰赛战绩优于葡萄牙马丁内斯",
+          "凯恩、斯特林等人在世界杯淘汰赛阶段有进球记录"
+        ],
+        "reasoning": "英格兰淘汰赛经验更丰富（凯恩、斯特林、马奎尔等多人有世界杯淘汰赛进球），索斯盖特连续两届进四强；葡萄牙小组赛1胜2平出线过程略显挣扎"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "低",
+    "reasons": [
+      "英格兰中场拦截能力强于葡萄牙，赖斯和贝林厄姆的绞杀会让葡萄牙的传球很难顺畅运转，尤其是B费回撤接球时会受到持续压迫，导致进攻节奏被打断。",
+      "葡萄牙防线面对英格兰的边路冲击存在隐患，锋线组合（如凯恩回撤做球，拉什福德或萨卡内切）能频繁制造肋部空当，而葡萄牙两侧中卫的横向移动速度偏慢。",
+      "淘汰赛经验层面，英格兰近年大赛表现更稳定，罚点球心理素质进步明显；而葡萄牙在C罗时代后缺乏硬仗中后程咬住比分的典型案例。"
+    ],
+    "key_risk": "葡萄牙核心球员在反击中个人能力瞬间爆发（如快速推进制造定位球或单刀），打破英格兰整体防守格局；且英格兰若久攻不下易急躁，被葡萄牙偷得先机。"
+  },
+  "actual_result": null
+}
