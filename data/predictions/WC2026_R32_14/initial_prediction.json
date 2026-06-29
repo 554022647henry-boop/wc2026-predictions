@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_R32_14",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:54:35.920650",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.14,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.5,
+        "delta": -2.0,
+        "confidence": 7.0,
+        "weight": 0.25,
+        "key_factors": [
+          "澳大利亚防守弱点是面对技术型球队时回追速度不足，埃及的快速反击能精准打击这一点。",
+          "淘汰赛保守趋势更有利于防守反击型的埃及，反击效率高于对手的阵地战攻坚能力。",
+          "埃及队拥有技术型前锋核心，在单场决胜中个人闪光决定比赛的概率更高。",
+          "澳大利亚队进攻套路信息缺失，缺乏明确的破密集防守手段，面对埃及队防守时可能陷入僵局。"
+        ],
+        "reasoning": "埃及队的个人技术与防守反击策略直接针对澳大利亚队防线的回追速度弱点，淘汰赛模式下埃及的战术克制优势显著。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "埃及小组赛不败（1胜2平），防守稳固仅失1球",
+          "澳大利亚小组赛进2球，进攻效率低下，淘汰赛破门能力存疑",
+          "澳大利亚缺乏世界杯淘汰赛经验，埃及连续多届参赛心理更成熟"
+        ],
+        "reasoning": "埃及小组赛表现更稳（5分 vs 4分），且非洲球队在淘汰赛高压下通常更老练；澳大利亚进攻乏力（仅2球），首场淘汰赛心理压力更大。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.5,
+        "delta": -0.5,
+        "confidence": 2.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Israel小组赛4分，场均进球0.7，进攻乏力",
+          "Egypt小组赛5分，表现略稳但无具体数据支持",
+          "无任何球员状态、黄牌或历史淘汰赛英雄数据"
+        ],
+        "reasoning": "信息极度匮乏，双方关键球员状态未知，仅以小组积分差给予Egypt微弱优势，但实际差距不可信"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "澳大利亚小组赛1胜1平1负，进2失2，状态不稳定",
+          "埃及小组赛1胜2平，不败但平局多，进攻效率低",
+          "两队教练均确认，但无淘汰赛临场指挥或点球演练历史信息"
+        ],
+        "reasoning": "双方均缺乏核心组合稳定性、逆境凝聚力、教练淘汰赛经验及点球准备度的具体数据，澳大利亚小组赛轨迹波动但埃及无突出优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 4.0,
+        "weight": 0.07,
+        "key_factors": [
+          "澳大利亚有Mathew Ryan等球员的淘汰赛经验（2022年16强），埃及无明显淘汰赛经验球员",
+          "澳大利亚小组赛1胜1平1负总进球仅2个，进攻乏力；埃及1胜2平不败状态略稳定",
+          "两队均缺乏一锤定音的超级球员，替补深度在120分钟赛制中均非顶级"
+        ],
+        "reasoning": "两队排名、小组赛表现接近，均无超级球星压阵，淘汰赛经验相当，阵容深度均衡，优势无法分出。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Australia小组末轮0-0平Paraguay，进攻端陷入僵局",
+          "Egypt小组赛2场平局对手为伊朗和比利时，含金量更高",
+          "Australia小组赛轨迹高开低走，后两场0进球",
+          "Egypt小组赛保持不败，稳定性优于Australia"
+        ],
+        "reasoning": "Australia小组赛后期进攻哑火（近2场0进球），而Egypt保持不败且渐入佳境，Salah为核心的进攻线更具淘汰赛经验。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Egypt胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Egypt胜",
+    "confidence": "中",
+    "reasons": [
+      "埃及在小组赛展现出更强的进攻火力，5个进球远超澳大利亚的2球，萨拉赫领衔的锋线能撕开澳大利亚防线",
+      "澳大利亚小组赛末轮艰难逼平土耳其才出线，而埃及面对比利时和伊朗保持不败，战术纪律性更强",
+      "埃及中场控制力占优，能通过边路传中和定位球制造威胁，澳大利亚防空能力存疑"
+    ],
+    "key_risk": "澳大利亚反击效率极高，若埃及久攻不下，可能被澳大利亚抓住一次机会偷袭击败"
+  },
+  "actual_result": null
+}
