@@ -1,0 +1,144 @@
+{
+  "match_id": "WC2026_R32_15",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:55:12.767599",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 2.26,
+    "p_a_win": 0.654,
+    "p_draw": 0.0,
+    "p_b_win": 0.346,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "阿根廷小组赛3战全胜进8失1，攻防两端统治力远超佛得角（3平0胜进0球）。",
+          "佛得角进攻端毫无建树，缺乏有效反击手段，无法利用阿根廷高位防线被打身后的潜在弱点。",
+          "阿根廷前锋核心个人能力突出，在定位球和阵地战破防效率上占据压倒性优势。",
+          "淘汰赛的保守趋势与定位球权重增加，对战术纪律性更强、个人能力更强的阿根廷有利。"
+        ],
+        "reasoning": "阿根廷凭借小组赛展现的强大控场和破密集防守能力，能有效克制佛得角进攻乏力且后防有漏洞的特点，淘汰赛节奏下优势更为明显。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 7.5,
+        "b_score": 5.5,
+        "delta": 2.0,
+        "confidence": 8.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Argentina小组赛三战全胜且仅失1球，状态稳定，心理韧性极强",
+          "Cape Verde首次参加世界杯淘汰赛，球员普遍缺乏高压比赛经验",
+          "Cape Verde小组赛仅积1分出线，整体实力与对手存在档次差距"
+        ],
+        "reasoning": "Argentina拥有多名核心球员压阵，且小组赛状态火热零失球，而Cape Verde缺乏淘汰赛经验，实力悬殊。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 8.0,
+        "weight": 0.15,
+        "key_factors": [
+          "阿根廷小组赛3战全胜仅失1球，攻防统治力碾压对手",
+          "卡普文德队内无效力五大联赛的顶级球星，关键球处理能力存疑",
+          "阿根廷中场德保罗、帕雷德斯具备大赛经验，能掌控比赛节奏"
+        ],
+        "reasoning": "阿根廷拥有帕雷德斯、德保罗等经验丰富的中场，小组赛全胜零失球，而卡普文德核心蒙特罗等球员大赛经验不足，实力差距显著。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 8.0,
+        "weight": 0.08,
+        "key_factors": [
+          "阿根廷小组赛3战全胜，进8球失1球，展现了统治级的攻防稳定性。",
+          "Cape Verde小组赛0胜，累积3分，进攻端缺乏可靠的得分点。",
+          "阿根廷以小组头名出线，士气与信心处于高位，教练体系已获验证。"
+        ],
+        "reasoning": "阿根廷小组赛三战全胜且近乎零失球，展现了极高的系统稳定性和战术纪律，而Cape Verde小组赛零胜且进攻无力，在淘汰赛层面难以对阿根廷构成明显威胁。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 8.0,
+        "b_score": 5.0,
+        "delta": 3.0,
+        "confidence": 9.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina小组赛全胜，净胜球+7，展现出统治力",
+          "Argentina队内有世界杯淘汰赛经历的球员，如核心门将和后卫",
+          "Cape Verde FIFA排名仅67，阵容深度不足，难以支撑120分钟高强度比赛"
+        ],
+        "reasoning": "Argentina拥有FIFA第1排名、淘汰赛经验丰富的阵容（如Emiliano Martínez、Nicolás Otamendi）和深厚替补深度，而Cape Verde整体实力不足且缺乏大赛经验。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 7.5,
+        "b_score": 5.0,
+        "delta": 2.5,
+        "confidence": 6.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina小组赛全胜且净胜球+7，进攻端效率极高",
+          "Cape Verde小组赛三场平局且零进球，进攻乏力",
+          "Argentina末轮对Jordan可轮换主力，体能更优",
+          "Cape Verde从未在世界杯淘汰赛阶段赢球，经验差距明显"
+        ],
+        "reasoning": "Argentina小组赛三连胜且仅失1球，状态与进攻梳理（小组共进8球）明显优于Cape Verde三场平局且一球未进的防守型风格，但后者防守稳固可能制造麻烦。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "高",
+    "reasons": [
+      "阿根廷小组赛三战全胜狂轰8球仅失1球，梅西在前场的串联和突破让对手防线难以招架，面对小组赛三场全平仅进2球的佛得角，攻击力差距悬殊。",
+      "阿根廷中场控制力远超对手，德保罗和帕雷德斯的拦截与传球能有效切断佛得角的反击线路，而佛得角缺少爆点球员，很难威胁到阿根廷防线。",
+      "淘汰赛经验是阿根廷的绝对优势，球队核心阵容多次经历大赛洗礼，而佛得角是首次闯入淘汰赛，面对强敌容易在高压下失误。"
+    ],
+    "key_risk": "佛得角若全线死守并利用定位球偷袭得手，阿根廷久攻不下可能急躁，但整体实力差距过大，爆冷概率极低。"
+  },
+  "actual_result": null
+}
