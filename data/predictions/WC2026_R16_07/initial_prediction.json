@@ -1,0 +1,145 @@
+{
+  "match_id": "WC2026_R16_07",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:00:01.523783",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.22,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 6.0,
+        "weight": 0.25,
+        "key_factors": [
+          "Colombia小组赛2胜1平0负仅失1球，防守组织优于埃及（1胜2平失3球）",
+          "埃及边后卫与中卫间的空当易被快速传中利用，而Colombia擅长边路推进与横向转移",
+          "淘汰赛保守趋势下，Colombia领先后的收缩能力更可靠（预选赛防守回追虽慢但小组赛未暴露致命漏洞）",
+          "埃及定位球防守在非洲杯期间存在盯人失误，Colombia可能通过定位球制造关键得分"
+        ],
+        "reasoning": "Colombia小组赛防守稳固（仅失1球），进攻端节奏控制强于埃及，淘汰赛环境下哥伦比亚的反击效率和定位球威胁更适配单场决胜模式。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Colombia小组赛2胜1平0负，防守仅失1球",
+          "Egypt小组赛1胜2平0负，进攻效率偏低（5球）",
+          "Egypt自1990年以来首次进入世界杯淘汰赛阶段，缺乏关键战经验"
+        ],
+        "reasoning": "Colombia小组头名出线且防守稳固，淘汰赛经验更丰富；Egypt首次进入16强，平局偏多，关键战心理波动更大"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 4.5,
+        "b_score": 6.5,
+        "delta": -2.0,
+        "confidence": 5.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Colombia小组赛仅失1球，防守体系优于Egypt（失3球）",
+          "James Rodríguez在世界杯淘汰赛中有过一己之力改变比赛的经典表现（如2014年对比利时）",
+          "Egypt关键球员状态缺失，无法确认核心球员（如Hamdy Fathy或Nabil Donga）是否具备决定性影响",
+          "Colombia小组第一出线，心理和战绩层面更稳定"
+        ],
+        "reasoning": "Colombia凭借James Rodríguez的组织能力和小组第一的防守稳定性占据明显优势，而Egypt缺乏个人英雄主义的核心球员且防守有漏洞。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 6.0,
+        "weight": 0.08,
+        "key_factors": [
+          "哥伦比亚以7分小组头名出线，防守仅失1球，团队纪律性更强",
+          "埃及以5分第二名出线，不败但平局偏多，逆境爆发力不足",
+          "两队教练均确认，但哥伦比亚更显战术纪律，压制对手进攻能力强"
+        ],
+        "reasoning": "哥伦比亚小组头名出线且防守仅失1球，体系更稳定，埃及平局较多缺乏淘汰赛冲刺证据。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "哥伦比亚FIFA排名第13位，远高于埃及的第29位，阵容整体档次差距明显",
+          "哥伦比亚有大卫·奥斯皮纳、耶里·米纳、达文森·桑切斯等多位有世界杯淘汰赛出场经历的球员",
+          "哥伦比亚小组赛2胜1平0负进4失1，攻防数据优于埃及的1胜2平进5失3"
+        ],
+        "reasoning": "哥伦比亚FIFA排名更高（13 vs 29），拥有奥斯皮纳、米纳、桑切斯等多名有世界杯淘汰赛经验的防守核心，且小组赛全胜晋级展现更强攻防稳定性，埃及缺乏顶级球星和淘汰赛经验支撑。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 6.5,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Colombia小组赛2胜1平进4失1，防守稳固",
+          "Egypt末轮1-1平Iran，攻击效率偏低",
+          "Colombia末轮0-0平Portugal，主力得到休息",
+          "Egypt小组赛消耗较大，核心球员打满关键战"
+        ],
+        "reasoning": "Colombia小组赛不败且零失球，末轮轮换充分，体能和防守稳定性优于Egypt"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Colombia胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Colombia胜",
+    "confidence": "中",
+    "reasons": [
+      "Colombia在小组赛三场仅失1球，防守体系稳固，而埃及进攻点单一，主要依赖核心球员个人能力，难以撕开Colombia的防线",
+      "Colombia中场控制力更强，小组赛传球成功率和控球率均高于埃及，能有效切断埃及的反击路线",
+      "埃及在小组赛面对强队时进攻效率偏低，对Belgium仅进1球，而Colombia的防守纪律性更胜Belgium"
+    ],
+    "key_risk": "埃及若通过防守反击先取得进球，Colombia在淘汰赛压力下可能急躁失误，导致爆冷"
+  },
+  "actual_result": null
+}
