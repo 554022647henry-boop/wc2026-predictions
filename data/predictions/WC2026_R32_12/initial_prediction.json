@@ -1,0 +1,118 @@
+{
+  "match_id": "WC2026_R32_12",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:53:32.417568",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": 0.0,
+    "p_a_win": 0.534,
+    "p_draw": 0.0,
+    "p_b_win": 0.466,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.2,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.15,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.08,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Portugal胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Portugal胜",
+    "confidence": "低",
+    "reasons": [
+      "量化模型综合7个维度，Croatia占优",
+      "分差 δ=+0.00，小幅占优",
+      "详见维度评分明细"
+    ],
+    "key_risk": "势均力敌，存在变数"
+  },
+  "actual_result": null
+}
