@@ -38,89 +38,55 @@
     padding: 40px 10px;
   }
 
-  /* ===== Header ===== */
-  .head {
-    text-align: center;
-    margin-bottom: 32px;
-  }
+  .head { text-align: center; margin-bottom: 32px; }
   .head h1 {
     font-family: var(--f-display);
-    font-size: 28px;
-    font-weight: 800;
+    font-size: 28px; font-weight: 800;
     letter-spacing: -0.02em;
     background: linear-gradient(135deg, #f7b731 0%, var(--gold) 50%, #f7b731 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 4px;
   }
   .head .sub {
-    font-family: var(--f-mono);
-    font-size: 11px;
-    color: var(--text-dim);
-    letter-spacing: 0.15em;
-  }
-  .head .sub span {
-    color: var(--text-muted);
+    font-family: var(--f-mono); font-size: 11px;
+    color: var(--text-dim); letter-spacing: 0.15em;
   }
 
-  /* ===== Bracket container ===== */
-  .bracket-outer {
-    max-width: 1500px;
-    margin: 0 auto;
-    overflow-x: auto;
-    padding: 10px 0;
-  }
+  .bracket-outer { max-width: 1500px; margin: 0 auto; overflow-x: auto; padding: 10px 0; }
   .bracket-row {
-    display: flex;
-    flex-direction: row;
-    gap: 0 36px;
-    min-width: 1100px;
-    justify-content: center;
-    align-items: stretch;
+    display: flex; flex-direction: row;
+    gap: 0 36px; min-width: 1100px;
+    justify-content: center; align-items: stretch;
   }
 
-  /* ===== Half: CSS Grid ===== */
   .half {
-    flex: 1;
-    max-width: 540px;
+    flex: 1; max-width: 540px;
     display: grid;
     grid-template-columns: 150px 28px 130px 28px 110px 28px 100px;
     grid-template-rows: 36px repeat(8, auto);
     gap: 8px 0;
-    position: relative;
-    align-items: center;
+    position: relative; align-items: center;
     padding: 0;
   }
-  .right-half {
-    grid-template-columns: 100px 28px 110px 28px 130px 28px 150px;
-  }
+  .right-half { grid-template-columns: 100px 28px 110px 28px 130px 28px 150px; }
 
-  /* ===== Round Headers ===== */
   .hdr {
-    font-family: var(--f-mono);
-    font-size: 9px;
-    font-weight: 700;
-    color: var(--gold);
-    text-align: center;
-    letter-spacing: 0.18em;
-    padding: 6px 0 8px;
+    font-family: var(--f-mono); font-size: 9px; font-weight: 700;
+    color: var(--gold); text-align: center;
+    letter-spacing: 0.18em; padding: 6px 0 8px;
     border-bottom: 1px solid var(--gold-dim);
-    opacity: 0.65;
-    align-self: end;
-    text-transform: uppercase;
+    opacity: 0.65; align-self: end; text-transform: uppercase;
   }
   .left-half .hdr-r32 { grid-column: 1; grid-row: 1; }
   .left-half .hdr-r16 { grid-column: 3; grid-row: 1; }
   .left-half .hdr-qf  { grid-column: 5; grid-row: 1; }
   .left-half .hdr-sf  { grid-column: 7; grid-row: 1; }
-
   .right-half .hdr-sf { grid-column: 1; grid-row: 1; }
   .right-half .hdr-qf { grid-column: 3; grid-row: 1; }
   .right-half .hdr-r16 { grid-column: 5; grid-row: 1; }
   .right-half .hdr-r32 { grid-column: 7; grid-row: 1; }
 
-  /* ===== Match Card ===== */
   .m {
     background: var(--bg-card);
     border: 1px solid var(--border-card);
@@ -128,17 +94,12 @@
     padding: 4px 10px;
     font-size: 12px;
     transition: all 0.3s var(--ease-out);
-    align-self: center;
-    justify-self: stretch;
+    align-self: center; justify-self: stretch;
     backdrop-filter: blur(2px);
-    position: relative;
-    overflow: hidden;
+    position: relative; overflow: hidden;
   }
   .m::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 5px;
+    content: ''; position: absolute; inset: 0; border-radius: 5px;
     background: linear-gradient(135deg, transparent 40%, rgba(255,215,0,0.02));
     pointer-events: none;
   }
@@ -148,210 +109,125 @@
     transform: translateY(-1px);
     box-shadow: 0 4px 16px rgba(0,0,0,0.25);
   }
-
   .m .row {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    line-height: 1.55;
-    padding: 1px 0;
+    display: flex; align-items: center; gap: 5px;
+    line-height: 1.55; padding: 1px 0;
   }
   .m .row .flag { font-size: 13px; min-width: 18px; text-align: center; }
   .m .row .nm {
-    flex: 1;
-    font-size: 11px;
-    font-weight: 500;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    flex: 1; font-size: 11px; font-weight: 500;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     letter-spacing: 0.01em;
   }
   .m .row .sc {
-    font-family: var(--f-mono);
-    font-weight: 700;
-    font-size: 12px;
-    min-width: 14px;
-    text-align: right;
+    font-family: var(--f-mono); font-weight: 700;
+    font-size: 12px; min-width: 14px; text-align: right;
     color: var(--text-dim);
   }
   .m .row.win .nm { color: var(--gold); font-weight: 600; }
   .m .row.win .sc { color: var(--gold); }
   .m .row.tbd .nm { color: rgba(255,255,255,0.18); font-style: italic; font-weight: 400; }
   .m .row.tbd .flag { opacity: 0.12; }
-
   .m .meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 8px;
-    margin-bottom: 1px;
-    height: 13px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 8px; margin-bottom: 1px; height: 13px;
   }
   .tag {
-    font-family: var(--f-mono);
-    padding: 0 5px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 7px;
-    letter-spacing: 0.05em;
+    font-family: var(--f-mono); padding: 0 5px;
+    border-radius: 6px; font-weight: 600;
+    font-size: 7px; letter-spacing: 0.05em;
   }
   .tag-done { background: rgba(34,197,94,0.1); color: #4ade80; }
   .tag-live { background: rgba(239,68,68,0.12); color: #f87171; animation: pulse 1.2s infinite; }
   .tag-future { background: rgba(255,255,255,0.03); color: var(--text-muted); }
   .tag-tbd { background: transparent; color: rgba(255,255,255,0.15); }
-  .m .meta .loc {
-    color: rgba(255,255,255,0.15);
-    font-family: var(--f-mono);
-    font-size: 7px;
-    letter-spacing: 0.02em;
-  }
+  .m .meta .loc { color: rgba(255,255,255,0.15); font-family: var(--f-mono); font-size: 7px; letter-spacing: 0.02em; }
 
-  /* ===== Grid Positions - Left Half ===== */
-  .l-r32-02 { grid-column: 1; grid-row: 2; }
-  .l-r32-03 { grid-column: 1; grid-row: 3; }
-  .l-r32-01 { grid-column: 1; grid-row: 4; }
-  .l-r32-04 { grid-column: 1; grid-row: 5; }
-  .l-r32-05 { grid-column: 1; grid-row: 6; }
-  .l-r32-06 { grid-column: 1; grid-row: 7; }
-  .l-r32-07 { grid-column: 1; grid-row: 8; }
-  .l-r32-08 { grid-column: 1; grid-row: 9; }
+  /* ===== LEFT HALF Grid Positions ===== */
+  /* Correct bracket pairing per fixtures.json:
+     QF_01 = R16_01 + R16_02  →  SF_01
+     QF_02 = R16_05 + R16_06  →  SF_01
+  */
+  .l-r32-02  { grid-column: 1; grid-row: 2; }
+  .l-r32-05  { grid-column: 1; grid-row: 3; }
+  .l-r32-01  { grid-column: 1; grid-row: 4; }
+  .l-r32-03  { grid-column: 1; grid-row: 5; }
+  .l-r32-11  { grid-column: 1; grid-row: 6; }
+  .l-r32-12  { grid-column: 1; grid-row: 7; }
+  .l-r32-09  { grid-column: 1; grid-row: 8; }
+  .l-r32-10  { grid-column: 1; grid-row: 9; }
 
-  .l-r16-1 { grid-column: 3; grid-row: 2 / span 2; }
-  .l-r16-2 { grid-column: 3; grid-row: 4 / span 2; }
-  .l-r16-3 { grid-column: 3; grid-row: 6 / span 2; }
-  .l-r16-4 { grid-column: 3; grid-row: 8 / span 2; }
+  .l-r16-1 { grid-column: 3; grid-row: 2 / span 2; }  /* R32_02 × R32_05 */
+  .l-r16-2 { grid-column: 3; grid-row: 4 / span 2; }  /* R32_01 × R32_03 */
+  .l-r16-3 { grid-column: 3; grid-row: 6 / span 2; }  /* R32_11 × R32_12 */
+  .l-r16-4 { grid-column: 3; grid-row: 8 / span 2; }  /* R32_09 × R32_10 */
 
-  .l-qf-1 { grid-column: 5; grid-row: 2 / span 4; }
-  .l-qf-2 { grid-column: 5; grid-row: 6 / span 4; }
+  .l-qf-1 { grid-column: 5; grid-row: 2 / span 4; }   /* R16_01 × R16_02 */
+  .l-qf-2 { grid-column: 5; grid-row: 6 / span 4; }   /* R16_05 × R16_06 */
 
-  .l-sf { grid-column: 7; grid-row: 2 / span 8; }
+  .l-sf { grid-column: 7; grid-row: 2 / span 8; }     /* QF_01 × QF_02 → SF_01 */
 
-  /* ===== Grid Positions - Right Half ===== */
-  .r-r32-09  { grid-column: 7; grid-row: 2; }
-  .r-r32-10  { grid-column: 7; grid-row: 3; }
-  .r-r32-11  { grid-column: 7; grid-row: 4; }
-  .r-r32-12  { grid-column: 7; grid-row: 5; }
-  .r-r32-13  { grid-column: 7; grid-row: 6; }
-  .r-r32-14  { grid-column: 7; grid-row: 7; }
-  .r-r32-15  { grid-column: 7; grid-row: 8; }
-  .r-r32-16  { grid-column: 7; grid-row: 9; }
+  /* ===== RIGHT HALF Grid Positions ===== */
+  .r-r32-04 { grid-column: 7; grid-row: 2; }
+  .r-r32-06 { grid-column: 7; grid-row: 3; }
+  .r-r32-07 { grid-column: 7; grid-row: 4; }
+  .r-r32-08 { grid-column: 7; grid-row: 5; }
+  .r-r32-14 { grid-column: 7; grid-row: 6; }
+  .r-r32-16 { grid-column: 7; grid-row: 7; }
+  .r-r32-13 { grid-column: 7; grid-row: 8; }
+  .r-r32-15 { grid-column: 7; grid-row: 9; }
 
-  .r-r16-5 { grid-column: 5; grid-row: 2 / span 2; }
-  .r-r16-6 { grid-column: 5; grid-row: 4 / span 2; }
-  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }
-  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }
+  .r-r16-5 { grid-column: 5; grid-row: 2 / span 2; }  /* R32_04 × R32_06 */
+  .r-r16-6 { grid-column: 5; grid-row: 4 / span 2; }  /* R32_07 × R32_08 */
+  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }  /* R32_14 × R32_16 */
+  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }  /* R32_13 × R32_15 */
 
-  .r-qf-3 { grid-column: 3; grid-row: 2 / span 4; }
-  .r-qf-4 { grid-column: 3; grid-row: 6 / span 4; }
+  .r-qf-3 { grid-column: 3; grid-row: 2 / span 4; }   /* R16_03 × R16_04 */
+  .r-qf-4 { grid-column: 3; grid-row: 6 / span 4; }   /* R16_07 × R16_08 */
 
-  .r-sf { grid-column: 1; grid-row: 2 / span 8; }
+  .r-sf { grid-column: 1; grid-row: 2 / span 8; }     /* QF_03 × QF_04 → SF_02 */
 
-  /* ===== SVG Connectors ===== */
-  .half .conn-svg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 5;
-    overflow: visible;
-  }
+  /* SVG */
+  .half .conn-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; overflow: visible; }
 
-  /* ===== Center (Final) ===== */
+  /* Center */
   .center-col {
-    flex: 0 0 170px;
-    max-width: 170px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 8px;
-    position: relative;
+    flex: 0 0 170px; max-width: 170px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 0 8px; position: relative;
     align-self: center;
   }
-
   .center-col::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    content: ''; position: absolute;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
+    width: 160px; height: 160px; border-radius: 50%;
     background: radial-gradient(circle, rgba(255,215,0,0.04) 0%, transparent 70%);
     pointer-events: none;
   }
-
-  .trophy-wrap {
-    position: relative;
-    margin-bottom: 8px;
-  }
-  .trophy {
-    font-size: 44px;
-    filter: drop-shadow(0 0 20px rgba(255,215,0,0.3));
-    animation: trophy-glow 2.5s ease-in-out infinite alternate;
-    display: block;
-  }
+  .trophy { font-size: 44px; filter: drop-shadow(0 0 20px rgba(255,215,0,0.3)); animation: trophy-glow 2.5s ease-in-out infinite alternate; display: block; margin-bottom: 8px; }
   @keyframes trophy-glow {
     0%   { filter: drop-shadow(0 0 14px rgba(255,215,0,0.2)); transform: scale(1); }
     100% { filter: drop-shadow(0 0 30px rgba(255,215,0,0.45)); transform: scale(1.03); }
   }
-
-  .final-label {
-    font-family: var(--f-mono);
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--gold);
-    letter-spacing: 0.25em;
-    margin-bottom: 8px;
-    opacity: 0.8;
-  }
-
+  .final-label { font-family: var(--f-mono); font-size: 10px; font-weight: 700; color: var(--gold); letter-spacing: 0.25em; margin-bottom: 8px; opacity: 0.8; }
   .final-card {
     background: linear-gradient(145deg, rgba(255,215,0,0.06), rgba(255,215,0,0.01));
-    border: 1.5px solid rgba(255,215,0,0.15);
-    border-radius: 8px;
-    padding: 14px 16px;
-    width: 100%;
-    text-align: center;
+    border: 1.5px solid rgba(255,215,0,0.15); border-radius: 8px;
+    padding: 14px 16px; width: 100%; text-align: center;
     backdrop-filter: blur(4px);
   }
-  .final-card .row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 3px 0;
-    justify-content: center;
-  }
+  .final-card .row { display: flex; align-items: center; gap: 6px; padding: 3px 0; justify-content: center; }
   .final-card .row .flag { font-size: 18px; min-width: 22px; }
   .final-card .row .nm { font-size: 13px; font-weight: 600; }
   .final-card .row.tbd .nm { color: rgba(255,255,255,0.15); font-style: italic; font-weight: 400; }
   .final-card .row.tbd .flag { opacity: 0.12; }
-  .final-meta {
-    font-family: var(--f-mono);
-    font-size: 9px;
-    color: var(--text-dim);
-    margin-top: 5px;
-    text-align: center;
-    letter-spacing: 0.04em;
-  }
-  .third {
-    margin-top: 14px;
-    font-family: var(--f-mono);
-    font-size: 9px;
-    color: rgba(255,255,255,0.12);
-    text-align: center;
-    padding: 5px 12px;
-    border: 1px dashed rgba(255,255,255,0.05);
-    border-radius: 6px;
-    background: rgba(255,255,255,0.008);
-    letter-spacing: 0.04em;
-  }
+  .final-meta { font-family: var(--f-mono); font-size: 9px; color: var(--text-dim); margin-top: 5px; text-align: center; letter-spacing: 0.04em; }
+  .third { margin-top: 14px; font-family: var(--f-mono); font-size: 9px; color: rgba(255,255,255,0.12); text-align: center; padding: 5px 12px; border: 1px dashed rgba(255,255,255,0.05); border-radius: 6px; background: rgba(255,255,255,0.008); letter-spacing: 0.04em; }
 
   @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
 
-  /* ===== Responsive ===== */
   @media (max-width: 1100px) {
     .half { grid-template-columns: 120px 22px 110px 22px 90px 22px 80px; gap: 6px 0; }
     .right-half { grid-template-columns: 80px 22px 90px 22px 110px 22px 120px; }
@@ -382,58 +258,58 @@
 
 <div class="head">
   <h1>🏆 2026 FIFA 世界杯 · 淘汰赛对阵</h1>
-  <p class="sub"><span>1/32决赛</span> → <span>1/8决赛</span> → <span>1/4决赛</span> → <span>半决赛</span> → <span>决赛</span></p>
+  <p class="sub">1/32决赛 → 1/8决赛 → 1/4决赛 → 半决赛 → 决赛</p>
 </div>
 
 <div class="bracket-outer">
 <div class="bracket-row">
 
-<!-- ============ LEFT HALF ============ -->
+<!-- ============ LEFT HALF =上半区 → SF-01 ============ -->
 <div class="half left-half" id="leftHalf">
   <div class="hdr hdr-r32">1/32 决赛</div>
   <div class="hdr hdr-r16">1/8 决赛</div>
   <div class="hdr hdr-qf">1/4 决赛</div>
   <div class="hdr hdr-sf">半决赛</div>
 
-  <!-- R32 (col 1) -->
-  <div class="m l-r32-02"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Estadio GNP</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西</span><span class="sc">-</span></div><div class="row"><span class="flag">🇯🇵</span><span class="nm">日本</span><span class="sc">-</span></div></div>
-  <div class="m l-r32-03"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">SoFi</span></div><div class="row"><span class="flag">🇳🇱</span><span class="nm">荷兰</span><span class="sc">-</span></div><div class="row"><span class="flag">🇲🇦</span><span class="nm">摩洛哥</span><span class="sc">-</span></div></div>
-  <div class="m l-r32-01"><div class="meta"><span class="tag tag-done">✅ 完赛</span><span class="loc">BMO Field</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span><span class="sc">1</span></div><div class="row"><span class="flag">🇿🇦</span><span class="nm">南非</span><span class="sc">0</span></div></div>
-  <div class="m l-r32-04"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Estadio BBVA</span></div><div class="row"><span class="flag">🇩🇪</span><span class="nm">德国</span><span class="sc">-</span></div><div class="row"><span class="flag">🇵🇾</span><span class="nm">巴拉圭</span><span class="sc">-</span></div></div>
-  <div class="m l-r32-05"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🇨🇮</span><span class="nm">科特迪瓦</span><span class="sc"></span></div><div class="row"><span class="flag">🇳🇴</span><span class="nm">挪威</span><span class="sc"></span></div></div>
-  <div class="m l-r32-06"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">Azteca</span></div><div class="row"><span class="flag">🇲🇽</span><span class="nm">墨西哥</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇨</span><span class="nm">厄瓜多尔</span><span class="sc"></span></div></div>
-  <div class="m l-r32-07"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">NRG</span></div><div class="row"><span class="flag">🇫🇷</span><span class="nm">法国</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇪</span><span class="nm">瑞典</span><span class="sc"></span></div></div>
-  <div class="m l-r32-08"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Arrowhead</span></div><div class="row"><span class="flag">🇧🇪</span><span class="nm">比利时</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇳</span><span class="nm">塞内加尔</span><span class="sc"></span></div></div>
+  <!-- R32 — DOM order determines connector pairing:
+       pairs: (02,05)→R16-1, (01,03)→R16-2, (11,12)→R16-3, (09,10)→R16-4 -->
+  <div class="m l-r32-02"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">NRG</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西</span><span class="sc">-</span></div><div class="row"><span class="flag">🇯🇵</span><span class="nm">日本</span><span class="sc">-</span></div></div>
+  <div class="m l-r32-05"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇨🇮</span><span class="nm">科特迪瓦</span><span class="sc"></span></div><div class="row"><span class="flag">🇳🇴</span><span class="nm">挪威</span><span class="sc"></span></div></div>
+
+  <div class="m l-r32-01"><div class="meta"><span class="tag tag-done">✅ 完赛</span><span class="loc">SoFi</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span><span class="sc">1</span></div><div class="row"><span class="flag">🇿🇦</span><span class="nm">南非</span><span class="sc">0</span></div></div>
+  <div class="m l-r32-03"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Estadio BBVA</span></div><div class="row"><span class="flag">🇳🇱</span><span class="nm">荷兰</span><span class="sc">-</span></div><div class="row"><span class="flag">🇲🇦</span><span class="nm">摩洛哥</span><span class="sc">-</span></div></div>
+
+  <div class="m l-r32-11"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">SoFi</span></div><div class="row"><span class="flag">🇪🇸</span><span class="nm">西班牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇦🇹</span><span class="nm">奥地利</span></div></div>
+  <div class="m l-r32-12"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">BMO</span></div><div class="row"><span class="flag">🇵🇹</span><span class="nm">葡萄牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇭🇷</span><span class="nm">克罗地亚</span></div></div>
+
+  <div class="m l-r32-09"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Levi's</span></div><div class="row"><span class="flag">🇺🇸</span><span class="nm">美国</span><span class="sc"></span></div><div class="row"><span class="flag">🇧🇦</span><span class="nm">波黑</span></div></div>
+  <div class="m l-r32-10"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="nm">英格兰</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇩</span><span class="nm">刚果</span></div></div>
 
   <!-- R16 (col 3) -->
-  <div class="m l-r16-1"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Akron</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西 / 日本</span></div><div class="row"><span class="flag">🇳🇱</span><span class="nm">荷兰 / 摩洛哥</span></div></div>
-  <div class="m l-r16-2"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Gillette</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div></div>
-  <div class="m l-r16-3"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">Levi's</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">科特迪瓦 / 挪威</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div></div>
-  <div class="m l-r16-4"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">BMO Field</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
+  <div class="m l-r16-1"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Lincoln Financial</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">巴西 / 日本</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">科特迪瓦 / 挪威</span></div></div>
+  <div class="m l-r16-2"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">NRG</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">荷兰 / 摩洛哥</span></div></div>
+  <div class="m l-r16-3"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">AT&T</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div></div>
+  <div class="m l-r16-4"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
 
   <!-- QF (col 5) -->
   <div class="m l-qf-1"><div class="meta"><span class="tag tag-tbd">7/9</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-02 胜者</span></div></div>
-  <div class="m l-qf-2"><div class="meta"><span class="tag tag-tbd">7/10</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-04 胜者</span></div></div>
+  <div class="m l-qf-2"><div class="meta"><span class="tag tag-tbd">7/10</span><span class="loc">SoFi</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-05 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-06 胜者</span></div></div>
 
   <!-- SF (col 7) -->
   <div class="m l-sf"><div class="meta"><span class="tag tag-tbd">7/14</span><span class="loc">AT&T Stadium</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-02 胜者</span></div></div>
 
   <svg class="conn-svg" id="connLeft">
-    <defs>
-      <linearGradient id="gradL" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0%" stop-color="rgba(255,215,0,0.08)"/>
-        <stop offset="50%" stop-color="rgba(255,215,0,0.20)"/>
-        <stop offset="100%" stop-color="rgba(255,215,0,0.32)"/>
-      </linearGradient>
-    </defs>
+    <defs><linearGradient id="gradL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,215,0,0.08)"/>
+      <stop offset="50%" stop-color="rgba(255,215,0,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,215,0,0.32)"/>
+    </linearGradient></defs>
   </svg>
 </div>
 
 <!-- ============ CENTER ============ -->
 <div class="center-col">
-  <div class="trophy-wrap">
-    <div class="trophy">🏆</div>
-  </div>
+  <div class="trophy">🏆</div>
   <div class="final-label">决 赛</div>
   <div class="final-card">
     <div class="row tbd"><span class="flag">—</span><span class="nm">上半区胜者</span></div>
@@ -443,7 +319,7 @@
   <div class="third">🥉 季军赛 7/18</div>
 </div>
 
-<!-- ============ RIGHT HALF ============ -->
+<!-- ============ RIGHT HALF =下半区 → SF-02 ============ -->
 <div class="half right-half" id="rightHalf">
   <div class="hdr hdr-sf">半决赛</div>
   <div class="hdr hdr-qf">1/4 决赛</div>
@@ -454,33 +330,34 @@
   <div class="m r-sf"><div class="meta"><span class="tag tag-tbd">7/15</span><span class="loc">Lumen Field</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-04 胜者</span></div></div>
 
   <!-- QF (col 3) -->
-  <div class="m r-qf-3"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-05 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-06 胜者</span></div></div>
+  <div class="m r-qf-3"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-04 胜者</span></div></div>
   <div class="m r-qf-4"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-07 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-08 胜者</span></div></div>
 
   <!-- R16 (col 5) -->
-  <div class="m r-r16-5"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">SoFi</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
-  <div class="m r-r16-6"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div></div>
-  <div class="m r-r16-7"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Estadio GNP</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">瑞士 / 阿尔及利亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">澳大利亚 / 埃及</span></div></div>
-  <div class="m r-r16-8"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">阿根廷 / 佛得角</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">哥伦比亚 / 加纳</span></div></div>
+  <div class="m r-r16-5"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">MetLife</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div></div>
+  <div class="m r-r16-6"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
+  <div class="m r-r16-7"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Mercedes-Benz</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">澳大利亚 / 埃及</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">哥伦比亚 / 加纳</span></div></div>
+  <div class="m r-r16-8"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">BC Place</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">瑞士 / 阿尔及利亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">阿根廷 / 佛得角</span></div></div>
 
-  <!-- R32 (col 7) -->
-  <div class="m r-r32-09"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Levi's</span></div><div class="row"><span class="flag">🇺🇸</span><span class="nm">美国</span><span class="sc"></span></div><div class="row"><span class="flag">🇧🇦</span><span class="nm">波黑</span></div></div>
-  <div class="m r-r32-10"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Hard Rock</span></div><div class="row"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="nm">英格兰</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇩</span><span class="nm">刚果</span></div></div>
-  <div class="m r-r32-11"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">Lumen</span></div><div class="row"><span class="flag">🇪🇸</span><span class="nm">西班牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇦🇹</span><span class="nm">奥地利</span></div></div>
-  <div class="m r-r32-12"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇵🇹</span><span class="nm">葡萄牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇭🇷</span><span class="nm">克罗地亚</span></div></div>
-  <div class="m r-r32-13"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🇨🇭</span><span class="nm">瑞士</span><span class="sc"></span></div><div class="row"><span class="flag">🇩🇿</span><span class="nm">阿尔及利亚</span></div></div>
-  <div class="m r-r32-14"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Estadio BBVA</span></div><div class="row"><span class="flag">🇦🇺</span><span class="nm">澳大利亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇬</span><span class="nm">埃及</span></div></div>
-  <div class="m r-r32-15"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">MetLife</span></div><div class="row"><span class="flag">🇦🇷</span><span class="nm">阿根廷</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇻</span><span class="nm">佛得角</span></div></div>
-  <div class="m r-r32-16"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Estadio Banorte</span></div><div class="row"><span class="flag">🇨🇴</span><span class="nm">哥伦比亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇬🇭</span><span class="nm">加纳</span></div></div>
+  <!-- R32 (col 7) — DOM order: (04,06)→R16-5, (07,08)→R16-6, (14,16)→R16-7, (13,15)→R16-8 -->
+  <div class="m r-r32-04"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Gillette</span></div><div class="row"><span class="flag">🇩🇪</span><span class="nm">德国</span><span class="sc">-</span></div><div class="row"><span class="flag">🇵🇾</span><span class="nm">巴拉圭</span><span class="sc">-</span></div></div>
+  <div class="m r-r32-06"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">Estadio Banorte</span></div><div class="row"><span class="flag">🇲🇽</span><span class="nm">墨西哥</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇨</span><span class="nm">厄瓜多尔</span></div></div>
+
+  <div class="m r-r32-07"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">MetLife</span></div><div class="row"><span class="flag">🇫🇷</span><span class="nm">法国</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇪</span><span class="nm">瑞典</span></div></div>
+  <div class="m r-r32-08"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Lumen</span></div><div class="row"><span class="flag">🇧🇪</span><span class="nm">比利时</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇳</span><span class="nm">塞内加尔</span></div></div>
+
+  <div class="m r-r32-14"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇦🇺</span><span class="nm">澳大利亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇬</span><span class="nm">埃及</span></div></div>
+  <div class="m r-r32-16"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Arrowhead</span></div><div class="row"><span class="flag">🇨🇴</span><span class="nm">哥伦比亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇬🇭</span><span class="nm">加纳</span></div></div>
+
+  <div class="m r-r32-13"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">BC Place</span></div><div class="row"><span class="flag">🇨🇭</span><span class="nm">瑞士</span><span class="sc"></span></div><div class="row"><span class="flag">🇩🇿</span><span class="nm">阿尔及利亚</span></div></div>
+  <div class="m r-r32-15"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Hard Rock</span></div><div class="row"><span class="flag">🇦🇷</span><span class="nm">阿根廷</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇻</span><span class="nm">佛得角</span></div></div>
 
   <svg class="conn-svg" id="connRight">
-    <defs>
-      <linearGradient id="gradR" x1="1" y1="0" x2="0" y2="0">
-        <stop offset="0%" stop-color="rgba(255,215,0,0.08)"/>
-        <stop offset="50%" stop-color="rgba(255,215,0,0.20)"/>
-        <stop offset="100%" stop-color="rgba(255,215,0,0.32)"/>
-      </linearGradient>
-    </defs>
+    <defs><linearGradient id="gradR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="rgba(255,215,0,0.08)"/>
+      <stop offset="50%" stop-color="rgba(255,215,0,0.20)"/>
+      <stop offset="100%" stop-color="rgba(255,215,0,0.32)"/>
+    </linearGradient></defs>
   </svg>
 </div>
 
@@ -493,20 +370,10 @@ function drawConnectors(svgId, halfEl, isRight) {
   if (!svg) return;
   const hRect = halfEl.getBoundingClientRect();
   svg.setAttribute('viewBox', `0 0 ${hRect.width} ${hRect.height}`);
-  svg.innerHTML = svg.innerHTML.replace(/<defs>.*?<\/defs>/s, '');
-  // restore defs
-  const d = document.createElementNS('http://www.w3.org/2000/svg','defs');
-  const g = document.createElementNS('http://www.w3.org/2000/svg','linearGradient');
-  g.id = isRight ? 'gradR' : 'gradL';
-  g.setAttribute('x1', isRight ? '1' : '0'); g.setAttribute('y1','0');
-  g.setAttribute('x2', isRight ? '0' : '1'); g.setAttribute('y2','0');
-  const s1 = document.createElementNS('http://www.w3.org/2000/svg','stop');
-  s1.setAttribute('offset','0%'); s1.setAttribute('stop-color','rgba(255,215,0,0.08)');
-  const s2 = document.createElementNS('http://www.w3.org/2000/svg','stop');
-  s2.setAttribute('offset','50%'); s2.setAttribute('stop-color','rgba(255,215,0,0.20)');
-  const s3 = document.createElementNS('http://www.w3.org/2000/svg','stop');
-  s3.setAttribute('offset','100%'); s3.setAttribute('stop-color','rgba(255,215,0,0.32)');
-  g.append(s1,s2,s3); d.append(g); svg.append(d);
+  // Clear but preserve defs
+  const defsEl = svg.querySelector('defs');
+  svg.innerHTML = '';
+  if (defsEl) svg.append(defsEl);
 
   const gap = 14;
   const gradId = isRight ? 'url(#gradR)' : 'url(#gradL)';
@@ -541,7 +408,9 @@ function drawConnectors(svgId, halfEl, isRight) {
     else r32.push(c);
   });
 
-  // R32 → R16
+  // R32 pairs by DOM order:
+  //   left: (0=02,1=05)→R16-1, (2=01,3=03)→R16-2, (4=11,5=12)→R16-3, (6=09,7=10)→R16-4
+  //   right: (0=04,1=06)→R16-5, (2=07,3=08)→R16-6, (4=14,5=16)→R16-7, (6=13,7=15)→R16-8
   for (let p = 0; p < 4; p++) {
     const a = r32[p*2], b = r32[p*2+1], r = r16[p];
     if (!a || !b || !r) continue;
@@ -581,10 +450,10 @@ function drawConnectors(svgId, halfEl, isRight) {
       if (!prev) continue;
       const pp = isRight ? getL(prev) : getR(prev);
       const my = (pp.y + rp.y) / 2;
-      ln(rp.x, rp.y, rp.x + dx, rp.y);
       ln(pp.x, pp.y, pp.x + dx, pp.y);
-      ln(rp.x + dx, rp.y, rp.x + dx, my);
+      ln(rp.x, rp.y, rp.x + dx, rp.y);
       ln(pp.x + dx, pp.y, pp.x + dx, my);
+      ln(rp.x + dx, rp.y, rp.x + dx, my);
       ln(pp.x + dx, my, ql.x - (isRight ? -gap : gap), my);
       ln(ql.x - (isRight ? -gap : gap), my, ql.x - (isRight ? -gap : gap), ql.y);
       ln(ql.x - (isRight ? -gap : gap), ql.y, ql.x, ql.y);
