@@ -143,47 +143,53 @@
   .tag-tbd { background: transparent; color: rgba(255,255,255,0.15); }
   .m .meta .loc { color: rgba(255,255,255,0.15); font-family: var(--f-mono); font-size: 7px; letter-spacing: 0.02em; }
 
-  /* ===== LEFT HALF (上半区 → SF-01) Grid Positions ===== */
-  /* per fixtures.json: SF_01 ← QF_01(R16_01+R16_02) + QF_02(R16_05+R16_06) */
-  .l-r32-02  { grid-column: 1; grid-row: 2; }
-  .l-r32-05  { grid-column: 1; grid-row: 3; }
-  .l-r32-01  { grid-column: 1; grid-row: 4; }
-  .l-r32-03  { grid-column: 1; grid-row: 5; }
-  .l-r32-11  { grid-column: 1; grid-row: 6; }
-  .l-r32-12  { grid-column: 1; grid-row: 7; }
-  .l-r32-09  { grid-column: 1; grid-row: 8; }
-  .l-r32-10  { grid-column: 1; grid-row: 9; }
+  /* ===== LEFT HALF (上半区 → QF Foxborough + QF Inglewood → SF Dallas) ===== */
+  /* Official FIFA bracket: R16 M89=(R32_01×02), M90=(R32_04×07) → QF M97 */
+  /*                       R16 M93=(R32_12×11), M94=(R32_09×08) → QF M98 */
+  /*                       SF M101 = M97 × M98 */
 
-  .l-r16-1 { grid-column: 3; grid-row: 2 / span 2; }  /* R32_02 × R32_05 */
-  .l-r16-2 { grid-column: 3; grid-row: 4 / span 2; }  /* R32_01 × R32_03 */
-  .l-r16-5 { grid-column: 3; grid-row: 6 / span 2; }  /* R32_11 × R32_12 → QF_02 */
-  .l-r16-6 { grid-column: 3; grid-row: 8 / span 2; }  /* R32_09 × R32_10 → QF_02 */
+  .l-r32-01 { grid-column: 1; grid-row: 2; }
+  .l-r32-02 { grid-column: 1; grid-row: 3; }
+  .l-r32-04 { grid-column: 1; grid-row: 4; }
+  .l-r32-07 { grid-column: 1; grid-row: 5; }
+  .l-r32-12 { grid-column: 1; grid-row: 6; }
+  .l-r32-11 { grid-column: 1; grid-row: 7; }
+  .l-r32-09 { grid-column: 1; grid-row: 8; }
+  .l-r32-08 { grid-column: 1; grid-row: 9; }
 
-  .l-qf-1 { grid-column: 5; grid-row: 2 / span 4; }   /* R16_01 × R16_02 */
-  .l-qf-2 { grid-column: 5; grid-row: 6 / span 4; }   /* R16_05 × R16_06 */
+  .l-r16-1 { grid-column: 3; grid-row: 2 / span 2; }  /* R32_01 × R32_02 → QF_01 */
+  .l-r16-2 { grid-column: 3; grid-row: 4 / span 2; }  /* R32_04 × R32_07 → QF_01 */
+  .l-r16-5 { grid-column: 3; grid-row: 6 / span 2; }  /* R32_12 × R32_11 → QF_02 */
+  .l-r16-6 { grid-column: 3; grid-row: 8 / span 2; }  /* R32_09 × R32_08 → QF_02 */
 
-  .l-sf { grid-column: 7; grid-row: 2 / span 8; }     /* QF_01 × QF_02 → SF_01 */
+  .l-qf-1 { grid-column: 5; grid-row: 2 / span 4; }   /* R16_01 × R16_02 → SF_01 */
+  .l-qf-2 { grid-column: 5; grid-row: 6 / span 4; }   /* R16_05 × R16_06 → SF_01 */
 
-  /* ===== RIGHT HALF (下半区 → SF-02) Grid Positions ===== */
-  /* per fixtures.json: SF_02 ← QF_03(R16_03+R16_04) + QF_04(R16_07+R16_08) */
-  .r-r32-04 { grid-column: 7; grid-row: 2; }
-  .r-r32-06 { grid-column: 7; grid-row: 3; }
-  .r-r32-07 { grid-column: 7; grid-row: 4; }
-  .r-r32-08 { grid-column: 7; grid-row: 5; }
-  .r-r32-14 { grid-column: 7; grid-row: 6; }
-  .r-r32-16 { grid-column: 7; grid-row: 7; }
+  .l-sf { grid-column: 7; grid-row: 2 / span 8; }     /* QF_01 × QF_02 → Final */
+
+  /* ===== RIGHT HALF (下半区 → QF Miami + QF Kansas City → SF Atlanta) ===== */
+  /* Official FIFA bracket: R16 M91=(R32_03×05), M92=(R32_06×10) → QF M99 */
+  /*                        R16 M95=(R32_15×14), M96=(R32_13×16) → QF M100 */
+  /*                        SF M102 = M99 × M100 */
+
+  .r-r32-03 { grid-column: 7; grid-row: 2; }
+  .r-r32-05 { grid-column: 7; grid-row: 3; }
+  .r-r32-06 { grid-column: 7; grid-row: 4; }
+  .r-r32-10 { grid-column: 7; grid-row: 5; }
+  .r-r32-15 { grid-column: 7; grid-row: 6; }
+  .r-r32-14 { grid-column: 7; grid-row: 7; }
   .r-r32-13 { grid-column: 7; grid-row: 8; }
-  .r-r32-15 { grid-column: 7; grid-row: 9; }
+  .r-r32-16 { grid-column: 7; grid-row: 9; }
 
-  .r-r16-3 { grid-column: 5; grid-row: 2 / span 2; }  /* R32_04 × R32_06 → QF_03 */
-  .r-r16-4 { grid-column: 5; grid-row: 4 / span 2; }  /* R32_07 × R32_08 → QF_03 */
-  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }  /* R32_14 × R32_16 → QF_04 */
-  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }  /* R32_13 × R32_15 → QF_04 */
+  .r-r16-3 { grid-column: 5; grid-row: 2 / span 2; }  /* R32_03 × R32_05 → QF_03 */
+  .r-r16-4 { grid-column: 5; grid-row: 4 / span 2; }  /* R32_06 × R32_10 → QF_03 */
+  .r-r16-7 { grid-column: 5; grid-row: 6 / span 2; }  /* R32_15 × R32_14 → QF_04 */
+  .r-r16-8 { grid-column: 5; grid-row: 8 / span 2; }  /* R32_13 × R32_16 → QF_04 */
 
-  .r-qf-3 { grid-column: 3; grid-row: 2 / span 4; }   /* R16_03 × R16_04 */
-  .r-qf-4 { grid-column: 3; grid-row: 6 / span 4; }   /* R16_07 × R16_08 */
+  .r-qf-3 { grid-column: 3; grid-row: 2 / span 4; }   /* R16_03 × R16_04 → SF_02 */
+  .r-qf-4 { grid-column: 3; grid-row: 6 / span 4; }   /* R16_07 × R16_08 → SF_02 */
 
-  .r-sf { grid-column: 1; grid-row: 2 / span 8; }     /* QF_03 × QF_04 → SF_02 */
+  .r-sf { grid-column: 1; grid-row: 2 / span 8; }     /* QF_03 × QF_04 → Final */
 
   /* SVG */
   .half .conn-svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; overflow: visible; }
@@ -262,36 +268,39 @@
 <div class="bracket-outer">
 <div class="bracket-row">
 
-<!-- ============ LEFT HALF =上半区 → SF-01 ============ -->
+<!-- ============ LEFT HALF (上半区 → SF Dallas) ============ -->
 <div class="half left-half" id="leftHalf">
   <div class="hdr hdr-r32">1/32 决赛</div>
   <div class="hdr hdr-r16">1/8 决赛</div>
   <div class="hdr hdr-qf">1/4 决赛</div>
   <div class="hdr hdr-sf">半决赛</div>
 
-  <!-- R32 — DOM order determines connector pairing:
-       pairs: (02,05)→R16-1, (01,03)→R16-2, (11,12)→R16-5, (09,10)→R16-6 -->
-  <div class="m l-r32-02"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">NRG</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西</span><span class="sc">-</span></div><div class="row"><span class="flag">🇯🇵</span><span class="nm">日本</span><span class="sc">-</span></div></div>
-  <div class="m l-r32-05"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇨🇮</span><span class="nm">科特迪瓦</span><span class="sc"></span></div><div class="row"><span class="flag">🇳🇴</span><span class="nm">挪威</span><span class="sc"></span></div></div>
-
+  <!-- R32 — DOM order: (01,02)→R16-1, (04,07)→R16-2, (12,11)→R16-5, (09,08)→R16-6 -->
+  <!-- Pair 1 → R16 M89 -->
   <div class="m l-r32-01"><div class="meta"><span class="tag tag-done">✅ 完赛</span><span class="loc">SoFi</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span><span class="sc">1</span></div><div class="row"><span class="flag">🇿🇦</span><span class="nm">南非</span><span class="sc">0</span></div></div>
-  <div class="m l-r32-03"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Estadio BBVA</span></div><div class="row"><span class="flag">🇳🇱</span><span class="nm">荷兰</span><span class="sc">-</span></div><div class="row"><span class="flag">🇲🇦</span><span class="nm">摩洛哥</span><span class="sc">-</span></div></div>
+  <div class="m l-r32-02"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">NRG</span></div><div class="row"><span class="flag">🇧🇷</span><span class="nm">巴西</span><span class="sc">-</span></div><div class="row"><span class="flag">🇯🇵</span><span class="nm">日本</span><span class="sc">-</span></div></div>
 
-  <div class="m l-r32-11"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">SoFi</span></div><div class="row"><span class="flag">🇪🇸</span><span class="nm">西班牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇦🇹</span><span class="nm">奥地利</span></div></div>
+  <!-- Pair 2 → R16 M90 (德国/法国在同一个R16!) -->
+  <div class="m l-r32-04"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Gillette</span></div><div class="row"><span class="flag">🇩🇪</span><span class="nm">德国</span><span class="sc">-</span></div><div class="row"><span class="flag">🇵🇾</span><span class="nm">巴拉圭</span><span class="sc">-</span></div></div>
+  <div class="m l-r32-07"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">MetLife</span></div><div class="row"><span class="flag">🇫🇷</span><span class="nm">法国</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇪</span><span class="nm">瑞典</span></div></div>
+
+  <!-- Pair 3 → R16 M93 -->
   <div class="m l-r32-12"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">BMO</span></div><div class="row"><span class="flag">🇵🇹</span><span class="nm">葡萄牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇭🇷</span><span class="nm">克罗地亚</span></div></div>
+  <div class="m l-r32-11"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">SoFi</span></div><div class="row"><span class="flag">🇪🇸</span><span class="nm">西班牙</span><span class="sc"></span></div><div class="row"><span class="flag">🇦🇹</span><span class="nm">奥地利</span></div></div>
 
+  <!-- Pair 4 → R16 M94 -->
   <div class="m l-r32-09"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Levi's</span></div><div class="row"><span class="flag">🇺🇸</span><span class="nm">美国</span><span class="sc"></span></div><div class="row"><span class="flag">🇧🇦</span><span class="nm">波黑</span></div></div>
-  <div class="m l-r32-10"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="nm">英格兰</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇩</span><span class="nm">刚果</span></div></div>
+  <div class="m l-r32-08"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Lumen</span></div><div class="row"><span class="flag">🇧🇪</span><span class="nm">比利时</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇳</span><span class="nm">塞内加尔</span></div></div>
 
-  <!-- R16 (col 3) — all feed SF_01: 01,02 → QF_01; 05,06 → QF_02 -->
-  <div class="m l-r16-1"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Lincoln Financial</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">巴西 / 日本</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">科特迪瓦 / 挪威</span></div></div>
-  <div class="m l-r16-2"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">NRG</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">荷兰 / 摩洛哥</span></div></div>
-  <div class="m l-r16-5"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">AT&T</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div></div>
-  <div class="m l-r16-6"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
+  <!-- R16 (col 3) → QF_01: R16_01×R16_02, QF_02: R16_05×R16_06 -->
+  <div class="m l-r16-1"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">NRG</span></div><div class="row win"><span class="flag">🇨🇦</span><span class="nm">加拿大</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">巴西 / 日本</span></div></div>
+  <div class="m l-r16-2"><div class="meta"><span class="tag tag-future">7/4</span><span class="loc">Lincoln Financial</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div></div>
+  <div class="m l-r16-5"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">AT&T</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">葡萄牙 / 克罗地亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">西班牙 / 奥地利</span></div></div>
+  <div class="m l-r16-6"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Lumen</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">美国 / 波黑</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
 
   <!-- QF (col 5) -->
-  <div class="m l-qf-1"><div class="meta"><span class="tag tag-tbd">7/9</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-02 胜者</span></div></div>
-  <div class="m l-qf-2"><div class="meta"><span class="tag tag-tbd">7/10</span><span class="loc">SoFi</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-05 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-06 胜者</span></div></div>
+  <div class="m l-qf-1"><div class="meta"><span class="tag tag-tbd">7/9</span><span class="loc">Foxborough</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-02 胜者</span></div></div>
+  <div class="m l-qf-2"><div class="meta"><span class="tag tag-tbd">7/10</span><span class="loc">Inglewood</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-05 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-06 胜者</span></div></div>
 
   <!-- SF (col 7) -->
   <div class="m l-sf"><div class="meta"><span class="tag tag-tbd">7/14</span><span class="loc">AT&T Stadium</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-01 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-02 胜者</span></div></div>
@@ -317,7 +326,7 @@
   <div class="third">🥉 季军赛 7/18</div>
 </div>
 
-<!-- ============ RIGHT HALF =下半区 → SF-02 ============ -->
+<!-- ============ RIGHT HALF (下半区 → SF Atlanta) ============ -->
 <div class="half right-half" id="rightHalf">
   <div class="hdr hdr-sf">半决赛</div>
   <div class="hdr hdr-qf">1/4 决赛</div>
@@ -325,30 +334,34 @@
   <div class="hdr hdr-r32">1/32 决赛</div>
 
   <!-- SF (col 1) -->
-  <div class="m r-sf"><div class="meta"><span class="tag tag-tbd">7/15</span><span class="loc">Lumen Field</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-04 胜者</span></div></div>
+  <div class="m r-sf"><div class="meta"><span class="tag tag-tbd">7/15</span><span class="loc">Mercedes-Benz</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">QF-04 胜者</span></div></div>
 
   <!-- QF (col 3) -->
-  <div class="m r-qf-3"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-04 胜者</span></div></div>
-  <div class="m r-qf-4"><div class="meta"><span class="tag tag-tbd">7/11</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-07 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-08 胜者</span></div></div>
+  <div class="m r-qf-3"><div class="meta"><span class="tag tag-tbd">7/11</span><span class="loc">Miami</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-03 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-04 胜者</span></div></div>
+  <div class="m r-qf-4"><div class="meta"><span class="tag tag-tbd">7/12</span><span class="loc">Kansas City</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-07 胜者</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">R16-08 胜者</span></div></div>
 
-  <!-- R16 (col 5) — all feed SF_02: 03,04 → QF_03; 07,08 → QF_04 -->
-  <div class="m r-r16-3"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">MetLife</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">德国 / 巴拉圭</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div></div>
-  <div class="m r-r16-4"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">法国 / 瑞典</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">比利时 / 塞内加尔</span></div></div>
-  <div class="m r-r16-7"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Mercedes-Benz</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">澳大利亚 / 埃及</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">哥伦比亚 / 加纳</span></div></div>
-  <div class="m r-r16-8"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">BC Place</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">瑞士 / 阿尔及利亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">阿根廷 / 佛得角</span></div></div>
+  <!-- R16 (col 5) → QF_03: R16_03×R16_04, QF_04: R16_07×R16_08 -->
+  <div class="m r-r16-3"><div class="meta"><span class="tag tag-future">7/5</span><span class="loc">MetLife</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">荷兰 / 摩洛哥</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">科特迪瓦 / 挪威</span></div></div>
+  <div class="m r-r16-4"><div class="meta"><span class="tag tag-future">7/6</span><span class="loc">Estadio Banorte</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">墨西哥 / 厄瓜多尔</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">英格兰 / 刚果</span></div></div>
+  <div class="m r-r16-7"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">Mercedes-Benz</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">阿根廷 / 佛得角</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">澳大利亚 / 埃及</span></div></div>
+  <div class="m r-r16-8"><div class="meta"><span class="tag tag-future">7/7</span><span class="loc">BC Place</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">瑞士 / 阿尔及利亚</span></div><div class="row tbd"><span class="flag">—</span><span class="nm">哥伦比亚 / 加纳</span></div></div>
 
-  <!-- R32 (col 7) — DOM order: (04,06)→R16-3, (07,08)→R16-4, (14,16)→R16-7, (13,15)→R16-8 -->
-  <div class="m r-r32-04"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Gillette</span></div><div class="row"><span class="flag">🇩🇪</span><span class="nm">德国</span><span class="sc">-</span></div><div class="row"><span class="flag">🇵🇾</span><span class="nm">巴拉圭</span><span class="sc">-</span></div></div>
+  <!-- R32 (col 7) — DOM order: (03,05)→R16-3, (06,10)→R16-4, (15,14)→R16-7, (13,16)→R16-8 -->
+  <!-- Pair 1 → R16 M91 -->
+  <div class="m r-r32-03"><div class="meta"><span class="tag tag-live">🔴 进行中</span><span class="loc">Estadio BBVA</span></div><div class="row"><span class="flag">🇳🇱</span><span class="nm">荷兰</span><span class="sc">-</span></div><div class="row"><span class="flag">🇲🇦</span><span class="nm">摩洛哥</span><span class="sc">-</span></div></div>
+  <div class="m r-r32-05"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇨🇮</span><span class="nm">科特迪瓦</span><span class="sc"></span></div><div class="row"><span class="flag">🇳🇴</span><span class="nm">挪威</span></div></div>
+
+  <!-- Pair 2 → R16 M92 -->
   <div class="m r-r32-06"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">Estadio Banorte</span></div><div class="row"><span class="flag">🇲🇽</span><span class="nm">墨西哥</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇨</span><span class="nm">厄瓜多尔</span></div></div>
+  <div class="m r-r32-10"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Mercedes-Benz</span></div><div class="row"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span><span class="nm">英格兰</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇩</span><span class="nm">刚果</span></div></div>
 
-  <div class="m r-r32-07"><div class="meta"><span class="tag tag-future">6/30</span><span class="loc">MetLife</span></div><div class="row"><span class="flag">🇫🇷</span><span class="nm">法国</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇪</span><span class="nm">瑞典</span></div></div>
-  <div class="m r-r32-08"><div class="meta"><span class="tag tag-future">7/1</span><span class="loc">Lumen</span></div><div class="row"><span class="flag">🇧🇪</span><span class="nm">比利时</span><span class="sc"></span></div><div class="row"><span class="flag">🇸🇳</span><span class="nm">塞内加尔</span></div></div>
-
-  <div class="m r-r32-14"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇦🇺</span><span class="nm">澳大利亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇬</span><span class="nm">埃及</span></div></div>
-  <div class="m r-r32-16"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Arrowhead</span></div><div class="row"><span class="flag">🇨🇴</span><span class="nm">哥伦比亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇬🇭</span><span class="nm">加纳</span></div></div>
-
-  <div class="m r-r32-13"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">BC Place</span></div><div class="row"><span class="flag">🇨🇭</span><span class="nm">瑞士</span><span class="sc"></span></div><div class="row"><span class="flag">🇩🇿</span><span class="nm">阿尔及利亚</span></div></div>
+  <!-- Pair 3 → R16 M95 -->
   <div class="m r-r32-15"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Hard Rock</span></div><div class="row"><span class="flag">🇦🇷</span><span class="nm">阿根廷</span><span class="sc"></span></div><div class="row"><span class="flag">🇨🇻</span><span class="nm">佛得角</span></div></div>
+  <div class="m r-r32-14"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">AT&T</span></div><div class="row"><span class="flag">🇦🇺</span><span class="nm">澳大利亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇪🇬</span><span class="nm">埃及</span></div></div>
+
+  <!-- Pair 4 → R16 M96 -->
+  <div class="m r-r32-13"><div class="meta"><span class="tag tag-future">7/2</span><span class="loc">BC Place</span></div><div class="row"><span class="flag">🇨🇭</span><span class="nm">瑞士</span><span class="sc"></span></div><div class="row"><span class="flag">🇩🇿</span><span class="nm">阿尔及利亚</span></div></div>
+  <div class="m r-r32-16"><div class="meta"><span class="tag tag-future">7/3</span><span class="loc">Arrowhead</span></div><div class="row"><span class="flag">🇨🇴</span><span class="nm">哥伦比亚</span><span class="sc"></span></div><div class="row"><span class="flag">🇬🇭</span><span class="nm">加纳</span></div></div>
 
   <svg class="conn-svg" id="connRight">
     <defs><linearGradient id="gradR" x1="1" y1="0" x2="0" y2="0">
@@ -368,7 +381,6 @@ function drawConnectors(svgId, halfEl, isRight) {
   if (!svg) return;
   const hRect = halfEl.getBoundingClientRect();
   svg.setAttribute('viewBox', `0 0 ${hRect.width} ${hRect.height}`);
-  // Clear but preserve defs
   const defsEl = svg.querySelector('defs');
   svg.innerHTML = '';
   if (defsEl) svg.append(defsEl);
@@ -406,9 +418,9 @@ function drawConnectors(svgId, halfEl, isRight) {
     else r32.push(c);
   });
 
-  // R32 pairs by DOM order:
-  //   left: (0=02,1=05)→R16-1, (2=01,3=03)→R16-2, (4=11,5=12)→R16-5, (6=09,7=10)→R16-6
-  //   right: (0=04,1=06)→R16-3, (2=07,3=08)→R16-4, (4=14,5=16)→R16-7, (6=13,7=15)→R16-8
+  // R32 pairs by DOM order (per official FIFA bracket):
+  //   left: (01,02)→R16-1, (04,07)→R16-2, (12,11)→R16-5, (09,08)→R16-6
+  //   right: (03,05)→R16-3, (06,10)→R16-4, (15,14)→R16-7, (13,16)→R16-8
   for (let p = 0; p < 4; p++) {
     const a = r32[p*2], b = r32[p*2+1], r = r16[p];
     if (!a || !b || !r) continue;
