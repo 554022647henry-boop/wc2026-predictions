@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_R16_06",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T16:59:32.540474",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.01,
+    "p_a_win": 0.422,
+    "p_draw": 0.0,
+    "p_b_win": 0.578,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.25,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "英格兰队小组赛3战全胜，而美国队最后一轮失利，士气上英格兰占优。",
+          "英格兰队历史上在世界杯淘汰赛（尤其是点球大战）有多次崩盘记录，心理包袱沉重。",
+          "美国队作为淘汰赛经验相对较少的一方，可能以挑战者心态轻装上阵，缺少历史包袱。"
+        ],
+        "reasoning": "英格兰队小组赛全胜的心理状态和阵容深度优于美国队，但其历史性的淘汰赛心理包袱与年轻美国队的挑战者心态形成对冲，且美国队队长作为老将可能稳定军心。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "England拥有更多大赛淘汰赛经验，点球手历史表现更可靠。",
+          "United States小组赛防守不稳，3场丢4球，面对England中前场可能吃紧。",
+          "Pulisic是唯一能改变比赛节奏的球员，但易被针对性盯防。"
+        ],
+        "reasoning": "England在中场控制力（Henderson/Rice）和点球手稳定性上占优，但美国队Pulisic的突破能力可能制造局部威胁。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 4.0,
+        "weight": 0.08,
+        "key_factors": [
+          "England小组赛三战全胜，展示了系统稳定性。",
+          "United States小组赛末轮失利，淘汰赛应变能力未经考验。",
+          "England历史点球大战成绩不佳，可能影响更衣室关键心态。"
+        ],
+        "reasoning": "信息有限，但英格兰历史点球大战心理压力是潜在弱点，而美国队缺乏足够的大赛逆境考验记录，双方核心稳定性均未明确，英格兰因球员梯队深度稍占微弱优势。"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.07,
+        "key_factors": [
+          "FIFA排名第4的英格兰远比第17的美国队整体档次高",
+          "英格兰拥有如队长和John Stones等多次征战世界杯淘汰赛的核心",
+          "美国队大名单中未列出像英格兰这样有欧冠决赛经验的顶级球星"
+        ],
+        "reasoning": "英格兰在FIFA排名（第4对第17）、淘汰赛经验（拥有多名英超欧冠常客）及阵容深度上全面占优，美国队虽有韧性但关键战球星成色不足。"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.0,
+        "b_score": 7.5,
+        "delta": -2.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "England小组赛末轮对阵加纳轮换了数名主力，体能更充沛",
+          "United States小组赛高开低走，末轮意外输球，状态和信心受挫",
+          "England小组赛未失一球（仅丢2球），防守远优于美国队（丢4球）",
+          "England在小组赛对阵强队克罗地亚时展现了控制力，美国队缺乏类似考验"
+        ],
+        "reasoning": "England在淘汰赛经验、战术纪律性和防守稳固性上明显优于美国，美国队小组末轮战败暴露防线问题，而英格兰核心球员通过末轮轮换获得了更多休息。"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "England胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "England胜",
+    "confidence": "中",
+    "reasons": [
+      "英格兰的绝对实力和近期状态均占优，哈里·凯恩作为世界级射手，在小组赛已展现高效得分能力，美国队防线将面临严峻考验。",
+      "英格兰中场创造力更强，福登和贝林厄姆的穿插跑动能撕开美国队的防守阵型，而美国队核心球员如普利西奇可能需要回撤防守，影响反击速度。",
+      "淘汰赛经验差距明显，英格兰队近年多次闯入四强，而美国队年轻阵容在关键比赛中的心理稳定性不足，情境压力评分英格兰占优。"
+    ],
+    "key_risk": "美国队若利用速度打反击，维阿或雷纳的突击可能让英格兰防线措手不及，尤其是英格兰边后卫前插后的空档。"
+  },
+  "actual_result": null
+}
