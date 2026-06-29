@@ -1,0 +1,139 @@
+{
+  "match_id": "WC2026_FINAL",
+  "round": "initial",
+  "round_label": "初始预测",
+  "timestamp": "2026-06-29T17:21:22.700331",
+  "pipeline": "v2_match_context",
+  "_internal": {
+    "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
+    "n_agents": 7,
+    "weighted_delta": -1.25,
+    "p_a_win": 0.389,
+    "p_draw": 0.0,
+    "p_b_win": 0.612,
+    "dimension_breakdown": [
+      {
+        "dimension": "F_tactical",
+        "label": "战术对位",
+        "a_score": 5.0,
+        "b_score": 7.0,
+        "delta": -2.0,
+        "confidence": 8.0,
+        "weight": 0.25,
+        "key_factors": [
+          "阿根廷小组赛8球1净胜球证明高效进攻",
+          "英格兰防守反击漏洞明显，中后卫与边后卫空当易被利用",
+          "淘汰赛换人深度和定位球经验阿根廷更占优",
+          "英格兰可能因慢热陷入被动，阿根廷领先收缩能力更强"
+        ],
+        "reasoning": "阿根廷进攻反击效率高于英格兰破密防能力，且英格兰后防空当易被对方锋线利用。"
+      },
+      {
+        "dimension": "E_context",
+        "label": "情境压力",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.2,
+        "key_factors": [
+          "Argentina小组赛3胜仅失1球，防守和心理韧性极强",
+          "England淘汰赛历史常有崩盘记录，如点球大战失利",
+          "梅西等老将能稳定军心，应对加时和点球的能力更强"
+        ],
+        "reasoning": "Argentina凭借全胜战绩和梅西的领袖气质，在淘汰赛压力下比England更稳，而England历史淘汰赛崩盘倾向是心理隐患。"
+      },
+      {
+        "dimension": "G_dna",
+        "label": "大赛DNA",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 2.0,
+        "weight": 0.18,
+        "key_factors": [],
+        "reasoning": "Error: 'str' object has no attribute 'get'"
+      },
+      {
+        "dimension": "D_keyplayer",
+        "label": "关键球员",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 6.0,
+        "weight": 0.15,
+        "key_factors": [
+          "Argentina小组赛全胜且净胜球+7，统治力明显",
+          "Argentina中场Rodrigo De Paul和Leandro Paredes大赛经验丰富，能有效控制节奏",
+          "England核心Declan Rice可能被对方针对性限制出球"
+        ],
+        "reasoning": "Argentina小组赛全胜进8失1展现统治力，中场De Paul和Paredes的控制力优于England的Rice和Henderson，且点球大战心理素质更可靠。"
+      },
+      {
+        "dimension": "B_chemistry",
+        "label": "球队化学",
+        "a_score": 5.5,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
+        "weight": 0.08,
+        "key_factors": [
+          "Argentina小组全胜进8失1，净胜球优势巨大，而England有平局且进攻效率一般",
+          "England在逆境中历史韧性不足（多次点球失利），阿根廷近年多次逆风翻盘凝聚力更强",
+          "Argentina门将扑点能力突出且梅西为稳定点球手，England点球手稳定性存疑"
+        ],
+        "reasoning": "Argentina全胜出线且攻防碾压，凝聚力与点球准备（大马丁内斯、梅西）明显优於England，后者小组平局暴露攻坚问题"
+      },
+      {
+        "dimension": "A_strength",
+        "label": "绝对实力",
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
+        "weight": 0.07,
+        "key_factors": [],
+        "reasoning": "数据不足，中性评分"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Argentina小组赛3战全胜进8失1，统治力远超England的2胜1平进6失2",
+          "England末轮0-0闷平加纳，进攻端效率下滑，队长凯恩未找到破局方案",
+          "Argentina在世界大赛决赛经验及球星个人能力上占优，梅西的淘汰赛关键球能力是硬通货"
+        ],
+        "reasoning": "Argentina小组赛全胜且净胜球+7，状态稳定性明显优于England末轮被加纳逼平的高开低走走势，且梅西为核心的攻击线更具淘汰赛决定性"
+      }
+    ],
+    "calibration_warning": false,
+    "calibration_note": "",
+    "judge_reasoning": "Argentina胜",
+    "data_sources": {
+      "squad": "ESPN_ROSTER✅",
+      "form": "ESPN_API✅",
+      "odds": null,
+      "standings": "ESPN_RESULTS✅（从已完赛结果计算）",
+      "lineup": null,
+      "tactics": "DEEPSEEK_HISTORICAL⚠️",
+      "wc_history": "DEEPSEEK_HISTORICAL⚠️"
+    }
+  },
+  "output": {
+    "说明": "对外展示到HTML",
+    "prediction": "Argentina胜",
+    "confidence": "中",
+    "reasons": [
+      "阿根廷在小组赛三战全胜进8球仅失1球，状态火热，而英格兰小组赛只赢下2场且失2球，防线稳定性存在疑问。",
+      "阿根廷前场核心如梅西（Messi）和劳塔罗（Lautaro Martinez）在淘汰赛阶段展现关键球能力，英格兰中卫组合面对灵活跑位时容易失位。",
+      "战术对位评分显示阿根廷以7.0对5.0明显占优，尤其在阵地战和反击转换中，阿根廷的边中结合打法能针对英格兰边后卫压上后的空当。"
+    ],
+    "key_risk": "阿根廷若过早领先后放松节奏，英格兰可能通过定位球（如马奎尔头球）或快速反击扳平，拖入点球大战对双方均不可预测。"
+  },
+  "actual_result": null
+}
