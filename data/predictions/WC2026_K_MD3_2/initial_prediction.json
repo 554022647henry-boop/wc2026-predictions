@@ -139,5 +139,8 @@
     ],
     "key_risk": "乌兹别克斯坦若利用定位球或远射先破门，刚果民主共和国的心理压力会骤增，可能因急躁而崩盘。"
   },
-  "actual_result": null
+  "actual_result": {
+    "outcome": "A_WIN",
+    "score": "3-1"
+  }
 }

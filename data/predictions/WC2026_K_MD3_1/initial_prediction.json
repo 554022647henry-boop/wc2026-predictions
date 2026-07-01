@@ -139,5 +139,8 @@
     ],
     "key_risk": "哥伦比亚若利用定位球机会（如J罗或夸德拉多的精准传中）早早破门，葡萄牙在急躁追分时可能暴露防线身后的空当，导致平局甚至爆冷"
   },
-  "actual_result": null
+  "actual_result": {
+    "outcome": "DRAW",
+    "score": "0-0"
+  }
 }

@@ -138,5 +138,8 @@
     ],
     "key_risk": "克罗地亚大赛DNA评分较低，若加纳利用身体优势和反击率先破门，可能迫使克罗地亚陷入急躁进攻的陷阱。"
   },
-  "actual_result": null
+  "actual_result": {
+    "outcome": "A_WIN",
+    "score": "2-1"
+  }
 }

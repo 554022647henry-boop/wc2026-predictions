@@ -138,5 +138,8 @@
     ],
     "key_risk": "奥地利若利用阿尔及利亚后防不稳定的弱点（首战丢3球）打出快速反击，可能客场偷胜，但阿尔及利亚主场级氛围可能激发意外表现。"
   },
-  "actual_result": null
+  "actual_result": {
+    "outcome": "DRAW",
+    "score": "3-3"
+  }
 }
