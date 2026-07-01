@@ -2,12 +2,12 @@
   "match_id": "WC2026_R16_07",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T21:17:52.972947",
+  "timestamp": "2026-07-01T17:06:22.760592",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": 1.27,
+    "weighted_delta": 1.43,
     "p_a_win": 0.612,
     "p_draw": 0.0,
     "p_b_win": 0.389,
@@ -18,31 +18,30 @@
         "a_score": 6.5,
         "b_score": 5.5,
         "delta": 1.0,
-        "confidence": 7.0,
+        "confidence": 6.0,
         "weight": 0.25,
         "key_factors": [
-          "阿根廷小组赛3胜进8失1，状态稳定且攻防效率高",
-          "埃及防线长期存在弧顶保护薄弱和边中结合部空档",
-          "淘汰赛保守趋势下阿根廷控球能力强于埃及，能更好地管理节奏",
-          "埃及反击速度可能利用阿根廷高位防线，但小组赛进攻数据（5球）显示终结效率一般"
+          "阿根廷小组赛3连胜进8失1展现统治力，但高位防线在面对速度型反击时存在明显隐患（2022世界杯对阵沙特和荷兰均因此丢球）",
+          "埃及防守弱点为禁区弧顶远射保护和边中结合部空当，这正对应阿根廷擅长的禁区前传切和远射进攻手段",
+          "埃及小组赛末轮对阵西班牙的平局证明其抗压能力，淘汰赛中反击战术（打身后直塞）比阿根廷的控球打法更契合单场决胜"
         ],
-        "reasoning": "阿根廷小组赛全胜且攻防数据优异，进攻端能利用埃及边后卫与中卫间空档及弧顶远射弱点，而埃及反击需依赖速度但整体组织精度不足，淘汰赛下阿根廷控场和定位球优势更突出。"
+        "reasoning": "阿根廷的控球压迫和弧顶远射能力恰好针对埃及的防守软肋（弧顶保护差），但埃及的快速反击战术（直塞打身后）能精准利用阿根廷高位防线身后的空间，淘汰赛的保守趋势使反击效率高于控球优势。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
         "a_score": 7.0,
-        "b_score": 5.5,
-        "delta": 1.5,
-        "confidence": 7.0,
+        "b_score": 5.0,
+        "delta": 2.0,
+        "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "Argentina小组赛3胜0平仅失1球，攻防平衡远超埃及的1胜2平",
-          "梅西等核心球员多次经历世界杯淘汰赛、点球大战和加时赛，心理素质极稳",
-          "埃及首次参加世界杯淘汰赛阶段比赛，经验空白且无顶级淘汰赛老将",
-          "埃及小组赛平局较多，缺乏硬仗胜利的心理锚点"
+          "Argentina小组赛3战全胜且仅失1球，攻防体系成熟",
+          "Egypt以小组第二出线，净胜球仅+2，面对强队时缺乏破局手段",
+          "梅西（队长）具备世界杯淘汰赛经验，能在高压下决定比赛",
+          "Egypt首次参加世界杯淘汰赛，心理素质存疑"
         ],
-        "reasoning": "阿根廷在淘汰赛经验、核心球员梅西的心理素质、小组赛统治力和休息天数上全面占优；埃及是淘汰赛新军且无历史包袱但抗压能力存疑。"
+        "reasoning": "Argentina小组赛全胜+净胜球7，梅西提供淘汰赛核心领导力；Egypt首次淘汰赛经验不足，进攻效率偏低"
       },
       {
         "dimension": "G_dna",
@@ -58,32 +57,31 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 7.0,
-        "b_score": 5.5,
+        "a_score": 6.5,
+        "b_score": 5.0,
         "delta": 1.5,
-        "confidence": 7.0,
+        "confidence": 6.0,
         "weight": 0.15,
         "key_factors": [
-          "阿根廷小组赛3战全胜进8失1，状态和稳定性占优",
-          "阿根廷中场帕雷德斯、德保罗、洛塞尔索组合经验丰富，控制力强",
-          "埃及中场法蒂、东加、阿舒尔缺乏大赛淘汰赛经验"
+          "Argentina小组赛3战全胜，进8失1，状态和攻防效率明显占优",
+          "Egypt小组赛5分，攻防表现平淡，无明确个人或战术亮点"
         ],
-        "reasoning": "阿根廷小组赛全胜且净胜球+7，中场控制力强于埃及，但埃及小组赛不败具备韧性。"
+        "reasoning": "Argentina小组赛全胜且净胜球+7，状态远优于埃及的1胜2平，但缺乏具体个人英雄历史或点球信息，优势有限。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.0,
-        "b_score": 5.0,
-        "delta": 0.0,
-        "confidence": 2.0,
+        "a_score": 6.5,
+        "b_score": 5.5,
+        "delta": 1.0,
+        "confidence": 7.0,
         "weight": 0.08,
         "key_factors": [
-          "Argentina finished top of Group J with 3 wins and a +7 goal difference, but no player or tactical specifics are given.",
-          "Egypt finished 2nd in Group G with 1 win and 2 draws, but goal difference and specific player details are missing.",
-          "No information on coach's knockout record, point-blank penalty history, or team cohesion under adversity for either side."
+          "Argentina小组赛3战全胜净胜球+7，攻防两端表现碾压，球队心态和稳定度极高",
+          "Egypt小组赛1胜2平仅进5球，进攻效率不足，淘汰赛面对强队可能缺乏破局手段",
+          "Argentina队长和前锋核心拥有丰富的大赛淘汰赛经验，在逆境中能稳定军心"
         ],
-        "reasoning": "Insufficient data: Egypt's group stage stats are cut off, and no specific player names or historical chemistry/coach details are available for either team from the provided context."
+        "reasoning": "Argentina小组全胜且仅失1球，核心组合稳定，淘汰赛经验丰富，而Egypt虽有韧性但缺少顶级大赛关键战应对能力"
       },
       {
         "dimension": "A_strength",
@@ -94,26 +92,28 @@
         "confidence": 8.0,
         "weight": 0.07,
         "key_factors": [
-          "阿根廷FIFA排名第1，小组赛全胜且仅失1球",
-          "梅西是大赛淘汰赛证明过的超级球员，可改变比赛走向",
-          "埃及淘汰赛经验和阵容深度明显不足，缺乏明星球员支撑"
+          "FIFA排名第1 vs 第29，整体实力碾压",
+          "Argentina小组赛全胜进8球，而Egypt仅1胜2平",
+          "Argentina多名球员有世界杯淘汰赛经验，如Emiliano Martínez和Nicolás Otamendi",
+          "Egypt缺乏顶级淘汰赛爆发点，防线可能被Argentina前场瓦解"
         ],
-        "reasoning": "阿根廷拥有梅西等多名世界杯淘汰赛经验球员，且阵容深度远超埃及，埃及在纸面和经验上均处于劣势。"
+        "reasoning": "Argentina在FIFA排名、阵容档次、淘汰赛经验和超级球星爆发力上全面占优，Emiliano Martínez和队长核心的冠军底蕴使优势明显。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
         "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
+        "b_score": 5.0,
+        "delta": 1.5,
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "Argentina近5场全胜，包括3-0胜阿尔及利亚、2-0胜奥地利，状态碾压",
-          "Argentina小组赛净胜球+7，攻防两端统治力远超Egypt的+3",
-          "Egypt末轮1-1平伊朗，未展现淘汰赛强度下的突破能力"
+          "Argentina小组赛3战全胜且净胜球+7，进攻端持续高效",
+          "Egypt末轮1-1平伊朗，未提前锁定出线导致主力未休整",
+          "Argentina末轮后有多场大胜热身赛，状态延续性强",
+          "Egypt小组赛仅1胜，面对比利时仅平局，攻坚能力存疑"
         ],
-        "reasoning": "Argentina小组赛全胜且末轮轮换主力，进攻核心如队长状态火热，而Egypt小组赛平局较多且缺乏硬仗胜利，体能和状态均处劣势。"
+        "reasoning": "埃及有2项具体劣势：小组赛胜率低且末轮未轮换主力，而阿根廷全胜+净胜球+7显示绝对统治力，核心球员赛前轮休充分。"
       }
     ],
     "calibration_warning": false,
@@ -132,13 +132,13 @@
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Argentina胜",
-    "confidence": "高",
+    "confidence": "中",
     "reasons": [
-      "Argentina在小组赛3战全胜进8球仅失1球，进攻端梅西领衔的锋线配合默契，而Egypt后防面对比利时曾丢4球，难以抵挡阿根廷的快速渗透。",
-      "中场核心德保罗的拼抢和直塞能力将压制埃及的攻防转换，埃及依赖萨拉赫的反击单兵作战，但阿根廷右路莫利纳的协防能有效限制其空间。",
-      "淘汰赛经验方面，Argentina全队多数球员经历过大赛决赛，心理素质占优；埃及小组赛两场平局暴露出关键战把握机会能力不足的问题。"
+      "阿根廷小组赛三战全胜进8球仅失1球，状态如日中天，梅西领衔的进攻线在面对埃及的防守时将制造巨大威胁。",
+      "埃及小组赛仅1胜，且面对比利时等强队时进攻乏力，难以突破阿根廷由埃米利亚诺·马丁内斯把守的球门。",
+      "阿根廷在战术对位和绝对实力上全面占优，尤其是中前场的压制力将迫使埃及防线频繁犯错。"
     ],
-    "key_risk": "若埃及全线收缩防守并利用萨拉赫的速度打反击，阿根廷久攻不下可能被拖入加时，但淘汰赛阶段阿根廷的替补深度更胜一筹。"
+    "key_risk": "埃及若摆出铁桶阵并利用反击偷得一球，比赛可能拖入点球大战，阿根廷淘汰赛心态尚需检验。"
   },
   "actual_result": null
 }
