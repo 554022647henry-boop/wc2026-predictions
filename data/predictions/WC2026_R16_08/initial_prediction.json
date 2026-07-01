@@ -2,46 +2,46 @@
   "match_id": "WC2026_R16_08",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T21:18:30.374843",
+  "timestamp": "2026-07-01T17:07:07.257499",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -0.73,
-    "p_a_win": 0.422,
+    "weighted_delta": -0.38,
+    "p_a_win": 0.451,
     "p_draw": 0.0,
-    "p_b_win": 0.578,
+    "p_b_win": 0.549,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
         "label": "战术对位",
         "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 6.0,
+        "b_score": 7.0,
+        "delta": -1.5,
+        "confidence": 7.0,
         "weight": 0.25,
         "key_factors": [
-          "Switzerland高位防线在面对快速纵向传球时容易被打穿，Colombia的前锋核心具备快速插身后能力",
-          "Colombia预选赛回追速度不足，但Switzerland并非以快速转换进攻为主要手段，威胁有限",
-          "淘汰赛反击效率更关键，Colombia的4-3-3阵型在由守转攻时更具纵向威胁",
-          "点球倾向：Colombia门将扑点历史表现优于瑞士门将，Colombia更愿意拖入点球大战"
+          "Switzerland高位防线面对快速纵向传球（Colombia核心套路）时容易被打穿，直接匹配Colombia的进攻强项",
+          "淘汰赛保守趋势下，Colombia的反击效率价值高于Switzerland的控球优势",
+          "Colombia防线回追速度不足的弱点在Switzerland缺乏明确快速打击手段的情况下不易被惩罚",
+          "Switzerland对禁区前沿远射防守注意力不集中，Colombia若有擅长远射的球员可额外利用"
         ],
-        "reasoning": "Colombia的进攻能利用Switzerland高位防线身后空档，且点球准备更充分；Switzerland防守弱点被针对性克制。"
+        "reasoning": "Colombia的反击速度（利用Switzerland高位防线空档）在淘汰赛保守环境下比Switzerland的阵地进攻更具实效性，且定位球防守漏洞在Switzerland一侧更明显。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 5.0,
-        "b_score": 6.5,
-        "delta": -1.5,
-        "confidence": 6.0,
+        "a_score": 6.0,
+        "b_score": 5.5,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.2,
         "key_factors": [
-          "Colombia球队整体大赛经验更丰富，多次参加世界杯淘汰赛",
-          "Switzerland小组赛末轮平局，淘汰赛关键战应变能力待验证",
-          "Colombia的防守反击效率可能针对Switzerland三后卫体系的边路空档"
+          "Switzerland小组赛2胜1平不败，展现抗压能力",
+          "Switzerland拥有多名淘汰赛经验丰富的核心球员（如队长及Shaqiri等老将），Colombia缺乏明确大赛核心",
+          "Colombia小组赛虽不败但对手强度不明，心理层面未经历高压考验"
         ],
-        "reasoning": "Colombia凭借更具决定性进攻手段（如队长J罗的组织）和大赛心理优势略微领先，Switzerland整体均衡但缺乏爆点。"
+        "reasoning": "Switzerland凭借小组不败出线的稳健表现和更丰富的淘汰赛经验（队长级老将压阵），心理素质略优于历史稳定性不足的Colombia。"
       },
       {
         "dimension": "G_dna",
@@ -57,33 +57,33 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 6.0,
-        "b_score": 5.5,
+        "a_score": 6.5,
+        "b_score": 6.0,
         "delta": 0.5,
-        "confidence": 5.0,
+        "confidence": 6.0,
         "weight": 0.15,
         "key_factors": [
-          "Switzerland小组7分出线、攻防两端更稳定，Colombia无小组赛信息支撑",
-          "Granit Xhaka具备大赛中场控场经验，James Rodríguez为Colombia唯一确定核心",
-          "双方黄牌/点球信息均缺失，无法评估淘汰赛具体风险差异"
+          "瑞士小组赛2胜1平积7分，哥伦比亚仅4分以小组第三出线",
+          "Granit Xhaka和Remo Freuler的中场组合稳定性高于哥伦比亚James Rodríguez的伤病影响",
+          "哥伦比亚2014世界杯打进8强，淘汰赛经验更丰富",
+          "点球大战中James Rodríguez是可靠点球手，瑞士无明确顶级点球手"
         ],
-        "reasoning": "Switzerland小组赛稳定性和中场控制力（Xhaka、Freuler）略胜Colombia一轮游背景，但James Rodríguez的个人能力使差距不大。"
+        "reasoning": "瑞士小组赛不败出线且中场控制力强（Granit Xhaka、Remo Freuler）优于哥伦比亚James Rodríguez状态不明的进攻线，但哥伦比亚历史淘汰赛经验略占优且点球手储备更可靠。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
+        "a_score": 6.0,
+        "b_score": 6.0,
+        "delta": 0.0,
         "confidence": 4.0,
         "weight": 0.08,
         "key_factors": [
-          "Colombia过往大赛中在落后时展现过顽强反弹能力，队内有多次参与点球大战的核心球员",
-          "Switzerland小组赛3场不败但对手整体实力一般，未经历真正逆境考验",
-          "Colombia教练执教生涯中对淘汰赛节奏把控有成功先例，具备临场变招历史",
-          "Switzerland教练缺乏高压淘汰赛的换人及战术调整可参考记录"
+          "Switzerland小组第一出线，包含关键战胜利，团队韧性已验证",
+          "Colombia通过附加赛晋级，净胜球优势明显但淘汰赛经验不足",
+          "两队核心组合年限未知，整体稳定性相似"
         ],
-        "reasoning": "Colombia因更成熟的更衣室文化和淘汰赛经验占据优势，Switzerland虽小组赛稳定但缺乏大场面凝聚力验证"
+        "reasoning": "双方教练已确认体系，小组表现均稳定，但缺乏关键球员点球和逆境历史数据，难分明显优势"
       },
       {
         "dimension": "A_strength",
@@ -94,26 +94,26 @@
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "Colombia拥有Ospina、Mina、Sánchez等多名有世界杯淘汰赛经验的球员，Switzerland只有Rodríguez等少数球员有类似经历",
-          "Colombia小组赛对阵强队展现了更好的抗压能力，而Switzerland小组对手实力偏弱",
-          "Colombia替补深度更足，尤其在边路和前锋位置有更多变招，适合加时赛轮换"
+          "哥伦比亚FIFA排名第13高于瑞士第19，整体阵容实力更优",
+          "Yerry Mina和Davinson Sánchez有世界杯淘汰赛进球或关键表现",
+          "哥伦比亚替补深度（Mojica、Arias）可应对加时赛第4次换人，瑞士替补（如Cömert）大赛经验少"
         ],
-        "reasoning": "Colombia凭借更丰富的淘汰赛经验（Ospina、Mina有世界杯淘汰赛出场）和更强的阵容深度（替补席有Arias、Montero等）占据明显优势，Switzerland虽有Akanji领衔防线但缺乏爆点。"
+        "reasoning": "哥伦比亚凭借Yerry Mina和Davinson Sánchez的淘汰赛经验及替补深度占据优势，瑞士小组赛强势但关键战经验不足。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
-        "a_score": 6.0,
+        "a_score": 6.5,
         "b_score": 6.0,
-        "delta": 0.0,
-        "confidence": 7.0,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.07,
         "key_factors": [
-          "Switzerland小组赛2胜1平，末轮2-1击败Canada展现进攻状态",
-          "Colombia小组赛1胜2平，末轮0-0平Portugal暴露进攻效率问题",
-          "两队均无加时消耗，核心球员如Switzerland队长和Colombia前锋核心休息相对充分"
+          "Switzerland小组赛2胜1平不败，末轮关键胜Canada",
+          "Colombia末轮0-0平Portugal，进攻效率稍低",
+          "双方均无加时消耗，体能储备基本均等"
         ],
-        "reasoning": "Switzerland小组赛渐入佳境，但Colombia防守稳固，双方消耗接近，实力差距极小。"
+        "reasoning": "Switzerland小组赛状态更连续（渐入佳境），Colombia末轮攻击端略显平淡，但双方纸面实力接近，Switzerland仅有轻微优势。"
       }
     ],
     "calibration_warning": false,
@@ -132,13 +132,13 @@
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Colombia胜",
-    "confidence": "中",
+    "confidence": "低",
     "reasons": [
-      "哥伦比亚的边路快马在反击中极具威胁，杨韦尔·米纳和杜万·萨帕塔的冲击力将让瑞士老迈的防线疲于奔命。",
-      "瑞士中场核心扎卡虽然调度稳定，但面对哥伦比亚的凶狠逼抢和快速转换，容易丢失球权，给对手制造直接进攻机会。",
-      "哥伦比亚在小组赛三战仅失1球，防守体系严密，而瑞士进攻依赖个别球员灵光一现，难以持续撕破对手防线。"
+      "哥伦比亚的防线整体性更强，面对瑞士的快速边路进攻，队长耶里·米纳的空中优势能有效限制瑞士头球威胁。",
+      "瑞士中场核心扎卡在高压逼抢下容易失误，而哥伦比亚的杜万·萨帕塔和哈梅斯·罗德里格斯擅长打反击转换，这将成为关键突破口。",
+      "瑞士小组赛末轮消耗较大，而哥伦比亚早早锁定出线后有轮换，体能和战术执行连贯性上略占上风。"
     ],
-    "key_risk": "瑞士若率先取得进球并收缩防线，哥伦比亚将陷入阵地战泥潭，此时反击威胁尽失，瑞士的空中优势可能成为爆冷转折。"
+    "key_risk": "哥伦比亚淘汰赛经验不足，如果开局被瑞士的高位压迫打乱节奏，可能重演小组赛对阵葡萄牙时的被动局面。"
   },
   "actual_result": null
 }
