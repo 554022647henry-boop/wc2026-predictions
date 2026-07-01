@@ -2,15 +2,15 @@
   "match_id": "WC2026_SF_02",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T21:43:04.466872",
+  "timestamp": "2026-07-01T17:11:37.957942",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": -1.28,
-    "p_a_win": 0.389,
+    "weighted_delta": -0.77,
+    "p_a_win": 0.422,
     "p_draw": 0.0,
-    "p_b_win": 0.612,
+    "p_b_win": 0.578,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
@@ -20,23 +20,29 @@
         "delta": -1.0,
         "confidence": 6.0,
         "weight": 0.25,
-        "key_factors": [],
-        "reasoning": "率，似乎略高于**英格兰的进攻**对**阿根廷防守弱点**（惧怕冲击）的打击效率。但英格兰在身体和定位球（淘汰赛翻倍权重）上的优势非常巨大。\n\n##SCORES##\n{\n  \"team_a_score\": 5.5,\n  \"team_b_score\": 6.5,\n  \"confidence\": 6,\n"
+        "key_factors": [
+          "阿根廷小组赛3胜0平进8失1，净胜球+7，状态更稳定；巴西2胜1平进7失1，略有瑕疵。",
+          "巴西防守弱点（边后卫压上后空档）与阿根廷反击强点（梅西推动）高度匹配。",
+          "阿根廷门将（马丁内斯）扑点能力是淘汰赛额外保险，巴西门将（阿利松）扑点无明确优势。",
+          "淘汰赛保守趋势下，阿根廷更喜欢控制节奏而非无效控球，更符合单场决胜逻辑。"
+        ],
+        "reasoning": "阿根廷的反击效率和梅西的淘汰赛关键球能力比巴西过早压上暴露空档的打法更适合单场决胜模式。"
       },
       {
         "dimension": "E_context",
         "label": "情境压力",
-        "a_score": 4.5,
+        "a_score": 6.0,
         "b_score": 6.5,
-        "delta": -2.0,
+        "delta": -0.5,
         "confidence": 7.0,
         "weight": 0.2,
         "key_factors": [
-          "阿根廷队内有大量连续参加多届淘汰赛的老将，心理承受力强。",
-          "英格兰队中多名核心球员（如贝林厄姆、萨卡）首次出战世界杯淘汰赛，高压下表现存在不确定性。",
-          "阿根廷在历史世界杯点球大战中胜率高，具备'加时赛DNA'的传统。"
+          "Messi淘汰赛历史表现稳定，且对决赛有强烈渴望",
+          "Brazil在关键战历史中有心理波动记录",
+          "小组赛双方均未经历加时消耗，体能对等",
+          "双方无关键球员停赛风险，可全力出战"
         ],
-        "reasoning": "阿根廷拥有梅西等老将，淘汰赛经验与心理素质远超英格兰年轻阵容，且历史点球大战优势明显。"
+        "reasoning": "Argentina凭借核心球员在高压赛事的领袖气质和近期交锋中更稳定的淘汰赛表现，在心理层面占据轻微但明确的优势。"
       },
       {
         "dimension": "G_dna",
@@ -53,61 +59,62 @@
         "dimension": "D_keyplayer",
         "label": "关键球员",
         "a_score": 5.5,
-        "b_score": 7.0,
-        "delta": -1.5,
+        "b_score": 6.5,
+        "delta": -1.0,
         "confidence": 6.0,
         "weight": 0.15,
         "key_factors": [
-          "Argentina小组赛3胜0平，进8失1，状态强势；England小组赛2胜1平，有平局。",
-          "Argentina有梅西（淘汰赛多次一己之力改变比赛历史），England缺乏对应级别的英雄人物。",
-          "Argentina核心球员如De Paul和Paredes可能无黄牌担忧，而England的Henderson和Rice在防守压力下可能动作更保守。"
+          "阿根廷小组赛3战全胜，巴西仅2胜1平，阿根廷攻防效率更高",
+          "Rodrigo De Paul和Leandro Paredes的中场组合在高压比赛中展现硬度和出球能力，而巴西Casemiro状态不明",
+          "阿根廷历史上在淘汰赛点球大战中成功率较高，心理素质占优"
         ],
-        "reasoning": "Argentina凭借梅西的淘汰赛英雄历史和小组赛全胜状态，在关键球员个人能力和团队稳定性上明显优于England，后者缺少同等级别的决定性球员。"
+        "reasoning": "阿根廷小组全胜且中场De Paul/Paredes的拦截和推进能力略优于巴西Casemiro/Fabinho的不确定状态，阿根廷淘汰赛抗压与点球经验更丰富。"
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 6.0,
-        "b_score": 6.5,
-        "delta": -0.5,
+        "a_score": 5.0,
+        "b_score": 6.0,
+        "delta": -1.0,
         "confidence": 5.0,
         "weight": 0.08,
         "key_factors": [
-          "Argentina小组赛全胜，仅失1球，核心配合更稳定",
-          "England在点球历史上曾崩盘，而Argentina门将扑点能力出色",
-          "Argentina教练斯卡洛尼有成功淘汰赛换人记录，England教练南门在决赛中换人时机曾受质疑"
+          "Argentina小组赛3战全胜零失球，防守纪律性极强，利于淘汰赛紧凑局面的心理优势",
+          "Brazil小组赛末轮平Morocco暴露控制力不足，面对高强度逼抢可能出现混乱",
+          "Argentina门将埃米利亚诺·马丁内斯在点球大战中证明过决定性作用，Brazil门将缺乏点球大战高光表现",
+          "Brazil自2014年后在大赛淘汰赛面对强队时(2018对比利时、2022对克罗地亚)均出现关键失误"
         ],
-        "reasoning": "Argentina全胜出线且防守稳健，历史凝聚力更强，门将扑点能力突出，但England在教练经验上有改善。"
+        "reasoning": "Argentina近年淘汰赛逆风翻盘记录（2022世界杯点球胜荷兰、法国）与内马尔仍未完全恢复巅峰状态形成对比，Brazil历史性惨败阴影未消"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 5.5,
+        "a_score": 6.0,
         "b_score": 7.0,
-        "delta": -1.5,
-        "confidence": 7.0,
+        "delta": -1.0,
+        "confidence": 8.0,
         "weight": 0.07,
         "key_factors": [
-          "Argentina FIFA排名第1且小组赛3胜0平0负进8失1，统治力强于England的2胜1平进6失2",
-          "Argentina核心球员（Emiliano Martínez、Cristian Romero、Nicolás Otamendi等）有世界杯淘汰赛夺冠经历，England仅部分球员有四强经验",
-          "Argentina替补深度和进攻组合更具爆发力，England缺少一己之力改变比赛走向的超级球星"
+          "阿根廷FIFA排名第1且世界杯小组赛三战全胜（+7净胜球），巴西仅排第6且小组赛平局",
+          "阿根廷拥有在世界杯淘汰赛贡献6球4助攻的梅西，巴西核心内马尔在2018世界杯淘汰赛0进球",
+          "阿根廷阵容经历了2021美洲杯和2022世界杯的淘汰赛考验，巴西近年大赛未突破过八强"
         ],
-        "reasoning": "Argentina在FIFA排名第1、小组全胜（进8失1）、以及拥有多名世界杯淘汰赛经验球员（如Emiliano Martínez、Cristian Romero），相较England的稳定但缺乏超级爆发力阵容占优"
+        "reasoning": "阿根廷凭借梅西的淘汰赛统治力（8场6球）和连续大赛决赛经验（2021美洲杯、2022世界杯）占据明显上风，巴西虽有整体身价优势但淘汰赛关键战心理层面略逊一筹。"
       },
       {
         "dimension": "C_form",
         "label": "近期状态",
         "a_score": 5.5,
-        "b_score": 6.5,
-        "delta": -1.0,
-        "confidence": 6.0,
+        "b_score": 6.0,
+        "delta": -0.5,
+        "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "Argentina小组赛3战全胜进8失1，末轮轮换后仍3-1获胜，状态稳定",
-          "England小组赛末轮0-0平Ghana，进攻效率不足，且近5场仅2场净胜1球以上",
-          "England小组赛轨迹为W-D-W，高开低走，末轮未展示淘汰赛强度"
+          "Argentina小组赛3战全胜进8失1，状态更稳定",
+          "Brazil小组赛末轮主力打满全场，消耗大于Argentina",
+          "Argentina末轮仅梅西等少数核心打满，轮换幅度更大"
         ],
-        "reasoning": "Argentina小组赛全胜且失球仅1个，进攻端压制力强于England起伏的状态，但England防守稳固（2场零封）可能限制对手节奏。"
+        "reasoning": "Argentina小组赛全胜且末轮轮换更充分，相比Brazil消耗略低，梅西状态稳定是关键优势"
       }
     ],
     "calibration_warning": false,
@@ -126,13 +133,13 @@
   "output": {
     "说明": "对外展示到HTML",
     "prediction": "Argentina胜",
-    "confidence": "中",
+    "confidence": "低",
     "reasons": [
-      "阿根廷小组赛三战全胜进8球仅失1球，状态火热，而英格兰更多依赖定位球和防守反击，很难在运动战中撕开阿根廷防线。",
-      "梅西在关键比赛中往往能决定比赛走势，他的盘带和传球创造力将是英格兰后卫群的最大考验，而英格兰缺乏同等级别的超级巨星。",
-      "英格兰在半决赛的大赛压力下历史表现不佳，本届世界杯三场淘汰赛对手瑞士、波兰和乌拉圭实力有限，尚未经受像阿根廷这样具备冠军基因的强队考验。"
+      "Enzo Fernández在中场的扫荡和传球调度将有效切断Brazil核心球员的推进线路，迫使对手失误",
+      "Lautaro Martínez近期状态火热，他的跑位和抢点能力能撕开Brazil防线，尤其针对边后卫和门将之间的空档",
+      "Brazil在淘汰赛中的防线稳定性存疑，小组赛阶段曾出现被弱旅反击得分的情况，面对Argentina的快速转换容易崩盘"
     ],
-    "key_risk": "若英格兰利用定位球由核心中卫头球破门先领先，阿根廷可能陷入急躁情绪，进攻效率下降，从而被拖入点球大战并输掉比赛。"
+    "key_risk": "如果Brazil利用Alisson的长传直接找前锋，打Argentina身后空档，可能抓住防线上提的瞬间制造冷门"
   },
   "actual_result": null
 }
