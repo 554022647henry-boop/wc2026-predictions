@@ -2,15 +2,15 @@
   "match_id": "WC2026_QF_02",
   "round": "initial",
   "round_label": "初始预测",
-  "timestamp": "2026-06-29T21:19:45.794878",
+  "timestamp": "2026-07-01T17:08:36.790752",
   "pipeline": "v2_match_context",
   "_internal": {
     "说明": "v2流水线：KB v2 + ESPN实时，无DeepSeek数据补充",
     "n_agents": 7,
-    "weighted_delta": 0.08,
-    "p_a_win": 0.534,
+    "weighted_delta": -0.15,
+    "p_a_win": 0.451,
     "p_draw": 0.0,
-    "p_b_win": 0.466,
+    "p_b_win": 0.549,
     "dimension_breakdown": [
       {
         "dimension": "F_tactical",
@@ -18,15 +18,14 @@
         "a_score": 5.5,
         "b_score": 6.5,
         "delta": -1.0,
-        "confidence": 7.0,
+        "confidence": 6.0,
         "weight": 0.25,
         "key_factors": [
-          "西班牙中后卫转身速度慢，易被比利时直塞球和快速反击打穿",
-          "比利时淘汰赛经验丰富，擅于控制节奏和收缩防守",
-          "西班牙缺少高效支点前锋，破密集防守手段有限",
-          "比利时在定位球和反击转换效率上明显强于西班牙"
+          "Spain小组赛3场零封但对手偏弱，防线回追速度慢的隐患未受充分考验",
+          "Belgium拥有速度型前锋，可针对Spain中后卫转身慢的弱点打直塞反击",
+          "淘汰赛保守趋势下，Belgium的反击效率高于Spain的无效控球"
         ],
-        "reasoning": "比利时在淘汰赛单场决胜中利用西班牙防线回追慢的弱点打快速反击更具优势，且拥有更成熟的防反体系和定位球战术，西班牙破密防能力存疑。"
+        "reasoning": "Belgium的快速反击体系更适应淘汰赛保守节奏，能利用Spain中后卫转身慢的弱点，而Spain的控球面对比利时收缩防线可能效率降低"
       },
       {
         "dimension": "E_context",
@@ -37,12 +36,12 @@
         "confidence": 6.0,
         "weight": 0.2,
         "key_factors": [
-          "西班牙小组赛3场零失球，防守体系成熟",
-          "比利时1胜2平进3球，进攻效率偏低",
-          "比利时淘汰赛历史心理包袱较重（2018半决赛等）",
-          "双方休息时间相同，无加时消耗差异"
+          "西班牙小组赛3场0失球，防守信心和稳定性极高",
+          "比利时黄金一代有2018半决赛、2022小组出局等淘汰赛崩盘标签",
+          "比利时核心德布劳内情绪波动大，高压下领导力存疑",
+          "西班牙缺少世界杯淘汰赛经验，关键球员首次参赛"
         ],
-        "reasoning": "西班牙防守稳固+淘汰赛心理韧性优于比利时，比利时进攻低效且有历史崩盘标签，但双方纸面实力接近。"
+        "reasoning": "西班牙小组零失球+无大赛崩盘历史对比利时多次淘汰赛崩溃更稳定，但年轻阵容经验不足部分抵消优势"
       },
       {
         "dimension": "G_dna",
@@ -58,68 +57,67 @@
       {
         "dimension": "D_keyplayer",
         "label": "关键球员",
-        "a_score": 6.0,
-        "b_score": 5.0,
-        "delta": 1.0,
-        "confidence": 4.0,
+        "a_score": 6.5,
+        "b_score": 6.0,
+        "delta": 0.5,
+        "confidence": 5.0,
         "weight": 0.15,
         "key_factors": [
-          "西班牙小组赛零失球表现（2胜1平，进5失0）",
-          "比利时小组赛仅1胜2平，进攻效率不足",
-          "双方关键球员状态信息缺失，无法评估即战力差异"
+          "Spain conceded 0 goals in group stage, showing defensive strength",
+          "Belgium topped group with only 5 points (1W 2D), less dominant",
+          "Kevin De Bruyne is a proven difference-maker in knockout matches"
         ],
-        "reasoning": "西班牙小组赛防守零封且战绩更优（2胜1平），比利时进攻乏力且状态平平均，但双方核心球员信息不充分，优势极有限。"
+        "reasoning": "Spain's perfect defensive record in group stage (0 goals conceded, 5-0 GD) gives slight edge over Belgium's less convincing group performance, but Kevin De Bruyne provides individual X-factor."
       },
       {
         "dimension": "B_chemistry",
         "label": "球队化学",
-        "a_score": 6.0,
-        "b_score": 5.5,
-        "delta": 0.5,
-        "confidence": 6.0,
+        "a_score": 5.0,
+        "b_score": 5.0,
+        "delta": 0.0,
+        "confidence": 3.0,
         "weight": 0.08,
         "key_factors": [
-          "西班牙小组赛3场零失球，防守体系成熟",
-          "比利时黄金一代时期曾有内讧传统，逆境凝聚力存疑",
-          "西班牙门将乌奈·西蒙有基本扑点能力，比利时门将位置不确定性较大"
+          "两队小组赛均以小组第一出线，但Belgium积分略低（5分vs7分）",
+          "两队均无核心组合年限或更衣室历史细节可用",
+          "淘汰赛关键指标（点球准备、教练换人历史）均无信息"
         ],
-        "reasoning": "西班牙小组赛零失球防守稳固且更衣室无内讧传统，比利时历史上有大赛内讧隐患且淘汰赛表现常低于预期"
+        "reasoning": "信息极度有限，两队均无具体历史凝聚力、点球准备或教练临场数据支撑差异，只能视为完全平等"
       },
       {
         "dimension": "A_strength",
         "label": "绝对实力",
-        "a_score": 6.5,
-        "b_score": 5.5,
-        "delta": 1.0,
-        "confidence": 7.0,
-        "weight": 0.07,
-        "key_factors": [
-          "Spain FIFA排名第2，小组赛2胜1平0失球，防守端有拉波尔特等经验中卫领衔",
-          "Belgium小组赛1胜2平晋级，库尔图瓦在皇马多次欧冠决赛证明淘汰赛爆发力",
-          "Spain年轻防线（Eric García等）缺乏世界杯淘汰赛检验，Belgium替补席Castagne、泰特等经验球员支撑加时"
-        ],
-        "reasoning": "Spain整体实力和防守稳定性更强（FIFA排名第2 vs 第9），小组赛3场零封；Belgium在淘汰赛经验和超级门将库尔图瓦方面有优势。"
-      },
-      {
-        "dimension": "C_form",
-        "label": "近期状态",
         "a_score": 6.5,
         "b_score": 6.0,
         "delta": 0.5,
         "confidence": 7.0,
         "weight": 0.07,
         "key_factors": [
-          "Spain finished group with 7 points and 0 goals conceded, showing defensive dominance",
-          "Belgium only managed 5 points in group stage with draws against Iran and Egypt",
-          "Spain's 4-0 win in final group match shows strong form",
-          "Belgium's 5-1 R16 win over New Zealand is impressive but New Zealand is a weaker opponent"
+          "Spain FIFA排名第2 vs Belgium第9，档次差距明显",
+          "Spain小组赛3场零封（进5失0），防守体系稳固",
+          "Belgium有Thibaut Courtois等大赛淘汰赛经验丰富的核心球员"
         ],
-        "reasoning": "Spain's flawless group stage defense (0 goals conceded) and gradual improvement trajectory give them a slight edge over Belgium, whose inconsistent group performances (two draws) raise concerns despite a strong R16 result."
+        "reasoning": "Spain整体FIFA排名和小组赛零失球表现占优，但Belgium拥有Courtois这样的淘汰赛关键先生"
+      },
+      {
+        "dimension": "C_form",
+        "label": "近期状态",
+        "a_score": 5.5,
+        "b_score": 6.5,
+        "delta": -1.0,
+        "confidence": 7.0,
+        "weight": 0.07,
+        "key_factors": [
+          "Belgium小组末轮5-1大胜New Zealand，进攻状态明显回升",
+          "Spain小组赛0失球但3场仅进5球，进攻转化率偏低",
+          "两队均未经历加时赛，但Belgium末轮主力轮换更充分"
+        ],
+        "reasoning": "Belgium末轮5-1大胜释放进攻火力且未加时消耗，Spain防守稳固但进攻效率不足，Belgium在淘汰赛节奏适应上略占上风。"
       }
     ],
     "calibration_warning": false,
     "calibration_note": "",
-    "judge_reasoning": "Spain胜",
+    "judge_reasoning": "Belgium胜",
     "data_sources": {
       "squad": "ESPN_ROSTER✅",
       "form": "ESPN_API✅",
@@ -132,14 +130,14 @@
   },
   "output": {
     "说明": "对外展示到HTML",
-    "prediction": "Spain胜",
+    "prediction": "Belgium胜",
     "confidence": "低",
     "reasons": [
-      "西班牙小组赛三场零失球，防线稳固，而比利时虽有德布劳内串联，但面对西班牙中场压迫时容易失误。",
-      "西班牙的莫拉塔和尼科·威廉姆斯在边路冲击力强，比利时边后卫速度偏慢，这可能是破局关键。",
-      "比利时小组赛两场平局，进攻效率不稳定，而西班牙在淘汰赛阶段更擅长控制节奏，拖入消耗战。"
+      "比利时中场德布劳内和库尔图瓦的大门是西班牙防线难以逾越的屏障，西班牙小组赛零失球纪录将面临德布劳内直塞和远射的严峻考验。",
+      "西班牙在小组赛进球主要依赖边路传中，但比利时中卫维尔通亨和阿尔德韦雷尔德的高空防守经验丰富，能有效限制莫拉塔的争顶。",
+      "比利时的小组赛轨迹显示球队慢热但越打越强，最后一场关键战击败埃及士气正旺，而西班牙三场零封对手进攻端场均不到2球缺乏爆发力。"
     ],
-    "key_risk": "比利时拥有德布劳内和卢卡库这样的个人能力爆点，若西班牙高位防线被一次反击打穿，比赛可能瞬间倒向比利时。"
+    "key_risk": "比利时若因淘汰赛压力过早丢球，西班牙的控球打法能消耗比赛时间并压制反击，库尔图瓦一旦失误可能直接导致爆冷。"
   },
   "actual_result": null
 }
