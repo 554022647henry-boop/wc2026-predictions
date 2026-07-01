@@ -507,6 +507,7 @@ def generate_html():
 <div class="tabs">
   <button class="tab-btn active" onclick="switchTab('groups',this)">⚽ {_bi("按小组","Groups")}</button>
   <button class="tab-btn" onclick="switchTab('schedule',this)">📅 {_bi("赛程表","Schedule")}</button>
+  <button class="tab-btn" onclick="switchTab('knockout',this)">🏆 {_bi("淘汰赛","Knockout")}</button>
 </div>
 
 <main>
@@ -518,6 +519,11 @@ def generate_html():
   <div id="tab-schedule" class="tab-content">
     <div class="sec-title">{_bi("全部赛程 · 按日期","Full Schedule · By Date")}</div>
     {schedule_html}
+  </div>
+
+  <div id="tab-knockout" class="tab-content">
+    <div class="sec-title" style="margin-bottom:12px">🏆 {_bi("淘汰赛对阵图 · AI 预测","Knockout Bracket · AI Predictions")}</div>
+    <iframe src="knockout_bracket.html" style="width:100%;height:900px;border:none;border-radius:12px;background:transparent;overflow:hidden;" onload="this.style.height=this.contentDocument.body.scrollHeight+'px'"></iframe>
   </div>
 </main>
 
@@ -719,6 +725,37 @@ function toggleLang() {
 
 
 # ─────────────────────────────────────────
+# KO 预测数据 JS（供 knockout_bracket.html 加载）
+# ─────────────────────────────────────────
+
+def generate_ko_prediction_js():
+    """生成 web/ko_predictions.js，包含所有淘汰赛的 AI 预测数据。"""
+    fixtures = load_fixtures()
+    predictions = {}
+    for match in fixtures.get('matches', []):
+        stage = match.get('stage', '')
+        if stage in ('group_stage', ''):
+            continue
+        mid = match['match_id']
+        pred = load_latest_prediction(mid)
+        if pred and pred.get('output'):
+            out = pred['output']
+            internal = pred.get('_internal', {})
+            predictions[mid] = {
+                'prediction': out.get('prediction', ''),
+                'confidence': out.get('confidence', ''),
+                'p_a_win': internal.get('p_a_win'),
+                'p_b_win': internal.get('p_b_win'),
+            }
+
+    js_content = 'window.KO_PREDICTIONS = ' + json.dumps(
+        predictions, ensure_ascii=False, indent=2) + ';'
+    js_path = Path(config.HTML_FILE).parent / 'ko_predictions.js'
+    js_path.write_text(js_content, encoding='utf-8')
+    print(f'  [KO预测JS] 已生成: {js_path.name} ({len(predictions)} 场)')
+
+
+# ─────────────────────────────────────────
 # 入口
 # ─────────────────────────────────────────
 
@@ -730,6 +767,7 @@ def update_html():
     out.write_text(html, encoding='utf-8')
     size_kb = len(html) // 1024
     print(f'[HTML] 已保存: {out} ({size_kb}KB)')
+    generate_ko_prediction_js()
     return str(out)
 
 

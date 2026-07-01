@@ -188,6 +188,7 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
 <div class="tabs">
   <button class="tab-btn active" onclick="switchTab('groups',this)">⚽ <span class="zh">按小组</span><span class="en">Groups</span></button>
   <button class="tab-btn" onclick="switchTab('schedule',this)">📅 <span class="zh">赛程表</span><span class="en">Schedule</span></button>
+  <button class="tab-btn" onclick="switchTab('knockout',this)">🏆 <span class="zh">淘汰赛</span><span class="en">Knockout</span></button>
 </div>
 
 <main>
@@ -5262,11 +5263,16 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:.72rem;border
             </div></div>
         </div></div>
   </div>
+
+  <div id="tab-knockout" class="tab-content">
+    <div class="sec-title" style="margin-bottom:12px">🏆 <span class="zh">淘汰赛对阵图 · AI 预测</span><span class="en">Knockout Bracket · AI Predictions</span></div>
+    <iframe src="knockout_bracket.html" style="width:100%;height:900px;border:none;border-radius:12px;background:transparent;overflow:hidden;" onload="this.style.height=this.contentDocument.body.scrollHeight+'px'"></iframe>
+  </div>
 </main>
 
 <footer>
   <span class="zh">数据来源：FIFA官网 · ESPN API · DeepSeek AI 分析</span><span class="en">Data: FIFA · ESPN API · DeepSeek AI</span> &nbsp;·&nbsp;
-  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-07-01 17:12
+  <span class="zh">最后更新</span><span class="en">Updated</span>: 2026-07-01 17:21
 </footer>
 
 <script>
